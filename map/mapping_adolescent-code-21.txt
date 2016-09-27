@@ -1,0 +1,40 @@
+102 CML: Commit Language -3 ==> 109 CHT: Change Talk -2
+103 CML: Commit Language -2 ==> 109 CHT: Change Talk -2
+104 CML: Commit Language -1 ==> 109 CHT: Change Talk -2
+105 CML: Commit Language +1 ==> 106 CML: Commit Language +2
+106 CML: Commit Language +2 ==> 106 CML: Commit Language +2
+107 CML: Commit Language +3 ==> 106 CML: Commit Language +2
+108 CHT: Change Talk -3 ==> 109 CHT: Change Talk -2
+109 CHT: Change Talk -2 ==> 109 CHT: Change Talk -2
+110 CHT: Change Talk -1 ==> 109 CHT: Change Talk -2
+111 CHT: Change Talk +1 ==> 112 CHT: Change Talk +2
+112 CHT: Change Talk +2 ==> 112 CHT: Change Talk +2
+113 CHT: Change Talk +3 ==> 112 CHT: Change Talk +2
+114 AMB: Ambivalence - ==> 109 CHT: Change Talk -2
+115 AMB: Ambivalence 0 ==> 112 CHT: Change Talk +2
+116 AMB: Ambivalence + ==> 112 CHT: Change Talk +2
+117 LUP+: Low Uptake, positive ==> 117 LUP+: Low Uptake, positive
+119 HUP- W: High Uptake, weight ==> 112 CHT: Change Talk +2
+120 HUP-O: High Uptake, other ==> 120 HUP-O: High Uptake, other
+301 SS: Structure Session ==> 301 SS: Structure Session
+302 G-INFO+: General Information, positive ==> 302 G-INFO+: General Information, positive
+303 G-INFO-:  General Information, negative ==> 302 G-INFO+: General Information, positive
+305 EA: Emphasize Autonomy ==> 305 EA: Emphasize Autonomy
+306 CQ-EF: Closed question, Elicit Feedback ==> 306 CQ-EF: Closed question, Elicit Feedback
+307 SPT: Support ==> 307 SPT: Support
+308 AF: Affirm ==> 308 AF: Affirm
+309 AF-L: Affirm, low ==> 308 AF: Affirm
+310 AR: Action reflection ==> 311 R-CT+: Reflect, change talk positive
+311 R-CT+: Reflect, change talk positive ==> 311 R-CT+: Reflect, change talk positive
+312 R-CT-S: Reflect, change talk negative ==> 312 R-CT-S: Reflect, change talk negative
+313 R-CML+: Reflect, commitment language positive ==> 313 R-CML+: Reflect, commitment language positive
+325 RA-S: Reflect ambivalence ==> 311 R-CT+: Reflect, change talk positive
+328 SUM-S: Summarize ==> 328 SUM-S: Summarize
+329 SD: Self-disclose ==> 329 SD: Self-disclose
+331 OQ-ECT+: Open-ended question, elicit change talk positive ==> 331 OQ-ECT+: Open-ended question, elicit change talk positive
+333 OQ-ECML+: Open-ended question, elicit commitment language positive ==> 333 OQ-ECML+: Open-ended question, elicit commitment language positive
+343 OQ-TBN: Open-ended question, target behavior neutral ==> 343 OQ-TBN: Open-ended question, target behavior neutral
+344 OQ-EB: Open-ended question, elicit barriers ==> 344 OQ-EB: Open-ended question, elicit barriers
+346 CQ-ECT+: closed-ended question, elicit change talk positive ==> 331 OQ-ECT+: Open-ended question, elicit change talk positive
+348 CQ-ECML+: closed-ended question, elicit commitment language positive ==> 333 OQ-ECML+: Open-ended question, elicit commitment language positive
+359 CQ-EB: closed-ended question, elicit barriers ==> 344 OQ-EB: Open-ended question, elicit barriers

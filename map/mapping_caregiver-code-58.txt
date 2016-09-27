@@ -1,0 +1,84 @@
+201 BLT: Blunting ==> 201 BLT: Blunting
+202 CG-CML: Caregiver Commit Language -3 ==> 203 CG-CML: Caregiver Commit Language -2
+203 CG-CML: Caregiver Commit Language -2 ==> 203 CG-CML: Caregiver Commit Language -2
+204 CG-CML: Caregiver Commit Language -1 ==> 203 CG-CML: Caregiver Commit Language -2
+205 CG-CML: Caregiver Commit Language +1 ==> 206 CG-CML: Caregiver Commit Language +2
+206 CG-CML: Caregiver Commit Language +2 ==> 206 CG-CML: Caregiver Commit Language +2
+207 CG-CML: Caregiver Commit Language +3 ==> 206 CG-CML: Caregiver Commit Language +2
+208 CG-CHT: Caregiver Change Talk -3 ==> 209 CG-CHT: Caregiver Change Talk -2
+209 CG-CHT: Caregiver Change Talk -2 ==> 209 CG-CHT: Caregiver Change Talk -2
+211 CG-CHT: Caregiver Change Talk +1 ==> 212 CG-CHT: Caregiver Change Talk +2
+212 CG-CHT: Caregiver Change Talk +2 ==> 212 CG-CHT: Caregiver Change Talk +2
+213 CG-CHT: Caregiver Change Talk +3 ==> 212 CG-CHT: Caregiver Change Talk +2
+214 CG-AMB: Caregiver Ambivalence - ==> 214 CG-AMB: Caregiver Ambivalence -
+215 CG-AMB: Caregiver Ambivalence 0 ==> 215 CG-AMB: Caregiver Ambivalence 0
+216 CG-AMB: Caregiver Ambivalence + ==> 216 CG-AMB: Caregiver Ambivalence +
+217 T-CML: About teen, Commit Language -3 ==> 218 T-CML: About teen, Commit Language -2
+218 T-CML: About teen, Commit Language -2 ==> 218 T-CML: About teen, Commit Language -2
+219 T-CML: About teen, Commit Language -1 ==> 218 T-CML: About teen, Commit Language -2
+220 T-CML: About teen, Commit Language +1 ==> 221 T-CML: About teen, Commit Language +2
+221 T-CML: About teen, Commit Language +2 ==> 221 T-CML: About teen, Commit Language +2
+222 T-CML: About teen, Commit Language +3 ==> 221 T-CML: About teen, Commit Language +2
+223 T-CHT: About teen, Change Talk -3 ==> 224 T-CHT: About teen, Change Talk -2
+224 T-CHT: About teen, Change Talk -2 ==> 224 T-CHT: About teen, Change Talk -2
+225 T-CHT: About teen, Change Talk -1 ==> 224 T-CHT: About teen, Change Talk -2
+226 T-CHT: About teen, Change Talk +1 ==> 227 T-CHT: About teen, Change Talk +2
+227 T-CHT: About teen, Change Talk +2 ==> 227 T-CHT: About teen, Change Talk +2
+229 T-AMB: About teen, Ambivalence - ==> 229 T-AMB: About teen, Ambivalence -
+230 T-AMB: About teen, Ambivalence 0 ==> 230 T-AMB: About teen, Ambivalence 0
+232 LUP+: Low Uptake, positive ==> 232 LUP+: Low Uptake, positive
+233 LUP-: Low Uptake, negative ==> 233 LUP-: Low Uptake, negative
+234 HUP-W :High uptake, weight or target behaviors ==> 234 HUP-W :High uptake, weight or target behaviors
+235 HUP-O :High uptake, other ==> 235 HUP-O :High uptake, other
+236 null ==> 236 null
+301 SS: Structure Session ==> 301 SS: Structure Session
+302 G-INFO+: General Information, positive ==> 302 G-INFO+: General Information, positive
+303 G-INFO-:  General Information, negative ==> 303 G-INFO-:  General Information, negative
+304 RD: Reflect Discrepancy ==> 304 RD: Reflect Discrepancy
+305 EA: Emphasize Autonomy ==> 305 EA: Emphasize Autonomy
+306 CQ-EF: Closed question, Elicit Feedback ==> 306 CQ-EF: Closed question, Elicit Feedback
+307 SPT: Support ==> 307 SPT: Support
+308 AF: Affirm ==> 308 AF: Affirm
+309 AF-L: Affirm, low ==> 309 AF-L: Affirm, low
+310 AR: Action reflection ==> 310 AR: Action reflection
+315 R-CT_CG+: Reflect, change talk positive, about caregiver ==> 315 R-CT_CG+: Reflect, change talk positive, about caregiver
+316 R-CT_CG-S: Reflect, change talk negative, about caregiver ==> 316 R-CT_CG-S: Reflect, change talk negative, about caregiver
+317 R-CT_T +: Reflect, change talk positive, about teen ==> 317 R-CT_T +: Reflect, change talk positive, about teen
+318 R-CT_T-S: Reflect, change talk negative, about teen ==> 318 R-CT_T-S: Reflect, change talk negative, about teen
+319 R-CML_CG+: Reflect, commitment language positive, about caregiver ==> 319 R-CML_CG+: Reflect, commitment language positive, about caregiver
+320 R-CML_CG-S: Reflect, commitment language negative, about caregiver ==> 320 R-CML_CG-S: Reflect, commitment language negative, about caregiver
+321 R-CML_T+: Reflect, commitment language positive, about teen ==> 321 R-CML_T+: Reflect, commitment language positive, about teen
+322 R-CML_T-S: Reflect, commitment language negative, about teen ==> 322 R-CML_T-S: Reflect, commitment language negative, about teen
+323 R-NVBE+: Reflect, nonverbal behavior positive ==> 323 R-NVBE+: Reflect, nonverbal behavior positive
+324 R-NVBE-: Reflect, nonverbal behavior negative ==> 324 R-NVBE-: Reflect, nonverbal behavior negative
+325 RA-S: Reflect ambivalence ==> 325 RA-S: Reflect ambivalence
+326 RBA-S: Reflect barriers ==> 326 RBA-S: Reflect barriers
+327 RO-S: Reflect other ==> 327 RO-S: Reflect other
+328 SUM-S: Summarize ==> 328 SUM-S: Summarize
+329 SD: Self-disclose ==> 329 SD: Self-disclose
+330 S-O: Statement, Other ==> 330 S-O: Statement, Other
+331 OQ-ECT+: Open-ended question, elicit change talk positive ==> 331 OQ-ECT+: Open-ended question, elicit change talk positive
+332 OQ-ECT-: Open-ended question, elicit change talk negative ==> 332 OQ-ECT-: Open-ended question, elicit change talk negative
+333 OQ-ECML+: Open-ended question, elicit commitment language positive ==> 333 OQ-ECML+: Open-ended question, elicit commitment language positive
+335 OQ-ECT_CG+: Open question, elicit change talk positive, about caregiver ==> 335 OQ-ECT_CG+: Open question, elicit change talk positive, about caregiver
+336 OQ-ECT_CG-: Open question, elicit change talk negative, about caregiver ==> 336 OQ-ECT_CG-: Open question, elicit change talk negative, about caregiver
+337 OQ-ECT_T +: Open question, elicit change talk positive, about teen ==> 337 OQ-ECT_T +: Open question, elicit change talk positive, about teen
+338 OQ-ECT_T-: Open question, elicit change talk negative, about teen ==> 338 OQ-ECT_T-: Open question, elicit change talk negative, about teen
+339 OQ-ECML_CG+: Open question, elicit commitment language positive, about caregiver ==> 339 OQ-ECML_CG+: Open question, elicit commitment language positive, about caregiver
+340 OQ-ECML_CG-: Open question, elicit commitment language negative, about caregiver ==> 340 OQ-ECML_CG-: Open question, elicit commitment language negative, about caregiver
+341 OQ-ECML_T+: Open question, elicit commitment language positive, about teen ==> 341 OQ-ECML_T+: Open question, elicit commitment language positive, about teen
+342 OQ-ECML_T-: Open question, elicit commitment language negative, about teen ==> 342 OQ-ECML_T-: Open question, elicit commitment language negative, about teen
+343 OQ-TBN: Open-ended question, target behavior neutral ==> 343 OQ-TBN: Open-ended question, target behavior neutral
+344 OQ-EB: Open-ended question, elicit barriers ==> 344 OQ-EB: Open-ended question, elicit barriers
+345 OQ-O: Other ==> 345 OQ-O: Other
+346 CQ-ECT+: closed-ended question, elicit change talk positive ==> 331 OQ-ECT+: Open-ended question, elicit change talk positive
+347 CQ-ECT-: closed-ended question, elicit change talk negative ==> 332 OQ-ECT-: Open-ended question, elicit change talk negative
+350 CQ-ECT_CG+: Closed question, elicit change talk positive, about caregiver ==> 335 OQ-ECT_CG+: Open question, elicit change talk positive, about caregiver
+351 CQ-ECT_CG-: Closed question, elicit change talk negative, about caregiver ==> 336 OQ-ECT_CG-: Open question, elicit change talk negative, about caregiver
+352 CQ-ECT_T +: Closed question, elicit change talk positive, about teen ==> 337 OQ-ECT_T +: Open question, elicit change talk positive, about teen
+353 CQ-ECT_T-: Closed question, elicit change talk negative, about teen ==> 338 OQ-ECT_T-: Open question, elicit change talk negative, about teen
+354 CQ-ECML_CG+: Closed question, elicit commitment language positive, about caregiver ==> 339 OQ-ECML_CG+: Open question, elicit commitment language positive, about caregiver
+355 CQ-ECML_CG-: Closed question, elicit commitment language negative, about caregiver ==> 340 OQ-ECML_CG-: Open question, elicit commitment language negative, about caregiver
+357 CQ-ECML_T-: Closed question, elicit commitment language negative, about teen ==> 342 OQ-ECML_T-: Open question, elicit commitment language negative, about teen
+359 CQ-EB: closed-ended question, elicit barriers ==> 344 OQ-EB: Open-ended question, elicit barriers
+360 CQ-O: Other ==> 345 OQ-O: Other
