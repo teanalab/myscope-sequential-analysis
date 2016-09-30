@@ -39,7 +39,133 @@ public class UtilityClass {
 		return codeSequenceList;
 	}
 	
-	public static void createCodeSequenceFromRawData(boolean withText, HashMap<String, String> codemap) throws Exception{
+	public static ArrayList<String> createAllSequencesFromOne(String seq){
+		
+		String seqArr[] = seq.split(",");
+		ArrayList<ArrayList<String>> listOflistArray = new ArrayList<ArrayList<String>>();
+		ArrayList<String> list = new ArrayList<String>();
+		int prev = Integer.parseInt(seqArr[0]);
+		
+		for(int i=0; i < seqArr.length; i++){
+			int curCode = Integer.parseInt(seqArr[i].trim());
+			if((prev < 300 && curCode < 300) || (prev > 300 && prev < 399 && curCode > 300 && curCode < 399) || (prev >= 400 && curCode >= 400)){
+				list.add(seqArr[i].trim());
+			}
+			else{
+				listOflistArray.add(list);
+				list = new ArrayList<String>();
+				list.add(seqArr[i].trim());
+				prev = Integer.parseInt(seqArr[i]);
+			}
+			
+			if(i == seqArr.length-1 && list.size() > 0){
+				listOflistArray.add(list);
+			}
+		}
+		
+		// get combination of sequences
+		while(listOflistArray.size() >= 2){
+			
+			ArrayList<String> listL2 = listOflistArray.get(listOflistArray.size()-1);
+			ArrayList<String> listL1 = listOflistArray.get(listOflistArray.size()-2);
+			ArrayList<String> newList = new ArrayList<String>();
+			String s = "";
+			
+			for(int i=0; i<listL1.size(); i++){
+				s = listL1.get(i); 
+				for(int j=0; j<listL2.size(); j++){
+					newList.add(s + "," + listL2.get(j));
+				}
+			}
+			
+			listOflistArray.remove(listOflistArray.size()-1);
+			listOflistArray.remove(listOflistArray.size()-1);
+			listOflistArray.add(newList);
+		}
+		
+		return listOflistArray.get(0);
+	}
+	
+	
+	public static int writeSequenceIntoFile(PrintWriter sequenceCodeWriter, String seqLine){
+		ArrayList<String> list = createAllSequencesFromOne(seqLine);
+		for(int i=0; i<list.size(); i++){
+			sequenceCodeWriter.println(list.get(i).trim());
+		}
+		return list.size();
+	}
+	
+	public static void writePairwiseFrequencyIntoFile(int pair[][], String seqLine, PrintWriter pairWriter){
+		
+		String seqArr[] = seqLine.split(",");
+		ArrayList<ArrayList<String>> listOflistArray = new ArrayList<ArrayList<String>>();
+		ArrayList<String> list = new ArrayList<String>();
+		int prev = Integer.parseInt(seqArr[0]);
+		
+		for(int i=0; i < seqArr.length; i++){
+			int curCode = Integer.parseInt(seqArr[i].trim());
+			if((prev < 300 && curCode < 300) || (prev > 300 && prev < 399 && curCode > 300 && curCode < 399)){
+				list.add(seqArr[i].trim());
+			}
+			else{
+				listOflistArray.add(list);
+				list = new ArrayList<String>();
+				list.add(seqArr[i].trim());
+				prev = Integer.parseInt(seqArr[i]);
+			}
+			
+			if(i == seqArr.length-1 && list.size() > 0){
+				listOflistArray.add(list);
+			}
+		}
+		
+		for(int k=0; k < listOflistArray.size()-1; k++){
+				
+			ArrayList<String> listL1 = listOflistArray.get(k);
+			ArrayList<String> listL2 = listOflistArray.get(k+1);
+			
+			for(int i=0; i < listL1.size(); i++){ 
+				int idx = Integer.parseInt(listL1.get(i));
+				for(int j=0; j < listL2.size(); j++){
+					int idy = Integer.parseInt(listL2.get(j));
+					pair[idx][idy] = pair[idx][idy]+1;
+				}
+			}
+		}
+	}
+	
+	public static void calculateFreqOfSequences(String fileLocation, String dest){
+		try {
+			HashMap<String, Integer> map = new HashMap<>();
+			BufferedReader br = new BufferedReader(new FileReader(fileLocation));
+			String line = "";
+			while ((line = br.readLine()) != null) {
+				if(map.containsKey(line.trim())){
+					map.put(line.trim(), map.get(line.trim())+1);
+				}
+				else{
+					map.put(line.trim(), 1);
+				}
+			}		
+			br.close();
+			
+			PrintWriter pWriter = new PrintWriter(dest, "UTF-8");
+			pWriter.println("Sequence, Frequency");
+			
+			for(String key: map.keySet()){
+				pWriter.println(key.replace(",", "==>") + "," + map.get(key));
+			}
+			
+			pWriter.close();	
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}			
+	}
+	
+	public static void createCodeSequenceFromRawData(boolean withText, HashMap<String, String> codemap, boolean withAlternateSeq) throws Exception{
 		int successCount = 0, failureCount = 0;
 		final String successCode = "106,112,116";
 		final String failureCode = "103,109,114,115";
@@ -79,11 +205,17 @@ public class UtilityClass {
 						else{
 							sequence.append("500");
 						}
-						sequenceCodeWriter.println(sequence.toString()); 
+						
+						if(withAlternateSeq){
+							successCount = successCount + writeSequenceIntoFile(sequenceCodeWriter, sequence.toString());
+						}
+						else{
+							sequenceCodeWriter.println(sequence.toString()); 
+							successCount++;
+						}
 						//		+ "  \t\t " + rawFiles[i].getName() + " line " + count);
 						sequence = new StringBuilder();
-						sequenceLength = 0;
-						successCount++;
+						sequenceLength = 0;						
 					}			
 					else if(failureCode.contains(line.substring(0, 3).trim()) && sequenceLength > 1){
 						//sequence.append(line.substring(0, 3).trim()+",");
@@ -94,11 +226,16 @@ public class UtilityClass {
 							sequence.append("400");
 						}
 						
-						sequenceCodeWriter.println(sequence.toString()); 
+						if(withAlternateSeq){
+							failureCount = failureCount + writeSequenceIntoFile(sequenceCodeWriter, sequence.toString());
+						}
+						else{
+							sequenceCodeWriter.println(sequence.toString()); 
+							failureCount++;
+						}
 						//		+ "  \t\t " + rawFiles[i].getName() + " line " + count);
 						sequence = new StringBuilder();
 						sequenceLength = 0;
-						failureCount++;
 					}
 					else{
 						if(withText){
@@ -117,6 +254,109 @@ public class UtilityClass {
 		}		
 		sequenceCodeWriter.close();
 		System.out.println("Successful sequences: "+ successCount + ", Failure sequences: " + failureCount);
+	}
+	
+	public static void createCombinationOfCodeSequence(boolean isNormal) throws Exception{
+		
+		int successCount = 0, failureCount = 0;
+		final String successCode = "106,112,116";
+		final String failureCode = "103,109,114,115";
+		File rawDataFolder = new File("modinput");
+		File []rawFiles = rawDataFolder.listFiles();
+		PrintWriter sequenceCodeWriter = new PrintWriter("SequentialData/allsequence.txt", "UTF-8");
+					
+		for (int i = 0; i < rawFiles.length; ++i) {			
+			BufferedReader br = new BufferedReader(new FileReader(rawFiles[i]));			
+			String line = "";
+			int sequenceLength = 0;
+			StringBuilder sequence = new StringBuilder();
+			
+			while ((line = br.readLine()) != null) {
+				if(line.length() > 4){
+					if(sequence.length() != 0){
+						sequence.append(",");					
+					}
+					
+					if(successCode.contains(line.substring(0, 3).trim()) && sequenceLength > 1){
+						sequence.append(line.substring(0, 3).trim());
+						if(isNormal){
+							sequenceCodeWriter.println(sequence.toString()); 
+							successCount++;
+						}
+						else{
+							successCount = successCount + writeSequenceIntoFile(sequenceCodeWriter, sequence.toString());
+						}
+						sequence = new StringBuilder();
+						sequenceLength = 0;						
+					}			
+					else if(failureCode.contains(line.substring(0, 3).trim()) && sequenceLength > 1){
+						sequence.append(line.substring(0, 3).trim());
+						if(isNormal){
+							sequenceCodeWriter.println(sequence.toString()); 
+							failureCount++;
+						}
+						else{
+							failureCount = failureCount + writeSequenceIntoFile(sequenceCodeWriter, sequence.toString());
+						}						
+						sequence = new StringBuilder();
+						sequenceLength = 0;
+					}
+					else{
+						sequence.append(line.substring(0, 3).trim());
+						sequenceLength++;
+					}
+				}
+			
+			}
+			
+			br.close();
+		}		
+		sequenceCodeWriter.close();
+		System.out.println("Successful sequences: "+ successCount + ", Failure sequences: " + failureCount);
+	}
+	
+public static void calculateDistributionOfPairSequence(String dest) throws Exception{
+	
+		int pair[][] = new int[400][400];
+		PrintWriter pairWriter = new PrintWriter(dest, "UTF-8");						
+		String line = "";		
+		
+		File rawDataFolder = new File("modinput");
+		File []rawFiles = rawDataFolder.listFiles();
+					
+		for (int i = 0; i < rawFiles.length; ++i) {			
+			@SuppressWarnings("resource")
+			BufferedReader br = new BufferedReader(new FileReader(rawFiles[i]));			
+			StringBuilder sequence = new StringBuilder();
+			
+			while ((line = br.readLine()) != null) {
+				if(line.length() > 4){
+					if(sequence.length() != 0){
+						sequence.append(",");					
+					}
+					sequence.append(line.substring(0, 3).trim());
+				}
+			}
+			
+			writePairwiseFrequencyIntoFile(pair, sequence.toString(), pairWriter);
+		}
+		
+		// define selected columns and rows for generating the file
+		int cols = 20;
+		int rows = 60;
+		for(int j=1; j <= cols; j++)
+			pairWriter.print("," + "Y" + (100+j) );
+		
+		pairWriter.println();
+		for(int i = 1; i <= rows; i++){
+			pairWriter.print("C"+(300+i));
+			for(int j=1; j <= cols; j++){
+				pairWriter.print("," + pair[i+300][j+100]);					
+			}
+			pairWriter.println();
+		}
+			
+		pairWriter.close();
 	}
 	
 	public static void buildMap(HashMap<String,String> codemap) throws Exception{
@@ -154,7 +394,6 @@ public class UtilityClass {
 				br.close();
 				writer.close();
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}	
 		}

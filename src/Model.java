@@ -26,7 +26,7 @@ public class Model {
 				
 		// Create sequence dataset from raw data
 		//UtilityClass.createCodeSequenceFromRawData(true, codemap);
-		UtilityClass.createCodeSequenceFromRawData(false, codemap);
+		UtilityClass.createCodeSequenceFromRawData(false, codemap, true);
 		
 		// Read sequence data from file
 		data = UtilityClass.readAllSequence();
@@ -74,6 +74,29 @@ public class Model {
 		// Print top k sequences
 		printTopKSuccessAndFailureSequence(data,20,false);
 		System.out.println("\n\nFinal: " + finalPrint);
+	}
+	
+	public void provideFrequencyDistributionOfSequence() throws Exception{		
+		// Create alternate sequence and then calculate their frequencies
+		UtilityClass.createCombinationOfCodeSequence(false);
+		UtilityClass.calculateFreqOfSequences("SequentialData/allsequence.txt", "SequentialData/alternate-seq-frequency.csv");
+		
+		// Read sequence data from file
+		data = UtilityClass.readAllSequence();
+		Collections.shuffle(data);
+		System.out.println("Total sequences: " + data.size() + "\n");
+		
+		// Create normal sequence and then calculate their frequencies
+		UtilityClass.createCombinationOfCodeSequence(true);
+		UtilityClass.calculateFreqOfSequences("SequentialData/allsequence.txt", "SequentialData/normal-seq-frequency.csv");
+	
+		// Read sequence data from file
+		data = UtilityClass.readAllSequence();
+		Collections.shuffle(data);		
+		System.out.println("Total sequences: " + data.size());
+				
+		// Create pair sequence and then calculate their frequencies
+		UtilityClass.calculateDistributionOfPairSequence("SequentialData/pair-frequency.csv");
 	}
 	
 	public void evaluateModel(){
@@ -323,8 +346,11 @@ public class Model {
 			if(successCode.equalsIgnoreCase(sequence[sequence.length-1]))
 				successTrainWriter.println(trainData.get(i).toString());
 			else
-				failureTrainWriter.println(trainData.get(i).toString());
+				failureTrainWriter.println(trainData.get(i).toString());						
 		}
+		
+		successTrainWriter.flush();
+		failureTrainWriter.flush();
 		
 		PrintWriter testWriter = new PrintWriter("SequentialData/test/testdata.txt");
 		for(int i=0; i < testData.size(); i++){
