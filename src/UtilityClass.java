@@ -349,9 +349,17 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 		
 		pairWriter.println();
 		for(int i = 1; i <= rows; i++){
+			int rowsum = 0;
+			for(int j=1; j <= cols; j++) {
+                rowsum += pair[i + 300][j + 100];
+            }
+
 			pairWriter.print("C"+(300+i));
 			for(int j=1; j <= cols; j++){
-				pairWriter.print("," + pair[i+300][j+100]);					
+				if(rowsum != 0)
+					pairWriter.print("," + ((double)pair[i+300][j+100]/rowsum));
+				else
+					pairWriter.print("," + pair[i+300][j+100]);
 			}
 			pairWriter.println();
 		}
