@@ -321,7 +321,7 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 		PrintWriter pairWriter = new PrintWriter(dest, "UTF-8");						
 		String line = "";		
 		
-		File rawDataFolder = new File("modinput");
+		File rawDataFolder = new File("modinput/rawdata");
 		File []rawFiles = rawDataFolder.listFiles();
 					
 		for (int i = 0; i < rawFiles.length; ++i) {			
