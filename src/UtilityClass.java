@@ -96,7 +96,6 @@ public class UtilityClass {
 	}
 	
 	public static void writePairwiseFrequencyIntoFile(int pair[][], String seqLine, PrintWriter pairWriter){
-		
 		String seqArr[] = seqLine.split(",");
 		ArrayList<ArrayList<String>> listOflistArray = new ArrayList<ArrayList<String>>();
 		ArrayList<String> list = new ArrayList<String>();
@@ -171,13 +170,13 @@ public class UtilityClass {
 		final String failureCode = "103,109,114,115";
 		//final String successCode = "106";
 		//final String failureCode = "103";
-		File rawDataFolder = new File("modinput");
+		File rawDataFolder = new File("modinput/collapse");
 		File []rawFiles = rawDataFolder.listFiles();
 		// Sequence code writer
 		PrintWriter sequenceCodeWriter = new PrintWriter("SequentialData/allsequence.txt", "UTF-8");
-					
-		for (int i = 0; i < rawFiles.length; ++i) {			
-			BufferedReader br = new BufferedReader(new FileReader(rawFiles[i]));			
+
+		for (int i = 0; i < rawFiles.length; ++i) {
+			BufferedReader br = new BufferedReader(new FileReader(rawFiles[i]));
 			String line = "";
 			int count = 0;
 			int sequenceLength = 0;
@@ -261,7 +260,7 @@ public class UtilityClass {
 		int successCount = 0, failureCount = 0;
 		final String successCode = "106,112,116";
 		final String failureCode = "103,109,114,115";
-		File rawDataFolder = new File("modinput");
+		File rawDataFolder = new File("modinput/collapse");
 		File []rawFiles = rawDataFolder.listFiles();
 		PrintWriter sequenceCodeWriter = new PrintWriter("SequentialData/allsequence.txt", "UTF-8");
 					
