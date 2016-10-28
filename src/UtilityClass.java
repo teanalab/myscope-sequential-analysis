@@ -405,4 +405,65 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 			}	
 		}
 	}
+	
+	public static void preprocessMITranscripts(String inputLocation, String outLocation) throws Exception{
+		
+		File rawDataFolder = new File(inputLocation);
+		File []rawFiles = rawDataFolder.listFiles();
+					
+		for (int i = 0; i < rawFiles.length; ++i) {	
+			if(rawFiles[i].getName().contains(".txt")){
+				
+				HashMap<String, DataDetail> mapTimestamp = new HashMap<>();
+				PrintWriter writer = new PrintWriter(outLocation+rawFiles[i].getName());
+				BufferedReader br = new BufferedReader(new FileReader(inputLocation+"/"+rawFiles[i].getName().replace(".txt", ".csv")));			
+				String line = "";				
+				
+				while ((line = br.readLine()) != null) {
+					if(!line.isEmpty()){
+						String record[] = line.split(",");
+						String timestamp = (record[2].substring(1, 8).replace(":", "")+record[3].trim()).trim();
+						if(mapTimestamp.containsKey(timestamp)){
+							mapTimestamp.get(timestamp).listTimestamp.add(record[4].trim());
+						}
+						else{
+							DataDetail entry = new DataDetail();
+							entry.code = record[4].trim();
+							entry.who = record[3].trim();
+							entry.timestamp = timestamp;
+							entry.listTimestamp.add(entry.code);
+							
+							mapTimestamp.put(timestamp, entry);
+						}
+					}
+				}				
+				
+				br.close();
+				
+				br = new BufferedReader(new FileReader(rawFiles[i]));
+				
+				while ((line = br.readLine()) != null) {
+					if(!line.isEmpty() && line.length() > 7){
+						line = line.replace("’", "'").replace("—", "-").replace("PPT:", "PT:");
+						int index = line.substring(1, 13).lastIndexOf(":");
+						if(index < 0){
+							continue;
+						}
+						String timestamp = line.substring(1, index+1).replace(":", "").replace(")", "").trim();
+						if(mapTimestamp.containsKey(timestamp.trim())){
+							writer.println("["+mapTimestamp.get(timestamp).code + "]\t" + line.substring(8).trim());
+							for(int j = 1; j < mapTimestamp.get(timestamp).listTimestamp.size(); j++){
+								writer.println("["+mapTimestamp.get(timestamp).listTimestamp.get(j) + "]\t" + "MISSING TEXT");
+							}
+						}
+						writer.flush();
+					}
+				}				
+				
+				br.close();
+				
+				writer.close();
+			}
+		}		
+	}
 }

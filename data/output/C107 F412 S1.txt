@@ -1,0 +1,791 @@
+[SO]	CHW:	Okay, so.
+[CQO]	CHW:	Hmm?  Right here?  Okay.  Hi.
+[SO]	MISSING TEXT
+[HUPO]	CG:	Hello.  How are you doing?
+[CQO]	CHW:	Fine.  How are you?  I’m Clarita.
+[SO]	MISSING TEXT
+[CQO]	CG:	I’m Xxxx.  How are you doing?
+[SO]	CHW:	Excuse me.  Fine.
+[LUP+]	CG:	(Fine.)
+[AFL]	CHW:	Nice to meet you.
+[LUP+]	CG:	You, too.  {0:00:22} same thing.
+[AFL]	CHW:	Okay.  So let’s see.  Thanks for meeting with me.
+[LUP+]	CG:	Thank you for coming.
+[GINFO-]	CHW:	No problem.  So I brought you guys some recipes.
+[LUP+]	CG:	Oh, okay.
+[GINFO-]	CHW:	Okay?  We have cooking classes every few months.  =
+[SANDWICH]	CG:	Oh, okay.
+[SANDWICH]	CHW:	And so =
+[HUPW]	CG:	Oooh, chicken {0:00:53}, I like that.
+[SD]	CHW:	I’ve tasted all of these recipes.  We prepared them, so I can vouch for them.  They’re all good.
+[HUPW]	CG:	{0:01:00} baked fish.
+[SO]	CHW:	Tastes just like fried fish.  It really does.
+[HUPW]	CG:	What kind of fish is it?
+[GINFO+]	CHW:	Well, that recipe—I think we used tilapia when we baked it.
+[HUPW]	CG:	Yeah, it would taste better baked anyway.  It doesn’t taste great fried.
+[SO]	CHW:	It’s a little too thin for frying.
+[HUPW]	CG:	Yeah, and I don’t like it fried.  =
+[SO]	CHW:	It’s okay, but it’s a little too thin.
+[HUPW]	CG:	I like it baked with lemon and pepper.
+[SO]	CHW:	Mm-hmm.
+[CHT+]	CG:	Stuffed turkey burgers.  Well, you like that.  You eat spinach; I don’t.
+[GINFO-]	CHW:	Oh, you can stuff them with anything, though.  It doesn’t, you know, and they’re less =
+[HUPW]	CG:	Mango salsa and baked tortillas.
+[SD]	CHW:	My favorite.  You like to cook?
+[CQTBN]	MISSING TEXT
+[HUPW]	CG:	Who?
+[CQTBN]	CHW:	You guys like to cook?
+[HUPW]	PT:	I do {0:01:42}.
+[HUPW]	CG:	She do.
+[SO]	CHW:	Okay.  Great.
+[HUPW]	CG:	Grilled fruit.
+[SO]	CHW:	Oh, oh, yeah, which is really good.
+[HUPW]	CG:	White chocolate craisins, oh energy bar.
+[SO]	CHW:	Mm-hmm.
+[HUPW]	CG:	I don’t eat raisins.  Okay.
+[GINFO+]	CHW:	Oh, I’ll be bringing recipes if you don’t mind when I come at different times.
+[CHT+]	CG:	Oh, yeah.  No, I don’t mind.
+[CQTBN]	CHW:	Okay.  So I, well, you know, I got my recorder here.  So and you remember everything is confidential?
+[LUP+]	CG:	Right.  Mm-hmm.
+[GINFO+]	CHW:	Okay.  So it—nothing—the information won’t be used for anything other than what you signed for when you signed up with the consent form.  Okay?
+[LUP+]	CG:	Okay.
+[GINFO+]	CHW:	We work together in the program.  So it’ll be you, me, and your mom working together to help you figure out the best way to lose weight for you.  What do you remember about the program from when you signed up?
+[EA]	MISSING TEXT
+[CQTBN]	MISSING TEXT
+[LUP+]	PT:	Uh.  I don’t know.
+[CQTBN]	CHW:	You don’t remember anything?  Okay.
+[LUP+]	PT:	No, I mean not really.
+[SO]	CHW:	Okay.  Well.
+[HUPW]	CG:	It was a lot of paperwork.
+[LUP+]	PT:	Mm-hmm.
+[LUP+]	CG:	Yeah.
+[CQTBN]	CHW:	[laughs] Okay, you guys signed a lot of paperwork?
+[HUPW]	CG:	Yeah, it was paperwork, and she was basically just telling us that…helping her lose the weight and working as a team and just ain’t too much.  I could show her the nutritional way to, you know, prepare the foods or eat the foods correctly and we help each other and changing the diet, getting her back active to where she needs to be.  And that’s pretty much.
+[CQTBN]	CHW:	Pretty much it?
+[LUP+]	CG:	Mm-hmm.
+[SS]	CHW:	Okay.  Okay.  Yeah.  And that’s true.  We will be meeting with, working together.  We’ll be meeting with the dietitian at our next session, and you’ll learn some things about healthy eating =
+[SANDWICH]	CG:	Right.
+[SANDWICH]	CHW:	= and physical activity because there will be two sessions with Jenny, the dietitian.
+[SANDWICH]	CG:	Oh, okay.
+[SANDWICH]	CHW:	And how it works is that, well, excuse me.
+[SANDWICH]	CG:	That’s okay.
+[SANDWICH]	CHW:	I will—we do—I’ll come back—we’ll come back.  I’ll get those appointments scheduled today.
+[SANDWICH]	CG:	Okay.
+[SANDWICH]	CHW:	And in between those sessions with the dietitian, I’ll come back, and we’ll do a review, make sure that everybody understands everything that was taught, okay?
+[SANDWICH]	CG:	Mm-hmm.
+[SANDWICH]	CHW:	And then after the second session, I’ll do another review, and we will—then we’ll start really concentrating on your weight loss.  But first, we want to get that information down pat =
+[SANDWICH]	CG:	Right.
+[SANDWICH]	CHW:	= about healthy eating and physical activity, and then we’ll start building your skills to help you lose weight.
+[LUP+]	CG:	Okay.
+[CQTBN]	CHW:	Any questions so far?
+[LUP+]	PT:	No.
+[SS]	CHW:	Okay.  I’d like to meet with Xxxx alone for a few minutes.
+[SANDWICH]	CG:	Oh, okay.
+[SANDWICH]	CHW:	Okay, so we’ll =
+[HUPW]	PT:	Go in there?
+[CQTBN]	CHW:	Go in here? Okay.  Sure. [pause]  Okay.  So Xxxx, tell me a little about yourself.
+[CQO]	MISSING TEXT
+[SO]	CHW:	Got a pretty smile. [laughs]
+[LUP+]	PT:	I don’t know.
+[OQO]	CHW:	Just tell me.  How old?  School?
+[HUPO]	PT:	Fifteen.  I’m going to ninth grade.
+[CQO]	CHW:	Oh, you’re 15?
+[LUP+]	PT:	Yeah.
+[SO]	CHW:	Okay.
+[HUPO]	PT:	I’m going to Ben Carson.
+[CQO]	CHW:	Ben Carson?  Where is that at?
+[HUPO]	PT:	It’s the old {0:05:24} behind {0:05:25}.
+[CQO]	CHW:	Oh, they renamed it?
+[LUP+]	PT:	Mm-hmm.
+[CQO]	CHW:	Okay.  So what do they specialize in?
+[HUPO]	PT:	Medicine and science.
+[HUPO]	CHW:	Okay.
+[HUPO]	PT:	I think it’s like a vo-tech.  No.  Something like that, yeah.
+[CQO]	CHW:	Yeah, so.  So what’s your interest?
+[HUPO]	PT:	But it’s no—dentistry.
+[CQO]	CHW:	Dentistry?
+[LUP+]	PT:	Yeah.
+[SO]	CHW:	Okay.
+[CHT+]	PT:	Be a dentist.  Um…I like doing sports.  I like soccer.  I like volleyball.  I like basketball a little bit, but not that much.
+[OQTBN]	CHW:	Okay.  So what do you play now?
+[HUPW]	PT:	Nothing.
+[CQTBN]	CHW:	Nothing?  Why not?
+[OQECHT-]	MISSING TEXT
+[AMB0]	PT:	I just don’t like—I mean, I like playing sports, but I just don’t play them.
+[SO]	CHW:	Oh.
+[HUPW]	PT:	Like ‘cause at school, I used to play basketball all the time.
+[CQECML+]	CHW:	Okay.  Do you plan on signing up for the girls’ basketball team when you start school?
+[CHT-]	PT:	No, it’s just they don’t have sports.  You know, they don’t even have gym.
+[GINFO+]	CHW:	That’s right—because they go half a day.  That’s right.  Yep.  I remember.  My nephew went there when it was Crockett and they didn’t play base- basketball there.  And he loves basketball.
+[HUPW]	PT:	Yeah.  I think they trying to…do something.  I don’t know.  But they don’t have no gym at all.
+[SO]	CHW:	So you’ll be going there half a day and going someplace else the other half of the day.
+[LUP-]	PT:	No.
+[CQO]	CHW:	No?
+[HUPO]	PT:	We get out at like 3:15.
+[SO]	CHW:	Oh, okay.
+[LUP+]	PT:	Yeah.
+[OQTBN]	CHW:	Okay.  So.  Okay.  So tell me.  How do you feel about your weight?
+[AMB0]	PT:	I feel like—I don’t know.  It’s not really a problem, but it is, like—I just feel like people—not people that—other people that, like—the skinnier people—they got better clothes than we do.
+[AMB0]	PT:	That’s what I want to say.  That got better clothes, and it’s not that much money for them than me.
+[RAMBS]	CHW:	So on one hand, you don’t feel it’s much of a problem, but on the other hand, you’d like to wear some skinny clothes, huh? [laughs]
+[CHT+]	PT:	Yeah.  They got better clothes.
+[RCHT+S]	CHW:	Yeah.  You can find more stuff in those little bitty sizes.  That is true.
+[CHT+]	PT:	Yeah.  More cuter stuff.
+[CQECHT+]	CHW:	Okay.  So you want to lose weight so you can wear the pretty clothes?
+[CHT+]	PT:	Yeah.
+[CQECHT+]	CHW:	Okay.  [laughs] Any other reason?
+[CHT+]	PT:	And I want to go up the stairs without getting short of breath, too.
+[AFL]	CHW:	Okay.  That’s a good reason.
+[CHT+]	PT:	‘Cause they’ve got a lot of stairs, and shoot.
+[CQECHT+]	CHW:	Okay.  So you feel that if you lose the weight, you’d be able to navigate the stairs better?
+[CHT+]	PT:	Yeah.
+[GINFO+]	CHW:	Can I tell you something?
+[HUPW]	PT:	Hmm?
+[GINFO+]	CHW:	You’re right.  You will be able to.  I’ve lost weight, and I can navigate the stairs better. =
+[CHT+]	PT:	Yeah, it’s not that much =
+[GINFO+]	CHW:	It’s not as hard.
+[SANDWICH]	PT:	= out of breath, yeah.
+[SO]	CHW:	You’re not as out of breath, and now I can actually go from the basement of my house all the way upstairs to the second floor without being out of breath, and that feels good.  I notice, I’m like hey, “I’m losing, knew I was losing weight,” then I realized, yeah.
+[RCHT+C]	CHW:	And you have more energy, too, so, =
+[SANDWICH]	PT:	Yeah.
+[CQTBN]	CHW:	= you know.  Yeah.  That’ll give you energy to play soccer and basketball and all of those sort of things.  Okay.  So you know we’ll be meeting twice a week?
+[LUP+]	PT:	Mm-hmm.
+[CQTBN]	CHW:	Okay.  Do you know why we meet like that?
+[HUPW]	PT:	So you can get a sense of what I’m doing?
+[GINFO+]	CHW:	Well, yeah.
+[LUP+]	PT:	Or, yeah.
+[GINFO+]	CHW:	It will provide a sense of what you’re doing, but just—remember, just like I was saying how you’ll be meeting with Jenny, the dietitian and then I’ll come back and do a review?  That’s the way our program works.  You’ll meet—okay.  After you’ve done the two sessions—we’ve done those four sessions.  I’ll come in, and I’ll do a skills session and teach you something about losing weight.  Then I’ll come back and do a review just to make sure I didn’t miss anything, and that we’re all on the same page, and we’ll continue like that throughout the whole program.
+[SS]	MISSING TEXT
+[SANDWICH]	PT:	Mm-hmm.
+[SANDWICH]	CHW:	Okay?  The program is six months long.
+[LUP+]	PT:	Okay.
+[GINFO+]	CHW:	Okay?  And you know, you’ll—three of us will be working together.  Do you know why?
+[CQTBN]	MISSING TEXT
+[LUP+]	PT:	No.
+[GINFO-]	CHW:	Any id-, okay, well, because your mom’s going to be your biggest supporter.  You know, we’ll be working together, but there will be things that she’ll be able to help you with because she’s here with you all the time.  So she’ll be able to help you do certain things, like prepare your—prepare the meals and make, you know, healthy choices and things like that.  So that’s why we’ll work together, okay?  And there will be some assignments for you to do.  And they’re easy.  You know?  Just a few assignments, okay?
+[GINFO+]	MISSING TEXT
+[LUP+]	PT:	Okay.
+[OQEF]	CHW:	And so, what do you think so far?
+[CHT+]	PT:	I’m all for it.
+[CQECHT+]	CHW:	You’re all for it?
+[CHT+]	PT:	Yeah.
+[CQECHT-]	CHW:	Okay.  Great.  And so, what—is there anything you think that might keep you from doing the program?
+[CHT+]	PT:	No.
+[CQECHT+]	CHW:	No?
+[CHT+]	PT:	Nothing.
+[OQECHT-]	CHW:	What about when school starts?
+[CML+]	PT:	I’m going to work around it.
+[CQECML+]	CHW:	You’ll work around it?
+[CHT+]	PT:	Yeah, because I think some days we get out at two, like ‘cause they sent us a—what do they call that?  Like a =
+[CQO]	CHW:	Orientation packet or something maybe or?
+[HUPO]	PT:	Yeah.  Like it showed us like our schedule, but like—what do they call that?
+[CQO]	CHW:	Schedule?
+[HUPO]	PT:	Example?
+[CQO]	CHW:	Oh, an example?
+[HUPO]	PT:	One example.
+[CQO]	CHW:	A sample schedule maybe?
+[HUPO]	PT:	Yeah, sample.
+[SO]	CHW:	Okay.
+[CHT+]	PT:	I get that, but yeah.  Like they say at two something, and some days, at three.
+[SO]	CHW:	Okay.
+[HUPW]	PT:	But I don’t know if that’s for sure.
+[GINFO+]	CHW:	Yeah, you’ll find out sure—I’m sure that first week.
+[LUP+]	PT:	Yeah.
+[CQO]	CHW:	So what’s your favorite subject?
+[HUPO]	PT:	I like science.
+[SANDWICH]	CHW:	Alright.  Okay.
+[SANDWICH]	PT:	I’m like a B in math, but it’s not my favorite.
+[CQO]	CHW:	It’s not your favorite?  But you like science.
+[ROS]	MISSING TEXT
+[LUP+]	PT:	Mm-hmm.
+[SO]	CHW:	Okay.  Well, I guess, if you plan on being a dentist, that’ll come in handy. [laughs]
+[LUP+]	PT:	Yeah.
+[SUM]	CHW:	Okay.  So you want to lose weight so that you can wear the pretty clothes [laughter] and so that you won’t be out of breath and you’ll have more energy when you’re going up and down the stairs and things like that.
+[LUP+]	PT:	Mm-hmm.
+[CQECHT+]	CHW:	Anything else?
+[CHT+]	PT:	I want to lose it because I’ve been like this—well, I kind of got bigger, not smaller.  But I want to get smaller because I’ve always been big but not like too big.  But like, I want to be skinnier.  Well, not skinny but like, thinner.
+[RCHT+C]	CHW:	You want to be thinner.
+[SANDWICH]	PT:	Yeah.
+[SANDWICH]	CHW:	Okay.  You want to be at a healthy weight.
+[CHT+]	PT:	Yeah.
+[SANDWICH]	CHW:	Okay.
+[SANDWICH]	PT:	For my age.
+[RCHT+S]	CHW:	For your age.  Okay.  Great.  That’s a good goal.  And you know, I ain’t going to promise you that you’re going to get skinny in the next six months but you can be on the road to getting there.
+[AF]	MISSING TEXT
+[GINFO+]	MISSING TEXT
+[SANDWICH]	PT:	Okay.
+[SANDWICH]	CHW:	Okay?  So…and we’ll make—we’ll come up with a plan that’s going to work for you.  Okay?
+[SANDWICH]	PT:	Okay.
+[CQTBN]	CHW:	Not something that worked for somebody else, but this—the plan that we come up with to work on for the next six months—that’ll be a plan that’s especially for you to help you get on track and—because, the main thing is, if you know what to do, you can do better.  Right?
+[LUP+]	PT:	Mm-hmm.  Yeah.
+[GINFO+]	CHW:	So we will, you know, we’ll give you the education and the skills so that you can do better.  Okay?  And start on—get started on that image of yourself that you have for the future of being thinner.  With this program, it’s—we look at a healthy weight loss of—as being one to two pounds a week.  So after we start our, you know, sessions and stuff and you really start focusing on weight loss, you can probably lose a—quite a few pounds between the—during the next six months if you’re really motivated and you put your…
+[HUPW]	PT:	Effort into it.
+[GINFO+]	CHW:	That’s right.  Okay.  I could see you losing maybe 30 pounds or so.  How does that sound to you?
+[OQEF]	MISSING TEXT
+[CHT+]	PT:	That sounds good.
+[CQECHT+]	CHW:	That sounds good?  Okay.  And that’s a good start because you know how many pounds it takes to lose—to get into a new dress size?
+[AFL]	MISSING TEXT
+[CQTBN]	MISSING TEXT
+[LUP+]	PT:	No.
+[GINFO-]	CHW:	Twenty.  What size dress you wear now?  What size you wear now?
+[CQTBN]	MISSING TEXT
+[HUPW]	PT:	Either a 22 or a 24 probably.
+[GINFO-]	CHW:	Okay.  So if you lose 20 pounds, you’ll be a size smaller.
+[HUPW]	PT:	I don’t even know what size I’m in now.
+[GINFO+]	CHW:	Well, pants—what size—whatever size your pants are, that’s your size.
+[HUPW]	PT:	These are 24.
+[GINFO-]	CHW:	Okay.  So you lose 20 pounds, that’ll put you down to a size—was it 22, 24 or?
+[CQTBN]	MISSING TEXT
+[HUPW]	PT:	It’s both.
+[GINFO+]	CHW:	Okay.  That’ll put you down a size then, to a 20 probably.
+[CHT+]	PT:	I want to get like to a s-…
+[CQTBN]	CHW:	To a 16?
+[LUP-]	PT:	No.
+[CQTBN]	CHW:	To a what?
+[HUPW]	PT:	I mean like they go—all of the sizes like I know there’s 16—they consider that plus size, too.  I don’t consider that, but.
+[GINFO-]	CHW:	Sixteen is considered plus size.  Four—well
+[HUPW]	PT:	So it’s four—no.  Then it’s—they go up, like four…{0:15:38} =
+[GINFO+]	CHW:	There’s sizes 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22
+[CHT+]	PT:	Oh.  Well, I want to get to…probably eight.
+[CQECHT+]	CHW:	Size eight?
+[CHT+]	PT:	Mm-hmm.
+[GINFO+]	CHW:	Okay.  We can get you on the path to get there.  But like I said, you’re not going to get there in the next six months.
+[GINFO-]	MISSING TEXT
+[SANDWICH]	PT:	Yeah.
+[SANDWICH]	CHW:	If you did, you’d be sick and in the hospital because that would be too much weight to lose =
+[HUPW]	PT:	At one time?
+[GINFO+]	CHW:	= at one time.  But we can get you on that path to getting you down to that size 8.  How does that sound to you?
+[OQEF]	MISSING TEXT
+[CHT+]	PT:	Good.
+[GINFO-]	CHW:	Okay.  Great.  ‘Cause it’s going to take a while.  You didn’t get this size overnight.  You’re not going to lose it overnight.
+[LUP+]	PT:	Yeah.
+[GINFO+]	CHW:	Okay?  But you will—you’ll learn how to lose the weight and how to keep it off, okay?  And we’ll take it from there.
+[LUP+]	PT:	Okay.
+[SO]	CHW:	Maybe—I don’t know.  I don’t know how long it takes it get to a size eight.  I haven’t been a size eight in I don’t know how long, so.  [laughter]  I’m just trying to get down to a size 12.  So.
+[CHT+]	PT:	Yeah, or that’s good.  Or that’s good for me, too.
+[GINFO-]	CHW:	It might be, you know.  And you’re still growing, you know?
+[SANDWICH]	PT:	Mmm.
+[SANDWICH]	CHW:	So even though you’ll be losing weight, you’ll be getting taller ‘cause you’re tall now.
+[SANDWICH]	PT:	Yeah.
+[SANDWICH]	CHW:	You’ll probably get taller.
+[HUPW]	PT:	‘Cause my cousin, Xxxx, she’s skinny.  Like she’s bony, and she’s real tall.
+[HUPO]	CG:	Please don’t get taller, that means your feet get longer.
+[HUPO]	PT:	I thought your feet get smaller.
+[GINFO+]	CHW:	When you lose weight, sometimes you do lose weight in your feet.
+[HUPW]	CG:	Yeah.  They shrink, but…
+[GINFO+]	CHW:	Yeah.  You might lose weight in your feet.
+[HUPW]	PT:	{0:17:22} face.  But my feet like a 11.
+[SO]	CHW:	Mmm, well, you, I don’t know
+[HUPO]	CG:	You a tall girl, baby.
+[ROS]	CHW:	Yeah.  You’re a tall girl, so.  But, yeah.  You’ll get taller.  You’re still growing.  So you’ll lose some weight, you’ll get taller, and you’ll thin out like that, and you’ll continue to lose weight, and then you’ll start to slim down.
+[GINFO-]	MISSING TEXT
+[HUPW]	PT:	Yeah, if I wasn’t tall, I would have been like real big.  Short.  I wouldn’t have all that stomach now.  But good thing I’m tall.
+[SO]	CHW:	Okay.  [laughter]
+[HUPO]	CG:	Are you making fun of short people?
+[LUP+]	PT:	Yeah.
+[LUP+]	CG:	Okay, I got you.  {0:18:01} =
+[SO]	CHW:	I’m short too.
+[RCHT+S]	CHW:	So it sounds like you’re really motivated, okay?  I’m looking forward to working with you, and we’ll get started.  Hopefully we can meet again this week and—with the nutritionist—and we’ll get—that’ll, the sooner we start meeting regularly, sooner you’ll start losing weight.  Okay?
+[GINFO+]	MISSING TEXT
+[CHT+]	PT:	I like that.
+[CQTBN]	CHW:	Okay.  Any questions about anything?
+[HUPW]	PT:	Do we work with equipment?
+[CQTBN]	CHW:	Mmm, for exercise?
+[LUP+]	PT:	Yeah.
+[CQTBN]	CHW:	Is that it?  Okay.  Well, I don’t have any equipment.  This isn’t—you think we’re going to be working out?
+[GINFO+]	MISSING TEXT
+[CQTBN]	MISSING TEXT
+[LUP+]	PT:	Mm-hmm.
+[GINFO+]	CHW:	I can show you some different routines and things like that, and I think people—because the name of the project is Fit Families, people think that we’re going to be working out constantly with them, but no.  What we’ll do is I can show you some exercises, things like that, and you don’t need equipment to work out.
+[LUP+]	PT:	I know.
+[CQECHT+]	CHW:	Okay.  Is that something that you’re interested in?  Just =
+[CHT+]	PT:	Yeah.
+[CQECHT+]	CHW:	= working out with equipment?  Do you have any equipment?
+[CQTBN]	MISSING TEXT
+[HUPW]	PT:	No.
+[CQTBN]	CHW:	No?
+[HUPW]	CG:	There’s a bike downstairs {0:19:19}.
+[HUPW]	PT:	Xxxx messed it up.  He spray-painted it, and he—I think he blew the tires {0:19:25}.
+[HUPW]	CG:	Not your bike bike.
+[LUP+]	PT:	Yes.
+[HUPW]	CG:	The exercise bike downstairs by—in the laundry room.
+[HUPW]	PT:	No.  That don’t work.
+[HUPW]	CG:	Yeah, you’ve got to plug it up.
+[HUPW]	PT:	It don’t work.
+[LUP+]	CG:	Okay.
+[CQTBN]	CHW:	Oh, it doesn’t work?
+[HUPW]	PT:	No.  It’s retarded.
+[ADV-]	CG:	Well, you’re just going to be lifting weights with your brother.
+[CQTBN]	CHW:	Is there weights down there?
+[HUPW]	PT:	No.
+[CQTBN]	CHW:	No?  Well…
+[CHT+]	CG:	She want to join the gym.
+[SANDWICH]	CHW:	Oh, you =
+[SANDWICH]	CG:	She want to go to Fit—Planet Fitness.
+[CQECHT+]	CHW:	Planet Fitness?
+[CML+]	CG:	Whatever that place is.  I told her she can do that and this.  I think a membership is like $20 or something like that.
+[GINFO+]	CHW:	They don’t have the—well, I’ve got a $10 membership.  But then, I was talking to my sister because my niece—she took her up there.  She was saying that they had sort of changed it, so I’m not sure if they still have a $10 membership.
+[HUPW]	CG:	Oh, okay.  Maybe it was $10 if you know somebody already.  I don’t know.
+[GINFO+]	CHW:	Well, I joined right after they opened up, and that was their big push, you know, $10 for one person. =
+[SANDWICH]	CG:	Right.
+[CQTBN]	CHW:	= Twenty dollars if you—and you could bring a friend but my sister was just telling me that they sort of changed it a little bit, so I’m not really sure how it works anymore.  But you don’t need a gym.  And if you want some equipment—you drink milk?
+[HUPW]	PT:	Yeah.
+[SO]	CHW:	Okay.
+[ADV+]	CG:	Go to the =
+[SANDWICH]	PT:	I mean
+[SANDWICH]	CG:	= also right here by—off of {0:20:59}, the Northwest Activity Center?  They have, well, you can do water aerobics and stuff like that.
+[AMB-]	PT:	That’s what you want to do. [laughs] But I’m real healthy.  I just don’t work out.  I mean like exercise.
+[CON]	CHW:	Well, exercise is part of the program, you know, because it does help you out.  But can I give you some advice—information on how to get you some equipment?
+[GINFO+]	MISSING TEXT
+[LUP+]	PT:	Mm-hmm.
+[CQTBN]	CHW:	Milk—you drink milk?
+[HUPW]	PT:	Yeah.
+[CQTBN]	CHW:	You buy gallons?
+[GINFO+]	CHW:	Two milk jugs, fill them up with water, and those can be your weights.
+[HUPW]	CG:	That’s true.
+[LUP+]	PT:	Yeah.
+[SO]	CHW:	It does not =
+[ADV+]	CG:	You can do it in a chair.
+[SANDWICH]	CHW:	Mm-hmm.
+[SANDWICH]	CG:	By lifting, doing leg {0:21:41} =
+[SO]	CHW:	And =
+[HUPW]	CG:	That’s what they want me to do {0:21:43} =
+[CHT-]	PT:	I can’t do that.
+[GINFO+]	CHW:	And when I come back—‘cause I don’t think I have it in my—I know I don’t ‘cause I sort of took a bunch of stuff out of my bag.  When I come back, I will bring you, if you’d like, a DVD and an exercise booklet.
+[CHT+]	PT:	Yeah.
+[GINFO+]	CHW:	Okay.  For some exercises so you can get started, and then we’ll get started on creating a plan for you to do physical activity.  Okay?
+[LUP+]	PT:	Yeah.
+[CQECHT+]	CHW:	Does that sound good?
+[CHT+]	PT:	Yeah.
+[GINFO+]	CHW:	Okay, because you don’t need equipment.  You know, one of the best—do you know what one of the best exercises is?
+[CQTBN]	MISSING TEXT
+[LUP+]	PT:	No.
+[GINFO+]	CHW:	Walk.
+[GINFO+]	CHW:	You’ve got two feet.  That’s the equipment right there.
+[CHT-]	PT:	Ugh.  And I got lazy.
+[CON]	CHW:	Well, you can’t fit in those skinny dresses being lazy.  [laughs] But walking—it really is.  And you got a dog,  you can take your dog for a walk.  You got a dog?
+[GINFO+]	MISSING TEXT
+[ADV+]	MISSING TEXT
+[CQO]	MISSING TEXT
+[LUP+]	PT:	Mm-mm.
+[ADV+]	CHW:	You can take yourself for a walk.  Is there a track or anything?  Is there a school?
+[CQTBN]	MISSING TEXT
+[HUPW]	PT:	At the old house, there was a track.
+[HUPW]	CG:	{0:22:51} lots of people talk about that.
+[HUPW]	PT:	Ma, it was.
+[HUPW]	CG:	There’s a park up the street.
+[HUPW]	PT:	I never seen it.  But anyway, at the old house, there was a track behind my school.
+[SO]	CHW:	Right there is a, there’s a school, I don’t…
+[HUPW]	CG:	{0:23:08} and Dearborn there’s a track.
+[RC]	CHW:	Oh, yeah, on Fort Road, yeah.  There’s one there, but that’s a little distance, so you don’t have to have a track but I think they have one at the Northwest Activity Center, and also…you’re not that far from Renaissance High School, right?
+[GINFO+]	MISSING TEXT
+[CQTBN]	MISSING TEXT
+[LUP+]	PT:	I don’t know.  I don’t know about it.
+[CQO]	CHW:	Oh, you guys just moved over here?
+[HUPW]	CG:	What school you said?
+[CQTBN]	CHW:	Renaissance High?
+[HUPW]	CG:	Right there.
+[LUP+]	PT:	Oh.
+[CQTBN]	CHW:	Yeah.  Don’t they have a track?
+[LUP+]	PT:	Um
+[GINFO+]	CHW:	I think they should have one.  Yeah.
+[ADV+]	CG:	You could walk around the neighborhood.  That’s a track.
+[ADV+]	CHW:	Yeah.  You can—you can just walk =
+[HUPW]	CG:	Walking up to that Greenfield Market =
+[SANDWICH]	PT:	That’s a track. [laughs]
+[SANDWICH]	CG:	= and walk back.  That’s a whole block.  That’s three blocks.  Look.  Let me see.  It’s Lee, one, two, three—that’s three blocks.  You do them three blocks every day back and forth, you’re going to did, well, how many miles would that consist of?
+[GINFO-]	CHW:	I don’t think that’s any miles [laughs].
+[HUPW]	PT:	That’s not a mile, Mom.
+[HUPW]	CG:	Do you, I mean, like—they ain’t short blocks, though.
+[GINFO-]	CHW:	No, but it’s not a mile.
+[CHT+]	CG:	Oh.  Well, that’s a start.
+[ROS]	CHW:	It is.  It’s a start.  Walking—like I said, walking is actually one of the best exercises you can get, and you don’t need any equipment for it.  So we can’t use that as an excuse not to work out.  =
+[GINFO-]	MISSING TEXT
+[LUP+]	PT:	Work out.
+[CQTBN]	CHW:	You have a jump rope?
+[LUP+]	PT:	No.
+[GINFO-]	CHW:	That’s good exercise.  You can make one from a clothesline.  You can buy one at the dollar store.  That’s a really good piece of equipment.  Can I give you some information?
+[GINFO+]	MISSING TEXT
+[LUP+]	PT:	Yeah. [laughs]
+[GINFO-]	CHW:	One of my teens, she started jumping rope, and the pounds started melting.  She’s lost about 20-some pounds since she started jumping rope.
+[HUPW]	CG:	That’s good.
+[HUPW]	PT:	That’s a lot.
+[GINFO+]	CHW:	It is.  And that’s a piece of equipment that’s inexpensive.  You can buy a jump rope at the dollar store or K-mart or Family Dollar or someplace, you know.
+[SANDWICH]	PT:	Mm-hmm.
+[CQTBN]	CHW:	And just jump rope.  If you want some equipment and something to do, that’s a piece of equipment that’s affordable, and you ever see boxers training?
+[LUP+]	PT:	Yeah.
+[OQTBN]	CHW:	What do you see them doing?
+[HUPW]	PT:	Jump roping.
+[ROS]	CHW:	Yeah.  Jumping rope.  That’s right.  And it’ll help build your stamina so that you don’t get tired going up and down the stairs.  You may only be able to jump rope for 5 or 10 minutes at a time when you start, but then, the more you do it, just like anything else, the better you’ll get.  Okay?  So to answer your question, no, there is no equipment in the program, but you can make your own equipment or do without the equipment.  I mean, ‘cause you’ve got—you do have equipment.  You got your feet.
+[GINFO+]	MISSING TEXT
+[SANDWICH]	PT:	Yeah.
+[CQTBN]	CHW:	And that’s a good piece of equipment right there.  Okay.  Any more questions?
+[LUP+]	PT:	No.
+[SO]	CHW:	Okay.
+[LUP+]	PT:	Mm-mm.
+[SO]	CHW:	I want to meet with your mom, and we’ll get the next appointment scheduled, and so you can get all your, you know, get you started, okay?
+[LUP+]	PT:	Okay.
+[SO]	CHW:	Okay.
+[SO]	CHW:	Okay.
+[CON]	CHW:	So wasn’t as private, but [laughs]
+[HUPW]	CG:	No, that’s okay.  {0:26:47} =
+[OQTBN]	CHW:	So tell me, how do you feel about her weight?
+[CHT+]	CG:	I don’t want her to be me.
+[SO]	CHW:	Okay.
+[HUPW]	CG:	I say—I try to tell her to get up and do stuff and don’t sit around the house.  {0:26:58}, “This ain’t the old neighborhood.”  “Don’t matter.”  Get out and do something.  When I was her age, I still did something, but I still gained the weight.  I was active; I did everything.  My mother always baked stuff but still, I gained weight.
+[SO]	CHW:	Okay.
+[CHT+]	CG:	So but I don’t want her to be, to having to be dependent like I am at this part of my life.  On her kids, when she get kids or on other people to have to do stuff for her.  So that’s why I want her to be more active =
+[SANDWICH]	CG:	= and be independent.
+[CHT+]	CG:	Yeah, but I do.  I do.  I want her to be better.
+[CQO]	CHW:	So you guys just moved over here and you’re not familiar {0:27:54} =
+[HUPW]	CG:	We’ve been over here almost two years.
+[SANDWICH]	CHW:	Oh.
+[SANDWICH]	CG:	Right.  We ain’t—she just don’t go outside.  Neither does my 18-year-old.  He doesn’t, but he wants me to get him some weights so he can start—boys are easier to lose weight than girls.
+[CON]	CHW:	Uh…
+[LUP+]	CG:	I don’t know.
+[GINFO-]	CHW:	I don’t know about that [laughs]
+[HUPW]	CG:	I mean, well, he got—I guess he getting his growth spurt.
+[GINFO+]	CHW:	Okay, yeah.  They do have those growth spurts. =
+[HUPW]	CG:	So that’s right.  And his—she’s been tall, but by him getting his growth spurt, he doesn’t look as chunky as he used to.
+[SO]	CHW:	Okay.
+[CHT+]	CG:	So I just want them to be better and healthier.
+[HUPW]	PT:	He always been skinny.  ‘Cause he’s {0:28:36}.
+[RCHT+S]	CHW:	Okay.  So you want her to be healthier.
+[CHT+]	CG:	Right.
+[AFL]	CHW:	And that’s great, you know?  And this program—it is—we teach healthy habits.
+[GINFO+]	MISSING TEXT
+[SANDWICH]	CG:	Right.
+[SANDWICH]	CHW:	So you’ll, you know, healthy eating habits, things about physical activity—those are things that she will be learning—you guys will be learning in the program.
+[SANDWICH]	CG:	Okay.
+[SANDWICH]	CHW:	Which will help everybody in the family. =
+[HUPW]	CG:	Yeah.  Everybody in here, ‘cause my mom—we come from an obese family.
+[SANDWICH]	CHW:	Okay.
+[SANDWICH]	CG:	And but I’m the heaviest of all, of my—I have a skinny sister.  I got—two other sisters and me are diabetics.
+[SANDWICH]	CHW:	Okay.
+[SANDWICH]	CG:	My brother—he ain’t no big dude, either but, you know, he can =
+[HUPW]	PT:	He got a belly.
+[SANDWICH]	CG:	Yeah.
+[SANDWICH]	PT:	Just a little bit.
+[CML+]	CG:	Little belly, not a lot but, yeah.  But I’m the heaviest of them.  All of them.  So what we learn, we will take back to them.
+[SANDWICH]	CHW:	Right, yeah.
+[SANDWICH]	CG:	So.  I mean, we’re teammates.
+[CML+]	PT:	Yeah.
+[HUPW]	CG:	How do we spell it?
+[HUPW]	PT:	T-E-A-M  [laughter]
+[SO]	CHW:	You guys have the same smile.
+[HUPO]	PT:	No, mine’s better.
+[LUP+]	CG:	Oh, boy.
+[SS]	CHW:	Oh, boy.  Oh, {0:29:56}.  And so, like I was saying, you know, the program is six months long, and we will be working together as a team, =
+[SANDWICH]	CG:	Right.
+[SANDWICH]	CHW:	= just like you just said.  And there will be some—we’ll be meeting twice a week.
+[LUP+]	CG:	Okay.
+[GINFO+]	CHW:	Okay?  And there will be some assignments for both of you guys to do.  And it won’t be that bad or anything, you know.  But our next session is with the dietitian, so I’d like to schedule that, and I’d like to schedule it for this week if possible.
+[SS]	MISSING TEXT
+[SANDWICH]	CG:	Okay.
+[SANDWICH]	CHW:	She’s available Saturday.
+[HUPW]	CG:	What’s Saturday?
+[SO]	CHW:	Saturday is—I’ve got my =
+[HUPW]	CG:	The third?
+[SO]	CHW:	Let’s see.
+[HUPW]	CG:	They haven’t even did the blood draw yet. =
+[HUPW]	PT:	I know I’m not available August 21st.
+[SANDWICH]	CG:	I know that.
+[SANDWICH]	PT:	Got the orientation.
+[HUPW]	CG:	We ain’t, yeah, she got orientation for school.
+[SCH]	CHW:	No, the fourth is the Saturday.
+[HUPW]	CG:	The fourth?
+[SCH]	CHW:	Mm-hmm.
+[LUP+]	CG:	Okay.  Okay.
+[SCH]	CHW:	In the morning?  Let me just send her a text and see if she’s still got times available.
+[HUPW]	CG:	Yeah, it should be alright.
+[SCH]	CHW:	Okay. [pause]  What—would like 10 o’clock in the morning be a good time for you guys?
+[HUPW]	CG:	Ten, Xxxx?
+[HUPW]	PT:	In the morning?
+[LUP+]	CG:	In…
+[SCH]	CHW:	Yeah.
+[HUPW]	PT:	I got to set my alarm clock.
+[HUPW]	CG:	Ten will be good for me.  I’ll be up by that time.
+[LUP+]	PT:	Okay.
+[SCH]	CHW:	Let me just make sure she’s still available on that time.
+[HUPW]	PT:	It’s so early.
+[CQTBN]	CHW:	So early?
+[HUPW]	PT:	I like that picture.  Mom, smell like my meat done.  I think it’s done.  It came off.
+[HUPO]	MISSING TEXT
+[HUPO]	MISSING TEXT
+[HUPO]	CG:	Oh, did it?
+[LUP+]	PT:	Yeah.
+[HUPO]	CG:	Turn the oven off.  Then I’ll put the barbecue sauce on it.  I made me some—what’d you call them?  Country style ribs?
+[HUPO]	PT:	It look like {0:32:17} or something to me.
+[HUPO]	CG:	They in the oven.
+[SO]	CHW:	Oh, okay.
+[CML+]	CG:	I’ve been draining that fat off of them, put a little barbecue sauce on them =
+[SANDWICH]	CG:	= {0:32:25}.  And I made the vegetables.
+[SO]	CHW:	{0:32:31} the glasses on so I can see {0:32:33} =
+[HUPW]	CG:	It’s not only what you eat; it’s how you eat it.
+[GINFO+]	CHW:	That is so true.
+[HUPW]	CG:	Yeah, you could have anything you want in moderation.  And that’s what {0:32:41} =
+[GINFO+]	CHW:	Portion size.  That’s right.
+[HUPW]	CG:	Right.  And I tell her—I say, “Well, we could get a scale.”  But they usually say like something palm size or something =
+[ROC]	CHW:	Palm of your hand.
+[HUPW]	PT:	But I don’t eat a lot of foods like
+[HUPW]	CG:	But see, you—eating it also is dangerous.  I mean not good, not healthy because like okay.  Let me tell you for instance, ‘cause I learned that in diabetic class.
+[SANDWICH]	PT:	Mmm. [laughs]
+[SANDWICH]	CG:	You have to have nutrition.  Like Xxxx was not eating pro—beef meat.  That’s protein.
+[HUPW]	PT:	I eat beef meat.  I eat beef meat.
+[HUPW]	CG:	Well, I’m just saying.  Beef meat is protein.
+[HUPW]	PT:	I eat beef.
+[GINFO-]	CHW:	Any meat is protein.
+[HUPW]	CG:	Yeah, but she wouldn’t—she don’t eat pork.  So that’s why I said beef meat.  Xxxx don’t eat pork either, unless it’s bacon.
+[HUPW]	CG:	But I used to eat Sizzlean.
+[HUPW]	PT:	I don’t know who they are.
+[HUPW]	CG:	Sizzlean is part turkey and part beef, ain’t it?   {0:33:37} I mean part turkey =
+[SANDWICH]	PT:	Ugh.
+[SANDWICH]	CG:	=  it was good, though.
+[HUPW]	PT:	And you supposed to eat {0:33:43}, too.
+[CQTBN]	CHW:	Do they still make that?
+[HUPW]	CG:	I don’t know, but Jimmy Dean got some turkey bacon.  It good.
+[CHT+]	PT:	I like turkey bacon.  It cooks better =
+[HUPW]	CG:	Turkey (sausage).
+[HUPW]	PT:	It cooks like =
+[HUPW]	CG:	They make all that turkey sausage, turkey =
+[HUPW]	PT:	I haven’t had no turkey—no.  What kind of bacon was it?
+[HUPW]	CG:	Turkey bacon.
+[HUPW]	PT:	Yeah, turkey bacon.  It cooks—but it’s so thick that kind you have is thick.
+[SS]	CHW:	And while we’re waiting on her =
+[CHT+]	CG:	We got—we can have—like for breakfast, they used to tell me one egg, a slice of toast with some butter.
+[GINFO+]	CHW:	And when Jenny comes, she’ll, you know, talk about portion size and things like you were saying, like the palm of your hand =
+[SANDWICH]	CG:	Yeah.
+[SANDWICH]	CHW:	= and different things like that because that is {0:34:31} =
+[HUPW]	CG:	We’re not telling you to not to eat it.  We’re just telling you to eat it in moderation.
+[LUP+]	PT:	I know.
+[ROS]	CHW:	In moderation.
+[CHT+]	PT:	In certain amounts {0:34:38} =
+[SS]	CHW:	Okay, great.  We’re scheduled.  We’re good for 10 o’clock on Saturday. =
+[HUPW]	CG:	On Saturday.  Yeah.  You got that, Xxxx?
+[HUPW]	PT:	Yeah.  Set my alarm clock.  [laughs] [pause]  What’s today?
+[GINFO+]	CHW:	Today is the 30th. =
+[HUPW]	CG:	This will help me.  So you’ll be helping me =
+[SANDWICH]	CG:	= with my weight loss so I can have surgery {0:35:01}.
+[CQO]	CHW:	You sick?
+[HUPW]	CG:	No.  Well, I do got to get my gallstones.
+[SANDWICH]	CHW:	Oh.  Okay.
+[SANDWICH]	CG:	People say you get your gallstones out, you might lose weight, anyway.
+[CQO]	CHW:	Oh, really?  I didn’t know.
+[SO]	MISSING TEXT
+[HUPO]	CG:	[laughs] I don’t know about that.  I just know I don’t want to be cut {0:35:21}.  But they do this like, what is it?  Laparoscopic {0:35:23} =
+[HUPO]	PT:	Yeah, that thing where {0:35:24}
+[SO]	CHW:	Oh.  Okay.
+[HUPO]	CG:	Everything is done with that.
+[HUPO]	PT:	What’s that?  Wait.
+[HUPW]	CG:	But I was thinking about getting a bariatric surgery, too.
+[HUPW]	PT:	What’s that?
+[HUPW]	CG:	But I’m scared.
+[HUPW]	PT:	No, you can’t go under the knife.
+[GINFO+]	CHW:	But do—I know you heard our conversation.  Did you have any questions about anything about the program?
+[CQTBN]	MISSING TEXT
+[HUPW]	PT:	Was you listening to me?
+[HUPW]	CG:	Was I listening?
+[SS]	CHW:	We’ll be meeting twice a week.
+[SANDWICH]	CG:	Right.
+[SANDWICH]	CHW:	Okay.  And the first session will be like education.  Then I’ll come back, and we’ll do a review because each session builds on the next one, so.
+[LUP+]	CG:	Right.
+[GINFO+]	CHW:	There’s no sense in moving forward if you can’t grasp the—what was taught in the session, so we do them like that just to make sure everybody’s on the same page.  And there will be some assignments, like I said.
+[HUPW]	CG:	What type of assignments?
+[OQTBN]	CHW:	What type?  Okay, well, she will be logging her food.
+[GINFO+]	MISSING TEXT
+[SANDWICH]	CG:	Oh, okay.
+[SANDWICH]	CHW:	{0:36:24} is required.
+[HUPW]	CG:	I used to have to do that.
+[SO]	CHW:	Mm-hmm.
+[HUPW]	PT:	What?
+[HUPW]	CG:	Log your food—what you ate like for breakfast, lunch, dinner, snack. =
+[HUPO]	PT:	Oh, I got a whatyoumacallit up there.
+[CHT-]	CG:	But you, your downfall is like when it’s time to go to school, you don’t eat breakfast.
+[LUP-]	PT:	No.
+[HUPW]	CG:	That’s important.
+[SO]	CHW:	And yeah.
+[CHT-]	PT:	But sometimes they don’t have the stuff.
+[SO]	CHW:	And well, we’ll be =
+[CHT-]	CG:	But you’ve got to—it’s in your mind that it’s not good.
+[GINFO+]	CHW:	And we’ll help you in the future—help you come up with plans for things that you can eat =
+[ADV+]	CG:	Right.  Even if you cut some carrots up and take it to =
+[GINFO+]	CHW:	And things like that, and, well, so, since she’s logging, your job will be to =
+[CHT+]	CG:	Check and make sure
+[GINFO+]	CHW:	= check her logs to make sure that she completed them accurately, you know, and filled out everything.
+[SANDWICH]	CG:	Right.
+[SANDWICH]	CHW:	And things like that.
+[ADV-]	CG:	And no fudging.
+[HUPW]	PT:	No what?
+[ADV-]	CG:	Fudging.  ‘Cause I will know what you ate.
+[HUPW]	CG:	I buy the food.
+[HUPW]	PT:	Well, if I get some at school.
+[HUPW]	CG:	You don’t have the money.
+[CML+]	CG:	I’m not give you {0:37:20}
+[GINFO+]	CHW:	Well, we’ll work on ways to manage those types of things, you know. =
+[HUPW]	CG:	Michelle Obama said that they weren’t going to be having like all that junk in school like that.
+[HUPW]	PT:	Well, they have it at the other school. =
+[HUPW]	CG:	I thought they was working {0:37:31} =
+[HUPW]	PT:	Well, I never bought {0:37:33} ‘cause why would I buy a little bag of chips for a dollar too?  Why waste my money? =
+[SO]	CHW:	Oh, that might help. [laughs]
+[SO]	CHW:	That might help us. [laughs]
+[HUPW]	PT:	But I don’t know how they going to do =
+[GINFO+]	CHW:	But yeah, it’ll be things like that.
+[HUPW]	PT:	I don’t know if they’re going to be doing that at this school because they like a health thing, I think. =
+[CQEB]	CHW:	And so, do you think there’s anything that could stop you guys from continuing with the program?
+[CHT+]	PT:	No.
+[CHT+]	CG:	No.
+[CQECHT+]	CHW:	No?
+[CHT+]	PT:	No.
+[SO]	CHW:	Okay.  Great.
+[CML+]	CG:	We’re going to work on it and work to get that off.  I heard you say that every 20 pounds is a dress size down. =
+[ROS]	CHW:	Twenty pounds is a dress size.
+[CML+]	CG:	So if she do 20, =
+[SANDWICH]	PT:	Yay.
+[SANDWICH]	CG:	= I do 20, hey, {0:38:15} =
+[CHT+]	PT:	If you can get into a {0:38:19} =
+[ADV+]	CG:	But see, my {0:38:18} going to be—I’m do it while you’re young.  ‘Cause I’m 42 years old.  And once I lose weight, I’m still going to be big =
+[SANDWICH]	PT:	{0:38:27}
+[SANDWICH]	CG:	= ‘cause I’ll going to have all that hanging.
+[HUPW]	PT:	I mean, at least if you—you’re skinny, Mom.
+[HUPW]	CG:	Not skinny.  I don’t want to be skinny.
+[HUPW]	PT:	Well, not skinny =
+[HUPW]	CG:	Just healthy.
+[HUPW]	PT:	= but you know.  Yeah.  Whatever.
+[LUP+]	CG:	Yeah.
+[HUPW]	PT:	You can get some of it off.
+[HUPW]	CG:	Yeah.  Yeah.  I’ve lost 55 pounds.
+[HUPW]	PT:	You did?  You didn’t tell me.
+[HUPW]	CG:	{0:38:43} I was a gestational diabetic before I became a diabetic
+[HUPW]	PT:	You didn’t tell me.
+[HUPW]	CG:	With Xxxx, I was—girl, you wasn’t even born yet.
+[LUP+]	PT:	Oh. [laughs]
+[HUPW]	CG:	I was pregnant with my son doing the diabetic type of diet.  I lost 55 pounds, but doing good, doing good.
+[HUPW]	PT:	You can tell you have lost weight, too, though, Ma, because =
+[HUPW]	CG:	Lose?  Just move around.  I don’t even…
+[HUPW]	PT:	You can tell you have lost weight because you lost that hard {0:39:06} on your leg that was on the {0:39:09} =
+[SS]	CHW:	You have my phone number, right?
+[LUP+]	CG:	Yes.
+[SS]	CHW:	Okay.  And now, if something comes up and =
+[HUPW]	CG:	{0:39:16} don’t be doing that.
+[SS]	CHW:	=  you have to—well, emergency or s-, you know?  You never know.
+[HUPW]	CG:	Oh, an emergency.
+[SS]	CHW:	And you have to cancel, please just give me a call ahead of time.
+[SANDWICH]	CG:	Okay.
+[SANDWICH]	CHW:	But now if there’s something that comes up like and you know about it ahead of time, if you can cancel within 24 hours =
+[HUPW]	CG:	That’d be good, right.
+[SS]	CHW:	=  that would be good.  Okay?  And…and because, you know, we—in our appointments, we’ll be like twice a week.  Try to meet twice a week with everybody.  Okay?
+[ADV-]	CG:	Xxxx, write down on here the appointment time.  You got {0:39:49}.
+[GINFO+]	CHW:	And I’ve got an appointment card for you.
+[HUPW]	CG:	Oh, she got an appointment card.
+[SO]	CHW:	I think I saw {0:39:58}
+[HUPW]	CG:	I want this Chicken {0:39:57}.  I had, I love the Arabic {0:39:59}, oh my god, that’s so good. =
+[HUPW]	PT:	She likes the Arabic {0:40:00}
+[LUP+]	CG:	Yeah.
+[GINFO+]	CHW:	They eat really healthy.  A lot of it is just {0:40:05} healthy, =
+[SANDWICH]	PT:	Yeah.
+[SANDWICH]	CHW:	= you know?
+[HUPW]	PT:	Let me see.
+[CHT+]	PT:	I like shrimp.
+[HUPW]	CG:	[laughs] I’m allergic to it, so you know I won’t be doing them.
+[CHT+]	PT:	I want to taste this mango ‘cause I want to know how mangos taste.
+[HUPW]	CG:	Mango’s good.
+[SD]	CHW:	Oh, they’re really good.
+[HUPW]	CG:	Sweet.  Don’t need no sugar.
+[GINFO+]	CHW:	And you know, we can—we’ll be doing—there’ll be a lot of different things that we can do because you are home based.  We can have cooking—a health cooking =
+[SANDWICH]	CG:	Oh, okay.
+[SANDWICH]	CHW:	= session and do some of those recipes and things like that, also, so you can learn =
+[CHT+]	CG:	You’ll have to give us a grocery list so we can already got it. [laughs]
+[GINFO+]	CHW:	Yeah.  We can do things like that, so that’s no problem.
+[HUPW]	PT:	I got these skin tags.  They bother me.
+[SS]	CHW:	Okay.  Here you go.  You’re set for August the 4th at 10 o’clock, which is the following Saturday. =
+[HUPW]	CG:	A.M., Xxxx, A.M.
+[LUP+]	PT:	Okay. [laughs]
+[ADV-]	CHW:	{0:41:05}, yeah—set your alarm.
+[LUP+]	PT:	Time
+[HUPW]	CG:	I’ll be up.
+[SO]	CHW:	I’m talking about her [laughs].
+[HUPO]	PT:	I don’t need to get up early when {0:41:14} here.
+[HUPO]	CG:	Well, he not here.  You have to get up.  I’ll be like, “Xxxx!”
+[HUPO]	PT:	Because he’ll be punching me in my face.  Well, if he be like
+[LUP+]	CG:	[laughs] Xxxx
+[CQO]	CHW:	{0:41:23} was that, your little nephew or something?
+[HUPO]	CG:	My cousin.
+[CQO]	CHW:	Cousin?  Okay.
+[HUPO]	CG:	Uh-huh.  My great nephew on top of that.
+[SANDWICH]	CHW:	Oh, [laughs] okay.
+[SANDWICH]	CG:	My niece, uh-huh.
+[AFL]	CHW:	Well, it was good to meet you guys.
+[LUP+]	CG:	You, too.
+[SS]	CHW:	And I will see you both bright and early Saturday morning.
+[HUPW]	CG:	Saturday morning.
+[SO]	CHW:	Ten o’clock.
+[LUP-]	CG:	Okay.
+[ADV-]	CHW:	Wake up in enough time so that you can be alert. =
+[HUPW]	CG:	Who coming with you?  Jenny?
+[GINFO+]	CHW:	Yeah.  Jenny, the dietitian.
+[HUPW]	CG:	Is—she’s not the one that came {0:41:50}?
+[GINFO+]	CHW:	No.  She hasn’t been here before.  =
+[HUPO]	CG:	It was another {0:41:53}
+[SO]	CHW:	Yeah.
+[LUP+]	CG:	Okay.  Oh.
+[SO]	CHW:	Oh, there was another =
+[HUPO]	CG:	Wasn’t her name Jenny?
+[HUPO]	PT:	No.  I think her name was…I don’t know.
+[HUPO]	CG:	No, it was Morgan and Jenny, I thought.
+[GINFO-]	CHW:	Uh-uh.
+[LUP+]	PT:	I don’t know.
+[SO]	CHW:	I’m not sure.
+[HUPW]	CG:	I talked to somebody.  {0:42:05}
+[SANDWICH]	CHW:	I’m not sure.
+[SANDWICH]	CG:	Katherine I talked to the other day.
+[GINFO+]	CHW:	And some of the people that you probably come in contact with—they don’t work in my office even though =
+[SANDWICH]	CG:	Okay.
+[SANDWICH]	CHW:	= they’re part of the program.
+[SANDWICH]	CG:	Right.
+[SANDWICH]	CHW:	So I may know
+[HUPO]	CG:	So y’all office is out of Wayne State?
+[SO]	CHW:	We’re all in pretty much the same building.  We’re in the old {0:42:26} building.
+[HUPO]	CG:	Okay.  That’s what she told me.
+[SANDWICH]	CHW:	Yeah.
+[SANDWICH]	CG:	‘Cause I say, “Oh, I was in there” =
+[SANDWICH]	PT:	It’s most, she said
+[SANDWICH]	CG:	= “that’s where I had them at.” [laughs]
+[HUPO]	PT:	It’s mostly just work.
+[HUPO]	CG:	Yeah, it used to be—I used to go there for sleep study.  After everything, they opened up the new hospital, whatever.  When I had Xxxx there—‘cause I was pregnant {0:42:43} =
+[SANDWICH]	CG:	= and Tubby’s was right down at the bottom of the entrance way.  It was my fav—I was hooked.  When she—I was pregnant with her, I was hooked to Sally {0:42:57}.
+[GINFO-]	CHW:	Maybe that’s where you get it from [laughs].
+[HUPW]	CG:	I admit it.  I couldn’t help it.  I used to always—we had—I was working at CVS, so they always used to order Papa Romano’s.  I would get the half a turkey sub and a salad. =
+[SANDWICH]	CHW:	Salad.
+[SANDWICH]	CG:	I was hooked.  I just {0:43:15} =
+[HUPW]	CG:	{0:43:19}, that’s what I used to do.  [laughter]
+[SO]	CHW:	Yeah, but that’s where we’re located.  Only thing’s there now is like the {0:43:24} Institute =
+[SANDWICH]	CG:	Oh, yeah.
+[SANDWICH]	CHW:	= and
+[HUPO]	PT:	Yeah, that’s where I go for my eye appointment.
+[SO]	CHW:	Yeah, but we’re in that building.
+[HUPO]	CG:	Yeah.  They made that all offices.  Okay.
+[SO]	CHW:	Yeah.  All offices and a college because =
+[HUPO]	CG:	The study over there?
+[SO]	CHW:	=  Michigan State has a medical college inside of the building, also, now.
+[HUPO]	CG:	Do th- oh, we’re aiming high, right?
+[HUPO]	PT:	Huh?
+[HUPO]	CG:	We aiming high, right?
+[LUP+]	PT:	Yeah.
+[HUPO]	CG:	And going for medical.
+[LUP+]	PT:	Oh, yeah.
+[HUPO]	PT:	They usually take two people from—out of my school and take them over to the {0:44:01}.
+[HUPO]	CG:	To work at the DMC?
+[LUP+]	PT:	Yeah.
+[HUPO]	CG:	For real?
+[SUP]	CHW:	Oh, okay.  Maybe you’ll get selected.
+[HUPO]	CG:	Right.  This is her first year of ninth grade.
+[SO]	CHW:	Yeah.
+[HUPO]	PT:	They only go up to tenth grade right now, so.
+[HUPO]	CG:	Yeah, they supposed to add a new year.
+[CQO]	CHW:	New year each time?
+[LUP+]	CG:	Yeah.
+[SO]	CHW:	Okay.  Okay.  Well, I’m going to take off.
+[HUPO]	CG:	Okay.  Well, it was nice meeting you, Clarita.
+[AFL]	CHW:	Nice meeting you guys, and I will see you both Saturday morning.
+[SS]	MISSING TEXT
+[HUPW]	CG:	Saturday.  Okay.
