@@ -418,16 +418,19 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				PrintWriter writer = new PrintWriter(outLocation+rawFiles[i].getName());
 				BufferedReader br = new BufferedReader(new FileReader(inputLocation+"/"+rawFiles[i].getName().replace(".txt", ".csv")));			
 				String line = "";				
+				br.readLine();
 				
 				while ((line = br.readLine()) != null) {
 					if(!line.isEmpty()){
 						String record[] = line.split(",");
-						String timestamp = (record[2].substring(1, 8).replace(":", "")+record[3].trim()).trim();
+						String timestamp = getTimestamp((record[2].substring(1, 8).replace(":", "")+record[3].trim()).trim());
 						if(mapTimestamp.containsKey(timestamp)){
 							mapTimestamp.get(timestamp).listTimestamp.add(record[4].trim());
 						}
 						else{
 							DataDetail entry = new DataDetail();
+							if(record.length < 5)
+								continue;
 							entry.code = record[4].trim();
 							entry.who = record[3].trim();
 							entry.timestamp = timestamp;
@@ -444,17 +447,21 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				
 				while ((line = br.readLine()) != null) {
 					if(!line.isEmpty() && line.length() > 7){
-						line = line.replace("’", "'").replace("—", "-").replace("PPT:", "PT:");
+						line = line.replace("’", "'").replace("—", "-").replace("‘", "'").replace("…", "�").replace("PPT:", "PT:");
 						int index = line.substring(1, 13).lastIndexOf(":");
 						if(index < 0){
 							continue;
 						}
 						String timestamp = line.substring(1, index+1).replace(":", "").replace(")", "").trim();
 						if(mapTimestamp.containsKey(timestamp.trim())){
-							writer.println("["+mapTimestamp.get(timestamp).code + "]\t" + line.substring(8).trim());
+							String actualTimestamp = "("+timestamp.substring(0, 3)+":"+timestamp.substring(3, 5)+")";
+							writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).code + "],\t" + line.substring(8).trim().replace(",", " "));
 							for(int j = 1; j < mapTimestamp.get(timestamp).listTimestamp.size(); j++){
-								writer.println("["+mapTimestamp.get(timestamp).listTimestamp.get(j) + "]\t" + "MISSING TEXT");
+								writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).listTimestamp.get(j) + "],\t" + timestamp.substring(5) + ":\tMISSING TEXT");
 							}
+						}
+						else{
+							//System.out.println(timestamp);
 						}
 						writer.flush();
 					}
@@ -465,5 +472,13 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				writer.close();
 			}
 		}		
+	}
+	
+	public static String getTimestamp(String time){
+		int t = Integer.parseInt(time.substring(0, 1))*60+Integer.parseInt(time.substring(1, 3));
+		String timestamp = t + time.substring(3);
+		timestamp = t<10?"00"+timestamp:timestamp;
+		timestamp = (t>9&&t<100)?"0"+timestamp:timestamp;
+		return timestamp;
 	}
 }
