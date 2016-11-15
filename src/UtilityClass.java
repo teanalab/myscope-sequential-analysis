@@ -422,8 +422,11 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				
 				while ((line = br.readLine()) != null) {
 					if(!line.isEmpty()){
+						if(!line.contains(":"))
+							continue;
 						String record[] = line.split(",");
 						String timestamp = getTimestamp((record[2].substring(1, 8).replace(":", "")+record[3].trim()).trim());
+						//System.out.println(rawFiles[i].getName() +timestamp);
 						if(mapTimestamp.containsKey(timestamp)){
 							mapTimestamp.get(timestamp).listTimestamp.add(record[4].trim());
 						}
@@ -447,21 +450,33 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				
 				while ((line = br.readLine()) != null) {
 					if(!line.isEmpty() && line.length() > 7){
+						if(!line.contains(":"))
+							continue;
 						line = line.replace("’", "'").replace("—", "-").replace("‘", "'").replace("…", "�").replace("PPT:", "PT:");
-						int index = line.substring(1, 13).lastIndexOf(":");
+						int maxLen = line.length() < 17?line.length():17;
+						int index = line.substring(1, maxLen).lastIndexOf(":");
 						if(index < 0){
 							continue;
 						}
-						String timestamp = line.substring(1, index+1).replace(":", "").replace(")", "").trim();
+						
+						String timestamp = "";
+						if(line.substring(0, index+1).contains("("))
+							timestamp = line.substring(0, index+1).replace(":", "").replace(")", "").replace("(", "").replace(" ", "").replace("\t", "").trim();
+						else{
+							timestamp = line.substring(1, index+1).replace(":", "").replace("\t", "").replace(" ", "").trim();
+							if(timestamp.contains("."))
+								timestamp = getTimestamp(timestamp.substring(0, 5)+timestamp.substring(7));
+						}
+						
 						if(mapTimestamp.containsKey(timestamp.trim())){
 							String actualTimestamp = "("+timestamp.substring(0, 3)+":"+timestamp.substring(3, 5)+")";
-							writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).code + "],\t" + line.substring(8).trim().replace(",", " "));
+							writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).code + "],\t" + mapTimestamp.get(timestamp).who + line.substring(index+1).trim().replace(",", " "));
 							for(int j = 1; j < mapTimestamp.get(timestamp).listTimestamp.size(); j++){
 								writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).listTimestamp.get(j) + "],\t" + timestamp.substring(5) + ":\tMISSING TEXT");
 							}
 						}
 						else{
-							//System.out.println(timestamp);
+							//System.out.println(rawFiles[i].getName() + timestamp);
 						}
 						writer.flush();
 					}

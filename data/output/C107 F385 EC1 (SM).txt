@@ -1,0 +1,767 @@
+(000:00),	[SS],	CHW:	Family 385.  This is May 30th.  [pause] Hey!
+(000:16),	[CQO],	Y:	Hi.  How you doing?
+(000:17),	[SO],	CHW:	Hi.
+(000:25),	[CQO],	CHW:	Hey  how you doing?
+(000:26),	[HUPO],	Y:	Fine.
+(000:27),	[AFL],	CHW:	Thanks for meeting with me.  You enjoy your holiday?
+(000:27),	[CQO],	CHW:	MISSING TEXT
+(000:29),	[HUPO],	Y:	Yeah.
+(000:30),	[GINFO-],	CHW:	Okay.  Great.  But you know  like I was saying  there are ways that you can have the things that you want even if you are trying to lose weight.  So it?fs not like =
+(000:42),	[CML+],	CG:	We actually {00:00:42.0} to go walk yesterday.
+(000:44),	[CQECML+],	CHW:	Okay.  Yeah  so well maybe?you guys walking to the baseball field  or are you driving  or?
+(000:52),	[HUPW],	CG:	Well  I know her sister brought her bike {00:00:53.0}.
+(000:55),	[RCML+S],	CHW:	Okay.  Yeah.  You ride your bikes.  That?fs a good way to get activity  too.  So how you doing?
+(000:55),	[AF],	CHW:	MISSING TEXT
+(000:55),	[OQO],	CHW:	MISSING TEXT
+(001:03),	[HUPO],	Y:	Good.
+(001:04),	[SO],	CHW:	Great.  Got you a new folder.
+(001:06),	[LUP+],	Y:	Thank you.
+(001:07),	[CQTBN],	CHW:	Please?did you find the other one when you cleaned up your room?
+(001:11),	[HUPW],	Y:	No.
+(001:11),	[CQTBN],	CHW:	No?  Well  please keep better track of this one.  Okay?  [laughs] Didn?ft find it  huh?  [laughs] You probably found a whole bunch of other stuff. [laughs]
+(001:25),	[HUPW],	Y:	I?fll look at my food log.
+(001:27),	[SS],	CHW:	Okay.  Great. [pause] So let?fs take a look at your logs here.
+(001:58),	[CML-],	Y:	I didn?ft finish mine.  That?fs today  for today.
+(002:01),	[SO],	CHW:	Okay.
+(002:03),	[CML+],	Y:	(Yesterday).
+(002:32),	[CQTBN],	CHW:	Two bowls?
+(002:33),	[HUPW],	Y:	One bowl.
+(002:34),	[GINFO+],	CHW:	Well  it says two.
+(002:36),	[HUPE],	Y:	?gA.?h  It say  ?gA.?h
+(002:37),	[CQTBN],	CHW:	Oh  ?ga?h bowl.  Okay.  Okay.  Can I see the bowl that you ate out of?  Okay.  So you had that much Cheerios?
+(002:51),	[CML+],	Y:	About like up there.  Up here.
+(002:59),	[CQTBN],	CHW:	Up there.
+(003:02),	[CQTBN],	CHW:	Okay.  Let?fs see?you have a measuring cup?
+(003:06),	[HUPW],	Y:	Yes.  Our cups are right here.
+(003:10),	[GINFO-],	CHW:	Okay.  Let?fs do this.  This is a =
+(003:10),	[CQECML+],	CHW:	MISSING TEXT
+(003:33),	[HUPW],	Y:	Yep.
+(003:34),	[CQTBN],	CHW:	Can we see the label?
+(003:36),	[CML+],	Y:	Cheerios  Cheerios  Cheerios.  I looked in the book.
+(003:40),	[CQECML+],	CHW:	Oh  you looked in the book?
+(003:41),	[CML+],	Y:	Yep.
+(003:43),	[HUPW],	CG:	So we?fve got so many bags of them.  We (don?ft even) keep the box.
+(003:46),	[SO],	CHW:	Okay.
+(003:51),	[CML+],	Y:	Breakfast cereals.  Here  wait.  Here.  It say original right here  100 calories.
+(004:05),	[GINFO-],	CHW:	Okay.  Okay.  That?fs 100 calories.  You had a cup  though  hun.  That was three-fourths of a cup  see?
+(004:05),	[CQTBN],	CHW:	MISSING TEXT
+(004:16),	[GINFO+],	CHW:	Is less than a cup.
+(004:18),	[HUPW],	Y:	It is?
+(004:19),	[CQTBN],	CHW:	Yeah.  It?fs three-fourths of a cup.  So if three-fourths of a cup has 100 calories  you think we should add some to that calorie count?  Okay.  Three-fourths of a cup?so if we go three into 100 =
+(004:19),	[GINFO+],	CHW:	MISSING TEXT
+(004:40),	[HUPW],	Y:	That?fs 75.
+(004:49),	[HUPW],	Y:	Has like a hundred in it.
+(004:50),	[GINFO+],	CHW:	133.  Okay?  And did you have any milk with them?
+(004:50),	[CQECML+],	CHW:	MISSING TEXT
+(004:56),	[CML+],	Y:	Yes.  I had =
+(004:58),	[CQECML+],	CHW:	Was the milk calorie-free?
+(005:00),	[CML+],	Y:	No.
+(005:05),	[HUPW],	CG:	We only drink 2 percent.
+(005:06),	[CQTBN],	CHW:	2 percent milk?  Okay.  That?fs good.  That?fs the best one.  And how much milk did you have?
+(005:06),	[AFL],	CHW:	MISSING TEXT
+(005:06),	[GINFO-],	CHW:	MISSING TEXT
+(005:06),	[OQECML+],	CHW:	MISSING TEXT
+(005:15),	[CML+],	Y:	About a cup.
+(005:18),	[CQTBN],	CHW:	A cup?
+(005:19),	[HUPW],	CG:	130 calories.
+(005:20),	[SO],	CHW:	Okay.
+(005:24),	[CQECML+],	CHW:	Okay.  So you?fve got to include everything  remember?  Okay.  So that gives you 130?so that gives you 230?263 calories.  And you had water  so that?fs got zero calories.  You had your turkey sandwich  bread  mayo.  That looks right.  Okay.  So we got to add a few more calories.  Okay.
+(005:24),	[GINFO+],	CHW:	MISSING TEXT
+(005:50),	[CML+],	Y:	So that?fs like =
+(005:54),	[GINFO+],	CHW:	No.
+(005:55),	[CML+],	Y:	963 calories.
+(005:58),	[GINFO+],	CHW:	That?fs right.  963.
+(006:03),	[HUPW],	Y:	That?fs more than this one?  It?fs not more than this one?  ?eCause I really didn?ft eat nothing that day.  I didn?ft really eat nothing.  That?fs all I had ?ecause I went to a birthday party.
+(006:16),	[CQECML+],	CHW:	Okay.  But so how many calories was your hot dog?
+(006:21),	[CML+],	Y:	140.
+(006:23),	[CQECML+],	CHW:	Did you have it?eat it by itself?
+(006:27),	[CML+],	Y:	I did?I have the calories with the ketchup.
+(006:29),	[CQECML+],	CHW:	No.  Did you eat the?did you put any bread on it?
+(006:32),	[ADV-],	CG:	No.  She?I was going to say you got to count the bread.  That?fs what she?fs trying to tell you  too. =
+(006:37),	[CQECML+],	CHW:	So let?fs look.  Was it on a hot dog bun?
+(006:39),	[CML+],	Y:	Yeah.
+(006:40),	[SO],	CHW:	Okay.
+(006:42),	[GINFO-],	CHW:	Let?fs look up that hot dog bun.
+(006:44),	[HUPW],	CG:	That?fs not?was it wheat  or was it just regular bread?  See  that?fs {00:06:44.0} =
+(006:46),	[HUPW],	Y:	White bread.
+(006:47),	[LUP+],	CG:	Okay.
+(006:48),	[GINFO+],	CHW:	Okay.  Let?fs see?and then you had two hamburgers.
+(006:51),	[CML+],	Y:	It was little hamburgers.  It was little hamburgers.
+(006:54),	[CQECML+],	CHW:	But were they sliders or something?  Like White Castle?
+(006:57),	[CML+],	Y:	Yeah.
+(007:30),	[CQECML+],	CHW:	A hundred and?was that just for the hot dog  or was that the hot dog with the bread?
+(007:34),	[CML+],	Y:	Hot dog with bread.
+(007:35),	[CQECML+],	CHW:	175?  Okay.  And then you had two mini hamburgers.  Okay.  You had a cup of water and two juices and a cupcake.  Okay.
+(007:35),	[GINFO+],	CHW:	MISSING TEXT
+(007:48),	[CML+],	Y:	I didn?ft get a piece of cake ?ecause the cake?pieces of cake was too big  so I just got a little cupcake.
+(007:53),	[AF],	CHW:	Okay.  Well  that was a good choice  huh?  That way  you were able to have what you want  have something sweet  but cut out some of those calories because you didn?ft have that big slice of cake.  That was a good choice.  Okay.  So.  You didn?ft eat no breakfast or anything?
+(007:53),	[CQECML+],	CHW:	MISSING TEXT
+(008:12),	[CML+],	Y:	Mm-mm.
+(008:13),	[CON],	CHW:	Mm-mm.  Mmm.  Remember we talked about that?
+(008:23),	[CQO],	CHW:	Mm-hmm?
+(008:24),	[CHT-],	CG:	She really didn?ft have time to eat breakfast ?ecause my aunt called  and we just had to get up =
+(008:30),	[CQECHT-],	CHW:	Oh.  And go?
+(008:31),	[CHT-],	CG:	And go.
+(008:32),	[SO],	CHW:	Okay.
+(008:33),	[CHT-],	CG:	So that?fs why she didn?ft eat breakfast.
+(008:35),	[SO],	CHW:	Okay.  Okay then.  Okay.
+(008:39),	[CML+],	Y:	This part I didn?ft?that?this part I didn?ft do because I didn?ft want nothing.  I didn?ft want nothing.
+(008:46),	[CQECHT+],	CHW:	You didn?ft want anything?
+(008:47),	[CML+],	Y:	?eCause I already ate at the birthday party  so I really didn?ft want nothing {00:08:49.0} back to the house.
+(008:53),	[SO],	CHW:	Okay.
+(009:11),	[RCML-S],	CHW:	So you had a sub  but you didn?ft put the calories down.
+(009:19),	[HUPW],	Y:	?eCause it?fs?lettuce has no calories  does it?
+(009:22),	[GINFO+],	CHW:	Okay.  Turkey.
+(009:24),	[HUPW],	Y:	Turkey.
+(009:25),	[GINFO+],	CHW:	Mayo
+(009:26),	[HUPW],	CG:	When did you have a sub?
+(009:28),	[HUPW],	Y:	At school.  Yesterday.
+(009:30),	[LUP+],	CG:	Oh.
+(009:31),	[SO],	CHW:	Okay.
+(009:34),	[HUPW],	Y:	And then this.
+(009:38),	[OQTBN],	CHW:	Hey  you had 100-calorie chips  huh?  How were those for you  the cookies?
+(009:41),	[CHT+],	Y:	Good.
+(009:43),	[CQTBN],	CHW:	Okay.  They serve those at school?
+(009:45),	[HUPW],	Y:	Mm-hmm.
+(009:46),	[ADV-],	CHW:	Oh  that?fs good ?ecause you?fve got to put your milk down  you got to include these calories for everything  huh?  Okay.  You got your turkey  mayo =
+(010:03),	[HUPW],	CG:	So basically  she should kind of carry that at school with her  too {00:10:05.0} =
+(010:08),	[HUPW],	CG:	?eCause you?I see we?fre not going to remember what the calories and stuff we ate and =
+(010:13),	[GINFO+],	CHW:	At school.  That?fs true  but kids feel a little self-conscious about taking the log to school.
+(010:21),	[HUPW],	CG:	But  at the same time  you ain?ft got to tell everybody your business.  You can just be like  ?gIt?fs homework.?h
+(010:26),	[GINFO+],	CHW:	That?fs true  but if they just?if she just writes it down on a sheet of paper what she ate  that?fs fine.  And then when she comes home  transfers it over to the logs because =
+(010:35),	[LUP+],	CG:	Yeah  that?fs  yeah.
+(010:36),	[GINFO+],	CHW:	Yeah.  A lot of the kids?they don?ft really want everybody knowing that they?fre in a program to help them lose weight ?ecause they?fre embarrassed.  You?fd be surprised with?I get these looks  and we ask  ?gWell  you know  how would you count them??h  And they look like  ?gOh  no.  I can?ft take that to school with me.?h  [laughs]
+(010:58),	[HUPO],	Y:	Oh  here you go.
+(011:03),	[GINFO+],	CHW:	They get embarrassed.
+(011:46),	[HUPO],	CG:	No.  It?ain?ft no telling what they?fre allergic to.
+(011:51),	[CQO],	CHW:	Oh.  Okay.  Allergies?  Okay.  A lot of people do have those allergies where they?fre sensitive to the metals.
+(011:58),	[HUPO],	CG:	And everything.
+(011:59),	[SO],	CHW:	Okay.
+(012:00),	[HUPO],	CG:	That?fs why?he?one?them two  they just {00:12:01.0} can?ft eat fish  tomatoes  peanut butter?no  he can eat tomatoes now  but peanut butter  peanuts.
+(012:13),	[CQO],	CHW:	He can?ft eat nuts?  He got a nut allergy?
+(012:14),	[HUPO],	CG:	Chocolate?he can?ft even have.
+(012:15),	[SO],	CHW:	Wow.
+(012:16),	[HUPO],	CG:	Period.  But ?ecause even if it say ?gcontains peanut?h?peanut oil.
+(012:24),	[OQECML+],	CHW:	Oil.  Right.  That?fs a big  sensitive thing.  So what you find  hun?
+(012:28),	[CML+],	Y:	Sixty calories.
+(012:29),	[CQECML+],	CHW:	For?
+(012:30),	[CML+],	Y:	Turkey.
+(012:31),	[CQECML+],	CHW:	For the turkey?  Okay.  So write that down.  And then  you?that sub was on some bread  right?
+(012:41),	[CML+],	Y:	Yeah  on some wheat.
+(012:42),	[HUPW],	CG:	So how much was the white bread?
+(012:43),	[CML+],	Y:	It was wheat.
+(012:44),	[CQECML+],	CHW:	Okay.  Was it like a big sub or little =
+(012:46),	[HUPW],	CG:	You just said it was white.
+(012:48),	[HUPW],	Y:	It was like the one John had  but I took half of it off.
+(012:48),	[CQECML+],	CHW:	Oh  you took half the bread off?
+(012:52),	[CML+],	Y:	?eCause I ain?ft eat all of it.
+(012:54),	[CQECML+],	CHW:	Okay.  So was it a long piece of bread  or was it
+(012:59),	[CML+],	Y:	It was a long piece of bread.  I just took half of it though.
+(013:02),	[HUPW],	CG:	So it was like a 6-inch then?
+(013:04),	[CML+],	Y:	Yeah.  And I just took some of that off ?ecause I wasn?ft going to eat all of it.
+(013:07),	[SO],	CHW:	Okay.
+(013:08),	[LUP+],	CG:	Okay.
+(013:09),	[AF],	CHW:	That was good.
+(013:10),	[LUP+],	Y:	So
+(013:11),	[HUPW],	CG:	Now the thing?white or wheat?
+(013:13),	[CML+],	Y:	Wheat.
+(013:16),	[CML+],	CG:	But that?fs all we buy anyway is wheat.
+(013:18),	[GINFO+],	CHW:	Mm-hmm.  The hot dog?that was white bread  I think she said.  Yeah.
+(013:23),	[CML+],	Y:	Mmm  wheat.  So bread.
+(013:33),	[GINFO+],	CHW:	And you know  a lot of the schools  they will place?I don?ft know if you guys have a computer or not  but a lot of the schools  they will place their =
+(013:42),	[HUPW],	CG:	Menus online?
+(013:57),	[GINFO+],	CHW:	Okay.  Yeah  and that would be?that?fs a good way to  you know  to gauge the calories right there because =
+(013:57),	[ADV+],	CHW:	MISSING TEXT
+(014:04),	[HUPW],	Y:	It was sesame wheat  so.
+(014:12),	[HUPW],	CG:	And then try to look it up  yeah.
+(014:13),	[SO],	CHW:	Mm-hmm.
+(014:14),	[CML+],	Y:	It don?ft say.
+(014:17),	[CQECML+],	CHW:	Let?fs see.  What you trying to find  like a submarine roll?
+(014:20),	[CML+],	Y:	Yeah.
+(014:21),	[SO],	CHW:	Okay.  Let?fs see.
+(014:22),	[HUPO],	CG:	Let?fs see.  Hold on  y?fall.
+(014:28),	[SO],	CHW:	Okay.
+(014:44),	[GINFO+],	CHW:	So it was a long one  and you cut it in half  so we could actually say that that was like two slices of bread because  you know  a really long one is like four slices of bread.  The submarine rolls?
+(014:58),	[HUPW],	Y:	Mm-hmm.
+(014:59),	[CQECML+],	CHW:	It was?how long was it?
+(015:00),	[CML+],	Y:	It was like?so it was like big  so it was like this long.
+(015:10),	[CQECML+],	CHW:	Okay.  And you took?you ate half the bread?
+(015:12),	[CML+],	Y:	So I took?so if it?fs right here  it took half of it off  so it?fd be like this.
+(015:16),	[GINFO+],	CHW:	Okay.  So that?fd be two slices of bread then.  Okay?
+(015:19),	[CML+],	Y:	So that?fs 280 calories.
+(015:21),	[CQTBN],	CHW:	Two slices?  That?fs 140.  Remember 70 calories for a slice?
+(015:29),	[LUP+],	Y:	Oh.
+(015:31),	[GINFO+],	CHW:	?eCause you only ate half.  It would be 280?that?fs good math?if you?fd have ate the whole thing  but you said you only ate half  remember?
+(015:31),	[CQTBN],	CHW:	MISSING TEXT
+(015:37),	[GINFO+],	CHW:	140.
+(015:39),	[HUPW],	Y:	140.
+(015:40),	[ADV-],	CHW:	Mm-hmm.  So write that down.
+(016:00),	[GINFO+],	CHW:	Strawberry milk
+(016:02),	[CML+],	Y:	2 percent milk.  That was =
+(016:07),	[HUPW],	Y:	Strawberry.  I like strawberry {00:16:08.0}.  I like it a lot.
+(016:12),	[GINFO+],	CHW:	Okay.  Okay.  Not sure if that?fs in here  but we?fll see.  I haven?ft seen strawberry milk in I don?ft know how long.
+(016:23),	[HUPW],	Y:	This has vanilla milk  too.
+(016:24),	[GINFO+],	CHW:	Hmm?  Yeah  vanilla I?fm familiar with  but we used to make it up ourselves with Nestle?fs Quik.  It came in strawberry  but?chmm.  Okay  145 calories.  It?fs right here under TruMoo.
+(016:57),	[CML+],	Y:	140
+(016:58),	[SO],	CHW:	Mm-hmm.
+(017:02),	[CML+],	Y:	So 140 plus 140 is 280  and 110 plus 280 is =
+(017:10),	[CQTBN],	CHW:	390?oh  810?  Okay.  And 280
+(017:19),	[GINFO+],	CHW:	1 090
+(017:20),	[HUPW],	Y:	1 090?
+(017:23),	[GINFO+],	CHW:	810
+(017:25),	[HUPW],	Y:	810?1 090?
+(017:27),	[GINFO+],	CHW:	And 280 is 1 090 plus 60
+(017:30),	[HUPW],	Y:	Plus 60 is?c
+(017:36),	[HUPW],	Y:	9 hundred
+(017:38),	[HUPW],	Y:	950
+(017:39),	[GINFO+],	CHW:	No  we still =
+(017:40),	[HUPW],	Y:	1 000
+(017:50),	[HUPW],	Y:	Oh.  I thought it was?I thought you said 1 810.
+(017:54),	[GINFO+],	CHW:	Oh  no.  1 150.  Now  did you have anything else that day?
+(017:54),	[CQECML+],	CHW:	MISSING TEXT
+(018:01),	[CML+],	Y:	No.
+(018:07),	[CML+],	Y:	No.  All I had was down. =
+(018:08),	[RCML+S],	CHW:	Oh  you recorded your snack.  That was good.  Okay.  And okay.  What?fs this?  That was your cereal?
+(018:08),	[AFL],	CHW:	MISSING TEXT
+(018:08),	[CQECML+],	CHW:	MISSING TEXT
+(018:15),	[CML+],	Y:	Yep.
+(018:16),	[GINFO+],	CHW:	Forgot your milk.
+(018:19),	[CML+],	Y:	It was the same kind of milk we {00:18:22.0} =
+(018:23),	[GINFO+],	CHW:	Two percent  so that was 130.
+(018:27),	[CML+],	Y:	So?cthat?fs 100?200 and 80.
+(018:35),	[GINFO+],	CHW:	1 280.  Okay.  So you?fve been staying =
+(018:41),	[HUPW],	CG:	On there  though  what?fs the lowest she can go instead of going over 1 600?
+(018:47),	[HUPW],	CG:	Is it 16 or 12?
+(018:49),	[GINFO+],	CHW:	Sixteen.
+(018:50),	[HUPW],	Y:	Sixteen.
+(018:51),	[HUPW],	CG:	Okay.  What?fs the lowest you can go?  Just like for stuff like now because we know she under  so.
+(018:58),	[AFL],	CHW:	This is fine.  Like?cnobody?that?fs a good question.  And I don?ft have an answer for you.  Okay?  I will find out and get back with you.
+(018:58),	[GINFO+],	CHW:	MISSING TEXT
+(019:16),	[HUPW],	CG:	There ain?ft nobody never asked that question?
+(019:18),	[GINFO+],	CHW:	Nobody?fs ever asked me that question  [laughs] but I do want to?know this?you want to make sure you eat all three meals?your breakfast  lunch  and your dinner  okay?  So I wouldn?ft want to see her at like 800 calories and not getting?having enough food to eat  you know  being hungry.  So maybe not go under?I?fm going to say 1 200  but I?fll find out for sure.  Okay?
+(019:50),	[HUPW],	CG:	Okay.  I was thinking about 1 200.
+(019:52),	[SO],	CHW:	Yeah.
+(019:53),	[HUPW],	Y:	= this part is under  then I didn?ft eat enough food Monday.
+(019:57),	[RC],	CHW:	Well  my concern there is that you didn?ft eat any breakfast.  And do you know what happens when you don?ft eat and you skip meals?
+(019:57),	[CQTBN],	CHW:	MISSING TEXT
+(020:09),	[HUPW],	Y:	No.
+(020:10),	[GINFO+],	CHW:	Okay.  Can I give you some information on that?
+(020:12),	[HUPW],	Y:	Uh-huh.
+(020:13),	[GINFO+],	CHW:	Okay.  When you don?ft eat  what happens is your body sort of goes into this little starvation mode  so when you do eat something?your body?fs smart  okay?  So it says  ?gOh  food.  Mmmm.  This is good  but she may not feed me for a while  so I?fm going to store some of this stuff until?so I?fll have something to eat so I?fm not starving.?h  And you know where it stores it at?
+(020:13),	[CQTBN],	CHW:	MISSING TEXT
+(020:44),	[HUPW],	Y:	In my stomach?
+(020:45),	[GINFO-],	CHW:	It stores it in your fat cells  so those fat cells get bigger and bigger  and guess what happens?
+(020:53),	[HUPW],	CG:	It means you get fat.
+(020:54),	[GINFO+],	CHW:	You get bigger.
+(020:55),	[HUPW],	CG:	That?fs why it?fs called health class.
+(020:56),	[HUPW],	Y:	I don?ft take health class.
+(020:58),	[CON],	CG:	Well  that?fs my point exactly.
+(020:59),	[GINFO-],	CHW:	So it?fs?if you?so if you train your body and you eat regularly  like at regular scheduled times  things like that?your body knows that you?fre going to feed it  and it doesn?ft store stuff in those fat cells  and you don?ft gain weight. =
+(021:16),	[HUPW],	CG:	And you?fre talking to the digest system.  That?fs where you?all the toxins come out?all the stuff you then ate supposed to go  instead of going all out here and here.  I =
+(021:29),	[GINFO+],	CHW:	He?fs right.
+(021:30),	[HUPW],	CG:	Girl  I am telling you what I know.  See  you all think I be talking out the =
+(021:38),	[SO],	CHW:	They never think us old folks know anything.  [laughs]
+(021:40),	[HUPW],	CG:	Health classes?I?fm telling you?I mean health class =
+(021:44),	[HUPW],	Y:	We used to take health  but
+(021:45),	[HUPW],	CG:	A health class can tell you =
+(021:46),	[HUPO],	Y:	I got an A
+(021:55),	[HUPO],	Y:	I had health class last year  and I got an A plus  so.
+(021:58),	[SO],	CHW:	Okay.
+(022:00),	[HUPW],	CG:	But health goes a little deeper as you get older.
+(022:02),	[SO],	CHW:	Older.  It does.
+(022:05),	[HUPW],	CG:	Okay.  Well  I?fm not knocking you for it.  That?fs their fault.  But  what she?fs explaining to you is some stuff that you can explain to folks in school without letting them know you on this program  but just letting other folks?see  y?fall?it?fs a chain reaction.  Don?ft be a follower.  Be a leader.  Let?lead somebody else on to?if you see that =
+(022:35),	[CQTBN],	CHW:	To better health.  That?fs a good suggestion  you know?
+(022:37),	[HUPW],	CG:	= right.  Whatever you going through or whatever  whatever  and you feel somebody else talking about the same thing you?fre going through  {00:22:43.0} and that?fs how y?fall get a movement.  That?fs where a movement come in  start going  but.
+(022:50),	[HUPW],	Y:	Yeah  we know already.  Yeah.
+(022:51),	[SO],	CHW:	Okay.
+(022:52),	[SO],	CG:	I just want to tell you.
+(022:53),	[HUPW],	CHW:	Yeah  and you just made some good points.  But I will find out about that  okay  and but yeah  you did a good job of recording stuff.  You just forgot a few things  you know?  But just remember if you have cereal  and if you didn?ft eat it dry  you had some milk  so why do you think it might be important to record all of your calories?
+(023:12),	[CHT-],	Y:	So you know how much you ate instead of how much like food  not liquids.
+(023:20),	[SO],	CHW:	More logs for you.  Okay. =
+(023:22),	[LUP+],	Y:	Wait.
+(023:23),	[SS],	CHW:	And today  we?fre going to learn a new skill.  You?fre going to learn a new skill.  It?fs called environmental control  but before we do that  I?fm going to get your weight.  Okay?  And let?fs see where you are.
+(023:40),	[CHT+],	CG:	Hope you ain?ft gained anything.
+(023:42),	[CHT+],	Y:	Please  no.
+(023:46),	[CML+],	Y:	?eCause I?fve been running all Monday  so {00:23:47.0}.
+(023:51),	[LUP+],	CG:	Mmm.
+(023:53),	[ADV-],	CHW:	Okay  step off and step back on.
+(024:00),	[LUP+],	Y:	No.  No.
+(024:05),	[GINFO+],	CHW:	157.2.  Okay.  So let me write that down and let you know
+(024:11),	[CON],	CG:	And what was your weight last time you stepped on that scale?  Don?ft you lie to me.
+(024:15),	[HUPW],	Y:	I don?ft know.  I forgot.
+(024:17),	[LUP+],	CG:	Okay.
+(024:18),	[SO],	CHW:	We?fll see.
+(024:19),	[HUPW],	Y:	I forgot.  I think it was like =
+(024:28),	[GINFO+],	CHW:	I think you were 158.  Yeah  you were.  You were 158.2  so congratulations! You lost a whole pound.
+(024:35),	[HUPW],	Y:	See?
+(024:36),	[HUPW],	CG:	Okay.  I mean =
+(024:42),	[AF],	CHW:	That?fs good.
+(024:44),	[HUPW],	CG:	A pound.  A pound.  We can start off with a pound or two.  I?fm good with that.
+(024:48),	[HUPW],	Y:	Well  but they said it was a pound or two in a week.
+(024:51),	[GINFO+],	CHW:	That?fs a healthy weight loss for our program.
+(024:53),	[HUPW],	CG:	But I said a pound or two.  I don?ft over-exaggerate you to?I want 10 pounds lost in a week.  No.
+(025:06),	[HUPW],	Y:	That?fs not going to work.
+(025:06),	[HUPW],	CG:	You?fve got to crawl before we can walk.
+(025:08),	[GINFO+],	CHW:	Well  one or two pounds is basically what we hope for te- we expect teens to lose in a week.
+(025:15),	[HUPW],	CG:	Right.  And that?fs what I?fm saying.
+(025:16),	[SO],	CHW:	Mm-hmm.  Yeah.
+(025:17),	[HUPW],	CG:	You know  people will take it to the extreme where you need to 5 or 10 pounds a week.
+(025:24),	[CQTBN],	CHW:	= do you know what happened when they do that?
+(025:28),	[GINFO+],	CHW:	They gain it right back  =
+(025:29),	[HUPW],	CG:	Right back.
+(025:35),	[GINFO+],	CHW:	To sustain that and that?fs not a healthy weight loss.  So good job.  You lost a pound.  Think you can do it again this week?
+(025:35),	[AF],	CHW:	MISSING TEXT
+(025:35),	[CQECHT+],	CHW:	MISSING TEXT
+(025:45),	[CHT+],	Y:	Yeah.
+(025:45),	[GINFO-],	CHW:	Okay  great.  Now today  what we?fre going to talk about?you?fre going to learn a new skill  and it?fs called environmental control.  Do you know what that means?
+(025:45),	[CQTBN],	CHW:	MISSING TEXT
+(025:58),	[HUPW],	Y:	No.
+(025:59),	[CQTBN],	CHW:	No?  Okay.  Well  do you know what your environment is?
+(026:04),	[HUPO],	Y:	No.
+(026:07),	[CQO],	CHW:	No?  Okay.  Your environment are your surroundings.  Okay.  This is your environment =
+(026:07),	[GINFO-],	CHW:	MISSING TEXT
+(026:39),	[CML-],	Y:	Food.
+(026:40),	[CQECML-],	CHW:	Food.
+(026:42),	[HUPW],	CG:	What type of food?
+(026:44),	[CML-],	Y:	Candy  chips  junk food.
+(026:49),	[RCML-S],	CHW:	Okay.  Candy  chips  junk food.  Is it always junk food?
+(026:49),	[CQECML-],	CHW:	MISSING TEXT
+(026:56),	[CML-],	Y:	No.
+(026:57),	[CQECML-],	CHW:	No?  What else could it be? =
+(026:58),	[CML-],	Y:	Sometimes it?fs dinner.
+(027:00),	[HUPW],	CG:	Who?
+(027:02),	[CML-],	Y:	Sometimes it?fs (our) dinner.  Sometimes it?fs (your)?most?sometimes it?fs (your) breakfast  like.
+(027:14),	[CON],	CG:	Well  see?okay.  Okay.  Now.  That?fs understandable.  I?fm going to roll with the food.  I?fm going to roll with the food.  But see  here?fs the thing.  When you fix your food  what =
+(027:28),	[CML-],	Y:	I put too much on the plate.
+(027:33),	[CQTBN],	CHW:	That?fs portion control  right?
+(027:35),	[LUP+],	CG:	Right.
+(027:36),	[GINFO-],	CHW:	So.  I can give you an exam- and that?fs right.  And that?fs?so that?fs portion control right there when you fix your plate and you put too much food on your plate?  That?fs not practicing the portion control.  Remember the portion sizes?
+(027:36),	[CQECML-],	CHW:	MISSING TEXT
+(027:55),	[CML+],	Y:	Yes.
+(027:57),	[RNVB-S],	CHW:	Yes.  You don?ft sound too happy to be remembering them.
+(028:01),	[CHT+],	Y:	I do.
+(028:03),	[HUPW],	Y:	They?fre right here.
+(028:04),	[CQECHT+],	CHW:	Okay.  So how do you think that would help you  if you use those portion sizes?
+(028:13),	[CHT+],	Y:	Like cutting out some of the food?some?most of the food that I put on my plate.
+(028:19),	[RCHT+S],	CHW:	It would reduce it.  It doesn?ft?it?so that?fs a good point you made.  It would cut out some of the things  but what it would do?it?fd give you the?you would have the right amount of the food  and do you know what happens if you eat the right amount and don?ft overeat?
+(028:19),	[AFL],	CHW:	MISSING TEXT
+(028:19),	[GINFO+],	CHW:	MISSING TEXT
+(028:19),	[OQTBN],	CHW:	MISSING TEXT
+(028:37),	[HUPW],	Y:	You lose weight?
+(028:38),	[GINFO+],	CHW:	Yep.  You lose weight.  That?fs right.  You will.  So that?fs portion control.  Okay  but environmental control  you said  is like the things that you  you know  that are around here that cause you to gain weight.  Okay?  So can I give you an example?
+(028:54),	[HUPW],	Y:	Yes.
+(028:55),	[OQTBN],	CHW:	Okay.  So let?fs?what?fs one of your favorite foods?
+(029:00),	[HUPW],	Y:	Pizza.
+(029:02),	[ROS],	CHW:	Pizza.  What about the cookies and all of that stuff?  One of them  ?ecause pizza isn?ft likely to be laying around the house  is it?
+(029:02),	[OQTBN],	CHW:	MISSING TEXT
+(029:08),	[HUPW],	Y:	Oh.  Cereal.
+(029:12),	[ROS],	CHW:	Cereal.  Okay.  Okay.  So =
+(029:16),	[CON],	CG:	No.  No.  I don?ft even =
+(029:18),	[HUPW],	Y:	It is cereal.
+(029:19),	[CON],	CG:	= I don?ft even give you cereal.  I ain?ft even going to go for that one.  It?fs between cereal and a peanut butter and jelly sandwich.
+(029:32),	[SO],	CHW:	Okay.
+(029:33),	[HUPW],	CG:	We going to roll with that.
+(029:34),	[CQTBN],	CHW:	Okay.  You want to roll with the peanut butter and jelly sandwich?  Can we do that  Xxxx?
+(029:38),	[HUPW],	Y:	Mm-hmm.
+(029:38),	[HUPW],	CG:	Let?fs keep it real.
+(029:39),	[GINFO+],	CHW:	Okay.  Dad said  ?gLet?fs keep it real.?h  He know you better than I do.  Okay.  So you come home  and there?fs peanut butter and there?fs jelly  and it?fs on the counter  right?  Or someplace just like staring you in the face.  Okay.  So you come in and you say  ?gOoh.  Peanut butter and jelly sandwich.  That would be real good about right now.?h  And it?fs hard to pass it by  okay  even if you just try to have a half a peanut butter and jelly sandwich  it?fs?it may be difficult  and then you go ahead and you get you another piece of bread  and you fix another one  right?  How many peanut butter and jelly sandwiches do you eat at a time?
+(029:39),	[CQTBN],	CHW:	MISSING TEXT
+(030:17),	[HUPW],	Y:	One.
+(030:18),	[CON],	CG:	Keep it real.
+(030:19),	[HUPW],	Y:	One.
+(030:19),	[CON],	CG:	Keep it real.
+(030:21),	[CON],	Y:	It is one.
+(030:22),	[CON],	CG:	Keep it =
+(030:22),	[CON],	Y:	Two.
+(030:23),	[HUPW],	CHW:	Two?
+(030:24),	[HUPW],	CG:	Real.
+(030:25),	[GINFO+],	CHW:	Okay.  So you can?ft have one?it?fs like those potato chips.  You can?ft eat just one.  You got to eat two of them.  Okay.  So what some people find out though by practicing environmental control  if maybe they put that stuff out of sight somewhere  like on a high shelf  where they can?ft see it or can?ft  you know  that they don?ft think about it.  So that?fs one way to practice environmental control.  You put the things up where?some place where it?fs a little bit harder for you to reach  okay?  ?eCause you can keep yourself from having it that often.  And sometimes  for some people  that?fs not good enough.  So they find that not bringing it in the house is even better because then if it?fs not here  guess what?
+(030:25),	[CQTBN],	CHW:	MISSING TEXT
+(031:19),	[HUPW],	Y:	You can?ft eat it.
+(031:20),	[GINFO+],	CHW:	There you go.  Okay.  And that?fs an example of environmental control  okay?  So in this example  you?fd be making a choice to change the types of foods that are in your environment  okay?  And where you?or where you keep it to reduce that temptation.  Can I answer any questions about that for you?
+(031:47),	[HUPW],	Y:	No.
+(031:49),	[CQTBN],	CHW:	Have you ever done anything like that before?
+(031:52),	[HUPW],	Y:	Yes.
+(031:54),	[OQTBN],	CHW:	You have?  Okay.  Tell me about it.
+(031:57),	[LUP+],	Y:	Oh  wait.  Wait.
+(031:59),	[CQTBN],	CHW:	Put the?put something up out of sight or didn?ft bring it in the house so that you didn?ft eat it?
+(032:07),	[CQTBN],	CHW:	No?  You?fve never done that?
+(032:08),	[HUPW],	Y:	I thought you was talking about did I ever eat something?I forgot.
+(032:13),	[CQTBN],	CHW:	Okay.  And then  we could also use  well  while we?fre on the subject of in the house  I do need to talk about this with you guys because I know you do sell candy and the different things  right?
+(032:28),	[HUPW],	CG:	Mm-hmm.
+(032:30),	[CQECHT-],	CHW:	So does that tempt you  Xxxx?
+(032:33),	[HUPW],	Y:	Hmm?
+(032:34),	[CQECHT-],	CHW:	Does that tempt you?  Those things that your parents sell?
+(032:39),	[CHT-],	Y:	Yeah.
+(032:40),	[CQECML-],	CHW:	Okay.  So how do that?does that tempt you?  Do you see them?  Or is it that you just know they?fre here or what?
+(032:48),	[CHT-],	Y:	I know they?fre here.
+(032:49),	[RCHT-S],	CHW:	You know they?fre here.  Okay.  So.  What could your mom and dad do to help you practice environmental control as far as those things go?
+(032:49),	[OQECHT+],	CHW:	MISSING TEXT
+(033:03),	[HUPW],	Y:	Hide the candy somewhere I can?ft find it?
+(033:06),	[CQECML-],	CHW:	Hiding the candy someplace where you can?ft find it?  Okay.  Good.  Does that mean you?fre not going to go looking for it?
+(033:12),	[HUPW],	Y:	No.
+(033:14),	[CQECHT+],	CHW:	Okay.  So what else can they do?  I mean  if you?fre going?if?and the house isn?ft that big  so you?fre going to find it  I take it  right?  If you?fre really honest?
+(033:14),	[CON],	CHW:	MISSING TEXT
+(033:26),	[CML+],	Y:	No  not really.
+(033:27),	[CQECML+],	CHW:	Not really?
+(033:28),	[HUPW],	Y:	No.
+(033:29),	[CON],	CG:	Keep it real.  Let?fs keep it real.  The lady just said the key word?our house is not that big.  Y?fall going to go in our room regardless if we here or not.  If we standing outside that door holding a conversation  even if she was to be the neighbor next door  and we outside for a while having?you looking.  Let?fs keep it real.  This is the only way y?fall going to get it out and get it helped.  It ain?ft like she really saying you can?ft have it  but maybe let?fs say one or two pieces  but don?ft go ahead and eat the whole sack in one day.  That?fs what she?fs breaking it down to.  So don?ft be afraid to say what you do because =
+(034:16),	[GINFO+],	CHW:	Nobody?fs going to get mad at you.
+(034:21),	[RCML+S],	CHW:	Okay.  So you?fre going to look for it.  So how does that help you lose weight?
+(034:21),	[CQECHT+],	CHW:	MISSING TEXT
+(034:31),	[CML-],	Y:	None.
+(034:32),	[RCML-S],	CHW:	It doesn?ft.  So what do you think you can do instead?
+(034:32),	[OQECHT+],	CHW:	MISSING TEXT
+(034:35),	[CHT+],	Y:	Just don?ft look for it.
+(034:37),	[SO],	CHW:	Okay.
+(034:38),	[HUPW],	CG:	Oh  yeah.  Just =
+(034:49),	[SO],	CHW:	Okay.
+(034:51),	[HUPO],	CG:	So she really can?ft sell nothing.
+(034:54),	[ROS],	CHW:	She can?ft sell anything.
+(034:55),	[HUPW],	CG:	Nope.  But  at the same time  we know you know it?fs here.  We know it?fs very tempting.  And for other stuff.  And if y?fall come at it like y?fall got some sense and ask for it in a polite way and no demanding-type stuff  Mom?fll get it.  Y?fall know she  you know.  What?fd I just tell you before we got home?  What was I at Sam?fs Club looking for?
+(035:23),	[GINFO+],	CHW:	Those flavored waters.  Mm-hmm.
+(035:27),	[CHT-],	CG:	Couldn?ft even have them or really didn?ft have time to really look for them ?ecause I was with somebody else.
+(035:32),	[OQECHT+],	CHW:	What do you think you can do to help her with that?
+(035:36),	[HUPW],	CG:	Smack it out of her hand.  [laughs]  No.  [laughter]
+(035:41),	[CML+],	CG:	No.  I?fm just kidding.  I?fm just kidding.  But me?I?fm always on them for eating?even Mom?fs.  ?gCome on  you know you shouldn?ft have that.?h  But if you then done something all week to lose weight  okay.  ?gYou deserve?you can have?h =
+(036:27),	[SO],	CHW:	Okay.  [laughs]  That?fs a nice goal.  Yeah.
+(036:31),	[HUPW],	CG:	Most people don?ft even make it to see 25.  Most?young?nowadays  they ain?ft even?that?fs cut to 16.
+(036:38),	[SO],	CHW:	A lot of?left with a lot of different things.  That?fs true.
+(036:40),	[CHT+],	CG:	And just before you start again?and seeing?and I ain?ft even saying just by killing.  People?these young kids out here on these sport teams dropping of bad heart conditions and they not being caught.  This is why I?fm on your?you and your mama really don?ft know what y?fall have me worrying about when y?fall eat.  I say  ?gNo  you shouldn?ft have that ?h but I know you?fre going to do what?her  you?fre a grown woman  but you  I still can?I still got you {00:37:14.0} =
+(037:14),	[GINFO-],	CHW:	Hopefully you can still shape her and get her to =
+(037:18),	[HUPW],	CG:	Y?fall is getting?I only?I don?ft?I barely go to McDonald?fs for me.  If I go to McDonald?fs  I really want maybe a hamburger and French fries  but I don?ft really want no pop.  I want the little frozen treat.  But  see  I?fm not that =
+(037:59),	[AF],	CHW:	So you do a lot of baking and grilling and things like that =
+(038:05),	[HUPW],	CG:	Well  yeah  the George Foreman grill  but not {00:38:06.0} =
+(038:06),	[CQTBN],	CHW:	Oh  not outside?  Okay.
+(038:07),	[HUPO],	CG:	No  no  no.  That ain?ft  =
+(038:11),	[CQECHT+],	CHW:	Okay.  So but  getting back to the environmental control  do you think there are some things that you could do with selling the different things to help?
+(038:22),	[CML+],	CG:	Like we said  we hide it  well  we ain?ft going to say we hide it.  We just put it up so just in case somebody did come to the door while we weren?ft here and y?fall just so happens to be home.  Okay  go on and get it.  But that?fs?I trust in them  so now  =
+(038:56),	[OQECML+],	CHW:	So how do you think that will work if =
+(038:58),	[CML+],	CG:	Oh  I guarantee you it will.
+(039:01),	[CML+],	CG:	Mm-hmm.  ?eCause nobody have?it?fs nothing but the refrigerator.
+(039:03),	[SO],	CHW:	Okay.
+(039:06),	[CML+],	CG:	Pretty soon  if you come find out you?fre messing in the refrigerator  it will?the refrigerator can be locked.  Believe me.
+(039:12),	[CQO],	CHW:	That?fs true?they have?with a chain?
+(039:14),	[HUPW],	Y:	I need water.
+(039:15),	[HUPW],	CG:	Just like a deep freezer can be locked?
+(039:18),	[GINFO+],	CHW:	Mm-hmm.
+(039:19),	[HUPW],	CG:	A refrigerator can be locked.
+(039:18),	[LUP+],	Y:	Yeah.
+(039:19),	[SO],	CHW:	Can be locked.  That?fs true.
+(039:20),	[HUPW],	Y:	But I need water.  I don?ft like faucet water.
+(039:22),	[ADV-],	CG:	You better use the faucet.
+(039:23),	[LUP+],	Y:	Ugh.
+(039:24),	[LUP+],	CG:	Oh  well.
+(039:26),	[ADV-],	CG:	?gOh  I need the refrigerator.  I need the freezer open ?h ?ecause ain?ft nothing in there.  Everything in there is frozen by the time it freeze  baby  we?fll be home.
+(039:42),	[SO],	CHW:	Well  yeah.
+(039:46),	[GINFO-],	CHW:	You?if you eat too much sugar-free ice cream  you won?ft do that again.  Trust me. [laughs] =
+(039:51),	[HUPW],	CG:	But see  I ain?ft saying just go in there and just =
+(039:57),	[GINFO-],	CHW:	Yeah.  You won?ft do it again.  If you eat too much  you won?ft do it again because that stuff will give you the runs.
+(040:02),	[CML+],	Y:	My ice cream  I don?ft =
+(040:03),	[HUPW],	CG:	Just like food  I remember
+(040:07),	[HUPW],	CG:	When the summertime comes  really?that?fs what they?fre going to get because I?fm more?really  when it?fs summer?like when they get out of school.
+(040:17),	[SO],	CHW:	Right.
+(040:18),	[HUPW],	CG:	That?fs when I really start hitting the fruit market.  And I?fll have nothing but a bowl of fruit either in the refrigerator or there?fs some in the refrigerator what can really be refrigerated =
+(040:29),	[ROS],	CHW:	Still there.  Mm-hmm.
+(040:31),	[HUPW],	CG:	So oranges  apples and stuff like that.  It?fs out there. =
+(040:35),	[HUPW],	Y:	I was some kiwis.
+(040:36),	[HUPW],	CG:	Kiwi and all that type of stuff  cantaloupe and celery  tomato =
+(040:42),	[AFL],	CHW:	That?fs great.
+(040:43),	[HUPW],	CG:	That stuff stays in the refrigerator.
+(040:45),	[AFL],	CHW:	That?fs great.
+(040:46),	[HUPW],	CG:	So I mean  we do eat  but they just don?ft eat it up like we want them to eat it up?bananas and I ain?ft going to eat no bananas  but =
+(040:57),	[SO],	CHW:	Yeah.
+(040:59),	[HUPW],	CG:	They have all that stuff  so I mean  we do change up our stuff when?as the =
+(041:03),	[SO],	CHW:	The seasons change.
+(041:09),	[ROS],	CHW:	Right.  It?fs seasonal.
+(041:16),	[CQTBN],	CHW:	Yeah  and I was going to ask you?is that all the same stuff in there?
+(041:18),	[HUPW],	CG:	Yeah  besides just that {00:41:23.0} =
+(041:29),	[GINFO+],	CHW:	Okay.  So what do you think about maybe just?I?fm sure you?fve got an idea of like how many things you sell a day.
+(041:35),	[HUPW],	CG:	Yeah.  We know how much in there.
+(041:37),	[CQO],	CHW:	Well  are you going to sell all of that today?
+(041:38),	[HUPO],	CG:	No.  We just leave it here as they come because they come =
+(041:45),	[HUPW],	CG:	= I?fve tried to take it downstairs  but then =
+(041:46),	[OQECHT+],	CHW:	What do you think about maybe practicing environmental control by just putting?keeping a certain amount of it out?
+(041:53),	[CHT+],	CG:	That?fs a good idea.
+(042:09),	[HUPW],	CG:	Who won?ft?
+(042:11),	[GINFO+],	CHW:	If she takes a few of them.
+(042:13),	[HUPW],	CG:	[laughs] Yeah  right.  It?fs a count on everything {00:42:15.0} =
+(042:20),	[HUPW],	CG:	I understand what you?fre saying.  Take about 5 ? and put the rest of them up. =
+(042:23),	[ADV-],	CHW:	Put the rest of them up.  That way =
+(042:29),	[HUPO],	CG:	If I took one and (no money in it).
+(042:45),	[CML+],	CG:	I?fm going to put five in here right now.  Just because you said that.
+(042:49),	[GINFO-],	CHW:	You know  I mean  it?fs just a little thing  but it can help because she?fll know.  ?gOkay.  Well  I can?ft eat these.  These are for sale.?h  So that?fs one way you guys can practice environmental control to help her.  And you were saying about the cereal?  You?fve got a ton of cereal.
+(043:14),	[HUPW],	Y:	That Cap?fn Crunch  but I know Cap?fn Crunch Berries in there.
+(043:16),	[HUPW],	CG:	But see =
+(043:22),	[HUPW],	CG:	The majority of it is Cheerios.
+(043:24),	[HUPW],	Y:	Cheerios.
+(043:25),	[SO],	CHW:	Okay.
+(043:27),	[HUPW],	Y:	And I eat the Cheerios.  That  everybody does like Cheerios. I eat the Cheerios.
+(043:30),	[CQTBN],	CHW:	Everybody likes Cheerios?
+(043:31),	[HUPW],	CG:	We all eat Cheerios.
+(043:33),	[HUPW],	Y:	Xxxx  he  well  Xxxx eat all the cereal.
+(043:36),	[HUPW],	CG:	I mean  we all?I don?ft?well  I really don?ft do cereal.  None of my cereal is besides Cheerios  but they eat that  but you can come back here and probably think we?fve bought another box.  That box probably been sitting there since the last three times you?fve been here.
+(043:58),	[SO],	CHW:	Oh  no.  I?fm not.  No.
+(043:59),	[HUPW],	CG:	= No  I?fm?that?fs anybody.  Anybody walk in our house right now  they?fd be the first like  ?gOh  y?fall got the good cereals.  Every time I come in here y?fall got ?h ?gWhat are you talking about?  We {00:44:09.0} cereal {00:44:10.0}.?h  It ain?ft old  but it =
+(044:13),	[SO],	CHW:	I got you.
+(044:14),	[HUPW],	CG:	It don?ft have the bag like that.
+(044:15),	[CQECHT+],	CHW:	Right.  That?fs true.  Okay.  So but so that doesn?ft tempt you then?
+(044:22),	[RCHT-S],	CHW:	So it?fs the peanut butter and jelly sandwiches  it?fs the candy.  So your Dad  we made a little plan for the candy.  We?fre going to just keep out so much of it  and you?fre going to lock the freezer?
+(044:36),	[HUPW],	CG:	Huh?
+(044:37),	[CQTBN],	CHW:	The freezer?  You know.  I mean.  Is it locked  or you just =
+(044:41),	[HUPW],	Y:	We don?ft have a key to it.  It?fs?c
+(044:45),	[HUPW],	CG:	Oh  it?but it don?ft matter what?ain?ft nothing in here but food.
+(044:49),	[SO],	CHW:	Oh.  Okay.
+(044:50),	[HUPW],	CG:	Ain?ft no sweets in here. =
+(044:51),	[CQTBN],	CHW:	No sweets there?  Okay.  Okay.
+(044:53),	[HUPW],	CG:	And these cookies ain?ft nothing but the little popsicle sticks.  Ain?ft nothing sweet in here. =
+(045:00),	[HUPW],	CG:	= This ain?ft nothing but vegetables and meat.
+(045:01),	[CQECHT-],	CHW:	It?fs basically the candy that gets you  huh?
+(045:03),	[LUP+],	Y:	Right.
+(045:05),	[RCHT+S],	CHW:	Okay.  So and you?fre okay with that because then it?fs out of your?it?fs?it won?ft tempt you because it?fs not that big old basket.  Won?ft be that big old basket sitting there.  It?fll be locked up in the room  and that won?ft tempt you because you can?ft get to it.  And you know what that?fs for  so.
+(045:26),	[HUPW],	CG:	Right.  This ain?ft nothing but $2.50 worth  so knows {00:45:30.0} ?ecause y?fall ain?ft?we ain?ft guaranteeing to count this every day.
+(045:36),	[CQO],	CHW:	Right.  That?fs what I was thinking  you know?
+(045:38),	[LUP+],	CG:	Right.
+(045:39),	[GINFO+],	CHW:	It?fs like you know  you can count that with that.
+(045:41),	[HUPW],	CG:	This was like at least about $27 worth of candy just alone bagged up  so.
+(045:46),	[HUPW],	Y:	Last count  it was like 35.
+(045:48),	[HUPW],	CG:	See  but we done sold some  so.  You know what I?fm saying?  Ain?ft no telling if one of you all took one without writing it down.  So but we?fll know.  We?fll find out.
+(045:57),	[GINFO+],	CHW:	Well  now  we?fve got a way to monitor it.
+(045:58),	[LUP+],	CG:	Mm-hmm.
+(045:59),	[SO],	CHW:	Great.
+(046:00),	[HUPW],	CG:	Thanks to the lady.
+(046:01),	[GINFO+],	CHW:	[laughs] It?fs all to help you.
+(046:05),	[GINFO-],	CHW:	And then  we can also use environmental control outside of the house  too.  So you got some favorite snack foods?
+(046:16),	[CML+],	Y:	Chips.
+(046:17),	[CQECML+],	CHW:	Okay.  Lot- what?  Hot chips or?
+(046:19),	[CML+],	Y:	Hot chips.
+(046:20),	[RCML+S],	CHW:	Hot chips.  Okay.  A lot of kids love them.  Okay.
+(046:20),	[GINFO+],	CHW:	MISSING TEXT
+(046:25),	[HUPW],	Y:	We out of hot chips.
+(046:26),	[HUPW],	CG:	No  we ain?ft ?ecause I just?it?fs not for you  but we just bought some more because I don?ft want them to say we out of hot chips  telling people we out of hot chips when they come in to buy them.  That?fs what they are really for?they not for us  but =
+(047:06),	[GINFO+],	CHW:	They do.
+(047:07),	[ADV-],	CG:	And you reap what your mama done tell you.  All that hot stuff is not good for you.
+(047:16),	[HUPW],	Y:	{00:47:16.0} mama told me that.
+(047:18),	[GINFO+],	CHW:	Well  but  let?fs say  is there a vending machine?suppose there?fs a vending machine at your school or?no vending?oh  great.
+(047:24),	[LUP+],	CG:	No  no.
+(047:25),	[CQTBN],	CHW:	They don?ft sell stuff?like =
+(047:28),	[HUPW],	Y:	Lunch room.
+(047:29),	[HUPW],	CG:	All that stuff is in the lunch room.
+(047:30),	[ROS],	CHW:	Okay.  Lunch room.  Good.  Okay.  That?fs?we can use that for an example.  So this vending machine?fs in the lunch room  and you go in the lunch room every day  right?  And you =
+(047:40),	[HUPW],	Y:	Ain?ft no vending machine.  It?fs like a =
+(047:42),	[HUPW],	CG:	No.  There?fs no vending machines  period.
+(047:44),	[HUPW],	Y:	It?fs just like a cart.
+(047:45),	[HUPW],	CG:	It?fs like you?fre going into a store.
+(047:47),	[SO],	CHW:	Oh.
+(047:48),	[HUPW],	CG:	You know how you?better yet  not even a store.  Perfect example.
+(047:53),	[HUPW],	Y:	A little snack bar.
+(047:55),	[HUPW],	CG:	Go to the hospital  and go into one of them little?to go get you a sandwich and some?it?fs something like that.
+(048:02),	[CQTBN],	CHW:	Okay.  So it?fs =
+(048:04),	[HUPW],	CG:	But it?fs at school.
+(048:07),	[LUP+],	CG:	Yeah.
+(048:08),	[SO],	CHW:	Okay.
+(048:09),	[HUPW],	Y:	In the food court.
+(048:10),	[CQTBN],	CHW:	So you go in there  and you get your lunch  right?
+(048:14),	[HUPW],	Y:	Mm-hmm.
+(048:16),	[CQTBN],	CHW:	And this stuff is staring you in the face  I?fm assuming.  You can see it every time you walk in?
+(048:23),	[HUPW],	Y:	Mm-hmm.  All the time.
+(048:24),	[ROS],	CHW:	All the time.
+(048:26),	[HUPW],	Y:	Coming back from gym  coming in the school.  ?eCause the lunch room is like?c
+(048:35),	[HUPW],	Y:	It?fs like door here  office here  you walk by =
+(048:36),	[HUPW],	CG:	It?fs like you walk in this front door  going up straight right across that walk (to).
+(048:37),	[OQECHT+],	CHW:	Okay.  So you?fre going to see this thing with the chips and stuff on it?  So how do you think you can avoid those?
+(048:47),	[HUPW],	Y:	Uh.  Just like?it?fs like two lunches before us  so there really don?ft be nothing inside  just don?ft get.
+(049:00),	[ROS],	CHW:	Oh  you don?ft get any  there.
+(049:01),	[HUPW],	Y:	?eCause soon as we get?it?fs like all the (product) they sell is fourth- and third- and fifth-graders buy all of the hot Cheetos  so there?fs only like 10 bags  and then  as soon as we get there  it be like two classes up there  and then  they buy all of them.
+(049:20),	[RCHT+C],	CHW:	They buy all of them.  So you don?ft have to worry about eating those at school because they?fre gone.
+(049:23),	[LUP+],	Y:	Yeah.
+(049:24),	[OQTBN],	CHW:	What about when you?fre?you?fre out and you?fre with your friends and stuff  and y?fall say  ?gWell  let?fs walk to the store.?h
+(049:33),	[HUPW],	CG:	Can?ft use that one as an example.
+(049:34),	[CQTBN],	CHW:	You can?ft?
+(049:35),	[BLT],	CG:	Nope.
+(049:36),	[OQTBN],	CHW:	Nope?
+(049:37),	[HUPW],	CG:	They ain?ft allowed to walk to the store  not unless me or Mama is with them.
+(049:41),	[OQEB],	CHW:	So what things get in your way when you?fre outside of the house  as far as eating?
+(049:49),	[HUPW],	Y:	Like regular other stuff  like {00:49:53.0} and stuff like that?
+(049:55),	[SO],	CHW:	Yeah.
+(049:56),	[CHT-],	Y:	Ice cream truck.
+(049:58),	[RCHT-S],	CHW:	The ice cream truck.
+(050:00),	[GINFO+],	CHW:	Okay.  So you?fre outside  and the ice cream truck comes down and music [music] so you?it?fs not like you can ignore them ?ecause they make themselves heard  right?
+(050:13),	[LUP+],	Y:	Yeah.
+(050:14),	[OQECHT+],	CHW:	So what do you think you can do?because that ice cream truck is in your environment  and that ice cream truck?if you keep going to that ice cream truck  it?fs going to make you gain weight.  So what do you think you can do while you?fre outside and you hear the ice cream truck  what do you think you could do to avoid that temptation?
+(050:34),	[HUPW],	Y:	Uh [pause] I don?ft know.
+(050:40),	[CQTBN],	CHW:	You don?ft know?  Got any suggestions  Dad?
+(050:44),	[HUPW],	CG:	Say that again?
+(050:45),	[OQECHT+],	CHW:	Ice cream truck?fs outside  she?fs outside =
+(050:54),	[CHT+],	CG:	Well  the same thing that?fs on that ice cream truck you almost got at home  which is a little bit less calories than?cso how about same dollar that you about to give to the ice cream truck  how about you recycle it back into your own household where you can?where it?fs stuff that can be used?  Toiletries?c
+(051:15),	[GINFO+],	CHW:	Well  we?fre trying to talk about environmental control  I mean you =
+(051:21),	[GINFO+],	CHW:	That you don?ft eat the stuff. [laughs]
+(051:22),	[ADV-],	CG:	No.  That is environ- look  look.  That is environ- all you?fre doing is really recycling your money.  You?fre still going to get the same thing off the ice cream truck that you {00:51:32.0}?that you can come and get in the house.
+(051:34),	[CON],	Y:	But Dad.
+(051:35),	[GINFO+],	CHW:	Hear me out.  Yeah.  I see?I understand what you?fre saying =
+(051:42),	[HUPW],	CG:	But you have less calories coming from the ice cream truck from the stuff that we got in the house.
+(051:49),	[CQTBN],	CHW:	Oh  you have less calories in the house than you do on the ice cream truck? =
+(051:52),	[HUPW],	CG:	Yeah.  So you want to spend money  which really  99.999 percent  you can come here and just ask for it for free.
+(052:02),	[HUPW],	Y:	A popsicle.
+(052:03),	[SO],	CHW:	Oh  oh  okay.  I get it.
+(052:04),	[HUPW],	CG:	That?fs what I was saying.
+(052:05),	[RCHT+S],	CHW:	This?and it?fs lower calories.
+(052:06),	[LUP+],	CG:	Right.
+(052:07),	[SO],	CHW:	Okay.
+(052:08),	[HUPW],	CG:	It?fs lower on calories.
+(052:09),	[RCHT+S],	CHW:	So that would be a substitution for you.
+(052:11),	[LUP+],	CG:	Right.
+(052:12),	[OQECML+],	CHW:	Okay.  But if you were to practice environmental control  and because you know that this is?even the one in the house is going to make you gain some weight  even if it?fs less calories.  What do you do then?
+(052:25),	[CML+],	Y:	Not eat it at all.
+(052:29),	[CQO],	CHW:	Hmm?
+(052:30),	[CML+],	Y:	Don?ft eat it at all.
+(052:30),	[AF],	CHW:	Okay  great.  That?fs a way to practice environmental control.
+(052:34),	[CML+],	Y:	Just get some cold water or something.
+(052:36),	[CQECML+],	CHW:	Get you some cold water instead?  Okay.  Okay.  Great.  That?fs a way to practice environmental control because  you know  you kind of want to limit the things that you =
+(052:36),	[AF],	CHW:	MISSING TEXT
+(052:46),	[CML+],	CG:	We?fre going to start.
+(052:48),	[CML+],	CG:	I?fm going to really push Mom next month to go get some flavored water.  I don?ft care too much for the Aquafina flavored water.  The only flavored water I care about is the =
+(052:58),	[HUPW],	Y:	They got some
+(053:02),	[CML+],	CG:	Clear Fruit kind of =
+(053:15),	[GINFO+],	CHW:	Can I offer you a suggestion?
+(053:16),	[HUPW],	CG:	I want some flavored water.
+(053:17),	[GINFO+],	CHW:	They?I don?ft know if Sam?fs Club has them  but Wal-Mart?fs has their own brand of like the Clear Fruit =
+(053:25),	[HUPW],	Y:	Yeah  ?ecause we was in Wal-Mart and those {00:53:27.0} =
+(053:27),	[GINFO+],	CHW:	And they?fre a little bit less expensive.  They come in bigger bottles  so?and they?fre zero calories. =
+(053:32),	[HUPW],	CG:	I have to taste it.
+(053:34),	[GINFO+],	CHW:	You?they taste pretty?to me  they taste pretty good.
+(053:41),	[HUPW],	CG:	But  see  Mom do all her?all our shopping at =
+(053:43),	[ROS],	CHW:	At Sam?fs Club.
+(053:44),	[HUPW],	CG:	Sam?fs Club.
+(053:45),	[GINFO+],	CHW:	They might have them at Sam?fs Club.  I don?ft know.
+(053:50),	[HUPW],	CG:	They?but  see  like when you go to Sam?fs Club  you ain?ft buy  excuse me  buying nothing but bulk.
+(053:57),	[SD],	CHW:	Right.  I don?ft shop at Sam?fs Club because the bulk stuff goes to waste.  It?fs just me  so I don?ft do Sam?fs Club. =
+(054:03),	[HUPW],	CG:	See  and see?and it?fs us.
+(054:06),	[GINFO+],	CHW:	But it?fs  and you?fve got a larger family  =
+(054:07),	[LUP+],	CG:	Right.
+(054:24),	[HUPW],	CG:	But since she?fs going to buy and spending and if you =
+(054:27),	[SO],	CHW:	If you?fre using it up.  Mm-hmm.
+(054:30),	[GINFO+],	CHW:	Well  have you tried the?here?fs another suggestion  if you don?ft mind.
+(054:35),	[HUPW],	Y:	(No).
+(054:36),	[GINFO+],	CHW:	The little packets that you empty into the water bottle.
+(054:45),	[HUPW],	Y:	They have those little things that you carry around in your pocket.  It?fs called Neo.
+(054:49),	[HUPW],	CG:	And it?fs by?and you squirt two little?I ain?ft checked that out yet.
+(054:53),	[HUPW],	Y:	It?fs Neo.  It?fs called Neo.
+(054:55),	[HUPW],	CG:	It?fs an ener- it?fs like supposed to be an en- a flavor to your water and stuff like that.  I know what you?fre talking about.
+(055:07),	[CQTBN],	CHW:	Well  is there a Dollar Tree nearby?
+(055:09),	[HUPW],	CG:	I don?ft even think they got it yet.
+(055:10),	[GINFO+],	CHW:	I?fm not sure about the Neo  but I know they do the Crystal Light and the Wyler?fs.
+(055:14),	[CML+],	CG:	Yeah  we can go.  They do them  but they =
+(055:15),	[SD],	CHW:	I usually go through those are like five calories or zero calories.
+(055:18),	[HUPW],	CG:	When we get them  we try to get them to use it as?just don?ft come here because it?fs here.
+(055:26),	[HUPW],	CG:	And mess over it.
+(055:27),	[SO],	CHW:	Right.
+(055:29),	[HUPW],	CG:	Which they really ain?ft going to mess over ?ecause it got flavor to it  so they?fre going to drink it all.  But don?ft just  ?gOkay  I drank one.?h  It wasn?ft nothing.  To you  still just a bottle of water  but you?fre really not realizing that hey  =
+(055:42),	[ROS],	CHW:	It costs money  right.
+(055:56),	[SUP],	CHW:	I understand.  Okay  so now.  So =
+(056:00),	[CML+],	CG:	I?fll tell her to invest in some more of those.
+(056:06),	[SUM],	CHW:	So did you  okay  so we did your?we?fve talked about environmental control in the house  and Dad?fs going to put that candy up and just have so much out.  That way  you?fll be able to track it  and you?fll know that that?fs off-limits to you.  The rest of it?fll be locked up.  So that won?ft be a temptation for you.  Anything else that gets in your environment here that gets in your way?
+(056:06),	[CQECHT-],	CHW:	MISSING TEXT
+(056:34),	[CHT+],	Y:	Mmm?cno.
+(056:36),	[CQECHT-],	CHW:	No?  Pretty much the candy and the peanut butter?
+(056:41),	[HUPW],	CG:	She a coffee fiend.
+(056:42),	[CQTBN],	CHW:	Coffee?
+(056:43),	[HUPW],	CG:	No  no.  I?fm just kidding.  I?fm just kidding.  [laughter]
+(056:46),	[HUPW],	Y:	I don?ft drink {00:56:45.0}.  It makes people short.
+(056:47),	[HUPW],	CG:	Huh?
+(056:49),	[GINFO+],	CHW:	It stunts your growth.  That?fs what they say about =
+(056:58),	[HUPW],	Y:	But I used to drink coffee all the time. =
+(056:59),	[HUPW],	CG:	But they still drunk it. [laughs]
+(057:00),	[SO],	CHW:	They did  but they were grown.  They just wouldn?ft let us have it. [laughs]
+(057:02),	[HUPW],	CG:	No  she don?ft mess with no coffee.  I?fm just cracking a joke. =
+(057:10),	[SUM],	CHW:	Okay.  So we got a little plan here for practicing environmental control at home  and you say that when you?fre out  you don?ft go to the store by yourself  so you don?ft have to worry about that.  And at school  the stuff that tempts you is gone by the time you get to the lunch room  which is a good thing  you know  so you don?ft have to worry about that.  So anything else?
+(057:10),	[CQTBN],	CHW:	MISSING TEXT
+(057:37),	[CHT+],	Y:	No.
+(057:39),	[CQTBN],	CHW:	No?  Okay.
+(057:44),	[HUPW],	CG:	You put your folder up so you know where it?fs at.
+(057:46),	[SO],	CHW:	Mm-hmm.
+(057:49),	[CML+],	Y:	I?fll clip it to my clipboard.
+(057:51),	[GINFO+],	CHW:	And I?fve got some recipes if you guys would like to =
+(057:53),	[HUPW],	CG:	On what? =
+(057:54),	[CHT+],	Y:	I want a smoothie recipe.
+(058:01),	[HUPW],	CG:	But that?fs the first thing that come out your mouth is a smoothie.  How about a healthy dinner?  How about a {00:58:07.0}
+(058:09),	[CQECML+],	CHW:	You said that you had pizza?
+(058:11),	[CQO],	CHW:	A what?
+(058:13),	[ADV-],	CG:	Like we having spaghetti tonight.  Look up spaghetti.  Put that on your list.
+(058:16),	[ADV-],	CHW:	Oh  yeah.  And the portions for it.  Is this your book?  Yeah  that?fs your book.
+(058:16),	[CQTBN],	CHW:	MISSING TEXT
+(058:20),	[CML+],	Y:	Cup
+(058:21),	[LUP+],	CG:	Oh  yeah  we  man.
+(058:22),	[HUPW],	Y:	Oh  what?fs that?
+(058:23),	[HUPW],	CG:	We do some recipes around here.
+(058:26),	[GINFO+],	CHW:	Oh  this is an activity.  We?fll?we can do this activity another day.  I?fve got that for another family  but I?fve got some recipes here that are healthy and low in calories.
+(058:39),	[GINFO+],	CHW:	Okay.  You had pizza.  I?fve got barbecued chicken pizza.
+(058:42),	[HUPW],	CG:	Yeah.  Pineapple pizza.
+(058:44),	[GINFO+],	CHW:	I?fve got a tortilla bake.  What else we got here?
+(058:52),	[HUPW],	Y:	Spaghetti.
+(058:53),	[GINFO+],	CHW:	And with the pizza  there?fs a recipe for the crust  or you can use a store-bought crust.  And then I?fve got a few more  like some vegetable recipes here.  And what else have I got?
+(059:07),	[ADV-],	CG:	Look up stir-fry.  That?fs what I might start putting you on.
+(059:09),	[CQO],	CHW:	Stir-fries?  Okay.
+(059:11),	[GINFO+],	CHW:	I?fve got a chicken nugget recipe here.  Okay?  And a dip.
+(059:18),	[CHT-],	Y:	Ew.
+(059:19),	[GINFO+],	CHW:	And another pizza.
+(059:21),	[HUPW],	CG:	It?fs okay to like stir-fry.  It?fll be alright.  {00:59:23.0} =
+(059:24),	[CQECHT+],	CHW:	You?fd like the stir-fry?  =
+(059:26),	[GINFO+],	CHW: 	= I?fll look up some recipes for stir-fries for you.  They?fre really good. =
+(059:28),	[HUPW],	CG:	If you get?if you?or even if you were able to go to the store and buy the right one  they not bad.  I used to think of the {00:59:36.0}  I?fd be like  ?g{00:59:37.0} I ain?ft?I don?ft care who make it.?h
+(059:44),	[HUPW],	Y:	Not no more.
+(059:46),	[CQTBN],	CHW:	They?fre just meat and vegetables  you know?
+(059:47),	[LUP-],	CG:	No.
+(059:48),	[HUPW],	Y:	Some people don?ft make them right  so.
+(059:50),	[LUP+],	CG:	No.
+(059:51),	[GINFO+],	CHW:	Over some rice or something.  Sometimes you can eliminate the meat  like chicken.  Some people do chicken with chicken stir-fries or beef.
+(059:57),	[HUPW],	Y:	But they do too much cheese.
+(059:59),	[HUPW],	CG:	No  not the stir-fry.  You talking about =
+(060:00),	[HUPW],	Y:	Lasagna.
+(060:02),	[CQTBN],	CHW:	Oh  the lasagnas?
+(060:03),	[LUP+],	CG:	Yeah.
+(060:04),	[SO],	CHW:	Oh.
+(060:05),	[HUPW],	Y:	They do too much stir?I mean  cheese.  And they put?do too much cheese?Mom we used to buy it at the store  and they used too much cheese.
+(060:13),	[HUPW],	Y:	I?fll eat the one at school.
+(060:15),	[HUPW],	CG:	I just can?ft do it ?ecause it got the white stuff in there.
+(060:17),	[CQTBN],	CHW:	Oh  the cheeses?
+(060:18),	[HUPW],	Y:	That?fs the cheese.
+(060:19),	[ROS],	CHW:	Oh  the ricotta cheese.
+(060:20),	[LUP+],	CG:	Yeah.
+(060:21),	[GINFO+],	CHW:	And the  yeah  =
+(060:24),	[HUPW],	Y:	That?fs cheese.
+(060:25),	[HUPW],	CG:	No  I mean that look like crap.
+(060:27),	[HUPW],	Y:	You talking about curdled milk?
+(060:29),	[LUP+],	CG:	Yeah.
+(060:30),	[HUPW],	Y:	That?fs how it look like.
+(060:31),	[HUPW],	CG:	Yeah.  Yeah.  Yeah  and it stink  and  no.  I will =
+(060:44),	[ROS],	CHW:	And not eat it  okay.
+(060:45),	[HUPW],	CG:	= going to eat it.  Every time Mom make it when she used to make it?I won?ft eat that.  No.  Y?fall {01:00:49.0}.  Y?fall don?ft never hear me holler about no lasagna.  ?gI want some lasagna.?h  Y?fall never hear me holler about that.  Not never.
+(060:59),	[SS],	CHW:	Okay.  And we?fve got an appointment scheduled  our next appointment =
+(061:02),	[HUPW],	CG:	Friday.
+(061:03),	[SS],	CHW:	Right.  At 7:30.
+(061:07),	[HUPW],	CG:	{01:01:07.0} I?fm going to be gone to work  yeah.
+(061:09),	[SO],	CHW:	Okay  so.
+(061:10),	[LUP+],	Y:	Mmm.
+(061:12),	[SS],	CHW:	So that?fs all I?fve got for today.  Any questions?
+(061:12),	[CQTBN],	CHW:	MISSING TEXT
+(061:14),	[HUPO],	Y:	Nope.  I?fm just glad ?ecause I don?ft have school?I ain?ft going to school tomorrow.
+(061:18),	[HUPO],	CG:	Why?
+(061:19),	[HUPO],	Y:	?eCause most of our class is going to be gone ?ecause they going to the point tomorrow.
+(061:23),	[HUPO],	CG:	Oh  you going to school.  You?fre getting out of here.  I don?ft care if you stand outside till 3:30.
+(061:28),	[HUPO],	Y:	I thought I was going {01:01:29.0} tomorrow.
+(061:31),	[HUPO],	CG:	Oh  who?  {01:01:33.0} =
+(061:33),	[CQO],	CHW:	Kicking her out? [laughs]
+(061:35),	[HUPO],	CG:	Oh  yeah.  They not allowed in the house till =
+(061:40),	[HUPO],	Y:	Two people that I know and it?fs me and somebody else.  There?fs only three people going to be there.
+(061:44),	[HUPO],	CG:	Well  y?fall better hold hands then  uh {01:01:47.0}.
+(061:47),	[SO],	CHW:	Oh  they?fll probably let you have some fun  then.
+(061:49),	[LUP+],	CG:	Mm-hmm.
+(061:50),	[LUP+],	Y:	No.  {01:01:50.0}
+(061:51),	[HUPO],	CG:	Man  that?fs what I don?ft understand.  Us?  We don?ft care if the whole school went on field trip.  If certain people didn?ft go  we was still going to school.  I couldn?ft stay in the house.  Not when I knew it was a free day for me to go outside anyway.
+(062:09),	[CQECML+],	CHW:	Okay.  So you guys are going to do the walking today or tomorrow?
+(062:13),	[CHT+],	CG:	Yeah.  We can probably ride on up the street.
+(062:16),	[CQECML+],	CHW:	Oh  do the bike?  =
+(062:17),	[CML+],	CG:	Mm-hmm.
+(062:18),	[SS],	CHW:	Okay.  Great.  Okay.  Get your activities in  and I?fll see you Friday  okay?  And thanks for meeting with me.
+(062:18),	[AFL],	CHW:	MISSING TEXT

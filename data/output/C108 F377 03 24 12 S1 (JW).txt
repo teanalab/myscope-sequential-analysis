@@ -1,0 +1,459 @@
+(000:00),	[SS],	CHW: 	Counselor 108.  Family 377.  It is March 24th and we’re working on session 1.  So that’s like what I’ll say  before I =
+(000:19),	[GINFO+],	CHW:	Well  and if any questions do come up  I’m happy to answer them as best that I can =
+(000:27),	[LUP+],	CG:	Okay.
+(000:31),	[SS],	CHW:	So  today  what we’ll do  so we’ll talk a little more about the program approach =
+(000:57),	[LUP+],	PT:	Okay.
+(000:58),	[GINFO+],	CHW:	Okay.  So the first thing is kind of about the  the approach that we take with this program  and so we like to use kind of a really team-based approach.  So like Xxxx  the program’s focused on helping you  but  well  and I’m coming  kind of as an outsider  a counselor  and I have a lot of information and knowledge that I can share from our program  but also you and your mom will be working really close together every day.
+(001:35),	[CML+],	CG:	Yes  we will.
+(001:37),	[GINFO+],	CHW:	So it’s just really important that we kind of keep that  that teamwork kind of idea in mind  us all working together as much as we can share with each other during our sessions  that’ll make them really productive  too.  Cool… yeah  so what questions  well  how does that sound to you guys?
+(001:37),	[OQEF],	CHW:	MISSING TEXT
+(002:03),	[CHT+],	CG:	It sounds good.
+(002:05),	[SO],	CHW:	Okay.
+(002:06),	[HUPW],	CG:	How it sound to you  Xxxx?
+(002:32),	[OQTBN],	CHW:	So what questions do you guys have about =
+(002:35),	[CHT+],	CG:	Well  we maybe  it’s kind of a hard thing  because I don’t even know how you all are going to help us because we need somebody to actually is able to come in and  and you know  we actually make a plan together on dinner or a l-  you know what I’m saying?  And get some lunch together  some  you know  we need more hands-on than it is to talk about it.
+(002:57),	[SANDWICH],	CHW:	Mm-hmm.
+(002:58),	[SANDWICH],	CG:	You know what I’m saying?  Sometimes  you know  it’s just like all types of kind of people  and we just one of the ones  we need that extra care  really extra care where it’s hands-on where you be in here in the kitchen with us and actually we prepare a meal together.  You know?
+(003:12),	[SANDWICH],	CHW:	Mm-hmm.
+(003:13),	[SANDWICH],	CG:	And discuss it  and whatever  but =
+(003:14),	[SO],	CHW:	Okay.
+(003:16),	[HUPW],	CG:	I don’t know.  So I don’t know how  what is it that you actually going to do.
+(003:19),	[AF-L],	CHW:	Right.  Okay.  Well  that is a really good question  and that’s a lot of what we’ll talk some more about today.
+(003:19),	[SS],	CHW:	MISSING TEXT
+(003:25),	[LUP+],	CG:	Mm-hmm.  Okay.
+(003:26),	[GINFO+],	CHW:	So I can tell you  just kind of right now off the bat we  so =
+(003:34),	[HUPW],	CG:	Don't do it.
+(003:40),	[HUPW],	CG:	Oh  really?
+(003:42),	[GINFO+],	CHW:	So there’s  so we do do a lot of talking  and each week we’ll talk about a new skill  but also there’s a lot of sessions where we can include that hands-on stuff.
+(003:51),	[CHT+],	CG:	Oh  thank you!  That’s what we need!
+(003:54),	[SANDWICH],	CHW:	So
+(003:56),	[SANDWICH],	CG:	That’s what we need.  I have a lot of books  but you know—I have a lot of low-calorie books and  ‘cause I  me  myself been dieting ever since the age of 16 good (up just mmm).  And bothering her to the fullest  thatn maybe that’s why she might have even gained the weight because I been staying on her so much  “Watch it  watch it  watch it ” =
+(004:15),	[SANDWICH],	CHW:	Wow.
+(004:15),	[SANDWICH],	CG:	= even from a kid that you know  maybe I should have left her alone  and she could have done it  you know   just by outside playing and doing her own thing  but I put myself on her.  You know what I’m saying?
+(004:27),	[SANDWICH],	CHW:	Mm-hmm.
+(004:28),	[SANDWICH],	CG:	So that may be the reason why she gained weight  but I have a lot of books  but it just seems like it’s just  I don’t know  maybe me and her get even like get together and actually look at a recipe and do it together.  You know  that could be an idea for me and her.  ‘cause she’s
+(004:45),	[CQTBN],	CHW:	Are you rolling your eyes?
+(004:46),	[HUPO],	CG:	She’s a 14-year-old.  Everything is a battle with me and her.
+(004:54),	[HUPO],	CG:	Look at her. [laughs] Can you tel- [laughs]
+(004:57),	[SO],	CHW:	Yeah [laughs]
+(004:59),	[CHT+],	CG:	Got her a membership for us to go to the spa together.  I had to pay her to go.  You know  it’s just  I don’t know what to say  but hopefully you can help us because she seems to like it better when there’s outside help to give the attention.
+(005:18),	[SANDWICH],	CHW:	Okay.
+(005:19),	[SANDWICH],	CG:	You know what I’m saying?
+(005:20),	[SANDWICH],	CHW:	Mm-hmm.
+(005:21),	[SANDWICH],	CG: 	That’s the way it seems to be for her.
+(005:24),	[RCHT+S],	CHW:	Yeah.  Yeah  so sometimes it can be helpful to have kind of other =
+(005:28),	[SANDWICH],	CG:	Right.
+(005:29),	[SANDWICH],	CHW:	= perspectives and other ideas and stuff like that.
+(005:31),	[LUP+],	CG:	Yeah.
+(005:32),	[SO],	CHW:	Cool.
+(005:33),	[HUPO],	CG:	Ooh  your nose.  You got (another tissue  baby)?
+(005:37),	[LUP+],	CG:	Okay.
+(005:38),	[RCML+S],	CHW:	Cool.  So well  and it sounds like you have a lot of resources and things that you’ve been looking up and learning stuff  too.
+(005:51),	[CML+],	CG:	Right.  Right.
+(005:52),	[AF-L],	CHW:	That’s good.
+(005:53),	[CHT+],	CG:	But the thing of it is is to put it into action.
+(005:58),	[SO],	CHW:	Mm-hmm.
+(005:59),	[HUPW],	CG:	You know  because it’s just not a quick fix.  It’s not a quick fix  and that’s what I’ve seem to have done always—the protein diets  the li—the Atkins diet  the this  that  that and this  but she’s agreed.  Someone at her age—do you think the Atkins diet is appropriate for her?  Or is that  you think it might be—’cause all it really is is a low carbohydrate type diet.
+(006:23),	[GINFO+],	CHW:	Mm-hmm.  Yeah  so that’s a big thing that we actually talk about in this program.
+(006:28),	[SANDWICH],	CG:	Okay.
+(006:29),	[SANDWICH],	CHW:	Is—so  the big thing is to be careful with diets  and so like programs that market themselves as like  “You’re going to lose 30 pounds in one week” =
+(006:40),	[HUPW],	CG:	Mmm  which is too fast.
+(006:43),	[RCHT+S],	CHW:	Right  so you’re saying that it seems like it’s too fast.
+(006:45),	[HUPW],	CG:	Well  30 pounds in one week  I know it is  but uh  but =
+(006:48),	[SANDWICH],	CHW:	Right.
+(006:49),	[SANDWICH],	CG:	= but you really can lose 15 pounds in two weeks with Atkins.  For real.
+(006:56),	[GINFO+],	CHW:	Oh  okay.  So what we always talk about is a lot of times those programs you might be able to lose that weight  but you’ll gain it right back.  So the approa- =
+(007:04),	[HUPI],	O:	(Get results)
+(007:05),	[LUP+],	CG:	Right.
+(007:06),	[GINFO+],	CHW:	Right  so that’s the approach of this program is being able to lose that weight and do it healthily and keep it off.
+(007:11),	[CML+],	CG:	And keep it off.  We game.  We are game.  We game  Xxxx?  We’ll even do it that way  right  Xxxx?  Right  Xxxx?
+(008:29),	[SS],	CHW:	Yeah  so if it’s alright  I’ll meet with Xxxx?
+(008:33),	[HUPW],	CG:	Yeah  you going to meet with Xxxx.
+(008:36),	[HUPW],	CG:	In other words  you trying to get rid of me.
+(008:38),	[HUPW],	CG:	Okay.  Alright.  ‘cause I do it all the time with me and your daddy.  Okay  we through  I'm through  'til you’re ready for me.
+(008:44),	[OQO],	CHW:	Okay.  Cool.  So yeah  the first thing I want to ask you about is just if you can tell me some more about yourself.
+(008:53),	[HUPO],	PT:	Like what?
+(008:55),	[OQO],	CHW:	[laughs] Like  you know  things you like to do  what grade you’re in.
+(009:01),	[HUPO],	PT:	I’m in eighth grade.
+(009:02),	[SO],	CHW:	Mm-hmm.
+(009:07),	[HUPO],	PT:	I don’t know what I like to do.  Oh  Saturdays I like to go places with my friends.  And …
+(009:15),	[SO],	CHW:	Mm-hmm.
+(009:16),	[HUPW],	PT:	I used to like to cheer  but it was too much.
+(009:19),	[RPTBS],	CHW:	It’s too much.
+(009:21),	[CHT+],	PT:	I want to be in gymnastics and that’s it.
+(009:26),	[TOS],	CHW:	Okay.  So you’re in eighth grade.  What school do you go to?
+(009:26),	[CQO],	CHW:	MISSING TEXT
+(009:31),	[HUPO],	PT:	[school name]
+(009:32),	[RPTBS],	CHW:	Oh  okay.  I know that one.  And then  that’s actually right by our offices.  Well  but and then you said you used to cheer.  Okay.  And you did gymnastics  or you’d like to?
+(009:32),	[CQTBN],	CHW:	MISSING TEXT
+(009:49),	[CHT+],	PT:	I did before  =
+(009:50),	[RPTBS],	CHW:	Oh  you did.
+(009:52),	[CQTBN],	CHW:	Mm-hmm.  Okay.  Cool.  So they have those programs at your school?
+(009:58),	[CHT-],	PT:	 Oh  no they had it—they had it at  when I was a cheerleader  we had to do that before our competition and we had did it for like three months  and I liked it  but then I stopped because I stopped cheering  so I wouldn’t do it again.  I don’t want to cheer again.
+(010:15),	[RCHT-S],	CHW:	Oh  okay.  So cheer isn’t something you want to do again  but gymnastics?  Okay.  Where were you able to do that?  Gymnastics?
+(010:15),	[CQECHT+],	CHW:	MISSING TEXT
+(010:15),	[CQTBN],	CHW:	MISSING TEXT
+(010:23),	[HUPW],	PT:	I don’t know the name of it.  It was a long time ago.
+(010:27),	[RPTBS],	CHW:	Oh  okay  so when you were younger.
+(010:29),	[LUP+],	PT:	Mm-hmm.
+(010:47),	[OQTBN],	CHW:	Alright.  Cool.  Nice.  So then  how do you feel about your weight right now?
+(010:58),	[CHT+],	PT:	Mmm  I wish it was lower.
+(011:04),	[RCHT+C],	CHW:	Okay.  So you wish it was lower.  So kind of losing some weight is something you’re interested in doing.
+(011:13),	[CHT+],	PT:	Yeah.
+(011:14),	[OQECHT+],	CHW:	Okay.  So what makes that something that’s important to you?
+(011:23),	[CHT+],	PT:	I don’t know.  I just do.  I just do.
+(011:28),	[RCHT+C],	CHW:	Mm-hmm.  Okay.  So that’s just something that you really feel like would help you out and make you feel better  =
+(011:38),	[OQTBN],	CHW:	= things like that.  Okay.  And what kinds of things have you tried in the past to help like manage your weight?
+(011:51),	[HUPW],	PT:	I used to go to a gym and  yeah  that’s it.  I used to just go to the gym.
+(012:00),	[RPTBS],	CHW:	Okay.  So you used to go the gym.  Was that close by?
+(012:00),	[CQTBN],	CHW:	MISSING TEXT
+(012:04),	[HUPW],	PT:	Oh  it  no ‘cause it’s—it was on 12 Mile  somewhere.  I don’t know but it was a Fitness Gym.  No  it wasn’t.  What was the name of that gym?  Oh  yeah  it was Fitness USA.
+(012:18),	[RPTBS],	CHW:	Fitness USA.  Okay  cool.  So you’d go to the gym.  What were some of your  the things you like to do there?
+(012:18),	[OQTBN],	CHW:	MISSING TEXT
+(012:25),	[HUPW],	PT:	I used to like to swim  and I did water aerobics sometimes.
+(012:29),	[SANDWICH],	CHW:	Okay.
+(012:30),	[SANDWICH],	PT:	And  I used to work out on some of the machines.  And I did some {0:12:33}.
+(012:33),	[SD],	CHW:	Okay.  Cool.  So that’s the water?  I like to swim  too.  I just took a swimming class last year ‘cause I couldn’t swim.  [laughs]  But now I like swimming.  And water aerobics and some of the machines.  So  but you don’t go to the gym anymore?
+(012:33),	[RPTBS],	CHW:	MISSING TEXT
+(012:33),	[CQECML-],	CHW:	MISSING TEXT
+(012:56),	[CML-],	PT:	Mm-mm.
+(012:58),	[OQTBN],	CHW:	Okay.  So what kind of made you stop doing that?
+(013:03),	[HURW],	PT:	Oh  like  they did move  like they was shut down.  They moved to this new one.  And the one I think that we went to  like  I didn’t like that one.  It just felt different  so I didn’t like that one.
+(013:16),	[RPTBS],	CHW:	Oh  okay  so they moved  and you didn’t really like what they changed to.
+(013:20),	[LUP+],	PT:	Yeah.
+(013:21),	[SUM],	CHW:	Okay.  And then  so it sounds like you’ve done some things in the past  and there’s some activities that you really enjoy doing  some that you want to try doing again  like gymnastics.
+(013:44),	[LUP+],	PT:	Uh-huh.
+(013:46),	[CQECHT+],	CHW:	Maybe swimming?  Yeah?  Okay.  Cool.  And  I guess what’s your—what motivates you to want to lose some of the weight?
+(013:46),	[OQECHT+],	CHW:	MISSING TEXT
+(014:05),	[CHT+],	PT:	Well  I don’t know  I guess it would be better for me  and like  I could do a lot more things because  and like get more stuff that I wanted.  ‘cause like  some of the clothes that I want  like  they’re not in my size  so I can’t get it and you know?
+(014:21),	[RCHT+S],	CHW:	Okay.  So it sounds like your health is important to you  and you want to be able to do some things that might not be as easy right now  and fit into some clothes that you’re not able to right now.  Okay.  Cool.  Those are all good motivations  I think.  Definitely.  And then how much do you know about what we’ll do in the program or what kinds of things we’ll work on?
+(014:21),	[AF-L],	CHW:	MISSING TEXT
+(014:21),	[OQTBN],	CHW:	MISSING TEXT
+(014:48),	[HUPW],	PT:	Eating right?  And um…yeah  eating right.
+(014:57),	[GINFO+],	CHW:	Mm-hmm.  Yeah  so we’ll focus—this program focuses on two main areas  so one of them is eating right  so eating healthier  stuff like that.  And then also we’ll talk about physical activity recommendations and guidelines.  So  like  the first two weeks we’ll meet with a dietitian  and so she’ll bring a lot of information about healthy eating  and those physical activity guidelines  and she’ll help you make a plan for you to use for the rest of the program.  And then after that  we’ll work on—each week  we’ll work on building a new skill.  So whether it’s being able to figure out how many calories you’re eating or how many calories you’re burning with physical activity and things like managing feeling hungry or cravings  and just using some other skills to be able to manage those things.  So we’ll meet twice a week  and the program goes for six months.  So what we’ll do is the first time we meet in the week  we’ll learn the new skill  and then the second time  we’ll do like a review so you have a little time to do some practice with the new skill.  And I think that’s it.  And then  well  and every time we’ll meet  you and your mom  we’ll meet together.  Okay.  Cool.  So how’s that all sound?
+(014:57),	[OQEF],	CHW:	MISSING TEXT
+(016:36),	[CHT+],	PT:	Good.
+(016:38),	[CQECHT+],	CHW:	Good?  Awesome.  What questions can I answer for you about the program?
+(016:38),	[CQTBN],	CHW:	MISSING TEXT
+(016:45),	[HUPW],	PT:	I don’t have any questions.
+(016:46),	[RCHT+S],	CHW:	Okay.  And I know your mom was saying it’d be helpful to have  like  hands-on stuff.  So what do you think about doing more hands-on things in our sessions?
+(016:46),	[OQECHT+],	CHW:	MISSING TEXT
+(016:59),	[CHT+],	PT:	Yeah  that’s good.  I like {0:17:00} things.
+(017:02),	[CQECHT+],	CHW:	That sounds good?  Okay.  Cool.  Yeah  ‘cause when we talk about  like  physical activity recommendations  we can do some practice  like we can demonstrate some activities in the session.  There’s a cooking session that we can do and stuff like that.  Cool.  So then  the last thing—so each week what we’ll do is we’ll make a plan for what we’ll do and what we’ll work on.  This is the plan for the first week.  So thinking about what your plan is to do.  So  like you were talking about  you wanted to lose some weight  eat healthier  oh  and why you wanted to do that  so getting healthier and being able to do things  fitting into clothes.  And then this week we want to kind of think about what barriers or what things might get in the way for meeting twice a week.  So if you have extracurricular activities or stuff like that.  And then after that  we’ll do the bottom.
+(017:02),	[GINFO+],	CHW:	MISSING TEXT
+(017:02),	[SUM],	CHW:	MISSING TEXT
+(017:02),	[SS],	CHW:	MISSING TEXT
+(018:19),	[SO],	CHW:	Okay.
+(019:05),	[HUPW],	PT:	Okay  so what do you mean by planning these two?
+(019:08),	[OQECML+],	CHW:	Yeah  so for this program  what’s your kind of  what’s your overall plan?
+(019:14),	[CML+],	PT:	To l- =
+(019:15),	[OQECML+],	CHW:	That you want to accomplish?
+(019:18),	[SO],	CHW:	Mm-hmm.
+(020:34),	[CQO],	CHW:	Oh  and do you have any brothers and sisters?  Okay.  The little guy right here =
+(020:39),	[HUPO],	PT:	That was my nephews.
+(020:40),	[CQO],	CHW:	Nephews?  Okay.  Are they older or younger?
+(020:45),	[HUPO],	PT:	All of them are older than me.
+(020:46),	[ROS],	CHW:	They’re all older.  Okay.
+(021:05),	[OQECML+],	CHW:	Alright  so then something about then  if something is going to get in the way  then what’s something that we could try?
+(021:14),	[HUPW],	PT:	If what gets in the way?
+(021:18),	[GINFO+],	CHW:	So like for example  some of the teens I work with  they’re in other programs  so like if their other program gets in the way  then we can try to meet at different times  or stuff like that.
+(021:34),	[HUPW],	PT:	The only thing I do is tutor.
+(021:36),	[ADV+],	CHW:	Okay.  Yeah  so that could be one  so if tutoring gets in the way  then what days do have tutoring now?  Or =
+(021:36),	[CQTBN],	CHW:	MISSING TEXT
+(021:46),	[HUPW],	PT:	Tuesdays and Wednesdays.
+(021:48),	[SO],	CHW:	Okay.
+(021:50),	[LUP+],	PT:	So
+(021:52),	[GINFO+],	CHW:	So we can try and not meet on Tuesday and Wednesday. [laughs] Or what time are you done tutoring?
+(021:52),	[CQTBN],	CHW:	MISSING TEXT
+(022:01),	[HUPW],	PT:	Six.
+(022:03),	[SO],	CHW:	Okay.
+(022:34),	[GINFO+],	CHW:	Alright  so then the bottom is  so the first step that I can take in order to reach my goal.  So it’s something that you can do  like this week  to help you start working toward your goal.
+(022:34),	[OQECML+],	CHW:	MISSING TEXT
+(022:46),	[CHT+],	PT:	I don’t know.  I don’t know what I can do.
+(022:46),	[RCHT+S],	CHW:	Okay.  So you’re not really sure what a first step could be.  Okay.  So no  let’s see  your plan is to lose weight.  So the two things that we always talk about in this program are  so increasing physical activity and reducing the number of calories that you take in.  So like some people {0:23:26} for the first step  like try not to eat much junk food anymore or like trying to snack less or trying to ride their bike more this week or like little things.
+(022:46),	[RCML+S],	CHW:	MISSING TEXT
+(022:46),	[GINFO+],	CHW:	MISSING TEXT
+(023:44),	[LUP+],	PT:	Cool.
+(023:45),	[ADV+],	CHW:	So like a small  small step that you could try.
+(023:58),	[OQECML+],	CHW:	Cool.  Yeah.  And how do you think you can be more active this week?  What do you think are some things you could do?
+(024:14),	[CHT+],	PT:	I don’t know.
+(024:28),	[RBC],	CHW:	Okay.  So now you’re saying you like doing gymnastics and swimming  so those things might not be that easy to be able to do this week  but what other activities do you like to do?
+(024:28),	[OQECHT+],	CHW:	MISSING TEXT
+(024:47),	[CHT+],	PT:	I like to go outside and ride my bike.
+(024:55),	[RCML+S],	CHW:	Okay.  Yeah.  So you’ll be walking around outside and riding your bike  things like that.  Cool.
+(025:02),	[HUPW],	PT:	So what else should I write then?
+(025:08),	[CQECHT+],	CHW:	Well  so is one of those—you want to try to do one of those more this week?
+(025:12),	[CHT+],	PT:	Probably ride my bike more.
+(025:14),	[ADV+],	CHW:	Okay.  Cool.  Yeah  add that.
+(025:37),	[GINFO+],	CHW:	Awesome.  So and then this spot is to think about  so like something that your family  or a friend  mom  dad  brother  sister  so something that somebody could do to help you out.
+(026:22),	[AF],	CHW:	Awesome.  Yeah  that’s good.  Cool.  So I think you have a good plan.  And definitely starting out and for this first week.  So when we come back together with your mom  how would you feel about sharing this with her?
+(026:22),	[CQECHT+],	CHW:	MISSING TEXT
+(026:40),	[CHT+],	PT:	Mm-hmm.
+(026:41),	[CQECML+],	CHW:	Is that alright?  Okay.  Cool.  So now I’ll meet with your mom  and then after that we’ll come back together and do your first weigh-in.
+(026:41),	[SS],	CHW:	MISSING TEXT
+(026:47),	[LUP+],	PT:	Okay.
+(026:48),	[SO],	CHW:	Alright.
+(027:16),	[CQTBN],	CHW:	Alright. So the first thing I wanted to ask you was how you feel about Xxxx’s weight?
+(027:25),	[HUPW],	CG:	I … I mean  what do you mean like?  What do you mean how I feel about it?  Just?
+(027:37),	[GINFO+],	CHW:	Yeah.
+(027:38),	[HUPW],	CG:	What?  [laughs]
+(027:39),	[GINFO+],	CHW:	Yeah [laughs]
+(027:41),	[CHT+],	CG:	I mean what?  [laughs].  I mean I would like to see her be smaller  I mean  you know  because of her age and  you know  and I know what comes with it  but =
+(027:48),	[HUPO],	PT:	Channel nine.
+(027:49),	[HUPO],	CG:	How’d you find it?
+(027:52),	[CHT+],	CG:	But she the best.  She the best.  Honest to God.  Thanks  Xxxx.  I looked over and over and over and I didn’t see it.  You know  just only  just for like  you know  for health reasons.   Just to keep her in a—you know  not to be so overweight.
+(028:09),	[RCHT+C],	CHW:	Mm-hmm.  Okay.  So you’re really thinking about her health =
+(028:11),	[CHT+],	CG:	Yeah  the health.
+(028:22),	[CHT+],	CG:	Yeah  definitely.  ‘cause I know what happens.  I mean  my God  all the stuff  medication he has me on now is just ridiculous  you know.  And  I just don’t want my baby to go through that.
+(028:32),	[RCHT+S],	CHW:	Oh  okay.  So you have some experience with  =
+(028:32),	[HUPW],	CG:	Cl-  What does it say?  Cholesterol?  High blood pressure  you know  this stuff  and so (shoot).  And then that comes from the weight because you know if you get rid of the weight  then your body  you know  so.
+(028:47),	[SO],	CHW:	Mm-hmm.
+(028:49),	[CHT+],	CG:	And I just don’t want her to experience  ‘cause right now  she’s healthy  you know  don’t have any issues other than having this  like sinus  and  you know  some of this stuff comes from the food that  you know  that she’s eating that she shouldn’t be eating and whatever  too.
+(029:02),	[SO],	CHW:	Mm-hmm.
+(029:05),	[RCHT+S],	CHW:	Okay.  So you really don’t want to see her go through the same thing =
+(029:11),	[CHT+],	CG:	Yeah  definitely.
+(029:13),	[RCHT+S],	CHW:	And it sounds like changing some things that she’s eating =
+(029:17),	[CHT+],	CG:	Yeah.  Definitely.
+(029:19),	[SO],	CHW:	Okay.
+(029:20),	[LUP+],	CG:	Yep.
+(029:21),	[RCHT+S],	CHW:	Cool.  And then  so I know you were saying you’d really like to see  like  some hands-on stuff.
+(029:32),	[LUP+],	CG:	Right.
+(029:34),	[OQTBN],	CHW:	And I was wondering what  what kinds of things you guys have tried in the past to help  like  manage weight or stuff like that.
+(029:41),	[HUPW],	CG:	Nothing  really.  You know with =
+(031:19),	[SO],	CHW:	That’s nice.  You guys live close by your other rel- =
+(031:22),	[HUPO],	CG:	Oh  my grandkids?  Yeah  they all around.  They all around.  But he doesn’t  he doesn’t live that close to me  so.
+(031:29),	[SO],	CHW:	Oh  okay.
+(031:31),	[LUP+],	CG:	Yeah  my God.
+(031:34),	[CML+],	CG:	(Hello).  And my husband  he just a nut.  Lovable as he can be  but he can be a real nut.  Honestly.  But yeah  what was we saying?  Oh  I was just going to tell you that I hadn’t really tried anything on her but tried exercise so far because—and then I will try to get foods in here  like we’ve been eating like um  but you know what?  With that kind of stuff you go over into the—it’s more eating.  Like I bought the Atkins  like I’ll buy the Atkins  like  you know  different little things to snack on  trying not to buy candy versus the fact of eating something like that.
+(032:10),	[SANDWICH],	CHW:	Right.
+(032:12),	[SANDWICH],	CG:	So I try to slip little things in if I find something that she likes.
+(032:14),	[SO],	CHW:	Oh  okay.
+(032:16),	[LUP+],	CG:	Yeah.
+(032:17),	[CQECML+],	CHW:	So you’ve been kind of like testing?
+(032:21),	[CML+],	CG:	= I kind of like try to slip things in there  you know  and try to even do a little research of like what foods would like  like instead of eating chips or something  and if {0:32:30} and then she wants something to chew on  maybe a Slim-Jim.
+(032:35),	[SANDWICH],	CHW:	Mm-hmm.
+(032:36),	[SANDWICH],	CG:	You know what I’m saying?  So just a little odds and ends  little things I try to slip in there on her ‘cause you can see Xxxx very stubborn.  So it’s uh  she—I wonder where she got that from?  But she got it from her daddy  I’ll say that.
+(032:50),	[CHT+],	CG:	So  it’s like  it’s and I can’t  and with her  you can’t be too pushy because with the pushy then she really will—well  we just go the other way around.
+(032:59),	[SO],	CHW:	Mm-hmm.  Right.
+(033:01),	[CML+],	CG:	So I’m trying with her.  You know  she—I have to  I try to—I’ll pay her.  You know what I’m saying?
+(033:08),	[HUPW],	CG:	I do.  I pay Xxxx.  I pay her to go to the spa  you know  “If you go to the spa  then I give you twenty dollars if you stay in the aerobics class at least three days out of the week  I’ll give you twenty dollars.”  She loves money.  So I say  “I’ll give you twenty dollars if you do it.”  [laughter] and but  and then I had her doing  it’s so good  we was doing the water aerobics.  Excellent.  And why did the one that we go to clo—the one we was going to close?
+(033:34),	[GINFO+],	CHW:	Yeah.  She was saying that.
+(033:35),	[HUPW],	CG:	You know what I’m saying?  I mean I got her into it.  She actually doing her thing in the water.  Finally.  I mean I finally hooked her  and they move.  And now it’s all—we have to go all the way down here on 12 Mile and Woodward.  You know what I’m saying?
+(033:50),	[SO],	CHW:	That’s the next closest.
+(033:51),	[CHT-],	CG:	It’s just it’s so much for me to do to take one son to work  pick the grandkids up  then go way down there  pick her up  but I got to bring the grandson back because the mom and daddy got to get him  and so for me to come all the way back home—and she go to school right there at [school] down there on {0:34:10}?
+(034:11),	[SO],	CHW:	Mm-hmm.
+(034:12),	[AMB0],	CG:	We just a few blocks from Wood- we were actually jump on  you know  Woodword and go straight there?  I have to come all the way back with the grandson for my son to pick him up  so it’s like  ugh.
+(034:23),	[SUP],	CHW:	Right.  That’s a lot to juggle.
+(034:26),	[HUPW],	CG:	I had a (nerve).  I went out and bought us a tape for us to exercise in the living room  you know  which  no  that is not working.  I made a mistake and they was—her and my son’s girlfriend was exercising in the living room.  They had the wrong tape.  They had the two-mile tape.  Well  they had the two-mile tape [laughter] which they did give up on exercising because they had—instead of doing the one-mile that they were supposed to be doing =
+(034:52),	[ROS],	CHW:	They were doing two.
+(034:53),	[CML+],	CG:	= something to try {0:34:52} [laughter] 	They were doing the two-mile  and nobody wants to even look at the tape now  you know  so I’m like uh-uh  so. [laughs]  I try.  I try with her.  I try.  But she said she was willing this time because she ready to start high school.
+(035:10),	[SO],	CHW:	Oh  okay.
+(035:12),	[CHT+],	CG:	So she  you know  so she say she was going to—she would try something—she say “we” will—she said me and her.
+(035:17),	[SO],	CHW:	Mm-hmm.
+(035:18),	[CML+],	CG:	So I’m saying  “Yes  I’ll try  too.”
+(035:19),	[CQECHT+],	CHW:	Okay.  So she’s really willing to do it with you helping her out?
+(035:24),	[CHT+],	CG:	Yeah.  She said she was willing this time  so we’ll see.
+(035:27),	[RCHT+S],	CHW:	Okay.  And high school is a motivator.
+(035:30),	[CHT+],	CG:	Yeah  really  high school  I think.  ‘cause that is—ugh.  And my thing is that kids can just be so cruel.  They can be so cruel.  Oh my God.  Kids can be so cruel  and I just don’t want nobody to  you know—and she don’t know that because she hasn’t experienced high school.  She been so lucky ‘cause her going to school and being overweight.  She thinks all the children love her and you know  so she been lucky  you know  doing good with that.  So even so her being herself  hopefully that’s just what a person would actually see.
+(036:05),	[SANDWICH],	CHW:	Right.
+(036:06),	[SANDWICH],	CG:	You know  see her and not think about that.  So far  so good.  It’s been good for her.
+(036:11),	[ROS],	CHW:	Okay.  That’s good.  So she has a supportive school environment right now.
+(036:16),	[LUP+],	CG:	Right  right.
+(036:18),	[AF-L],	CHW:	That’s good.
+(036:19),	[HUPO],	CG:	That [school name] has been excellent for her  yeah.
+(036:21),	[SO],	CHW:	Mm-hmm.
+(036:22),	[CHT+],	CG:	Excellent school.  So  but I do.  I just hope that me and her both do it.
+(036:29),	[AF],	CHW:	Yeah.  Well  I think  you know  you’re both taking the first step =
+(036:38),	[HUPW],	CG:	Yeah.  She sounds like it now?
+(036:41),	[GINFO+],	CHW:	Mm-hmm.
+(036:42),	[LUP+],	CG:	Oh  God.
+(036:43),	[GINFO+],	CHW:	I think so.
+(036:44),	[CHT+],	CG:	Oh  God  ‘cause that’s where it has to come from ‘cause there’s nothing I can do.  I can’t make her.  You know  I can’t make her.  It’s got to be in herself to want to do it.  I can’t  I can’t make her.  You know  so.  Oooh  I just hope she—if she do  I’m just willing to go 100 with her.
+(037:00),	[SO],	CHW:	Mm-hmm.
+(037:02),	[CHT+],	CG:	Whatever we got to give—whatever material—whatever you can do to help us out—we want to be one of the families that  when you talk about it  that we actually did it  you know.
+(037:12),	[SANDWICH],	CHW:	Mm-hmm.
+(037:13),	[SANDWICH],	CG:	We actually did it.  That’s what we want to do.
+(037:15),	[SO],	CHW:	Okay.  Awesome.
+(037:16),	[LUP+],	CG:	Yeah.
+(037:17),	[AF],	CHW:	I like that  you know  I like you’re—I can see you’re  like  energized.
+(037:21),	[HUPW],	CG:	Yeah.  Yeah.  Whatever  whatever  whatever  ‘cause I just—you know  that’s been my praying. I’ve got to get off this medication.  I’ve got to get—it’s just too much.  I had a father that had a tableful—it was like a little round table like what you would put out in the backyard?
+(037:36),	[SANDWICH],	CHW:	Mm-hmm.
+(037:37),	[SANDWICH],	CG:	Full of medication.  You know  full of medication.  And half of it he might not have even had to need  you know  or whatever  but for back in the day he probably didn’t even need all of that  you know?
+(037:48),	[SANDWICH],	CHW:	Right.
+(037:49),	[SANDWICH],	CG:	And all that medication  and I just refuse it.  I’m not going to be taking no medication all of my life.
+(037:55),	[SO],	CHW:	Mm-hmm.
+(037:57),	[CHT+],	CG:	All of my life taking no medication.  It’s just not going to be.  And I don’t want my baby to experience it at all  so whatever.
+(038:06),	[SO],	CHW:	Right.
+(038:08),	[LUP+],	CG:	We really  we  hey.
+(038:10),	[SO],	CHW:	Yeah  so.
+(038:11),	[ADV+],	CG:	You help us.
+(038:12),	[SANDWICH],	CHW:	[laughs]
+(038:13),	[SANDWICH],	CG:	You help us.
+(038:14),	[ROS],	CHW:	Okay.  So you have some strong motivations  too.  You want to try to get off some medications and =
+(038:18),	[HUPW],	CG:	Oh  yeah.  I want off.
+(038:21),	[HUPW],	CG:	I want off.  I’m telling you—off.  I want off of it.  I’m serious.
+(038:27),	[OQTBN],	CHW:	Yeah.  So then for the program—for our sessions  what do you already know about what we’ll be doing?
+(038:36),	[HUPW],	CG:	Well  I think the most that is the only thing really being said is that you would help us with—I don’t know if it’s suggestions of things that we can do and if you have any type of—like  we were mentioning something about exercise that if—I don’t know if there’s something that you know something that—I don’t know if we can—I don’t know ‘cause I don’t know what actually do you all—are you all capable of doing to help us?
+(039:05),	[SO],	CHW:	Mm-hmm.
+(039:07),	[HUPW],	CG:	I know to come and talk to us and talk to us  but what can you really do to help us?  I don’t really know  =
+(039:12),	[SANDWICH],	CHW:	Right.  Okay.
+(039:14),	[SANDWICH],	CG:	= you know  what you can really do.
+(039:16),	[GINFO+],	CHW:	Mm-hmm.  Okay.  So  the first two sessions that we do—well  I’m sorry  the first two weeks what we’ll do is we’ll be meeting with a dietitian.
+(039:47),	[CHT+],	CG:	Oh  that’s what I’m talking about.  Okay  yeah.
+(039:49),	[GINFO+],	CHW:	And then that’s the plan that we’ll work from for the next six months.
+(040:56),	[HUPW],	CG:	Don’t be trying to get {0:40:57}.  Don’t go all the way away.  Where you going?
+(041:02),	[HUPW],	CG:	It’s not your turn yet.  It’s {0:41:01}.  Okay  well  just stay close by.
+(041:04),	[HUPW],	PT:	Oh  I wasn’t going.
+(041:06),	[LUP+],	CG:	Oh  okay.  Yeah. [laughter]
+(041:09),	[GINFO+],	CHW:	So the first time we meet in the week  we’ll learn about the new skill  and then the second time we’ll do  like  a review  so you guys have some time to try out the new skill and practice =
+(041:30),	[CHT+],	CG:	Mm-hmm.  That makes me want to cry.  I believe it can work.  I just believe it could help us.  I do.  I believe it can help us.  I do.  I just  I just do.  It’s got to be a change ‘cause I know to lose weight for me all the years—that have just been up on a yo-yo  up and down  that I have learned that the secret is not all those quick  fast diets  but the secret is the actual  just eating right.  ‘Cause everything was put on this Earth the Lord gave us to  that we have the right to eat  but it’s all about actual portion  and it’s about just some exercise.  I mean even if it’s just a little walk.  Man  it wasn’t how I took for granted with the walking that when you get out there—I’m serious—and I’m going to say—I don’t care  I’m going to say how much I weigh—270 pounds—and you try to take and carry 270 pounds when you walking.  It’s not a joke.  And then one day as you start to lose the weight and you finally be able to like to take that walk  you appreciate that walk.  When the water rose  I used to think “Oh  that’s nothing because I can do it in the water.”  But  you know  actually  even that  just to have the wind to be able to do it—that’s taken for granted because I’m telling you  it’s no joke with this weight.  She don’t know because she young  but I can see that when she walks from the school to where I park  she’s out of breath  and she don’t realize  and I’m trying to tell her  “That’s weight.  That’s not asthma  that’s not—you know  it’s weight.  It’s carrying that weight  and it tires you out.”
+(043:17),	[SANDWICH],	CHW:	Mm-hmm.
+(043:18),	[SANDWICH],	CG:	That weight carri- it tires you out.  It’s just.  It’s awful.  It’s just an awful thing.  It really is.  It’s just nothing good about it.  And I just ain’t never going to give up  myself ‘cause I’m me  and I’m going to lose this weight.  I don’t care how old I am by the time I finally do it  but I’m going to conquer that in my life ‘cause I’m not going to carry this weight.  It’s too much.  It’s too much.  Trying to come down the steps and it’s so embarrassing.  Trying to come down the steps and you can’t even come down—and I didn’t realize this stuff  you know what I’m saying?  It’s like it’s just like it’s all of a sudden is I can just—it’s like when I come down  and the type of person that I am.  {0:44:00} the neighbor sitting on the porch.  I don’t feel like I’m that old and I need to be coming down those steps sideways.  But you can’t bring that weight down—now you got some that can  but I can’t.  It’s too much on my knees for me to say one step at a time just to come down and stuff and carry all of this with you.  It’s just not a joke.  It’s not a joke.  It’s really not  and I’m {0:44:24}.  I’m going to run down the steps  and I’m going to run up ‘em.  Run down and run up ‘em.  I am.
+(044:32),	[SANDWICH],	CHW:	Mm-hmm.
+(044:33),	[SANDWICH],	CG:	It’s not and I just don’t  and I love my child  and I just don’t want her to have those same things.
+(044:37),	[SO],	CHW:	Mm-hmm.  Mmm.
+(044:43),	[HUPO],	CG:	Mm-hmm.  Where you going with that purse?
+(044:47),	[HUPO],	PT:	Huh?
+(044:48),	[HUPO],	CG:	Where you going with your purse?
+(044:49),	[HUPO],	PT:	Got to put my money in it.
+(044:50),	[LUP+],	CG:	Oh  okay.
+(044:51),	[HUPO],	PT:	He gave me 10 dollars.
+(044:52),	[HUPO],	CG:	You gave you 10 more dollars?
+(044:53),	[LUP+],	PT:	Yeah.
+(044:55),	[HUPO],	CG:	Oh  shoot.  I need to see {0:44:56}.
+(044:58),	[HUPO],	PT:	(Now I got 60.)
+(045:08),	[SO],	CHW:	Okay.
+(045:09),	[CML+],	CG:	But he—we are  we are  and I mean that’s why—you know  I’m going to get her—she like that boy’s bike  but I might—she can keep it as long as she can ride it  you know  I let her go and ride it  but I mean  I try to get her just to—for us  me and her to just take a walk.  And back in the day when I was a child  my mother used to cook dinner for us  and then she would pop some popcorn and just take us for a walk.  You know what I’m saying?  Just  and all that was just so wonderful  things like that.  And so now I try to do “Xxxx  come on let’s  Xxxx ” but  no  you know  we just jump in the car for everything.  You jump in the car to go to the store.  You jump—everything.  The store’s just right there on the corner.  Why we can’t walk to the—you know  but you jump in the car for everything  so…but  I’m—some of those old things  old things that you used to do when you was a kid you kind of need to have kept  you know  keep doing it.  Now I know why she was taking us for a walk after dinner.  Burning those calories that we ate.
+(046:11),	[GINFO+],	CHW:	Yeah  that’s smart.
+(046:12),	[HUPW],	CG:	‘Cause I wasn’t a fat kid.  Let me show you something.  [laughter]  {0:46:16} real quick.  Real quick.  I don’t know how much you supposed to—you know.  I just want to show you something.  Let me show you.  And this is a guy right here—well  I don’t really have to show him.  But I’m going to show him in a minute  though. Wait.  Just wait.  My son right here—you see him right there?
+(046:46),	[SO],	CHW:	Mm-hmm.
+(046:47),	[HUPW],	CG:	Now he was what?  Oh  I don’t know.  He was a young fellow ‘cause right now he like 22.  He 100 pounds lighter.
+(046:54),	[SO],	CHW:	Oh  wow.
+(046:55),	[HUPW],	CG:	I should show you him  he’s a little handsome  but he was a fat little kid though.  See  and then  but look—this is me.  Isn’t that nice?
+(047:04),	[SO],	CHW:	Ahh. [laughs]
+(047:06),	[HUPW],	CG:	Isn’t that nice?  That’s how I was when my husband met me.  That hurts me.  That hurts me.  When I see this picture here and I just look at it—even though it wasn’t like I was skinny  but I just hadn’t did what I’m doing now  you know.  Look at this.  This is how I was.  That was—you know  it wasn’t until—I don’t know what happened.  But I just wasn’t meant to be as big as {0:47:29} we going on me.  I’m sorry.  Go ahead.  Let’s go head out.
+(047:32),	[AF],	CHW:	No  that’s okay.  I think—I mean  I think it’s really great.  You have  like  the right mindset  I think.
+(047:41),	[HUPO],	CG:	This is Xxxx when she was little.
+(047:42),	[SANDWICH],	CHW:	Oh  yeah. [laughs]
+(047:44),	[SANDWICH],	CG:	There’s Xxxx.
+(047:47),	[AF],	CHW:	I think it’s really great that  you know  you’re saying you really love Xxxx and you want to help her out =
+(047:52),	[CHT+],	CG:	Yes  Lord.
+(048:08),	[CHT+],	CG:	She said she was.  She said she was.  She told me she would do it this time  ‘cause actually  her—when I see her  the bad habits that me and her sometime we do together  and I know habits are hard to break  so but she said she was willing to try it  so.
+(048:27),	[SO],	CHW:	Yeah.
+(048:30),	[CHT+],	CG:	Let’s just see.
+(048:32),	[SO],	CHW:	Yeah.
+(048:33),	[CHT+],	CG:	Let’s see what happens.
+(048:35),	[SANDWICH],	CHW:	[laughs]
+(048:36),	[SANDWICH],	CG:	Let’s see.
+(048:38),	[SO],	CHW:	Umm
+(048:39),	[HUPW],	CG:	Did I talk you too much?  I’m sorry  ‘cause I am a talker.
+(048:41),	[SUP],	CHW:	No  that’s okay.  It’s good.  I mean  it’s really helpful to be able to share lots of information.
+(048:41),	[GINFO+],	CHW:	MISSING TEXT
+(048:46),	[LUP+],	CG:	Oh  okay.
+(048:47),	[GINFO+],	CHW:	So  the last thing  so this is an example of—so we’ll make a change plan each week.
+(049:02),	[CHT+],	CG:	Everything.
+(049:03),	[GINFO+],	CHW:	Why it’s important to you to do that.
+(049:25),	[HUPW],	CG:	Okay.  What?  You want me to do this now?
+(049:28),	[GINFO+],	CHW:	If that’s okay.
+(049:29),	[CHT-],	CG:	Oh  man.  I don’t know.
+(049:33),	[GINFO+],	CHW:	[laughs]  So there might be some homework with this program.
+(049:36),	[HUPW],	CG:	Can I do this homework?
+(049:37),	[SANDWICH],	CHW:	[laughs]
+(049:38),	[SANDWICH],	CG:	I got to do it now?  Or when you come back have it?
+(049:41),	[GINFO+],	CHW:	Well  so I guess  also if you have  if you know the answers already  that’s just something we’ll talk about when we all come back together  ‘cause Xxxx also made a plan that she wants to share with you.
+(050:35),	[SS],	CHW:	Alright.  So then when we come back together we’ll  I’ll have you guys share your plans with each other.
+(050:42),	[LUP+],	CG:	Okay.  Okay.
+(050:49),	[SO],	CHW:	So.
+(050:50),	[HUPW],	CG:	So you  so when do you—you don’t know right now when you’ll come back or?
+(050:53),	[SS],	CHW:	Yea  so that’s what we’ll talk about next.
+(050:56),	[HUPW],	CG:	Okay.  Do we need to do that now so we know you coming back next week  or what?
+(051:06),	[SS],	CHW:	Yeah.  Well  so before we do that  we’ll meet with Xxxx again =
+(051:15),	[HUPW],	CG:	Okay.  One minute.  Xxxx!  Xxxx!  Come on!  Come on  Xxxx!  Come on!  {0:51:32} anyway.  She ready to get outside and play.  Well  not play.  {0:51:45}  I don’t know what they were … Where your daddy go?  Your daddy came?
+(051:55),	[HUPI],	O2:	He down the street.
+(051:56),	[HUPO],	CG:	He down the street?
+(051:58),	[HUPO],	CG:	He down the street with who?
+(051:59),	[HUPO],	PT:	I don’t know.  Somebody.
+(052:01),	[HUPO],	CG:	Ugh.  You okay?
+(052:09),	[OQECHT+],	CHW:	Alright.  So what do you guys think about sharing your plans with each other?
+(052:12),	[ADV+],	CG:	Go ahead.
+(052:13),	[CQECHT+],	CHW:	Alright.  So do you want to start?
+(052:18),	[HUPW],	PT:	What?  What?  I’m supposed to read it?
+(052:20),	[GINFO+],	CHW:	Mm-hmm.
+(052:22),	[CML+],	PT:	Well  my plan is to lose weight.  I want this so that I can do more things such as play sports without getting tired.  I also want to do this so I can find more things in my size.  If this gets in the way  tutoring  then I have to try not meeting on Tuesday or Wednesday before six.  The first step that I can take in order to reach my goal is to be more active and to ride my bike more.  Something my friends could do to help me reach my goal is to ride their bikes with me.
+(053:03),	[CML+],	CG:	Very good.  Well  my plan to support you is everything I can do.  Whatever it is that we need to do.  Be very cooperative and whatever I can do  I’m just willing to do it.  And I want to do it for health  for health reasons.  I want to help you for health reasons so that you don’t have to suffer everything and go through what I go through.  And  I feel like nothing’s going to get in our way because what we going to do is schedule at the times that we know that those are the days that we don’t have anything to do.  And I feel like the first step to reach—what’d I say?  The first step that I can take in order to reach my goal is take the first step  acknowledge it is one of the first things we can do is to learn more so that we can do better.  That’s what I wrote.
+(054:00),	[AF],	CHW:	Yeah.  Awesome.  So thanks for sharing those.  And I was telling your mom  I think you guys have the right mindsets  and I think you have some really good  some good motivations.  And I think  you know  definitely if you guys can work together on the plans that you make that I think you guys will definitely be a really successful family in this program.  Definitely.
+(054:25),	[CML+],	CG:	We are.  We going to be one of the families that you going to be able to say  “I had this one family  and they were ready to go.  They were anxious and willing  and they did it.”  Right  Xxxx?  ‘Cause we winners  right?  We winners  Xxxx?
+(054:58),	[SANDWICH],	CHW:	Yeah.
+(054:59),	[SANDWICH],	CG:	We’re going to do it.  We going to look back at my baby  she going to be—when I go whooo!  And I mean  we just going to go—you talk about clothes shopping  sister.
+(055:06),	[CHT+],	PT:	Whatever.  You give me all this stuff that I don’t want to go places with.
+(055:11),	[SUP],	CG:	No—well  what  you know  guess what?  Remember you know that once we be able to get inside a store that has those things that you want  you can get whatever you want.
+(055:18),	[LUP-],	PT:	Whatever.
+(055:19),	[HUPW],	CG:	Come on now.
+(055:20),	[LUP-],	PT:	No.
+(055:20),	[HUPW],	CG:	Come on.
+(055:21),	[HUPW],	PT:	Already asked you could I get something and you was like  “That’s too much.”
+(055:24),	[CML+],	CG:	And what and you- but come on now.  Now this is going to be a treat.  This is something to look forward to.  This is something that the money that we spend on all those snacks we could put in a jar.
+(055:33),	[HUPW],	PT:	What snacks?
+(055:34),	[CML-],	CG:	Like the way we eat snacks?  You know how we sit up in the bed =
+(055:37),	[SANDWICH],	CG:	= and we eat snacks.  Pringles and candy and nuts and =
+(055:43),	[HUPW],	PT:	You do that.  You ate mine.  I didn’t even get to eat none of ‘em.  Not even two.
+(055:50),	[HUPW],	CG:	One thing of—we won’t go there.  We won’t go there.
+(055:52),	[HUPW],	PT:	The whole thing {0:55:53} a whole jar =
+(055:55),	[CML+],	CG:	Like I said.  We’ll have—we’ll get us a jar.  We’ll get us a jar  and we’ll start putting money in the jar.  That’s what we’ll do.  So when it’s time  when you hit your first twenty pounds—when you hit first twenty pounds  we going shopping  even with just twenty.
+(056:11),	[HUPW],	PT:	Twenty dollars?
+(056:12),	[CML+],	CG:	Twenty pounds.
+(056:13),	[LUP+],	PT:	Oh.
+(056:14),	[CML+],	CG:	Twenty pounds.  That’s it.  Right there.  Twenty.  Smack twenty.
+(056:20),	[SANDWICH],	CHW:	Yeah.
+(056:21),	[SANDWICH],	CG:	Yeah.  We going shopping.
+(056:25),	[RCML+C],	CHW:	[laughs] Well  I think it’s really cool your mom  you know  she’s willing to do anything and everything to help you out.  And she’s really willing to be there for you.  So what do you think about that?
+(056:25),	[OQEF],	CHW:	MISSING TEXT
+(056:37),	[CHT+],	PT:	Uh-huh.  That’s okay.
+(056:41),	[SO],	CHW:	Okay.
+(056:42),	[CON],	CG:	(Disrespectful.)
+(056:49),	[SCH],	CHW:	So the next thing we have to talk about is scheduling.
+(057:19),	[CHT+],	CG:	Well  we could make an appointment now  ‘cause we know Mondays would definitely be one of our days because Monday is the day she don’t—I don’t go to school at night and whatever  too  so Mondays is off so she don’t do tutoring on Mondays  =
+(057:31),	[SANDWICH],	CHW:	Okay  Mondays.
+(057:32),	[SANDWICH],	CG:	= so we could do Mondays  and we can do
+(057:36),	[CML+],	PT:	Thursdays.
+(057:37),	[SML+],	CG:	Thursdays?  Mondays and Thursdays.
+(057:41),	[CHT+],	CG:	For us it’d be good if it’s okay with you.
+(057:43),	[SCH],	CHW:	Okay.  So and our next session will be with the dietitian.
+(058:12),	[LUP+],	CG:	Okay  okay.
+(058:13),	[GINFO+],	CHW:	Before then.  And then if you guys ever need to cancel a session  just 24-hours’ notice  but if it’s an emergency  we understand =
+(058:13),	[OQTBN],	CHW:	MISSING TEXT
+(058:41),	[CHT+],	CG:	Well  that’ll be okay  so  you know  like I said  the scheduling.  We just have to make sure because before this you know we  like I said  like on Tuesday nights  I definitely—I’ll be in school from what?  Five to eight.
+(058:55),	[SO],	CHW:	Mmm.
+(058:56),	[HUPW],	CG:	So and then she on Tuesday have her tutoring and she get out at six on Tuesdays and Wednesdays is her tutoring night  which it doesn’t matter  like if you don’t mind coming after that time far as—not on a Tuesday  ‘cause that’d be eight; that’s too late on a Tuesday.
+(059:12),	[SANDWICH],	CHW:	Right  but Wednesday.
+(059:14),	[SANDWICH],	CG:	But Wednesday she gets out after six.  That’s okay  if that’s okay with you  =
+(059:17),	[SANDWICH],	CHW:	Oh  okay.  Mm-hmm.
+(059:19),	[SANDWICH],	CG:	= you know.  But it’s just those days are the days that we have that going on.
+(059:23),	[RCHT+S],	CHW:	Right.  Okay.  Okay.  So Tuesdays  Wednesday after six and Thursday.
+(059:31),	[LUP+],	CG:	Mm-hmm.
+(059:32),	[SO],	CHW:	Okay  cool.  Cool.  So =
+(059:36),	[CHT+],	CG:	Mondays also  no  that’s the best ‘cause there’s nothing on Mondays and that could be early. =
+(059:41),	[SS],	CHW:	That’s the best.  Mm-hmm.  Okay.  So then the last thing that we have to do is just the first weigh-in.  So then we’ll do a weigh-in once a week  so usually when we do the skill session  we’ll do the weigh-in.  So and we do a weigh-in each week ‘cause that helps us to keep track of your weight over time.  So and looking at your weight each week over  like  a couple of months helps us to really see kind of what things are helping or what things we can improve on.
+(059:41),	[GINFO+],	CHW:	MISSING TEXT
+(060:17),	[HUPW],	CG:	Now what about that  what was that $600 thing?  What—how did that go?  What was that $600 thing that she was telling us something?
+(060:27),	[GINFO+],	CHW:	Mmm.  Oh  that’s probably—so  af—the research team comes back in the third month =
+(061:01),	[HUPW],	CG:	That’s what I heard—random.
+(061:04),	[GINFO+],	CHW:	So like it’s—it was random whether you guys would be in the office or I would come here.  And then the second part is random in to what goes next.
+(061:15),	[LUP+],	CG:	Okay.
+(061:17),	[SS],	CHW:	Yeah.  So if it’s alright  we’ll do the weigh-in now.
+(061:21),	[HUPW],	CG:	Oh.  Okay.  Do I weigh in  too  or just her?
+(061:25),	[EA],	CHW:	So  that  you’re welcome =
+(061:26),	[LUP+],	CG:	No.
+(061:28),	[LUP+],	CG:	No. [laughs]
+(061:32),	[HUPW],	CG:	No  if I’m not—if it ain’t my turn  no.
+(061:38),	[GINFO+],	CHW:	Okay.  You just got to wait for the zeroes.  Okay.  Alright.
+(061:53),	[HUPW],	PT:	I was 240.
+(061:55),	[HUPW],	CG:	What is you now?
+(061:56),	[HUPW],	PT:	236.
+(061:58),	[HUPW],	CG:	Ooooh.  See that even looks good  doesn’t it?  I ain’t kidding.  I don’t care.  When I see one  if I see two pounds  I’m happy.  I want to get on there now  too  but I’m scared.  I done ate a lot already.
+(062:09),	[HUPW],	PT:	You sure did.
+(062:11),	[HUPW],	CG:	You don’t have to look.
+(062:14),	[HUPW],	CG:	I just doing it for myself.  I’m doing it myself  not y’all.
+(062:16),	[SO],	CHW:	Okay  so.
+(062:18),	[HUPW],	CG:	Wait  wait  I got to take off my  oh  (better) keep my sock on?
+(062:25),	[HUPW],	PT:	The side don’t do nothing.

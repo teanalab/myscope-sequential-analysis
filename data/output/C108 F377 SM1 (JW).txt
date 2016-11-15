@@ -1,0 +1,653 @@
+(000:00),	[SS],	CHW:	Counselor 108  family 377.  It is April 25th.  Alright.  Well  so thanks for meeting with me on your long day.  So what we’ll do for today—so we’ll do a weigh-in  and so this is the week where we’ll start setting a goal for you to lose one to two pounds each week.  So and that’s =
+(000:00),	[AFL],	CHW:	MISSING TEXT
+(000:00),	[SS],	CHW:	MISSING TEXT
+(000:00),	[GINFO-],	CHW:	MISSING TEXT
+(000:00),	[SS],	CHW:	MISSING TEXT
+(000:48),	[LUP+],	CG:	Mm-hmm.
+(000:52),	[EA],	CHW:	Cool.  So what other things would you guys like to add to talk about today?  Nothing?
+(000:52),	[CQTBN],	CHW:	MISSING TEXT
+(001:00),	[HUPW],	Y:	Mm-mm.
+(001:01),	[SS],	CHW:	Okay.  Cool.  So if it’s alright  we’ll start with the weigh-in.
+(001:21),	[HUPW],	CG:	[00:01:20.0] here I come.  Sometime it go by the  well  make sure you always [00:01:26.0] =
+(001:30),	[HUPW],	CHW:	Oh  right  yeah.  There you go.
+(001:32),	[HUPW],	CG:	And also  you know  with our floor =
+(001:34),	[HUPW],	Y:	I got to go to the bathroom.
+(001:36),	[HUPW],	CG:	= okay.  You lose anything  Xxxx?
+(001:43),	[HUPW],	Y:	No.  I gained like 11 pounds.
+(001:47),	[CON],	CG:	That ain’t right.  You know  you got to =
+(001:49),	[HUPW],	Y:	I’m 242.  And I was 232. =
+(001:51),	[ADV-],	CG:	No  but you got to really  no  I’m telling you.  Make sure every time =
+(001:55),	[SANDWICH],	Y:	[00:01:53.0]
+(001:56),	[SANDWICH],	CG:	No  with this thing here  I’m telling you.  Make sure every time you do this here with our floor  you got to make this thing is r- is it at 3.0?
+(002:05),	[SO],	CHW:	Yeah.
+(002:12),	[HUPW],	CG:	[laughs] Okay  what was mine last?  See?  It was [00:02:16.0]  I don’t like that one.  Now hand me my scale up under that table.  I’m going to show you.  But I still say I lost though.  I still lost by this scale.  I think it was 275 [00:02:27.0].
+(002:30),	[SANDWICH],	CHW:	[laughs]
+(002:34),	[SANDWICH],	CG:	Oooh!  No  now move out of the way for a minute.  Don’t touch [00:02:41.0].  Ha  ha  ‘cause it was just this morning it was 270.  Uh-uh  now watch this.  I know that it’s this floor.  Watch.  Or you got [00:02:49.0] this time of the day.
+(002:54),	[SS],	CHW:	Right.  So that’s what we can talk about next is different things that can cause your weight to fluctuate.
+(002:59),	[HUPW],	CG:	I refuse.  I refuse.  Oh  come on!  Well  yours say 270.  I’m going to go with that.
+(003:07),	[SANDWICH],	CHW:	[laughs]
+(003:08),	[SANDWICH],	CG:	But it’s uh-uh.  No  this morning  it was just 270.  Uh-uh.  No.  Mm-mm.  No.  Ugh.  This morning  it was 270.  [00:03:20.0] oh  excuse me.  I ain’t gain no 5 pounds just since this—today.  What they heck have I did?  Oh  no.
+(003:32),	[ADV-],	CG:	Xxxx  get on our scale.  Put it in front of where he’s standing.  Okay.
+(003:37),	[SO],	CHW:	Oh  right
+(003:39),	[HUPW],	CG:	Yeah.  I usually move it up a little further here.  Let’s see.
+(003:47),	[HUPW],	Y:	243.  That’s more.
+(003:49),	[HUPW],	CG:	Well  I don’t know what’s going on then.
+(003:51),	[GINFO+],	CHW:	Well  so this is =
+(004:08),	[AMB-],	CG:	I’m just through.  I mean we do try and I ain’t even trying no more.  I’m just (through) =
+(004:13),	[ROS],	CHW:	[laughs] Well  so and you’re saying  you know  this morning  your weight was different than it is now.
+(004:18),	[HUPW],	CG:	A whole what?  Five pounds different.
+(004:20),	[GINFO+],	CHW:	Mm-hmm.  Yeah.  So a lot of times throughout the day—well  so one of the things that we do is we try and use the same scale every time  and we try to do it about =
+(005:08),	[HUPW],	CG:	Yeah  that’s what I do.
+(005:35),	[HUPW],	CG:	Oh  so I’m drinking a lot of water  so then =
+(005:38),	[GINFO+],	CHW:	So that can cause your weight to change  also.
+(005:40),	[LUP+],	CG:	Okay.
+(005:41),	[HUPW],	Y:	You can’t take only but two pounds off.
+(005:44),	[HUPW],	CG:	Well that’s—then that puts it on my scale back to what it was this morning.
+(005:49),	[CON],	Y:	But you ain’t drank all that yet.
+(005:50),	[HUPW],	CG:	Well  I have drunk all this.
+(005:53),	[HUPW],	Y: 	That’s not even a half a liter.
+(005:54),	[HUPW],	CG:	It’s this is—what is it?
+(005:58),	[GINFO+],	CHW:	Oh  that’s a half a gallon [laughs]. =
+(006:00),	[SANDWICH],	CG:	[00:05:59.0]
+(006:01),	[SANDWICH],	CHW:	= I don’t know how to convert to (gallons).
+(006:04),	[HUPW],	CG:	That’s a gallon.
+(006:05),	[SO],	CHW:	Yeah.
+(006:07),	[HUPW],	CG:	Right?
+(006:08),	[GINFO+],	CHW:	Mm-hmm.
+(006:09),	[HUPW],	CG:	[00:06:07.0] gallon  so then I’d have drunk half of a gallon. =
+(006:12),	[HUPW],	Y:	From last night  though.
+(006:13),	[HUPW],	CG:	Oh  yeah  I had half a gallon  what you said.  No  no  from today!
+(006:15),	[HUPW],	Y:	Okay.  Whatever.
+(006:16),	[SO],	CHW:	Yeah.
+(006:23),	[GINFO+],	CHW:	So there can be different things that can cause your weight to fluctuate.  And then—so then  like when we talk about your plan some today  different things even throughout the week can cause it to fluctuate.  So if you’re—so maybe each day if you’re eating a little bit more calories than you should  that can show up on the scale  too.  So yeah.  Well  what questions do you guys have about the weigh-in or changes in weight throughout the [phone rings]
+(006:57),	[HUPW],	Y:	I don’t have any questions.
+(006:59),	[ROS],	CHW:	No questions.  Alright.
+(007:02),	[HUPO],	Y:	This is Xxxx.
+(007:03),	[HUPO],	CG:	Oh  let me see this.  ‘’Cause she want to know if we’re going to church with her. Give me the phone.
+(007:15),	[GINFO-],	CHW:	So your weight last time was 239.2.  [pause] So what do you think might have been—might be some reasons that your weight went up this past week?
+(007:46),	[CHT-],	Y:	I don’t know ‘cause I don’t even know what I did.
+(007:49),	[CHT+],	CG:	Really?  Because I think she been really watching it—I mean  you know  like I said  we’ve been—she been doing the breakfast and lunch  and not unless she’s  you know  doing something I don’t know during that time that’s more.
+(008:03),	[CQECML+],	CHW:	Okay.  So you’ve really been working on like eating a meal plan?  Okay.  So you can’t really think of any things that might have caused it to go up?
+(008:22),	[CML+],	CG:	We’re just [00:08:19.0] trying so hard.
+(008:24),	[GINFO+],	CHW:	So the big things that we talk about in this program that can cause weight to change are like things with food and things with physical activity.  So it sounds like with food  there weren’t many things that you can think of.  So you weren’t like—you didn’t find yourself snacking a lot more than usual or going out to eat a lot more or?
+(008:24),	[RCHT+S],	CHW:	MISSING TEXT
+(008:24),	[CQECML+],	CHW:	MISSING TEXT
+(008:49),	[CML+],	CG:	We’re not going out to eat  and I bought—and the only thing I had was like her snack was like we had the Atkins bars  and we had the 100-calorie cookies  but she only get one bag of that to take to school for lunch.  So I really just don’t know.  I guess we just need to throw that doggone exercise in there.  It’s got to be.
+(009:15),	[RCML-S],	CHW:	Mm-hmm.  So it sounds like this week there wasn’t a lot of the physical activity.  Okay.  So and that’s one of those two areas  so things could be going real good with food and it might just be you need to add some more physical activity to get moving.  What other things do you think about your change in weight this week?
+(009:46),	[LUP+],	Y:	I don’t know.
+(009:50),	[OQTBN],	CHW:	Okay.  So like any—just any thoughts in general how you feel?  Good?  Bad?
+(009:58),	[HUPW],	Y:	I don’t have any thoughts or feelings about it.
+(010:02),	[ROS],	CHW:	Okay.  So you’re kind of indifferent.  Doesn’t really matter.
+(010:06),	[CHT+],	Y:	It does  but oh don’t
+(010:14),	[HUPW],	CG:	The thing about it is  though  do you feel lighter?  Do you feel any different and your body is feeling lighter still as far as from the way you’ve been eating?
+(010:24),	[HUPW],	Y:	I don’t know how it feel to be lighter or not.
+(010:28),	[HUPW],	CG:	You can get around better?
+(010:29),	[HUPW],	Y:	I always get around.
+(010:31),	[HUPW],	CG:	[00:10:30.0] I don’t know what to say.  So okay.
+(010:33),	[AFL],	CHW:	Okay.  Well  so then—and that’s a good point.  A lot of times when people are working on weight loss  they start to see the changes more in like how their clothes are fitting and how easy it is to get around.  So those things might come first before you start to really see big changes on the scale.
+(010:33),	[GINFO+],	CHW:	MISSING TEXT
+(010:51),	[HUPW],	CG:	Yeah  sometime that happens.
+(010:53),	[SO],	CHW:	Mm-hmm.  Yeah.
+(010:57),	[CHT+],	Y:	I feel good.
+(011:02),	[SO],	CHW:	Yeah.
+(011:03),	[HUPW],	CG:	I feel good.  I mean  I’ve been really trying.  Really trying.
+(011:09),	[AF],	CHW:  	Yeah.  Well  and I think that’s great.  It sounds like you guys have really been trying a lot of things and being mindful.
+(011:19),	[CML+],	CG:	We try.
+(011:20),	[AF],	CHW:	[laughs] And that’s—I mean  that’s the first big step.
+(011:23),	[CHT-],	CG:	But that can be very discouraging.
+(011:25),	[SO],	CHW:	Yeah.
+(011:27),	[HUPW],	CG:	I’m telling you.  I mean  I just—the way I was feeling and moving and getting around and things I’ve been able to do  I was just really looking to see the scale to be—I mean  but I still got—yours say 272  which still make me happy because rem- you don’t have it wrote down what I was?
+(011:46),	[GINFO+],	CHW:	I don’t write down your weights =
+(011:48),	[SANDWICH],	CG:	Okay.
+(011:49),	[SANDWICH],	CHW:	=  ‘cause we’re only keeping track of Xxxx’s for the program.
+(011:51),	[HUPW],	CG:	Okay.  Well  it was.  Remember?  It was 275.  275 I believe it was.  Wasn’t it 275?  [00:11:56.0]
+(011:57),	[HUPW],	Y:	I wasn’t here.
+(011:58),	[HUPW],	CG:	I wasn’t happy.  [00:11:59.0] no I’m talking about [00:12:00.0] it was 270.  Wait a minute.  Yours say 27—wait a minute.
+(012:06),	[SO],	CHW:	Today  it said 272.
+(012:07),	[LUP+],	CG:	Okay  yeah.
+(012:08),	[SO],	CHW:	For yours  yeah.
+(012:11),	[HUPW],	CG:	So.  That’s still three pounds.  I’m going to be happy with that.
+(012:12),	[OQTBN],	CHW:	Mm-hmm.  So and Xxxx  what are some things that you remember about what’ll happen on days when we do a weigh-in and you haven’t lost weight?
+(012:28),	[HUPW],	Y:	You’re going to try to figure out why  like what did I do to gain weight  or why did I not lose any weight?
+(012:38),	[GINFO-],	CHW:	Mm-hmm.  Right.  So first  we’re going to do a two-mile run  and then we’ll do 20 pushups on those days.
+(012:45),	[HUPI],	O:	Do what?
+(012:47),	[HUPO],	CG:	He’s in the kitchen.
+(012:48),	[SO],	CHW:	I’m kidding.
+(012:51),	[GINFO+],	CHW:	You’re right.  So we’ll look at those as opportunities to kind of find out what things got in the way or what things we can do to help you out for this week.  Cool.
+(013:05),	[SS],	CHW:	So and then  for this week  what we’re going to talk about is self-monitoring.  So before we talk about that  what are some things that you remember about the plan that you created with Sarah?
+(013:05),	[OQECML+],	CHW:	MISSING TEXT
+(013:19),	[HUPW],	Y:	The 500 calorie less thing?
+(013:21),	[GINFO+],	CHW:	Mm-hmm.
+(013:22),	[HUPW],	Y:	To cut back on things and like substitute things.
+(013:29),	[RCML+S],	CHW:	Right.  Yeah  so there’s a lot of substitutions in there  so switching out high-calorie foods for lower-calorie ones.  So that was one side of it.  So what—and what’s the other side of the 500 less plan?
+(013:29),	[OQECML+],	CHW:	MISSING TEXT
+(013:45),	[HUPW],	Y:	That’s not it?
+(013:46),	[CQTBN],	CHW:	Hmm?
+(013:48),	[HUPW],	Y:	That’s not it?
+(013:51),	[GINFO+],	CHW:	So there’s two parts to making 500 calories less.  So you can make substitutions  and how else can you cut out calories?
+(013:51),	[OQECHT+],	CHW:	MISSING TEXT
+(013:58),	[HUPW],	Y:	Exercising?
+(014:04),	[GINFO+],	CHW:	Mm-hmm.  Right.  Yeah.  So making the substitutions and doing physical activity can help you to cut those.
+(014:04),	[RCHT+S],	CHW:	MISSING TEXT
+(014:09),	[HUPO],	CG:	Alright.  Go ahead.  I’m sorry.
+(014:20),	[LUP+],	CG:	Sorry  okay.
+(014:23),	[OQECML+],	CHW:	What do you remember are some of the things that you had picked out specifically?
+(014:32),	[HUPW],	Y:	Huh?  What you mean what did I pick out?
+(014:34),	[GINFO+],	CHW:	Like when Sarah went through—when you picked out certain things that you knew that you can substitute.
+(014:44),	[CML+],	Y:	I picked out popcorn and =
+(014:47),	[RCML+S],	CHW:	Oh  that’s right.  Having a mini bag instead of the big one.
+(014:53),	[CML+],	Y:	=  juice and instead of the nine-piece chicken wing  like if I went out or something  just get the six-piece one.
+(014:58),	[OQECML+],	CHW:	Mm-hmm.  Right.  What was the substitution for the juice?
+(015:04),	[HUPW],	Y:	Oh  instead of having the—I think it was eight?  No.  Sixteen ounces or something like that?
+(015:10),	[HUPW],	CG:	No  instead of having eight  you have four?
+(015:11),	[CML+],	Y:	Yeah.
+(015:14),	[CQTBN],	CHW:	Oh  I think—did we talk about the Crystal Light?
+(015:16),	[LUP+],	Y:	Yeah.
+(015:17),	[GINFO+],	CHW:	Yeah.  That’s right.  Cool.  Cool.  Yeah  so using that plan—so that’s the plan that we’ll be working on from now until the end of the program.  And those are the recommendations that can help you to have that one to two pounds weight loss each week.  So as I mentioned earlier  self-monitoring is what we’re going to talk about.  So and self-monitoring is basically just keeping track of the foods that you eat or the physical activities that you do.  So why do you think self-monitoring might be important for this program?
+(015:17),	[SS],	CHW:	MISSING TEXT
+(015:17),	[GINFO+],	CHW:	MISSING TEXT
+(015:17),	[OQECHT+],	CHW:	MISSING TEXT
+(016:00),	[HUPW],	Y:	So you know what you did—like if you didn’t meet your goal  you would know what you did if you did meet your goal?
+(016:07),	[GINFO+],	CHW:	Mm-hmm.  Right.  Yeah  so at the end of the week  depending on what happened  you can see exactly what those things were.  So that’s the number one thing.  And people—when people start to write down what they’re eating  they really start to see kind of the patterns.  So either the patterns in what they’re eating or the patterns in the activities they’re doing.  So and like you said  having an accurate record.  So like sometimes—so like I know today you said you didn’t really remember what had happened in the past week  and if you asked me  I wouldn’t have known what I did in the past week  either  what I ate.  So and that can be a really good way to if you need to look back.  So and how do you think that can how do you think that can apply to so how do you feel like that can help out for physical activity?  The self-monitoring?
+(016:07),	[RCHT-S],	CHW:	MISSING TEXT
+(016:07),	[ADV+],	CHW:	MISSING TEXT
+(016:07),	[OQECHT+],	CHW:	MISSING TEXT
+(017:20),	[CHT+],	Y:	Writing down what you did.  Like what physical activity you did.
+(017:25),	[OQECHT+],	CHW:	Mm-hmm.  And how could that be helpful for you?
+(017:31),	[CHT+],	Y:	I don’t know ‘cause I mean I don’t remember if I did a physical activity or not.
+(017:36),	[GINFO-],	CHW:	Mm-hmm.  Okay.  So yeah  in the same way that writing your food down gives you that accurate record  writing down the activities can do the same thing.  So like if you see—if you could start keeping track of your activities and you see times when maybe you get a ride when instead you could walk  you could switch that around and kind of see different times like that.  Cool.
+(018:03),	[LUP+],	CG:	Mm-hmm.
+(018:05),	[OQECHT+],	CHW:	So for you  what kinds of things do you think you would start to see if you start writing down all your foods and all your activities?
+(018:15),	[CHT+],	Y:	I would just see what I ate or like you know  how much stuff that I ate or something.
+(018:22),	[GINFO+],	CHW:	Mm-hmm.  Yeah.  Yeah  so and you might be able to see—well  so for some people  it helps them to see like times when they overeat or times when they snack a lot.  Stuff like that.  And then also keeping track can help you see where you are when you’re eating it and maybe who was there or stuff like that.  I know for one of the teens I was working with  his aunt was a trigger for him to eat a lot of foods when he was over at her house.  So different things like that can be helpful  too.  Alright.  So so far  we’ve talked about =
+(019:39),	[SUM],	CHW:	So writing your food down can give you an accurate record  can help you to see times when you might want to make some changes.  And then the last thing that it can do is help you to see times when you are making those good changes.  So when you’re making the substitution from the juice to the Crystal Light  you can see that written down in your food log.  So it’s not just there to show you things that aren’t going so well but to show you things that are going well too.
+(020:54),	[OQTBN],	CHW:	Well  so what do you think about learning some more about either food logging or physical activity logging and doing some practice?  Alright.  So which one do you think you want to start with?  Either food or physical activity  you can pick.
+(020:54),	[EA],	CHW:	MISSING TEXT
+(021:09),	[HUPW],	Y:	It doesn’t matter.
+(021:10),	[EA],	CHW:	Well  you get to pick.
+(021:12),	[HUPW],	Y:	Food?
+(021:13),	[SO],	CHW:	Alright.  So I don’t know if I have a 500…
+(022:28),	[GINFO+],	CHW:	Alright.  So this is what the food logs look like that we use in this program.  So there’s—I don’t have the one that’s 500 calories less  but it has an extra column so you can write down what food you substituted if you did.  So the first thing we’re going to do here is write the goal.  It’s 500 less  and the date.  Alright.  So what we’ll do is—so I’ll think of the last time I ate  and I’ll go through an example.  And then  I’ll have you tell me the steps for maybe like the lunch that you had today  and then I’ll let you do an example on your own.  Alright.  So last time I ate was my lunch at 12:30.  What did I have?  So I had a Campbell’s Chunky Chicken Noodle soup.  Just enough space.  And it was one cup.  I brought that from home.  So I also had a turkey sandwich.  So for things like sandwiches or like sandwich wraps  or what else?  Or like salads  those things are good to list like each ingredient separate.  So like if you remember from the practice one we did  the salad had—the lettuce was separate from the dressing and the cheese.  So that’s the best way to do that.  So I had wheat bread and turkey  and there was a slice of cheese on it.  What else did I have?  I had some mayo.  I think that’s about it.
+(024:58),	[HUPO],	CG:	Am I pushing that table?  Am I pushing the table on you?
+(025:00),	[SO],	CHW:	I don’t think so.
+(025:01),	[HUPO],	CG:	You okay?  Okay.
+(025:03),	[GINFO+],	CHW:	Yeah.  So I had two slices of the wheat bread  two slices of the turkey  one slice of cheese  and it was about one tablespoon of mayo.  So and these all came from home.  So now  I remember from the food label that the soup was 110 calories  and then I’d already looked up my sandwich.  So I know two slices of wheat bread is 130 calories  the turkey is 45  one slice of cheese is 30  and I know a tablespoon of mayo is 15.  So another thing that can be really helpful with a food log is thinking about things that you ate that you might have forgotten about.  So like a lot of times  people forget to write down what they had to drink or maybe the things that they got  like right after that meal that they didn’t really think about as part of their meal.  So I actually had an orange that I almost forgot about.  And so for the orange—for fruits and things like that  you want to do like small  medium  or large as their size.  So it was a small orange.  What else [00:26:26.0]?  Oh  it’s right here.  Perfect.
+(026:33),	[GINFO+],	CHW:	So I don’t know how many calories a small orange is.  So I’m going to look up orange—page 100.  So it says there’s 35 calories in a small orange.  So then  also what I had to drink.  So I had water.  Yeah.  I had a cup of water.  Got that from the office.  And how many calories do you remember there are in water?
+(027:16),	[CML+],	Y:	Zero.
+(027:17),	[GINFO+],	CHW:	Right.  So =
+(027:19),	[HUPW],	Y:	Then why does it—why would it make you gain two pounds?
+(027:23),	[GINFO+],	CHW:	Well  right.  So water doesn’t necessarily make you gain weight  but water—liquid is =
+(027:51),	[HUPW],	Y:	I was about to say the water was 120 calories but I forgot this is [00:27:53.0]
+(027:55),	[SO],	CHW:	Oh  okay.
+(028:00),	[GINFO+],	CHW:	Yeah  and so this is a good example of—so like one of the times when a food log can show you the good changes you’re making.  So if you’re choosing water instead of pop or using Crystal Light instead of getting juice.
+(028:14),	[HUPW],	CG:	Crystal Light is good.
+(028:17),	[CML-],	Y:	I haven’t used it yet.
+(028:19),	[CML+],	CG:	No  last night I tried to get you to get [00:28:20.0]  but you said [00:28:21.0] =
+(028:23),	[ADV-],	CG:	Well  make up your mind.  You just said you haven’t had it yet.
+(028:26),	[CHT-],	Y:	No  I’m saying I didn’t get any yet  [00:28:28.0] bocce ball.  Yeah  [00:28:32.0].
+(028:32),	[HUPW],	CG:	I said it tastes good.  What it got to do with you getting some?
+(028:36),	[CHT-],	Y:	You were drinking it all [00:28:37.0].
+(028:37),	[CML-],	CG:	Yeah  I probably am.  That’s good.
+(028:43),	[OQTBN],	CHW:	Well  so what do you think about logging your lunch for today?
+(028:49),	[HUPW],	Y:	I have to do this every day?  My logging?  Man  this just like that medicine thing.
+(028:57),	[LUP+],	CG:	Mm-hmm.
+(028:58),	[CQTBN],	CHW:	What’s that?
+(028:59),	[HUPO],	Y:	I had to—when I was in a little asthma program  I had to write down all my medicine and stuff.
+(029:02),	[SO],	CHW:	Oh  okay.
+(029:04),	[HUPW],	Y:	What if I forget to put it down?
+(029:07),	[CHT+],	CG:	That’s why you’re going to be writing it.
+(029:09),	[HUPW],	Y:	That’s what I’m saying.  I’m saying what if I forget to write it down one day?
+(029:13),	[GINFO+],	CHW:	Yeah  so the goal is to write it down every day.
+(029:20),	[GINFO+],	CHW:	And a lot of times  people have the same thing =
+(029:22),	[HUPW],	CG:	Yes  they do.
+(029:37),	[HUPW],	CG:	Well  she doesn’t eat cereal.
+(029:40),	[CML-],	Y:	I eat Honeycombs.  There’s a lot of sugar in it. =
+(029:44),	[HUPW],	CG:	No milk.  Just Honeycombs.  No milk.
+(029:46),	[SO],	CHW:	Yeah  I used to be the same way.  I used to eat dry cereal.
+(029:50),	[CHT-],	CG:	But I mean  don’t—but she put sugar on it  though.
+(029:53),	[CML+],	Y: 	Not Honeycombs.
+(029:54),	[HUPW],	CG:	You just eat Honeycombs?
+(029:56),	[HUPW],	Y:	That was Cheerios I used to put sugar on.
+(029:58),	[ADV+],	CG:	You could take Honeycombs for a snack.  Take like one cup of Honeycombs.
+(030:03),	[CHT+],	Y:	No  I like Chex Mix.
+(030:04),	[HUPW],	CG:	Well =
+(030:06),	[CHT+],	Y:	I like Chex Mix for snack.
+(030:07),	[RCHT+S],	CHW:	Oh  okay.  Chex Mix.
+(030:10),	[CHT+],	Y:	Or goldfish.
+(030:13),	[GINFO+],	CHW:	Why not?  So and the more that you log  the more—or the easier that it’ll be ‘cause you will start to memorize—so like I’ve already got it memorized that there’s 130 calories in two slices of wheat bread.  So stuff like that.  And the people who end up being most successful in the program are the people who really stick with the logging and really keep track of the foods they’re eating.  So people are really seeing a big benefit in being able to see every day what they’re eating and “Ooh  I shouldn’t have had that.”  Or “ I could switch this for something tomorrow.”  So you can kind of see what’s happening and make those changes day to day.
+(030:59),	[HUPW],	CG:	You going to give us some of that paper?  Or are you—that’s just an example?
+(031:02),	[GINFO+],	CHW:	Mm-hmm.  Yep.  Yep.  I’ll bring new paper all the time.
+(031:06),	[HUPW],	Y:	We had a whole stack of these sheets  and my mama probably threw them away.
+(031:10),	[HUPO],	CG:	No  not those.  That was [00:31:12.0]
+(031:12),	[HUPW],	Y:	It was exactly these sheets.  Remember?  =
+(031:14),	[HUPW],	CG:	No  [00:31:14.0]
+(031:15),	[HUPW],	Y:	= She was like  this was going to help us when we started the program.
+(031:18),	[HUPW],	CG:	I can’t find them.  And I don’t throw away nothing.
+(031:21),	[HUPO],	Y:	You always say that.
+(031:22),	[HUPO],	CG:	I don’t.
+(031:24),	[SO],	CHW:	Oh.
+(031:25),	[HUPW],	CG:	No  we didn’t have that.
+(031:28),	[CON],	Y:	It was something like a food log.
+(031:29),	[HUPW],	CG:	No  no.  This?  No. =
+(031:29),	[GINFO+],	CHW:	I don’t think she’s given you any food logs yet.
+(031:31),	[LUP+],	CG:	No  no.
+(031:32),	[HUPW],	Y:	It was a food log  but it—she said to track our food  but I don’t know if it was exactly like that.
+(031:38),	[SS],	CHW:	Okay.  So if you tell me the steps  I’ll log your lunch for you  and then I’ll let you do an example.  Maybe the dinner that you plan on eating or something like that.
+(031:51),	[CML+],	Y:	Okay.  I had pink lemonade.
+(031:54),	[OQTBN],	CHW:	Alright.  So what’s the first step that I should do?
+(031:59),	[HUPW],	Y:	Write the time?
+(032:00),	[GINFO+],	CHW:	Mm-hmm.
+(032:04),	[CQECML+],	CHW:	Alright.  You said pink lemonade?
+(032:17),	[GINFO+],	CHW:	So that’s another good example.  A hamburger is one of those things to log separate  too.  So like =
+(032:23),	[HUPW],	Y:	I don’t eat bread or nothing else on it.  I just eat ham- =
+(032:25),	[SO],	CHW:	[laughs] Oh  that makes it easy.  Alright.
+(032:26),	[HUPW],	CG:	Right.  [laughs] Nothing on it.
+(032:27),	[CQTBN],	CHW:	Was there anything on the hamburger?
+(032:30),	[HUPW],	CG:	Salt.
+(032:31),	[CON],	Y:	No  I didn’t have salt.
+(032:32),	[CQTBN],	CHW:	Ketchup?
+(032:33),	[HUPW],	CG:	You didn’t have salt?
+(032:33),	[CQTBN],	CHW:	Mustard?  =
+(032:34),	[LUP+],	CG:	Oh
+(032:36),	[HUPW],	Y:	Mm-mm.
+(032:37),	[CQTBN],	CHW:	Ketchup?
+(032:38),	[HUPW],	Y:	No.
+(032:39),	[HUPW],	CG:	She don’t eat (that stuff).
+(032:40),	[CQTBN],	CHW:	Onions?  Tomato?
+(032:41),	[HUPW],	CG:	No.
+(032:42),	[CML+],	Y:	Just a hamburger.
+(032:42),	[RCML+S],	CHW:	Just a hamburger.  Alright.
+(032:43),	[LUP+],	Y:	Yeah.
+(032:43),	[SO],	CHW:	That works. [laughs]
+(032:44),	[CML+],	Y:	Pringles.
+(032:46),	[CML+],	Y:	Yeah  Pringles.
+(032:48),	[RCML+S],	CHW:	Pringles.
+(032:49),	[HUPW],	CG:	You know about how many?
+(032:50),	[CML+],	Y:	It was only five of them.  That’s all I had left.
+(032:53),	[CQECML+],	CHW:	Five Pringles?
+(032:54),	[HUPW],	Y:	Yeah.
+(032:55),	[SO],	CHW:	Alright.
+(033:02),	[CML+],	Y:	Oh  yeah.  The hundred calories of Oreos.
+(033:09),	[HUPW],	CG:	Those little thins  Oreo Thins.
+(033:11),	[CQECML+],	CHW:	Mm-hmm.  It was a hundred-calorie pack?
+(033:13),	[CML+],	Y:	Mm-hmm.
+(033:15),	[SO],	CHW:	Okay.
+(033:16),	[HUPW],	Y:	And that’s it.  Yep  that’s all I had.
+(033:22),	[RCML+S],	CHW:	Okay.  So you had one hamburger.  Alright.  And how much pink lemonade do you think it was?
+(033:30),	[CML+],	Y:	It was like a can.  A little can that came out from the machine.
+(033:33),	[CQECML+],	CHW:	So it was 12 ounces?
+(033:34),	[HUPW],	Y:	Is there that much in there?  That go so fast.
+(033:38),	[RCML+S],	CHW:	Yeah.  So and—so 12 ounces of pink lemonade  one hamburger  five—you said five chips for Pringles and you had one pack of the Oreos.
+(033:52),	[CML+],	Y:	But I ate these—like when I came up for lunch.
+(033:55),	[SO],	CHW:	Mm-hmm.
+(033:56),	[LUP+],	Y:	Yeah.
+(033:57),	[GINFO+],	CHW:	Okay.  That’s okay.  So and the good thing about that one is we already know how many calories it was.  So the next thing is this column.
+(034:08),	[CML+],	Y:	I got the pink lemonade from school  and then the rest was from home.
+(034:13),	[OQECML+],	CHW:	Okay.  Alright.  What’s our next step?
+(034:24),	[CML+],	Y:	Find out how many calories.
+(034:25),	[GINFO+],	CHW:	Mm-hmm.  So pink lemonade.
+(034:49),	[HUPW],	Y:	I don’t see pink lemonade.
+(034:52),	[CQTBN],	CHW:	What brand was it?  Minute-Maid or =
+(034:55),	[HUPW],	Y:	Yeah  it was Minute-Maid today.
+(034:57),	[CQTBN],	CHW:	Or Country Time?
+(034:58),	[HUPW],	Y:	It was Minute-Maid.
+(034:59),	[ROS],	CHW:	Minute-Maid.  So it might be listed under brand name also. [pause] I guess it might even be under lemonade  too.
+(034:59),	[GINFO+],	CHW:	MISSING TEXT
+(035:18),	[HUPW],	CG:	That’s what I was going to say—lemonade.
+(035:19),	[HUPW],	Y:	It’s under lemonade.
+(035:21),	[SO],	CHW:	Okay.
+(035:32),	[HUPW],	Y:	I just look at the right page.
+(035:49),	[HUPW],	Y:	Is it—so would that be 40?  I think it’s 40 [00:35:51.0].  Okay  so [00:35:55.0].  [pause] They got all these different ones.
+(036:23),	[CQTBN],	CHW:	Under Minute Maid?
+(036:25),	[HUPW],	Y:	Yeah.
+(036:27),	[CQTBN],	CHW:	But no pink lemonade?
+(036:28),	[HUPW],	Y:	I don’t see it (yet).
+(036:29),	[SO],	CHW:	Shoot.
+(036:43),	[HUPO],	Y:	Pink lemonade is so popular in my school.
+(036:49),	[HUPW],	CG:	Let’s see.  Can I look?
+(036:55),	[ADV-],	Y:	No.
+(037:26),	[GINFO+],	CHW:	Ah—I found the trick.  So a lot of times the—so like the pink lemonades that come in a can and stuff?  They’re closer to like a pop than a juice  so I figured if we go to the front of the pop section.  It’s got the blue box?  And pink lemonade is in there  too.  And I don’t know if they have it.  They have Country Time over here.  Oh  there they got Minute Maid  too.
+(038:08),	[HUPW],	Y:	Where?
+(038:11),	[CQTBN],	CHW:	Well  so you see pink lemonade in here?
+(038:18),	[HUPW],	Y:	I see lemon-lime.  I already looked there.  Where’s pink lemonade at?
+(038:30),	[GINFO+],	CHW:	Oh  wait a minute.  I have the 2011 book.
+(038:42),	[HUPW],	Y:	Oh  and I know I’m not blind  but I don’t see it.
+(038:44),	[CQTBN],	CHW:	[laughs] Yeah.  Well  so if you flip the page and go to Minute-Maid  do you see Minute-Maid?
+(038:54),	[HUPW],	Y:	Yeah.
+(038:58),	[HUPW],	Y:	This is lemon tea.
+(038:59),	[CQTBN],	CHW:	Oh.  That’s the only thing they’ve got for Minute Maid?  What about—oh  over here.  Fruit pop.
+(038:59),	[GINFO+],	CHW:	MISSING TEXT
+(039:06),	[HUPW],	Y:	Fruit punch.  Lemonade  regular.  That’s it?
+(039:09),	[GINFO+],	CHW:	Lemonade  regular  yeah.  So we’ve got 12 ounces [00:39:11.0].
+(039:12),	[HUPW],	Y:	So that’d be just 150 calories?  What’s the difference?
+(039:15),	[GINFO+],	CHW:	Mm-hmm.  Yeah  so 150.  So and they’re probably pretty close.
+(039:21),	[SANDWICH],	Y:	Yeah.
+(039:22),	[SANDWICH],	CHW:	Lemonade  pink lemonade.  Alright.  A hamburger.
+(039:52),	[HUPW],	Y:	It say hamburger right here  but it say carnival fair  Jack in the Box  McDonald’s.  But it was from home  so.
+(040:01),	[GINFO+],	CHW:	Okay.  So if we just go to the page that says hamburger  we can see what or =
+(040:07),	[HUPW],	Y:	On 66?
+(040:08),	[SO],	CHW:	Oh  there is no page.  Page is on this side.  I always do that.
+(040:16),	[GINFO+],	CHW:	Yeah.  Or another thing we could try is the—whoops— [laughs] is the meats page  and that might have a listing of…
+(040:33),	[HUPW],	Y:	Meat snacks or meats or like…
+(040:37),	[GINFO+],	CHW:	Meats.  So it should be the M.
+(040:56),	[HUPW],	Y:	T-bone steak.
+(041:10),	[SO],	CHW:	Alright.  Here we go.
+(041:11),	[HUPW],	Y:	Ground beef  raw.  Mom  what kind of meat was it?
+(041:14),	[HUPW],	CG:	What?  Turkey meat.
+(041:15),	[HUPW],	Y:	This ain’t ground beef.
+(041:17),	[ROS],	CHW:	Oh  it was turkey.
+(041:18),	[HUPW],	CG:	Yeah  turkey meat.
+(041:19),	[GINFO+],	CHW:	Oh  so we’ve got to go to poultry.
+(041:21),	[HUPW],	Y:	What’s that?
+(041:22),	[CQTBN],	CHW:	Huh?
+(041:23),	[HUPW],	Y:	What’s that?
+(041:24),	[CQTBN],	CHW:	Poultry?  So that’s birds.  Poultry is birds.  So we got to go to P now instead of M.  So poultry’s like for turkey  chicken  duck.  Have you ever had duck?  Me neither.  So let’s see.  I don’t know if they’ll have—and we want to look for ground turkey.
+(041:24),	[GINFO+],	CHW:	MISSING TEXT
+(041:55),	[HUPW],	Y:	Salads.  Carved =
+(041:57),	[SANDWICH],	CHW:	Oh  here we go.
+(041:58),	[SANDWICH],	Y:	= yeah  poultry  chicken.
+(042:05),	[CQTBN],	CHW:	You see ground turkey?  So here we got turkey.
+(042:05),	[GINFO+],	CHW:	MISSING TEXT
+(042:11),	[LUP+],	Y:	Yeah.
+(042:12),	[ADV+],	CHW:	So want to look for ground.
+(042:13),	[HUPW],	Y:	Right here.
+(042:14),	[GINFO+],	CHW:	Yep.  So what’s it say?
+(042:14),	[CQTBN],	CHW:	MISSING TEXT
+(042:18),	[HUPW],	Y:	I don’t know.  It says regular  lean  average.  Jennie—what kind—hey  was it a Jennie-O?
+(042:23),	[HUPW],	CG:	What?
+(042:26),	[HUPW],	CG:	Oh  Butterball.
+(042:28),	[SO],	CHW:	Okay.
+(042:29),	[HUPW],	Y:	Why we have to get that one?
+(042:32),	[HUPW],	Y:	All the other times you get Jennie-O.
+(042:34),	[HUPW],	CG:	I [00:42:31.0]  ain’t got Jennie-O for a century.  [00:42:35.0]
+(042:35),	[CON],	Y:	You get it from Sam’s all the time.
+(042:37),	[CON],	CG:	No  I don’t even get that anymore  Miss Xxxx.  You [00:42:37.0] grocery shopping.  You don’t even pay for it  so don’t [00:42:41.0] about it.
+(042:43),	[HUPO],	Y:	I used to pay for it.
+(042:46),	[HUPO],	CG:	Huh?  [00:42:46.0]  [laughter]
+(042:50),	[HUPW],	CG:	No  I’m sorry.  Honeysuckle.
+(042:52),	[SO],	CHW:	Oh  yeah.
+(042:53),	[HUPW],	CG:	Honeysuckle.  Honeysuckle turkey  meat.
+(042:55),	[LUP+],	Y:	Okay.
+(042:56),	[CQTBN],	CHW:	And was it the 93 percent lean or the 80?
+(043:01),	[HUPW],	Y:	She don’t know.  I don’t cook it.  I just pay for it.
+(043:08),	[HUPW],	Y:	Come on  Mama.
+(043:13),	[HUPO],	Y:	That proves it.
+(043:17),	[GINFO+],	CHW:	They’re all fairly close.  =
+(043:20),	[HUPW],	CG:	And they too  it ain’t that lean though  I don’t think.
+(043:22),	[CQTBN],	CHW:	So if you look at the Jennie-O  what’s that?
+(043:24),	[HUPW],	Y:	I think it’s just regular.
+(043:26),	[CQTBN],	CHW:	Alright.  What’s the regular say?
+(043:27),	[HUPW],	Y:	170.
+(043:29),	[CQO],	CHW:	Okay.  Woops.  Where are we at?  Here.
+(043:33),	[HUPW],	Y:	Pringles.
+(043:36),	[GINFO+],	CHW:	Alright.  Pringles.  So five chips.
+(043:43),	[HUPW],	CG:	Why do I have to [00:43:43.0] listen?
+(043:46),	[CQO],	CHW:	What’s that?
+(043:49),	[CHT-],	CG:	Do I have to just sit here and listen ‘cause I =
+(044:02),	[HUPO],	CG:	Didn’t get to go to the spa.  That was [00:44:05.0].
+(044:07),	[HUPW],	Y:	What (do they) have the chips on?
+(044:10),	[GINFO+],	CHW:	Mm-hmm.  Yeah  it should be.  Well  so what do you think about self-monitoring and how that could be helpful?  So if Xxxx starts self-monitoring and keeping track of her food  how can that be helpful for you?
+(044:10),	[OQECHT+],	CHW:	MISSING TEXT
+(044:27),	[CHT-],	CG:	I mean I don’t—you mean for me to do the same thing or to—wanting to help me to know like what I’m feeding her—what I’m giving her. =
+(044:35),	[HUPW],	Y:	Chex Mix
+(044:36),	[SO],	CHW:	Mm-hmm.
+(044:38),	[LUP+],	CG:	Yeah.
+(044:39),	[RCHT+S],	CHW:	Yeah  so it can help you to see =
+(044:42),	[HUPW],	Y:	Chips Ahoy.  Just where chips at?
+(044:44),	[GINFO+],	CHW:	=  what she’s eating and stuff like that.  And I know a lot of times  parents and caregivers who =
+(044:51),	[HUPW],	Y:	148
+(045:01),	[HUPW],	Y:	[00:45:03.0] they’re no Pringles.
+(045:03),	[GINFO+],	CHW:	So and there’s actually =
+(045:10),	[SANDWICH],	Y:	Oh
+(045:11),	[SANDWICH],	CHW:	= there’s also a form for you
+(045:15),	[HUPW],	Y:	Two chips [00:45:21.0].  Uh-oh.  I don’t know.  I don’t know.
+(045:23),	[CQTBN],	CHW:	What’s it say?
+(045:24),	[HUPW],	Y:	They got regular  which is  you know  the whole—the big can  and then they got like the two chips and 20 chips or four-ounce quantity.  A one-ounce package is 20 chips  so the four-ounce—14-ounce is big.
+(045:40),	[CQTBN],	CHW:	[laughs] Well  did you say it tells you what two chips is?
+(045:42),	[HUPW],	Y:	Yeah  15.
+(045:44),	[GINFO+],	CHW:	So if we do two chips—you had five.  So well  so two chips is 15  so what would one chip be?  Seven calories?
+(045:44),	[CQECML+],	CHW:	MISSING TEXT
+(045:53),	[LUP+],	Y:	I guess.
+(045:54),	[CQECML+],	CHW:	So seven times five chips is going to be what?
+(045:59),	[CML+],	Y:	Seven times five?  Thirty-five.
+(046:01),	[GINFO+],	CHW:	Mm-hmm.  Alright.  Cool.  So how was that for you?
+(046:01),	[OQTBN],	CHW:	MISSING TEXT
+(046:11),	[CHT+],	Y:	It was easy.
+(046:12),	[SO],	CHW:	Okay.
+(046:14),	[HUPW],	CG:	And she’s always going to be honest of everything that we eat—that she eat  right?  So that’s  [00:46:19.0] know about the calories  and so when you cut those calories at 500  right?
+(046:26),	[GINFO+],	CHW:	Mm-hmm.  Yeah.  Well  so your mom brings up a good point—is that being honest with when you are writing down your food.  So like when you did the food recall  Sarah asked if you’d have any problem talking about what foods you ate or stuff like that.  So and I guess—just like on weeks when you don’t lose weight  I’m not going to give you a hard time or be mean to you or anything like that.  And if there’s times where maybe you eat  you know  something that you don’t feel that good about  I’m not going to criticize you for the things that you eat  either.
+(047:10),	[HUPW],	CG:	Okay  so now her thing is—okay  so she’s going to be eating  what?  Fifteen calories a day?
+(047:15),	[GINFO+],	CHW:	No  just trying to reduce by 500 every day.
+(047:18),	[HUPW],	CG:	Okay.  So then—so is that—well  then because she’s also—she not doing the 1 800 then.
+(047:25),	[CML-],	Y:	No.
+(047:27),	[HUPW],	CG:	We just—are we doing the 1 800?
+(047:28),	[CML-],	Y:	No.
+(047:29),	[GINFO+],	CHW:	Mm-mm.  No.
+(047:31),	[CML+],	CG:	No.  We’re just trying to reduce 500 calories a day.
+(047:33),	[GINFO+],	CHW:	Right.
+(047:35),	[HUPW],	CG:	How would you know that—then how many calories is that she supposed to have a day then =
+(047:37),	[SANDWICH],	Y:	‘Cause you
+(047:38),	[SANDWICH],	CG:	=  if you reduce it by 500?
+(047:40),	[AFL],	CHW:	That’s a good question.  So how—what’s a way that you can know how many calories you eat?
+(047:40),	[OQECHT+],	CHW:	MISSING TEXT
+(047:44),	[CHT+],	Y:	By putting them down and totaling them up.
+(047:46),	[GINFO+],	CHW:	Right.  So.
+(047:48),	[HUPW],	CG:	What?  No  no.  What I’m saying is to me  it seems like that you should say  “Okay.  Well  you get 1 800 calories a day  but we’re going to subtract 500.”  So actually  it should be 1 300 calories that you’re eating in a day.  That way—you understand what I’m saying?
+(048:08),	[SO],	CHW:	Mm-hmm.
+(048:10),	[HUPW],	CG:	‘Cause I’m not saying you cutting 500.  Where?  She can do 2 500 and just do—so we said 1 300 a day you’re supposed to be doing to cut that 500 from her saying that you—that 18 is the appropriate one for you.
+(048:25),	[AFL],	CHW:	Mm-hmm.  Right.  That’s a very good question.  And so I actually brought—I brought the wrong food log  but there’s another food log  and it has—so it has another column on it where you write down what substitution you made.  So like for example  I ate this turkey sandwich  which is—oh  how many calories total?  Uh…I can’t do math.  [laughs] So and I’ll bring =
+(048:25),	[GINFO+],	CHW:	MISSING TEXT
+(048:25),	[SS],	CHW:	MISSING TEXT
+(049:01),	[LUP+],	CG:	Okay.
+(049:06),	[SO],	CHW:	Alright.  So
+(049:21),	[GINFO+],	CHW:	So on the new—on the food log that you’ll get for the 500 less—so there’ll be this other column.  So like this turkey sandwich is 220 calories if I =
+(049:32),	[HUPW],	CG:	Ooh  I love turkey sandwiches.
+(049:42),	[HUPW],	Y:	Why?
+(049:45),	[HUPW],	CG:	The cheese?
+(049:46),	[ADV-],	CHW:	I’ll let you answer that.  Yeah.  Why else?
+(049:46),	[GINFO+],	CHW:	MISSING TEXT
+(049:46),	[OQTBN],	CHW:	MISSING TEXT
+(049:48),	[HUPW],	Y:	Cheese is fattening.
+(049:49),	[HUPW],	CG:	It can be.
+(049:51),	[GINFO+],	CHW:	Yeah.  So sometimes cheeses have a lot of extra fat in it.  And what other reasons do you think grilled cheese could be fattening or unhealthy?
+(049:51),	[OQECHT-],	CHW:	MISSING TEXT
+(050:01),	[HUPW],	Y:	It’s fried?
+(050:02),	[GINFO+],	CHW:	Mm-hmm.
+(050:04),	[ADV-],	CG:	Got to get a better variety as far as your lunch  Xxxx.  I mean you’d have—what  like a half of a sandwich or something?
+(050:13),	[CHT-],	Y:	Tomorrow we’re having chicken alfredo.  Mmm.
+(050:20),	[ADV-],	CG:	Just make sure you get—they say  you know  at the school  they say how much  like chicken alfredo =
+(050:25),	[SANDWICH],	Y:	Yeah.
+(050:26),	[SANDWICH],	CG:	= so make sure you write that down  how many calories that is that you’re eating when you eat that.
+(050:31),	[CQTBN],	CHW:	Oh  okay.  So they tell you the calorie amounts? =
+(050:33),	[HUPW],	CG:	Yeah  they do.  They have like those menus
+(050:34),	[HUPW],	Y:	They don’t say how many calories.  They say like the—how much it—like if it was a bowl or something like that.
+(050:39),	[SO],	CHW:	Mmm.  Okay.
+(050:42),	[CON],	CG:	Yeah  but on it  it’s going to tell you how many calories it is.
+(050:44),	[CON],	Y:	No  it’s not.  I got some menu right here so you can see.
+(050:46),	[CQTBN],	CHW:	Oh  okay.  Do they have it online  too?
+(050:51),	[HUPW],	CG:	I don’t know if they have it online.
+(050:52),	[GINFO+],	CHW:	I know some of the schools put out =
+(050:53),	[HUPW],	CG:	I’m sure they do  yeah  because I know my grandson’s elementary school—they have theirs on there.
+(050:58),	[SO],	CHW:	Mm-hmm.
+(051:02),	[CHT+],	CG:	We’ve got to get real  Xxxx.  We’ve got to get real.  And I don’t thinking feeding you just like a hamburger was really a lunch.  You know what I’m saying?  It’s just like they’re saying —I’m beginning to believe that if you had had a hamburger and a piece of—a small fruit or a small thing of grapes or  you know  a fruit?  I know you don’t eat bread.  I’m not going to even worry about that bread too much  but =
+(051:32),	[HUPW],	Y:	Where’s that menu at?
+(051:34),	[CHT+],	CG:	Something.
+(051:37),	[GINFO+],	CHW: 	Well  and so on this food log—so then  there’ll be a column to figure out how many calories you saved.  So like if you subtract the 480 from the grilled cheese from the 220  so you would’ve saved 260 by having a turkey sandwich instead of the grilled cheese.
+(051:55),	[HUPW],	Y:	See?  I don’t see how it say the ounces [00:51:57.0].
+(051:58),	[GINFO+],	CHW:	Oh  so it gives you the portion sizes.  Okay.
+(052:01),	[HUPW],	CG:	Which is good.
+(052:02),	[GINFO+],	CHW:	Well  that’s real helpful ‘cause then you know exactly what to look for in the CalorieKing book  too.
+(052:06),	[HUPW],	Y:	Then we going to have pizza.  Why they put one slice next to the pizza?
+(052:16),	[HUPO],	CG:	Oh  University Preparatory Academy.  That’s where she goes.  Let’s see.
+(052:21),	[HUPO],	Y:	Right there  26th.
+(052:27),	[OQTBN],	CHW:	Alright.  Well  what do you think about =
+(052:29),	[SANDWICH],	Y:	No
+(052:30),	[SANDWICH],	CHW:	= logging the chicken alfredo and seeing =
+(052:33),	[EA],	CHW:	= the calories?  Alright.  I’ll let you take over.
+(052:38),	[HUPW],	Y:	Log it for tomorrow?  What I will eat tomorrow?
+(052:40),	[GINFO+],	CHW:	Mm-hmm.
+(052:41),	[CML+],	Y:	Okay.
+(052:46),	[HUPW],	CG:	Four turkey sausage.
+(052:48),	[CQECML+],	CHW:	So and how much?
+(052:50),	[CML+],	Y:	This is for lunch  we’re doing lunch  not breakfast.
+(052:52),	[GINFO+],	CHW:	We’re going to test out chicken alfredo and see =
+(052:54),	[SANDWICH],	CG:	Oh  okay.
+(052:55),	[SANDWICH],	CHW:	= what the calories are.
+(052:57),	[CML+],	Y:	So this would be 11:25.
+(054:31),	[HUPW],	Y:	Do you put the six ounce right there  right?
+(054:33),	[GINFO+],	CHW:	Yeah  there you go.  Yep.  For the portion size.
+(054:41),	[CML+],	Y:	Then  I’ll have pink lemonade again ‘cause I like pink lemonade.
+(054:45),	[HUPO],	CG:	Spend them dollars on that.  She can just go on and get you a six-pack for your own (pop) for the house.  It’s cheaper than what you paying there. =
+(054:53),	[ADV+],	CHW:	Or you could probably get some pink lemonade Crystal Light.
+(054:56),	[HUPW],	CG:	Yeah  you can.
+(054:58),	[GINFO-],	CHW:	And then hide it from your mom so she can’t =
+(055:00),	[HUPW],	CG:	Well  mine is raspberry.  I love raspberry. =
+(055:03),	[SANDWICH],	CHW:	[laughs] Oh  okay.  [laughs]
+(055:04),	[SANDWICH],	CG:	= I [00:55:05.0] and I keep my water cold. =
+(055:07),	[CON],	Y:	Okay  okay.  (Shush  shush  now.)
+(055:09),	[HUPW],	CG:	I get some at Target  some water.
+(055:12),	[CML+],	Y:	Then I’ll have the grapes—oh  and the garlic bread.
+(055:15),	[HUPW],	CG:	Are you going to eat any of that  though?
+(055:17),	[HUPW],	Y:	Yeah.  I always eat that.  I’ve just got to bring salt.
+(055:21),	[GINFO+],	CHW:	Alright.  Grapes.
+(055:25),	[HUPW],	Y:	Now where am I going to put the garlic bread?  ‘Cause it =
+(055:26),	[GINFO+],	CHW:	Well  you can just do it on the bottom.  We’ll just squeeze it.
+(055:42),	[HUPO],	Y:	Oh  I spelled garlic wrong. [laughs]
+(056:01),	[CML+],	Y:	Ooh  two half-slices.
+(056:08),	[CML+],	Y:	The grapes is one bunch.
+(056:10),	[RCML+S],	CHW:	One bunch.  Then we =
+(056:13),	[CML+],	Y:	Pink lemonade is 12 ounce.
+(056:16),	[GINFO+],	CHW:	Yeah.  So and you already know the calories for that pink lemonade.
+(056:21),	[HUPW],	Y:	Is 150?
+(056:24),	[GINFO+],	CHW:	Yeah.
+(056:27),	[CML+],	Y:	Then I’ve got to look at the garlic alfredo.  [00:56:28.0] (real quick).
+(056:36),	[HUPW],	Y:	What?
+(056:38),	[HUPW],	CG:	And so tomorrow you’ve got to make sure you write down how many—you might as well get that together now.  Well  I don’t know.  Somehow—is she supposed to do this like—it’ll go on through the day so that way you keep better track then versus her waiting till she get home and then just try to figure [00:56:54.0].  So she should actually like what?  Take it to school with her in her folder and =
+(057:01),	[CHT-],	Y:	Then it will get lost somehow [00:57:01.0]
+(057:03),	[SO],	CHW:	Mm-hmm.
+(057:04),	[HUPW],	CG:	Huh?
+(057:05),	[EA],	CHW:	Yeah  so it all depends what you think will be the best plan for you.  So some people find it helpful to like if they have time  they log their breakfast in the morning.
+(057:05),	[GINFO+],	CHW:	MISSING TEXT
+(057:23),	[ADV+],	CG:	And try to stay  she try to stick to what you say you’re having.
+(057:26),	[GINFO+],	CHW:	Mm-hmm.  Right.  And then some people find it helpful  like at the end of the day  to like finish it up as a family.
+(057:34),	[CHT+],	CG:	Oh  okay.  So that’s where I come in with this.
+(057:36),	[GINFO+],	CHW:	Mm-hmm.  Right.  So to check and make sure that =
+(057:39),	[HUPW],	Y:	Chicken alfredo.
+(057:49),	[CHT-],	Y:	She can’t help me.
+(057:52),	[HUPW],	CG:	Okay.  You don’t want me to help you?
+(057:53),	[CHT-],	Y:	I said you can’t help me with that.
+(057:55),	[SANDWICH],	CHW:	Oh  okay.
+(057:57),	[SANDWICH],	Y:	You don’t know how to do that—divide.  I’m your math helper.
+(058:05),	[ADV+],	CHW:	[laughs] So it might be more helpful =
+(058:06),	[HUPW],	Y:	See?
+(058:13),	[HUPW],	Y:	Uh-oh.  I don’t know what kind this is.
+(058:16),	[CQTBN],	CHW:	What’s that?
+(058:17),	[HUPW],	Y:	It say chicken alfredo and then it come with all these things.
+(058:21),	[GINFO+],	CHW:	Okay.  So the best thing is to try and find something close to it.  So a lot of times  it’s hard to know exactly what it was  but if we can find something that’s close enough  we can figure out.
+(058:36),	[HUPW],	Y:	Is it [00:58:36.0] like with chicken?  Is it in the pasta or something?
+(058:40),	[ADV+],	CG:	It is pasta  so go to pasta  baby.
+(058:42),	[CML+],	Y:	I found chicken alfredo.
+(058:43),	[LUP+],	CG:	Oh  okay.
+(058:45),	[GINFO+],	CHW:	Oh  well  it’s the same.
+(058:46),	[HUPW],	Y:	But it comes up with all these things.
+(058:49),	[CQTBN],	CHW:	Where’s it at?
+(058:50),	[HUPW],	Y:	When I saw chicken alfredo  it says chicken alfredo on the back.
+(058:52),	[CQTBN],	CHW:	Well  where’s it at?
+(058:54),	[HUPW],	Y:	That’s the page.
+(058:55),	[ROS],	CHW:	Oh  chicken alfredo.  Oh  okay.  Yeah  so it doesn’t say how much  huh?  Hmm.
+(059:25),	[GINFO+],	CHW: 	Well  that makes it hard.  So some of these other ones say how much it is.  Six ounces  nine ounces.  Well  that’s annoying.  Well  so I think this chicken alfredo—so it’s for an entrée.  So I think that’d probably be around six ounces.  So it says 775.
+(060:26),	[HUPW],	Y:	That many calories?
+(060:28),	[OQECHT-],	CHW:	Yeah.  So why do you think chicken alfredo might be high in calories?
+(060:34),	[HUPW],	Y:	A lot of stuff in it?
+(060:36),	[GINFO+],	CHW:	Mm-hmm.  Yeah.  So a lot of times the biggest things that can add calories are the  like the sauces.  So like ranch dressing can sometimes be high in calories  and the alfredo sauce is really creamy  so it has a lot of extra calories and fat in that.
+(060:56),	[HUPW],	Y:	Grapes.  [pause]  Well  it’s small  but it’s always—it’s medium.  Well  it says one bunch  but it says one small bunch  one medium bunch and one large bunch.
+(061:51),	[CQTBN],	CHW:	Alright.  So what do you think they’ll give you at school?
+(061:53),	[HUPW],	Y:	It’s usually medium.
+(061:54),	[CQTBN],	CHW:	Medium?  Okay.
+(062:03),	[HUPW],	Y:	Oh  my gosh.  She talking about [01:02:04.0]  Okay.  Garlic bread.
+(062:08),	[ROS],	CHW:	Garlic bread.
+(062:11),	[HUPW],	Y:	Would that be under garlic bread since it’s bread?
+(062:15),	[AFL],	CHW:	That is a good question.  So I think we looked up garlic bread when we were with Sarah.
+(062:15),	[GINFO+],	CHW:	MISSING TEXT
+(062:20),	[HUPW],	Y:	Garlic bread.
+(062:22),	[CQTBN],	CHW:	Found it?  Oh  cool.
+(062:44),	[HUPW],	Y:	Small is [01:02:43.0].  Okay.  It says small slice  medium slice  and it’s two slices  so…would that be  =
+(062:58),	[SANDWICH],	CHW:	So you
+(062:59),	[SANDWICH],	Y:	= a medium slice because it says two—but it say two tablespoons spread.
+(063:06),	[GINFO+],	CHW:	Right.  So that depends like how much of the butter and garlic is on there.  =
+(063:11),	[HUPW],	Y:	Is on it?
+(063:13),	[HUPW],	Y:	So I think it’s medium.
+(063:15),	[GINFO+],	CHW:	Yeah.  Most places have like that medium—and they’re talking about how thick the slice is  too.
+(063:22),	[HUPW],	Y:	It’s like this thick.
+(063:24),	[GINFO+],	CHW:	Okay.  It’s probably about medium.  So you had about one slice since it was two halves?
+(063:24),	[CQECML+],	CHW:	MISSING TEXT
+(063:30),	[CML+],	Y:	Yeah.  It’s like—it’s a slice  and then it’s half—cut in half.
+(063:35),	[OQTBN],	CHW:	So what do you think about lunch?  So that =
+(063:40),	[CHT+],	Y:	That’s a lot because just the chicken alfredo is 775 calories.
+(063:44),	[HUPW],	CG:	Oo-wee!
+(063:45),	[CHT+],	Y:	That’s a lot.
+(063:47),	[SO],	CHW:	Yeah.
+(063:48),	[HUPW],	CG:	That’s almost you whole [01:03:48.0] =
+(063:52),	[CHT+],	CG:	See?  Now you know.  Now you know.
+(063:54),	[GINFO+],	CHW:	So and I’m going to double check on the chicken alfredo ‘cause it didn’t have the portion size  so I’m going to try—I’m going to see what I can find out  but that is a lot of—a lot of times  that alfredo sauce  that creamy =
+(064:06),	[LUP+],	CG:	Yes  yes.
+(064:07),	[HUPW],	Y:	But it’s not a sauce.  It’s like pasta.
+(064:10),	[HUPW],	CG:	No  no.  It’s a cream sauce.
+(064:11),	[GINFO+],	CHW:	But the white sauce is the alfredo.
+(064:13),	[HUPW],	Y:	Oh  yeah.  On the noodles?
+(064:14),	[GINFO+],	CHW:	Yeah.
+(064:16),	[LUP+],	CG:	Yes.
+(064:17),	[OQECHT+],	CHW:	Yeah. So for those meals  what kind of substitutions do you think you could make or?
+(064:25),	[CHT+],	Y:	I could get something from home.
+(064:26),	[SUP],	CG:	Hell  yeah.
+(064:27),	[RCHT+S],	CHW:	Yeah.  So you could pack from home.
+(064:29),	[SUP],	CG:	Very wise decision.  Yes.
+(064:31),	[HUPW],	Y:	Oh  so what you going to make me save that pork chop?
+(064:33),	[CML-],	CG:	No  I’m saving—I’m eating my own pork chop.  [laughter] That’s my own pork chop.
+(064:40),	[CHT+],	CG:	We’ll have to make you some chicken wings.
+(064:42),	[CHT+],	Y:	See?  Yeah.
+(064:43),	[GINFO+],	CHW:	So and then  I know something else that you were talking about was having—well  your mom was talking about like more variety.
+(064:52),	[LUP+],	CG:	Yes.
+(064:54),	[SO],	CHW:	So
+(064:55),	[CHT+],	CG:	Instead of just meat ‘cause that’s basically all she do is take meat.  She’s not taking any type of vegetable  anything to go with it that’s good for her.
+(065:04),	[ADV-],	CHW:	Right.  So that’s another important thing is to think about that plate and when you’re getting your meal  how does that fit in with the plate?  So like lunch tomorrow—how does that fit on the plate?  So we got chicken alfredo.  Where does that fit?
+(065:04),	[CQTBN],	CHW:	MISSING TEXT
+(065:20),	[HUPW],	Y:	The meat part?
+(065:22),	[HUPW],	CG:	Pasta?
+(065:23),	[ROS],	CHW:	Meat and…
+(065:23),	[CQTBN],	CHW:	MISSING TEXT
+(065:27),	[HUPW],	Y:	Grains.
+(065:28),	[GINFO+],	CHW:	Yeah  with the pasta.
+(065:29),	[LUP+],	CG:	Oh  okay.
+(065:30),	[GINFO+],	CHW:	So that’s kind—so that’s like half your plate.  And then you got grapes.
+(065:34),	[HUPW],	Y:	Fruit.
+(065:36),	[SUP],	CG:	Okay.  Yeah  that’s good.
+(065:37),	[GINFO+],	CHW:	So you got your fruit and then you got your garlic bread.
+(065:41),	[HUPW],	Y:	It comes with string beans  too.  Did it say mixed vegetables?
+(065:45),	[GINFO+],	CHW:	Mixed vegetables.
+(065:46),	[ADV-],	CG:	Well  try to eat a few of them.
+(065:47),	[CHT-],	Y:	I don’t like it.
+(065:48),	[ADV-],	CG:	Just try.
+(065:50),	[SANDWICH],	CHW:	[laughs]
+(065:51),	[SANDWICH],	CG:	You know what I’m saying?  You’ve got—you’re going to have to—I’m going to tell you  Xxxx  you’re going to open up a variety of food =
+(065:57),	[CHT-],	Y:	But that’s too many calories with that pasta.
+(065:58),	[CHT+],	CG:	Well  no  not really ‘cause they only give you six ounces  and like he said  you’re not really—‘cause trust me.  They balanced it out on what it should be.
+(066:07),	[GINFO+],	CHW:	Right.  They do that.
+(066:08),	[ADV-],	CG:	Yeah  they did that  so you really should try it.  You really  really should try to have it all and have your water.  Rather have—rather that pink lemonade really and some water  but  if you want the pink lemonade.  But really  the water  but we really got to work with it.  We just got to.  We got to and really  you know.  Like us  now we do good at dinner.  Like at dinner  she would have a meat and a vegetable  even if we don’t have fruit or something.  But she’s not into—too bad she don’t like Jell-O because you do like whipped cream.  And that whipped cream is no calories.  That whipped cream  you know  it’s really got nothing ‘cause it ain’t [01:06:51.0] it’s  you know  Cool Whip.  The Cool Whip ain’t got [01:06:55.0] =
+(066:56),	[GINFO+],	CHW:	Yeah  a lot of those are low calorie.
+(066:57),	[ADV+],	CG:	Yeah  low calorie.  It’s very low—and I put some of that—and I mix it—I got Jell-O in there  and you put the Jell-O and spray some of that on there =
+(067:05),	[CHT+],	Y:	I like strawberries with that Whipped Cream on it.
+(067:07),	[SO],	CHW:	Okay.
+(067:08),	[HUPW],	CG:	Well  I’ve got some straw-  you going to eat the strawberries  please?  I can’t—like I told him  I can’t keep buying that many strawberries  and I throw them away.  So now  I’m trying to find a little bit =
+(067:16),	[CML+],	Y:	I will
+(067:22),	[OQECML+],	CHW:	So and what do you think will be the best plan for you to get your logs filled out?
+(067:28),	[CML+],	Y:	I’ll just take it to school.
+(067:29),	[CQECML+],	CHW:	So you’ll take them to school?
+(067:31),	[HUPW],	Y:	Do I do breakfast  too  like everything I eat the whole day?
+(067:33),	[GINFO+],	CHW:	Yep.
+(067:35),	[LUP+],	Y:	Okay.
+(067:36),	[GINFO+],	CHW:	Yep  so each log is for one whole day.  So this is for Thursday and Friday  and then I’ll see you guys on Saturday.
+(067:44),	[LUP+],	CG:	Oh  okay.
+(067:47),	[SS],	CHW:	And I’ll bring—on Saturday  I’ll bring the ones where you can write in your substitutions  too.  So you can see at the end of the day either you made enough substitutions so you saved 500 calories or you need to go and burn some off with some physical activity or something like that.
+(067:47),	[GINFO+],	CHW:	MISSING TEXT
+(068:03),	[LUP+],	Y:	Okay.
