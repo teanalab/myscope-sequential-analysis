@@ -1,0 +1,140 @@
+(023:06),	[HUPO],	PT: Hi.
+(023:06),	[OQO],	HCP3: How you doing?
+(023:07),	[HUPO],	PT: I'm great. How are you?
+(023:09),	[GINFO-],	HCP3: So  you know  we're trying to figure out – um  your viral load has gone down  but it's not – it won't go down all the way.
+(024:34),	[CML+],	PT: Truvada.
+(024:34),	[ADV-],	HCP3: Instead of Truvada  you'll take Tenofovir  which is – was part of the Truvada.
+(024:40),	[HUPHIV],	PT: Truvada.
+(024:40),	[ADV-],	HCP3: And then we're replacing that other half of the Truvada with  um  Abacavir. Um  actually we gave it in a combined tablet called Epzicom so that you only have to take one pill.
+(024:52),	[LUP+],	PT: Okay.
+(024:53),	[CQO],	HCP3: Okay?
+(024:53),	[LUP+],	PT: Mm-hmm.
+(024:54),	[ADV-],	HCP3: So  it just – we tried to keep it as simple as possible. If we gave you just the Abacavir  you'd have to take it twice a day  you know? It would be a mess. So this is easier  but it's four pills instead of three until we get back the test  and then maybe we can get it down to two.
+(025:09),	[CML+],	PT: So  as of today  start taking the –
+(025:14),	[GINFO+],	HCP3: Yeah  you have to wait for Mark to deliver.
+(025:16),	[HUPHIV],	PT: Okay  but in the meantime still take the Truvada?
+(025:18),	[GINFO+],	HCP3: Right  take what you have  because that still has the Tenofovir that you need in it  okay?
+(025:26),	[LUP+],	PT: Yeah  okay.
+(025:26),	[RCML+S],	HCP3: So... Now  um  I heard  like  no unprotected sex.
+(025:31),	[CML+],	PT: No  no.
+(025:31),	[RCHT+C],	HCP3: So you're not worried about having picked anything up.
+(025:33),	[CHT+],	PT: Nope.
+(025:33),	[SO],	HCP3: And um  you haven't been to the ER or the hospital.
+(025:38),	[HUPO],	PT: No.
+(025:38),	[SS],	HCP3: So let me take a quick look at you. Anything that you're concerned about? No?
+(025:44),	[CHT+],	PT: I'm eager to learn the results – the next results.
+(025:48),	[ADV-],	HCP3: Yeah  we'd like to get the pills down to less. That would be nice.
+(025:52),	[HUPHIV],	PT: So  that would be it.
+(025:52),	[GINFO+],	HCP3: A lot of people are resistant to that one medication – the 3TC. It's easy to get resistant to. And like old school  we keep the medication so  uh – because keeping it on keeps you from getting resistant to other things. It's the old way. Some people don't believe that anymore  but it doesn't hurt to take it.
+(026:10),	[LUP+],	PT: Okay.
+(026:10),	[CQO],	HCP3: Um  you still working at the call center?
+(026:15),	[HUPO],	PT: Mm-hmm.
+(026:15),	[CQO],	HCP3: Okay. Um  are you back in school  or no?
+(026:19),	[HUPO],	PT: I'm still in school  yeah.
+(026:20),	[CQO],	HCP3: You're still in school?
+(026:20),	[OQO],	HCP3:	MISSING TEXT
+(026:20),	[HUPO],	PT: Mm-hmm.
+(026:20),	[CQO],	HCP3: What are you taking now?
+(026:20),	[OQO],	HCP3:	MISSING TEXT
+(026:22),	[HUPO],	PT: Um  now I'm taking Biology 250.
+(026:25),	[SO],	HCP3: All right  all right. Good for you.
+(026:27),	[HUPO],	PT: Um  and two English classes and a math.
+(026:29),	[OQO],	HCP3: Whoa  what English classes?
+(026:30),	[HUPO],	PT: English 119 and English 115.
+(026:35),	[CQO],	HCP3: Do you like it?
+(026:36),	[HUPO],	PT: The 115  yes. The 119 is –
+(026:39),	[OQO],	HCP3: What's the matter with the other  with the 119?
+(026:40),	[HUPO],	PT: There's a lot of writing?
+(026:41),	[CQO],	HCP3: Yeah?
+(026:41),	[HUPO],	PT: Lot of writing.
+(026:43),	[CQO],	HCP3: And do you usually like to write?
+(026:44),	[HUPO],	PT: No.
+(026:44),	[CQO],	HCP3: No?
+(026:45),	[HUPO],	PT: Well  I'm doing it  so I'm learning how to get in the environment where I can write  so...
+(026:52),	[CQO],	HCP3: Yeah? So that's a lot of classes. Do you work full time?
+(026:55),	[HUPO],	PT: Yeah  but it's – it's a lot of downtime.
+(027:00),	[CQO],	HCP3: Okay  so you can study and stuff during downtime?
+(027:00),	[HUPO],	PT: And then when I'm sitting at the computer – so  yeah.
+(027:01),	[SO],	HCP3: That's great. That's great.
+(027:03),	[HUPO],	PT: So yeah. Then a lot of my – um  both my English classes are online  so when I'm down I can be on there.
+(027:15),	[HUPO],	PT: Uh  a course is running from like January to May.
+(027:18),	[SD],	HCP3: Okay  so you have to finish it in that timeframe.
+(027:20),	[HUPO],	PT: Yes.
+(027:20),	[SD],	HCP3: It's not  like  open-ended.
+(027:21),	[HUPO],	PT: Yeah.
+(027:21),	[SD],	HCP3: Okay. Well  cool  cool. All right. Everything's online. [Laughter]. I'm looking for – I want to look in your ears. I'm just looking for the ear... There's one. Found it.
+(027:40),	[HUPO],	HCP1: Here is a bigger one.
+(027:42),	[CQO],	HCP3: That's okay. I think I got one that'll fit on here. Let's see. Looks fine. And anything else that's bothering you?
+(027:53),	[HUPO],	PT: No.
+(027:53),	[CQECHT-],	HCP3: So the medications – um  any side effects or problems from them? No?
+(027:58),	[CHT+],	PT: No  not that I can – no.
+(028:00),	[SD],	HCP3: Excellent. Because you'd noticed if you –
+(028:02),	[HUPHIV],	PT: Yeah  yeah.
+(028:03),	[CQO],	HCP3: Let's see the back of your throat. So the sort of things you wouldn't notice  we monitor for. You have like a coating on your tongue –
+(028:13),	[HUPO],	PT: No  my mouth was just dry. I haven't had nothing to drink  yeah.
+(028:17),	[CQO],	HCP3: Yeah? So this probably is just  you know  the season. I'm going to have you sit down back here. I love your shirt.
+(028:24),	[LUP+],	PT: [Laughs] Thank you.
+(028:25),	[CQO],	HCP3: Cute  cute. Deep breath. If you'd lie back  I'd just like to check your liver and your spleen as long as you're here. So do you work the night shift  or what?
+(028:53),	[HUPO],	PT: Uh  I actually start on Monday. I will be days pretty much  but I'm – it's still days. I work – now it's 12:00 to 9:00  and then  um  starting Monday I'll be 8:00 to 4:00. So then – then I –
+(029:06),	[CQO],	HCP3: Do you prefer that?
+(029:08),	[HUPO],	PT: 8:00 to 4:00? Uh  yeah. So then I can still get off and do other things  and then there has to be time for the summer if I'm still there.
+(029:16),	[CQO],	HCP3: Yeah?
+(029:16),	[HUPO],	PT: Then I have a – like I was telling them  I was going for  um  [Maritime Petroleum]. They have  uh  a job opening. I go for my testing.
+(029:24),	[OQO],	HCP3: What would you do there?
+(029:25),	[HUPO],	PT: It's something with refinery. I'm not sure exactly what it is  but they said they train – they're training for it – and I filled it out and am doing my tests on the second.
+(029:37),	[SO],	HCP3: Cool  cool. So  we'll keep our fingers crossed for you.
+(029:39),	[HUPO],	PT: Yes. $25 an hour. I need it. [Laughs].
+(029:42),	[SO],	HCP3: Yeah  so as long as you like it; that's what matters – and they pay you well.
+(029:46),	[HUPO],	PT: I hope so.
+(029:48),	[CQTBN],	HCP3: Um  so you don't smoke cigarettes. You do still smoke pot  but do you smoke about the same as you used to  more  or less?
+(029:57),	[CML+],	PT: A little less.
+(029:58),	[CQECHT+],	HCP3: A little less?
+(029:58),	[AFL],	HCP3:	MISSING TEXT
+(029:58),	[CML+],	PT: A little less.
+(029:58),	[CQECHT+],	HCP3: Okay. Good. Good for you. As you get older  cutting back a bit is a good idea. Do you ever feel that it interferes with things that you want to do?
+(029:58),	[AFL],	HCP3:	MISSING TEXT
+(030:07),	[CHT+],	PT: No.
+(030:08),	[CQECHT+],	HCP3: No?
+(030:08),	[CQTBN],	HCP3:	MISSING TEXT
+(030:08),	[CHT+],	PT: Not really  no.
+(030:08),	[CQECHT+],	HCP3: Okay. And um  you drink  um  alcohol a few times a month?
+(030:08),	[CQTBN],	HCP3:	MISSING TEXT
+(030:16),	[CML+],	PT: Just – yeah  most of it  like I was telling them  is wine  but other than that  no.
+(030:21),	[CQTBN],	HCP3: And is that by yourself  or with your friends?
+(030:23),	[HUPHIV],	PT: With my friends.
+(030:24),	[CQTBN],	HCP3: With your friends? What about when you're smoking the pot. Is that by yourself or with your friends?
+(030:27),	[GINFO+],	HCP3: Friends? Okay. We always ask because  you know  we worry a bit less if it's social  as long as it's not  you know  like  constant.
+(030:37),	[AFL],	HCP3: But just to  you know  remember that marijuana impairs you like alcohol does  so just to... People sometimes forget just to be careful. Um  I don't think there's anything else. You've been doing well. We're happy with your numbers  except the viral load –
+(030:52),	[GINFO-],	PT: Viral load.
+(030:57),	[LUP+],	PT: Okay.
+(030:57),	[SO],	HCP3: You know  because we're fussy.
+(030:59),	[CHT+],	PT: I like it. [Laughter].
+(031:00),	[GINFO-],	HCP3: Yeah  the lower we keep it  the better your T-cells stay through life. So I'd like you back in a month  okay?
+(031:05),	[LUP+],	PT: Okay.
+(031:06),	[GINFO-],	HCP3: So that we can recheck the new meds. Um  we're going to call MedCard and make sure that they deliver ASAP and deliver the right stuff. Any problem  give me a call  okay?
+(031:14),	[LUP+],	PT: Okay.
+(031:15),	[SO],	HCP3: You know how to text me or reach me or – you know.
+(031:22),	[HUPO],	PT: And what is that?
+(031:24),	[SO],	HCP3: It's  uh  313-461-5245. Now remember  text me  don't call.
+(031:31),	[HUPO],	PT: Texting.
+(031:31),	[SO],	HCP3: Because if I get a number that I don't recognize  I won't always answer because I don't know who that is.
+(031:36),	[LUP+],	PT: Yeah.
+(031:36),	[SO],	HCP3: And then when you text  tell me who you are so I don't have to say  huh?
+(031:40),	[LUP+],	PT: Yeah. [Laughs]
+(031:42),	[CQO],	HCP3: Who's this? So just – you know?
+(031:43),	[LUP+],	PT: Yeah.
+(031:43),	[CQO],	HCP3: And then I'll get right back to you  okay?
+(031:45),	[LUP+],	PT: Great  thank you.
+(031:46),	[SO],	HCP3: Okay  take it easy.
+(031:46),	[HUPO],	PT: I will.
+(031:47),	[SO],	HCP3: And uh  here's your stuff for the lab.
+(031:49),	[LUP+],	PT: Okay.
+(031:50),	[SO],	HCP3: Okay  you're good.
+(031:51),	[LUP+],	PT: Thank you.
+(031:52),	[SS],	HCP3: So come on  we'll walk you up to the front and get you an appointment.
+(031:56),	[HUPO],	PT: She's really nice. I like her.
+(031:57),	[SO],	HCP3: I know. We like her to keep coming back.
+(032:00),	[HUPO],	PT: When you retire  I might be able to find her. [Laughter]
+(032:03),	[SO],	HCP3: Yeah  that's good  you know? We're going to have to go find her to  like  keep training here and stay.
+(032:10),	[LUP+],	HCP1: [Laughs] Thank you.
+(032:13),	[SO],	HCP3: And I'm supposed to sign in. Okay.

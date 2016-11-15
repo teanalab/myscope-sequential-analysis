@@ -1,0 +1,711 @@
+00:00:12.8 HCP1	All right. So how are you doing?	
+00:00:14.3 PT	I’m doing pretty good. 
+00:00:15.2 HCP1	You’re doing well. Have you had any sicknesses recently at all?	
+00:00:18.3 PT	No.
+00:00:19.8 HCP1	No. Haven’t been in the hospital.	
+00:00:21.7 PT	No. 
+00:00:22.2 HCP1	No [00:00:22.2] or anything. 
+00:00:23.6 PT	No. 
+00:00:23.8 HCP1	I know last time you had some issues dealing with diarrhea.	
+00:00:29.3 PT	Yes.	
+00:00:29.4 HCP1	But you’re doing okay now.	
+00:00:30.4 PT	Yes.	
+00:00:30.9 HCP1	It resolved on its own.	
+00:00:31.8 PT	Yes.	
+00:00:31.9 HCP1	Okay, great. Good. How is the medication going?	
+00:00:35.8 PT	It’s good. I wanted to know if there’s maybe another action that I could take, because, I don’t know. I know that I’ve been having a few side effects from the medication. I don’t know if it’s actually coming from the medication, but I don’t like how it makes me feel.
+
+00:00:52.6 HCP1	Okay. And you’re on – I’m sorry, I can’t find it in here. What are you taking?	
+00:00:56.3 PT	Complera. 
+00:00:56.8 HCP1	Oh, yes, there is its. Okay. Complera. Okay. And so you don’t like how it makes you feel. How? What is …?	
+00:01:01.5 PT	It makes me feel lightheaded.	
+00:01:03.1 HCP1	Lightheaded. 
+00:01:03.8 PT	I need to lay my head down.	
+00:01:05.1 HCP1	Okay. That’s been since you started the medication, or is it a newer thing?
+
+00:01:08.7 PT	It’s been going on since last Saturday.	
+00:01:11.2 HCP1	Okay. And when did you start Complera, exactly? Do you remember? 
+
+00:01:15.1 PT	I want to say maybe a year ago. 
+00:01:17.0 HCP1	A year ago. Okay. So now after a year, on and off, you have lightheadedness.	
+00:01:21.2 PT	Yes.
+
+00:01:21.5 HCP1	Do you know if it’s a certain part in the day that you have lightheadedness?	
+00:01:24.5 PT	Normally in the morning or in the afternoon.
+
+00:01:26.5 HCP1	In the morning. When do you take the medication?	
+00:01:28.3 PT	Sometimes at night, or sometimes in the morning if I forget.	
+00:01:31.4 HCP1	Okay. So [00:01:32.5] it’s always in the morning, even though …	
+00:01:34.7 PT	Right.	
+00:01:34.8 HCP1	… it doesn’t matter what time you take it.	
+00:01:36.5 PT	Right.	
+00:01:36.7 HCP1	Do you get any other symptoms? Do you feel dizzy?	
+00:01:39.2 PT	When I feel lightheaded, I do feel dizzy.	
+00:01:41.7	HCP1	Okay. Do you ever feel sick, like you’re going to throw up?
+
+00:01:44.1 PT	Um, no, not really. Normally, once I feel dizzy, I want to just put my head down, because it feels like my head is just spinning.	
+00:01:51.4 HCP1	Okay. And how many times in a week does that happen?	
+00:01:54.7 PT	Um, most of the time I take the medications.	
+00:01:57.5 HCP1	So most of the time. Like, almost every day, or every other day? Okay. Okay. All right. And for the meds, how many times have you missed them in the past month? The Complera – how many times have you missed?	
+
+00:02:07.1 PT	Maybe a week.
+
+00:02:08.5 HCP1	Maybe a week total. Okay. All right. Because of the symptoms.
+
+00:02:11.8 PT	Yes.	
+00:02:11.8 HCP1	Is that why? Okay. Okay. Anything else you can think of that’s bothering you that might be associated with that? Any other…?	
+00:02:18.6 PT	Um, I think this is good.	
+00:02:20.3 HCP1	Okay. All right. Okay. And then, do you ever, um, get any other – like, before you pass out, does anything happen, or after you pass out, does anything – or feel you’re going to pass out? Because you don’t actually pass out.	
+00:02:31.8 PT	No. [00:02:32.5]
+
+00:02:31.8 HCP1	Okay. Is it something – you know, does it start off as, like, a sickness in your tummy? What kind of …?	
+00:02:36.9 PT	Um, it’s – no, not really.	
+00:02:41.9 HCP1	So you just kind of feel dizzy.	
+00:02:42.4 PT	I just know when it’s – yes.	
+00:02:43.6 HCP1	Okay.	
+00:02:44.0 PT	I just know when I’m about to start feeling dizzy.	
+00:02:45.9 HCP1	Okay. And you kind of just feel like you have to sit down.
+
+00:02:47.9 PT	Yes.
+
+00:02:48.4 HCP1	Okay. All right. But never [00:02:49.7] lost consciousness.
+
+00:02:50.8 PT	Right.
+
+
+00:02:51.3 HCP1	All right. Okay. And how is life in general going? Okay?	
+00:02:55.5 PT	Um, it’s, it’s doing okay. I know I had a few thefts recently.
+
+00:03:01.2 HCP1	Oh. I’m sorry.
+
+00:03:02.2 PT	Um, it’s okay. I mean, I’m depressed. My job had me on leave …
+
+00:03:07.2 HCP1	Okay.	
+00:03:07.4 PT	… for about a month. I think I’m returning back tomorrow. I have to find out …
+
+00:03:11.7 HCP1	 Okay.
+
+00:03:11.6 PT	… what’s going on later on today. Um, but other than that, it’s been fine.	
+00:03:15.3 HCP1	Okay. So just like kind of some personal stuff getting through it but starting back up at work.	
+00:03:18.7 PT	Yes.
+
+00:03:18.7 HCP1	Okay. Now, where do you work again? I’m sorry.
+
+00:03:20.7 PT	Um, Walgreen’s Specialty Pharmacy.
+
+00:03:22.0 HCP1 	Walgreen’s. Do you like it there? Everything okay?	
+00:03:23.9 PT	Yes.	
+00:03:24.3 HCP1	Good. You’re full time, part time …?	
+00:03:26.2 PT	Um, full time.	
+00:03:27.1 HCP1	Okay, great. Awesome. And where are you – where are you living? Where … [00:03:31.0] 
+00:03:31.0	PT	In Taylor.
+
+00:03:31.4 HCP1	In Taylor. Okay. And is it just you, or …?	
+00:03:33.5 PT	It’s me and my ma.	
+00:03:34.3 HCP1	And your mom. Okay. Does she know about your status?	
+00:03:36.0 PT	Yes.
+
+00:03:36.4 HCP1	Good. Okay. And is there anything, like, special people in your life right now…	
+00:03:40.3 PT	Um …
+
+00:03:40.3	HCP1	… you’re seeing?
+
+00:03:42.6 PT	Me and an old friend, we just connected.	
+00:03:45.1 HCP1	You reconnected.
+
+00:03:46.1 PT	Yes.	
+00:03:46.3 HCP1	Okay. Is it just like casual, or …?	
+00:03:48.5 PT	Um, it’s casual [00:03:50.0].	
+00:03:50.0 HCP1	Okay. All right.	
+00:03:51.5 PT	Um, sexual and stuff.	
+00:03:52.8 HCP1	Sexual. Okay. That was my next question. You answered it for me. Okay. So, sexually active. Is it oral, anal?	
+00:03:58.1 PT	Um, both.
+
+00:03:59.3 HCP1	Both. Are you receiving, giving, both?	
+00:04:01.5 PT	Both.
+
+00:04:02.1 HCP1	Both. Okay. And, um, uh, do you have any concerns about that currently?	
+00:04:06.3 PT	Um, well, we always use protection.	
+00:04:08.3 HCP1	You always …	
+00:04:08.7 PT	[00:04:08.5]
+00:04:08.7 HCP1	… use protection. Okay. So he knows your status.
+00:04:11.0 PT	Yes.	
+00:04:11.3 HCP1	And you guys know everything [00:04:12.9].	
+00:04:13.6 PT	Yes.	
+00:04:13.6 HCP1	Great. Awesome. 
+00:04:14.5 PT	Thank you.
+00:04:15.1 HCP1	Okay. Last couple questions. How – um, so I know you do smoke marijuana, right?	
+00:04:20.3 PT	Um …	
+00:04:21.0 HCP1	[00:04:21.0]
+00:04:21.7 PT	… laid off of it.
+
+00:04:22.8 HCP1	Good.	
+00:04:22.8	PT	I have – yes, I’m on and off.	
+
+00:04:24.6 HCP1	On and off. Okay. Let me see – what [00:04:27.1] always read about – okay. So, one or two times per week. Is it less than that now?
+
+00:04:32.9 PT	It’s maybe like once a week.
+
+00:04:34.1 HCP1	Once a week. Okay.	
+00:04:34.5 PT	If – maybe like, well, I’d say maybe like twice a month.	
+00:04:37.9 HCP1	Okay, twice a month.	
+00:04:38.7	PT	Yes.
+
+00:04:38.8 HCP1	Okay. Once a week to twice a month, depending. Okay, good. Good. That’s important.	
+00:04:43.3 PT	Thank you.	
+00:04:43.9 HCP1	That’s really good. Keep working on it.	
+00:04:45.1 PT	Thank you.	
+00:04:45.4 HCP1	Uh, I know sometimes we feel like we need to depend on things, but it’s better to cut down.	
+00:04:48.9 PT	Yes.	
+00:04:48.9 HCP1	So that’s really, really great.
+
+00:04:50.2 PT	Thank you.	
+00:04:50.8 HCP1	Um, and then, sometimes you drink, right?	
+00:04:53.0 PT	I was, um, that, another reason why they took me off work – I, um, had a drinking problem.	
+00:04:59.1 HCP1	Mm-hmm.	
+00:04:59.7 PT	So, um, they set me up with a counselor, and I was going …	
+00:05:02.4 HCP1	Okay.	
+00:05:02.9 PT	… to AA meetings, which …	
+00:05:04.1 HCP1	Okay.
+
+00:05:04.1 PT	… kind of slowed my drinking habits down.	
+00:05:05.9 HCP1	Okay. So now how much are you drinking?	
+00:05:09.8 PT	Mm, it went from drinking literally every day …	
+00:05:13.3 HCP1	Uh-huh.	
+00:05:13.3 PT	… to, I think the last time I had a drink was Thanksgiving.	
+00:05:17.1 HCP1	Okay. I have to give you a hug for that. That’s, like, really good. Good job.	
+00:05:20.3 PT	Thank you.	
+00:05:21.2 HCP1	That’s fantastic. It sounds like you’re really, really making a lot of good choices.	
+00:05:24.8 PT	Thank you. 
+00:05:25.4 HCP1	Like, like turning things around. So that’s really great. Do you want to know your numbers from last time?	
+00:05:30.2 PT	Please.
+
+00:05:30.6 HCP1	So, your viral load is like less than 20, which is, like, undetectable.	
+00:05:33.5 PT	Okay.	
+00:05:33.5 HCP1	So that’s really great.	
+00:05:34.8 PT	Cool. Thank you.	
+00:05:35.5 HCP1	Awesome. There’s lots of good things.	
+00:05:36.9 PT	Thank you.
+00:05:37.5 HCP1	Um, and everything else was good. There’s no other issues or anything like that. So today she’ll probably want to get a couple more labs, because I know there wasn’t as many last time. So that’s probably what we’ll do today. Dr. Secord will come in and talk to you. So, if you have any more questions about that, alcohol and marijuana…and you want more resources from us, just like let us know, and …	
+00:05:54.4 PT	Okay.	
+00:05:55.0 HCP1	So this is really good.	
+00:05:55.7 PT	Thank you.	
+00:05:56.0 HCP1	Like, keep it up.	
+00:05:57.0 PT	Thank you so much.
+
+00:05:57.0 HCP1	You’re doing great.	
+00:05:58.2 PT	Thank you.	
+00:05:58.2	HCP1	Keep with the AA, that’s fantastic, and enjoy your comeback at work. I’m sure it’ll be good to be back and see everyone.	
+00:06:03.7 PT	Yes. Thank you 
+00:06:05.1 HCP1	All right. Anything else you want to ask?	 
+00:06:06.6 HCP2	No, I think you’re really thorough. Good job.	
+00:06:08.4 HCP1	All right.	
+00:06:08.7 PT	Thank you so much. 
+00:06:09.9 HCP2	Anything else, any questions you have or …	
+00:06:11.6 PT	[00:06:11.6] I think …	
+00:06:11.6 HCP2	… anything you want to talk about?	
+00:06:12.2 PT	… I’ve been having some problems with my back.	
+00:06:15.2 HCP1	Oh, okay.	
+00:06:16.1 PT	Uh, like, really, my – sore.	
+00:06:19.0 HCP1	Uh-huh.	
+00:06:19.1 PT	Like, um, it started off down here a few months ago. Um, I know that Dr. Secord or Patrice gave me a prescription to get a different chair at work.	
+00:06:28.2	HCP1	Mm-hmm.	
+
+00:06:28.2 PT	Um, now it’s starting, like, my whole back. Like, when I lift, like when I lift, or when I bend down …	
+00:06:35.6 HCP1	Mm-hmm.	
+00:06:36.3 PT	… sometimes I feel like it’s about to give out, so I have to lean against something. Um, I don’t know. I’ve been taking Motrin 800 for it, but I don’t want to keep taking Motrin ever time my back hurts. I don’t know …	
+00:06:48.3 HCP1	Okay.	
+00:06:48.3 PT	… what’s going on. Also, my hands. Like, they lock up, and then they seem like they get stiff.	
+
+00:06:53.5 HCP1	Do you type a lot?	
+00:06:55.0 PT	Yes.	
+00:06:55.4 HCP1	Like a lot, a lot?	
+00:06:56.1 PT	Yes.	
+00:06:56.6 HCP1	Okay.	
+00:06:57.5 PT	And that’s pretty much it.	
+00:06:58.7 HCP2	Are you on the computer most of the day?	
+00:07:00.4 PT	Yes.	
+00:07:00.4	HCP2	Yes. Sitting down?	
+
+00:07:01.4 PT	Yes. 
+00:07:01.6 HCP2	Do you do any like lifting of boxes or anything like that at work?	
+00:07:04.2 PT	No.
+
+00:07:04.9 HCP2	No. When is your pain the worst? Usually when you’re standing? When you’re sitting?	
+00:07:08.8 PT	Um …	
+00:07:09.2 HCP2	The, the pain in your back.	
+00:07:11.7 PT	Um, it’s kind of both.	
+00:07:14.0 HCP2	Both.	
+00:07:14.3 PT	Mm-hmm.	
+00:07:14.9 HCP2	Is it worse in the morning or at night?	
+00:07:17.1 PT	Night. Uh, it’s really worse at night.	
+00:07:18.5 HCP2	Worse at night, after [00:07:19.5]
+00:07:19.5 PT	[00:07:19.5]
+00:07:19.9 HCP2	… the whole day?	
+00:07:20.8 PT	Mm-hmm.
+
+00:07:21.5 HCP2	Yes.	
+00:07:21.5	PT	Like, I can’t even, like, lay down.
+
+00:07:24.0 HCP2	Okay. How often are you taking a Motrin 800?	
+00:07:27.0 PT	Um, normally, sometimes if I, if it hurts at work, I take it when I’m at work; or I normally take it before I go to sleep.	 
+00:07:33.6 HCP2	So at least once a day, every day.	
+00:07:35.4 PT	Yes.	
+00:07:35.8 HCP2	How long have you been taking that for?	
+00:07:37.2 PT	For about two and a half weeks. 
+00:07:39.4 HCP2	Two and a half weeks, every single day. Has your stomach been bothering you at all?	
+00:07:42.4 PT	No.	
+00:07:43.0 HCP2	Make sure when you take Motrin, you take it with a piece of bread or some crackers. Make sure you have a full stomach, because it can bother your stomach.	
+00:07:48.9 PT	Okay. Okay.	
+00:07:50.0 HCP2	Um, if – are you having any bleeding when you go to the bathroom, when you’re pooping, anything like that?	
+00:07:54.3 PT	No.	
+00:07:54.2	HCP2	Any dark stools?
+
+00:07:55.1 PT	No.	
+00:07:55.9 HCP2	No. Okay. And is your pain going anywhere? Is it radiating down your legs?	
+00:08:00.8	PT	Um, just going from, like, my sides up the lower of my back …	
+00:08:04.6 HCP2	Lower back.	
+00:08:04.9	PT	… to the top of my back.	
+
+00:08:06.8	HCP2	Top of your back. Okay. Okay. But it’s not radiating down.	
+
+00:08:10.4	PT	No.
+
+00:08:11.0	HCP2	No. Okay. Have you ever tried physical therapy in the past?	
+
+00:08:14.4	PT	No.
+
+00:08:14.7	HCP2	Did they get you a new chair at work?	
+
+00:08:16.2	PT	They did, and the chair is comfortable; but it’s, it’s still – I, I don’t know. It’s like – I don’t, it’s not really …	 
+
+00:08:22.3	HCP2	It’s not enough.	
+
+00:08:23.1	PT	Yes.
+
+00:08:23.6	HCP1	It’s not enough. Okay. We can examine you and talk to Dr. Secord.
+
+00:08:26.6	PT	Okay.
+
+00:08:26.9	HCP2	Anything else?
+
+00:08:28.0	PT	No. Nope, that’s it.
+
+00:08:28.9	HCP2	No.
+
+00:08:29.6	HCP1	The other thing you can do, too, is get like a pillow or something to prop you, so you’re sitting straight and, like, not, you know …	
+
+00:08:35.0	PT	Right.
+
+00:08:35.0	HCP1	… leaning one way.	
+
+00:08:36.3	PT	Okay.
+
+00:08:36.3	HCP1	Something comfortable.
+
+00:08:37.1	PT	Okay.
+
+00:08:37.1	HCP1	That can be an option too. Dr. Secord herself sits on a ball, it’s really interesting.
+
+00:08:40.1	PT	Does she?
+00:08:41.1	HCP1	Yeah she does.
+00:08:42.7	HCP2	It sounds like muscle pain, like musculoskeletal pain, we call it.
+
+00:08:46.2	PT	Okay.
+
+00:08:46.6	HCP2	Especially because you’re saying it gets worse as the gay goes by, as you’re moving and working and sitting for a while.	
+
+00:08:52.4	PT	Right.
+
+00:08:53.4	HCP2	I think physical therapy might help you, or even just some stretching exercises. Sometimes you just need to go a few times.
+
+00:08:59.5	PT	Mm-hmm.
+
+00:09:00.2	HCP1	And they can teach you, like, what to do, like, how to stretch and how to, um, relieve that tension; and you can, you can do it by yourself after that.	
+
+00:09:07.8	PT	Okay.
+
+00:09:08.9	HCP2	But it could also be just from sitting all day. I know when I study, that happens to me, too. If I’m sitting all day studying, my back starts to hurt, and my neck starts to hurt.
+
+
+00:09:17.2	PT	Okay.	
+
+00:09:18.1	HCP1	If you, if your work is like really [00:09:19.2] hands and arms are probably from typing. 
+
+00:09:23.2	PT	Yes.
+
+00:09:23.1	HCP1	IF you feel like it’s tight and locking, just [00:09:25.1].
+
+00:09:25.2	PT	Okay.
+
+00:09:33.1	HCP2	[00:09:33.1] So no more diarrhea. 
+
+00:09:43.9	PT	No.
+
+00:09:44.3	HCP2	Any, um, headaches, blurred vision, double vision?	
+
+00:09:47.2	PT	Mm, no.
+
+00:09:48.3	HCP2	[00:09:48.3] runny nose, congestion, sneezing? Any sore throat?	
+
+00:09:51.9	PT	No.
+
+00:09:52.4	HCP2	Sores in your mouth?
+
+00:09:53.5	PT	No.
+
+00:09:53.9	HCP2	No. Any chest pain?
+
+00:09:55.8	PT	No.
+
+00:09:56.3	HCP2	Difficulty breathing?
+
+00:09:57.4	PT	You know what; I’m going to back to that question. Yes. I do have chest pain, but at first it was just like normal. Now it’s whenever I press on my chest.
+
+00:10:07.2	HCP2	Whenever you press on your chest. Okay. Does it hurt more when you take, like a big, deep breath?
+
+00:10:10.5	PT	No.
+
+00:10:11.3	HCP2	No. Just when you press on your chest. Okay. Is it worse when you’re doing activity, like when you’re going up and down the stairs?
+
+00:10:17.2	PT	No.
+
+00:10:18.0	HCP2	Is there any time, like, you press on your chest, it just feels a little bit sore?	
+
+00:10:21.1	PT	Yes.
+
+00:10:21.6	HCP2	Okay. Any belly pain? 
+
+00:10:23.1	PT	No.
+
+00:10:23.4	HCP2	No. Um, any pain with urination?
+
+00:10:26.0	PT	No.
+
+00:10:26.7	HCP2	Any discharge?
+
+00:10:27.7	PT	No.
+
+00:10:28.2	HCP2	 No. Aches and pains in your joints besides your back?
+
+00:10:30.6	PT	No.
+
+00:10:31.2	HCP2	Any rash anywhere?
+
+00:10:32.4	PT	No.
+
+00:10:32.6	HCP2	No.
+
+00:10:32.6	PT	Do you need me to take this vest off?
+
+00:10:36.1	HCP1	[00:10:36.1] Can you put your hands together [00:10:43.5]. Does that hurt? Does that cause you extreme pain? Okay. Can you look up? [00:11:05.2] I know when we come at your face you think we’re going [00:11:08.3] say ah.	
+
+00:11:10.6	PT	Ah.
+
+00:11:15.2	HCP2	Do you have any bruises like on your chest? Did you get into something, or hit yourself, anything like that?
+
+00:11:19.8	PT	Um, no. I thought at first it was a – because I helped my uncle move [00:11:23.4].
+
+00:11:24.0	HCP2	Yes, like you pulled a muscle or something.
+
+00:11:25.3	PT	Mm-hmm. But it’s …	
+
+00:11:27.1	HCP2	It hurts different.
+
+00:11:27.6	PT	It’s tender right there.	
+
+00:11:29.3	HCP2	Okay.
+
+00:11:32.2	PT	Yes, right there.
+
+00:11:33.1	HCP2	 Just tender. Okay. Do you mind unbuttoning your shirt?	
+
+00:11:35.0	PT 	Sure. I have on a few layers, because it’s cold.	
+
+00:11:38.6	HCP1	It is cold.
+
+00:11:38.6	HCP2	I know [00:11:38.9].
+
+00:11:39.9	HCP1	It’s getting to be that time.
+
+00:11:41.1	PT	Yes.
+
+00:11:41.8	HCP2	I just want to make sure you [bruises].
+
+00:11:43.9	PT	Okay.
+
+00:11:47.3	HCP2	When were you helping your uncle move some stuff?	
+
+00:11:49.4	PT	Um, it was about…I think he moved into his apartment  about a week or two ago.
+
+00:11:53.7	HCP2	And is it after that?	
+
+00:11:55.5	PT	Um, after, yes.
+
+00:11:56.4	HCP2	You don’t look bruised, but it could be, too, just like some musculoskeletal pain.
+
+00:12:00.5	PT	Okay. 
+
+00:12:00.5	HCP2	Okay. Well, when you take the Motrin for your back, does that help that pain?	
+
+00:12:04.0	PT	Yes.
+
+00:12:04.8	HCP2	Yes. Okay. Okay. Just give us a couple minutes, and we’ll be right back.	
+
+00:12:09.6	PT	Okay.
+
+00:12:10.6	HCP1	Probably, like, a lot of it’s related to like the stuff you said like lifting and turning and [00:12:14.5]. At least diarrhea and stomach pain is gone right? One thing is out of the way.	
+
+00:12:20.8	PT	Right.
+
+00:12:20.8	HCP1	One thing is out of the way.
+
+00:12:22.0	PT	Right. Thank you.
+
+00:12:34.6	HCP2	We’ll be back in a few.	
+
+00:12:35.8	PT	Okay. 
+
+		0:12:44.2 - 0:25:58.9 BREAK IN CLINICAL INTERACTION
+
+00:25:58.9	HCP3	Hi! I heard you were fashionably dressed today, so I had to come and take a look. So …	
+
+00:26:06.3	PT	Thank you.
+
+00:26:07.0	HCP3	Now, our student was commenting and wanting to [00:26:09.4] that you had the best fashion sense of the day.
+
+00:26:12.2	PT	Thank you.
+
+00:26:12.3	HCP3 	so far. Actually, it is true. But we all [00:26:17.1].
+
+00:26:17.8	PT	[00:26:17.8]
+
+00:26:18.2	HCP3	But you look great.
+
+00:26:19.0	PT	Thank you.	
+
+00:26:19.9	HCP1	There was a blank piece of paper [00:26:21.0].	
+
+00:26:21.5	HCP3	For the musculoskeletal stuff, um, and for, you know, the back issues, instead of taking Motrin, you’ll get more mileage out of Naprosyn. We’ll send it in so that you can pick it up by prescription.
+
+00:26:34.7	PT	Okay.
+
+00:26:34.8	HCP3	We’ll give you, like, a high dose to start, 500 mg twice a day, um, with Zantac. If you take enough of the anti-inflammatory for it to work, you have to protect your stomach. So take both. And then, when it’s working well, and you’re not feeling the pain in your hands anymore, then go down to once a day.
+
+00:26:52.0	PT	Okay.
+
+00:26:52.7	HCP3 	Meanwhile, we’ll try to get you to, um, physical and occupational therapy; occupational for the hands, physical for the back …
+ 
+00:27:00.0	PT	Okay.
+
+00:27:00.4	HCP3	… and see if they have any, um, ideas, you know, to – like, exercises and, uh, they may get you a wrist guard for the typing.
+
+00:27:08.9	PT	Okay.
+
+00:27:09.6	HCP3	Yes, because that, that helps with the carpal tunnel sort of things. Isn’t it funny, like, you know, I think farmers used to have different sorts of aches, when everyone was [00:27:17.6], but now that we’re doing this all the time, we hurt our hands.
+
+00:27:21.0	PT	Yes.
+
+00:27:21.5	HCP3	But, you know, life is interesting. So how’ve you been?
+
+00:27:24.3	PT	I’ve been fine.
+
+00:27:25.0	HCP3	I heard you’re doing well, no drinks since Thanksgiving.	
+
+00:27:28.2	PT	I know. Thank you. Thank you.	
+
+00:27:30.4	HCP3	So, um, you go to the meetings. How often?	
+
+00:27:34.0	PT	I, um, I haven’t been [00:27:35.8] I went – I haven’t been this week. The last time I went was Friday. So I’ll go, maybe, like twice or three times a week.
+
+00:27:43.1	HCP3	Yes. Good for you. Good for you. It helps a lot.
+
+00:27:45.5	PT	Yes.	
+
+00:27:45.4	HCP3 	Yes. So just keep that up.
+
+00:27:46.6	PT	Thank you.
+
+00:27:47.6	HCP3	Get your, get your relationships there. You’ve got a sponsor, or you don’t have a sponsor yet?	
+
+00:27:53.0	PT	No, I don’t have a sponsor yet.
+
+00:27:53.7	HCP3	Yes. Well, you know, that would be a good idea, too, because once you get a sponsor, you have somebody you can call when you’re [00:27:58.3] getting near to taking that drink.
+
+00:28:02.5	PT	Okay.
+
+00:28:02.5	HCP3	So, yes. So …	
+
+00:28:02.7	PT	Thank you.
+
+00:28:04.0	HCP3	[00:28:04.0] this is to – okay. There we go. Excellent. Probably have a little bit of that chest pain – you know, people who have sort of a thin chest wall get more of this reproducible musculoskeletal pain. You were lifting things …	
+
+00:28:35.9	PT	Mm-hmm.
+
+00:28:36.4	HCP3	You don’t look big enough to be lifting things. Stop it. Let me see the back of your throat. So … Perfect. Okay. Anything else that you’re concerned about? 
+
+00:28:48.3	PT	Um, nope. That’s pretty much it.
+
+00:28:50.2	HCP2	Complera
+
+00:28:50.4	HCP3	[00:28:50.4] the, oh, um, yes. Like, where is my mind? So if you’re having a little bit of dizziness, let’s try switching you to a different med.
+
+00:28:59.1	PT	Okay.
+
+00:28:59.2	HCP3	It’s called Triamec. But we can’t do that ‘til we get two labs.
+
+00:29:02.8	PT	Okay.
+
+00:29:03.3	HCP3	So we’re going to get those labs today. As long as these are good, then we’re going to switch you, okay? Because if that’s what’s causing the dizziness, and these labs, uh, show, that you won’t happen to have allergy, and you’re not resistant to the Triamec, it shouldn’t have that side effect.
+
+00:29:16.9	PT	Okay.
+
+00:29:17.3	HCP3	I had a few people with mild complaints on the Complera. It’s unusual, but it happens. I haven’t had anyone, knock on wood, complain on the Triamec.
+
+00:29:26.5	PT	Okay.
+
+00:29:27.1	HCP3	So, why don’t we have you back, let’s see, you know, a month.
+
+00:29:31.6	PT	Okay.
+
+00:29:31.6	HCP3	And we’ll just reorganize, and if I get this back before then, I’ll give you a call and send it in.
+
+00:29:38.1	PT	Okay.
+
+00:29:38.4	HCP3	Okay?
+
+00:29:38.6	PT	Okay.	
+
+00:29:39.1	HCP3	Okay. Get out of here.
+
+00:29:39.9	PT	Okay. Thank you.
+
+00:29:40.4	HCP3	We’ll take you up front and see if we can get, um, Irvin to get your PT appointment.
+
+00:29:46.5	PT	Okay.
+
+00:29:46.5	HCP3	All right?
+
+00:29:47.0	PT	Okay.
+
+00:29:47.0	HCP3	Okay. Should we just write a script, though? Because you’re going to the same place, you know. Do you work in, um, town?
+
+00:29:56.8	PT	Um, no, in Canton.
+
+00:29:58.3	HCP3	Okay. So you may want to find someplace near work, or, um, or near your house. But we’ll say OT and PT, evaluate and treat; um, diagnosis, wrist and back pain.
+
+00:30:20.5	PT	Okay.
+
+00:30:21.2	HCP3	Do you have a label? – 
+
+00:30:24.0	HCP1	Right there.
+00:30:25.0	HCP3	What is the matter with me? Don’t answer that. And then if they need – you know, when you find a place, take that, because they’ll want the script. You can look for places near your house and your work … 
+
+00:30:48.2	PT	Okay.
+
+00:30:48.2	HCP3	… that do physical therapy, and then, um, if they have more paperwork, then you’ll fill out those. Just fax it to us, and we’ll fill out more complete forms.
+ 
+00:30:55.9	PT	Okay. Thanks.
+
+00:30:56.1	HCP3	Okay?
+
+00:30:57.5	PT	Um, can you just let me know which pharmacy you’re going to send that medication to?	
+
+00:31:01.2	HCP2	I sent it to [00:31:01.6].	
+
+00:31:02.2	PT	[00:31:02.2] okay. Cool, yes.
+
+00:31:03.9	HCP3	Yes, whatever one you give them up front, we send it.	
+
+00:31:05.6	PT	Okay. Perfect. And that’s pretty much it.
+
+00:31:08.5	HCP3	Okay. Well, we’ll walk you out front. We’ll get you a one month appointment, and then we’ll send you to the lab. Is this all yours? 
+
+00:31:13.5	HCP1	[00:31:13.5]
+
+00:31:14.1	HCP3	Why are we signing [00:31:14.6]?
+
+00:31:15.9	HCP1	Oh, yes. [00:31:17.6]
+
+00:31:17.3	HCP2	Oh, we need to sign. 
+
+00:31:19.7	HCP3	What is this?
+
+00:31:19.8	HCP2	This is for the study.
+
+00:31:21.3	HCP3	Oh, okay. So …	
+
+00:31:23.7	HCP2	Do I need to put my name?
+
+00:31:23.7	HCP3	So if you need anything before you come back, call.
+
+00:31:27.7	PT	Okay. –
+
+Thank you so much.	
+
+00:31:33.1	HCP3	Yes. You know, if you – any paperwork you need filled out, you let us know.
+
+00:31:37.2	PT	Okay.
+
+00:31:37.9	HCP3	When do you go back to work?
+
+00:31:39.1	PT	Um, I heard tomorrow, but I have to call them back and [00:31:44.4].
+
+00:31:44.2	HCP3	You’ll have to make some arrangements, so …
+
+00:31:47.0	PT	Yes, I know. So …
+
+00:31:48.8	HCP3	Is that okay with you, to go back to work?	
+
+00:31:50.9	PT	Um, financial wise, it is; but I don’t know.	
+ 
+00:31:56.7	HCP3	You’re not sure if you’re emotionally ready. Okay. 
+
+00:31:58.5	PT	Yes. So I’m going to see. I’m going to call back today and see if they want me to [00:32:05.2].
+
+00:32:05.2	HCP1	We believe in you.
+
+00:32:06.1	PT	Thank you.
+ 
+00:32:06.1	HCP3	Yes. No, you’re doing, you’re doing very well.
+
+00:32:08.7	PT	Thank you.
+
+00:32:09.3	HCP3	You know, we’re thrilled with how you’re doing. I’m very proud of you.
+
+00:32:12.6	PT	Thank you so much.
+
+00:32:12.9	HCP3	If you need anything for work, you let us know.
+
+00:32:16.2	PT	Okay.
+
+00:32:16.7	HCP3 	[00:32:16.7] if you don’t want this anymore, you’ll let me know; because I like that.
+ 
+00:32:22.3	PT	Thank you.
+
+00:32:22.3	HCP3 	And you know, so that’ll be very good.
+
+00:32:24.1	PT	Thank you.
+
+00:32:24.1	HCP3	Like, my cell phone would fit in there. So …
+
+00:32:25.7	PT	Yes.
+
+00:32:25.7	HCP3	So, and don’t leave this, because I could use that, too.
+
+00:32:27.8	PT	Okay. – 
+
+00:32:30.7	HCP3	Don’t leave anything behind because, you know, I can’t be trusted. Take care. –
+ 
+00:32:51.2	HCP1	I probably recorded you, too. [00:32:53.0]
+
+00:32:58.2	HCP3	I don’t know the time he came in.	
+
+00:33:00.1	HCP1	That’s okay. [00:33:01.2].
+
+00:33:01.6	HCP3	Oh, look at the time.
+
+00:33:04.3	HCP1	I’ll figure it out. [00:33:04.0].
+
+
+[End of recorded material at 00:34:15.8]

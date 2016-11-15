@@ -450,12 +450,27 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				
 				while ((line = br.readLine()) != null) {
 					if(!line.isEmpty() && line.length() > 7){
+						
+						line = line.replace("\t", " ");
+						
 						if(!line.contains(":"))
 							continue;
 						line = line.replace("’", "'").replace("—", "-").replace("‘", "'").replace("…", "�").replace("PPT:", "PT:");
+						
 						int maxLen = line.length() < 17?line.length():17;
 						int index = line.substring(1, maxLen).lastIndexOf(":");
-						if(index < 0){
+						int index1 = line.substring(1, maxLen).lastIndexOf(" HCP");
+						int index2 = line.substring(1, maxLen).lastIndexOf(" PT");
+						
+						if(index > 0){
+							if(index1 > 0){
+								index = index1+5;
+							}
+							else if(index2 > 0){
+								index = index2+3;
+							}
+						}
+						else{
 							continue;
 						}
 						
@@ -470,13 +485,18 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 						
 						if(mapTimestamp.containsKey(timestamp.trim())){
 							String actualTimestamp = "("+timestamp.substring(0, 3)+":"+timestamp.substring(3, 5)+")";
-							writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).code + "],\t" + mapTimestamp.get(timestamp).who + line.substring(index+1).trim().replace(",", " "));
+							String whom = mapTimestamp.get(timestamp).who;
+							if(!whom.contains(":"))
+								whom = whom + ": ";
+								
+							writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).code + "],\t" + whom + line.substring(index+2).trim().replace(",", " "));
 							for(int j = 1; j < mapTimestamp.get(timestamp).listTimestamp.size(); j++){
 								writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).listTimestamp.get(j) + "],\t" + timestamp.substring(5) + ":\tMISSING TEXT");
 							}
 						}
 						else{
-							//System.out.println(rawFiles[i].getName() + timestamp);
+							//System.out.println(rawFiles[i].getName() + "\t" + index + ":" +  index1 + ":" +  index2 );
+							//System.out.println(rawFiles[i].getName() + "\t" + timestamp);
 						}
 						writer.flush();
 					}

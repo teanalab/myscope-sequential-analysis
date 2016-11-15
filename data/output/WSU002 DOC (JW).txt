@@ -1,0 +1,157 @@
+(031:13),	[HCP2HCP],	HCP7: Oh. We have recorder set up.
+(031:15),	[OQO],	HCP7: Okay. Hi  how are you doing?
+(031:16),	[HUPO],	PT: How are you doing? I didn’t see you last time
+(031:17),	[HCP2HCP],	HCP7: So  can I borrow him for two seconds?
+(031:20),	[SS],	HCP7: Because we were going to talk about starting meds. Okay  I think we talked it last time  but then …
+(031:30),	[SD],	HCP6: Okay. So I’ll be back.
+(031:31),	[ADV-],	HCP7: Okay. I know  everyone wants to talk to you about therapies and stuff. You know  it’ll actually be good  because um  when you’re on studies  we get you  um  we can get you transportation and stuff  too. But we’ll get you here one way or the other. So  um  since you were here  I understand  like  there’s not a huge change; same sort of things that were going on last time. Is that – that sound correct to you?
+(031:31),	[GINFO-],	HCP7:	MISSING TEXT
+(031:31),	[CQEF],	HCP7:	MISSING TEXT
+(031:58),	[CML-],	PT: Um  uh  yes. It just got  like  worse.
+(032:03),	[OQECML-],	HCP7: In what way?
+(032:05),	[CHT-],	PT: Like  like  the way I feel about the situation.
+(032:15),	[RCML-S],	HCP7: So you think you were coping better when you first heard; and now that you’ve had time to think about it …
+(032:20),	[CML+],	PT: I mean …
+(032:20),	[CML+],	PT: … I do kind of feel better that I did tell my mom.
+(032:22),	[AF-L],	HCP7: Good.
+(032:23),	[CML+],	PT: Because  I told her last night.
+(032:25),	[CHT+],	PT: And she said she was here for me. So …
+(032:31),	[CQTBN],	HCP7: Do you want to bring her in one time with you so she can …
+(032:33),	[HUPHIV],	PT: My mom?
+(032:33),	[CQTBN],	HCP7: Meet us? Yes.
+(032:35),	[CML+],	PT: Yes  I’ll bring her in one time.
+(032:35),	[GINFO+],	HCP7: You know  that would  that would be fine; and we’ll still talk to you separately  and with her; but she may have questions and such. So  the big question is starting meds. We’d like to get you started. There was a little bit of resistance to some of the meds  but we would still be able to start that one pill once a day that we talked about. Your viral load was not too high; so you can start that Complera if you are interested.
+(033:02),	[HUPHIV],	PT: What do you mean by that?
+(033:03),	[GINFO+],	HCP7: It’s one pill once a day  and it has three medications in it. So it’s easier to take. That’s the one that we discussed last time …
+(033:10),	[HUPHIV],	PT: [00:33:10.6]
+(033:16),	[HUPHIV],	PT: With food.
+(033:16),	[GINFO+],	HCP7: Yes. You have to eat with it so it’s absorbed well.
+(033:19),	[LUP+],	PT: Okay.
+(033:19),	[WARN],	HCP7: And it has less side effects than some of the other meds  so we’d like to start with that  if we can. But the big thing is  you have to remember to take it every day so you don’t get resistance; because you already have resistance to a few of the medications. Like  I’ll show you for example  this is a list of the various meds.
+(033:38),	[HUPHIV],	PT: That I would have to take.
+(033:38),	[GINFO+],	HCP7: And S means – no. These are the meds that you could take  that you’re sensitive to. But the Rs mean you’re resistant. Usually when people first get infected  it’s all S’s; but you inherited some resistance. Now  we don’t usually use these meds so much anymore; but it just makes us nervous that your virus is resistant to a couple of things. So we want to get you started and under control.
+(034:04),	[HUPHIV],	PT: So what  what does that mean? Like …
+(034:05),	[GINFO+],	HCP7: It means that you couldn’t take those meds where it says R. It means that the virus is resistant to those. And …
+(034:13),	[HUPHIV],	PT: Okay. I’m allergic to it or something.
+(034:15),	[GINFO+],	HCP7: No. No. Resistant means it wouldn’t work …
+(034:37),	[GINFO+],	HCP7: We want to make sure that you take it every day. And then  like  what happens sometimes is  people will come in in a month and say  oh  I took it about half the time. And then  like  you get to watch us cry; because that  it doesn’t work like that.
+(034:50),	[HUPHIV],	PT: Well  you’ve got to take medicine or  two days later  that’s it  you’re going to be gone. You’ve got to do it every day.
+(034:55),	[ROS],	HCP7: You’ve got to do it every day. Some things you wouldn’t – like  if you had high blood pressure  and you’re taking meds  you’re supposed to take it every day; but you wouldn’t get resistant to it. It would still work if you took it every day [sic]. But HIV  the virus  um  changes to adapt if let it  um  if you let it grow in your bloodstream. So if it gets  if it grows  it can be resistant; and it sees the meds  and then it adapts to them. So we don’t want  want you to let it adapt. Keep the virus down here. Make sense?
+(034:55),	[GINFO+],	HCP7:	MISSING TEXT
+(034:55),	[ADV-],	HCP7:	MISSING TEXT
+(034:55),	[CQEF],	HCP7:	MISSING TEXT
+(035:32),	[HUPHIV],	PT: Yes  and I guess the lady from the lab  I guess she said it was high.
+(035:37),	[GINFO+],	HCP7: It’s not real high. It’s  um  for  for someone not on meds  you’re at 36 000. That’s not – that’s – you know  once you’re on meds …
+(035:47),	[HUPHIV],	PT: I thought it was high.
+(035:47),	[GINFO+],	HCP7: … that’s going to go less than 20  once you’re on meds.
+(035:49),	[HUPHIV],	PT: So does that tell you when I got it  or …?
+(035:52),	[GINFO+],	HCP7: No. But when we said that it’s high  if this was 236 000  we’d say that was high. This is – you know  there’s virus in your blood; but I think that  once you start medicine  it’s going to go down very easily. Within a couple of months  it will be down to less than 20; maybe even a couple of weeks. And …
+(036:13),	[HUPHIV],	PT: But I will never get rid of it.
+(036:15),	[GINFO+],	HCP7: Um  never is a long time; and we don’t know what’s going to be invented. Like  you know  when I started doing this work  there were no meds. So  things change  right? You know  so  we don’t know when there’s going to be a cure. We  we do know that it’s really important to treat it; because it’s treatable now. So it would be very good to stay on the med every day. And so maybe when you’re 30  there’s going to be a cure; and then you’ll be in good shape to get it. Okay?
+(036:47),	[LUP+],	PT: Okay. Thank you.
+(036:47),	[GINFO+],	HCP7: So  you know  and maybe when you’re 60 there’ll be the cure. We don’t know when …
+(036:50),	[CHT-],	PT: I don’t know if I’ll even make it to 60.
+(036:53),	[OQECHT-],	HCP7: Why wouldn’t you make it to 60?
+(036:54),	[CHT-],	PT: I’ve got HIV. I don’t – I don’t even think I’m …
+(036:57),	[CHT-],	PT: … going to make it to my 21st birthday.
+(036:59),	[GINFO-],	HCP7: Well  there should be no reason having to do with HIV that you don’t make it to 60; because what I’m going to say is  it’s not 1980 anymore. There’s treatment for this. So you take the pills  and it treats it; keeps the virus low in your blood  and your immune system stays normal. So you’re just like anyone else  as long as you stay on your meds. Does that make sense? Just – you’ve got to say that to yourself every morning when you get up. If I take this  I’m going to be fine; because it’s true. People – if people die from HIV now  it’s because they choose not to take their meds. Uh  and you should say  why would anyone do that? I don’t know. But some people don’t take their meds. But those are the only people who get AIDS. No one who takes their meds every day should get sick.
+(037:46),	[HUPHIV],	PT: So  it should turn into – my HIV could turn into AIDS?
+(037:49),	[GINFO+],	HCP7: If you don’t take your meds. But are you going to take your meds?
+(037:49),	[CQECML+],	HCP7:	MISSING TEXT
+(037:52),	[CML+],	PT: Yes. I’m going to. Yes.
+(037:52),	[RCML+C],	HCP7: Yes. So  so you’re not getting AIDS. Okay?
+(037:52),	[CQEF],	HCP7:	MISSING TEXT
+(037:56),	[ADV-],	HCP7: You’re not getting AIDS. Okay? You can’t have that. You only get AIDS if you let the virus get high and it kills your T-cells. If you take your meds  and the virus doesn’t get high in your blood  and it doesn’t kill your T-cells  you’re fine. Make sense?
+(037:56),	[GINFO+],	HCP7:	MISSING TEXT
+(037:56),	[CQEF],	HCP7:	MISSING TEXT
+(038:16),	[HUPHIV],	PT: Mm-hmm.
+(038:17),	[CQO],	HCP7: Now  we’ve got to work on your nose  too  because you do have that allergic nose. Did we do allergy test?
+(038:23),	[HUPO],	PT: You said something about some  some spray stuff. I don’t know.
+(038:27),	[CQO],	HCP7: Yes. Did you get that?
+(038:28),	[HUPO],	PT: No. I never got [00:38:30.1].
+(038:29),	[CQO],	HCP7: Because we sent it in. Um  what pharmacy did you give the front desk?
+(038:34),	[HUPO],	PT: Um  didn’t you all say you were going to send it to my address?
+(038:37),	[SD],	HCP7: Mm  so  we send it to MedCard  and they were going to deliver.
+(038:41),	[HUPO],	PT: I don’t know. I could  I  I was waiting  but I didn’t  didn’t ever come in the mail.
+(038:45),	[SD],	HCP7: Okay. While you’re doing the study I’m going to find out about that  because it should come  be delivered to your house; because I can hear you breathing. That means that you have an allergic nose. You need [00:38:56.6].
+(038:57),	[HUPO],	PT: But I can breathe by my nose  but I’m guessing I still breathe loud …
+(039:01),	[SD],	HCP7: Yes. You do. Yes. I can hear you  yes.
+(039:04),	[HUPO],	PT: It’s so irritating.
+(039:05),	[SD],	HCP7: Well  I’s  you know  it  it’s just  um  a lot nicer if you could actually breathe through your nose and not  you know  have problems.
+(039:14),	[SD],	HCP2: Could help you to sleep  too.
+(039:15),	[SS],	HCP7: Yes. –
+(039:15),	[CQO],	HCP7:	MISSING TEXT
+(039:37),	[HUPO],	PT: No.
+(039:38),	[CQO],	HCP7: So we’ll do that today. That’s one thing that’s important. But let me  um  that nose is  uh  it’s almost blocked; so we’re going to get the mailed straight to your house. Let me see how you sound. But you don’t get asthma.
+(039:51),	[HUPO],	PT: I think I’ve got  I think I’ve got asthma  bronchitis. I don’t know which one.
+(039:56),	[CQO],	HCP7: When’s the last time you had an attack?
+(039:58),	[HUPO],	PT: An asthma attack?
+(039:59),	[SD],	HCP7: Yes.
+(040:00),	[HUPO],	PT: I don’t think I’ve ever had one.
+(040:02),	[HUPO],	PT: But I  I did used to have [00:40:04.0].
+(040:04),	[CQO],	HCP7: Did you used to use an inhaler for your breathing?
+(040:06),	[HUPO],	PT: Mm-hmm.
+(040:07),	[CQO],	HCP7: How long ago?
+(040:08),	[HUPO],	PT: It was about [00:40:10.7] no. I didn’t use an inhaler. I used a breathing machine.
+(040:13),	[ROS],	HCP7: Okay. Okay. So you were younger.
+(040:15),	[LUP+],	PT: Mm-hmm.
+(040:16),	[CQO],	HCP7: And how long ago did you use that?
+(040:18),	[HUPO],	PT: I had to be about eight  nine.
+(040:22),	[SS],	HCP7: Okay. We’re going to get you back in here. We’re going to take care of the medicine today. We’re going to get you back in here  like  The first week of January; and when you’re back for  um  to have your blood checked to make sure the medicine’s working well  we’re going to do a skin test and see what you’re allergic to  and see if we can get that nose under control  as long as you’re here. You might as well get two for one  right?
+(040:22),	[CQO],	HCP7:	MISSING TEXT
+(040:43),	[HUPO],	PT: Yes.
+(040:43),	[SS],	HCP7: So  we’ll see how you sound. Deep breath. So  I forgot. You were  like the extreme preemie with all the …
+(041:05),	[HUPO],	PT: Yes. –
+(041:08),	[SD],	HCP7: I know. On your arms from  uh  yes  but they healed nicely  you know. I bet your mom didn’t expect you to grow this tall.
+(041:16),	[HUPO],	PT: Mm  mm. [00:41:16.6].
+(041:19),	[SD],	HCP7: Yes. You weren’t quite the size of –
+(041:23),	[HUPO],	PT: Yes. Mom said I was  like  my head was the size of a  a quarter.
+(041:27),	[SUP],	HCP7: Like this. Yes. But look at you now. You’re going to be fine. We took care of you then. We’ll take care of you now. Okay? –
+(041:35),	[LUP+],	PT: Thank you.
+(041:36),	[SD],	HCP7: So  and we’ll take care of that nose  too; because that’s going to be more annoying than your HIV  I promise.
+(041:41),	[HUPO],	PT: Yes. [00:41:42.2]
+(041:42),	[SD],	HCP7: And we’ll take care of that  too.
+(041:44),	[LUP+],	PT: Okay. Thank you.
+(041:44),	[CQECML+],	HCP7: We’ll take care of all this. We’ve got two shots for you today. We’ve got the flu  and – oh  most important thing: Did you ever get treated for syphilis?
+(041:54),	[CML-],	PT: No  but the lab  the  uh  the lady – I [00:41:56.7] I really don’t know.
+(041:58),	[CQO],	HCP7: Who called you?
+(041:59),	[HUPHIV],	PT: Some lady from the lab  but she told me I had [00:42:01.3 ] …
+(042:01),	[SD],	HCP7: She [00:42:01.3] from  from the state. Okay. Yes. Yes.
+(042:03),	[HUPHIV],	PT: She  she told me I had syphilis.
+(042:05),	[ADV-],	HCP7: So we’re going to treat you today. Sorry  that’s going to be worse than …
+(042:05),	[GINFO-],	HCP7:	MISSING TEXT
+(042:10),	[HUPHIV],	PT: [00:42:10.6]
+(042:10),	[GINFO+],	PT:	MISSING TEXT
+(042:10),	[ADV-],	PT:	MISSING TEXT
+(042:10),	[CQTBN],	HCP7: … you know  because we – well  because it’s  it  they  the shots hurt. But  um  we have to treat you three weeks in a row. So we’re going to see you for a while. How are we going to do – okay. We’ll give you the first shot today. We’ll talk  okay? I’m going to go get – I’m going to order the shots. It’s penicillin. You have any allergies to drugs?
+(042:31),	[HUPO],	PT: What do you mean drugs?
+(042:33),	[CQTBN],	HCP7: Um  are you allergic to anything  that you can’t take?
+(042:35),	[HUPO],	PT: Not that I know of.
+(042:36),	[SD],	HCP7: No. Okay. Excellent.
+(042:37),	[HUPO],	PT: I would like to find out what I’m allergic to  though.
+(042:40),	[GINFO+],	HCP7: Yes. We’ll do the – there are different types of allergies  but we’re going to test for things in the air that would be causing the nose problem next time we see you. But for the  for the syphilis  we only worry about penicillin allergies. So if you haven’t had that problem  you’re good. We’re going to give you a shot  each side of your behind  today; and then again next week and the week after.
+(042:40),	[ADV-],	HCP7:	MISSING TEXT
+(043:02),	[HUPO],	PT: Oh my God.
+(043:03),	[GINFO+],	HCP7: You – because you  um  were exposed to syphilis at some point  um  when you had – you had sex with someone who had syphilis  and you didn’t know it; and it’s in your blood. So we have to treat it; and we’ll get rid of it  okay? That’s curable. But we have to do three times  because we don’t have a previous test. Okay? Sorry  kiddo.
+(043:03),	[CQEF],	HCP7:	MISSING TEXT
+(043:23),	[HUPO],	PT: Okay. That’s okay. Thank you.
+(043:24),	[SD],	HCP7: So  there’ll be needles involved today.
+(043:26),	[CHT+],	PT: Better for me to know the truth than just wondering.
+(043:28),	[RCHT+C],	HCP7: Yes. Well  and we’re  and better to know the truth so we can fix it. So …
+(043:32),	[LUP+],	PT: Thank you.
+(043:33),	[SD],	HCP7: Yes.
+(043:34),	[HUPO],	PT: Excuse me.
+(043:35),	[CQO],	HCP7: You all right? Okay. We’ll be back.
+(043:35),	[SS],	HCP7:	MISSING TEXT
+(043:37),	[HUPO],	PT: I’m lightheaded.
+(043:38),	[SUP],	HCP7: Yes. I  uh  after that news  I don’t blame you. Because – it hurts a little bit  but you’ll be okay. It’s not – you know  you’ll feel better once you get on medication and once you get treated for the syphilis. All right? Okay.
+(043:51),	[LUP+],	PT: Thank you.
+(043:51),	[SS],	HCP7: So  you’re going to – we’ll be back in a bit  because I’m going to find out about that medicine  and I’m going to send [Sharnell] to talk to you …
+(043:51),	[EA],	HCP7:	MISSING TEXT
+(043:57),	[HUPO],	PT: Okay. Thank you. I appreciate it.
+(043:59),	[SS],	HCP7: … about this study. So  you take it easy.
+(044:12),	[HUPO],	PT: That’s okay. She can …
+(044:13),	[CQO],	HCP7: She can come in? Good. Okay.
+(044:16),	[LUP+],	PT: Thank you.
+(044:16),	[SD],	HCP7: Sure. Take care.
+(044:17),	[LUP+],	PT: Okay. All right.

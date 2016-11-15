@@ -1,0 +1,151 @@
+(000:32),	[RCHT+S],	HCP1: Um  so it worked out that you were able to come in today – because it said that you weren't scheduled for today.
+(000:39),	[CHT-],	PT: I wasn't able.
+(000:39),	[SS],	HCP1: I think you were scheduled for the 15th.
+(000:41),	[HUPHIV],	PT: I thought it was the 22nd. [Laughs]
+(000:43),	[OQO],	HCP1: But we – but it worked out. I mean  we're kind of busy because it's just Nurse Debby and I  but we wanted to get you in  so it's good – um  but just so we're kind of jumping in  um  how are you?
+(000:53),	[HUPO],	PT: I'm doing good.
+(000:54),	[CQO],	HCP1: Any concerns? Any complaints? Anything you wanted to address?
+(000:54),	[HUPO],	PT: Mm-mm.
+(000:57),	[CQP],	HCP1: Are you sure?
+(000:57),	[CQO],	HCP1:	MISSING TEXT
+(000:57),	[HUPO],	PT: Yeah.
+(000:57),	[CQP],	HCP1: Positive?
+(000:57),	[CQO],	HCP1:	MISSING TEXT
+(000:58),	[HUPO],	PT: Positive.
+(000:59),	[GINFO-],	HCP1: Okay. I had you – you for last time. Um  your viral load was  uh  up a little bit. It was 49. That's basically still close to undetectable. I think last time you missed two doses because you weren't at home.
+(001:13),	[LUP+],	PT: Yeah.
+(001:14),	[GINFO-],	HCP1: So that's probably why it was off. So we'll repeat it today and make sure everything is still golden. Um  I know last time you were a bit stressed because you were saying you hadn't had a job. You were looking for employment. How's that going?
+(001:14),	[OQO],	HCP1:	MISSING TEXT
+(001:26),	[HUPO],	PT: Uh  not very well  but I had one call  so it kept my – [00:01:29.8].
+(001:31),	[CQO],	HCP1: Okay  that's good. Call for – call for what type of job?
+(001:35),	[HUPO],	PT: Um  Dominoes.
+(001:36),	[CQO],	HCP1: Okay  so you're going to bring free pizza?
+(001:39),	[HUPO],	PT: Um  no  I kind of missed the call because they called my mama. I tried to call them back  so I've been calling them back for here and there – still looking or not.
+(001:50),	[CQO],	HCP1: Okay  if you get a job that involved food  can you bring us food?
+(001:53),	[HUPO],	PT: Yeah  of course.
+(001:54),	[CQO],	HCP1: Nice. Thank you. I'm just putting in my request. [Laughter] Um  so any health concerns you wanted to address?
+(002:01),	[HUPO],	PT: Um  no.
+(002:01),	[CQO],	HCP1: Are you sure?
+(002:03),	[HUPO],	PT: Yeah  everything – I've been feeling healthy-like.
+(002:06),	[CQO],	HCP1: Good. Good  good  good. Um  and feeling down  sad at all?
+(002:10),	[HUPO],	PT: Um  no.
+(002:12),	[ROC],	HCP1: So  you seem in higher spirits. Um  and then since you were last here  any hospital visits or any ER visits?
+(002:12),	[CQO],	HCP1:	MISSING TEXT
+(002:18),	[HUPO],	PT: Hm?
+(002:18),	[CQO],	HCP1: Any hospital or ER visits?
+(002:20),	[HUPO],	PT: Um  no.
+(002:21),	[CQECML+],	HCP1: Okay. And are you – what are you taking for medication?
+(002:26),	[CML+],	PT: Um  like you want to – Complera.
+(002:32),	[CQECML-],	HCP1: Yes. So  in the past seven days  about how many missed doses.
+(002:35),	[CML-],	PT: Um  probably two or three.
+(002:38),	[OQECHT-],	HCP1: What – what happened? How? Why two or three? That's a lot.
+(002:38),	[CON],	HCP1:	MISSING TEXT
+(002:40),	[CHT-],	PT: That ain't – nah  that ain't...
+(002:42),	[CON],	HCP1: In a week? That's almost 60 percent.
+(002:44),	[CML-],	PT: Nah. The week? Nah  nah. That's like half of – probably two  three weeks ago.
+(002:50),	[CQECML-],	HCP1: Oh. So in the past seven days  about how many missed doses?
+(002:53),	[CML+],	PT: None.
+(002:54),	[AFL],	HCP1: Awesome.
+(002:54),	[AMB+],	PT: Not for the past couple  like –
+(003:08),	[CQECML-],	HCP1: So about three out of the 30 days? Okay  that's not as... When you said three to four out of a week  I was like –
+(003:08),	[GINFO-],	HCP1:	MISSING TEXT
+(003:14),	[CML+],	PT: No  no.
+(003:14),	[CQO],	HCP1: Because the thing is  you're on Complera  which is a really great regimen  and it's nice because it's only one pill  but it has less forgiveness with missing doses – so you want to make sure that you're kind of sticking on top of those doses and not missing them. Um  and then are you still living at home with your family?
+(003:32),	[HUPO],	PT: Yes.
+(003:32),	[CQECML-],	HCP1: Okay. And looking for work. Um  and then about how often do you drink alcohol?
+(003:41),	[CML+],	PT: Um  none at all.
+(003:44),	[CML+],	PT: I get it on one little certain occasion  and that's it.
+(003:47),	[CQTBN],	HCP1: So like once a month?
+(003:48),	[CML+],	PT: No  probably once a year. [Laughs]
+(003:51),	[OQTBN],	HCP1: Okay. Beer  wine  or liquor?
+(003:54),	[HUPHIV],	PT: Um  I don't do beer. I don't really do wine  so just liquor.
+(003:57),	[CQO],	HCP1: Any tobacco use?
+(004:00),	[HUPO],	PT: Um  yep. Cigarettes  mostly.
+(004:02),	[CQO],	HCP1: About how much? How many cigarettes?
+(004:05),	[HUPO],	PT: Um  well now I don't got no job  so I just slowed down  kind of – so probably – I'd say probably two or three a day.
+(004:15),	[CQO],	HCP1: Okay. Any thought of quitting?
+(004:17),	[HUPO],	PT: Um  yeah. I'm – I've been having feelings like I want to quit  like I just don't want to smoke a square right now.
+(004:23),	[CQECML-],	HCP1: Okay  so maybe next time we could try for one a day  and just think of all the money you'll save. You could  like  buy dessert. And then I know that you smoke marijuana. About how much marijuana are you smoking?
+(004:34),	[CML-],	PT: Um  two a day.
+(004:36),	[CQTBN],	HCP1: Is that down?
+(004:36),	[HUPHIV],	PT: Hm?
+(004:37),	[CQTBN],	HCP1: Is that down from last time? I feel like you were smoking more last time  right?
+(004:40),	[CML+],	PT: Mm-hmm.
+(004:42),	[GINFO-],	HCP1: You said you were – oh  yeah  it's about the same. Okay. Any thought of quitting or decreasing?
+(004:42),	[CQECML+],	HCP1:	MISSING TEXT
+(004:47),	[CML-],	PT: Um  not really  no.
+(004:49),	[SUP],	HCP1: Okay  well  when you're ready  we're here. Um  and then since you were last here  any sexual activity?
+(004:49),	[CQTBN],	HCP1:	MISSING TEXT
+(004:54),	[HUPHIV],	PT: Hm?
+(004:55),	[CQTBN],	HCP1: Any sexual activity?
+(004:55),	[CML+],	PT: No.
+(004:57),	[CQO],	HCP1: Got it. So just kind of running through in the last few days  any fevers  chills  feeling weak or tired?
+(005:02),	[HUPO],	PT: No.
+(005:02),	[CQO],	HCP1: Any stomach pain  nausea  vomiting?
+(005:05),	[HUPO],	PT: No.
+(005:05),	[CQO],	HCP1: Chest pain  shortness of breath?
+(005:07),	[HUPO],	PT: Nope.
+(005:08),	[CQO],	HCP1: Running any marathons?
+(005:10),	[HUPO],	PT: Nope.
+(005:13),	[OQO],	HCP1: What are you going to do for the holiday?
+(005:14),	[HUPO],	PT: Um  celebrate with my family  probably at the [Most].
+(005:17),	[CQO],	HCP1: Probably at the what?
+(005:19),	[HUPO],	PT: At the Most.
+(005:20),	[CQO],	HCP1: That's – that's a lot. That's fun. Do you guys have good food?
+(005:25),	[HUPO],	PT: Mm-hmm. Yeah.
+(005:26),	[CQO],	HCP1: Do you cook?
+(005:26),	[HUPO],	PT: No  not me.
+(005:27),	[CQO],	HCP1: No?
+(005:29),	[HUPO],	PT: Well  I do  but my mom don't let me cook because –
+(005:39),	[SO],	HCP1: One little fire.
+(005:40),	[HUPO],	PT: No  no fire. [Laughs]
+(005:42),	[SS],	HCP1: Okay  I'll have you open up for me. Ah  under your tongue. Say ah. All right  so you've been banned from cooking for the holiday. That's what I'm hearing.
+(005:52),	[HUPO],	PT: Mm-hmm  I've been banned [00:05:54.5].
+(005:55),	[CQO],	HCP1: Oh geez  okay. Well  it's how you get better. Everybody – everybody has a few smokeys. Does this ear bother you at all over here?
+(006:04),	[HUPO],	PT: No.
+(006:04),	[CQO],	HCP1: No? It's a little bit red. It could just be because it's warm. Do you clean your Q-tips or anything?
+(006:09),	[HUPO],	PT: Yes.
+(006:10),	[OQO],	HCP1: Don't clean your ears with Q-tips. Um  nothing smaller than your elbow in your ear. If you want to clean it  maybe just wash it with a towel  but sticking a Q-tip in can irritate it.
+(006:26),	[HUPO],	PT: Yeah  that's okay.
+(006:28),	[SO],	HCP1: Okay. You looked like you were like  what the...? All right.
+(006:31),	[HUPO],	PT: I kind of enjoy the feeling of the Q-tipness.
+(006:35),	[CQO],	HCP1: Oh  okay. Deep breath. Deep breath. Deep breath. I'm going to have you lay back for me. You went to Cass Tech?
+(007:04),	[HUPO],	PT: Mm-mm.
+(007:05),	[ROS],	HCP1: Oh  okay. You have a Cass Tech ring.
+(007:09),	[HUPO],	PT: Yeah  I just borrowed the key chain. I need to stop losing my keys.
+(007:13),	[CQO],	HCP1: Oh. I was like  my dad went to Cass Tech. Is – what is your favorite holiday food?
+(007:25),	[HUPO],	PT: Thanksgiving.
+(007:26),	[CQO],	HCP1: What's your favorite food on Thanksgiving?
+(007:30),	[HUPO],	PT: Um  kind of hard to choose because I love macaroni  I love dressing  I love ham  turkey.
+(007:38),	[CQO],	HCP1: What's the favorite?
+(007:39),	[HUPO],	PT: The yams. [Laughs]
+(007:41),	[CQO],	HCP1: Oh  those are always good. Candied yams?
+(007:44),	[HUPO],	PT: Um  more like just –
+(007:46),	[CQO],	HCP1: Roasted?
+(007:48),	[HUPO],	PT: No  last time [00:07:51.3].
+(007:53),	[SS],	HCP1: Yeah  I love them like that. So good. All right  XXXX  you're all set. Um  I have your labs right here. Um  do you want condoms?
+(007:53),	[CQECHT+],	HCP1:	MISSING TEXT
+(008:03),	[CML+],	PT: Um  no  because I still got some and I hadn't even been doing nothing. [Laughs]
+(008:07),	[CQECML+],	HCP1: Nothing's been going on? Um  do you – is there anything more that you need from me? I'll send in refills on your med. Is there anything that you need?
+(008:07),	[CQO],	HCP1:	MISSING TEXT
+(008:13),	[HUPO],	PT: Um  no.
+(008:14),	[CQO],	HCP1: You sure?
+(008:14),	[HUPO],	PT: Yes.
+(008:16),	[SO],	HCP1: Okay  I'm going to get –
+(008:16),	[CHT+],	PT: But I want to make sure  um  that – that my  um – my  um – the pharmacy  um – let them know that  uh  my number changed – well  not my number. I don't got no phone number  so I was trying to give them my dad's number so they can call him.
+(008:33),	[CQO],	HCP1: Okay  what is your number?
+(008:34),	[HUPO],	PT: 313-459-1380.
+(008:38),	[CQECHT+],	HCP1: 1380. So you just want the pharmacy to know this is your new number?
+(008:42),	[CHT+],	PT: That's not my new number. It's my dad's number. I just don't got no phone right now or no number right now – so that they can get in contact with – contact with me when they need to bring my medicine.
+(008:53),	[GINFO+],	HCP1: Cool  we can do that. Um  have a marvelous holiday.
+(008:56),	[HUPO],	PT: You too.
+(008:56),	[SS],	HCP1: We'll see you in three months. Is that all right? Sounds like you're doing pretty well. We'll keep my fingers crossed for the job stuff. I know Jay said he was working with you on that.
+(009:04),	[LUP+],	PT: Yeah.
+(009:05),	[SS],	HCP1: I think that's it.
+(009:06),	[LUP+],	PT: Yep.
+(009:06),	[SS],	HCP1: All right  XXXX. I'll see you. Are you sure there's nothing more you need?
+(009:06),	[CQO],	HCP1:	MISSING TEXT
+(009:10),	[HUPO],	PT: Mm-mm  nothing.
+(009:11),	[SO],	HCP1: All right  have a lovely –
+(009:11),	[HUPO],	PT: Oh  bus cards. That's mostly it.
+(009:14),	[SO],	HCP1: Let me see what we can do. All right.

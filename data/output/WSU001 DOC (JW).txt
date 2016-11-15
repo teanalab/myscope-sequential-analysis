@@ -1,0 +1,91 @@
+(025:58),	[SD],	HCP3: Hi! I heard you were fashionably dressed today  so I had to come and take a look. So …
+(026:12),	[SD],	HCP3: so far. Actually  it is true. But we all [00:26:17.1].
+(026:17),	[LUP+],	PT: [00:26:17.8]
+(026:18),	[SD],	HCP3: But you look great.
+(026:19),	[LUP+],	PT: Thank you.
+(026:19),	[HCP2HCP],	HCP1: There was a blank piece of paper [00:26:21.0].
+(026:21),	[SD],	HCP3: For the musculoskeletal stuff  um  and for  you know  the back issues  instead of taking Motrin  you’ll get more mileage out of Naprosyn. We’ll send it in so that you can pick it up by prescription.
+(027:21),	[LUP+],	PT: Yes.
+(027:21),	[OQO],	HCP3: But  you know  life is interesting. So how’ve you been?
+(027:24),	[HUPO],	PT: I’ve been fine.
+(027:25),	[AF],	HCP3: I heard you’re doing well  no drinks since Thanksgiving.
+(027:28),	[LUP+],	PT: I know. Thank you. Thank you.
+(027:30),	[CQECML+],	HCP3: So  um  you go to the meetings. How often?
+(027:34),	[CML+],	PT: I  um  I haven’t been [00:27:35.8] I went – I haven’t been this week. The last time I went was Friday. So I’ll go  maybe  like twice or three times a week.
+(027:43),	[AF-L],	HCP3: Yes. Good for you. Good for you. It helps a lot.
+(027:43),	[GINFO-],	HCP3:	MISSING TEXT
+(027:45),	[LUP+],	PT: Yes.
+(027:45),	[ADV-],	HCP3: Yes. So just keep that up.
+(027:46),	[LUP+],	PT: Thank you.
+(027:47),	[CQTBN],	HCP3: Get your  get your relationships there. You’ve got a sponsor  or you don’t have a sponsor yet?
+(027:53),	[CML-],	PT: No  I don’t have a sponsor yet.
+(027:53),	[GINFO-],	HCP3: Yes. Well  you know  that would be a good idea  too  because once you get a sponsor  you have somebody you can call when you’re [00:27:58.3] getting near to taking that drink.
+(028:02),	[LUP+],	PT: Okay.
+(028:02),	[LUP+],	PT:	MISSING TEXT
+(028:02),	[SD],	HCP3: So  yes. So …
+(028:02),	[LUP+],	PT: Thank you.
+(028:02),	[LUP+],	PT:	MISSING TEXT
+(028:04),	[CQO],	HCP3: [00:28:04.0] this is to – okay. There we go. Excellent. Probably have a little bit of that chest pain – you know  people who have sort of a thin chest wall get more of this reproducible musculoskeletal pain. You were lifting things …
+(028:35),	[LUP+],	PT: Mm-hmm.
+(028:36),	[SS],	HCP3: You don’t look big enough to be lifting things. Stop it. Let me see the back of your throat. So … Perfect. Okay. Anything else that you’re concerned about?
+(028:36),	[CQO],	HCP3:	MISSING TEXT
+(028:48),	[HUPO],	PT: Um  nope. That’s pretty much it.
+(028:50),	[HCP2HCP],	HCP2: Complera
+(028:50),	[CQO],	HCP3: [00:28:50.4] the  oh  um  yes. Like  where is my mind? So if you’re having a little bit of dizziness  let’s try switching you to a different med.
+(028:50),	[ADV-],	HCP3:	MISSING TEXT
+(028:59),	[LUP+],	PT: Okay.
+(028:59),	[GINFO-],	HCP3: It’s called Triamec. But we can’t do that ‘til we get two labs.
+(029:02),	[LUP+],	PT: Okay.
+(029:03),	[SS],	HCP3: So we’re going to get those labs today. As long as these are good  then we’re going to switch you  okay? Because if that’s what’s causing the dizziness  and these labs  uh  show  that you won’t happen to have allergy  and you’re not resistant to the Triamec  it shouldn’t have that side effect.
+(029:03),	[ADV-],	HCP3:	MISSING TEXT
+(029:03),	[GINFO-],	HCP3:	MISSING TEXT
+(029:16),	[LUP+],	PT: Okay.
+(029:17),	[GINFO+],	HCP3: I had a few people with mild complaints on the Complera. It’s unusual  but it happens. I haven’t had anyone  knock on wood  complain on the Triamec.
+(029:26),	[LUP+],	PT: Okay.
+(029:27),	[SS],	HCP3: So  why don’t we have you back  let’s see  you know  a month.
+(029:31),	[LUP+],	PT: Okay.
+(029:31),	[ADV-],	HCP3: And we’ll just reorganize  and if I get this back before then  I’ll give you a call and send it in.
+(029:38),	[LUP+],	PT: Okay.
+(029:38),	[CHT+],	PT:	MISSING TEXT
+(029:38),	[CQEF],	HCP3: Okay?
+(029:38),	[LUP+],	PT: Okay.
+(029:38),	[CHT+],	PT:	MISSING TEXT
+(029:39),	[SD],	HCP3: Okay. Get out of here.
+(029:39),	[LUP+],	PT: Okay. Thank you.
+(029:40),	[SS],	HCP3: We’ll take you up front and see if we can get  um  Irvin to get your PT appointment.
+(029:46),	[LUP+],	PT: Okay.
+(029:46),	[CQTBN],	HCP3: All right?
+(029:47),	[CHT+],	PT: Okay.
+(029:47),	[HCP2HCP],	HCP3: Okay. Should we just write a script  though? Because you’re going to the same place  you know. Do you work in  um  town?
+(029:47),	[CQO],	HCP3:	MISSING TEXT
+(029:56),	[HUPO],	PT: Um  no  in Canton.
+(029:58),	[SD],	HCP3: Okay. So you may want to find someplace near work  or  um  or near your house. But we’ll say OT and PT  evaluate and treat; um  diagnosis  wrist and back pain.
+(030:20),	[LUP+],	PT: Okay.
+(030:21),	[HCP2HCP],	HCP3: Do you have a label? –
+(030:25),	[CQO],	HCP3: What is the matter with me? Don’t answer that. And then if they need – you know  when you find a place  take that  because they’ll want the script. You can look for places near your house and your work …
+(030:55),	[LUP+],	PT: Okay. Thanks.
+(030:56),	[CQO],	HCP3: Okay?
+(030:57),	[HUPO],	PT: Um  can you just let me know which pharmacy you’re going to send that medication to?
+(031:01),	[SD],	HCP2: I sent it to [00:31:01.6].
+(031:02),	[HUPO],	PT: [00:31:02.2] okay. Cool  yes.
+(031:03),	[SD],	HCP3: Yes  whatever one you give them up front  we send it.
+(031:05),	[HUPO],	PT: Okay. Perfect. And that’s pretty much it.
+(031:08),	[SS],	HCP3: Okay. Well  we’ll walk you out front. We’ll get you a one month appointment  and then we’ll send you to the lab. Is this all yours?
+(031:08),	[CQO],	HCP3:	MISSING TEXT
+(031:14),	[HCP2HCP],	HCP3: Why are we signing [00:31:14.6]?
+(031:23),	[SD],	HCP3: So if you need anything before you come back  call.
+(031:37),	[LUP+],	PT: Okay.
+(031:37),	[CQO],	HCP3: When do you go back to work?
+(031:39),	[HUPO],	PT: Um  I heard tomorrow  but I have to call them back and [00:31:44.4].
+(031:44),	[SD],	HCP3: You’ll have to make some arrangements  so …
+(031:47),	[LUP+],	PT: Yes  I know. So …
+(031:48),	[CQO],	HCP3: Is that okay with you  to go back to work?
+(031:50),	[HUPO],	PT: Um  financial wise  it is; but I don’t know.
+(031:56),	[ROC],	HCP3: You’re not sure if you’re emotionally ready. Okay.
+(031:58),	[HUPO],	PT: Yes. So I’m going to see. I’m going to call back today and see if they want me to [00:32:05.2].
+(032:05),	[SD],	HCP1: We believe in you.
+(032:06),	[LUP+],	PT: Thank you.
+(032:06),	[AF],	HCP3: Yes. No  you’re doing  you’re doing very well.
+(032:12),	[LUP+],	PT: Thank you so much.
+(032:12),	[SD],	HCP3: If you need anything for work  you let us know.
+(032:51),	[HCP2HCP],	HCP1: I probably recorded you  too. [00:32:53.0]
