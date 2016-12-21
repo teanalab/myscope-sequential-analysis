@@ -4,6 +4,9 @@ public class AppMain {
 		//model.evaluateModelBy3Folds();
 		//model.provideFrequencyDistributionOfSequence();
 		//System.out.println("\nFinished execution.");
-		UtilityClass.preprocessMITranscripts("data/input", "data/output/");
+		
+		// preprocess dmc files
+		WordtoText.wordToText("c:/dmc/rawfiles", "c:/dmc/input");
+		//UtilityClass.preprocessMITranscripts("c:/dmc/input", "c:/dmc/output/");
 	}
 }
