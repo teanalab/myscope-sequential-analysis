@@ -429,6 +429,8 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 						String record[] = line.split(",");
 						//System.out.println(line);
 						String timestamp = getTimestamp((record[2].substring(1, 8).replace(":", "")+record[3].trim()).trim());
+						timestamp = timestamp.replaceAll("\\u00a0","");
+						
 						//System.out.println(rawFiles[i].getName() +timestamp);
 						if(mapTimestamp.containsKey(timestamp)){
 							mapTimestamp.get(timestamp).listTimestamp.add(record[4].trim());
@@ -450,6 +452,8 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				br.close();
 				
 				br = new BufferedReader(new FileReader(rawFiles[i]));
+				// annotation Found
+				int annotationFound = 0;
 				
 				while ((line = br.readLine()) != null) {
 					if(!line.isEmpty() && line.length() > 7){
@@ -468,7 +472,7 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 						if(tsAndIdx.timestamp == null || tsAndIdx.timestamp.length() < 1)
 							continue;
 						else
-							timestamp = tsAndIdx.timestamp;
+							timestamp = tsAndIdx.timestamp+tsAndIdx.who;
 						
 						if(mapTimestamp.containsKey(timestamp.trim())){
 							String actualTimestamp = "("+timestamp.substring(0, 3)+":"+timestamp.substring(3, 5)+")";
@@ -476,19 +480,27 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 							if(!whom.contains(":"))
 								whom = whom + ": ";
 								
-							writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).code + "],\t" + whom + line.substring(tsAndIdx.idx+2).trim().replace(",", " "));
+							writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).code + "],\t" + whom + line.substring(tsAndIdx.idx).trim().replace(",", " "));
 							for(int j = 1; j < mapTimestamp.get(timestamp).listTimestamp.size(); j++){
 								writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).listTimestamp.get(j) + "],\t" + timestamp.substring(5) + ":\tMISSING TEXT");
+								annotationFound++;
 							}
+							annotationFound++;
+							//System.out.println(line + ": " + rawFiles[i].getName() + "\t" + timestamp);
 						}
 						else{
-							//System.out.println(line + ": " + rawFiles[i].getName() + "\t" + tsAndIdx.idx + "\t" + timestamp);
+							//System.out.println(rawFiles[i].getName() + "\t" + timestamp + "[stat] :" + annotationFound + " : " + mapTimestamp.size());
+							//System.out.println(line + ": " + rawFiles[i].getName() + "\t" + timestamp);
 							//System.out.println();
 						}
 						writer.flush();
 					}
 				}				
 				
+				if(annotationFound < mapTimestamp.size())
+					System.out.println(rawFiles[i].getName() + "\t" + "[stat] :" + annotationFound + " : " + mapTimestamp.size());
+				
+				//System.out.println(mapTimestamp + "\n\n");
 				br.close();
 				
 				writer.close();
@@ -576,46 +588,64 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 		Matcher matcher7 = regexp7.matcher(lineTimestamp);
 		
 		// Check for several patterns
-		String s = "";
+		String s = "", speaker = "";
 		if(matcher1.find()){
 			s = matcher1.group();
-			//System.out.println(lineTimestamp + " : " + s);
+			timestamp = matcher1.group(2).replace("(", "").replace("{", "").replace("[", "").replace(")", "").replace("}", "").replace("]", "").replaceAll(":", "");
+			speaker = matcher1.group(4);
+			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
 		}
 		else if(matcher2.find()){
 			s = matcher2.group();
-			//System.out.println(lineTimestamp + " : " + s);
+			timestamp = matcher2.group(2).replace("(", "").replace("{", "").replace("[", "").replace(")", "").replace("}", "").replace("]", "");
+			timestamp = timestamp.substring(0, timestamp.length()-2);
+			speaker = matcher2.group(4);
+			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
 		}
 		else if(matcher3.find()){
 			s = matcher3.group();
-			//System.out.println(lineTimestamp + " : " + s);		
+			timestamp = matcher3.group(2).substring(1).replaceAll(":", "");
+			speaker = matcher3.group(4);
+			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
 		}
 		else if(matcher4.find()){
 			s = matcher4.group();
-			//System.out.println(lineTimestamp + " : " + s);		
+			timestamp = matcher4.group(2).substring(0, matcher4.group(2).length()-2).substring(1).replaceAll(":", "");
+			speaker = matcher4.group(4);
+			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
 		}
 		else if(matcher5.find()){
 			s = matcher5.group();
-			//System.out.println(lineTimestamp + " : " + s);		
+			timestamp = matcher5.group(2).replace("(", "").replace("{", "").replace("[", "").replace(")", "").replace("}", "").replace("]", "").substring(1).replaceAll(":", "");
+			speaker = matcher5.group(4);
+			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
 		}
 		else if(matcher6.find()){
 			s = matcher6.group();
-			//System.out.println(lineTimestamp + " : " + s);		
+			timestamp = matcher6.group(2).replace("(", "").replace("{", "").replace("[", "").replace(")", "").replace("}", "").replace("]", "");
+			timestamp = timestamp.substring(0, timestamp.length()-2).substring(1).replaceAll(":", "");
+			speaker = matcher6.group(4);
+			System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
 		}
 		else if(matcher7.find()){
 			s = matcher7.group();
-			//System.out.println(lineTimestamp + " : " + s);		
+			timestamp = matcher7.group(2).substring(0, matcher7.group(2).length()-2).substring(1).replaceAll(":", "").replaceAll(" ", "");
+			speaker = matcher7.group(4);
+			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
 		}
 		else{
-			System.out.println(lineTimestamp + " : ");
+			//System.out.println(lineTimestamp + " : ");
 			return;
 		}
 		
 		ts.idx = s.length();
-		ts.timestamp = timestamp;
+		ts.who = speaker;
+		ts.timestamp = getTimestamp(timestamp);
 	}
 }
 
 class TimestampAndIndex{
 	String timestamp;
 	int idx;
+	String who;
 }
