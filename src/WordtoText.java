@@ -2,13 +2,18 @@
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
+import java.io.IOException;
 
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.hwpf.HWPFDocument;
+import org.apache.poi.hwpf.extractor.WordExtractor;
+
 
 public class WordtoText {
 	static void wordToText(String inputFolder, String outputFolder) throws Exception{		
 		// get all files 
+		int xlsxCounter = 0;
 		File rawDataFolder = new File(inputFolder);
 		File []sessions = rawDataFolder.listFiles();
 		for (int i = 0; i < sessions.length; ++i) {		
@@ -27,23 +32,14 @@ public class WordtoText {
 							XlsxtoCSV.xlsx(eachSession[k].getAbsoluteFile(), csvFile);
 							System.out.println(csvFileName);
 						}
+						else if(eachSession[k].getName().contains(".xls")){
+							xlsxCounter++;
+						}
 					}
 					
 					for (int k = 0; k < eachSession.length; ++k) {	
-						if(eachSession[k].getName().contains(".docx")){			
-							FileInputStream fs = new FileInputStream(eachSession[k]);
-							XWPFDocument docx = new XWPFDocument(fs); 
-							//create text extractor object to extract text from the document
-							@SuppressWarnings("resource")
-							XWPFWordExtractor extractor = new XWPFWordExtractor(docx);
-							FileWriter fw = new FileWriter(outputFolder+"/"+textFileName);
-							//write text to the output file  
-							fw.write(extractor.getText());					
-							//clear data from memory
-							fw.flush();
-							//close inputstream and file writer
-							fs.close();
-							fw.close();
+						if(eachSession[k].getName().contains(".doc")){							
+							writeDocument(eachSession[k], textFileName, outputFolder);
 						}
 					}
 					
@@ -59,27 +55,58 @@ public class WordtoText {
 							XlsxtoCSV.xlsx(sessionPart[k].getAbsoluteFile(), csvFile);
 							System.out.println(csvFileName);
 						}
+						else if(sessionPart[k].getName().contains(".xls")){
+							xlsxCounter++;
+						}
 					}
 					
 					for (int k = 0; k < sessionPart.length; ++k) {	
-						if(sessionPart[k].getName().contains(".docx")){			
-							FileInputStream fs = new FileInputStream(sessionPart[k]);
-							XWPFDocument docx = new XWPFDocument(fs); 
-							//create text extractor object to extract text from the document
-							@SuppressWarnings("resource")
-							XWPFWordExtractor extractor = new XWPFWordExtractor(docx);
-							FileWriter fw = new FileWriter(outputFolder+"/"+textFileName);
-							//write text to the output file  
-							fw.write(extractor.getText());					
-							//clear data from memory
-							fw.flush();
-							//close inputstream and file writer
-							fs.close();
-							fw.close();
+						if(sessionPart[k].getName().contains(".doc")){			
+							writeDocument(sessionPart[k], textFileName, outputFolder);
 						}
 					}
 				}				
 			}
-		}  
+		}
+		
+		System.out.println("Number of old excel file: " + xlsxCounter);
+	}
+	
+	public static void writeDocument(File input, String outTextFileName, String outputFolder){
+		if(input.getName().contains("docx")){ //is a docx
+		    try{
+		    	FileInputStream fs = new FileInputStream(input);
+				XWPFDocument docx = new XWPFDocument(fs); 
+				//create text extractor object to extract text from the document
+				XWPFWordExtractor extractor = new XWPFWordExtractor(docx);
+				FileWriter fw = new FileWriter(outputFolder+"/"+outTextFileName);
+				//write text to the output file  
+				fw.write(extractor.getText());					
+				//clear data from memory
+				fw.flush();
+				//close inputstream and file writer
+				fs.close();
+				fw.close();
+		    }catch (IOException e) {
+		        e.printStackTrace();
+		    }
+		}
+		else { //is not a docx
+	        try{
+	        	FileInputStream fs = new FileInputStream(input);
+	            HWPFDocument doc = new HWPFDocument(fs);
+	            WordExtractor extractor = new WordExtractor(doc);
+	            FileWriter fw = new FileWriter(outputFolder+"/"+outTextFileName);
+				//write text to the output file  
+				fw.write(extractor.getText());					
+				//clear data from memory
+				fw.flush();
+				//close inputstream and file writer
+				fs.close();
+				fw.close();
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+		}
 	}
 }

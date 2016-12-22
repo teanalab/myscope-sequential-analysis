@@ -30,6 +30,7 @@ public class XlsxtoCSV {
 	                Iterator<Row> rowIterator = sheet.iterator();
 	                while (rowIterator.hasNext()) {
 	                        row = rowIterator.next();
+	                        StringBuffer line = new StringBuffer();
 	
 	                        // For each row, iterate through each columns
 	                        Iterator<Cell> cellIterator = row.cellIterator();
@@ -39,23 +40,36 @@ public class XlsxtoCSV {
 	
 	                                switch (cell.getCellType()) {
 	                                case Cell.CELL_TYPE_STRING:
-	                                        data.append(cell.getStringCellValue() + ",");
+	                                	line.append(cell.getStringCellValue() + ",");
 	                                        break;
 	                                case Cell.CELL_TYPE_NUMERIC:  
 	                                		final String NEW_FORMAT = "yyyy-MM-dd HH:mm:ss.SSS";
 	                                		DateFormat formatter = new SimpleDateFormat(NEW_FORMAT);
 	                                		String time = formatter.format(cell.getDateCellValue());
-	                                	 	data.append(time.toString().substring(11, 21) + ",");
+	                                		line.append(time.toString().substring(11, 21) + ",");
 	                                	 	break;
 	                                case Cell.CELL_TYPE_BLANK:
-	                                        data.append("" + ",");
+	                                	line.append("" + ",");
 	                                        break;
 	                                default:
-	                                        data.append(cell + ",");
+	                                	line.append(cell + ",");
 	
 	                                }
 	                        }
-	                        data.append("\n");
+	                        
+	                        if(line.length() > 20){
+	                        	String arrData[] = line.toString().split(",");
+	                        	if(arrData[0].contains(":"))
+	                        		data.append(",,"+line + "\n");
+	                        	else if(arrData[1].contains(":")){
+	                        		data.append(","+line + "\n");
+	                        	}
+	                        	else
+	                        		data.append(line.toString().replace(";", ":") + "\n");
+	                        	//System.out.println(line);
+	                        }
+	                        else
+	                        	data.append(line + "\n");
 	                }
 	
 	                fos.write(data.toString().getBytes());

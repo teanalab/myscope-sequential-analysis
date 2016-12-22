@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class UtilityClass {
 
@@ -421,10 +423,11 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				br.readLine();
 				
 				while ((line = br.readLine()) != null) {
-					if(!line.isEmpty()){
+					if(!line.isEmpty() && line.length() > 8){
 						if(!line.contains(":"))
 							continue;
 						String record[] = line.split(",");
+						//System.out.println(line);
 						String timestamp = getTimestamp((record[2].substring(1, 8).replace(":", "")+record[3].trim()).trim());
 						//System.out.println(rawFiles[i].getName() +timestamp);
 						if(mapTimestamp.containsKey(timestamp)){
@@ -457,31 +460,15 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 							continue;
 						line = line.replace("’", "'").replace("—", "-").replace("‘", "'").replace("…", "�").replace("PPT:", "PT:");
 						
-						int maxLen = line.length() < 17?line.length():17;
-						int index = line.substring(1, maxLen).lastIndexOf(":");
-						int index1 = line.substring(1, maxLen).lastIndexOf(" HCP");
-						int index2 = line.substring(1, maxLen).lastIndexOf(" PT");
-						
-						if(index > 0){
-							if(index1 > 0){
-								index = index1+5;
-							}
-							else if(index2 > 0){
-								index = index2+3;
-							}
-						}
-						else{
-							continue;
-						}
-						
 						String timestamp = "";
-						if(line.substring(0, index+1).contains("("))
-							timestamp = line.substring(0, index+1).replace(":", "").replace(")", "").replace("(", "").replace(" ", "").replace("\t", "").trim();
-						else{
-							timestamp = line.substring(1, index+1).replace(":", "").replace("\t", "").replace(" ", "").trim();
-							if(timestamp.contains("."))
-								timestamp = getTimestamp(timestamp.substring(0, 5)+timestamp.substring(7));
-						}
+						TimestampAndIndex tsAndIdx = new TimestampAndIndex();						
+						getTimestampFromText(line, tsAndIdx);						
+						
+						
+						if(tsAndIdx.timestamp == null || tsAndIdx.timestamp.length() < 1)
+							continue;
+						else
+							timestamp = tsAndIdx.timestamp;
 						
 						if(mapTimestamp.containsKey(timestamp.trim())){
 							String actualTimestamp = "("+timestamp.substring(0, 3)+":"+timestamp.substring(3, 5)+")";
@@ -489,14 +476,14 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 							if(!whom.contains(":"))
 								whom = whom + ": ";
 								
-							writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).code + "],\t" + whom + line.substring(index+2).trim().replace(",", " "));
+							writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).code + "],\t" + whom + line.substring(tsAndIdx.idx+2).trim().replace(",", " "));
 							for(int j = 1; j < mapTimestamp.get(timestamp).listTimestamp.size(); j++){
 								writer.println(actualTimestamp + ",\t["+mapTimestamp.get(timestamp).listTimestamp.get(j) + "],\t" + timestamp.substring(5) + ":\tMISSING TEXT");
 							}
 						}
 						else{
-							//System.out.println(rawFiles[i].getName() + "\t" + index + ":" +  index1 + ":" +  index2 );
-							//System.out.println(rawFiles[i].getName() + "\t" + timestamp);
+							//System.out.println(line + ": " + rawFiles[i].getName() + "\t" + tsAndIdx.idx + "\t" + timestamp);
+							//System.out.println();
 						}
 						writer.flush();
 					}
@@ -516,4 +503,119 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 		timestamp = (t>9&&t<100)?"0"+timestamp:timestamp;
 		return timestamp;
 	}
+	
+	public static void getTimestampFromText(String line, TimestampAndIndex ts){
+		
+		/*String timestamp = "";
+		
+		int maxLen = line.length() < 17?line.length():17;
+		int index = line.substring(1, maxLen).lastIndexOf(":");
+		int index1 = line.substring(1, maxLen).lastIndexOf(" HCP");
+		int index2 = line.substring(1, maxLen).lastIndexOf(" PT");
+		
+		if(index > 0){
+			if(index1 > 0){
+				index = index1+5;
+			}
+			else if(index2 > 0){
+				index = index2+3;
+			}
+		}
+		else{
+			return;
+		}
+		
+		if(line.substring(0, index+1).contains("(")){ // pattern with parenthesis
+			timestamp = line.substring(0, index+1).replace(":", "").replace(")", "").replace("(", "").replace(" ", "").replace("\t", "").trim();
+		}
+		else{
+			timestamp = line.substring(1, index+1).replace(":", "").replace("\t", "").replace(" ", "").trim();
+		}
+		
+		if(timestamp.substring(0, 17).contains(".")){
+			int idx = timestamp.lastIndexOf(".");
+			timestamp = getTimestamp(timestamp.substring(0, idx)+timestamp.substring(idx+2));
+		}
+		else{
+			timestamp = getTimestamp(timestamp);
+		}
+		
+		ts.idx = index;
+		ts.timestamp = timestamp;
+		*/
+		
+		String timestamp = "";
+		
+		// Check for valid text
+		int maxLen = line.length() < 17?line.length():17;
+		int index = line.substring(1, maxLen).lastIndexOf(":");
+		if(index < 0) return;
+		
+		// Create patterns
+		String lineTimestamp = line.substring(0, maxLen);
+		
+		Pattern regexp1 =  Pattern.compile("(([\\(\\{\\[]([0-9]+:[0-9]+)[\\)\\}\\]])([0-9a-zA-Z]+)(:)*)");
+		Matcher matcher1 = regexp1.matcher(lineTimestamp);
+		
+		Pattern regexp2 =  Pattern.compile("(([\\(\\{\\[]([0-9]+:[0-9]+\\.[0-9])[\\)\\}\\]])([0-9a-zA-Z]+)(:)*)");
+		Matcher matcher2 = regexp2.matcher(lineTimestamp);
+		
+		Pattern regexp3 =  Pattern.compile("(([0-9]+:[0-9]+:[0-9]+)(\\s+)([0-9a-zA-Z]+)(:)*)");
+		Matcher matcher3 = regexp3.matcher(lineTimestamp);
+		
+		Pattern regexp4 =  Pattern.compile("(([0-9]+:[0-9]+:[0-9]+\\.[0-9])(\\s+)([0-9a-zA-Z]+)(:)*)");
+		Matcher matcher4 = regexp4.matcher(lineTimestamp);
+		
+		Pattern regexp5 =  Pattern.compile("(([\\[\\{\\(][0-9]+:[0-9]+:[0-9]+[\\]\\}\\)])(\\s+)([0-9a-zA-Z]+)(:)*)");
+		Matcher matcher5 = regexp5.matcher(lineTimestamp);
+		
+		Pattern regexp6 =  Pattern.compile("(([\\[\\{\\(][0-9]+:[0-9]+:[0-9]+\\.[0-9][\\]\\}\\)])(\\s+)([0-9a-zA-Z]+)(:)*)");
+		Matcher matcher6 = regexp6.matcher(lineTimestamp);
+		
+		Pattern regexp7 =  Pattern.compile("(([0-9]+:\\s[0-9]+:[0-9]+\\.[0-9])(\\s+)([0-9a-zA-Z]+)(:)*)");
+		Matcher matcher7 = regexp7.matcher(lineTimestamp);
+		
+		// Check for several patterns
+		String s = "";
+		if(matcher1.find()){
+			s = matcher1.group();
+			//System.out.println(lineTimestamp + " : " + s);
+		}
+		else if(matcher2.find()){
+			s = matcher2.group();
+			//System.out.println(lineTimestamp + " : " + s);
+		}
+		else if(matcher3.find()){
+			s = matcher3.group();
+			//System.out.println(lineTimestamp + " : " + s);		
+		}
+		else if(matcher4.find()){
+			s = matcher4.group();
+			//System.out.println(lineTimestamp + " : " + s);		
+		}
+		else if(matcher5.find()){
+			s = matcher5.group();
+			//System.out.println(lineTimestamp + " : " + s);		
+		}
+		else if(matcher6.find()){
+			s = matcher6.group();
+			//System.out.println(lineTimestamp + " : " + s);		
+		}
+		else if(matcher7.find()){
+			s = matcher7.group();
+			//System.out.println(lineTimestamp + " : " + s);		
+		}
+		else{
+			System.out.println(lineTimestamp + " : ");
+			return;
+		}
+		
+		ts.idx = s.length();
+		ts.timestamp = timestamp;
+	}
+}
+
+class TimestampAndIndex{
+	String timestamp;
+	int idx;
 }
