@@ -518,44 +518,6 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 	
 	public static void getTimestampFromText(String line, TimestampAndIndex ts){
 		
-		/*String timestamp = "";
-		
-		int maxLen = line.length() < 17?line.length():17;
-		int index = line.substring(1, maxLen).lastIndexOf(":");
-		int index1 = line.substring(1, maxLen).lastIndexOf(" HCP");
-		int index2 = line.substring(1, maxLen).lastIndexOf(" PT");
-		
-		if(index > 0){
-			if(index1 > 0){
-				index = index1+5;
-			}
-			else if(index2 > 0){
-				index = index2+3;
-			}
-		}
-		else{
-			return;
-		}
-		
-		if(line.substring(0, index+1).contains("(")){ // pattern with parenthesis
-			timestamp = line.substring(0, index+1).replace(":", "").replace(")", "").replace("(", "").replace(" ", "").replace("\t", "").trim();
-		}
-		else{
-			timestamp = line.substring(1, index+1).replace(":", "").replace("\t", "").replace(" ", "").trim();
-		}
-		
-		if(timestamp.substring(0, 17).contains(".")){
-			int idx = timestamp.lastIndexOf(".");
-			timestamp = getTimestamp(timestamp.substring(0, idx)+timestamp.substring(idx+2));
-		}
-		else{
-			timestamp = getTimestamp(timestamp);
-		}
-		
-		ts.idx = index;
-		ts.timestamp = timestamp;
-		*/
-		
 		String timestamp = "";
 		
 		// Check for valid text
