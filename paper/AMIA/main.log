@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  1 FEB 2017 21:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  2 FEB 2017 17:49
 entering extended mode
 **./main.tex
 (main.tex
@@ -257,147 +257,712 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 23.
+(Font)              <12> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 23.
+(Font)              <8> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 23.
+(Font)              <6> on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 30.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+
+! Undefined control sequence.
+l.28 ...t binary (two-class) classification \citep
+                                                  {40,41} (e.g. classifying ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 ...are overweight and 16.9\% are obese \citep
+                                                  {01}. Adolescents who are ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 ... stroke, cancer, and osteoarthritis \citep
+                                                  {02}. Therefore, there is ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 ... for health-related behavior change \citep
+                                                  {03,04}. The goal of a MI ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 ...ntly predict actual behavior change \citep
+                                                  {05} that can be sustained...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 ...ong as 34 months after an interview \citep
+                                                  {06}. The process of estab...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 .... For example, in a recent MI study \citep
+                                                  {07}, training coders to r...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 ...ed two coding passes and six coders \citep
+                                                  {08}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+! Undefined control sequence.
+l.33 ...language use can be quite different \citep
+                                                  {09}. This problem is exac...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.36 ...Interaction Analysis System (GMIAS) \citep
+                                                  {10}, which uses a codeboo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.36 ...ucture of Encounters System (CASES) \citep
+                                                  {11} was designed to annot...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 information'' \citep
+                         {12}. Other related previous studies focused on cat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.40 ...ciated with someone else) using SVM \citep
+                                                  {13} and annotating the ut...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 classifier \citep
+                      {14}. The present study reports the results of compreh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 ...he-art classifiers (Na\"{i}ve Bayes \citep
+                                                  {15,16,17}, Support Vector...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 \citep
+           {18,19}, Conditional Random Fields \citep{21,22}, J48 \citep{23},...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 ...p{18,19}, Conditional Random Fields \citep
+                                                  {21,22}, J48 \citep{23}, A...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 ...al Random Fields \citep{21,22}, J48 \citep
+                                                  {23}, AdaBoost \citep{24},...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 ...ep{21,22}, J48 \citep{23}, AdaBoost \citep
+                                                  {24}, Random Forest \citep...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 ... AdaBoost \citep{24}, Random Forest \citep
+                                                  {42}, DiscLDA \citep{25} a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 ..., Random Forest \citep{42}, DiscLDA \citep
+                                                  {25} and Convolutional Neu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.43 \citep
+           {38}) for the task of annotating clinical interviews with a codeb...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 ...hange talk (CT). Two recent studies \citep
+                                                  {46,47} have examined caus...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 53.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 53.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 43.
-Package epstopdf Info: Source file: <figures/extraction.eps>
-(epstopdf)                    date: 2017-01-10 20:07:16
-(epstopdf)                    size: 3992234 bytes
-(epstopdf)             Output file: <figures/extraction-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-01-18 18:53:50
-(epstopdf)                    size: 59972 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/extraction-eps-conv
-erted-to.pdf figures/extraction.eps>
-(epstopdf)             \includegraphics on input line 51.
-Package epstopdf Info: Output file is already uptodate.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 97.
+! Undefined control sequence.
+l.103 ... human coders according to MYSCOPE \citep
+                                                  {07}, a specialized codebo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-<figures/extraction-eps-converted-to.pdf, id=10, 1358.07375pt x 1458.44875pt>
-File: figures/extraction-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/extraction-eps-converted-to.pdf>
-Package pdftex.def Info: figures/extraction-eps-converted-to.pdf used on input 
-line 51.
-(pdftex.def)             Requested size: 234.8775pt x 252.22804pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+! Undefined control sequence.
+l.106 ...tor reliability ($\kappa$ = 0.696) \citep
+                                                  {07}. The MYSCOPE codebook...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [2]
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 76.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlptm.fd"
-File: omlptm.fd 
-)
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 76.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 79.
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[]\OT1/ptm/m/n/10 Open-ended ques-tion,
+ []
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+[3]
+! Undefined control sequence.
+l.136 ...mmer available as part of the Weka \citep
+                                                  {26} machine learning tool...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.145 ...probability theory, a markov model \citep
+                                                  {45} is a stochastic model...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 148.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
 
+<figures/deltadata.jpg, id=20, 650.43pt x 358.33875pt>
+File: figures/deltadata.jpg Graphic file (type jpg)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<use figures/deltadata.jpg>
+Package pdftex.def Info: figures/deltadata.jpg used on input line 174.
+(pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
 
-[3 <./figures/extraction-eps-converted-to.pdf>] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+! Undefined control sequence.
+l.180 ...tion of sequence of behavior codes \citep
+                                                  {36} as an experimental de...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
- []
+[5 <./figures/deltadata.jpg>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.246 1 & 311\rightarrow
+                        112\rightarrow301\rightarrow500 & 343\rightarrow109\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.246 ...ghtarrow112\rightarrow301\rightarrow500 &
+                                                   343\rightarrow109\rightar...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+! Missing $ inserted.
+<inserted text> 
+                $
+l.246 ...ghtarrow112\rightarrow301\rightarrow500 &
+                                                   343\rightarrow109\rightar...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
- []
+! Missing } inserted.
+<inserted text> 
+                }
+l.246 ...ghtarrow112\rightarrow301\rightarrow500 &
+                                                   343\rightarrow109\rightar...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-[5]
-Package epstopdf Info: Source file: <figures/matrixplot.eps>
-(epstopdf)                    date: 2017-02-01 20:31:28
-(epstopdf)                    size: 4552108 bytes
-(epstopdf)             Output file: <figures/matrixplot-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-01 20:32:01
-(epstopdf)                    size: 405338 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/matrixplot-eps-conv
-erted-to.pdf figures/matrixplot.eps>
-(epstopdf)             \includegraphics on input line 212.
-Package epstopdf Info: Output file is already uptodate.
- <figures/matrixplot-eps-converted-to.pdf, id=29, 477.785pt x 324.21124pt>
-File: figures/matrixplot-eps-converted-to.pdf Graphic file (type pdf)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.246 ...htarrow301\rightarrow500 & 343\rightarrow
+                                                  109\rightarrow312\rightarr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-<use figures/matrixplot-eps-converted-to.pdf>
-Package pdftex.def Info: figures/matrixplot-eps-converted-to.pdf used on input 
-line 212.
-(pdftex.def)             Requested size: 469.75502pt x 318.76373pt.
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.247 2
+        & 310\rightarrow112\rightarrow311\rightarrow500 & 311\rightarrow109\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.247 2
+        & 310\rightarrow112\rightarrow311\rightarrow500 & 311\rightarrow109\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+! Missing } inserted.
+<inserted text> 
+                }
+l.247 2
+        & 310\rightarrow112\rightarrow311\rightarrow500 & 311\rightarrow109\...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-[6]
-Package epstopdf Info: Source file: <figures/marginplot.eps>
-(epstopdf)                    date: 2017-02-01 19:49:05
-(epstopdf)                    size: 1836706 bytes
-(epstopdf)             Output file: <figures/marginplot-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-01 19:51:42
-(epstopdf)                    size: 681663 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/marginplot-eps-conv
-erted-to.pdf figures/marginplot.eps>
-(epstopdf)             \includegraphics on input line 231.
-Package epstopdf Info: Output file is already uptodate.
- <figures/marginplot-eps-converted-to.pdf, id=33, 793.96625pt x 433.62pt>
-File: figures/marginplot-eps-converted-to.pdf Graphic file (type pdf)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.247 2 & 310\rightarrow
+                        112\rightarrow311\rightarrow500 & 311\rightarrow109\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-<use figures/marginplot-eps-converted-to.pdf>
-Package pdftex.def Info: figures/marginplot-eps-converted-to.pdf used on input 
-line 231.
-(pdftex.def)             Requested size: 469.75502pt x 256.5614pt.
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.247 ...ghtarrow112\rightarrow311\rightarrow500 &
+                                                   311\rightarrow109\rightar...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.247 ...ghtarrow112\rightarrow311\rightarrow500 &
+                                                   311\rightarrow109\rightar...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+! Missing } inserted.
+<inserted text> 
+                }
+l.247 ...ghtarrow112\rightarrow311\rightarrow500 &
+                                                   311\rightarrow109\rightar...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-[7 <./figures/matrixplot-eps-converted-to.pdf>] [8 <./figures/marginplot-eps-co
-nverted-to.pdf>] (main.bbl [9]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
-) [10] (main.aux) ) 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.247 ...htarrow311\rightarrow500 & 311\rightarrow
+                                                  109\rightarrow312\rightarr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.248 3
+        & 311\rightarrow117\rightarrow309\rightarrow500 & 327\rightarrow120\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.248 3
+        & 311\rightarrow117\rightarrow309\rightarrow500 & 327\rightarrow120\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.248 3
+        & 311\rightarrow117\rightarrow309\rightarrow500 & 327\rightarrow120\...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.248 3 & 311\rightarrow
+                        117\rightarrow309\rightarrow500 & 327\rightarrow120\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.248 ...ghtarrow117\rightarrow309\rightarrow500 &
+                                                   327\rightarrow120\rightar...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.248 ...ghtarrow117\rightarrow309\rightarrow500 &
+                                                   327\rightarrow120\rightar...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.248 ...ghtarrow117\rightarrow309\rightarrow500 &
+                                                   327\rightarrow120\rightar...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.248 ...htarrow309\rightarrow500 & 327\rightarrow
+                                                  120\rightarrow312\rightarr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.249 4
+        & 312\rightarrow112\rightarrow311\rightarrow500 & 314\rightarrow103\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.249 4
+        & 312\rightarrow112\rightarrow311\rightarrow500 & 314\rightarrow103\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.249 4
+        & 312\rightarrow112\rightarrow311\rightarrow500 & 314\rightarrow103\...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.249 4 & 312\rightarrow
+                        112\rightarrow311\rightarrow500 & 314\rightarrow103\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.249 ...ghtarrow112\rightarrow311\rightarrow500 &
+                                                   314\rightarrow103\rightar...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.249 ...ghtarrow112\rightarrow311\rightarrow500 &
+                                                   314\rightarrow103\rightar...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.249 ...ghtarrow112\rightarrow311\rightarrow500 &
+                                                   314\rightarrow103\rightar...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.249 ...htarrow311\rightarrow500 & 314\rightarrow
+                                                  103\rightarrow314\rightarr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.250 5
+        & 331\rightarrow112\rightarrow311\rightarrow500 & 344\rightarrow109\...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.250 5
+        & 331\rightarrow112\rightarrow311\rightarrow500 & 344\rightarrow109\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.250 5
+        & 331\rightarrow112\rightarrow311\rightarrow500 & 344\rightarrow109\...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.250 5 & 331\rightarrow
+                        112\rightarrow311\rightarrow500 & 344\rightarrow109\...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.250 ...ghtarrow112\rightarrow311\rightarrow500 &
+                                                   344\rightarrow109\rightar...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.250 ...ghtarrow112\rightarrow311\rightarrow500 &
+                                                   344\rightarrow109\rightar...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.250 ...ghtarrow112\rightarrow311\rightarrow500 &
+                                                   344\rightarrow109\rightar...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.250 ...htarrow311\rightarrow500 & 344\rightarrow
+                                                  109\rightarrow326\rightarr...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \endtemplate 
+l.251 \hline
+            
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.251 \hline
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.251 \hline
+            
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[6] (main.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [7] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 3701 strings out of 493329
- 57541 string characters out of 3136424
- 125449 words of memory out of 3000000
- 7171 multiletter control sequences out of 15000+200000
- 17737 words of font info for 37 fonts, out of 3000000 for 9000
+ 3679 strings out of 493329
+ 56836 string characters out of 3136424
+ 128457 words of memory out of 3000000
+ 7152 multiletter control sequences out of 15000+200000
+ 20907 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,1378b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.e
-nc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (10 pages, 1274096 bytes).
+ 43i,10n,46p,2323b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
+c}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on main.pdf (7 pages, 223346 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

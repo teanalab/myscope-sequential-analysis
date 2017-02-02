@@ -1,7 +1,5 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
 The style file: vancouver.bst
+I found no \citation commands---while reading file main.aux
 Database file #1: references.bib
-Warning--empty pages in piwowar2008identifying
-Warning--empty author and editor in morton2005opennlp
-Warning--missing publisher in morton2005opennlp
-(There were 3 warnings)
+(There was 1 error message)

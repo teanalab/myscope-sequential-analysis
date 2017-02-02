@@ -9,249 +9,266 @@
 \begin{document}
 
 
-\title{Comparison of clinical trial with the results obtained from EHRs along with missing value analysis}
+\title{Leverage machine learning and textual data mining methods for the classification of clinical interview fragments and their sequences}
 
-\author{Mehedi Hasan, BS$^{1}$, Alexander Kotov, PhD$^{1}$, Rick Krajenta, BS$^{2}$, Melody J. Eide, MD, MPH$^{2,3}$, Christine C. Johnson, PhD, MPH$^{4}$}
+\author{Mehedi Hasan, BS$^{1}$, Alexander Kotov, PhD$^{1}$, April Carcone, PhD$^{2}$, Sylvie Naar-King, PhD$^{2}$}
 
 \institutes{
-$^1$Department of Computer Science, Wayne State University, Detroit, Michigan; 
-$^2$Departments of Biostatistics and Research Epidemiology,
-$^3$Department of Dermatology, 
-$^4$Department of Public Health Science, Henry Ford Health System, Detroit, Michigan\\
+$^1$Department of Computer Science,  
+$^2$Pediatric Prevention Research Center, Wayne State University, Detroit, Michigan\\
 }
 
 \maketitle
 
 \noindent{\bf Abstract}
-\textit{This study compared the PLCO survey response with the results obtained from electronic health records. Our study also explored the missing data problem and offer advice for dealing with missing data. To extract clinical information, we built an integrated information extraction system that leveraged several publicly available clinical NLP and information extraction tools. Experimental results showed the significant difference between these two results, while extraction results achieved 91.2\% to 100\% accuracy. The structure of missing values was analyzed with visualization tools implemented in R-package. We observed MAR situation for certain variables such as ``quit time'', ``smoking duration'', and ``pack-year smoked''. These results indicate that EHR data contained sufficient information can be used directly for certain research. Besides that, a clinical trial might be suffered by missing values or biasing or noise occurred during the trials. These problems can be resolved with EHRs in combination with properly addressing missing values.}
+\textit{This study examines the effectiveness of state-of-the-art supervised machine learning methods for the task of automatic annotation of fragments of clinical interviews in conjunction with sequential analysis of that annotation. We used a collection of motivational interview transcripts consisting of 11,353 utterances, which were manually annotated by two human coders as a golden standard, and experimented with state-of-art classifiers, including Na\"{i}ve Bayes, J48 Decision Tree, Support Vector Machine (SVM), Random Forest (RF), AdaBoost, DiscLDA, Conditional Random Fields (CRF) and Convolutional Neural Network (CNN) in conjunction with lexical, contextual (label of the previous utterance) and semantic (distribution of words in the utterance across the Linguistic Inquiry and Word Count dictionaries) features. We found out that, when the number of classes is large, the performance of the CNN and CRFs is inferior to SVM. Among all classifiers using only lexical features, SVM achieved the highest classification accuracy of 70.8\%, 61\% and 53.7\%, when interview transcripts were annotated with the codebooks consisting of 17, 20 and 41 codes, respectively. Using contextual and semantic features, as well as their combination, in addition to lexical ones improved the accuracy of SVM for annotation of utterances in motivational interview transcripts with a codebook consisting of 17 classes to 71.5\%, 74.2\% and 75.1\%, respectively. We also used first order markov model that achieved 68.03\% accuracy for the classification of sequence of behavioral codes extracted from the above dataset. Therefore, our results demonstrate the potential of using machine learning  and textual data mining methods in conjunction with semantic and contextual features for automatic annotation of clinical interview transcripts  and their sequences with near-human accuracy.}
 
 
 \section*{Introduction}
-Electronic health records (EHRs) are increasingly being used to document and store large amounts of clinical information \cite{jha2009use}. They replaced traditional paper-based systems in many healthcare organizations and became a vast data sources which can facilitate clinical research and studies to ultimately improve healthcare quality \cite{blumenthal2010launching, erickstad2011use, lau2011use}. Much of the available clinical data are in narrative form as a result of transcription of dictations, direct entry by providers, or use of speech recognition applications. Comparing to structured data, free text is a more conventional way in the health care environment to express concepts and events. However, free text is very challenging for searching, summarization, decision-support, or statistical analysis. To reduce medical errors, improve health care quality, and enable secondary use of EHRs, information extraction (IE), which structures and encodes clinical information stored in free text, is necessary. However, traditional natural language processing (NLP) tools are not designed for the fragmented free text found in narrative clinical records; therefore, they do not perform well on this type of data. 
+In this study, our analysis have two directions: automatic annotation and sequential data analysis. Annotation (or labeling) of fragments of clinical text with the categories (or labels, codes) from a predefined codebook is an integral part of qualitative research. It can also be viewed as classification of textual fragments into a predefined number of categories (classes). Textual annotation has been traditionally performed manually by trained coders, which is a tedious, costly and time-consuming process. Furthermore, manual annotation increases the likelihood of errors due to coder fatigue and bias associated with human subjectivity. To automate tedious cognitive tasks such as classification, supervised machine learning methods have been recently proposed. Although these methods have been shown to be successful at binary (two-class) classification \citep{40,41} (e.g. classifying textual fragments as neutral or opinionated), we are not aware of any prior studies reported in the literature that evaluate their performance for textual classification tasks involving large number of classes. Such tasks, however, are fairly common in clinical setting (e.g. annotation of clinical interviews, assignment of ICD-9/10 codes to patient records). To address this limitation, in this paper we propose contextual and semantic features and present the results of an extensive experimental evaluation of state-of-the-art supervised machine learning methods in conjunction with lexical and the proposed features for the task of automatic annotation of utterances in clinical interview transcripts with the codebooks consisting of large number of classes. Our study provides a guideline for clinical informatics researchers and practitioners, who consider an option of using machine learning methods for automatic annotation of clinical text in their projects.
 
-In the past decade, several different techniques have been developed to extract information, from simple pattern matching to complete processing methods based on symbolic information and rules or based on statistical methods and machine learning. Many prior natural language processing (NLP) studies in the clinical domain have used regular expressions in designing their NLP solutions \cite{stenner2012paste,piwowar2008identifying,denny2009identifying, mccart2012using,xu2011facilitating,matheny2009detection,zeng2006extracting,huang2007novel}. These regular expressions are typically created by software developers working with domain experts. One of the important regular expression based work is NegEx \cite{chapman2001simple}. This is because significant portion of medical text is negated in electronic health records. NegEx depends on a list of phrases that indicate the absence of a particular medical condition such as disease or symptom to negate the conditions within a window of five words or phrases. 
+Annotation of clinical interview transcripts to distinguish different behavior types is an important part of clinical research aimed at designing effective interventions for many conditions and disorders. In this paper, we focus on the transcripts of Motivational Interviews with obese adolescents (teens) and their caregivers. Childhood obesity is a serious public health concern in the United States and worldwide. Recent estimates indicate that approximately one third (31.8\%) of US children age 2-19 years are overweight and 16.9\% are obese \citep{01}. Adolescents who are obese are likely continue to be obese in adulthood and have a greater risk of heart disease, type 2 diabetes, stroke, cancer, and osteoarthritis \citep{02}. Therefore, there is a need for informatics-based methods to facilitate development of effective interventions for childhood obesity. One approach to designing intervention is Motivational Interviewing (MI), an evidence-based counseling technique to increase intrinsic motivation and self-efficacy for health-related behavior change \citep{03,04}. The goal of a MI counseling session is to encourage patients to explore their own desires, ability, reasons, need for and commitment to the targeted behavior change. These statements, referred to as ``change talk'' (or CT), consistently predict actual behavior change \citep{05} that can be sustained for as long as 34 months after an interview \citep{06}. The process of establishing causal linkages to identify effective communication strategies for eliciting change talk and commitment language in MI involves a resource-intensive qualitative coding process. First, clinical interviews are transcribed and then each utterance is manually annotated with a set of codes from a pre-defined codebook designating specific behavior types. Training human coders to reliably and accurately assign codes to textual fragments requires a large investment of manpower, time and money. For example, in a recent MI study \citep{07}, training coders to reliability took about four months and, once trained, coders required five hours to code every recorded hour. A similar study reported requiring 60 hours of training over six weeks to attain coder reliability, and the actual coding involved two coding passes and six coders \citep{08}.
 
-An extended version of NegEx called ConText \cite{harkema2009context} was proposed to determine three contextual features including negation (negated, affirmed), temporality (historical, recent, hypothetical) and experiencer (patient, other). To encode these contextual features, several NLP systems have also been designed to encode detailed information from clinical reports, such as MedLEE \cite{friedman2000broad}, MPLUS \cite{christensen2002mplus}, and MedSyndikate \cite{hahn2002medsyndikate}.
+Automatic annotation of patient utterances in clinical communication is a challenging task, since patients usually come from a variety of cultural and educational backgrounds and
+their language use can be quite different \citep{09}. This problem is exacerbated when the interviews are conducted with children and adolescents due to their tendency to use
+incomplete sentences and frequently change subjects.
 
-However, health information text extraction (HITEx \cite{zeng2006extracting}) was developed to extract diagnoses and smoking status. Statistics shows that smoking causes nearly one of every five deaths in the United States each year. Therefore, extraction of patients smoking status is necessary for clinician and researcher. Mayo Clinic developed an NLP System named clinical text analysis and knowledge extraction system (cTAKES \cite{savova2010mayo}) to extract clinical information from medical domain. Additional modules have been implemented within cTAKES recently \cite{savova2008mayo} for identification of patient smoking status.   
- 
-While substantial progress has been made in the development of NLP tools, no information extraction (IE) system is perfect for extracting all kind of variables in different domain, and still suffer from various weaknesses. In this study, we built an integrated system that leveraged several existing NLP components. Experimental results shows that our system performed well in biomedical domain. 
+Previous quantitative studies of clinical conversation have resulted in creation of Generalized Medical Interaction Analysis System (GMIAS) \citep{10}, which uses a codebook with generic hierarchical categories. The small-size codebook in Comprehensive Analysis of the Structure of Encounters System (CASES) \citep{11} was designed to annotate several
+meta-discursive aspects of medical interviews, such as assigning ``ownership'' of topics and partitioning them into distinct segments (speech acts). It was also shown that the
+fragments of transcripts of routine outpatient visits consisting of several speech acts coded using GMIAS and CASES can be annotated as ``information giving'' and ``requesting
+information'' \citep{12}. Other related previous studies focused on categorizing assertions of medical problems in clinical narrative into 5 classes (present, absent, possible,
+hypothetical, conditional and associated with someone else) using SVM \citep{13} and annotating the utterances in hemodialysis phone dialogue with 3 categories using AdaBoost
+classifier \citep{14}. The present study reports the results of comprehensive evaluation of 8 state-of-the-art classifiers (Na\"{i}ve Bayes \citep{15,16,17}, Support Vector Machine
+\citep{18,19}, Conditional Random Fields \citep{21,22}, J48 \citep{23}, AdaBoost \citep{24}, Random Forest \citep{42}, DiscLDA \citep{25} and Convolutional Neural Network
+\citep{38}) for the task of annotating clinical interviews with a codebook, consisting of a large number of classes. We also propose and experimentally evaluate two novel features
+for this task: contextual features based on the label of the preceding textual fragment and semantic features based on the distribution of words in the annotated fragment over a linguistic lexicon.
 
-In this study, we mainly focus on findings from electronic health records and then compare the result with PLCO clinical trial. We also describe missing patterns observed in our experiment. This paper reports that which information are sufficiently available in EHRs for conducting clinical research. It also states that which of the variables are noisy in clinical trials. These findings are significant in clinician and researcher who are conducting their research with clinical trials or EHRs. To the best of our knowledge, there is no report that compare the results between response from clinical trials and NLP-based extraction from EHRs. 
+Codes automatically assigned to transcripts using classification models presented above allow to abstract away from the raw text  of the interviews and unequivocally establish the casual relationship between provider communication and client change talk (CT). Two recent studies \citep{46,47} have examined causality in treatment communication sequences using sequential analysis techniques to assess the probability that CT actually follows specific provider behaviors. Both studies found that provider use of MICO communication behaviors was followed by CT more frequently than expected and followed by client counter-CT (CCT; client statements against making changes) less frequently than expected by chance. Again, while suggestive of important PPC sequences, these studies were conducted among adults in treatment for alcohol abuse. In this project, we used a probabilistic model, in particular, first order markov model for the analysis of sequential data to determine provider-patient communication sequences that are likely to translate into change talk and commitment language.
+
+
+\begin{table}[htb!]
+\caption{\textbf{Distribution of utterances over 16 classes in the caregiver dataset.}}    
+\label{table:01}
+\centering
+\begin{tabular}{lp{7cm}rr}
+\hline
+\hline
+Code  & Description & Utterance & \% \\
+\hline
+209 &	Caregiver Change Talk, negative &	297 & 6.82 \\
+212 &	Caregiver Change Talk, positive &	1107 & 25.40 \\
+232 &	Low Uptake, positive &	518 & 11.89 \\
+235 &	High uptake &	231 & 5.30 \\
+301 &	Structure Session &	206 & 4.73 \\
+302 &	General Information, positive &	309 & 7.09 \\
+305 &	Emphasize Autonomy &	148 & 3.40 \\
+306 &	Closed question, Elicit Feedback &	50 & 1.15 \\
+307 &	Support &	108 & 2.48 \\
+308 &	Affirm &	289 & 6.63 \\
+315 &	Reflect, change talk positive, about caregiver &	659 & 15.12 \\
+329 &	Self-disclose &	44 & 1.01 \\
+330 &	Statement, other &	121 & 2.78 \\
+331 &	Open-ended question, elicit change talk positive &	200 & 4.59 \\
+343 &	Open-ended question, target behavior neutral &	33 & 0.76 \\
+344 &	Open-ended question, elicit barriers &	38 & 0.87 \\
+\hline
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[htb!]
+\caption{\textbf{Distribution of sequences over the adolescent interview session}} 
+\label{table:0001}
+\centering
+\begin{tabular}{lrr}
+\hline
+\hline
+Sequence type  & \# of Sequences & \% \\
+\hline
+Successful & 880 & 82.08\% \\
+Unsuccessful & 192 & 17.92\% \\
+Total & 1072 & 100\% \\
+\hline
+\hline
+\end{tabular}
+\end{table} 
 
 \section*{Methods}
 \subsection*{\textit{Data collection}}
-Four hundred and fifty thousand free-text EHRs of 11,968 patients were obtained from Henry Ford Health System, who participated in the PLCO clinical trial. Out of this 11,968 patients, 1000 patients were randomly selected for this study. The PLCO trial began enrolling participants in November 1993 and completed recruitment of 154,938 subjects over different health systems in June 2001. Men and women aged from 55 to 74 years participated in the PLCO trial at ten screening centers nationwide with balanced randomization to intervention and control arms. All participants received a posterior anterior view chest x-ray for lung cancer screening. A baseline epidemiological questionnaire and a supplemental questionnaire (SQ) were administered as part of the PLCO surveys. The obtained patient EHRs consist of different types of clinical documents including clinical practice guidelines, diagnostic reports and discharge summaries.
+The golden standard for evaluation of machine learning methods was created based on the transcripts of motivational interviews conducted by the clinicians at the Pediatric
+Prevention Research Center (PPRC) of Wayne State University. Each interview is comprised of two parts: conversation of a clinician with an adolescent followed by a conversation of
+a clinician with the adolescent's caregiver. All adolescents in this study were between the ages of 12 and 17 (M = 14.7, SD = 1.63) and most were female (n = 27). Most caregivers
+were biological mothers (n = 36), who were married or living with a partner (n = 25). The median family income was \$16,000--\$21,999 ranging from less than \$1,000 to
+\$50,000--\$74,999. The audio recordings of the interviews were first transcribed and segmented into utterances belonging to adolescents, caregivers, and counselors, preserving the
+sequence of utterances. Transcripts were then manually annotated by trained human coders according to MYSCOPE \citep{07}, a specialized codebook including a large number of
+behavior codes, which was developed by an interdisciplinary team including a clinical psychologist, a nutrition scientist, a communication scientist, a linguist and a community
+health worker specifically for annotating motivational interviews with obese adolescents. A primary coder independently coded interview sessions and a secondary coder co-coded a
+randomly selected 20\% of the transcripts to monitor reliability ($\kappa$ = 0.696) \citep{07}. The MYSCOPE codebook contains a total of 115 different codes that are grouped into
+the youth, caregiver, and counselor code groups. The experimental datasets for this work were constructed based on the transcripts of 37 motivational interview sessions, which
+include a total of 11,353 segmented and annotated utterances. These utterances have been further partitioned into two subsets based on the structure of motivational interview
+sessions: one dataset that includes all utterances from the adolescent sessions (6,579 samples) and the other dataset that includes all utterances from the caregiver sessions
+(4,774 samples). A fragment of an adolescent session transcript is presented in Table~\ref{table:06}.
+
+\begin{table*}[htb]
+\caption{\textbf{Fragment of the annotated transcript of a dialogue between a counselor and an adolescent.}}    
+\label{table:06}
+\centering
+\begin{tabular}{lp{3.6cm}lp{8cm}}
+\hline
+\hline
+Annotation  & Description & Speaker & Text \\
+\hline
+331 &	Open-ended question, elicit change talk positive &	Counselor &	do you feel like making healthier choices for your snacks and your meals is something you would be able to do ? mm-hmm meaning is that food available for you ? \\
+117 &	Low Uptake, positive	& Adolescent &	Yes \\
+301 &	Structure Session	& Counselor &	okay and thats an important thing for us to think about cause i would not want to help you come up with a plan that you would not be able to do without somebody else help so the last part of your plan is how somebody could be supportive to you meaning how they can help you be successful and so we should choose somebody who you feel like is around often enough \\
+112 &	Change Talk positive	& Adolescent &	my um aunt \\
+301 &	Structure Session	& Counselor &	okay so lets stick something my aunt can do \\
+112 &	Change Talk positive &	Adolescent &	she could when i am doing when i am eating something that i should i could not be eating but so i can choose something healthy she could tell me not to eat it \\
+309 &	Affirm, low &	Counselor &	okay that sounds like a really great suggestion \\
+\hline
+\hline
+\end{tabular}
+\end{table*}
+
+To conduct a detailed analysis of performance of classification methods, we used the following two-stage process to create the codebooks with different number of codes for
+adolescent and caregiver sessions. In the first stage, we merged conceptually similar behavior codes as well as the codes with similar data distributions, while in the second stage, we eliminated the codes with insufficient data samples. In case of the adolescent sessions, we started with 55 adolescent session-specific codes and, after merging the codes with subtle differences (e.g. converting valiances of change talk CHT+1, CHT+2 and CHT+3 into CHT+), obtained a codebook with 41 classes. We further reduced this codebook to 20 classes after merging 21 classes with similar sample distributions. After eliminating the codes that had less than 10 data samples (to ensure that there can be at least one sample of each class in each fold when using 10-fold cross validation experimental design), we obtained a third codebook with 17 codes. Using the same approach, we created the codebooks containing 58, 19, and 16 caregiver session-specific codes. Table~\ref{table:01} shows the distribution of utterances over 16 classes in the caregiver session transcripts. As follows from Table~\ref{table:01}, the distribution of utterances over classes is highly imbalanced even for the codebook of the smallest size, which is fairly common for clinical text. To create the gold standard for our second experiment, we partitioned the adolescent transcripts into sequence of successful and unsuccessful codes which are ended with either negative or positive change talk and commitment language. Table~\ref{table:0001} depicts the distribution of PPC code sequences over the adolescent dataset.
+
+After creating the codebooks, we pre-processed the dataset using the Snowball stemmer available as part of the Weka \citep{26} machine learning toolkit\footnote{
+http://www.cs.waikato.ac.nz/ml/weka/}. We also found out that stopword removal decreased the performance of classification models for our task (e.g., in case of the codebook
+consisting of 17 classes, the accuracy of Na\"{i}ve Bayes decreased from 67\% to 47.10\%, while the accuracy of SVM decreased from 70.76\% to 55.26\%). A likely reason is that,
+although negations are typically considered as stopwords, they are fairly important clues for inferring certain behavior types (e.g., removing the stopword ``not'' completely
+transforms the meaning of a phrase ``not great'').
 
 \subsection*{\textit{System overview}}
-We built an integrated information extraction system that leveraged several publicly available clinical NLP and information extraction tools. In particular, our system consists of the following components: 1) A sentence boundary detection program, which was developed at OpenNLP \cite{morton2005opennlp}; 2) an existing corpus based section identification program (SecTag \cite{denny2009evaluation}); 3) regular expression based NLP program that utilizes the clinical Text Analysis and Knowledge Extraction System (cTAKES \cite{savova2010mayo}) and contextual feature extraction system (ConText \cite{harkema2009context}); 4) post processing program that maps our results into PLCO compareable format. Figure \ref{fig:extraction} shows the architecture of our system. 
+The pipeline consists of two stages: training and testing. Prior to the training stage, we preprocess the collected clinical interview transcripts by performing stemming, punctuation removal, word segmentation and tokenization. Features are then extracted from the preprocessed data. During this stage, previous label and LIWC features are used in conjunction with the lexical features to create the feature vectors. After that, classifiers are trained on the feature vectors extracted from the training samples and their associated annotations. In the testing stage, after creation of feature vectors, the previously trained classifiers predict the label of each utterance in the testing sample. Finally, performance of different classifiers is evaluated by calculating standard metrics such as precision, recall, F-score (F1), kappa measure and accuracy. Specifically, we evaluated the performance of the following state-of-the-art supervised machine learning methods.
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.5\textwidth]{figures/extraction.eps}
-\caption{An architecture of the integrated system for information extraction from free-text clinical narrative used in this study.}
-\label{fig:extraction}
+\textbf {Markov Model}: In probability theory, a markov model \citep{45} is a stochastic model used to model randomly changing systems where it is assumed that future states depend only on the present state and not on the sequence of events that preceded it (that is, it assumes the markov property). Generally, this assumption enables reasoning and computation with the model that would otherwise be intractable. For the sequential analysis, we built two markov models $M$ and $\overline{M}$ describing provider strategies and patient responses in case of successful ($M$) and unsuccessful ($\overline{M}$) motivational interviews. A markov model $M$ can be represented as a weighted directed graph $G = (V, E, p)$, in which:
+
+\begin{itemize}
+\item $V = \{CML+, CHT+, CHT-, T-AMB, CCT, BLT, LUP+, LUP-, HUP-W, ...\}$ is a set of vertices, consisting of possible youth and counselor MI behavior codes;
+\item $E \subseteq V \times V$ is a set of edges corresponding to posssible transitions from one MI behavior code to the other in a sequence;
+\item $p_M:E\rightarrow[0...1]$ is a function that assigns probability $p(c_i|c_j)$ to an edge between the MI behavior codes $c_i$ and $c_j$ based on maximum likelihood estimator:
+
+\begin{equation}
+P_M(c_j|c_i) = \frac{n_{c_i,c_j}}{n_{c_i}}
+\end{equation}
+
+\end{itemize}
+
+where $n_{c_i,c_j}$ and $n_{c_i}$ are the number of times a transition between the MI behavior codes $c_i$ and $c_j$ and the code $c_i$ have been observed in the training data. Given a markov model $M$ (such that $S\subseteq V$), a sequence of MI behavior codes $S = \{C_1,...,C_N\}$ have been generated from a markov model $M$ is:
+
+\begin{equation}
+P_M(S) = \prod_{i=2}^N p_M(c_i|c_1,\dots,c_{i-1})=\prod_{i=2}^N p_M(c_i|c_{i-1})
+\end{equation}
+
+Success of a given motivational interview, given a sequence of MI behavior codes corresponding to it, can be predicted based on the following formula:
+
+\begin{equation}
+p(S\rightarrow CT) = \log\left(\frac{P_M(S)}{P_{\overline M}(S)}\right)= \sum_{i=2}^N p_M(c_i|c_{i-1})-\sum_{i=2}^N p_{\overline M}(c_i|c_{i-1})
+\end{equation}
+
+if $p(S\rightarrow CT) > \delta $, where $\delta$ is experimentally defined threshold, the interview transcript (or a portion of it) is predicted to result in CT. We experimentally determined the value of $\delta$ to 0.3 which provides acceptable accuracy with minimum false positive rate. Figure\ref{fig:delta} illustrates the characteristics of proposed model by varying the value of $\delta$.  
+
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[width=0.70\textwidth]{figures/deltadata.jpg}
+    \caption{\textbf{Characteristics of proposed markov model by varying the value of $\delta$}}
+    \label{fig:delta}
 \end{figure}
-
-\textbf {Sentence splitter}: Sentence detection is important and necessary task for our study because we used sentence as the basic unit of variable extraction. As sentence splitting is at the core of a many NLP activities, it is provided by most NLP frameworks and libraries. We used an open source Java tools openNLP for identifying the sentence boundary. The OpenNLP sentence detector cannot identify sentence boundaries based on the contents of the sentence. However, this tools can detect that a punctuation character marks the end of a sentence or not. In this sense, a sentence is defined as the longest white space trimmed character sequence between two punctuation marks. This rule is not applicable for the first and last sentence. The first non whitespace character is assumed to be the begin of a sentence, and the last non whitespace character is assumed to be a sentence end.
-
-\textbf {Section identification}:
-Electronic health records are often divided into sections, or segments, such as ``past medical history'', ``family history'', ``assessment and plan'', etc. One can gain better understanding of clinical documents by recognition of the section in which a concept lives. For instance, both a ``past medical history'' and the ``family history'' sections can contain a list of diseases, but the context describes very different import to the patient about whom the note was written. We used SecTags for accomplishing the following three tasks: 1) excluding false positive by recognizing experiencer (patient or family member) mentioned in the family history sections; 2) determine scope of the temporal information, e.g. all events mentioned in the past medical history were historical event; 3) extract demographic information about patient from the 1st section.
-
-\textbf {NLP program}:
-As follows from Figure 1, a regular expression based NLP program was developed that utilizes the clinical Text Analysis and Knowledge Extraction System (cTAKES), which is an open source NLP and IE framework developed by the Mayo Clinic for information extraction from EHRs. This tool is comprised of several important components: sentence boundary detector, tokenizer, part-of-speech tagger, shallow parser, named entity recognizer, concept mapper, negation and status attribute detector. These components were trained on clinical text to create rich linguistic and semantic annotations of EHRs. In our study, concept mapping is used to annotate several important concepts, such as sign and symptoms, disease and disorder, lab procedure, negation and other clinical concepts.
-
-Although most components of cTAKES have been shown to achieve good performance on a variety of NLP tasks, it has some limitations  \cite{savova2010mayo} related to certainty detection and temporal resolution. For this reason, we used ConText and semantic rules to identify temporal information. ConText is an expansion of NegEx. It relies on the same basic algorithm but applies different term lists and different windows of scope depending on the contextual feature being annotated.
- 
-In total, eighteen variables were extracted in this study. Since demographic variables are generally mentioned in the header or 1st section of the EHRs, we used this section for the extraction of age, sex and race. Age was determined by calculating the time period between ``date of birth'' and ``visit date or report date'', which were annotated by cTAKES. Sex and race were extracted by using simple regular expression in conjunction with a list of trigger terms such as male, female, white, african american etc. It was also confirm that the scope of the trigger term is outside the family member or relatives. We applied exactly same patterns for the extraction of ``COPD history'', ``emphysema'', ``asthma'', ``pneumonia'' and ``prior cancer''. At first, we find the triggered term or UMLS concept we are interested in. Then, we checked that the concept was not negated or fall into different experiencer such as family member. Finally, we confirmed the certainty of concept so that it was not uncertain or hypothetical such as ``suspected for pneumonia'', ``pneumonia vaccine'', etc. We also applied the semantic rules to extract ``lung cancer family history'' and ``chest x-ray in the past three years''. In addition to that, we  checked the experiencer for ``lung cancer family history'', and compared the ``visit date or report date'' with the x-ray date.
-
-\begin{table}[h!]
-\centering
-\caption{Example of information extraction rules.}
-\label{tab:rule}
-  \begin{tabular}{|l|l|}
-  \hline
-    \textbf{Rule}  & \textbf{Example} \\ \hline    
-    
- quit smoking \textless duration\textgreater\hspace{1mm}ago or quit smoking since \textless time\textgreater & quit smoking 30 years ago or quit smoking \\
- or quit smoking from \textless time\textgreater &  since 1960 or quit smoking from 1880 \\ \hline
-  
- \textless amount\textgreater\hspace{1mm}(cigarettes\textbar pack of cigarettes) per (day\textbar week\textbar month) & 10-15 cigarettes per day or \\
- or \textless amount\textgreater\hspace{1mm}(pack\textbar pack-) year of smoking history & 30 pack year of smoking history \\ \hline
-  
- (smoking\textbar smokes\textbar smoked\textbar) for \textless duration\textgreater\hspace{1mm} or & he has been smoking for 45 years or \\
- (smoking\textbar smokes\textbar smoked\textbar) (since\textbar from) \textless year\textgreater\hspace{1mm} &  he has been smoking since 1965 \\ \hline
- 
-  \end{tabular}
-\end{table}
-
-Smoking status is extracted using a rule based method \cite{cohen2008five, uzuner2008identifying}, which consists of two steps: hot-spot identification and post-processing rules. At first, we find the hot-spots based on keywords and sections (in many cases, smoking status was found in history and demographic sections). When a document containing one of the terms ``smok'', ``tob'', ``packs'', ``cigar'' etc. was found, a window of text up to 100 characters before and after those terms is considered as a hot-spot. Rules are then used to classify smoking status based on temporal information. After extracting the smoking status, we extracted associated information such as smoking duration, quit time and pack-year history. Several rules were employed to extract clinical variables, some of which are shown in Table~\ref{tab:rule}.
-
-\textbf {Post processing and filter}:
-To allow direct comparison between the extracted results from EHRs and PLCO results, post processing of the proposed system's output stage was required. The output of NLP program is a set of pivot text snippets such as ``two packs of cigarettes per day'', ``quit smoking in 1993'', ``smoked from the age of 18'', etc. These text fragments are then parsed to generate numeric values. Finally, the output of post-processing was filtered by keeping the latest information, for instance, a non-smoker can be a smoker after few months. To generate numeric values for statistical analysis, simple regular expression is used together with a list of terms such as ``half'', ``two'', ``one and half'', etc.
-
-\subsection*{\textit{Statistical inference and treatment of missing values}}
-Missing data frequently occur in electronic health records, which is a very common problem in data mining and statistical inference. According to Little and Rubin \cite{little2014statistical,rubin1976inference}, missing data can be categorized into three types: i) missing completely at random (MCAR)-the absence of a data element is not associated with any other value in the data set, observed or missing; ii) missing at random (MAR)-this is a less restrictive assumption than MCAR; the probability of data being missing depends only on the observed values in the data set, not on unobserved data. The implied information of missingness can be inferred from observed values; ii) not missing at random (NMAR)-the condition is opposite of MAR. The probability of data being missing depends on unobserved (missing) data. Under this circumstance, the missing information cannot be inferred from observed values. 
-
-In order to improve the quality of research, it is important to understand the kind of missing data present in EHRs. However, missing values mechanisms are difficult to identify, because it would require the knowledge of the missing values themselves \cite{little2014statistical}. Naturally, MNAR is very difficult to be detected. This is even more complicated in case of multivariate data, outliers, inhomogeneous data or very skewed data distribution. In this paper, we explained the missingness in terms of the above mechanisms with matrix and scatter plots. Several approaches have been used to deal with missing data. The methods for coping with missing values can be grouped into three main categories \cite{little2014statistical}: inference restricted to complete data, imputation-based approaches, and likelihood-based approaches.
-
-The simplest and most common approach to handling missing values is to omit the cases with missing values and do the analysis based only on the complete cases. Data set obtained by the result of this process can be a biased sample of complete cases because the missing of data is not a random process (i.e. data is not always MCAR). Furthermore, excluding patients with missing data will lead to a loss in statistical power. 
-
-In imputation-based methods, the missing values are filled in and the resultant data can be analyzed as a complete data set. Imputation of missing data in the setting of MCAR will increase power but should not change the point estimates from those obtained with a complete case analysis. Therefore, it seems reasonable to perform imputations using EHR data under the assumption of MAR. Commonly imputed values are based on the value of known cases: the mean of the variable in either the whole data set or in select data subsets, or an estimated value from regression procedures on known variables. Multiple imputation methods, i.e., filling with more than one value, have been developed to avoid biasing the variances of imputed variables \cite{enders2006primer}.
-
-There exist approaches that derive a prediction model by inferring the model's parameters from the existing data, rather than imputing data where values are missing. Likelihood-based approaches are an example of these. They developed a model by attempting to find the set of model parameters that make the observed data most likely. The resulting system parameters can then be used as the base for future inferences. The expectation maximization (EM \cite{dempster1977maximum}) algorithm is commonly used for finding maximum likelihood estimates in the face of incomplete data.
 
 \subsection*{\textit{Evaluation methods}}
-The golden standard for the evaluation of information extraction methods was created based on the EHRs collected from Henry Ford Health Systems. Each patient comprised of several EHR documents. All EHRs were manually investigated by domain expert to find the values of target variables for each patient. Then, we compared the values of extracted categorical and non-categorical (continuous) variables with gold standard to evaluate the accuracy of IE. 
+To ensure the robustness of performance estimates, we used 10-fold cross validation for the annotation of clinical interview fragments, and 5-fold cross validation for the classification of sequence of behavior codes \citep{36} as an experimental design. The performance of different classifiers and feature sets was evaluated in terms of precision, recall, F1 score (F1), kappa measure and accuracy using weighted macro-averaging over folds.
 
 \section*{Results}
-We present the results and outcomes of our study regarding the performance of information extraction from EHRs and statistical significance between EHR extraction and PLCO survey response. \\
+Experimental evaluation of automatic annotation of clinical interview fragments and their sequences by using machine learning and probabilistic model included several dimensions:
+\begin{itemize}
+\item determining the performance of classifiers on the codebooks of different size;
+\item determining the effectiveness of the proposed contextual and semantic features.
+\item determining the performance of markov model in conjunction with determining PPC sequences that are most likely to translate into CT.
+\end{itemize}
 
-%We begin presentation of our experimental results with an analysis of the quality of extraction against PLCO survey re-sponses as well as the missing patterns in extracted and survey variables, and conclude with comparing the outcomes of lung cancer risk factors identification and prediction models on both datasets. Table 2 shows the distribution of data for both PLCO and EHRs.\\
+Since clinical researchers typically annotate caregiver and adolescent sessions separately, we first created two experimental datasets consisting of only adolescent and only caregiver session transcripts. Second, besides evaluating the accuracy of annotating adolescent and caregiver transcripts with the codebooks containing an entire set of codes, we also conducted a series of experiments with the codebooks of smaller sizes created as outlined above. Third, besides training and testing NB, SVM, CRF, Decision Tree, Boosting, DiscLDA, Random Forest and CNN classifiers using only lexical features, we also evaluated the effectiveness of the proposed contextual and semantic features.
 
-\begin{table}[h]
+Depending on the type of the interview transcript and the codebook size, SVM-AF achieves 3\%--9\% higher accuracy and 4\%--10\% higher F1 score than SVM and 4\%--10\% higher accuracy and 4\%--11\% higher F1 score than CRF, which highlights the importance of contextual and semantic features.
+
+\subsection*{\textit{Performance of Markov model in conjunction with determining PPC code sequences that are most likely translate into CT}}
+Since clinical researchers tried to increase the desire and ability of adolescent to change their current behavior to target behavior, we used sequence of successful and unsuccessful codes only from adolescent session for our sequential analysis. Summary of performance for the classification of sequential data is presented in Table~\ref{table:sequence}. 
+From Table~\ref{table:sequence}, it follows that our designed markov model works very well in terms of precision and achieves precision 0.7574 with F1-measure 0.7092. The strength of the model for the classification of each type of sequences is illustrated by providing the confusion matrix in Table~\ref{table:conf}. It also shows that successful patterns are identified more accurately compare to unsuccessful motivational interview sequences due to the imbalance of data.
+
+\begin{table}
+\parbox{.45\linewidth}{
 \centering
-\caption{Performance of information extraction from electronic medical record prepared with 1000 samples from the entire population.}
-\label{tab:result1}
-  \begin{tabular}{|l|l|l|l|l|l|}
-  \hline
-    \multirow{2}{*}{\textbf{Variables}}  & \multicolumn{2}{c|}{\textbf{Retrieved}}  & \multirow{2}{*}{\textbf{Not Retrieved (\%)}} & \multirow{2}{*}{\textbf{Accuracy}} \\ \cline{2-3}
-    
- & \textbf{Correct} & \textbf{Wrong (\%)}  &  &  \\ \hline    
-    
- Age & 998 & 2 (0.20\%) & 0 (0\%) & 0.998\\ \hline
- Sex & 975 & 7 (0.70\%) & 0 (0\%) & 0.975\\ \hline 
- Race & 999 & 1 (0.01\%) & 0 (0\%) & 0.999\\ \hline
- Lung cancer family history & 996 & 4 (0.40\%) & 0 (0\%) &  0.996\\ \hline
- COPD history & 987 & 13 (1.30\%) & 0 (0\%) & 0.987\\ \hline
- Chest x-ray in last 3 years & 1000 & 0 (0\%) & 0 (0\%)  & 1.000\\ \hline
- Emphysema & 994 & 6 (.60\%) & 0 (0\%) &  0.994\\ \hline
- Asthma & 995 & 5 (0.50\%) & 0 (0\%) &  0.995\\ \hline
- Prior cancer & 962 & 38 (3.80\%) & 0 (0\%) &  0.962\\ \hline
- Pneumonia & 982 & 18 (1.80\%) & 0 (0\%) & 0.982\\ \hline
- Hay fever & 999 & 1 (0.10\%) & 0 (0\%) &  0.999\\ \hline
- Smoking status & 912 & 88 (8.80\%) & 0 (0\%)  & 0.912\\ \hline
- Smoker status & 490 & 18 (3.53\%) & 2 (0.40\%) &  0.961\\ \hline
- Age at start smoking & 10 & 1 (5.26\%) & 8 (42.11\%) & 0.526\\ \hline
- Smoking amount (\# cigarettes per day) & 277 & 24 (7.62\%) & 14 (4.44\%) & 0.879\\ \hline
- Smoking duration & 191 & 16 (6.58\%) & 36 (14.81\%) & 0.786\\ \hline
- Quit time of former smoker & 241 & 6 (2.31\%) & 13 (5.00\%) & 0.927\\ \hline
- Pack-years smoked & 212 & 18 (6.84\%) & 33 (12.55\%) & 0.806\\ \hline 
- 
-  \end{tabular}
+\caption{\textbf{Performance of markov model for the classification of PPC code sequences}}
+\label{table:sequence}
+\begin{tabular}{ll}
+\hline
+\hline
+Metrics & Value \\
+\hline
+Accuracy &	0.6803 \\
+Precision &	0.7574 \\
+Recall & 0.6803 \\
+F1-Measure & 0.7092 \\
+\hline
+\hline
+\end{tabular}
+}
+\hfill
+\parbox{.45\linewidth}{
+\centering
+\caption{\textbf{Confusion matrix of proposed markov model for the classification of sequence of codes}}
+\label{table:conf}
+\begin{tabular}{llll}
+\hline
+\hline
+& Successful & Fail & Total\\
+\hline
+Successful & 642 & 242 & 884 \\
+Fail & 102 & 90 & 192 \\
+Total & 744 & 332 & 1076 \\
+\hline
+\hline
+\end{tabular}
+}
 \end{table}
 
-%\begin{table}[h]
-%\centering
-%\caption{Performance of information extraction from electronic medical record prepared with 1000 samples from the entire population.}
-%\label{tab:result1}
-%  \begin{tabular}{|l|l|l|l|l|l|}
-%  \hline
-%    \multirow{2}{*}{\textbf{Variables}}  & \multicolumn{2}{c|}{\textbf{Retrieved}}  & \multirow{2}{*}{\textbf{Not Retrieved}}   & \textbf{Missing in}  & \multirow{2}{*}{\textbf{Accuracy}} \\ \cline{2-3}
-%    
-% & \textbf{Correct} & \textbf{Wrong}  & & \textbf{EHR} &  \\ \hline    
-%    
-% Age & 998 & 2 & 0 & 0 & 0.998\\ \hline
-% Sex & 975 & 7 & 0 & 18 & 0.975\\ \hline 
-% Race & 977 & 1 & 0 & 22 & 0.977\\ \hline
-% Lung cancer family history & 996 & 4 & 0 & 0 & 0.996\\ \hline
-% COPD history & 987 & 13 & 0 & 0 & 0.987\\ \hline
-% Chest x-ray in last 3 years & 1000 & 0 & 0 & 0 & 1.000\\ \hline
-% Emphysema & 994 & 6 & 0 & 0 & 0.994\\ \hline
-% Asthma & 995 & 5 & 0 & 0 & 0.995\\ \hline
-% Prior cancer & 962 & 38 & 0 & 0 & 0.962\\ \hline
-% Pneumonia & 982 & 18 & 0 & 0 & 0.982\\ \hline
-% Hay fever & 999 & 1 & 0 & 0 & 0.999\\ \hline
-% Smoking status & 912 & 88 & 0 & 0 & 0.912\\ \hline
-% Smoker status & 490 & 18 & 2 & 490 & 0.980\\ \hline
-% Smoking start age & 10 & 1 & 8 & 981 & 0.991\\ \hline
-% Smoking amount (\# cigarettes per day) & 277 & 24 & 14 & 685 & 0.962\\ \hline
-% Smoking duration & 191 & 16 & 36 & 757 & 0.948\\ \hline
-% Quit time of former smoker & 241 & 6 & 13 & 740 & 0.981\\ \hline
-% Pack-years smoked & 212 & 18 & 33 & 737 & 0.949\\ \hline 
-% 
-%  \end{tabular}
-%\end{table}
+Two markov models are used to obtain top five most likely successful and unsuccessful motivational interviews that describing provider strategies and patient responses. Table~\ref{table:topsec} shows the top five successful and unsuccessful PPC code sequences.
 
-\subsection*{\textit{Performance of information extraction from EHRs}}
-Table~\ref{tab:result1} shows the performance of our system evaluated with the gold standard on the 1000 patients randomly selected from the 11,968 patients. Performance was the best with chest x-ray identification (100\%) and was good (approximately 99\% accuracy) for age, race, lung cancer family history, emphysema, asthma and hey fever. Results were above 90\% accurate for sex, COPD history, prior cancer, pneumonia, smoking status and smoker status, except smoking duration, smoking amount and pack-year smoked with 78.6\%, 87.9\% and 80.6\% accuracy, respectively. Our system performed worst when identifying ``age at start smoking''. However, the system unable to retrieved 0.40\%, 42.11\%, 4.44\%, 14.81\%, 5\% and 12.55\% information regarding the variables smoker status, age at start smoking, smoking amount, smoking duration, quit time of former smoker and pack-year smoked. The NLP program provides 8.80\%, 0.50\%, 3.8\%, 1.8\%, , 7.62\%, 3.53\% and 6.84\% incorrect result when identifying  smoking status, asthma, prior cancer, pneumonia, smoking amount, smoker status and pack-year smoked, respectively. \\
-
-\begin{table}[h!]
+\begin{table}[htb!]
+\caption{\textbf{Top 5 most likely successful and unsuccessful interview sessions}}    
+\label{table:topsec}
 \centering
-\caption{Results of information extraction from electronic health record compared with PLCO trial on the 1000 patients subset.}
-\label{tab:result2}
-  \begin{tabular}{|l|l|l|l|l|l|}
-  \hline
-    \textbf{Variables}  & \textbf{Agreed by }  & \textbf{Correct in}   & \textbf{Correct in}  & \textbf{Information Missing} \\
-      & \textbf{EHR and PLCO}  & \textbf{EHR}   & \textbf{PLCO}  & \textbf{from EHR} \\ \hline    
-    
- Age & 992 (99.2\%) & 6 (0.60\%) & 2 (0.20\%) & 0 (0\%) \\ \hline
- Sex & 964 (96.4\%) & 11 (1.1\%) & 7 (0.70\%) & 18 (1.8\%) \\ \hline 
- Race & 949 (94.9\%) & 28 (2.8\%) & 1 (0.10\%) & 22 (2.2\%) \\ \hline
- Lung cancer family history & 906 (90.6\%) & 25 (2.5\%) & 4 (0.40\%) & 65 (6.5\%) \\ \hline
- COPD history & 873 (87.3\%) & 68 (6.8\%) & 13 (1.3\%) & 46 (4.6\%) \\ \hline
- Chest x-ray in last 3 years & 546 (54.6\%) & 19 (1.9\%) & 26 (2.6\%) & 409 (40.9\%) \\ \hline
- Emphysema & 933 (93.3\%) & 29 (2.9\%) & 6 (0.6\%) & 32 (3.2\%) \\ \hline
- Asthma & 86 (8.6\%) & 0 (0\%) & 5 (0.50\%) & 909 (90.9\%) \\ \hline
- Prior cancer & 677 (67.7\%) & 0 (0\%) & 38 (3.8\%) & 285 (28.5\%) \\ \hline
- Pneumonia & 106 (10.6\%) & 0 (0\%) & 18 (1.8\%) & 876 (87.6\%) \\ \hline
- Hay fever & 13 (1.3\%) & 0 (0\%) & 1 (0.1\%) & 986 (98.6\%) \\ \hline
- Smoking status & 611 (61.1\%) & 99 (9.9\%) & 88 (8.8\%) & 202 (20.2\%) \\ \hline
- Smoker status & 488 (48.8\%) & 2 (0.20\%) & 18 (1.8\%) & 492 (49.2\%) \\ \hline
- Age at start smoking & 10 (1\%) & 0 (0\%) & 9 (0.90\%) & 981 (98.1\%) \\ \hline
- Smoking amount (\# cigarettes per day) & 277 (27.7\%) & 0 (0\%) & 38 (3.8\%) & 685 (68.5\%) \\ \hline
- Smoking duration & 191 (19.10\%) & 0 (0\%) & 52 (5.2\%) & 757 (75.7\%) \\ \hline
- Quit time of former smoker & 241 (24.1\%) & 0 (0\%) & 19 (1.9\%) & 740 (74\%) \\ \hline
- Pack-years smoked & 212 (21.2\%) & 0 (0\%) & 51 (5.1\%) & 737 (73.7\%) \\ \hline 
- 
-  \end{tabular}
+\begin{tabular}{lll}
+\hline
+\hline
+No. & Successful Sequences &  Unsuccessful Sequences\\
+\hline
+1 & 311\rightarrow112\rightarrow301\rightarrow500 & 343\rightarrow109\rightarrow312\rightarrow400 \\
+2 & 310\rightarrow112\rightarrow311\rightarrow500 & 311\rightarrow109\rightarrow312\rightarrow400 \\
+3 & 311\rightarrow117\rightarrow309\rightarrow500 & 327\rightarrow120\rightarrow312\rightarrow400 \\
+4 & 312\rightarrow112\rightarrow311\rightarrow500 & 314\rightarrow103\rightarrow314\rightarrow400 \\
+5 & 331\rightarrow112\rightarrow311\rightarrow500 & 344\rightarrow109\rightarrow326\rightarrow400 \\
+\hline
+\hline
+\end{tabular}
 \end{table}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/matrixplot.eps}
-\caption{Matrix plots demonstrate the MAR situation among variables.}
-\label{fig:matrixplot}
-\end{figure}
-
-\subsection*{\textit{Comparing the results between EHR extraction and PLCO survey response}}
-To compare the results from the proposed system directly with PLCO survey response, the same 1000 cases were compared. Table~\ref{tab:result2} presents the EHR results compared with PLCO clinical trial response. This results revealed some interesting findings.
-
-First, highest agreement of results by both EHR and PLCO is observed in age value, achieved 99.2\% agreement against gold standard. The main reason is that ``date of birth'' is well formatted and structured across all reports. However, lowest agreement (1\%) is examined for ``age at start smoking''. The common reason might be the ambiguity between patient age and smoking age or difficulties to create an extraction system for identifying ``age at start smoking''. The values extracted from EHRs were agreed well with PLCO responses for the variables ``sex'',``race'',``lung cancer family history'',``COPD history'' and ``emphysema'' in 96.4\%, 94.9\%,90.6\%, 87.3\% and 93.3\% cases, respectively. On the other hand, ``chest x-ray in last 3 years'', ``prior cancer'', ``smoking status'' and ``smoker status'' were moderately agreed by PLCO and EHR extraction.    
-
-Second, we observed a certain percentage of disagreement between PLCO and EHR results. Compared to gold standard, EHR results are correct in some cases while PLCO are correct in other cases. The highest disagreement was noticed in ``smoking status'' where EHR results (9.9\%) have higher accuracy compared to PLCO results (8.8\%). Error occurred most frequently in EHR results for many variables due to the assumption that either the value is missing or has a default value. For example, we assigned the default value ``non-smoker'' to the smoking status, when system fails to find any information related to smoking status. Because of this, ``asthma'', ``prior cancer'', ``pneumonia'', ``hay fever'', ``age at start smoking'', ``smoking amount'',``smoking duration'', ``quit time of former smoker'' and ``pack-year smoked'' were only correct in PLCO when disagreed with EHR results. Certain variables such as ``age'', ``sex'', ``race'', ``lung cancer family history'' and ``COPD history'' provided higher percentage of correct values in EHRs compared to PLCO response. Contrarily, PLCO results provided higher percentage of accurate results for the variables ``chest x-ray in last 3 years'' and ``smoker status''. 
-
-Finally, highest number of missing values is observed in ``hay fever'', which displayed 98.6\% missing values in EHRs. However, no value is missing for the variable age. Although we observed a significant number of missing values in smoking related variables, around 50\%-70\% values are missing due to the non-smokers or former smokers. Therefore, there are few percentage of actual missing values for the variables ``smoker status'', ``age at start smoking'', ``smoking amount'', ``smoking duration'', ``quit time of former smoker'' and ``pack-year smoked''. 
-
-\subsection*{\textit{Missing pattern analysis}}
-We utilized all patients participated in PLCO clinical trials for the analysis of missing values. Figure~\ref{fig:matrixplot} shows the MAR situation among variables where the sorting was done by quit time, age and status, respectively. It can be seen that the higher the quit time, the more missing values in the variables smoking amount and pack-year smoked. On the other hand, missing values increase with the decrements of quit time. It was also shown that more missing values were observed for sex and race when age values are decreasing. Furthermore, they were more likely missing from EHR when smoking status is unavailable.   
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=1.0\textwidth]{figures/marginplot.eps}
-\caption{Scatter plots illustrate the MAR situation between variables.}
-\label{fig:marginplot}
-\end{figure}
-
-The MAR relations were observed more clearly in Figure~\ref{fig:marginplot}. Along the horizontal axis, the red boxplot is for those values of x (i.e. quit time, age) where no values for y (i.e. pack-year smoked, smoking amount) are available, and the blue boxplot for x values where also information for y is available. A comparison of the two boxplots can indicate the missing data mechanism. For example, the quit time for former smokers that provide no information for smoking amount seems to be higher than that where information is available. 
 
 \section*{Discussion}
-In this study, we investigated errors of extracting information from EHRs to characterize the reasons for disagreement between extracted values and report values. This information have significant value in establishing priorities for the development of an Information Extraction System in Bio-medical domain as well as conducting clinical trials. 
-
-The results suggest that automated extraction of clinical information may be more valid for some variables, and less valid for others. In spite of disagreements between information in the reports, automatic information extraction could still be beneficial for quick access to information, depending on the error threshold a user can withstand. For example, EHR data provide nearly the human accuracy for variables such as age, sex, race, lung cancer family history, COPD history and emphysema. Furthermore, less than 1\% disagreement were observed only with PLCO responses, so the information extracted could still be extremely useful.
-
-Numerous errors were observed, where quantitative information extraction errors were the most prevalent among all variables. Several formats were observed in various report with different sentence structures. Furthermore, spelling error, ungrammatical structure, abbreviation and acronym create this extraction process more difficult. For instance, quit time of former smoker needs to be extracted from the clause ``q age 20''. We can calculate it with (current age - 20) by identifying q and age as ``quit time'' and ``age at quited from smoking''.  
-
-For medical condition extraction, the most common failure was due to errors in section boundary and ambiguous pronoun. If the section of the current sentence is not identified correctly, we will not be able to extract the medical condition such as lung cancer family history, COPD history, pneumonia, asthma, etc. Many of the false positive were due to ambiguous pronoun that may refer family member instead of patient.
-
-A  few data inconsistencies were observed in some of the variables such as sex and race. In order to determine the status of sex, we needed to determine the presence or absence of UMLS concepts that represent sex, such as ``male'', ``woman'', ``gentleman'', ``lady'', etc. However, we observed information mismatch between or within the same EHR data source.
-
-In order to choose a proper imputation method one must be aware of the missing data mechanism(s). The quality of the imputed values depends on the imputation itself and on the imputation method used. In this study, matrix and scatter plots were used to determine the missing data mechanism(s) among variables. We demonstrate that there were MAR relation between quit time and smoking amount, quit time and smoking duration, quit time and pack-year smoked, age and sex, and age and race.
+From the sequential analysis, we observed that markov model achieved near-human accuracy to categorise the sequence of behavior codes. It was also found that successful interviews are more frequently responded by the adolescent with PPC code 112. However, unsuccessful interviews are responded with the behavior code 109.  
 
 \section*{Conclusion}
-In this paper, we compared result of the integrated systems with PLCO clinical trials and observed that the performance of the systems rivaled the clinical trial, when clinical information appears in electronic health records. However, clinical trial is necessary for certain variables such as ``age of start smoking'', ``education'', ``occupation'', etc. The proposed system consists of several state-of-the-art NLP systems to identify patients information from electronic health records. Experimental result shows 91.2\% to 100\% accuracy in retrieved variables. This study also provides an analysis of some of the
-difficulties that could be encountered in extraction of information from free-text clinical reports to automatically extract variables. Each of the
-variables had a different profile of errors, suggesting that some variables may be ``better targets'' for information extraction and auto-annotation than others. Finally, we addressed data missingness issue and reviewed different mechanisms through which data may be missing. The absence of data elements is the consequence of physician decisions and reflects aspects of the patient's condition. As the absence of data is usually considered a hindrance to accurate computer-based diagnosis, we need proper treatment of missing data. In this paper, we present missing patterns with matrix and scatter plots, and suggest various ways of dealing with missing values including ``multiple imputation'', ``use of means'', etc.  
+In this work, we suggest some successful sequences of codes for the practical use by the clinician during the interview session which will translate into positive change talk and commitment language. We also propose novel features and report the results of an extensive experimental evaluation of state-of-the-art supervised machine learning methods for text
+classification using those features, to help clinical researchers and practitioners assess the feasibility of using these methods for the task of automatic annotation of clinical
+text using the codebooks of realistic size. We found out that Support Vector Machine using only lexical features consistently outperforms all other classifiers on caregiver and
+adolescent datasets according to most metrics. Adding contextual and semantic features further improves the performance of SVM on both datasets, achieving close to human accuracy
+when the codebooks consisting of 16 and 17 classes are used to annotate caregiver and adolescent transcripts, respectively.
+
+This work has important practical implications. First, it can facilitate researchers to establish causal relationship between different communication strategies and desired
+behavioral outcomes without having to repeatedly wade through pages of interview transcripts. Second, since automatic annotation is significantly faster than manual, it can
+dramatically accelerate the pace of research in behavioral sciences. Third, information that can directly inform and increase the efficiency of clinical practice for a successful interview. Although all experiments were conducted on interview transcripts, the proposed methods and features are not
+specific to a particular domain of Motivational Interviewing, and thus there is also no prima facie reason to believe that they will not be effective for annotation of any other
+type of clinical conversation.
+
 
 \section*{Acknowledgments}
 We would like to thank the technical staff at Henry Ford Health Systems and Textual Data Analytics Laboratory at Wayne State University for their help with collecting and transforming binary data into free text EHR used for experiments reported in this paper. 
