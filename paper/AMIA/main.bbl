@@ -1,0 +1,158 @@
+\begin{thebibliography}{10}
+
+\bibitem{jha2009use}
+Jha AK, DesRoches CM, Campbell EG, Donelan K, Rao SR, Ferris TG, et~al.
+\newblock Use of electronic health records in US hospitals.
+\newblock N Engl J Med. 2009;360(16):1628--1638.
+
+\bibitem{blumenthal2010launching}
+Blumenthal D.
+\newblock Launching hitech.
+\newblock N Engl J Med. 2010;362(5):382--385.
+
+\bibitem{erickstad2011use}
+Erickstad L, Reed G, Bhat D, Roehrborn C, Lotan Y.
+\newblock Use of electronic medical records to identify patients at risk for
+  prostate cancer in an academic institution.
+\newblock Prostate Cancer Prostatic Dis. 2011;14(1):85--89.
+
+\bibitem{lau2011use}
+Lau EC, Mowat FS, Kelsh MA, Legg JC, Engel-Nitz NM, Watson HN, et~al.
+\newblock Use of electronic medical records (EMR) for oncology outcomes
+  research: assessing the comparability of EMR information to patient registry
+  and health claims data.
+\newblock Clin Epidemiol. 2011;3(1):259--272.
+
+\bibitem{stenner2012paste}
+Stenner SP, Johnson KB, Denny JC.
+\newblock PASTE: patient-centered SMS text tagging in a medication management
+  system.
+\newblock J Am Med Inform Assoc. 2012;19(3):368--374.
+
+\bibitem{piwowar2008identifying}
+Piwowar HA, Chapman WW, Chapman W.
+\newblock Identifying data sharing in biomedical literature.
+\newblock In: AMIA; 2008. .
+
+\bibitem{denny2009identifying}
+Denny JC, Miller RA, Waitman LR, Arrieta MA, Peterson JF.
+\newblock Identifying QT prolongation from ECG impressions using a
+  general-purpose Natural Language Processor.
+\newblock Int J Med Inform. 2009;78:S34--S42.
+
+\bibitem{mccart2012using}
+McCart JA, Finch DK, Jarman J, Hickling E, Lind JD, Richardson MR, et~al.
+\newblock Using ensemble models to classify the sentiment expressed in suicide
+  notes.
+\newblock Biomed Inform Insights. 2012;5(Suppl. 1):77.
+
+\bibitem{xu2011facilitating}
+Xu H, Jiang M, Oetjens M, Bowton EA, Ramirez AH, Jeff JM, et~al.
+\newblock Facilitating pharmacogenetic studies using electronic health records
+  and natural-language processing: a case study of warfarin.
+\newblock J Am Med Inform Assoc. 2011;18(4):387--391.
+
+\bibitem{matheny2009detection}
+Matheny ME, FitzHenry F, Speroff T, Hathaway J, Murff HJ, Brown SH, et~al.
+\newblock Detection of blood culture bacterial contamination using natural
+  language processing.
+\newblock In: AMIA Annu Symp Proc. vol. 2009. American Medical Informatics
+  Association; 2009. p. 411.
+
+\bibitem{zeng2006extracting}
+Zeng QT, Goryachev S, Weiss S, Sordo M, Murphy SN, Lazarus R.
+\newblock Extracting principal diagnosis, co-morbidity and smoking status for
+  asthma research: evaluation of a natural language processing system.
+\newblock BMC Med Inform Decis Mak. 2006;6(1):30.
+
+\bibitem{huang2007novel}
+Huang Y, Lowe HJ.
+\newblock A novel hybrid approach to automated negation detection in clinical
+  radiology reports.
+\newblock J Am Med Inform Assoc. 2007;14(3):304--311.
+
+\bibitem{chapman2001simple}
+Chapman WW, Bridewell W, Hanbury P, Cooper GF, Buchanan BG.
+\newblock A simple algorithm for identifying negated findings and diseases in
+  discharge summaries.
+\newblock J Biomed Inform. 2001;34(5):301--310.
+
+\bibitem{harkema2009context}
+Harkema H, Dowling JN, Thornblade T, Chapman WW.
+\newblock ConText: an algorithm for determining negation, experiencer, and
+  temporal status from clinical reports.
+\newblock J Biomed Inform. 2009;42(5):839--851.
+
+\bibitem{friedman2000broad}
+Friedman C.
+\newblock A broad-coverage natural language processing system.
+\newblock In: Proceedings of the AMIA Symposium. American Medical Informatics
+  Association; 2000. p. 270.
+
+\bibitem{christensen2002mplus}
+Christensen LM, Haug PJ, Fiszman M.
+\newblock MPLUS: a probabilistic medical language understanding system.
+\newblock In: Proceedings of the ACL-02 workshop on Natural language processing
+  in the biomedical domain-Volume 3. Association for Computational Linguistics;
+  2002. p. 29--36.
+
+\bibitem{hahn2002medsyndikate}
+Hahn U, Romacker M, Schulz S.
+\newblock MEDSYNDIKATE—a natural language system for the extraction of
+  medical information from findings reports.
+\newblock Int J Med Inform. 2002;67(1):63--74.
+
+\bibitem{savova2010mayo}
+Savova GK, Masanz JJ, Ogren PV, Zheng J, Sohn S, Kipper-Schuler KC, et~al.
+\newblock Mayo clinical Text Analysis and Knowledge Extraction System (cTAKES):
+  architecture, component evaluation and applications.
+\newblock J Am Med Inform Assoc. 2010;17(5):507--513.
+
+\bibitem{savova2008mayo}
+Savova GK, Ogren PV, Duffy PH, Buntrock JD, Chute CG.
+\newblock Mayo clinic NLP system for patient smoking status identification.
+\newblock J Am Med Inform Assoc. 2008;15(1):25--28.
+
+\bibitem{morton2005opennlp}
+Morton T, Kottmann J, Baldridge J, Bierner G. Opennlp: A java-based nlp
+  toolkit; 2005.
+
+\bibitem{denny2009evaluation}
+Denny JC, Spickard A, Johnson KB, Peterson NB, Peterson JF, Miller RA.
+\newblock Evaluation of a method to identify and categorize section headers in
+  clinical documents.
+\newblock J Am Med Inform Assoc. 2009;16(6):806--815.
+
+\bibitem{cohen2008five}
+Cohen AM.
+\newblock Five-way smoking status classification using text hot-spot
+  identification and error-correcting output codes.
+\newblock J Am Med Inform Assoc. 2008;15(1):32--35.
+
+\bibitem{uzuner2008identifying}
+Uzuner {\"O}, Goldstein I, Luo Y, Kohane I.
+\newblock Identifying patient smoking status from medical discharge records.
+\newblock J Am Med Inform Assoc. 2008;15(1):14--24.
+
+\bibitem{little2014statistical}
+Little RJ, Rubin DB.
+\newblock Statistical analysis with missing data.
+\newblock John Wiley \& Sons; 2014.
+
+\bibitem{rubin1976inference}
+Rubin DB.
+\newblock Inference and missing data.
+\newblock Biometrika. 1976;p. 581--592.
+
+\bibitem{enders2006primer}
+Enders CK.
+\newblock A primer on the use of modern missing-data methods in psychosomatic
+  medicine research.
+\newblock Psychosomatic medicine. 2006;68(3):427--436.
+
+\bibitem{dempster1977maximum}
+Dempster AP, Laird NM, Rubin DB.
+\newblock Maximum likelihood from incomplete data via the EM algorithm.
+\newblock J R Stat Soc Series B Stat Methodol. 1977;p. 1--38.
+
+\end{thebibliography}
