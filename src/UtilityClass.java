@@ -424,11 +424,21 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				
 				while ((line = br.readLine()) != null) {
 					if(!line.isEmpty() && line.length() > 8){
-						if(!line.contains(":"))
-							continue;
 						String record[] = line.split(",");
+						if(record.length < 5 || !line.contains(":"))
+							continue;
 						//System.out.println(line);
-						String timestamp = getTimestamp((record[2].substring(1, 8).replace(":", "")+record[3].trim()).trim());
+						String timestamp = "";
+						try{
+							timestamp = getTimestamp((record[2].substring(1, 8).replace(":", "")+record[3].trim()).trim());
+							
+							//System.out.println(timestamp);
+						}
+						catch(Exception e){
+							System.err.println(rawFiles[i].getName() + " text: " + line);
+							timestamp = record[2].replace(":", "")+record[3].trim();
+						}
+						
 						timestamp = timestamp.replaceAll("\\u00a0","");
 						
 						//System.out.println(rawFiles[i].getName() +timestamp);
@@ -437,8 +447,6 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 						}
 						else{
 							DataDetail entry = new DataDetail();
-							if(record.length < 5)
-								continue;
 							entry.code = record[4].trim();
 							entry.who = record[3].trim();
 							entry.timestamp = timestamp;
@@ -465,14 +473,20 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 						line = line.replace("’", "'").replace("—", "-").replace("‘", "'").replace("…", "�").replace("PPT:", "PT:");
 						
 						String timestamp = "";
-						TimestampAndIndex tsAndIdx = new TimestampAndIndex();						
-						getTimestampFromText(line, tsAndIdx);						
-						
-						
+						TimestampAndIndex tsAndIdx = new TimestampAndIndex();							
+						getTimestampFromText(line, tsAndIdx);	
+												
 						if(tsAndIdx.timestamp == null || tsAndIdx.timestamp.length() < 1)
 							continue;
 						else
 							timestamp = tsAndIdx.timestamp+tsAndIdx.who;
+						
+						if(mapTimestamp.containsKey(timestamp.trim().substring(0, timestamp.trim().length()-1)+"PT"))
+							timestamp = timestamp.trim().substring(0, timestamp.trim().length()-1)+"PT";
+						else if(mapTimestamp.containsKey(timestamp.trim().substring(0, timestamp.trim().length()-1)+"Y"))
+							timestamp = timestamp.trim().substring(0, timestamp.trim().length()-1)+"Y";
+						else if(mapTimestamp.containsKey(timestamp.trim().substring(0, timestamp.trim().length()-1)+"CG"))
+							timestamp = timestamp.trim().substring(0, timestamp.trim().length()-1)+"CG";
 						
 						if(mapTimestamp.containsKey(timestamp.trim())){
 							String actualTimestamp = "("+timestamp.substring(0, 3)+":"+timestamp.substring(3, 5)+")";
@@ -492,6 +506,8 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 							//System.out.println(rawFiles[i].getName() + "\t" + timestamp + "[stat] :" + annotationFound + " : " + mapTimestamp.size());
 							//System.out.println(line + ": " + rawFiles[i].getName() + "\t" + timestamp);
 							//System.out.println();
+							//if(rawFiles[i].getName().contains("F354"))								
+							//System.out.println(timestamp);
 						}
 						writer.flush();
 					}
@@ -509,11 +525,18 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 	}
 	
 	public static String getTimestamp(String time){
-		int t = Integer.parseInt(time.substring(0, 1))*60+Integer.parseInt(time.substring(1, 3));
-		String timestamp = t + time.substring(3);
-		timestamp = t<10?"00"+timestamp:timestamp;
-		timestamp = (t>9&&t<100)?"0"+timestamp:timestamp;
-		return timestamp;
+		try{
+			int t = Integer.parseInt(time.substring(0, 1))*60+Integer.parseInt(time.substring(1, 3));
+			String timestamp = t + time.substring(3);
+			timestamp = t<10?"00"+timestamp:timestamp;
+			timestamp = (t>9&&t<100)?"0"+timestamp:timestamp;						
+			return timestamp;
+		}
+		catch(Exception e){
+			System.err.println("time: " + time);
+			return "";
+		}
+		
 	}
 	
 	public static void getTimestampFromText(String line, TimestampAndIndex ts){
@@ -549,6 +572,9 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 		Pattern regexp7 =  Pattern.compile("(([0-9]+:\\s[0-9]+:[0-9]+\\.[0-9])(\\s+)([0-9a-zA-Z]+)(:)*)");
 		Matcher matcher7 = regexp7.matcher(lineTimestamp);
 		
+		Pattern regexp8 =  Pattern.compile("([a-zA-Z]+(\\s+)([0-9]+:[0-9]+:[0-9]+))");
+		Matcher matcher8 = regexp8.matcher(lineTimestamp);
+		
 		// Check for several patterns
 		String s = "", speaker = "";
 		if(matcher1.find()){
@@ -556,6 +582,10 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 			timestamp = matcher1.group(2).replace("(", "").replace("{", "").replace("[", "").replace(")", "").replace("}", "").replace("]", "").replaceAll(":", "");
 			speaker = matcher1.group(4);
 			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
+			ts.idx = s.length();
+			ts.who = speaker;
+			ts.timestamp = timestamp;
+			return;
 		}
 		else if(matcher2.find()){
 			s = matcher2.group();
@@ -563,12 +593,25 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 			timestamp = timestamp.substring(0, timestamp.length()-2);
 			speaker = matcher2.group(4);
 			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
+			ts.idx = s.length();
+			ts.who = speaker;
+			ts.timestamp = timestamp;
+			return;
+		}
+		else if(matcher8.find()){
+			s = matcher8.group().trim();
+			timestamp = s.split("\\s+")[1].substring(1).replaceAll(":", "");
+			speaker = s.split("\\s+")[0].trim();
+			//System.out.println(timestamp + " " + lineTimestamp + " : " + s + " part: " + speaker);
+			//System.out.println(matcher8.group(0) + ":::" + matcher8.group(1) + matcher8.group(2));
 		}
 		else if(matcher3.find()){
 			s = matcher3.group();
-			timestamp = matcher3.group(2).substring(1).replaceAll(":", "");
+			timestamp = matcher3.group(2).substring(0).replaceAll(":", "");
+			if(timestamp.length() == 6)
+				timestamp = timestamp.substring(1);
 			speaker = matcher3.group(4);
-			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
+			//System.out.println(timestamp + " " + lineTimestamp + " : " + s + " part: " + speaker);
 		}
 		else if(matcher4.find()){
 			s = matcher4.group();
