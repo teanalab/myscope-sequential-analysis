@@ -1,12 +1,13 @@
 public class AppMain {
 	public static void main(String[] args) throws Exception {
-		//Model model = new Model();
-		//model.evaluateModelBy3Folds();
-		//model.provideFrequencyDistributionOfSequence();
-		//System.out.println("\nFinished execution.");
+		Model model = new Model();
+		model.evaluateModelByKFolds(5, false);
+		//model.printTopKSuccessAndFailureSequence(20,false);
+		//model.provideFrequencyDistributionOfSequence(false);
+		System.out.println("\nFinished execution.");
 		
-		// preprocess dmc files
+		//preprocess dmc files
 		//WordtoText.wordToText("c:/dmc/rawfiles", "c:/dmc/input");
-		UtilityClass.preprocessMITranscripts("c:/dmc/input", "c:/dmc/output/");
+		//UtilityClass.preprocessMITranscripts("c:/dmc/input", "c:/dmc/output/");
 	}
 }

@@ -1,4 +1,5 @@
 import java.io.PrintWriter;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -6,19 +7,22 @@ import java.util.Iterator;
 
 public class Model {
 
-	public static final int folds = 5;
-	public static double results = 0;
+	public int folds = 5;
+	public static double results = 0, prec = 0, reca = 0, f1m = 0;
 	public static final String successCode = "500";
 	public static final String failureCode = "400";
 	public static ArrayList<CodeSequence> trainData = new ArrayList<>();
 	public static ArrayList<CodeSequence> testData = new ArrayList<>();
 	public static ArrayList<CodeSequence> data = new ArrayList<>();
 	public static HashMap<String,String> codemap = new HashMap<>();
-	public static double delta = -0.9, sumRatio400 = 0, sumRatio500=0;
+	public static double delta = -1, sumRatio400 = 0, sumRatio500=0;
 	public static double fpRate = 0;
 	public static int tp=0, fp=0, tn=0, fn=0;
 	
-	public void evaluateModelBy3Folds() throws Exception{
+	public void evaluateModelByKFolds(int folds, boolean withAlternateSeq) throws Exception{		
+		
+		this.folds = folds;
+		
 		// Build myscope code mapping
 		UtilityClass.buildMap(codemap);
 		
@@ -26,7 +30,7 @@ public class Model {
 				
 		// Create sequence dataset from raw data
 		//UtilityClass.createCodeSequenceFromRawData(true, codemap);
-		UtilityClass.createCodeSequenceFromRawData(false, codemap, true);
+		UtilityClass.createCodeSequenceFromRawData(false, codemap, withAlternateSeq);
 		
 		// Read sequence data from file
 		data = UtilityClass.readAllSequence();
@@ -35,11 +39,16 @@ public class Model {
 		System.out.println("Total sequences: " + data.size());
 		
 		String finalPrint = "";
+		double maxF1Measure = 0, optP = 0, optR = 0, optAcc = 0, optErrRateofFail = 0, optDelta = 0;
 		
-		for(int j=0; j < 20; j++){
+		for(int j=0; j < 5; j++){
+			System.out.println("\n\nIteration: " + j);
 			delta = delta + 0.1;
-		//delta = 0.2;
+			//delta = 0.2;
 			results = 0;
+			prec = 0;
+			reca = 0;
+			f1m = 0;
 			sumRatio500 = 0;
 			sumRatio400 = 0;
 			fp=0;tp=0;fn=0;tn=0;
@@ -58,33 +67,45 @@ public class Model {
 				testData.clear();
 			}
 			
-			if(delta > .19 && delta < .201){
-				finalPrint = finalPrint + "\nAverage accuracy: " + (results/folds);
-				finalPrint = finalPrint +  "\nAverage fp: " + (sumRatio500/(folds));
-				finalPrint = finalPrint + "\nConfushion Matrix: " + " tp=" + tp + " fp=" + fp + " tn=" + tn + " fn=" + fn +  " for delta: " + delta;
+			if(maxF1Measure < (f1m/folds)){
+				maxF1Measure = (f1m/folds);
+				optP = prec/folds;
+				optR = reca/folds;
+				optAcc = results/folds;
+				optErrRateofFail = sumRatio500/(folds);
+				optDelta = delta;
 			}
-			
-			System.out.println("\nAverage accuracy: " + (results/folds) + " for delta: " + delta);
-			System.out.println("Average fp: " + (sumRatio500/(folds)) + " for delta: " + delta);
-			System.out.println("Confushion Matrix: " + " tp=" + tp + " fp=" + fp + " tn=" + tn + " fn=" + fn +  " for delta: " + delta);
+	
+			System.out.println("Average false positive for failure: " + new DecimalFormat("#.####").format(sumRatio500/(folds)) + " for delta: " + delta);
+			//System.out.println("Confushion Matrix: " + " tp=" + tp + " fp=" + fp + " tn=" + tn + " fn=" + fn +  " for delta: " + delta);
 			sumRatio500 = 0;
 			
 		}
 			
 		// Print top k sequences
-		printTopKSuccessAndFailureSequence(data,20,false);
-		System.out.println("\n\nFinal: " + finalPrint);
+		//System.out.println("\n\nFinal: " + finalPrint);
+		System.out.println("\n\nAverage accuracy: " + new DecimalFormat("#.####").format(optAcc));
+		System.out.println("Average Precision: " + new DecimalFormat("#.####").format(optP));
+		System.out.println("Average Recall: " + new DecimalFormat("#.####").format(optR));
+		System.out.println("Average F-Measure: " + new DecimalFormat("#.####").format(maxF1Measure));
+		System.out.println("Average FP of Failure: " + new DecimalFormat("#.####").format(optErrRateofFail));
+		System.out.println("Optimal delta: " + new DecimalFormat("#.####").format(optDelta));
 	}
 	
-	public void provideFrequencyDistributionOfSequence() throws Exception{		
-		// Create alternate sequence and then calculate their frequencies
-		UtilityClass.createCombinationOfCodeSequence(false);
-		UtilityClass.calculateFreqOfSequences("SequentialData/allsequence.txt", "SequentialData/alternate-seq-frequency.csv");
+	public void provideFrequencyDistributionOfSequence(boolean withAlternateSeq) throws Exception{		
 		
-		// Read sequence data from file
-		data = UtilityClass.readAllSequence();
-		Collections.shuffle(data);
-		System.out.println("Total sequences: " + data.size() + "\n");
+		if(withAlternateSeq)
+		{
+			// Create alternate sequence and then calculate their frequencies
+			UtilityClass.createCombinationOfCodeSequence(false);
+			UtilityClass.calculateFreqOfSequences("SequentialData/allsequence.txt", "SequentialData/alternate-seq-frequency.csv");
+			
+			// Read sequence data from file
+			data = UtilityClass.readAllSequence();
+			Collections.shuffle(data);
+			System.out.println("Total sequences: " + data.size() + "\n");
+		
+		}
 		
 		// Create normal sequence and then calculate their frequencies
 		UtilityClass.createCombinationOfCodeSequence(true);
@@ -119,7 +140,8 @@ public class Model {
 				
 	}
 	
-	public void printTopKSuccessAndFailureSequence(ArrayList<CodeSequence> allsequence, int k, boolean isCodeOnly) {
+	public void printTopKSuccessAndFailureSequence(int k, boolean isCodeOnly) {
+		ArrayList<CodeSequence> allsequence = data;
 		HashMap<String, Integer> localTransitionProbabilityMap = new HashMap<>();
 		HashMap<String, Integer> localStateFrequencyMap = new HashMap<>();
 		// Initialize transition probabilities and state frequency
@@ -210,6 +232,7 @@ public class Model {
 	
 	private void validateModel(MarkovModel successfulMarkovModel, MarkovModel unsuccessfulMarkovModel){
 		int accurate = 0;
+		double precision = 0, recall = 0, fmeasure = 0;
 		double accurate400 = 0, inaccurate400 = 0, accurate500 = 0, inaccurate500 = 0, original500 = 0, original400 = 0;
 		for(int i=0; i < successfulMarkovModel.get_testCodeSequenceList().size(); i++){
 			String predictedCode = "";
@@ -275,16 +298,25 @@ public class Model {
 			if(originalCode.equalsIgnoreCase("400")){
 				original400++;
 			}
-			
 		}
 		
 		double accuracy = (double)accurate/successfulMarkovModel.get_testCodeSequenceList().size();
 		results = accuracy + results;
 		
-		System.out.printf("\nAccuracy: %.2f", accuracy);
+		System.out.printf("\nAccuracy: %.4f", accuracy);
 		sumRatio500 = sumRatio500 + (inaccurate400/(inaccurate400+accurate400));
 		//sumRatio400 = sumRatio400 + (inaccurate500/(inaccurate500+original400));
 		//System.out.println("\nRatio: " + (accurate400/(accurate400+inaccurate400)) + ", Data-400: " + (accurate400+inaccurate400) + ", SumRatio: " + sumRatio);
+		
+		System.out.print(" accurate 400-500: " + accurate400 + " : " + inaccurate400 + " : " + accurate500 + " : " + inaccurate500 + " : "+ original400 + " : "+ original500);
+		precision = (((double)(accurate400*original400)/(accurate400+inaccurate500))+((double)(accurate500*original500)/(accurate500+inaccurate400)))/(original400+original500);
+		recall = (((double)(accurate400*original400)/(original400))+((double)(accurate500*original500)/(original500)))/(original400+original500);
+		fmeasure = ((double)(2*precision*recall)/(precision+recall));
+		prec += precision;
+		reca += recall;
+		f1m += fmeasure;
+		
+		System.out.println(" P-R-F: " + precision + " : " + recall + " : " + fmeasure);
 	}
 	
 	private void setDelta(MarkovModel successfulMarkovModel, MarkovModel unsuccessfulMarkovModel){
@@ -349,17 +381,14 @@ public class Model {
 				failureTrainWriter.println(trainData.get(i).toString());						
 		}
 		
-		successTrainWriter.flush();
-		failureTrainWriter.flush();
+		successTrainWriter.close();	
+		failureTrainWriter.close();
 		
 		PrintWriter testWriter = new PrintWriter("SequentialData/test/testdata.txt");
 		for(int i=0; i < testData.size(); i++){
 			testWriter.println(testData.get(i).toString());
 		}
-		
-		successTrainWriter.close();
 		testWriter.close();
-		failureTrainWriter.close();
 	}
 }
 
