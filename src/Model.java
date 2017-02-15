@@ -19,7 +19,7 @@ public class Model {
 	public static double fpRate = 0;
 	public static int tp=0, fp=0, tn=0, fn=0;
 	
-	public void evaluateModelByKFolds(int folds, boolean withAlternateSeq) throws Exception{		
+	public void evaluateModelByKFolds(int folds, boolean withAlternateSeq, int order) throws Exception{		
 		
 		this.folds = folds;
 		
@@ -30,7 +30,10 @@ public class Model {
 				
 		// Create sequence dataset from raw data
 		//UtilityClass.createCodeSequenceFromRawData(true, codemap);
-		UtilityClass.createCodeSequenceFromRawData(false, codemap, withAlternateSeq);
+		if(order > 0)
+			UtilityClass.createCodeSequenceFromRawData(false, codemap, withAlternateSeq, 2);
+		else
+			UtilityClass.createCodeSequenceFromRawData(false, codemap, withAlternateSeq);
 		
 		// Read sequence data from file
 		data = UtilityClass.readAllSequence();
@@ -97,7 +100,7 @@ public class Model {
 		if(withAlternateSeq)
 		{
 			// Create alternate sequence and then calculate their frequencies
-			UtilityClass.createCombinationOfCodeSequence(false);
+			UtilityClass.createCombinationOfCodeSequence(true);
 			UtilityClass.calculateFreqOfSequences("SequentialData/allsequence.txt", "SequentialData/alternate-seq-frequency.csv");
 			
 			// Read sequence data from file
@@ -106,16 +109,17 @@ public class Model {
 			System.out.println("Total sequences: " + data.size() + "\n");
 		
 		}
+		else{		
+			// Create normal sequence and then calculate their frequencies
+			UtilityClass.createCombinationOfCodeSequence(false);
+			UtilityClass.calculateFreqOfSequences("SequentialData/allsequence.txt", "SequentialData/normal-seq-frequency.csv");
+			
+			// Read sequence data from file
+			data = UtilityClass.readAllSequence();
+			Collections.shuffle(data);		
+			System.out.println("Total sequences: " + data.size());
+		}
 		
-		// Create normal sequence and then calculate their frequencies
-		UtilityClass.createCombinationOfCodeSequence(true);
-		UtilityClass.calculateFreqOfSequences("SequentialData/allsequence.txt", "SequentialData/normal-seq-frequency.csv");
-	
-		// Read sequence data from file
-		data = UtilityClass.readAllSequence();
-		Collections.shuffle(data);		
-		System.out.println("Total sequences: " + data.size());
-				
 		// Create pair sequence and then calculate their frequencies
 		UtilityClass.calculateDistributionOfPairSequence("SequentialData/pair-frequency.csv");
 	}

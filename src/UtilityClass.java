@@ -257,7 +257,120 @@ public class UtilityClass {
 		System.out.println("Successful sequences: "+ successCount + ", Failure sequences: " + failureCount);
 	}
 	
-	public static void createCombinationOfCodeSequence(boolean isNormal) throws Exception{
+	public static void createCodeSequenceFromRawData(boolean withText, HashMap<String, String> codemap, boolean withAlternateSeq, int order) throws Exception{
+		int successCount = 0, failureCount = 0;
+		final String successCode = "106,112,116";
+		final String failureCode = "103,109,114,115";
+		File rawDataFolder = new File("modinput/collapse");
+		File []rawFiles = rawDataFolder.listFiles();
+		// Sequence code writer
+		PrintWriter sequenceCodeWriter = new PrintWriter("SequentialData/allsequence.txt", "UTF-8");
+
+		for (int i = 0; i < rawFiles.length; ++i) {
+			BufferedReader br = new BufferedReader(new FileReader(rawFiles[i]));
+			String line = "";
+			int count = 0;
+			int sequenceLength = 0;
+			StringBuilder sequence = new StringBuilder();
+			
+			while ((line = br.readLine()) != null) {
+			    // process the line.
+				count++;
+				if(line.length() > 4){
+					
+					if(sequence.length() != 0){
+						if(withText){
+							sequence.append(" ==> ");
+						}
+						else{
+							sequence.append(",");
+						}						
+					}
+					
+					if(successCode.contains(line.substring(0, 3).trim()) && sequenceLength > 1){
+						//sequence.append(line.substring(0, 3).trim()+",");
+						if(withText){
+							sequence.append(line.substring(0, 3).trim()+" "+codemap.get(line.substring(0, 3).trim()));
+						}
+						else{
+							sequence.append("500");
+						}
+						
+						// handle nth order
+						String seqStr = "";
+						String []lineData = sequence.toString().split(",");
+						if(lineData.length < 2)
+							continue;
+						
+						for(int p=0; p<lineData.length-2; p++){
+							seqStr = seqStr.length()>0?seqStr+","+lineData[p]+":"+lineData[p+1]:lineData[p]+":"+lineData[p+1];
+						}
+						
+						//System.out.println(seqStr);
+						
+						if(withAlternateSeq){
+							successCount = successCount + writeSequenceIntoFile(sequenceCodeWriter, sequence.toString());
+						}
+						else{
+							sequenceCodeWriter.println(seqStr+",500"); 
+							successCount++;
+						}
+						//		+ "  \t\t " + rawFiles[i].getName() + " line " + count);
+						sequence = new StringBuilder();
+						sequenceLength = 0;						
+					}			
+					else if(failureCode.contains(line.substring(0, 3).trim()) && sequenceLength > 1){
+						//sequence.append(line.substring(0, 3).trim()+",");
+						if(withText){
+							sequence.append(line.substring(0, 3).trim()+" "+codemap.get(line.substring(0, 3).trim()));
+						}
+						else{
+							sequence.append("400");
+						}
+						
+						// handle nth order
+						String seqStr = "";
+						String []lineData = sequence.toString().split(",");
+						if(lineData.length < 2)
+							continue;
+						
+						for(int p=0; p<lineData.length-2; p++){
+							seqStr = seqStr.length()>0?seqStr+","+lineData[p]+":"+lineData[p+1]:lineData[p]+":"+lineData[p+1];
+						}
+						
+						//System.out.println(seqStr);
+						
+						if(withAlternateSeq){
+							failureCount = failureCount + writeSequenceIntoFile(sequenceCodeWriter, sequence.toString());
+						}
+						else{
+							sequenceCodeWriter.println(seqStr+",400"); 
+							failureCount++;
+						}
+						//		+ "  \t\t " + rawFiles[i].getName() + " line " + count);
+						sequence = new StringBuilder();
+						sequenceLength = 0;
+					}
+					else{
+						if(withText){
+							sequence.append(line.substring(0, 3).trim()+" "+codemap.get(line.substring(0, 3).trim()));
+						}
+						else{
+							sequence.append(line.substring(0, 3).trim());
+						}
+						sequenceLength++;
+					}
+				}
+			
+			}
+			
+			br.close();
+		}		
+		sequenceCodeWriter.close();
+		System.out.println("Successful sequences: "+ successCount + ", Failure sequences: " + failureCount);
+	}
+	
+	public static void createCombinationOfCodeSequence(boolean isCumulative) throws Exception{
 		
 		int successCount = 0, failureCount = 0;
 		final String successCode = "106,112,116";
@@ -280,7 +393,7 @@ public class UtilityClass {
 					
 					if(successCode.contains(line.substring(0, 3).trim()) && sequenceLength > 1){
 						sequence.append(line.substring(0, 3).trim());
-						if(isNormal){
+						if(!isCumulative){
 							sequenceCodeWriter.println(sequence.toString()); 
 							successCount++;
 						}
@@ -292,7 +405,7 @@ public class UtilityClass {
 					}			
 					else if(failureCode.contains(line.substring(0, 3).trim()) && sequenceLength > 1){
 						sequence.append(line.substring(0, 3).trim());
-						if(isNormal){
+						if(!isCumulative){
 							sequenceCodeWriter.println(sequence.toString()); 
 							failureCount++;
 						}
