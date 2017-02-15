@@ -1,7 +1,7 @@
 public class AppMain {
 	public static void main(String[] args) throws Exception {
 		Model model = new Model();
-		model.evaluateModelByKFolds(10, false, 0);
+		model.evaluateModelByKFolds(5, true, 2);
 		//model.printTopKSuccessAndFailureSequence(20,false);
 		//model.provideFrequencyDistributionOfSequence(false);
 		System.out.println("\nFinished execution.");
