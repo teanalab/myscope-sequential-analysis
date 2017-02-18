@@ -59,6 +59,10 @@ Accuracy: 0.9217 accurate 400-500: 108.0 : 31.0 : 3351.0 : 263.0 : 139.0 : 3614.
 
 Hidden Markov model:
 ==========================
+Average accuracy: 0.8530
+Average Precision: 0.8632
+Average Recall: 0.8530
+Average F-Measure: 0.8504
 
 
 
