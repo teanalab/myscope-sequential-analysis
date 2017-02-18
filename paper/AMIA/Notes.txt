@@ -1,6 +1,8 @@
 
-First Order Markov Chain:
+Markov Chain:
 ==========================
+1) First Order Markov Chain Normal sequences
+
 Average accuracy: 0.7686
 Average Precision: 0.7387
 Average Recall: 0.7686
@@ -14,6 +16,22 @@ Accuracy: 0.7721 accurate 400-500: 10.0 : 31.0 : 156.0 : 18.0 : 41.0 : 174.0 P-R
 Accuracy: 0.7721 accurate 400-500: 6.0 : 26.0 : 160.0 : 23.0 : 32.0 : 183.0 P-R-F: 0.7629769511343353 : 0.772093023255814 : 0.7675079191225078
 Accuracy: 0.7639 accurate 400-500: 9.0 : 35.0 : 156.0 : 16.0 : 44.0 : 172.0 P-R-F: 0.7237114601512508 : 0.7638888888888888 : 0.7432576142211933
 
+2) Second Order Markov Chain Normal sequences
+
+Average accuracy: 0.7816
+Average Precision: 0.7256
+Average Recall: 0.7816
+Average F-Measure: 0.7525
+Average FP of Failure: 0.896
+Optimal delta: -0.9
+
+Accuracy: 0.8093 accurate 400-500: 2.0 : 28.0 : 172.0 : 13.0 : 30.0 : 185.0 P-R-F: 0.7586046511627906 : 0.8093023255813954 : 0.7831338433837174
+Accuracy: 0.7628 accurate 400-500: 6.0 : 33.0 : 158.0 : 18.0 : 39.0 : 176.0 P-R-F: 0.7225191769146475 : 0.7627906976744186 : 0.7421089921648163
+Accuracy: 0.8186 accurate 400-500: 2.0 : 29.0 : 174.0 : 10.0 : 31.0 : 184.0 P-R-F: 0.7575858250276855 : 0.8186046511627907 : 0.7869141317508116
+Accuracy: 0.7628 accurate 400-500: 7.0 : 41.0 : 157.0 : 10.0 : 48.0 : 167.0 P-R-F: 0.707832082797883 : 0.7627906976744186 : 0.7342844615807355
+Accuracy: 0.7546 accurate 400-500: 4.0 : 41.0 : 159.0 : 12.0 : 45.0 : 171.0 P-R-F: 0.6814583333333333 : 0.7546296296296297 : 0.7161798760994428
+
+3) First Order Markov Chain Alternate sequences
 
 Average accuracy: 0.9437
 Average Precision: 0.9777
@@ -28,22 +46,7 @@ Accuracy: 0.9431 accurate 400-500: 71.0 : 10.0 : 3329.0 : 195.0 : 81.0 : 3524.0 
 Accuracy: 0.9459 accurate 400-500: 75.0 : 16.0 : 3335.0 : 179.0 : 91.0 : 3514.0 P-R-F: 0.9775566722880469 : 0.9459084604715673 : 0.9614722005187052
 Accuracy: 0.9374 accurate 400-500: 79.0 : 22.0 : 3303.0 : 204.0 : 101.0 : 3507.0 P-R-F: 0.973389727207161 : 0.9373614190687362 : 0.955035905936951
 
-
-Second order Markov Chain:
-==========================
-Average accuracy: 0.7816
-Average Precision: 0.7256
-Average Recall: 0.7816
-Average F-Measure: 0.7525
-Average FP of Failure: 0.896
-Optimal delta: -0.9
-
-Accuracy: 0.8093 accurate 400-500: 2.0 : 28.0 : 172.0 : 13.0 : 30.0 : 185.0 P-R-F: 0.7586046511627906 : 0.8093023255813954 : 0.7831338433837174
-Accuracy: 0.7628 accurate 400-500: 6.0 : 33.0 : 158.0 : 18.0 : 39.0 : 176.0 P-R-F: 0.7225191769146475 : 0.7627906976744186 : 0.7421089921648163
-Accuracy: 0.8186 accurate 400-500: 2.0 : 29.0 : 174.0 : 10.0 : 31.0 : 184.0 P-R-F: 0.7575858250276855 : 0.8186046511627907 : 0.7869141317508116
-Accuracy: 0.7628 accurate 400-500: 7.0 : 41.0 : 157.0 : 10.0 : 48.0 : 167.0 P-R-F: 0.707832082797883 : 0.7627906976744186 : 0.7342844615807355
-Accuracy: 0.7546 accurate 400-500: 4.0 : 41.0 : 159.0 : 12.0 : 45.0 : 171.0 P-R-F: 0.6814583333333333 : 0.7546296296296297 : 0.7161798760994428
-
+4) Second Order Markov Chain Alternate sequences
 
 Average accuracy: 0.9694
 Average Precision: 0.9778
@@ -61,25 +64,28 @@ Accuracy: 0.9706 accurate 400-500: 70.0 : 22.0 : 3432.0 : 84.0 : 92.0 : 3516.0 P
 
 Hidden Markov model:
 ==========================
-1) First order
+1) First order HMM (normal sequences)
 
 Average accuracy: 0.8059
 Average Precision: 0.7980
 Average Recall: 0.8059
 Average F-Measure: 0.7989
 
-Average accuracy: 0.9392
-Average Precision: 0.9313
-Average Recall: 0.9392
-Average F-Measure: 0.9253
-
-2) Second order
+2) Second order HMM  (normal sequences)
 
 Average accuracy: 0.8478
 Average Precision: 0.9542
 Average Recall: 0.8478
 Average F-Measure: 0.8979
 
+3) First order HMM (alternate sequences)
+
+Average accuracy: 0.9392
+Average Precision: 0.9313
+Average Recall: 0.9392
+Average F-Measure: 0.9253
+
+4) Second order HMM (alternate sequences)
 Average accuracy: 0.9713
 Average Precision: 0.9704
 Average Recall: 0.9713
