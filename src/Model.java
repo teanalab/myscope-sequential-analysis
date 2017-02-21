@@ -30,8 +30,11 @@ public class Model {
 				
 		// Create sequence dataset from raw data
 		//UtilityClass.createCodeSequenceFromRawData(true, codemap);
-		if(order > 0)
-			UtilityClass.createCodeSequenceFromRawData(false, codemap, withAlternateSeq, 2);
+		if(order > 0){
+			UtilityClass.createCodeSequenceFromRawData(false, codemap, withAlternateSeq, order);
+			// create 2nd order sequences
+			UtilityClass.createNthOrderSequence(order);
+		}
 		else
 			UtilityClass.createCodeSequenceFromRawData(false, codemap, withAlternateSeq);
 		
@@ -44,7 +47,7 @@ public class Model {
 		String finalPrint = "";
 		double maxF1Measure = 0, optP = 0, optR = 0, optAcc = 0, optErrRateofFail = 0, optDelta = 0;
 		
-		for(int j=0; j < 5; j++){
+		for(int j=0; j < 1; j++){
 			System.out.println("\n\nIteration: " + j);
 			delta = delta + 0.1;
 			//delta = 0.2;

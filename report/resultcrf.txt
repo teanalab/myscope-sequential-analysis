@@ -1,0 +1,22 @@
+
+
+==== CRF MODEL ====
+
+
+==== Classification Summary ====
+Ten folds cross validation accuracy: 50.2054794520548%
+Precision: 0.4845117137066396
+Recall: 0.502054794520548
+F-Measure: 0.49312727898070774
+Kappa: 0.45681790911454134
+
+
+==== CRF MODEL ====
+
+
+==== Classification Summary ====
+Ten folds cross validation accuracy: 49.779652593988004%
+Precision: 0.4755849931498924
+Recall: 0.49779652593988005
+F-Measure: 0.4864373377471609
+Kappa: 0.45200318118418004

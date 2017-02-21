@@ -1,0 +1,518 @@
+1	cg: right
+2	cg: mm-hmm not a problem
+3	cg: mm-hmm mm-hmm
+4	cg: right mm-hmm
+5	cg: okay
+6	cg: laugh thank you
+7	cg: yeah yeah
+8	cg: okay
+9	cg: yes in audibl
+10	cg: yeah
+11	cg: yep that the onli thing
+12	cg: yeah
+13	cg: mm-hmm
+14	cg: so you can't help it laugh
+15	cg: okay thank you
+16	cg: okay
+17	cg: mm-hmm
+18	cg: right inaud
+19	cg: right
+20	cg: right
+21	cg: mm-hmm yeah
+22	cg: right
+23	cg: yeah mm-hmm
+24	cg: right
+25	cg: mm-hmm
+26	cg: okay thank you hi !
+27	cg: yes
+28	cg: mm-hmm
+29	cg: okay
+30	cg: um yeah
+31	cg: that what she
+32	cg: yes i am
+33	cg: yes
+34	cg: right
+35	cg: okay thank you
+36	cg: right
+37	cg: mm-hmm mm-hmm
+38	cg: yeah
+39	cg: mm-hmm
+40	cg: mm-hmm
+41	cg: right
+42	cg: okay
+43	cg: mm-hmm
+44	cg: mm-hmm
+45	cg: mm-hmm
+46	cg: mm-hmm
+47	cg: no
+48	cg: mm-hmm
+49	cg: yeah mm-hmm
+50	cg: mm-hmm laugh
+51	cg: mm-hmm yeah
+52	cg: mm-hmm
+53	cg: mm-mm
+54	cg: right
+55	cg: mm-hmm oh yeah
+56	cg: mayb okay
+57	cg: i don't think so
+58	cg: yeah
+59	cg: right
+60	cg: yeah becaus it it yeah
+61	cg: good
+62	cg: hi kati inaud
+63	cg: okay
+64	cg: right
+65	cg: right
+66	cg: right absolut
+67	cg: right right
+68	cg: right
+69	cg: yeah
+70	cg: yeah
+71	cg: that fine
+72	cg: mm-hmm
+73	cg: becaus it i mean
+74	cg: yes
+75	cg: right right
+76	cg: okay
+77	cg: right
+78	cg: right
+79	cg: sure
+80	cg: okay
+81	cg: no
+82	cg: okay
+83	cg: no
+84	cg: yeah
+85	cg: yeah mm-hmm
+86	cg: mm-hmm
+87	cg: yeah yeah
+88	cg: yeah
+89	cg: yeah mm-hmm
+90	cg: yeah definit definit so
+91	cg: yeah yeah
+92	cg: right
+93	cg: mm-hmm
+94	cg: okay
+95	cg: yeah
+96	cg: okay yeah
+97	cg: yeah inaud
+98	cg: okay
+99	cg: okay
+100	cg: exact
+101	cg: yes
+102	cg: mm-hmm
+103	cg: right
+104	cg: yeah
+105	cg: yeah
+106	cg: okay okay
+107	cg: yeah
+108	cg: right i know laugh
+109	cg: mm-hmm
+110	cg: okay
+111	cg: okay
+112	cg: i can write
+113	cg: yeah
+114	cg: okay
+115	cg: okay
+116	cg: okay
+117	cg: right
+118	cg: mm-hmm
+119	cg: okay
+120	cg: yeah laugh
+121	cg: okay
+122	cg: okay
+123	cg: you'r welcom
+124	cg: okay
+125	cg: okay
+126	cg: okay
+127	cg: okay
+128	cg: right
+129	cg: right
+130	cg: right
+131	cg: right
+132	cg: right
+133	cg: right
+134	cg: right
+135	cg: right
+136	cg: right
+137	cg: right
+138	cg: right right
+139	cg: right
+140	cg: okay door open
+141	cg: hi thelma
+142	cg: same here okay okay oh okay mm-hmm
+143	cg: none okay no
+144	cg: yes
+145	cg: yes
+146	cg: yes yes
+147	cg: yes right
+148	cg: yes
+149	cg: yes yes yes yes
+150	cg: mm-hmm
+151	cg: yes uh-huh
+152	cg: right
+153	cg: yes yes
+154	cg: yes yes right right
+155	cg: right
+156	cg: yes
+157	cg: okay
+158	cg: mm-hmm
+159	cg: okay
+160	cg: right right
+161	cg: okay alright that good
+162	cg: alright
+163	cg: mm-hmm
+164	cg: mm-hmm
+165	cg: sound good
+166	cg: mm-hmm
+167	cg: yeah
+168	cg: yeah
+169	cg: yeah realli
+170	cg: yeah
+171	cg: okay
+172	cg: okay
+173	cg: okay
+174	cg: okay
+175	cg: yeah
+176	cg: mm-hmm
+177	cg: no uh-uh no
+178	cg: mm-hmm
+179	cg: no
+180	cg: mm-hmm
+181	cg: right
+182	cg: right
+183	cg: mm-hmm mm-hmm
+184	cg: right
+185	cg: yeah laugh
+186	cg: yeah
+187	cg: yeah
+188	cg: right right
+189	cg: no laugh
+190	cg: no
+191	cg: oh yeah
+192	cg: it it even right
+193	cg: right right
+194	cg: mm-hmm
+195	cg: mm-hmm
+196	cg: right and then
+197	cg: mm-hmm
+198	cg: yeah
+199	cg: right
+200	cg: okay
+201	cg: hello
+202	cg: yeah
+203	cg: inaud
+204	cg: yeah mm-hmm
+205	cg: yeah laugh
+206	cg: mm-hmm okay alright yeah
+207	cg: no
+208	cg: mm-hmm
+209	cg: yes
+210	cg: okay
+211	cg: mm-hmm
+212	cg: mm-hmm
+213	cg: and get them in mm-hmm
+214	cg: hi you'r welcom
+215	cg: okay
+216	cg: okay
+217	cg: right
+218	cg: right
+219	cg: okay
+220	cg: no no right
+221	cg: i don't know
+222	cg: okay
+223	cg: okay
+224	cg: mm-hmm
+225	cg: mm-hmm mm-hmm
+226	cg: mm-hmm
+227	cg: so it
+228	cg: okay
+229	cg: alright
+230	cg: alright
+231	cg: and
+232	cg: okay
+233	cg: okay
+234	cg: no problem
+235	cg: yeah
+236	cg: hope laugh
+237	cg: oh sorri
+238	cg: yes
+239	cg: okay
+240	cg: right
+241	cg: thank you so much
+242	cg: right
+243	cg: oh no
+244	cg: that may be in danger so
+245	cg: right
+246	cg: okay
+247	cg: right
+248	cg: right
+249	cg: right
+250	cg: right
+251	cg: right right right
+252	cg: mm-hmm it is
+253	cg: right right
+254	cg: right
+255	cg: mm-hmm right
+256	cg: right
+257	cg: okay
+258	cg: mm-hmm
+259	cg: right right so
+260	cg: right
+261	cg: so
+262	cg: yeah
+263	cg: alright okay
+264	cg: right
+265	cg: fine
+266	cg: okay
+267	cg: nice to meet you too
+268	cg: yes
+269	cg: mm-hmm
+270	cg: right
+271	cg: okay
+272	cg: what is that peach and green stuff i mean what is that ?
+273	cg: right
+274	cg: what ?
+275	cg: okay
+276	cg: right
+277	cg: right
+278	cg: mm-hmm
+279	cg: right
+280	cg: mm-hmm
+281	cg: right
+282	cg: mm-hmm
+283	cg: mm-hmm
+284	cg: okay
+285	cg: okay okay
+286	cg: mm-hmm
+287	cg: mm-hmm
+288	cg: mm-hmm
+289	cg: mm-hmm
+290	cg: no
+291	cg: mm-hmm yep
+292	cg: mm-hmm
+293	cg: yeah mm-hmm
+294	cg: okay
+295	cg: mm-hmm
+296	cg: mm-hmm yeah
+297	cg: right
+298	cg: okay
+299	cg: yep
+300	cg: yep
+301	cg: yeah
+302	cg: yeah
+303	cg: mm-hmm
+304	cg: okay so
+305	cg: okay
+306	cg: mm-hmm
+307	cg: : mm-hmm
+308	cg: : okay
+309	cg: : no
+310	cg: : mm-hmm
+311	cg: : i realli don't know laugh
+312	cg: : right
+313	cg: : mm-hmm
+314	cg: : mm-hmm
+315	cg: : mm-hmm
+316	cg: : okay
+317	cg: right
+318	cg: : right right
+319	cg: : yeah i think mm-hmm
+320	cg: : okay
+321	cg: : uh-huh
+322	cg: : right
+323	cg: : mm-hmm laugh
+324	cg: : right
+325	cg: : yeah right that how i feel
+326	cg: : mm-hmm that fine
+327	cg: mm-hmm yeah
+328	cg: : no
+329	cg: uh-huh
+330	cg: good to meet you
+331	cg: mm-hmm
+332	cg: okay
+333	cg: no
+334	cg: okay
+335	cg: yeah
+336	cg: mm-hmm
+337	cg: okay
+338	cg: oh yeah
+339	cg: yeah laugh
+340	cg: yeah
+341	cg: yeah
+342	cg: yeah
+343	cg: right
+344	cg: that fine
+345	cg: laugh yes
+346	cg: mm-hmm
+347	cg: laugh yes
+348	cg: yeah
+349	cg: right
+350	cg: mm-hmm
+351	cg: no that good
+352	cg: mm-hmm yeah that good
+353	cg: nice to meet you too
+354	cg: no
+355	cg: uh-huh
+356	cg: mm-hmm
+357	cg: that okay go ahead
+358	cg: yeah laugh
+359	cg: mm-hmm
+360	cg: oh okay laugh
+361	cg: okay
+362	cg: mm-hmm
+363	cg: mm-hmm
+364	cg: mm-hmm
+365	cg: mm-hmm
+366	cg: yes
+367	cg: okay
+368	cg: mm-hmm
+369	cg: mm-hmm
+370	cg: yeah
+371	cg: yeah
+372	cg: mm-hmm
+373	cg: no that it
+374	cg: : this is nice
+375	cg: : okay it nice to meet you
+376	cg: : okay so am i laugh
+377	cg: : oh yes
+378	cg: : right
+379	cg: : yes it is
+380	cg: : okay
+381	cg: : okay
+382	cg: : yes i am laugh : i most certain am
+383	cg: : mm-hmm
+384	cg: : yeah it can yeah
+385	cg: : it doesn't yeah it doesn't matter that no problem
+386	cg: : okay
+387	cg: : mm-hmm
+388	cg: okay
+389	cg: yeah
+390	cg: mm-hmm
+391	cg: right
+392	cg: yes it would
+393	cg: alright
+394	cg: it do
+395	cg: okay
+396	cg: okay
+397	cg: oh okay that how you know okay
+398	cg: okay okay
+399	cg: okay
+400	cg: right
+401	cg: okay
+402	cg: yes
+403	cg: alright
+404	cg: yeah
+405	cg: it high okay
+406	cg: right
+407	cg: okay
+408	cg: okay okay
+409	cg: okay
+410	cg: yeah it is right
+411	cg: we do we do
+412	cg: mm-hmm yeah
+413	cg: right
+414	cg: yep
+415	cg: right
+416	cg: yeah
+417	cg: right
+418	cg: right i alway hear about it yeah
+419	cg: i mean yeah yeah
+420	cg: mm-hmm yeah
+421	cg: right laugh
+422	cg: yes
+423	cg: mm-hmm
+424	cg: okay that fine yeah
+425	cg: thank you
+426	cg: : no
+427	cg: : okay
+428	cg: : okay laugh
+429	cg: : no
+430	cg: : yeah
+431	cg: : mm-hmm right
+432	cg: : yeah
+433	cg: : sure
+434	cg: : right right
+435	cg: : right
+436	cg: mm-hmm
+437	cg: : right yeah
+438	cg: : yeah
+439	cg: : yeah
+440	cg: : yeah
+441	cg: : right
+442	cg: : that it
+443	cg: no
+444	cg: : mm-hmm
+445	cg: : that fine
+446	cg: : right that fine with me
+447	cg: good
+448	cg: you too
+449	cg: okay
+450	cg: mm-mm
+451	cg: okay
+452	cg: mm-hmm
+453	cg: mm-hmm yes
+454	cg: mm-hmm
+455	cg: mm-hmm
+456	cg: mm-hmm
+457	cg: oh she want me to do it with her ?
+458	cg: mm-hmm
+459	cg: mm-hmm
+460	cg: mm-hmm sure
+461	cg: okay
+462	cg: yeah laugh
+463	cg: yeah
+464	cg: mm-hmm
+465	cg: okay
+466	cg: mm-hmm
+467	cg: right i agre
+468	cg: right
+469	cg: yeah
+470	cg: i was like
+471	cg: right correct
+472	cg: mm-hmm
+473	cg: right
+474	cg: yeah
+475	cg: nope not at all
+476	cg: yes
+477	cg: right
+478	cg: mm-hmm
+479	cg: you know
+480	cg: right
+481	cg: i do
+482	cg: oh laugh
+483	cg: right so laugh
+484	cg: yes
+485	cg: right
+486	cg: mm-hmm
+487	cg: right
+488	cg: yes yes i would
+489	cg: oh yes yes i am yes
+490	cg: mm-hmm mm-hmm yep
+491	cg: mm-hmm
+492	cg: right
+493	cg: mm-hmm
+494	cg: right
+495	cg: right laugh
+496	cg: yeah
+497	cg: laugh mommi mommi yeah
+498	cg: right
+499	cg: mm-hmm
+500	cg: right
+501	cg: i don't know
+502	cg: mm-hmm
+503	cg: right laugh
+504	cg: mm-hmm
+505	cg: okay
+506	cg: right exact
+507	cg: that great
+508	cg: yes
+509	cg: right
+510	cg: right
+511	cg: yeah
+512	cg: yes
+513	cg: right
+514	cg: right mm-hmm
+515	cg: yes
+516	cg: yeah sound fine
+517	cg: right laugh
+518	cg: okay

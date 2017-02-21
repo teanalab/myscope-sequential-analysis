@@ -1,0 +1,414 @@
+1	c: no big deal keep go if you'd like
+2	c: and it not even that she make you go you decid that you want to go
+3	c: so you kind of want to see the differ if the question was ask about lose weight or go to the track
+4	c: well what would you like to kind of talk a littl bit more about then ?
+5	c: what would be someth that would be kind of reason for you to think about activ work on ? becaus again this realli is your show i'm not here to tell you what to do
+6	c: which isn't someth that you realli mention so that might not even work for you
+7	c: if you were go to pick mayb one or two small thing to chang about your eat what would those be ?
+8	c: what do you think would you realli like to focus on ?
+9	c: how would someth like that work for you ? go for it ?
+10	c: okay would you like to write or would you like me to ?
+11	c: you as okay all right so how should i write that ?
+12	c: okay and i should write it talk to her about bake instead of fri ?
+13	c: and what is the first step that you can take in order to reach your goal of lower the fri food ?
+14	c: and let me know if you'v alreadi heard it
+15	c: well i mean that fair like i said it was just a littl piec of inform and you don't have to do anyth with it if you don't want to
+16	c: i don't know i don't know if that would work or not you know your home and what your mom will say and stuff so
+17	c: okay so what would you as how would you like me to kind of bring up this idea that you you'd like to have lower fri food in the hous ?
+18	c: anyth els you want to practic beforehand ?
+19	c: so if you think about you know you wake up tomorrow can you how do you imagin yourself do that ? can you even imagin yourself do that ?
+20	c: okay so one of the thing you'v notic is that you have to cut back on fast food but to quit complet doesn't work for you and to know that you have one day a week where you can kind of go as a treat
+21	c: t: i don't like i don't like to go-becaus sometim my mom she has a herniat disc in her back and some morn she just can't get up and walk around walk around the track and play mayb play basketbal but i wish it was some way she could do it but i understand if she can't like it some day that her back do sincer be hurt but other she might just not want to get up
+22	c: which of these or both of them do you want to bring up potenti you know with her ?
+23	c: what would you like to do ?
+24	c: okay so we can do it togeth if you want okay so your plan is to ?
+25	c: okay okay so if you you can write that or you can leav that
+26	c: okay and what the first thing you can do to reach this goal you know like when you'r leav here today what could you do ? assum that your mom onboard
+27	c: sound like you feel more comfort with that okay then whi don't i give this to you and you can do fold it up you can put it away whatev you want to do with it
+28	c: okay what the first step you'r go to take ? what the first thing you'r go to do to make this happen when you leav here and after you take your nap or even befor ? laugh
+29	c: okay ani what are your thought about sort of where you want to start in term of whether you have an idea of how much weight or you just want to get start get healthier kind of where you'r at ?
+30	c: and ani of these step that you can imagin do mayb even befor you go to bed ? you know befor you go back to go to sleep ?
+31	c: so you know i'm hear that you alreadi made a fair amount of chang with fruit and veget and be activ and you want to keep this go so where are you at right now in term of how to kick it up a notch mayb or someth a new thing you might want to add either with diet or with nutrit or exercis i don't know if you have idea if you want to look at some idea
+32	c: mm-hmm so if you were think about then what you'd like to do for a goal as you leav here today you mention you know a goal of get down to 175 would you say that pretti much still your goal ?
+33	c: what would you prefer ?
+34	c: okay so i'll leav it with you so your plan is to lose weight down to 175 okay so i'll let you write unless you prefer me to write ? laugh it easier ? okay my plan is to-just tell me how you want to say it becaus this is your plan
+35	c: can i write-would you like me to write 175 ?
+36	c: becaus you mention that that realli import to you
+37	c: so this next part is someth that and you can write in mom if you want could do
+38	c: so what's-aft you leav here today what new thing would you like to do or add or focus on
+39	c: and you mention she sometim get on you is that a good thing or a not so good thing ?
+40	c: so what would be help for you ? talk about someth mayb a littl bit more or realli happi with where you'r at and work on realli stick with those thing ?
+41	c: well what in particular do you want to focus on ?
+42	c: what would you like ?
+43	c: so this whole handout here kind of peek through and you know kind of let me know if this get bore or you want to talk about someth els just be like "hey kati let move on" okay ?
+44	c: and so that not realli anyth that you want to chang you know add a littl bit too or work on
+45	c: all right well look at this stuff and say that it you know kind of say three day a week of the one hour 60 minut of activ is the aerob and then mix in the strength and the stretch what if ani of these would you want to think about work on to increas your fit and to kind of get so you can play with your brother more ?
+46	c: so what would it be that if anyth that you might like to work on in order to keep with the weight loss goal that you'd been do ?
+47	c: okay all right you want to write or you want me to write ?
+48	c: sure if you'd like so realli this get stronger prepari
+49	c: someth happen in the morn i'll do it at night you know that kind of easi well what is the first step that you can take in order to reach this goal of increas your strength activ like the push up
+50	c: so what someth you could do like when you leav here ? like if you you know if you were go to go home and say like okay you know you got a chanc to talk and you know "mayb i do want to do more strength activ i do want to do that" well what someth like that you could do to get into that routin ?
+51	c: i don't know what your thought are on that <
+52	c: it not realli up to her yeah it up to you you to do it
+53	c: so you know think about you know that you know that it take you know nutrit chang and some activ chang you know which one would you like to focus on in our time today ?
+54	c: and i guess yeah like how to how to ?
+55	c: what would you like to do ?
+56	c: would that be help for you ?
+57	c: you'r not realli sure and i mean mayb it good that you'r be honest becaus that stuff doesn't work for everybodi and this is realli about what will work for you yeah so put it out there on kind of a schedul might not be veri help for you so that not realli your thing so what would be help to get you to you know think about do more exercis or do more exercis dure the week ?
+58	c: alright well which one would you want to focus on ?
+59	c: t: so you know what would you like to kind of plan on for your weight ?
+60	c: how would someth like that work for you ? just pick one small thing to focus on
+61	c: hmm well if you know if you were to to think about which one you want to focus on would it be more a nutrit or more an activ thing ?
+62	c: so if you were go to pick one of those to focus on which one would you think you'd want to do ?
+63	c: okay and then the other thing i just want to tell you is you know we'll be meet just this one time and the goal of this time is to just figur out what it is that you want to do in term of make ani chang if ani so i'm not realli here to tell you what to do or to tell you how to do thing but realli to figur out what it is that you want and the best way to make that happen
+64	c: okay so you would alreadi know that you would like to do someth about your weight that someth you'v alreadi decid
+65	c: mm-hmm and that it sound like that not who you want to be is is more activ that the person that you see yourself be
+66	c: okay and you would like to do more of that okay and how do you see that start that process ?
+67	c: so what if what about this might be your goal ?
+68	c: okay so this is someth you want to do
+69	c: you just prefer to talk about it okay inaud so let get a littl more specif then you know when you'r leav here today and you'r go to make a chang from work out twice a week with your sister to do someth everi day what kind of step can you take to make that chang ?
+70	c: and when you leav here today what are some of the first step you can do to make that chang ?
+71	c: okay alright ani other specif goal in term of the food that you would like to talk about today ?
+72	c: so how can you make that happen ?
+73	c: okay so what kind of step could you take to have less you know bad food in the hous and and more less fri food ?
+74	c: and how will you influenc the other peopl
+75	c: okay anyth els that you'd like to have as a goal today ?
+76	c: well i thought i'd doubl check becaus i definit want didn't want to have you do someth that you didn't want to do
+77	c: and as far as in the morn you know it sound like eat someth befor you went realli wouldn't work for you but then you do have a snack
+78	c: which would you rather talk about ?
+79	c: i mean this realli is kind of your show we can talk about what you like to talk about and
+80	c: or you could definit kind of just talk to me about what kind of stuff you'r do dure the day or that you'r think about do in order to lose weight
+81	c: alright so this handout here and you know anytim you can just say "hey kati this is realli bore i don't want to you know we don't have to look at this anymore"
+82	c: well if you were go to say you know either cut down on the amount of the fri chicken you'r have or not have it whi whi would you want to do someth like that ? what would be the most import reason to do that ?
+83	c: it not your thing
+84	c: but it not the way that you like to eat food
+85	c: but that not you
+86	c: well what the first thing that you can do in order to get to that goal of not have the fri food ?
+87	c: and then also just to let you know that we'r here to talk about nutrit activ and weight loss and realli i'm not here to tell you what to do becaus a lot of time tell peopl what to do isn't realli help but i'm just more here to just see if there anyth that you both want to work on and i know we onli get to meet one time see if that help at all okay ?
+88	c: what would you like to realli focus on in our time togeth ?
+89	c: so when you think about nutrit and lose weight what idea do you have on thing that might work for you ?
+90	c: all right so the salad the rabbit type of eat versus not you had no problem do either but again when you'r talk about weight loss you didn't see anyth so you'r kind of wonder what is it go to take like what the stuff that i need to do to make thing go well tell me a littl bit more about your idea you know base on where you'r live right now
+91	c: what idea do you have about what you could do right now to cut those thing down ?
+92	c: so if you realli had to pick one to focus on
+93	c: you know what if ani of those would you like to focus on ?
+94	c: how would you feel if you did talk to her about you know be more activ or do thing togeth in the time that we have here today ?
+95	c: so how would you go about put someth like that in what you'r do now if you want to in term of like you know an activ or eat the structur ?
+96	c: well if you you know had a chanc to talk to your mom about some stuff sinc we do have some time togeth today when we'r done with the session what would you kind of want to share with her about get in the structur ?
+97	c: this isn't someth you want to talk to her about this is someth that you realli want to do on your own
+98	c: and it realli has to be someth that kind of come from you work on without have to have your mom chang her schedul or thing like that
+99	c: and i don't know if there anyth in particular that you realli want to focus on after leav here today
+100	c: and there there might be some food thing that you'r think about do too
+101	c: well good and so you'r feel pretti good about what you'r do with the food stuff not realli someth that you want to talk about today or anyth about like eat out in restaur or watch portion size
+102	c: so what what do you realli want to focus on in order to keep on track with your weight loss ?
+103	c: alright cool well would you want to make a kind of a littl plan about someth like that ?
+104	c: alright well you know this realli is kind of your session so if it not someth that you want to do or you know do or don't want to do we don't have to worri about it just to kind of you know if it okay with you i'll just show this to you and then if it doesn't sound like someth you want to do then we can kind of you know talk about someth els but it just give you a chanc to kind of see you know if you were go to keep up with that or make food stuff like you were talk about with the veget a littl chanc to to write down a plan and if it seem like it not realli the right time for you then we don't have to do it but if you want to take a stab at it we can
+105	c: so it come from you like nobodi stand over there as you'r eat say like "peter eat these" you'r kind of say you know for me i want to eat more veggi
+106	c: and if it someth that you'v heard of befor or it get a littl bit bore just say "hey kati let talk about someth else" is that fair ?
+107	c: how would that work for you ?
+108	c: but mayb not mayb you alreadi have some idea on on what you want to do
+109	c: that would be someth that might sound good to you ?
+110	c: so as far as what we talk about today like those thing with the veggi and stuff how how can i kind of share that with your mom ?
+111	c: okay and the other thing to just say that today might be a littl differ than other time you'v talk to peopl about weight becaus i'm not here to tell you what to do or how to do it realli this about figur out what it is that you want and what it is that you want to be differ if anyth after today
+112	c: so did i get that right ?
+113	c: and you know which one of those or both of those are area that you actual would like to talk about chang you know today ?
+114	c: so which one of those would you want to talk about today if ani ?
+115	c: okay so rather than come up with an exercis plan everi day you'd rather focus on the cut of the calori right now ? okay alright caus you know we onli have you know today to talk and so you know obvious there lot of differ thing you can do but it go to be you know it seem like focus on one thing that you mayb can accomplish right now might be you know worthwhil for you and you want to look at the cut calori ?
+116	c: what would you prefer ?
+117	c: mayb you have anoth idea in term of the 500 calori ?
+118	c: caus it realli up to you you know i mean a lot of peopl tri to put peopl on diet but that can be pretti drastic and it doesn't fit necessarili with your life so if you think about your you know typic day you could pick someth or mayb you could tell me what you eat in a typic day and we could talk about where might be the best way best place
+119	c: what they eat and how mani calori is in their food to kind of see you know what that look like i'm not sure what you think about that idea if that someth you'd want to do or if you'd rather just pick a coupl of substitut
+120	c: right caus you alreadi said you don't want to cut anyth out complet
+121	c: okay so what i'm hear is you don't want to make sweep chang but mayb a littl bit of chang in each of these area ?
+122	c: what would you prefer ?
+123	c: i want to make sure you had a good one so it wasn't cross out okay so do you want to write or would you like me to write ?
+124	c: okay is that what you'r think about ?
+125	c: okay what the first step you can do to reach this goal tomorrow ? or today when you get back ?
+126	c: okay it sound like you know becaus you made this yourself you know that it someth that you feel pretti confid you could do
+127	c: so it sound like that someth you'v notic with yourself that you want to keep an eye on
+128	c: what would you prefer ?
+129	c: so it sound like that okay with you
+130	c: okay the other thing i want to just start out by say is that this might be a littl differ than other time you'v talk to peopl about weight becaus i'm not realli here to tell you what to do or to say you have to follow this diet i'm realli here to figur out what if anyth you know you want right now for your life
+131	c: if that someth that you that you do that you'd replac it with salad
+132	c: what would you prefer ?
+133	c: okay so for you your health is realli import to you
+134	c: okay i don't know if you want to add that or if you just know it it up to you okay and the first step you can take when you leav here today
+135	c: what els could you mayb do when you leav here today ?
+136	c: <cat>302</cat>
+137	c: okay so if you want if that what you want you can write that down it sound like that that where you'r talk about make the biggest chang
+138	c: what are your thought about how you'r go to manag hunger ?
+139	c: it just more when you don't think about it you just sort of go through your life everi day so did i get that right ?
+140	c: i don't know i don't know if that realli seem up your alley
+141	c: and it realli not my job to tell you what to do i don't know if you'v met someon to talk about this kind of stuff befor but a lot of time tell peopl what to do isn't realli help so i'm just go to see if there anyth that you know what your idea are and what you might want to work on
+142	c: well you know when you came in here i kind of mention that you have the chanc to say what you'd like to talk about more and i get the feel that for you you kind of said pop is one thing that you'r work on choos less but you'r not realli sure if you want to do it more often or not
+143	c: i don't know you know would that be someth you'd want to kind of talk to her a littl bit more about in term of =
+144	c: </sample>
+145	c: so you know if you had to pick someth that you want to work on for your weight loss or think about work on what would that thing be ?
+146	c: you still i mean you have to make the decis for yourself
+147	c: okay okay well basic you know this might be a littl differ than other convers you might have had around weight caus i'm not realli here to tell you what to do or how to do it or what diet to go on i realli want to find out your perspect and what if anyth you'r interest in chang and that realli you know what we want to do here caus we found that you know tell peopl to do thing doesn't realli make a differ you have to figur out what it is you want ?
+148	c: right so you'r the kind of person who is you know you'r pretti confid in who you are
+149	c: okay so that an import motiv for you
+150	c: but you know if we think about some small chang that you can make you know when you leav here today that you want to make and that you feel confid you know let first talk about exercis
+151	c: and again these are just recommend so it up to you to make it fit like you said for you okay ? so okay
+152	c: kind of person that want to see quick result and sometim you have result that are unrealist and you know that you know you'r go to get discourag and kind of give up and like you don't want that to happen
+153	c: okay is that someth you'd like to discuss ?
+154	c: so some teen find it help to write their goal on a piec of paper and other teen just prefer to talk about them which would you prefer ?
+155	c: okay so you can have you write or i could write for you base on what we'v discuss what would you prefer ?
+156	c: okay and you'v also notic that with your exercis you start to feel more confid even if you'r not show result immedi just do it make you feel better so it sort of all fit togeth  ?
+157	c: and you know given that we onli have so much time today which one of those would you like to focus on ?
+158	c: eat snack food only-what realist for you ? i mean if you'r eat it twice a day and you drop it to a coupl time a week that still go to be a big chang you know so what realli realist for you that you feel like you can stick with ?
+159	c: just in your own word so i can put it down here
+160	c: and we kind of get to talk about nutrit and exercis around weight loss and i want to let you know that i'm not here to tell you what to do or yeah becaus that never fun it doesn't alway work realli well when peopl tell you what to do it sound like you have some experi with that laugh yeah i'm realli just here to help you and see what thing you might want to work on around weight loss
+161	c: but you know sometim it that if you weigh yourself too frequent becaus your weight natur chang
+162	c: and like you said not disappoint yourself becaus this is all for you
+163	c: if anyth you want to look at or talk about we can or we can you know talk about other stuff becaus it your show
+164	c: yeah so it kind of fit with what you were think mm-hmm and yeah ani of those someth that you want to take a look at or you'r feel pretti comfort with what you have and/or take a look at it later if you want ?
+165	c: and you'r come in with so mani great thing that you'r do and i think a lot of kind of awar of what work realli well for you so i mean what would be someth that would realli be a good thing for you to focus on</text ?
+166	c: now would that be someth that you'd like to kind of bring up in here when we come back togeth as a group ?
+167	c: so you know again everyth seem pretti fair so far well my job here is not to tell you what to do alright and that kind of a relief laugh becaus a lot of time tell peopl what to do isn't veri help to them and so it realli just my job to just see if there anyth i can do that around that might help you with differ goal that you might have
+168	c: so one option for you in order to think about lose weight might be to talk about how much you'r eat
+169	c: and it nice and close by so you'r feel kind of excit that that an option for you if you want to do it
+170	c: what if ani of those would you realli want to focus on ?
+171	c: i don't know where you kind of fall in term of the eat stuff
+172	c: so when you say that she would do this kind of stuff it sound like that is actual someth that you would like her to do a littl bit more of yeah it might kind of for you you'd feel like you'd have a littl bit less pressur if it wasn't in the hous
+173	c: and i'm not here to tell you what to do i don't know if you'v met with peopl befor to talk about those thing but that realli isn't alway help to peopl to tell them what to do so it just i'm realli here to see what thing i might be abl to help with if anyth and i'll meet with you and then your mom and you know then to work on whe you know have certain thought ?
+174	c: alright so you know if it alright with you i'll just go ahead and kind of touch on a coupl thing that are on here and if it get bore or it stuff you'v alreadi heard of just say "hey kati you know i know this stuff" we don't have to talk about it alright ? we'll talk about someth els
+175	c: how doe that kind of fit into what you'r do right now or what your idea for your activ goal for lose weight ?
+176	c: i mean you'r not realli sure how that that would work for you in term of lose weight well what els on here grab your attent ? is this one of the bore part where you want to say "kati i'm done with this one let talk about someth else" ? becaus this is you know this is realli kind of what would you like to talk about today while we'r in here so if you'r done talk about this you can just let me know ?
+177	c: so if i put it away that would be okay with you ? okay alright
+178	c: you know where do you fall with that ?
+179	c: the plan is someth for that will be good for you
+180	c: so think about that stuff and think about you know mayb start small what what would your plan be for activ ?
+181	c: so you'r realli kind of think about how you can you know stay up with that and i just want to check in with you becaus i mean you don't have to be you know say this stuff just for me like this is realli you know kind of your plan so if that idea isn't someth you want to do you don't have to do it i don't have to write it down but if you want me to write it down i can too
+182	c: yeah it good i mean it not you know not my plan i mean it your plan so you'r think that it a good plan what make it a good plan for you ?
+183	c: so with all this inform that you gather and all this other stuff you put togeth in term of read the label and know about like the healthi natur food that you'r do and the portion size stuff you know what is it that you'd kind of like to realli work on in term of the nutrit stuff ?
+184	c: and realli i'm not here to to tell you what to do in term of just be abl to talk about nutrit and activ and weight loss becaus a lot of time that doesn't realli help peopl so i don't know if you'v talk to peopl befor about this stuff but it might be a littl bit differ in that way
+185	c: how doe that sound to you ?
+186	c: if you want to lose weight
+187	c: so what would your plan for this activ what would it be ?
+188	c: yeah fair enough thank for let me know what best for you becaus that what go to do the most you know help for you this isn't about me laugh
+189	c: that not for you and and
+190	c: would that be someth that you'd like to kind of work on ? or should we tri for someth els ? i mean you don't have to write it down for me laugh
+191	c: so you feel a littl bit more in control now becaus you'r the one who decid what you'r go to have for snack
+192	c: laugh alright so you know kind of think this you know like your plan now is come a lot from you it make it a littl bit
+193	c: and then that might actual be someth you would rather focus on is talk through how to deal with other famili member and eat
+194	c: well would you like to write it down ?
+195	c: i mean i don't know what would be good for you to kind of
+196	c: not realli ? you'd just prefer to kind of talk it out a littl bit more ?
+197	c: so the other thing i want to tell you this might be differ than other kind of weight convers you'v had becaus i'm not here to tell you what to do or how to do it or give you a specif diet i realli want to know what you think and what it is you might want to chang if anyth
+198	c: but for you you know it not so much the health specif but you want to do more thing and you don't want to be teas anymor and those are import
+199	c: but you realli want to you want to make time for this you want to make time for an hour a day
+200	c: what would you prefer ?
+201	c: mm-hmm and what about you ?
+202	c: what are you go what chang can you make when you go home today when you leav this offic ?
+203	c: is that someth you want to look at ?
+204	c: okay so it sound like you want to get a plan in your head and find a way to stick to it so that you can get from right now today to in the futur feel like "hey i'v done the thing i want to do i'v made it to the point where i can comfort play basketbal and do cheerleading" and in a way it seem like you'v got this idea that it like a step by step process yeah yeah okay so if you had to think about that step by step process what do you think the first step might be ?
+205	c: well this littl inform here-and again as we'r go through it just be like "kati this is boring" if you need to okay ?
+206	c: so if you and i are go to use our time to help you come up with some idea on what what you could do when you leav today which of those would you realli like to focus on ?
+207	c: what made you say that ?
+208	c: is that someth that you'r interest in do is come up with a plan ?
+209	c: which do you think would work better for you ? think and talk about it or write it down ?
+210	c: okay so now those are thing that you would like to be abl to do right ? so if your plan is to get to the point where you can do those what would you do ? what would be the first step that you take ?
+211	c: but you have this idea that you keep come back to this basketbal that you realli it sound like it a veri import thing for you
+212	c: so what if we shift our think a littl bit and think about if your plan is to do one or both of those thing which would you like to take as your first step ?
+213	c: so this yeah go ahead and peek through whatev you want to do with it
+214	c: and rememb this is just a first step and you can chang this later as you get better and better
+215	c: yeah you said that pretti easili like oh yes tomorrow becaus it which which make me think that this realli is an import thing for you that you do want to start pretti soon
+216	c: so your plan is to  and you had earlier said whi you want to start get more exercis right ? can you remind me whi that import to you ?
+217	c: so and ultim what the reason that you'r do all this ? what do you want to get out of it ? you said earlier
+218	c: i mean is that someth that might work for you ?
+219	c: what did you say ? that you could start on it
+220	c: okay what would you like for me to write down ?
+221	c: and that sound alright ? alright well now you have a specif plan and i know that your idea was just to talk about it and keep it in your head so if you don't want to take this with you you don't need to but if you'v chang your mind and you would like to i can stick it in this folder which you'r go to get when you leav
+222	c: would you like to have me share your plan or some part of it or just kind of talk about it general ? would you prefer to share it when you come back in with your mom today ? or just kind of talk about it general ?
+223	c: well this was just kind of some inform that you can do whatev you would like with
+224	c: </sample>
+225	c: what do you think
+226	c: you know and if you realli had to kind of think about what you'd like to take from this and whether or not we write out this plan or don't write out this plan that up to you but what is it that you'd kind of like to work on as your goal come out of here ?
+227	c: and so if you were to pick a goal that i could help you with what do you think that you would like to plan out ?
+228	c: so what particular do you want to tri to chang to accomplish your goal what like a first step that you think you could do ?
+229	c: what do you think you might like to do ?
+230	c: okay so if you and i were to come up with a specif plan for how you want to use your food log you just realli just said a lot of it did you want to just talk through the rest of it or did you want to write it down so that you have it save ?
+231	c: c what do you want to write down for what your plan is ?
+232	c: so let see so the first step that you can take so if your goal is to use your food log each day what the veri first thing you could do to make that happen ?
+233	c: to let you know a littl bit about the way that we'll work togeth is i'm here to help you talk a littl bit about weight loss and what you might like to do but i'm not here to tell you what to do so realli this is kinda your show i'll help you come up some idea and mayb you and i can come up with someth togeth that you might like to do the other thing is that we'v kinda found that just tell peopl what to do doesn't realli work veri well so you might have had that experi befor in your life where peopl just tell you- boss you around a littl bit it not quit as effect as come up with your own plan so that whi we do that is we figur that the better way to go okay
+234	c: ani of those thing that you think might be an area that might that you could look at that might help you with weight loss ?
+235	c: so if you and i were to come up with say a plan of someth that you could do to make some healthi chang what would you like to work on with me ?
+236	c: okay alright so mayb we could pick one of those that you feel like is the most import thing you could start with and then you of cours can come up with your own plan for the other so if we were gonna make some import chang to the way that you eat food you name three import thing we could pick one of them and say that my plan is to and then say what it is that you would like to chang and then we can fill in some of these other idea of how you might go about do that so what would you like to pick to work on ?
+237	c: okay so how about if i could i give the pen to you ? would you like to write your own plan ? that way it in your word so let see so when you get out of here today if your big focus is on have less food when you eat you'v got that written down here how about if we think about whi you want to do this what would that particular chang be veri import to you ?
+238	c: so if we were to say in like one sentenc whi this is the most import thing to you to start right now how can we boil that down to just a few word that you can rememb what would you like to have in your life ?
+239	c: sure you'r the expert in the thing that happen to you so these idea that are come from you are especi help
+240	c: and how do you feel about me kind of share with her this idea that you'r look for thing to do and you want to make sure that it excit and mayb someth a coupl time a week ?
+241	c: you could write each of those if you would like to
+242	c: so think about yourself in this posit if you come across some food that you realli like paus
+243	c: do you feel like those would work for you ?
+244	c: yep so if you were to think about inaud when you leav out of here today what the veri first thing you could start do ? um to reach this goal
+245	c: what would be best for you ?
+246	c: and i also want to let you know that anyth
+247	c: we find that tell peopl what to do or put a lot of pressur on them to make chang just realli doesn't work it kind of has to be if you want to make some chang it got to be your idea
+248	c: where do you fall in that list of thing ? or mayb you do someth els
+249	c: so around the begin of school you made two big chang you start work out in the gym at lunchtim and you stop eat junk food so how has that been for you ?
+250	c: do you feel like that someth that you want to keep up with ? what do you think it might take for you to be abl to keep do those two thing ?
+251	c: so what els do you feel like you might like to work on ? what other area do you want to make some chang in ?
+252	c: but if you and i were to come up with a plan for someth that you would like to work on as far as weight loss goe would you be interest in do someth more as far as activ goe or would you be interest in make a differ anoth chang as far as food goe ?
+253	c: what would be better for you ?
+254	c: and sinc you can probabl put it into your own word better than i can would it be okay if i have you write it ?
+255	c: and this is realli kind of like your show so if we'r talk about someth that you don't like or it bore or anyth like that you can be like "kati let move on"
+256	c: what do you think about your plan so far ? it pretti good one ? so let see so the next step say "the first step that i can take in order to reach my goal which is do extra practic is what" ? like what the veri first thing you think you need to do to start do extra practic two hour a day ?
+257	c: what do you think that you might do to remind yourself ?
+258	c: and it up to you if you would like to talk about your plan or not do you think that would be a good idea ?
+259	c: this might be a littl bit differ convers from what you might have had with say doctor or nurs or other peopl you'v run into who kind of tell what to do i'm not go to do that what i'd like to do is just kind of do some teamwork and figur out you know i'll kind of help you come up with idea okay ? we find that when if you put pressur on peopl or tri to make them make chang it doesn't realli work that well laugh
+260	c: so if you were think about make some kind of chang to food that might be help to you what do you think you might like to focus on ?
+261	c: could you see yourself use someth like this ? what do you think you might do with it ?
+262	c: would you like to be the one that write ?
+263	c: i mean i guess if you'r in a situat where the choic that are avail to you are pretti limit and they'r a lot of high calori item and you have the option to just bring your own that one way that you can control what go into your bodi
+264	c: so what do you think would be the first step you need to take in order to reach your goal ?
+265	c: when you share your plan with her and if you'd like to share your plan with her we can do it in a coupl differ way would you like to share it by yourself when we all come togeth ? would you like me to talk over some of your plan with her while i meet with her ? what would work best for you ?
+266	c: okay ? and what we'r here to do today is just help you out to think of some idea that you might want to work on i'm not here to tell you what to do so this is kind of your show and i'm here to help you come up with some idea that might feel a littl bit differ from how you'v usual talk to peopl about make some chang for weight loss is it ?
+267	c: yeah well i'm not go to do that laugh
+268	c: okay well so one thing that i don't want to do is i don't want to make the mistak of assum that just becaus you came here that you'r readi caus you might not be so what you'r goal for today ? what are you hope to accomplish by come here ?
+269	c: is that someth that you'v thought about ?
+270	c: and so if i was to help you realli focus in on someth today that you could plan for that you think would be the most help to you in the futur what would you want to work on ?
+271	c: you actual want to hear some kind of a number or just an idea of how much overweight that you are ?
+272	c: okay ? so of these two thing to focus on just kind of general make improv or realli keep close track of what you'r do are either of these idea one that you might want to tri ?
+273	c: okay okay and you can tri both i'm not go to stop you laugh i mean ultim like i said it your show
+274	c: what would work best for you ?
+275	c: so would it be okay if i give you the pen to write some of these thing down ?
+276	c: would you like some help or some guidanc ? okay so let see may i look at what you alreadi have ?
+277	c: i mean like i said laugh this is your these are your idea
+278	c: and i think you know you tell me what you think
+279	c: the next step for us to think about is the first step for you to take in order to make this goal happen for you and right now you have a specif goal that just one part of your big plan what the first step you can do to stop yourself from go to the store for junk food ?
+280	c: and like i said earlier this is one step among mani that you may take in the futur but this kind of help you i think to organ some thought around how you might accomplish your goal and nobodi say that as you accomplish each goal you develop some new one
+281	c: if this plan right here if we were think about how your mom could support you also which is someth i'd like to talk to her about would it be help for you to share your plan when we all come togeth or would you like me to talk with your mom about it first ?
+282	c: would it be okay if i show her your plan or do you want to me to just talk about it with her ?
+283	c: and then i'll bring you guy togeth and we'll spend about anoth 20 minut togeth so the reason that we'r do that is becaus i'd like to talk with you guy about you know differ idea that you might have for weight manag and this might be differ from the way that you'v talk to other peopl like doctor and nurs or other that you might have had contact with who might have made some recommend to you ?
+284	c: which would you like to talk about ?
+285	c: and what you want to do about it and and if you want to do anyth and so you know in our convers today what i'm here to help you do is to make some of those decis mayb learn a littl bit more about what you can do and if you want to do anyth and whi so you know this is kind of your show which mean that i'm here to help you but i'm not go to tell you what to do and i'm not go to make decis for you so ultim the choic that you make are your own choic so
+286	c: 04:14 yeah yeah would you be interest in see someth like that ?
+287	c: so you know just i'm wonder what you think about where you fall on that chart and what that mean to you
+288	c: so which one do you want to talk about today if ani of them becaus again like i said this is realli kind of for you and you might be at a place where you'r not even sure again whi you'r here or whi we'r talk about weight loss in the first place
+289	c: so if you were to think for yourself you know if you want to do someth that would make a big chang for you what do you feel like would be the best thing to focus on ?
+290	c: becaus you mention that you might want to make some chang as far as eat and in particu
+291	c: would it be all right with you if i put this away for now or do you want to keep it out to look ?
+292	c: so do ani of these look appeal to you as a place to start ?
+293	c: how do you think you might want to use the plan ?
+294	c: would you be interest in start that now ?
+295	c: so what do you think ? what do you think your would be your overal 0:22:08
+296	c: this is your plan so whatev you feel like the word if the word environment or environ if that a word that will cue you think okay i know that when the environ is this way i'm more like to make an unhealthi choic
+297	c: laugh if you feel comfort share with them what you'r tri to work on and ask them for help
+298	c: you know you'v touch on sever differ area so what about today ? when you leav here today it not go to be veri long
+299	c: and the other thing is that in our convers today we'r here larg just to talk over some idea about you know a plan that you might want to come up with so this might be a littl bit differ from talk you may have had with a doctor or nurs for exampl becaus i'm not go to tell you what to do but i can help you make a plan for thing that you may want to do okay ? so i'll talk with you for about 20 minut and then talk with your mom for about 20 minut and then bring the two of you togeth and we'll all talk for about 15 or 20 minut again so what question can i answer for you ?
+300	c:  have you ever thought about that ?
+301	c: okay and so overal what do you think about your eat ?
+302	c: and do you see anyth that you might want to work on chang ?
+303	c: if i was to help you come up with a plan for what you would realli like to focus on kind of the next step to take what would you like to work on ?
+304	c: yeah sure or food chang any-i mean that so if i take a step back what i'm ask is if i can help you come up with a plan for yourself to take home and work on what would you like the plan to be focus on and would you like a plan ?
+305	c: so music is realli key for you in be motiv isn't it ?
+306	c: okay ? so what do you think ? do you want to tri to write one out or do you want to just talk through it ?
+307	c: what do you want your plan to be specifically</text ?
+308	c: okay so so if we were to put your plan into one sentenc what would you say that your plan is ?
+309	c: all right so what about the motiv ? you said that you have a lot of motiv alreadi but you feel like you need some more what motiv you particular about this plan ? whi did you say this is realli what i want to do ?
+310	c: so how do you think you might say that in a sentenc ?
+311	c: do you want to jot down a coupl of them ?
+312	c: do you mind share with me what you came up with ?
+313	c: okay well as i mention earlier this is a plan for you for you to take home and you can follow it and if you want to add to it at some point again it your plan so you know as you see chang are need to it you just make them
+314	c: okay ? so would it be okay if we start by just talk about what you think about your weight ?
+315	c: mm-hmm yeah so well you know would it be okay if we just talk a littl bit about what you think the thing are that peopl do when they want to lose weight ?
+316	c: okay well you know what are you hope to accomplish in our session today ?
+317	c: so i guess you know if you had to take a guess at you know if there was ani one thing that mayb need to be tweak a littl bit what would you say that might be ?
+318	c: okay well you know how interest are you in work out mayb a plan to chang that for ya ?
+319	c: okay alrighti so i guess you know if you were go to walk out of here today with someth in mind that you will chang for this part of the day what do you think would give you the most benefit if you were to think ?
+320	c: so it sound like you know activ might be more of the thing that you would like to do in order to think about mayb focus on the weight if that what you want to do as oppos to like talk about eat and nutrit
+321	c: if we were mayb to think about someth that you might like to do whether it at this part of the day or a differ part of the day
+322	c: so if you were gonna make a chang which one of those would you think would be the most benefici to you right now ?
+323	c: so do ani of those idea sound appeal to you or ?
+324	c: and how mani calori they think they burn by do it so what do you think of that idea ?
+325	c: do ani of these idea appeal to you ?
+326	c: mm-hmm well from here and i don't think i mention this earlier but the point of us meet togeth is not for me to tell you what to do caus you'v probabl had that experi befor where peopl just kind of boss you around and
+327	c: would that be kind of more what you'r look for ?
+328	c: so would this be interest for you to talk through ?
+329	c: okay so some peopl write it down and some peopl just talk about what they might like to do what would work best for you ?
+330	c: it your plan you know
+331	c: okay so what would be your prefer for how to let her know that you know this is what you'd like to do and begin either tomorrow or tonight ?
+332	c: so you might have talk to peopl befor about weight and nutrit what to eat and what kind of exercis to do and this may be a littl bit differ caus i'm actual i'm not here to tell you what to do a lot of time that not veri help to peopl realli my job is just to to see what help you might need see what idea you have and if there anyth you know what you'd like to work on when you leav okay
+333	c: so it not a question about think it it an import thing you know you know you want to do it
+334	c: what what make you want to do that stuff ?
+335	c: yeah you'r that dedic to it that say a lot about you know your person and and how much you'r will to realli put yourself out there to to get that goal yeah
+336	c: well what would make it you know what would be help from me ?
+337	c: but you'r you know you need to kind of figur out what you want to do with that if anyth
+338	c: would that be someth that you'd want to talk about ?
+339	c: so your idea you know is when you leav is you realli want to rest your laugh rest your wrist and in term of realli you know work on your weight loss what about you know someth for that ?
+340	c: and you know i'm not realli sure where you fit in in all of that if you were to kind of want someth that was smaller and that you can just kind of do a littl bit at a time on a regular basi
+341	c: and to be honest with you it up to you you know you tell me how much i can tell her and so it sound like you wouldn't mind if i just said you know you'r look for way to stay activ dure the the wintertim
+342	c: no okay and also the work that we do today is pretti much focus on you one thing i want to call your attent to is that our work togeth is kind of like a team process so it might be differ from doctor appoint that you may have had in the past where mayb they just tell you what to do i'm not actual here to tell you what to do but i'm here to help you figur out what you want to do laugh okay
+343	c: and just kind of get back to what i said a moment ago about me not boss you around or tell you what to do is that we kind of found that that just isn't help for peopl becaus general if you tell somebodi what to do they might leav and never do it but if it their own idea then that better caus you are the expert in your life you'r go to know how thing fit for you and what you would be abl to do and not do okay
+344	c: so would it be an okay idea if we just start with talk for a minut about your weight and what you think about it ?
+345	c: okay so you know if i can talk to you for a second just
+346	c: if you don't mind me ask ?
+347	c: okay well so what do you want to do about that ?
+348	c: okay well so you know if you had to think about where you might start what do you think the first thing you might be abl to do is ?
+349	c: if you want to think about you know if you want to get to a point where you can do someth like box what do you think you know the first step you could take would be ?
+350	c: okay so what would you rather focus on today ? would you rather look at chang some eat habit or would you rather focus on chang physic activ ?
+351	c: okay alright so if you think for a moment about thing you'v alreadi tri and thing you might like to tri what come to mind for you ?
+352	c: but do you have ani idea like that ?
+353	c: okay and has that been pretti success for you so far or do you feel like that someth you need to work on ?
+354	c: so i'm go to put that one to the side for right now or leav it on the tabl for you to choos from but you said it might not be the most help to you
+355	c: okay so is that someth that you would like to tri again or would you like to tri
+356	c: which is excel that more than a lot of peopl have so so i guess if you and i think about what you would like to work on particular you could think about you want to work on log your food but a piec of that seem like it learn how to count calori too it almost like you have two goal in one huh ?
+357	c: okay well so if you and i want to come up with a plan that you can take home and use would that be okay with you ?
+358	c: would it be help for you to just talk about it for a minut and then write it down ?
+359	c: okay so like if you would you run out of patienc is that what you'r think ?
+360	c: could you see those work for you ?
+361	c: so if your goal overal is to start log each day and to learn how to do calori count so that you can put that on your log what do you think the veri first thing you would do today is ?
+362	c: what would you want them to do for you ?
+363	c: what would work best for you ?
+364	c: okay well do you feel comfort with me talk it over with your mom so that she has an idea of what you'v been work with ?
+365	c: okay would you be okay with me show her what you work out ?
+366	c: on and this might be a littl bit differ from the kind of meet you'v probabl had with doctor when they come and tell you what to do and you know give you some order or kind of boss you around a littl bit that not what i'm here today so our meet is realli for you and i to talk through some idea for weight manag and for me to help you come up with some idea on what if anyth you'd like to do so i'm here to support and help you laugh okay caus we find that that just doesn't realli work you know we tell peopl what to do when we send them out and it just not that help and so laugh
+367	c: yeah it might be better if it come from yourself becaus you'r the expert in your own life and so you have a better sens of what you can and can't do ?
+368	c: so what are your thought about you said you feel like you could be healthier but you'r not realli sure ?
+369	c: so how doe that fit with what you were think ?
+370	c: doe this realli mean anyth to you at all as far as
+371	c: okay so as you'r look at this what are your thought about what should happen next ?
+372	c: mm-hmm yeah so it seem like you'v got some new inform and it kind of you'r wonder how that fit togeth with what you need me for ?
+373	c: do you mind me ask ?
+374	c: if you don't mind me ask ?
+375	c: well what other thought do you have about 0:08:07 you know that this is kind of some new inform that you got today and laugh
+376	c: yep yep i'm just kind of wonder how it fit for you this new inform that you got with your idea on what you might do that fair enough so like i said earlier i mean this is this is your show i'm here to help you come up with idea for what you may or may not want to do and if there are some chang you would like to make i can help you think through those so you know if you think about what you might want to do start today or tomorrow even do you want to make ani chang ? okay so what kind of chang do you think you would want to make ?
+377	c: well you know given that you and i have a few minut to talk through some of those we'r probabl not go to be abl to make a lot of plan but i can help get you start so if you would like to i can help you make a plan to chang either someth about eat or someth about activ do you have a prefer ? no ? okay well you know mayb one way to think about it is just to think which one do you think would benefit you the most ? mean if you made a chang to the way that you ate or a chang to the way that you exercis or have other kind of activ which one do you think would be most help to you ?
+378	c: do either of these idea appeal to you ? do you like the idea of do either one of those ?
+379	c: so what would you say that you know if you were to decid that you want to be more activ or you want to do anyth els for weight what would that thing be ?
+380	c: what can you pictur yourself do ?
+381	c: now would you be interest in make a plan for how you'r go to go about do make sure that you do this each day or three day a week ?
+382	c: doe that sound like a reason idea ? okay so what are your thought ? like if you want to make a plan or a goal for yourself to increas your exercis what would you say that you would want to work up to ?
+383	c: okay do you want to write that down as part of your plan ? and whi would it be import to you to start exercis everi day for 15 minut ?
+384	c: mm-hmm yep so one thing is you want to start where you know you can be success right ? and whi do you even want to do it at all ? like what your real motiv that push you even to do anyth ? okay alright well so i mean go back to earlier you mention that you felt like it might be healthier for you and so that might be one motiv i don't know if that someth you think about all the time or not okay and if it not then don't write it down laugh so ani other thing that you feel like realli are motiv you right now ?
+385	c: do you want to write down your what you have ?
+386	c: what if you were mayb write that down as a thing that might get in your way ? or might not
+387	c: so if you don't feel like there anyth that you can realli do or will need to do then that fine so what do you think the first step will be when you leav here today to get start on your plan ?
+388	c: okay would it be help to you to talk through it ?
+389	c: again you don't have to do it for me
+390	c: okay so on that last line what you could write down is someth my mom could do that would help me would be to exercis with me or whatev it is that you'r think that she could do paus so now you have one step in a plan to help you and now that we'v talk through this you know you kind of have an idea of how to organ a plan if you want to come up with some other idea like when you get to the point where 15 minut is easi and you want to bump it up or make some other chang that would be like the next higher level of do activ you also mention work on chang eat so if you want to make a differ plan for that you have an idea of how to do it now ?
+391	c: ani of that you want to write down ?
+392	c: well what do you you know what do you think about this plan ?
+393	c: but again this isn't you know it kind of your show and you don't have to answer it if you don't want to answer it
+394	c: and you also have experi with make the chang so what would you like to talk about dure this time ?
+395	c: well you let me know if you'r feel nervous or if anyth that we talk about make you feel uncomfort just be like "hey kati let talk about someth else"
+396	c: and you mention that you realli kind of want to stick with what you were do now becaus it was realli work for you
+397	c: and you rememb it ah ha dang so when you talk about like write stuff on here do you want to write or would you want me to write ?
+398	c: but that doesn't mean that it that way for you so what do you think in term of a goal ?
+399	c: well if it someth that you want to write anywher on here you'r welcom to but it kind of it up to you so we can do that or we can you know move on to anoth part of the plan
+400	c: well know that you'r not go to be come back is this someth you'd like to work on with me now or do you have anoth idea of a time you'd like to work on it ?
+401	c: okay all right you can you can you know kind of let me know if it someth that you'v seen befor in all of your read about nutrit and everyth
+402	c: but it sound like for you mayb it just the diabet is your main worri
+403	c: i don't know what do you think about that ?
+404	c: becaus it sound like you realli like to read thing and have an understand i mean you know a lot about nutrit alreadi
+405	c: all right so again this get bore say hey kati this is bore right ?
+406	c: okay but you'll let me know
+407	c: those are sort of two thing that you figur out for yourself so where do you want to go from here what do you want to do next ?
+408	c: okay how about after you leav here today what do you want to do next ?
+409	c: so what one thing that you'r go to kind of walk away with in term of the stuff today ?
+410	c: would that be help for you to do ?
+411	c: are you readi for it ?
+412	c: and that okay this realli is kind of your time to talk a littl bit about nutrit and activ and weight and weight loss and you get to kind of pick what you want to talk about and you can alway say like "hey kati this is boring" or "hey kati you know i don't want to talk about this let talk about someth else"
+413	c: well what would you like to talk about sinc we have some time in term of nutrit and activ and weight loss ?
+414	c: well like i said this is realli kind of your show

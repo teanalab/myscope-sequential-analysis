@@ -1,0 +1,64 @@
+1	c: yeah so what would stop you from drink more water and cut out the fruit drink let kind of focus on that one first
+2	c: is there anyth els that you think might get in the way of drink the water instead of and cut the juic
+3	c: so what are some thing that you know might kind of stop you from lower the fri food that you'r eat ?
+4	c: okay so that what as okay what els ?
+5	c: what go to get in the way of do that ?
+6	c: so what are some thing that would might get in the way of you go for walk in the morn ? what els ? anyth els ?
+7	c: and what might get in the way ?
+8	c: okay and what kind of thing might get in the way of get back down to that size and keep it
+9	c: in the summer are there more of those less of those or about the same ?
+10	c: what els might get in the way that you find is a real challeng in term of drop the weight ?
+11	c: so if summer school out is that a barrier in term of the walk ?
+12	c: now we get to a littl bit of the tough part where you realli got to think like what are some thing that could get in the way okay so you'v come up with some real thing anyth els that might get in the way ?
+13	c: you know so what are some thing that could get in the way of you do that ?
+14	c: mm-hmm well what are some thing that could get in the way of cut down on the fri food ?
+15	c: what could happen at home or ?
+16	c: okay move after eat how about doe that make sens ? okay move after eat okay so what do you think might get in the way of start this you know today ? let say like okay today you'r go to leav here and you'v been rush around and you haven't eaten you'r probabl get hungri you know what could get in the way of now go out and you know either eat the smaller portion and do walk right after you eat ?
+17	c: so tell me more about that
+18	c: okay so so what get in the way of of of make that happen ?
+19	c: and what kind of thing do you see that might get in the way of your plan of start to make these chang today ?
+20	c: okay what about the the effort it take to make the salad ? is that someth that might get in the way ?
+21	c: okay and what about when school start ? you know the walk and those thing
+22	c: and some i'm just wonder when it start to get dark out is you know what are your thought about walk you know
+23	c: what do you think has stop you from make these chang befor today ?
+24	c: what would get in the way of your plan today let say you know leav and start this ?
+25	c: okay what do you see get in the way of that ?
+26	c: okay so what are some thing that could get in the way of let other peopl do their thing and you do your weight loss plan ?
+27	c: what are some thing that could get in the way of you focus on yourself and your weight loss ?
+28	c: well what are what are some thing that could get in the way of you take raven out for a walk ?
+29	c: and what els ? be mean and ÃƒÆ’Ã‚Â£Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢Ãƒâ€šÃ‚Â¦
+30	c: and keep that one do that what are some thing that could get in the way ?
+31	c: and what els ?
+32	c: so what what do you see as the biggest barrier to make these thing happen ? the treadmil the weight bench the healthi food and the juic
+33	c: is it what what keep you from do that right now ?
+34	c: is it is it hard for you ? in what way ?
+35	c: what do you think could get in your way that would make it hard to do your walk the way that you plan to ?
+36	c: yeah now if you are tri to use your food log each day what are some of the thing that you think could possibl get in your way ?
+37	c: yeah what might stop you from do that everi day like you plan ?
+38	c: can you think of anyth els that might get in your way ?
+39	c: okay so if you were to think about what might stop you from do this would you wanna get a smaller portion of food on your plate ? what might make you get too much food ?
+40	c: and what would stop you from onli take a littl bit or take a medium size portion ?
+41	c: <cat>302</cat>
+42	c: well what do you imagin might stop you from do your two hour of extra practic ?
+43	c: can you think of anyth els that might get in your way ?
+44	c: can you think of anyth els ?
+45	c: can you think of anyth that might make it difficult for you to be success with your plan ?
+46	c: can you think of anyth els that may get in your way ?
+47	c: is that someth that you think might get in your way too ?
+48	c: so do you think of anyth els that could get in your way ?
+49	c: so what might stop you from hold back when you want to go to the store ?
+50	c: but what might get in your way ? like if you want to stop yourself from go to the store what might happen that would caus you to go anyway ?
+51	c: okay do you feel like there is anyth els that might make it hard for you not to go to the store and get junk food ?
+52	c: like so when i say someth that could get in the way what i realli mean is what could make it hard for you to stop yourself from go to the store ? like what would make it so that you go to the store instead of hold back ?
+53	c: what do what do you find difficult about it ?
+54	c: well this would be kind of the the plan ahead part where you think about what are what are thing that could possibl stop you from make this choic ?
+55	c: and who do you think might interrupt you ?
+56	c: can you think of anyth that would stop you from log and learn how to count calori ?
+57	c: but what other thing prevent you from do stuff that you realli want to do like log for exampl ?
+58	c: can you think of anyth els that would stop you ?
+59	c: okay so what other thing can you think of ?
+60	c: okay great so if you think for a minut about thing that could possibl get in your way and make it so that you don't do your exercis the way you plan what do you think might stop you ?
+61	c: do you ever think about like do peopl call you or do you have like other thing that you have to go do or mayb you just think to yourself oh i know i was go to but i just don't feel like it ?
+62	c: well what are some thing that could get in the way of be activ or you know run around your grandma yard =
+63	c: all right what els ?
+64	c: and then what about if you have other stuff to do that will keep you be less activ ?

@@ -1,0 +1,759 @@
+1	t: mm no
+2	t: mm-hmm
+3	t: no
+4	t: good
+5	t: yeah
+6	t: yeah
+7	t: yeah
+8	t: yeah
+9	t: mm-hmm
+10	t: yeah
+11	t: mm-hmm
+12	t: mm-hmm
+13	t: yeah
+14	t: uh-huh
+15	t: mm-hmm
+16	t: mm-hmm
+17	t: mm
+18	t: not
+19	t: mm-mm laugh
+20	t: mm-hmm
+21	t: okay
+22	t: mm-hmm
+23	t: yeah
+24	t: mm-hmm
+25	t: inaud
+26	t: mm-hmm
+27	t: no
+28	t: okay
+29	t: mm-hmm
+30	t: mm-hmm
+31	t: yeah
+32	t: yeah
+33	t: uh
+34	t: mm-hmm
+35	t: i think that it
+36	t: elis
+37	t: mm-hmm
+38	t: yeah
+39	t: yeah
+40	t: yes
+41	t: mm-hmm
+42	t: yeah
+43	t: yeah
+44	t: yeah
+45	t: yeah
+46	t: mm-hmm
+47	t: mm-hmm
+48	t: yeah
+49	t: yeah
+50	t: mm-mm
+51	t: yeah
+52	t: mm-hmm
+53	t: yeah
+54	t: yeah
+55	t: mm
+56	t: i realli don't know
+57	t: yeah
+58	t: sure
+59	t: oh what =
+60	t: i realli don't know
+61	t: mm-hmm yeah
+62	t: mm-hmm
+63	t: okay
+64	t: yeah
+65	t: i don't know
+66	t: i realli don't know
+67	t: mm-hmm
+68	t: we got it all
+69	t: inaud
+70	t: mm-mm
+71	t: yeah
+72	t: you'r welcom
+73	t: mm-hmm
+74	t: mm-hmm yeah
+75	t: mm-hmm
+76	t: yeah
+77	t: yeah
+78	t: yeah
+79	t: about not for sure
+80	t: i think that it
+81	t: mm-hmm
+82	t: i'm josephzena
+83	t: josephzena
+84	t: josephzena
+85	t: mm-hmm yes
+86	t: thank you
+87	t: okay
+88	t: no thank you
+89	t: okay
+90	t: no
+91	t: yes
+92	t: mm-hmm
+93	t: yes
+94	t: yes
+95	t: mm-hmm
+96	t: yes
+97	t: yes
+98	t: yes
+99	t: yes
+100	t: yes
+101	t: mm-hmm
+102	t: yes
+103	t: yes
+104	t: mm-hmm
+105	t: yeah
+106	t: yes
+107	t: yes
+108	t: yes
+109	t: yes
+110	t: yes
+111	t: mm-hmm
+112	t: yes
+113	t: yes
+114	t: yes
+115	t: yes
+116	t: yes
+117	t: yes
+118	t: yes
+119	t: mm-hmm
+120	t: mm-hmm yeah
+121	t: yes
+122	t: mm-hmm
+123	t: yes
+124	t: yes
+125	t: mm-hmm
+126	t: yes
+127	t: mm-hmm
+128	t: mm-hmm
+129	t: mm-hmm
+130	t: yes
+131	t: yeah
+132	t: mm-hmm
+133	t: no
+134	t: no thank you
+135	t: mm-hmm
+136	t: yes
+137	t: yes
+138	t: yes
+139	t: yes
+140	t: yes
+141	t: mm-hmm
+142	t: mm-hmm
+143	t: yes
+144	t: yes
+145	t: yes
+146	t: yes
+147	t: uh-huh
+148	t: mm-hmm
+149	t: yeah yeah
+150	t: yeah
+151	t: yeah
+152	t: no
+153	t: yeah sometim
+154	t: yeah
+155	t: yeah no i don't know
+156	t: mm-hmm
+157	t: mm-hmm
+158	t: yeah no
+159	t: yes
+160	t: yeah
+161	t: yeah
+162	t: yeah inaud
+163	t: yeah
+164	t: yeah
+165	t: yeah
+166	t: yeah
+167	t: yeah
+168	t: yeah
+169	t: yeah
+170	t: yeah
+171	t: yeah
+172	t: yeah
+173	t: okay
+174	t: mm-hmm
+175	t: okay
+176	t: thank you
+177	t: mm-hmm
+178	t: thank you
+179	t: yes
+180	t: yeah
+181	t: yeah
+182	t: mm-hmm
+183	t: yeah
+184	t: yeah
+185	t: mm-hmm
+186	t: yeah
+187	t: yeah
+188	t: uh-uh
+189	t: mm-hmm
+190	t: yeah
+191	t: yeah
+192	t: mm-hmm
+193	t: laugh yeah
+194	t: mm-hmm hmm
+195	t: okay
+196	t: mm-hmm
+197	t: yeah
+198	t: mmm not right now
+199	t: no
+200	t: yeah
+201	t: yes
+202	t: yeah
+203	t: yeah
+204	t: mm-hmm
+205	t: yes
+206	t: yes
+207	t: yes
+208	t: yeah
+209	t: mm-hmm
+210	t: yeah i think so
+211	t: mm-hmm
+212	t: okay
+213	t: yes
+214	t: no i don't know
+215	t: yeah yes it is
+216	t: yeah
+217	t: mm-hmm
+218	t: yes
+219	t: mm-hmm yeah
+220	t: mm-hmm
+221	t: mm-hmm
+222	t: yeah
+223	t: mm-hmm
+224	t: yes
+225	t: mm-hmm
+226	t: yeah
+227	t: yes
+228	t: yes
+229	t: yeah
+230	t: mm-hmm
+231	t: mm-hmm
+232	t: no laugh
+233	t: mm-hmm
+234	t: yeah
+235	t: mm-hmm
+236	t: yeah
+237	t: yes
+238	t: mm-hmm
+239	t: mm-hmm
+240	t: right
+241	t: mm-hmm
+242	t: yeah
+243	t: mm-hmm
+244	t: yes
+245	t: okay
+246	t: mm-hmm
+247	t: i'm kiera
+248	t: no
+249	t: uh-huh
+250	t: i realli don't know just
+251	t: yeah
+252	t: yes
+253	t: yes
+254	t: hmm like i don't know
+255	t: not realli
+256	t: yes
+257	t: yes
+258	t: yeah
+259	t: yeah
+260	t: mm-hmm
+261	t: yeah
+262	t: i don't know it just
+263	t: yeah
+264	t: mm-hmm
+265	t: okay
+266	t: okay okay
+267	t: mm-hmm
+268	t: mm-hmm
+269	t: i i realli don't know
+270	t: okay
+271	t: okay
+272	t: okay
+273	t: okay
+274	t: yeah
+275	t: yeah
+276	t: no
+277	t: okay
+278	t: yeah
+279	t: yeah
+280	t: yeah
+281	t: yeah
+282	t: yeah
+283	t: i guess
+284	t: right
+285	t: yeah
+286	t: yes
+287	t: yeah
+288	t: yeah
+289	t: yeah yeah
+290	t: yeah
+291	t: yeah
+292	t: yeah
+293	t: yeah
+294	t: yeah
+295	t: yeah
+296	t: yeah
+297	t: yeah
+298	t: yeah
+299	t: yeah yeah
+300	t: yeah yeah
+301	t: i don't know
+302	t: yeah
+303	t: mm-hmm
+304	t: yeah
+305	t: yeah
+306	t: yeah
+307	t: yeah
+308	t: yeah
+309	t: yeah
+310	t: yeah
+311	t: yeah
+312	t: probabl not
+313	t: yeah
+314	t: i don't know
+315	t: yeah
+316	t: yeah
+317	t: yeah
+318	t: yeah
+319	t: yeah
+320	t: yeah
+321	t: yeah
+322	t: no
+323	t: yeah
+324	t: yeah
+325	t: mm-hmm
+326	t: yeah
+327	t: sharlo
+328	t: yeah
+329	t: thank you
+330	t: none
+331	t: right
+332	t: right
+333	t: mm-hmm yeah
+334	t: right
+335	t: right
+336	t: mm-hmm
+337	t: right
+338	t: mm-hmm
+339	t: okay
+340	t: right
+341	t: mm-hmm right
+342	t: yes
+343	t: mm-hmm
+344	t: mm-hmm
+345	t: yeah
+346	t: yeah
+347	t: right
+348	t: yeah
+349	t: right
+350	t: mm-hmm
+351	t: right
+352	t: yeah
+353	t: right
+354	t: right
+355	t: mm-hmm
+356	t: right
+357	t: right
+358	t: right
+359	t: right
+360	t: okay
+361	t: okay
+362	t: thank you
+363	t: mm-hmm
+364	t: fair enough
+365	t: mm-hmm
+366	t: yeah
+367	t: mm-hmm
+368	t: oh okay
+369	t: mm-hmm
+370	t: right
+371	t: yeah
+372	t: laugh
+373	t: correct yes
+374	t: mm-hmm
+375	t: yeah mm-hmm
+376	t: right
+377	t: mm-hmm
+378	t: mm-hmm
+379	t: yeah
+380	t: right
+381	t: correct
+382	t: yeah
+383	t: correct
+384	t: yeah
+385	t: yeah
+386	t: mm-hmm
+387	t: yes
+388	t: uh-uh
+389	t: fine
+390	t: yeah
+391	t: okay
+392	t: okay
+393	t: yeah
+394	t: yep
+395	t: yeah
+396	t: yeah
+397	t: yeah
+398	t: yeah
+399	t: yep
+400	t: uh-huh
+401	t: yeah
+402	t: yeah
+403	t: yeah
+404	t: yeah
+405	t: yeah
+406	t: yeah
+407	t: yeah
+408	t: yep
+409	t: yep
+410	t: yeah
+411	t: yeah
+412	t: yeah
+413	t: yep
+414	t: yeah
+415	t: nope
+416	t: okay
+417	t: i'm good
+418	t: mm-hmm
+419	t: mm-hmm
+420	t: hmm i don't know
+421	t: mm-hmm
+422	t: i don't know
+423	t: i don't know exact that
+424	t: hmm
+425	t: yeah
+426	t: no
+427	t: okay
+428	t: mm-hmm
+429	t: mm-mm
+430	t: laugh okay
+431	t: okay
+432	t: okay
+433	t: yeah
+434	t: mm-hmm
+435	t: yeah
+436	t: yeah
+437	t: yeah
+438	t: mm-hmm
+439	t: yeah
+440	t: yeah
+441	t: yeah
+442	t: yeah
+443	t: okay
+444	t: yeah it
+445	t: yeah
+446	t: mm-hmm
+447	t: okay
+448	t: yeah
+449	t: laugh
+450	t: thank you
+451	t: mm-hmm
+452	t: yeah
+453	t: mm-hmm
+454	t: mm-hmm
+455	t: yeah
+456	t: yeah
+457	t: laugh
+458	t: yeah
+459	t: yeah
+460	t: yeah
+461	t: yeah
+462	t: yeah
+463	t: yeah
+464	t: thank you
+465	t: thank you
+466	t: yeah
+467	t: yeah
+468	t: hmm i don't know
+469	t: okay
+470	t: hmm no
+471	t: okay
+472	t: yeah
+473	t: mm-hmm
+474	t: yeah so
+475	t: yes ma'am
+476	t: mm-hmm
+477	t: yes
+478	t: yes
+479	t: mm-hmm
+480	t: yeah
+481	t: yes
+482	t: yes
+483	t: okay
+484	t: okay
+485	t: yes
+486	t: yeah
+487	t: yes
+488	t: becaus
+489	t: yes
+490	t: mm-hmm
+491	t: yeah mm-hmm
+492	t: right yeah
+493	t: yeah
+494	t: yeah
+495	t: mm-hmm
+496	t: uh-huh
+497	t: right
+498	t: yeah
+499	t: yes
+500	t: okay
+501	t: no
+502	t: oh yes
+503	t: no
+504	t: i don't know
+505	t: i don't know
+506	t: inaud and i don't know
+507	t: yes
+508	t: no
+509	t: yeah
+510	t: none
+511	t: no
+512	t: i don't know
+513	t: mm-hmm
+514	t: yes
+515	t: yeah
+516	t: i don't know
+517	t: i guess
+518	t: hmm yes yeah
+519	t: that all i can think of
+520	t: no
+521	t: yes
+522	t: that okay
+523	t: no
+524	t: yes
+525	t: okay
+526	t: yeah
+527	t: yes
+528	t: right
+529	t: yes
+530	t: yes yes
+531	t: okay
+532	t: that good
+533	t: yeah
+534	t: i think that about it
+535	t: mm-hmm make it ÃƒÆ’Ã‚Â£Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢Ãƒâ€šÃ‚Â¦
+536	t: yes
+537	t: of cours
+538	t: mmm no
+539	t: no laugh
+540	t: yes
+541	t: okay
+542	t: mm-hmm
+543	t: no
+544	t: okay
+545	t: yeah
+546	t: mm-hmm
+547	t: okay so
+548	t: yeah okay
+549	t: all right
+550	t: mm-hmm
+551	t: yeah
+552	t: yes
+553	t: mm-hmm
+554	t: no
+555	t: mm-hmm
+556	t: no
+557	t: 2:46 i don't know
+558	t: good
+559	t: that about it like that about it
+560	t: well
+561	t: yeah
+562	t: mm-hmm
+563	t: right
+564	t: mm-hmm
+565	t: mm-hmm
+566	t: mm-hmm
+567	t: mm-hmm
+568	t: you'r welcom
+569	t: don't think
+570	t: i don't know
+571	t: mayb so
+572	t: yeah
+573	t: okay
+574	t: mm-hmm
+575	t: okay
+576	t: yeah
+577	t: yeah
+578	t: okay
+579	t: no
+580	t: yeah
+581	t: i don't know laugh
+582	t: okay
+583	t: mm-hmm
+584	t: yeah
+585	t: mm-hmm
+586	t: okay
+587	t: mm-hmm
+588	t: yeah
+589	t: okay
+590	t: i don't know i can't realli answer that
+591	t: no
+592	t: okay
+593	t: mm-hmm
+594	t: mm-hmm
+595	t: mm-hmm
+596	t: mm-hmm
+597	t: yeah
+598	t: yeah
+599	t: mm-hmm
+600	t: thank you
+601	t: mm-hmm
+602	t: i don't know
+603	t: yeah
+604	t: no
+605	t: okay
+606	t: right
+607	t: okay
+608	t: right
+609	t: yeah
+610	t: right
+611	t: mm-hmm
+612	t: yeah
+613	t: yeah
+614	t: yeah
+615	t: i would i don't know
+616	t: mm-hmm
+617	t: mm-hmm yeah
+618	t: mm-hmm
+619	t: mm-hmm
+620	t: you can
+621	t: mm-hmm yeah
+622	t: right
+623	t: mm-hmm
+624	t: right
+625	t: yeah
+626	t: okay
+627	t: mm-hmm
+628	t: so yeah
+629	t: mm-hmm
+630	t: mm-hmm
+631	t: mm-hmm
+632	t: yeah
+633	t: mm-hmm yep
+634	t: okay
+635	t: no
+636	t: yeah
+637	t: well
+638	t: no
+639	t: i don't realli i don't realli know
+640	t: yeah
+641	t: long
+642	t: no not at all
+643	t: not realli ani i don't realli just blank
+644	t: okay
+645	t: not realli so it not that
+646	t: i don't know to be honest with you
+647	t: i guess yes
+648	t: yeah
+649	t: okay
+650	t: that
+651	t: mm-hmm
+652	t: that pretti much it
+653	t: okay
+654	t: not realli realli i don't realli have ani question at the moment
+655	t: yeah
+656	t: yeah
+657	t: uh-huh
+658	t: yeah
+659	t: yeah
+660	t: noth
+661	t: 0:21:18 like we go to i'm not sure like i'm not sure how to tell her stuff we just 0:21:28
+662	t: okay
+663	t: no
+664	t: good
+665	t: no
+666	t: yeah
+667	t: yes
+668	t: yeah
+669	t: yeah
+670	t: that about it
+671	t: it been okay
+672	t: yeah
+673	t: mm-hmm
+674	t: yeah
+675	t: yeah
+676	t: yeah
+677	t: no
+678	t: yes
+679	t: yes
+680	t: mm-hmm
+681	t: yeah
+682	t: yeah
+683	t: yeah
+684	t: that about it
+685	t: no
+686	t: mm-hmm
+687	t: yes
+688	t: yeah
+689	t: okay
+690	t: yeah
+691	t: i realli don't know
+692	t: yeah
+693	t: no
+694	t: yeah
+695	t: all right
+696	t: hmm not realli
+697	t: no not realli
+698	t: someth like that
+699	t: mm-hmm
+700	t: i don't know
+701	t: mm-hmm
+702	t: i don't know 0:10:12
+703	t: mm-hmm
+704	t: mm-hmm
+705	t: not realli
+706	t: i don't know
+707	t: okay
+708	t: mm-hmm
+709	t: hmm not realli
+710	t: no
+711	t: mm-hmm
+712	t: mm-hmm
+713	t: i don't know
+714	t: yeah
+715	t: good
+716	t: inaud
+717	t: yes
+718	t: yes
+719	t: yes
+720	t: mm-hmm
+721	t: mm-hmm
+722	t: uh  i don't know like realli
+723	t: yeah
+724	t: mm
+725	t: okay
+726	t: mm
+727	t: yeah
+728	t: mm-hmm
+729	t: yep
+730	t: mm-hmm
+731	t: mm-hmm
+732	t: okay
+733	t: mm-hmm
+734	t: yes
+735	t: uh-huh
+736	t: mm-hmm yes
+737	t: that about it
+738	t: yes
+739	t: mm-hmm
+740	t: yes
+741	t: yeah
+742	t: mm-hmm
+743	t: mm-hmm that
+744	t: hmm
+745	t: mm-hmm
+746	t: yeah
+747	t: yeah
+748	t: yes
+749	t: i don't realli know what
+750	t: mm-hmm
+751	t: i don't know =
+752	t: yeah
+753	t: mm-hmm nope
+754	t: mm-hmm
+755	t: mm-hmm
+756	t:  fine
+757	t: i don't know
+758	t: mm
+759	t: yeah

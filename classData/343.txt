@@ -1,0 +1,65 @@
+1	c: i just was wonder you know how do you feel about your weight ?
+2	c: so how do you feel about your weight ?
+3	c: okay so tell me a littl bit about sort of where you'r at you know with your weight and what brought you here today
+4	c: okay so whi don't you tell me a littl bit about sort of what go on with you with your weight how you'r feel about it whi you came here today
+5	c: to get to get to this point and how do you feel about your weight ?
+6	c: nice job i'm happi to see you laugh so how do you feel about your weight ?
+7	c: c and in term of you know do thing about weight what are some thing that you'v heard peopl do when they'r go to chang they want to lose some weight</text ?
+8	c: tell me a littl more about the stuff you'r do right now
+9	c: and now kind of you know how do you feel about your weight ?
+10	c: well what are some way that you'v heard that you know peopl go about lose some weight ?
+11	c: well befor we you know realli get into more of that if you like we can-you know how do you feel about your weight ?
+12	c: tell me a littl bit more about the health
+13	c: and how have they respond ?
+14	c: so tell me you know where you'r at in term of your weight and what brought you here today
+15	c: are those food around the hous or are they most outsid of the hous ?
+16	c: you don't want to do okay ? becaus that realli isn't help for peopl a lot of time so how do you feel about your weight ?
+17	c: all right well how do you feel about your weight ?
+18	c: well if you had like a scale of one to ten where one would be not at all import ten would be veri import excus me how import is it for you to find someth to focus on in order to lose weight ?
+19	c: so you know tell me how do you feel about your weight ?
+20	c: tell me a littl bit more about that
+21	c: alright so tell me what you know sort of where you'r at with your weight
+22	c: okay what do you think about that weight ?
+23	c: mm-hmm so what about the food choic ? tell me more about that
+24	c: okay and what kind of thing are you eat the rest of the time ?
+25	c: so what about portion size with those thing ? like so for exampl if it lunchtim and you'r have chip you know do you find that you could eat half a bag of chip like that snap or do you find that you just eat a coupl and stop or you know ?
+26	c: okay so i guess i'd like to just get start by kind of find out your perspect and you know sort of whi you'r here and what you think about your your weight right now and your health
+27	c: cool so now that that stuff all out of the way so how do you feel about your weight ?
+28	c: so tell me you know just to start off with what your thought are about your weight and where you'r at and what you want
+29	c: okay alright so tell me how do you feel about your weight ?
+30	c: tell me a littl bit more about that
+31	c: tell me a littl more about that
+32	c: and all that so tell me you know how do you feel about your weight ?
+33	c: tell me a littl bit more about that
+34	c: laugh well when you come and kind of talk to somebodi about this you know thing with nutrit and activ i don't know if you have certain thought like you know how do you feel about your weight ?
+35	c: well tell me a littl bit more about that
+36	c: and see if there anyth you guy want to work on befor you leav so you know how do you feel about your weight ?
+37	c: yeah so tell me a littl bit more about that stuff
+38	c: okay so you know tell me more about where you'r at with your eat right now mayb some of the typic thing that you eat and what you might want to do differ
+39	c: okay so tell me you know where you'r at with your weight and what your thought are about that ?
+40	c: tell me about that
+41	c: okay so well let jump in and and tell me you know what brought you in today ?
+42	c: what do you think about your weight ?
+43	c: what other what other thought do you have ?
+44	c: what do you think that what did you think when i said come up with a plan ? what did that make you think about ?
+45	c: okay tell me a littl more about that
+46	c: okay so well how about if we just start by talk a littl bit about your weight and how you feel about it what you'v heard
+47	c: and i just want to know how do you feel about your weight ?
+48	c: okay so how that been go for you ?
+49	c: can you tell me a littl bit more about that ?
+50	c: so what doe your bodi feel like when you'r that activ that you can't sing the happi birthday song ?
+51	c: tell me about you know how those fit in your life
+52	c: and so what do you think of your weight ?
+53	c: so what about portion size mean how much when you do eat do you feel like you eat the right amount or too much or too littl ?
+54	c: do you do much eat out or do you pretti much eat at home ?
+55	c: okay ? do these look familiar like kind of thing you guy might cook at home ?
+56	c: okay can you tell me a littl bit about that ?
+57	c: have you ever talk to anybodi els ?
+58	c: your sleep ? tell me a littl more about that if you would
+59	c: so tell me a littl bit about how you feel about your weight
+60	c: okay so what do you think ?
+61	c: sure yeah what do you think about your weight ?
+62	c: so how about if we start with just talk about what you think about your weight ? would that be good ?
+63	c: okay so what do you think ?
+64	c: and befor we get go with that i just want to ask you how do you feel about your weight ?
+65	c: i just want to know how do you feel about your weight ?

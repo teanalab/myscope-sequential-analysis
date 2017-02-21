@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  2 FEB 2017 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  19 FEB 2017 22:12
 entering extended mode
 **./main.tex
 (main.tex
@@ -479,14 +479,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 53.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 53.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 97.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 49.
 ! Undefined control sequence.
-l.103 ... human coders according to MYSCOPE \citep
+l.55 ...d human coders according to MYSCOPE \citep
                                                   {07}, a specialized codebo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -494,8 +490,12 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 58.
 ! Undefined control sequence.
-l.106 ...tor reliability ($\kappa$ = 0.696) \citep
+l.58 ...itor reliability ($\kappa$ = 0.696) \citep
                                                   {07}. The MYSCOPE codebook...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -504,13 +504,18 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
 []\OT1/ptm/m/n/10 Open-ended ques-tion,
  []
 
-[3]
+
+LaTeX Warning: Reference `table:01' on page 3 undefined on input line 86.
+
+
+LaTeX Warning: Reference `table:01' on page 3 undefined on input line 86.
+
 ! Undefined control sequence.
-l.136 ...mmer available as part of the Weka \citep
+l.88 ...emmer available as part of the Weka \citep
                                                   {26} machine learning tool...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -518,8 +523,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[3]
 ! Undefined control sequence.
-l.145 ...probability theory, a markov model \citep
+l.97 ... probability theory, a markov model \citep
                                                   {45} is a stochastic model...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -527,24 +533,23 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[4]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 148.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 100.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
-
-<figures/deltadata.jpg, id=20, 650.43pt x 358.33875pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
+ [4]
+<figures/deltadata.jpg, id=27, 650.43pt x 358.33875pt>
 File: figures/deltadata.jpg Graphic file (type jpg)
 
 <use figures/deltadata.jpg>
-Package pdftex.def Info: figures/deltadata.jpg used on input line 174.
+Package pdftex.def Info: figures/deltadata.jpg used on input line 126.
 (pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
 
 ! Undefined control sequence.
-l.180 ...tion of sequence of behavior codes \citep
+l.132 ...tion of sequence of behavior codes \citep
                                                   {36} as an experimental de...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -552,415 +557,60 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+
+LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 147
+.
+
+
+LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 148
+.
+
+
+LaTeX Warning: Reference `table:conf' on page 5 undefined on input line 148.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
+
+ []
+
 [5 <./figures/deltadata.jpg>]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.246 1 & 311\rightarrow
-                        112\rightarrow301\rightarrow500 & 343\rightarrow109\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.246 ...ghtarrow112\rightarrow301\rightarrow500 &
-                                                   343\rightarrow109\rightar...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.246 ...ghtarrow112\rightarrow301\rightarrow500 &
-                                                   343\rightarrow109\rightar...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.246 ...ghtarrow112\rightarrow301\rightarrow500 &
-                                                   343\rightarrow109\rightar...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.246 ...htarrow301\rightarrow500 & 343\rightarrow
-                                                  109\rightarrow312\rightarr...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.247 2
-        & 310\rightarrow112\rightarrow311\rightarrow500 & 311\rightarrow109\...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.247 2
-        & 310\rightarrow112\rightarrow311\rightarrow500 & 311\rightarrow109\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.247 2
-        & 310\rightarrow112\rightarrow311\rightarrow500 & 311\rightarrow109\...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.247 2 & 310\rightarrow
-                        112\rightarrow311\rightarrow500 & 311\rightarrow109\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.247 ...ghtarrow112\rightarrow311\rightarrow500 &
-                                                   311\rightarrow109\rightar...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.247 ...ghtarrow112\rightarrow311\rightarrow500 &
-                                                   311\rightarrow109\rightar...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.247 ...ghtarrow112\rightarrow311\rightarrow500 &
-                                                   311\rightarrow109\rightar...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.247 ...htarrow311\rightarrow500 & 311\rightarrow
-                                                  109\rightarrow312\rightarr...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.248 3
-        & 311\rightarrow117\rightarrow309\rightarrow500 & 327\rightarrow120\...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.248 3
-        & 311\rightarrow117\rightarrow309\rightarrow500 & 327\rightarrow120\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.248 3
-        & 311\rightarrow117\rightarrow309\rightarrow500 & 327\rightarrow120\...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.248 3 & 311\rightarrow
-                        117\rightarrow309\rightarrow500 & 327\rightarrow120\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.248 ...ghtarrow117\rightarrow309\rightarrow500 &
-                                                   327\rightarrow120\rightar...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.248 ...ghtarrow117\rightarrow309\rightarrow500 &
-                                                   327\rightarrow120\rightar...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.248 ...ghtarrow117\rightarrow309\rightarrow500 &
-                                                   327\rightarrow120\rightar...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.248 ...htarrow309\rightarrow500 & 327\rightarrow
-                                                  120\rightarrow312\rightarr...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.249 4
-        & 312\rightarrow112\rightarrow311\rightarrow500 & 314\rightarrow103\...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.249 4
-        & 312\rightarrow112\rightarrow311\rightarrow500 & 314\rightarrow103\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.249 4
-        & 312\rightarrow112\rightarrow311\rightarrow500 & 314\rightarrow103\...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.249 4 & 312\rightarrow
-                        112\rightarrow311\rightarrow500 & 314\rightarrow103\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.249 ...ghtarrow112\rightarrow311\rightarrow500 &
-                                                   314\rightarrow103\rightar...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.249 ...ghtarrow112\rightarrow311\rightarrow500 &
-                                                   314\rightarrow103\rightar...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.249 ...ghtarrow112\rightarrow311\rightarrow500 &
-                                                   314\rightarrow103\rightar...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.249 ...htarrow311\rightarrow500 & 314\rightarrow
-                                                  103\rightarrow314\rightarr...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.250 5
-        & 331\rightarrow112\rightarrow311\rightarrow500 & 344\rightarrow109\...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.250 5
-        & 331\rightarrow112\rightarrow311\rightarrow500 & 344\rightarrow109\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.250 5
-        & 331\rightarrow112\rightarrow311\rightarrow500 & 344\rightarrow109\...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.250 5 & 331\rightarrow
-                        112\rightarrow311\rightarrow500 & 344\rightarrow109\...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.250 ...ghtarrow112\rightarrow311\rightarrow500 &
-                                                   344\rightarrow109\rightar...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.250 ...ghtarrow112\rightarrow311\rightarrow500 &
-                                                   344\rightarrow109\rightar...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.250 ...ghtarrow112\rightarrow311\rightarrow500 &
-                                                   344\rightarrow109\rightar...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.250 ...htarrow311\rightarrow500 & 344\rightarrow
-                                                  109\rightarrow326\rightarr...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \endtemplate 
-l.251 \hline
-            
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.251 \hline
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.251 \hline
-            
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+LaTeX Warning: Reference `table:topsec' on page 6 undefined on input line 182.
 
 [6] (main.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [7] (main.aux) ) 
+) [7] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3679 strings out of 493329
- 56836 string characters out of 3136424
- 128457 words of memory out of 3000000
- 7152 multiletter control sequences out of 15000+200000
+ 3654 strings out of 493329
+ 56357 string characters out of 3136424
+ 123342 words of memory out of 3000000
+ 7127 multiletter control sequences out of 15000+200000
  20907 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,46p,2323b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
-c}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on main.pdf (7 pages, 223346 bytes).
+ 43i,10n,40p,2323b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
+times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
+8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (7 pages, 221862 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

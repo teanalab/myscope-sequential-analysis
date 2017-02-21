@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -6,6 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -92,7 +94,8 @@ public class UtilityClass {
 	public static int writeSequenceIntoFile(PrintWriter sequenceCodeWriter, String seqLine){
 		ArrayList<String> list = createAllSequencesFromOne(seqLine);
 		for(int i=0; i<list.size(); i++){
-			sequenceCodeWriter.println(list.get(i).trim());
+			if(list.get(i).trim().length() > 9)
+				sequenceCodeWriter.println(list.get(i).trim());
 		}
 		return list.size();
 	}
@@ -264,7 +267,7 @@ public class UtilityClass {
 		File rawDataFolder = new File("modinput/collapse");
 		File []rawFiles = rawDataFolder.listFiles();
 		// Sequence code writer
-		PrintWriter sequenceCodeWriter = new PrintWriter("SequentialData/allsequence.txt", "UTF-8");
+		PrintWriter sequenceCodeWriter = new PrintWriter("SequentialData/allsequence_noorder.txt", "UTF-8");
 
 		for (int i = 0; i < rawFiles.length; ++i) {
 			BufferedReader br = new BufferedReader(new FileReader(rawFiles[i]));
@@ -759,6 +762,65 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 		ts.idx = s.length();
 		ts.who = speaker;
 		ts.timestamp = getTimestamp(timestamp);
+	}
+	
+	public static Map<String, String> readMergeCode(String fileName) throws IOException {
+		  
+	    BufferedReader br = new BufferedReader(new FileReader(fileName));
+	    Map<String, String> mergeCodeMap = new HashMap<String, String>();  
+	    
+	    try {
+	    	
+	        String[] oneLine;
+	        String line = br.readLine();
+
+	        while (line != null) {
+	        	oneLine = line.split("\t");
+	        	mergeCodeMap.put(oneLine[0], oneLine[1]);
+	            line = br.readLine();	            
+	        }
+	        
+	        br.close();
+	        return mergeCodeMap;
+	        
+	    } catch(Exception e) {
+	        br.close();
+	        return mergeCodeMap;
+	    }
+	}
+	
+	public static void createNthOrderSequence(int order) throws IOException{
+		BufferedReader br = new BufferedReader(new FileReader("SequentialData/allsequence_noorder.txt"));
+	    PrintWriter writer = new PrintWriter(new File("SequentialData/allsequence.txt"));
+	    try {
+	    	
+	        String line = br.readLine();
+
+	        while (line != null) {
+	        	// handle nth order
+				String seqStr = "";
+				String []lineData = line.trim().split(",");
+				if(lineData.length < 3){
+					line = br.readLine();
+					continue;
+				}
+				
+				for(int p=0; p<lineData.length-2; p++){
+					seqStr = seqStr.length()>0?seqStr+","+lineData[p]+":"+lineData[p+1]:lineData[p]+":"+lineData[p+1];
+				}
+				
+				writer.println(seqStr+","+lineData[lineData.length-1].trim());
+	        	
+	        	line = br.readLine();	            
+	        }
+	        
+	        br.close();
+	        writer.close();
+	        
+	    } catch(Exception e) {
+	        br.close();
+	        writer.close();
+	    }
 	}
 }
 

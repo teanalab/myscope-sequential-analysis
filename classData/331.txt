@@ -1,0 +1,687 @@
+1	c: you'll be lose weight ?
+2	c: what kind of place will you go to ? you got your car what kind of car is it ? ani car no special car just some wheel ? so you got your key and you got your car and you see yourself you know when you got those thing you see yourself lose weight tell me a littl bit more about that
+3	c: so what make you want to be lose weight when you get older ?
+4	c: well how do you think you'll get smaller ?
+5	c: what type of thing do you want to do to lose weight to get smaller ?
+6	c: how often do you do that ?
+7	c: so what make you go to the track three or four time a week =
+8	c: so what are the thing what are some of the thing you like about go to the track ?
+9	c: what make you go do activ when you you know befor you decid as
+10	c: how long have you been do that for ?
+11	c: who do you go with ?
+12	c: so if there realli noth fun that go on when you'r there whi do you go ?
+13	c: okay and what could you tri ?
+14	c: so you know on a scale of like one to ten where one is not at all import and ten is veri veri veri import how import is it to you to go to the track like that on a regular basi =
+15	c: what make it a nine and not a lower number like a seven ?
+16	c: what would it take to bump you up to a ten ?
+17	c: well how do you how do you go about like get a scale at home if that was someth that you want to =
+18	c: so how are you go to keep it cold ?
+19	c: but what are some other way that you could tell if it was work ?
+20	c: so tell me more about that in term of like what you want
+21	c: what would she say if you ask her for a scale ?
+22	c: okay what els with the flavor what other idea do you have ?
+23	c: well who somebodi that could help you with lose weight ?
+24	c: and what could she do ? like what someth that we could kind of talk to her about when we'r togeth that would be help for you in term of lose weight ?
+25	c: okay and anyth els you can think of in term of overcom the flavor or you know =
+26	c: can you tell me a littl bit more about that ?
+27	c: so what idea do you have about the healthi eat ?
+28	c: you know what other reason are you make all these chang on your own ?
+29	c: so what are some of the reason that you'r realli you know stick with the exercis and see chang ?
+30	c: so what type of veget do you enjoy eat ?
+31	c: so if you were go to add in a veget or two how would you do that ?
+32	c: so what specif would you want to do with the fri food ?
+33	c: and how do you want to do that ?
+34	c: so whi whi do you want to do this chang ?
+35	c: what els ?
+36	c: so it actual realli impress that you'r not think like just at home or just at so and so you'r cover all all the place that thing could go so what are some idea that you have if your mom still decid to fri the chicken even after you ask her to bake it ?
+37	c: what els ?
+38	c: so how might that go if you'r over at your dad and they come in with chicken ?
+39	c: stuff
+40	c: so what would be some thing that you would suggest as substitut that you'd like to eat ?
+41	c: hmm so i mean what could you say or what reason could you give her if ?
+42	c: well if you were to you know i guess on a scale of one to ten where one is not at all confid and ten is extrem confid how confid are you that you can realli cut down on the fri food ? what number would you say ?
+43	c: what made you a three and not a one ?
+44	c: so what would it take to bump you up a coupl number ?
+45	c: so i don't know you know what are your thought about how to do that or you know how to catch yourself ?
+46	c: and you know who are some of the other peopl you'r think about ?
+47	c: and you know your your your mom nobodi els in your famili would have a problem with you go off bike alon or do anyth like that as long as it was dure the daytim ?
+48	c: well i mean on a on a scale of like one to ten where one would be not at all import and ten would be super import how import is it for you to kind of you know put bike ride in as your activ in order to to lose weight ?
+49	c: alright so what made you say like right in the middl that five ? and not like a a three ?
+50	c: now if you were go to you know bump it up you know like what would what would it take to get that you know do regular activ for weight loss a littl bit higher ? to like mayb like a seven or someth like that ?
+51	c: well what kind of thing would make it more fun ?
+52	c: so you know we could go with your plan be you know to exercis or you know if you want to get like how how would you exercis or what would you want to do as far as the exercis ?
+53	c: you know what if ani of those would you kind of want to focus on for activ ?
+54	c: laugh alright so whi would you want to do this ? whi would you want to wake up ? whi would you want to go walk with your mom or your aunt ?
+55	c: so what is someth that you could do like what could you tri in order to get past this idea of not get up ?
+56	c: like what if you just don't want to go ?
+57	c: we'r go and that doesn't alway make you feel like oh it fun when they say we'r go laugh yeah well how should i write that down in term of like if you you know if you kind of wake up and you just don't want to go ? what are some thing like the you know then i'd tri this stuff ?
+58	c: you'll do it tomorrow ?
+59	c: well what someth that your mom could do to help you reach this goal ?
+60	c: mm-hmm like get up and eat breakfast
+61	c: alright alright well if we go back to that scale of one to ten so if one would be like not at all confid and ten would be super confid how confid are you that you can put this guy into action ?
+62	c: so you know whi weren't you a lower number with that ?
+63	c: tell me more about that
+64	c: and what did you do that got you alreadi you know to kind of get the process start ?
+65	c: okay and tell me more about you want to do that
+66	c: you can walk and play at the same time ?
+67	c: and with her are you allowed-i'm wonder what is it like to go without her ? is that an option or not an option ?
+68	c: what made you say a seven and not a lower number ?
+69	c: the form ?
+70	c: and whi do you want to do this ?
+71	c: and what could you tri to kind of get over that obstacl
+72	c: so would you-i it realist that you could find someon to go with you in the morn ?
+73	c: so tell me what kind of chang you'v made so far
+74	c: okay and have you seen ani outcom from these chang ?
+75	c: okay and now that school out what are you do for exercis ?
+76	c: what are the reason that you want to get down to 175 ?
+77	c: other reason whi you might want to be down to a lower weight ?
+78	c: how are you go to have cold water avail for yourself like right when you get home ?
+79	c: so sinc catch have you lost weight stay the same or gain weight ?
+80	c: how are you do with record what your intak right now ?
+81	c: okay and whi you want to do this
+82	c: and what kind of thing can you tri to overcom you know that barrier ?
+83	c: caus it real easi when it like right in front of you tri to stay away from the food mm-hmm ani other idea ?
+84	c: what about when summer school out ?
+85	c: what could your mom do to help you with this ?
+86	c: and what can your mom do to help you ?
+87	c: so she could walk with you ?
+88	c: anyth els that would help her ? doe she bring fatti food around the hous that are hard for you to avoid or doe she keep it pretti healthi ?
+89	c: well what type of thing have you thought of ?
+90	c: what kind of stuff tell me a littl more about that
+91	c: what go on with those ?
+92	c: tell me a littl bit more what you mean by do it right
+93	c: how would she make sure ?
+94	c: whi would you want to do some of those thing ?
+95	c: you'r pretti smart that you know that those have extra calori in them hmm where did you learn about all that stuff ? awesom all right so by you know cut out some of those calori well whi whi would you want to you know
+96	c: well what could you do if a new drink come out and you'r realli work on drink the water
+97	c: and what is someth that she could do to help you reach your goal of drink more water ?
+98	c: so what kind of thing in the hous would be a good option ?
+99	c: all right give me what you got
+100	c: and what would you do you think on there if you were go to pick up the label would you be look at ? well on a like a scale of one to ten think about all that stuff if one is not at all confid and ten is veri confid how confid would you say that you are that you'd be abl
+101	c: so tell me whi you'r an eight and say not like a six
+102	c: so what would it take to bump you up a littl higher like two a nine ?
+103	c: tell me a littl bit more about that
+104	c: like school and sport and those thing and the other side of the equat just be the eat part the nutrit piec what are your kind of thought on that ?
+105	c: and how is it go so far</sample> ?
+106	c: well you know who a person that you could ask ?
+107	c:  you know anybodi in your life that you know that you could ask about more strength or stretch type of activ ?
+108	c: is that i mean how are you go to be work on the strength part of it ?
+109	c: well whi whi do you want to do those kind of thing
+110	c: but you'r think about it so if you you know so tell me a littl bit about-let me see like how how import is it like on a scale of one to ten where one would be not at all import and ten would be veri import ?
+111	c: yeah ? okay so that that import and what make you say a six and not a lower number like a four ?
+112	c: what would it take to bump you up a littl higher to say like mayb like an eight ?
+113	c: all right i mean it make sens that when you have more of those thing then it kind of easier to do that stuff well if you want to get more of those thing how would you do that
+114	c: and to use his equip all right all right so what is someth that your mom could do in order to help you reach your goal of the strength exercis ?
+115	c: and what are the reason whi you want to get healthier ?
+116	c: and if you know and i think if we'r talk like realli specif about if you were like "okay i want to do more strength exercises" you know what could she do to help you with that part ?
+117	c: go for the exercis ?
+118	c: alright so if we want to kind of look at exercis you know what kind of thing would you see yourself do if you decid to start exercis on a regular basi ?
+119	c: you know what other idea do you have ?
+120	c: and you know when you get hungri at night you know how do you make other choic ? like how doe that go ?
+121	c: so i think that would just be yeah like how how would you like to work on lose weight ?
+122	c: what els ?
+123	c: alright so if you were go to have fruit instead of a snack you know other other food like chip or cooki or anyth like that whi would you do someth like that ? like what would be the most import reason to realli stick with have the fruit ?
+124	c: mm-hmm yeah if you were go to have fruit instead of anoth snack what would be the reason to do that ? like whi would you want to do that ? you know if you walk into the kitchen and there are some chip and some cooki on the counter and then there some fruit what kind of fruit ?
+125	c: mm-hmm yeah the grape and orang and appl are sit there what whi would you pick
+126	c: and and so then if there no fruit well what are some way to make sure that there fruit in the hous ?
+127	c: okay what kind of thing ?
+128	c: mm-hmm what kind of activ do your friend like to do that you feel like you'r miss out on ?
+129	c: mm-hmm what other thing ?
+130	c: okay so in term of behavior you know when you think about lose weight which is usual chang to food you know that you eat and chang to your activ what have you thought about do ?
+131	c: tell me more about that
+132	c: okay tell me more about that
+133	c: what would you say the differ is ? like how much fast food you were eat befor and how much in the last two week ?
+134	c: okay now or befor ?
+135	c: and now ?
+136	c: to onc a day ?
+137	c: how did you manag that chang ?
+138	c: okay so how do you say no ? if your friend are like "okay we'r go to mcdonald we'r go here" how did in the last two week how have you manag to say no ?
+139	c: okay alright and what about the activ ? you mention want to be more activ
+140	c: okay so tell me about those chang
+141	c: okay and when did you start that ?
+142	c: how how mani time a week would you say you'r do that ?
+143	c: okay and have you notic ani chang in your weight sinc then sinc you'v made some of these chang ?
+144	c: have you been abl or what do you do to monitor your weight ? do you have a scale or do you just kind of look in the mirror or what what do you do ?
+145	c: okay did you notic anyth from the weight on the scale to your weight today ? what did you notic ?
+146	c: and is this someth new hang out with your sister or is this someth you alway do ?
+147	c: and and what kind of thing do you see them be abl to do with you ?
+148	c: what can you do to kind of pull in your famili and friend when you leav here today ?
+149	c: okay is that someth you you could sit down and talk to them about it ? someth you want to do or you'r not so sure ?
+150	c: okay and do you have peopl in mind ? like who are you go to talk to ? who could you actual talk to today ?
+151	c: and who els ?
+152	c: and is she someon who would mayb work out with you or at least
+153	c: okay how confid are you that you can actual talk to them and make this happen ?
+154	c: all right so what idea do you have about healthi way to lose weight ?
+155	c: whi do you say that ?
+156	c: are you involv in bring the food into the hous or is it more your mom or your famili other famili member ?
+157	c: you know how becaus what if they you know make fri food or they bring chip into the hous or stuff like that ?
+158	c: okay alright and is there a way you know for her to help you with the exercis without be nag and you know bother you about it ?
+159	c: to stop repeat it ?
+160	c: but what about talk to your sibl about help you ? is that someth that you'd like her to do ?
+161	c: and how mani day a week
+162	c: so what are you do in the band ?
+163	c: alright so you'v got some idea on that with you know what about what someth that your mom can do to help you reach your goal of not have fri ?
+164	c: is that someth that you know about that you have famili member or it just someth that you heard about or someth els ?
+165	c: so what type of thing could you do instead of eat ?
+166	c: well what about time when you realli did stick with someth ?
+167	c: so if this person is kind of realli that import part of you you know make some chang with your activ and the eat when you'r bore how do we find that person ?
+168	c: and it won't really-you can't realli get structur in term of the day or i'm sorri like the meal and anyth what could you structur in your day ?
+169	c: and you'r think about give yourself like this time window to do it tell me a littl bit more about that
+170	c: what made you say a ten and not a lower number again eight or a nine ?
+171	c: tell me a littl bit more about the activ in band
+172	c: well how come you decid to stay with it and realli keep work toward that goal ?
+173	c: so that a littl someth that we have mayb down the road if you'r stick with it to do and what are you think about right now for activ ?
+174	c:
+175	c: whi would you want to eat up more of the veget ? okay whi would you want to eat more veget ?
+176	c: well if you were go to add in some more veget how would you do that ?
+177	c: sorri about that well if you were go to say like alright today i'm go to eat anoth veget how how would you do that or when when would you do that ?
+178	c: so nice well if you you know if you want to eat some more veget you know who somebodi that could help you you know figur out how to put that in your day ?
+179	c: so you know there one idea what els or who els would you talk to about it ?
+180	c: tell me what kind of veggi you like to eat
+181	c: okay do you have a goal in mind or what are your goal around your weight ?
+182	c: so where are you at in term of how readi you are to do that ? you know are you like if you think of a scale from one to ten are you total readi to make chang right now or are you sort of a one would be "i'm not readi to make chang right now" or somewher in the middl ?
+183	c: so tell me whi a six and not a lower number ?
+184	c: okay and what about in the area of food and food intak ?
+185	c: okay and whi do you want to lose weight ?
+186	c: okay so those are two import reason for you anyth els about whi you want to lose weight ?
+187	c: is that a reason or is that just more what they think ? is that import to you to make them happi ?
+188	c: and so let talk about that a littl bit what are your thought about cut calori ?
+189	c: what do you know about how mani calori you'd need to cut in order to lose weight ?
+190	c: so for 500 a day what are you think about cut ?
+191	c: yeah how much do you know about the calori in what you'r eat ? is that someth that you'v been pretti educ about or is it someth that you'r not realli sure about ?
+192	c: what your best guess about where you know where most of your weight come from ?
+193	c: okay so your plan is to so what are the kind of behavior that you talk about tri to do ?
+194	c: and when you say more activ what are you think about do ?
+195	c: walk ?
+196	c: okay so tri to do that mayb everyday instead of everi onc in awhil ?
+197	c: and what would you drink instead then ?
+198	c: and whi do you want to do this ?
+199	c: feel better and be less stress ?
+200	c: so how do you manag that ? or how will you manag that now ?
+201	c: and plan right ?
+202	c: so are you a morn person where you'r up befor work or do you kind of roll out of bed and go right to work ?
+203	c: okay so plan to pack food befor you go to work is someth realist caus you'r usual up in time ?
+204	c: are there what are your thought about have food around the hous that is easi to pack and bring ?
+205	c: mm-hmm are there ani other substitut to chip that have lower calori that you like ? you know like cracker or triscuit or wheat thin or you know popcorn or anyth like that ? or would you rather just do a smaller portion of what you realli like ?
+206	c: so what are your thought about you know be activ when you come home or befor in the morn ?
+207	c: okay so if you have to be at work at ten what time do you have to get up to have time to be activ and pack your food ?
+208	c: do you live close to work or pretti far ?
+209	c: okay and you'r walk to work ?
+210	c: so you just set an alarm for eight o'clock or would you wake up natur ?
+211	c: okay you'r an alarm person ?
+212	c: okay is this someth you feel like you can do on your own or that you'd need remind for ?
+213	c: ani other thing that you can think about that she might be abl to help with ?
+214	c: what you know kind of time or you know would you be look to spend do activ right now ?
+215	c: what do you know about look at the back of food label to see calori ?
+216	c: on a scale from one to ten how confid are you that you can make these thing happen ? one is like not at all confid and ten is "i'm definit do this" where are you at ?
+217	c: and whi did you say an eight and not a lower number ?
+218	c: okay what would it take to get you to a ten ?
+219	c: what is your abil to weigh yourself at home ?
+220	c: yeah i mean do you have one ?
+221	c: tell me more about that
+222	c: okay and is this someth that you'v thought for a long time or is this sort of a new thing you'r think about or someth els ?
+223	c: what kind of thing have you tri ?
+224	c: mm-hmm the walk how long have you been do that ?
+225	c: okay and i imagin there was a time when you weren't walk
+226	c: in term of walk ? were you walk when you were in school or was it onli when you
+227	c: and tell me more about the walk is it you know whether you know how long or you know whether you notic yourself out of breath or get hot or
+228	c: have you notic ani weight chang sinc then or mayb you didn't realli know where you were at to begin with ?
+229	c: so you know given that lose weight has to do with cut you know calori that you eat and get more physic what kind of thing have you thought about ad sort of to what you'r do right now ?
+230	c: okay and whi do you want to do these three thing ?
+231	c: okay so on a scale from one to ten where ten is that you'r complet readi to get go right now and one is you'r not at all readi and five is sort of it somewher in the middl what number would you say you'r at ?
+232	c: okay and whi a ten and not a lower number ?
+233	c: inaud what is your thought what are your thought about whi what made today differ ?
+234	c: was it come here get on the scale ?
+235	c: okay i'm wonder if get on the scale was motiv for you is that someth you can keep do to keep your motiv up ?
+236	c: you'r go to tri what ?
+237	c: what kind of thing have you heard ?
+238	c: someth to check out ?
+239	c: and it sound like you are do some thing to work on your weight
+240	c: and when you are you know like say you have the water or you have the pop in front of you what would be some of the good thing to choos the pop i'm sorri to choos the water instead of the pop ?
+241	c: so when you think about kind of choos you know you talk about some of the thing that your instinct have you choos the pop instead of like the water even though you know you have a lot of realli good reason for drink water the pop is tast better
+242	c: so what would it take for you to say "okay you know i'm go to choos water instead of pop" ?
+243	c: well on a scale of one to ten where one would be like not at all import and ten would be veri import how import would you say it is for you to make a chang in either your portion or what you'r drink ?
+244	c: alright so what made you say a five or a six instead of like a three or a four ?
+245	c: well tell me what would it take to get you up to a littl bit higher not necessarili a ten even though that a great place to go if you want to but what would it take to bump you up to mayb like a seven or an eight in how import it is for you to chang your eat and drink ?
+246	c: okay well what would be someth that would be help for you when you leav here today to work or think about work on your weight loss ?
+247	c: so what is that thing for you ?
+248	c: but you know what someth that she could do to help you with your motiv ?
+249	c: well how would that kind of determin of get to know your dad side of the famili help you with your chang in your eat and drink ?
+250	c: yeah so how doe that kind of feel that you know keep the push on someth and work on it and work toward a goal how can that help you when you think about do thing for weight loss ?
+251	c: okay tell me more about the thing other kid can do that you can't that you know you want to chang
+252	c: tell me more about that
+253	c: when you were weigh today and you learn of your weight is that the first time you'd heard about where you'r at or you kind of keep an eye on that
+254	c: okay so tell me what kind of thing you have tri or have thought about in term of chang you know your behavior to reach your goal ?
+255	c: okay so we can talk more about activ what other thing have you thought about in term of lose weight ?
+256	c: you know what kind of thing do you think you might be abl to start do in the next coupl week around your activity</text ?
+257	c: okay so if you see the treadmil be your high intens right ?
+258	c: so how would you monitor that pound a week ? do you you know what do you have a scale at home or would you have to go somewher els or you know what would be your option ?
+259	c: okay so your plan is to ?
+260	c: so exercis more you had some specif idea mayb we'll put that down on what were some of the thing you'r go to do right away in term of exercis more ?
+261	c: c what do you know about when they are and when you know when to check them out ?
+262	c: you got yoga on demand you know the channel it just make that hour a day to do it okay and you know on a scale from one to ten where one is like "i'm not at all go to realli do this i'm just say it caus i want to" and ten is "i'm definit go to do it" how commit are you to tri to get in that one hour a day of activ ?
+263	c: how are you go to manag that ?
+264	c: reduc self-doubt okay and what is your goal ?
+265	c: yeah or what the realist goal you'r tri to set for yourself so that you don't have self-doubt ?
+266	c: so how much would that be in a month if you were go to lose one to two pound a week ?
+267	c: c okay and you had a plan for monitor that so that you keep up the program what was your plan for that ?
+268	c: what other idea do you have about way that you could you know look at weight loss through eat chang ?
+269	c: so how would you like me to write that ?
+270	c: okay so how are we go to fix that problem ?
+271	c: okay so let talk about some of the thing your mom can do to help caus we'r go to meet her next
+272	c: so what would like me to write down in term of someth she could help you do in those thing ?
+273	c: okay and doe she have resourc for that ?
+274	c: so get a scale and what els ?
+275	c: and whi do you want to do this ?
+276	c: more about you know happier with your weight so you'r do some thing alreadi what made you decid to start do some exercis ?
+277	c: so what would you you know what are you think of do in order to to take the weight off the healthi way ?
+278	c: well i mean when you think back on the fact that you did get up an hour earlier how doe that make you feel about your abil to kind of stick on your plan ?
+279	c: and you know whi whi do you want to do that ? like whi doe that help you with your weight loss ?
+280	c: is this someth you want to write down ? or it someth you just want to kind of have in your head ?
+281	c: yeah so how you know how do you ignor when the food kind of come in and they'r sit right next to you ? laugh
+282	c: well what is is someth that either your mom who here with you or you mention some other famili member what someth that they could do to help you with your weight loss plan ?
+283	c: alright and how would it go if you talk to them about that ? i mean like it sound like you did alreadi talk to your mom
+284	c: but you know what if anyth would be someth that your mom could do to help you stay on your plan ?
+285	c: so what are some idea that you have for how to slow down when food are right there ?
+286	c: how were you abl to to not eat those food ?
+287	c: what are some other thing you could do ?
+288	c: you'r abl to to kind of move past it if you-how are you abl how are you abl to do that when you'r over there and it
+289	c: yeah that realli someth to hear how much you'r will to kind of like take your cousin out play with them somewher els or go over to your friend just so you don't have to have it there what are some thing that she could do to kind of help you when you know either with you know with that whole idea if you'r tri to cut down with the sweet and the cake ?
+290	c: alright well i mean you know tell me like how how import is it for you to ignor the cake and the cooki ? if like on a scale of one to ten or zero to ten if like zero was not at all import and ten was like veri veri import ?
+291	c: yeah and you know so you'r kind of around those thing but you know whi els wouldn't you be like a lower number like an eight ? or
+292	c: what make you not a littl bit lower of a number ?
+293	c: so when you you know think about the stuff that go on with your bodi and then also the your weight you know what stuff do you want to do about it ?
+294	c: you'r still feel that this is someth you want to you want to work on you do want to lose weight well what kind of thing have you been do ?
+295	c: well what about the the gym membership that make you want to you know go that way ?
+296	c: so what go on with that now ?
+297	c: well what is it that you would want to see happen dure the activ ?
+298	c: what type of you know whi would you want to go to to go to a gym again ?
+299	c: what did you like about it ?
+300	c: now tell me so i mean on a scale of one to like we can say like zero to ten where zero would be not at all import and ten would be veri veri import how import is it for you to to lose weight ?
+301	c: you know what make you say that ten instead of like a i don't know like a seven or an eight or someth like that ?
+302	c: what about your weight make you not happi ?
+303	c: well what els make it realli import ?
+304	c: well you know tell me how you know how confid are you ? again if we think about those same number again like zero to ten where zero would be like not at all confid and ten would be veri confid that you can find someth either some kind of activ or some kind of eat thing to do on a regular basi to help lose weight ?
+305	c: so you'r in the confid rang right ?
+306	c: hmm alright and what make you that five instead of a lower number ?
+307	c: what would it take to bump you up to a higher number ?
+308	c: well tell me about some time in your past when you did some thing that either stop you from gain weight or help you lose weight ?
+309	c: now where'd you get that idea ?
+310	c: well whi whi do you want to do this ? i mean this is an idea from your mom but you you brought it out here on the tabl when you could have pick anyth els that was out there so what make this someth that you want to do ?
+311	c: what els could you do ?
+312	c: so what the first thing that you can do in order to reach your goal of get out with raven everi day to walk ?
+313	c: and what is someth that that help to help you rememb to go
+314	c: but what someth that your mom could do to help you reach your goal ?
+315	c: so what was what would be someth that she could do in order to not keep you from your goal ?
+316	c: so what do you think about this plan ?
+317	c: alright well what type of thing are you talk about there ?
+318	c: yeah okay alright well other than you know your friend and mayb fit into some differ cloth you know what other thought do you have about whi you'd want to lose weight ?
+319	c: okay and what would you like to you know how would you like to see her talk to you about weight loss ?
+320	c: to keep go with stuff okay alright well how about if i kind of put that again on like a littl bit of list of thing that we might come back to
+321	c: alright well what els would you know what other thing could you do if you want to get activ more ?
+322	c: and i don't know you know what would you like to focus on ? you know kind of like come up with an idea mayb to work on when you leav here if you just had to kind of like pick someth small to realli focus on ?
+323	c: alright so realli kind of think about the whole idea of the munchi if you had to have just a littl bit of a a plan with what you were go to do with that what would that be ?
+324	c: and have like your you know that this is when i'm go to have a snack and then i'm done alright well what is the the most import reason that you'd want to do that ?
+325	c: you know what els could you do ?
+326	c: alright well i mean what the first thing that you could do in order to to reach your goal of you know cut back to mayb two snack a day ?
+327	c: so what someth that your mom can do ? you mention you know mayb if your sister move back and she can talk but what someth she can do right now to help you with the plan ?
+328	c: and so you know i'm wonder are you are you is your weight someth you'r concern about not realli worri about somewher in the middl ?
+329	c: okay so this idea of what to do when you'r eat at other peopl hous and they make food that aren't quit so healthi how do you get around that ?
+330	c: okay and what are what do you know about the risk or the health problem that you can get if your weight stay high ?
+331	c: and tri to get this weight off and what are some reason whi you want to get the weight off ?
+332	c: and you don't want to go down that path okay what are some other reason whi you want to get the weight off ?
+333	c: it too late for footbal now with the coach or not ?
+334	c: tell me more about the treadmil how are you go to get that ?
+335	c: okay and the i'm wonder with the treadmil and the strength and stuff what are your what are your thought about do that get into that everi day ?
+336	c: okay and is this like who somebodi in your life that could kind of help you talk to those peopl ?
+337	c: okay what about your nutrit ? what about your food and drink intak ? is is have you thought about make ani chang in that area ?
+338	c: have you tri that ?
+339	c: what'd you think ?
+340	c: so if you do go to a barbecu and all those food are around you know what are some thing that you could do ?
+341	c: okay and what about when school start ? what happen with that ?
+342	c: mm-hmm and what your mom do dure that time ?
+343	c: what what get in the way of her bring you home ?
+344	c: so what are your thought about when we i'm go to talk to your mom next about how to help you okay what do what do you think about bring someth like that up with her about get you home sooner ? would that be okay if if that come up in the convers ?
+345	c: what'd you say ?
+346	c: what els did we come up with ?
+347	c: anyth els ?
+348	c: okay anyth els you want to bring up befor i go get her ?
+349	c: what about it do you think is not healthi ?
+350	c: have you been think about those for a while ? yeah can you tell me a littl more about that ?
+351	c: you know when you think about yourself do that what do you pictur yourself do ? or have you mayb start alreadi ?
+352	c: you do ? what do you what do you pictur yourself do on the basketbal team ?
+353	c: yeah well do you have a posit you would like to play ? no or you just like the idea of play ?
+354	c: is there anyth that you'v start do alreadi ? no so you have some thought ?
+355	c: can you tell me a littl bit about what that mean to you ? like the idea of eat healthi what would that look like ?
+356	c: well tell me a littl bit about if you would how would it be how would life be differ for you if you lost some weight ?
+357	c: and so how would that be differ from right now ? like right now are you abl to do thing that you enjoy and are you abl to help other peopl ?
+358	c: what els ?
+359	c: what do you think it would take for you to be abl to get to the point where you'r abl to do those thing ?
+360	c: what do you think it might take to be abl to do those thing ?
+361	c: who would you need help from ?
+362	c: what do you think they could do for you ?
+363	c: so you have some idea which you could start use you could start do these when ?
+364	c: do you rememb what you pick ? what did you pick ?
+365	c: whi do you want to do that ?
+366	c: so if if so if my plan is to start walk then we look at this again and say whi is that import to you ? like whi would it be import for you to start walk ? what would that ultim lead to ?
+367	c: and if you did that what do you think that could lead to a littl down the road ?
+368	c: and eventu it would help you to play basketbal okay so well let think about how often you would need to walk
+369	c: so if you did 40% or 50% how mani day in a week would you think that would be ?
+370	c: okay so let see so if there are seven day in a week and do you think about dure the first coupl week how mani day do you think you would want to walk to start out with ?
+371	c: becaus that will prepar you for the differ thing that you'll need to okay good think okay so what about today ? what would your plan be for today as far as walk goe ?
+372	c: okay so what your plan then for tomorrow ?
+373	c: alright what do you think you could do if that happen ? like what
+374	c: is there anyth els that you could do that could make sure that this could happen even if you do have to go and you do have to stop ? is there anyth els that you could do to make sure you do your walk ? no ?
+375	c: okay what do you think your mom could do to help you ?
+376	c: well what do you know about the chang in a person bodi shape compar to the chang in their weight ?
+377	c: how do you think you might find that out ?
+378	c: do you know where you could research that ?
+379	c: so what do you think about the idea of whether or not the scale is accur ?
+380	c: you mention swim befor too is that someth that has hurt your knee or no ?
+381	c: so what are your thought on what kind of exercis realli would work for you ?
+382	c: and then as far as nutrit goe are there some thing that you think are particular help for you ?
+383	c: okay so for each of those and mayb this would appli to more than one at a time but if one of those was to happen what do you think you might do to tri to fix it or overcom it ?
+384	c: and what do you think about be more activ ?
+385	c: what do you think is someth your mom could do to realli help support you and make sure that you can be success ?
+386	c: well tell me a littl bit more about that if you would about the idea that you should lose weight where doe that idea come from ?
+387	c: yeah ? how about your doctor ? have you talk to your doctor ? have they made ani recommend ?
+388	c: okay now has anybodi ever shown you a chart that show where your weight fall compar to other peopl your age ?
+389	c: where did you rank ?
+390	c: so if you were think about you know whether you should work on weight loss or you need to can you think about rate yourself on a scale of one to ten with one be you don't need to lose ani weight at all and ten be you need to lose quit a bit where would you say that you fall ?
+391	c: okay so right in the middl ? what make you think you'r at a five instead of at a four or even a six ?
+392	c: so what do you think as far as the kind of thing that help peopl to lose weight are ? what would peopl do when they wanna lose weight ?
+393	c: how do you feel about make some of those chang ?
+394	c: okay so if you want to make some chang in the area where you'r not alreadi do these thing how import is that to you to make those kind of chang ? we can use our one to ten scale with one be not at all import you'r probabl not gonna make ani chang at all to ten be the most import thing in your life right now
+395	c: how import would it be to you to make ani chang ? um as far as food and activ ?
+396	c: how come a seven and not like a five or a six ?
+397	c: and whi that import whi you want to do that
+398	c: so do you feel like you'd be abl to look at the back of the label and tell whether or not that a good choic ?
+399	c: do you feel like make healthier choic for your snack and your meal is someth you'd be abl to do ? mm-hmm mean is that food avail for you ?
+400	c: in what way ?
+401	c: in what way ?
+402	c: is this peopl at school or other place too ?
+403	c: what doe that make you think about do ?
+404	c: so what kind of chang have you tri to make ?
+405	c: mm-hmm can you tell me a littl bit about how you'v tri to do that ?
+406	c: and have you gotten permiss to do that ?
+407	c: what do you do when you'r in the gym ?
+408	c: so there a littl bit there with just be around your friend
+409	c: do you feel like it has made a differ so far ? what have you seen or felt that has made you think that ?
+410	c: can you help me to understand what kind of a differ you'v notic ? what specif has chang for you ?
+411	c: so may i ask when you stop eat junk food ?
+412	c: okay and how long ago was that ?
+413	c: yeah in what way ?
+414	c: so and the junk food you said where have you stop eat junk food ?
+415	c: where have you stop eat junk food ?
+416	c: okay so how were you abl to stop do that ? i would imagin that you'r probabl not the person who doe the shop so did someon help you ?
+417	c: was that part of your choic for decid that you would respond differ to peopl ? did that help you make that choic ?
+418	c: how confid do you feel ? like if i said "tell me on a scale of one to ten with one be "probabl tomorrow i'm not go to do it anymore" and ten be "yup i feel i can do that for the rest of my life"
+419	c: what make you feel like a ten and not a seven or an eight ?
+420	c: so how often do you think you might practic ?
+421	c: mm-hmm so what would be differ that you could do from what you'r alreadi do ?
+422	c: so if you were practic where would you do your practic ?
+423	c: are you abl to get there pretti easili ?
+424	c: so now the next part is whi do you want to do that ? whi is that import to you ?
+425	c: what about for weight loss ? what about that is import for chang in your weight ?
+426	c: so mayb if we take a step back for a minut and think whi is it import for you to make chang that will your weight be a healthier weight ? what are the main reason for that ?
+427	c: okay so then now what we do is we think if school get in your way then tri this like what an altern someth differ you could do that would allow you to still do your extra practic even if you have school ?
+428	c: so okay so let say that it not the case that you could just miss school just to practic what els could you do to make sure that you could get your practic in on school day ?
+429	c: okay so then what could you do on those day ?
+430	c: now what about if you mention friend could get in the way of your practic ? how do you think we could solv that if that becom an issu ?
+431	c: and how do you think that that will help you to do your extra practic ? how do you think that eat more fruit and veget will help you to do extra footbal practic ?
+432	c: okay cool so what if anyth have you heard about bodi mass index or bmi ?
+433	c: okay is there ani one particular famili member that could help you ?
+434	c: and who in your famili could help you too ?
+435	c: okay and how do you think that those two peopl could help you ?
+436	c: okay how do they get you focus ?
+437	c: so what do you think you might do with this plan ?
+438	c: so you'r go to put it on your wall right where you see it when you first wake up
+439	c: okay where do you think you should be ?
+440	c: so has your doctor or nurs ever talk to you about it ?
+441	c: okay and is that a concern to you at all ? in what way ?
+442	c: so what do you think about that ?
+443	c: what would you like to do with this inform ?
+444	c: what have you tri to do about it if anyth ?
+445	c: can you think of anyth that you might like to chang ?
+446	c: okay can you give me an exampl ?
+447	c: okay how would you know that ?
+448	c: what specif are you think as groceri list ?
+449	c: do you have ani idea ?
+450	c: how do you think you could find out ?
+451	c: how do you think you might keep track of whether or not you'r make chang that will be help to you ? 0:16:36
+452	c: so what do you think peopl do when they don't have a scale and they want to know if their bodi size is chang ?
+453	c: what about keep track of the food that you eat to see if they'r help you or not do you have ani idea on how you might do that ?
+454	c: how do you think that might help you ?
+455	c: how abl do you feel to do someth like this ? like if we rate that on a scale of one to ten with you feel like you know i'm just not abl to do this at all be a one and ten you feel like you can go home and realli do this and use it everi day ?
+456	c: how come an eight or a nine and not like a six or seven ?
+457	c: what do you think you could do to avoid forget ?
+458	c: okay so is that some place that you feel like you might walk past or look in the mirror everi day and that will help you to rememb ?
+459	c: so of all the thing that we'v talk about so far we'v talk about chang drink that you have or mayb chang the type or amount of food that you have and we'v talk about food log what do you think is the most import chang that you could make right now that you want to make right now ?
+460	c: okay and what specif are you go to chang in order to lose some weight ?
+461	c: so whi is that import to you ?
+462	c: so what do you think you might do about that ?
+463	c: mm-hmm are you abl to do that ?
+464	c: how import is it to you to have particular groceri in the hous ?
+465	c: do you think that that might be a good compromis ?
+466	c: how confid do you feel like you can realli follow through on this plan ?
+467	c: okay so if we rate it on our scale of one to ten ten be the most confid one be not confid at all where do you fall ?
+468	c: and how come like i ask you befor how come a nine and not i don't know like a seven eight ?
+469	c: and what do you-what about support ? who do you think could help you out ? mean that this down here so someth my-you could identifi a person-could do to help you reach your goal what could she do ?
+470	c: how do you think that will help you ?
+471	c: how import is it that you get that kind of support from her ?
+472	c: okay and whi do you say that ?
+473	c: okay so well what make you say that ?
+474	c: okay so is it that you feel like that too high a number or has somebodi given you some inform ?
+475	c: okay alright so what have you heard so far if you don't mind me ask from doctor or nurs or mayb other peopl ?
+476	c: okay and what do you think of that ?
+477	c: okay do you have some thing that you'v tri alreadi or mayb you have some knowledg on what peopl general do ?
+478	c: and what was the other thing you said ?
+479	c: and are there ani other thing that you'v done ?
+480	c: how often do you work out ?
+481	c: okay for how long ?
+482	c: do you have some other idea on thing that peopl might do if they want to chang their weight ?
+483	c: how success has it been so far do you think ?
+484	c: okay tell me 5:25 you use to be 209 and you'r
+485	c: in the past how long ?
+486	c: and if you were to think about how success you'v been with that cut down on your portion as well as your physic activ that you'v been do which of those would you say is most success ?
+487	c: whi is it so import ?
+488	c: what do you think you might do to keep yourself go on day when you don't feel like it ? like do your workout
+489	c: so if you think about you know this plan that you'r start to let take shape here you know how commit do you feel to actual start it go home tonight and say "let get the first step done"
+490	c: well if i was to ask you to rate it say on a scale of one to ten with one be "you know i don't know what this ladi is talk about i'm leav here laugh not do anything" and ten be "yeah you know what ? i can't wait to get home and start this i'm go to start record my thing on my sheet the minut i get home" where would you fall ?
+491	c: mm-hmm so what the differ for you between like a seven and an eight ? whi was it eight and not seven ?
+492	c: what do you think it would take to push it to a nine ?
+493	c: when you think about what it mean like when you think in your head to get down and start do more thing to help me what specif come to mind ? like what are you what do you pictur yourself do ?
+494	c: but you'r kind of lead more toward make some chang with your eat right ?
+495	c: so if you think about make chang with what you'r eat or how you eat what specif would you like to start with do
+496	c: so when you say cut down what do you see yourself do differ ?
+497	c: what did you do to make that crave go away ?
+498	c: so how did you stop think about it ?
+499	c: so the question it seem was someth that distract you from the crave ?
+500	c: so what did you come up with for your solut ?
+501	c: and how comfort do you feel like those thing will realli do the trick for you ?
+502	c: do you feel comfort in talk to your friend about this and let them know "this is someth i'm work on i could realli use your help caus sometim i have crave and it hard for me"
+503	c: all right well what other thing have you tri =
+504	c: yeah and so if you had someth a place where you could put your money and not get it then that would make it so much easier for you wouldn't it ? do you have someth like that ?
+505	c: what do you have ?
+506	c: where would you is there someplac that you'd need to put it in order for you to be abl to get to it easili and put your money in there ?
+507	c: so if you were to start out by ask particular peopl for their support in some way who would you ask ?
+508	c: okay do you have anybodi in particular in your famili that you think you could go to first ?
+509	c: what is it particular that you think they could do ?
+510	c: so do you feel like you have the word that you want to say that would remind you if you were to write that down ?
+511	c: yeah like what particular would you ask them to say to you ? so what did you come up with ?
+512	c: okay so how do you feel about your plan ? is this
+513	c: are you familiar with that idea ?
+514	c: the 85th percentil is the cutoff between averag weight and overweight doe it surpris you to see that you'r up there ?
+515	c: and if you were to answer that question what would you say ?
+516	c: onc in a while did you say with your sister ?
+517	c: so what do you think other thing are that peopl do ?
+518	c: would assist you in make differ choic
+519	c: do you know how to find that inform ?
+520	c: and so some peopl find that veri help there are also some rate form for how hungri you are when you eat caus some peopl eat when they'r not hungri and know that inform what do you think that would do ?
+521	c: in the way yep alrighti so as you'v look over this did you see anyth that jump out at you in particular that you found 0:15:29 ?
+522	c: what do you pictur yourself do ?
+523	c: yep so what do you think peopl do when they want to make a chang and be abl to help themselv make it ?
+524	c: how how do you pictur yourself be abl to manag that so that you can make healthi choic without get overwhelm ?
+525	c: it sound like that someth you have a littl bit of experi with ?
+526	c: are you a good do you feel like you'r a good planner ?
+527	c: so then what would you say here about fast food ? like what specif is your plan for fast food ?
+528	c: okay and would it help you to be ani more specif about in what way you want to cut down or kind of describ you know a littl more detail about when you say cut down what particular do you mean about that ?
+529	c: and how would you remind yourself of that so that you can keep it in mind ?
+530	c: okay and who would you ask for help with reach your goal on this plan ?
+531	c: are there particular way or word that you need to hear from her that would be encourag for you ?
+532	c: have you two been down this path befor where she was realli support for you ?
+533	c: what other stuff are you do ?
+534	c: so what made it a six and not like a four ?
+535	c: what about what would it take to bump you up to a seven on your scale ?
+536	c: okay do you have a particular ideal in mind like a particular weight that you'r hope to achiev ?
+537	c: so what other thing ?
+538	c: okay okay so how import is it to you ? how import is that to you to make a big chang ?
+539	c: how import is that to you to make a big chang ?
+540	c: yeah ? so if we were to measur it out on a scale of one to ten with one be not at all import ten be the most import thing in your life where would you put that ?
+541	c: and are you awar of other thing that peopl do when they want to lose weight ?
+542	c: so like the one that are uncook ?
+543	c: so what do you think about the import to be abl to plan for what you'r go to do about those thing when they come up ?
+544	c: yeah whi do you think it might be import to plan for what you'r go to do about those kind of thing when they come up ?
+545	c: okay so what specif would you like to do for work out ?
+546	c: how often do you think you want to do those ?
+547	c: okay what about do you want to say anyth about your three day a week and 30 minut to start with ?
+548	c: how confid do you feel that you can realli manag if you get interrupt or do you need more help ?
+549	c: now who would you like to realli support you in the chang that you'r make ?
+550	c: yeah do you feel like she could realli be the drill sergeant for you and kind of keep you go or do you need somebodi differ who could do that ?
+551	c: okay who would that be ? can you think is there anybodi in your hous or mayb in your friendship circl or in your extend famili ?
+552	c: okay and do you feel like she around often enough that that would realli be abl to be a big help with your three time a week ?
+553	c: so if you think about what specif do you think she could do to help you reach your goal what is it that you would need from her
+554	c: okay so are you say that like the first step to take is to start do some cardio outsid of school ?
+555	c: okay what about that last point ? is there somebodi that you can kind of pictur help you in some way even if it just kind of give you the pat on the shoulder and say hey you did a good job today i saw you out there ?
+556	c: okay and then you feel like your step dad could realli help you out what would he do to help you out ?
+557	c: okay so on a scale of one to ten with one be not readi at all and ten be the most readi you'v ever been how readi do you feel like you are to go out tonight and get start ?
+558	c: how come you didn't say like six or seven ?
+559	c: mm-hmm who do you think you could ask if you want more inform ?
+560	c: can you think of peopl who might have given you good inform befor ?
+561	c: what reason do you have for want to lose some weight ?
+562	c: so you know what are you go to do if you don't drink those thing ?
+563	c: so what idea do you have or what kind of thing have you alreadi been do in order to to lose some weight ?
+564	c: how how do you do that ?
+565	c: so what have you notic sinc you start make that chang in your eat ?
+566	c: what made you decid to add time on like that ?
+567	c: okay alright alright well what are some idea that you do have ? are there place you could go or peopl you could talk to ?
+568	c: who are some peopl that could help you figur out about this goal ?
+569	c: so how do you you know get around thing like when you'r at your grandma hous and there not as much as you know that your friend aren't around to be activ with or the girl hang around and you know if you still want to be activ how do you get around all that stuff ?
+570	c: okay have you been tri to lose weight ?
+571	c: what have you been do ?
+572	c: and you said a littl bit about time also ?
+573	c: okay alright so you'r tri not to do that huh ?
+574	c: what other chang have you made ?
+575	c: and could you tell me whi you'v been tri to ?
+576	c: well on a scale of like you know one to ten where one would be not at all import and ten would be veri import like super super import how import is it for you to find way to be activ when you know you can't play as much with your friend or you'r at your grandma hous ?
+577	c: how long have you been tri to lose weight ?
+578	c: okay and how long ago was that
+579	c: this past octob ?
+580	c: how success do you think that you'v been ?
+581	c: yeah ? do you feel like you have lost weight or ?
+582	c: do you have ani idea about what you might do specif ?
+583	c: okay and what would you do at the gym ?
+584	c: is it like a weight thing where you like you pull the bar down
+585	c: have you done that befor ?
+586	c: yeah so you said that it import but what number would you put it on with that =
+587	c: so you know i guess at this point a question i have to ask you is how confid do you feel that you can do those thing that you can get start ?
+588	c: you feel comfort with it ?
+589	c: so how import is it to you ?
+590	c: yeah so if i ask you like on a scale of one to ten with one be not at all import and ten be the most import thing in your life right this moment where would you put
+591	c: yeah so whi would you say a seven or eight and not like a five or a six ?
+592	c: well what you know make it a seven and a half and not like a five ?
+593	c: okay is that work pretti well for you right now ?
+594	c: how do you think that help you ?
+595	c: do you feel like it would be help for you to do that or how help do you think it might be to add some addit inform like calori ?
+596	c: do you know how to count calori ?
+597	c: do you have somebodi who might be abl to help you count calori ?
+598	c: who could help you with that ?
+599	c: how import do you think it is to have that inform ?
+600	c: and then what about if the opposit like you have a bigger piec of food that doesn't have
+601	c: what an exampl of a time that that happen to you ?
+602	c: would you have gotten just as fill up if you had like an appl even a big appl do you think ?
+603	c: do you feel like appl have more or less calori than cooki ?
+604	c: so if you think about each of those three thing time patienc and other thing to do if one of those start to come up or you thought it might get in your way what do you think you could do to stop it from get in your way ?
+605	c: can you think of anyth els that would help you ?
+606	c: your mom help you out a lot ?
+607	c: so what about somebodi who can help you ?
+608	c: what do you think they would do to help you reach your goal ?
+609	c: what would those be for you ?
+610	c: thank so let see "help watch what i eat and how much" so you'r realli feel like you could use some help with some peopl kind of do you want them to watch over or do you just want to check in with them ?
+611	c: like a pyramid ?
+612	c: then if you realli were go to kind of bump yourself up to from like a seven and a half to like an eight and a half or a nine as far as import to find activ that you could do at your grandma or at home what would it take to bump you up ?
+613	c: are you familiar with my pyramid ?
+614	c: yeah what do you like about it ?
+615	c: okay well so have you talk to anybodi els about that idea of whether or not you should ?
+616	c: well so if you don't mind me ask what brought you guy in today ?
+617	c: okay so whi did you think it was a good idea ?
+618	c: okay in what area do you think you could be healthier ?
+619	c: and has that caus you ani problem so far or no ?
+620	c: is that fair to say ?
+621	c: okay what part did i miss ?
+622	c: 05:06 answer ? okay well how doe that chang the way you think about whether or not you could lose weight or should ?
+623	c: so if you'r kind of think about wow you know i see that i was higher up on that scale than i thought i was and you know mayb that doe mean that i need to make some chang you know how import is that to you ?
+624	c: well so so i guess you know as you'r say that it veri import to you if you were to rate that on a scale of from one not veri import at all to ten like the most import thing in your life right this minut where would you put yourself as far as import of manag your weight ?
+625	c: what made you pick an eight or a nine and not like a seven ?
+626	c: okay so what kind of thing
+627	c: what what thing that are harder for you
+628	c: are you activ right now ?
+629	c: would you see yourself work up to a point where you could work a littl bit longer than 15 minut ?
+630	c: so if you think for a minut befor we move on how confid do you feel right now that you can realli do the 15 minut a day everi day ?
+631	c: okay so if we go back to our scale of like one not confid and ten most confid you'v ever felt where would you put yourself ?
+632	c: okay alright so whi a seven and not a six ?
+633	c: what do you think you might do if you have that thought ?
+634	c: okay where do you usual find your strength when you want to do someth that is hard for you ?
+635	c: okay do you are there thing that you say to yourself or ?
+636	c: what what would happen if you tri to talk yourself into just go and do your 15 minut and you realli felt like you couldn't ? what would you do then ?
+637	c: yeah do you think that mayb keep track of it in some way would help you to stay motiv ?
+638	c: what els like if you have a realli hard time ? what would be like would there be anybodi you could ask to help you ?
+639	c: how would you go about do that ?
+640	c: do you have anybodi in your life that you can pictur help you to stick to the goal and make sure you make it everi day ?
+641	c: okay so what could your mom do to help you ?
+642	c: so what have you got so far ?
+643	c: anyth els ?
+644	c: so if you if you get sick how do you as what can you do to still stick with your plan ?
+645	c: well what someth that your mom can do to help you to reach this goal ?
+646	c: but what is someth that she could do to help you reach your goal of be more activ and find someth to do while at your grandma ?
+647	c: what do you like about it ?
+648	c: so what are drink that don't have calori ?
+649	c: well what don't you like about it ?
+650	c: what kind of thing would you guy talk about ?
+651	c: so a lot of stuff that kind of she was tell you that you need to do with eat and with the activ what do you think ?
+652	c: well tell me more about you know whi you want to come
+653	c: tell me about some of the stuff you were do
+654	c: what posit do you play ?
+655	c: so tell me a littl bit more about the eat stuff
+656	c: what make you want to stay with eat those type of thing ?
+657	c: well you know tell me on a scale of like one to ten where one would be not at all import and ten would be so veri veri import how import is it for you to realli stay with these food chang and the exercis stuff you'r tell me bout ?
+658	c: so what make it an eight and not a lower number like a six or a seven ?
+659	c: well what would it take to mayb bump you up a littl higher on that scale to like a nine or a ten ?
+660	c: so if we went back to that that littl scale on a scale of like one to ten and you said it an eight it import for you to keep up with the nutrit and activ what would bump you up on that import number ? what would make it more import for you to realli stick with nutrit and activ keep up the thing you'r do right now ?
+661	c: so tell me a littl bit more about this basketbal team
+662	c: so what go on with activ this summer ?
+663	c: and what is that plan ?
+664	c: okay and what you know specif are you work on ?
+665	c: what are those ?
+666	c: and what are you go to do to lose weight ?
+667	c: and you have a lot of knowledg form the other stuff that you'v been read about the food so what have you been read that kind of you know you want to talk about a littl bit more ?
+668	c: well what seem like a number to you that would be good for somebodi who tri to lose weight and be healthi ?
+669	c: well tell me a littl bit more about a serv of like fri chicken
+670	c: all right well what catch your eye what do you like about it ?
+671	c: and how doe that help when you kind of think about your question of how much or how often to have the fri chicken =
+672	c: wii fit ?
+673	c: and someth cool in all so when you you know go to restaur and what go to help you to mayb make a healthier choic as oppos to a choic that has more calori in it that might not fit your goal of weight loss ?
+674	c: so when you'r stand in line say at mcdonald or someth and you know mayb you'r there with your famili or there with all your friend or someth you know whi would you choos someth that might be lower in calori and healthier as oppos to someth that might be not as healthi but someth that you realli like ?
+675	c: with all that nutrit knowledg that you have by come here and be realli involv in the convers and read the stuff that you get when you go to other place well what someth that your grandma could do to help you to stick with your goal of the weight loss and you know use some of the inform that you learn here today ?
+676	c: so what someth that your mom could do to help you stuck with all this stuff ?
+677	c: all right what exercis place do you have in mind ?
+678	c: all right on the scale of one to ten where one is not at all confid and ten is so super confid you'r just out the door how confid are you that you can realli stick with your all this healthi chang you'v been do for your weight ?
+679	c: what make you a nine and not a lower number like a seven ?
+680	c: all right so what would it take to help you boost your confid all the way up to a ten in be abl to stick with these chang ?
+681	c: well what kind of thing do they say about your weight ?
+682	c: tell me a littl bit more about the time that it bother you what go on ?
+683	c: okay and whi do you want to do this
+684	c: well what made you come in and see me today ?
+685	c: well tell me a littl bit about what you know about the nutrit stuff about eat healthi eat
+686	c: come on what about the fruit and veget ?
+687	c: what do you like about do those bike and walk ?

@@ -9,7 +9,7 @@
 \begin{document}
 
 
-\title{Leverage machine learning and textual data mining methods for the classification of clinical interview fragments and their sequences}
+\title{Leverage machine learning methods for the classification of clinical interview fragment sequences}
 
 \author{Mehedi Hasan, BS$^{1}$, Alexander Kotov, PhD$^{1}$, April Carcone, PhD$^{2}$, Sylvie Naar-King, PhD$^{2}$}
 
@@ -44,54 +44,6 @@ classifier \citep{14}. The present study reports the results of comprehensive ev
 for this task: contextual features based on the label of the preceding textual fragment and semantic features based on the distribution of words in the annotated fragment over a linguistic lexicon.
 
 Codes automatically assigned to transcripts using classification models presented above allow to abstract away from the raw text  of the interviews and unequivocally establish the casual relationship between provider communication and client change talk (CT). Two recent studies \citep{46,47} have examined causality in treatment communication sequences using sequential analysis techniques to assess the probability that CT actually follows specific provider behaviors. Both studies found that provider use of MICO communication behaviors was followed by CT more frequently than expected and followed by client counter-CT (CCT; client statements against making changes) less frequently than expected by chance. Again, while suggestive of important PPC sequences, these studies were conducted among adults in treatment for alcohol abuse. In this project, we used a probabilistic model, in particular, first order markov model for the analysis of sequential data to determine provider-patient communication sequences that are likely to translate into change talk and commitment language.
-
-
-\begin{table}[htb!]
-\caption{\textbf{Distribution of utterances over 16 classes in the caregiver dataset.}}    
-\label{table:01}
-\centering
-\begin{tabular}{lp{7cm}rr}
-\hline
-\hline
-Code  & Description & Utterance & \% \\
-\hline
-209 &	Caregiver Change Talk, negative &	297 & 6.82 \\
-212 &	Caregiver Change Talk, positive &	1107 & 25.40 \\
-232 &	Low Uptake, positive &	518 & 11.89 \\
-235 &	High uptake &	231 & 5.30 \\
-301 &	Structure Session &	206 & 4.73 \\
-302 &	General Information, positive &	309 & 7.09 \\
-305 &	Emphasize Autonomy &	148 & 3.40 \\
-306 &	Closed question, Elicit Feedback &	50 & 1.15 \\
-307 &	Support &	108 & 2.48 \\
-308 &	Affirm &	289 & 6.63 \\
-315 &	Reflect, change talk positive, about caregiver &	659 & 15.12 \\
-329 &	Self-disclose &	44 & 1.01 \\
-330 &	Statement, other &	121 & 2.78 \\
-331 &	Open-ended question, elicit change talk positive &	200 & 4.59 \\
-343 &	Open-ended question, target behavior neutral &	33 & 0.76 \\
-344 &	Open-ended question, elicit barriers &	38 & 0.87 \\
-\hline
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[htb!]
-\caption{\textbf{Distribution of sequences over the adolescent interview session}} 
-\label{table:0001}
-\centering
-\begin{tabular}{lrr}
-\hline
-\hline
-Sequence type  & \# of Sequences & \% \\
-\hline
-Successful & 880 & 82.08\% \\
-Unsuccessful & 192 & 17.92\% \\
-Total & 1072 & 100\% \\
-\hline
-\hline
-\end{tabular}
-\end{table} 
 
 \section*{Methods}
 \subsection*{\textit{Data collection}}
@@ -193,68 +145,44 @@ Depending on the type of the interview transcript and the codebook size, SVM-AF 
 
 \subsection*{\textit{Performance of Markov model in conjunction with determining PPC code sequences that are most likely translate into CT}}
 Since clinical researchers tried to increase the desire and ability of adolescent to change their current behavior to target behavior, we used sequence of successful and unsuccessful codes only from adolescent session for our sequential analysis. Summary of performance for the classification of sequential data is presented in Table~\ref{table:sequence}. 
-From Table~\ref{table:sequence}, it follows that our designed markov model works very well in terms of precision and achieves precision 0.7574 with F1-measure 0.7092. The strength of the model for the classification of each type of sequences is illustrated by providing the confusion matrix in Table~\ref{table:conf}. It also shows that successful patterns are identified more accurately compare to unsuccessful motivational interview sequences due to the imbalance of data.
+From Table~\ref{table:sequence}, it follows that our designed markov model works very well in terms of precision and achieves precision 0.7574 with F1-measure 0.7092. The strength of the model for the classification of each type of sequences is illustrated by providing the confusion matrix in Table~\ref{table:conf}. It also shows that successful patterns are identified more accurately compare to unsuccessful motivational interview sequences due to the imbalance of data.\\
 
-\begin{table}
-\parbox{.45\linewidth}{
+\begin{table}[h]
 \centering
-\caption{\textbf{Performance of markov model for the classification of PPC code sequences}}
-\label{table:sequence}
-\begin{tabular}{ll}
-\hline
-\hline
-Metrics & Value \\
-\hline
-Accuracy &	0.6803 \\
-Precision &	0.7574 \\
-Recall & 0.6803 \\
-F1-Measure & 0.7092 \\
-\hline
-\hline
-\end{tabular}
-}
-\hfill
-\parbox{.45\linewidth}{
+\caption{Performance of markov models for the classification of normal PPC code sequence.}
+\label{tab:result_norm_seq}
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+   \textbf{Model} & \textbf{Order}  & \textbf{Precision}  & \textbf{Recall} & \textbf{F-Measure} & \textbf{Accuracy}\\ \hline    
+    
+ \multirow{2}{*}{General Markov Chain} & First order & 0.7387 & 0.7686 & 0.7532 & 0.7686\\\cline{2-6}
+ & Second order & 0.6889 & 0.7889 & 0.7352 & 0.7889\\ \hline
+ \multirow{2}{*}{Hidden Markov Model} & First order & \textbf{0.7980} & 0.8059 & \textbf{0.7989} & 0.8059\\ \cline{2-6}
+ & Second order & 0.7400 & \textbf{0.8449} & 0.7822  & \textbf{0.8449}\\ \hline
+ 
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
 \centering
-\caption{\textbf{Confusion matrix of proposed markov model for the classification of sequence of codes}}
-\label{table:conf}
-\begin{tabular}{llll}
-\hline
-\hline
-& Successful & Fail & Total\\
-\hline
-Successful & 642 & 242 & 884 \\
-Fail & 102 & 90 & 192 \\
-Total & 744 & 332 & 1076 \\
-\hline
-\hline
-\end{tabular}
-}
+\caption{Performance of markov models for the classification of alternate PPC code sequence.}
+\label{tab:result_alt_seq}
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+   \textbf{Model} & \textbf{Order}  & \textbf{Precision}  & \textbf{Recall} & \textbf{F-Measure} & \textbf{Accuracy}\\ \hline    
+    
+ \multirow{2}{*}{General Markov Chain} & First order & 0.9777 & 0.9437 & 0.9604 & 0.9437\\\cline{2-6}
+ & Second order & \textbf{0.9778} & 0.9694 & \textbf{0.9736} & 0.9694\\ \hline
+ \multirow{2}{*}{Hidden Markov Model} & First order & 0.9392 & 0.9313 & 0.9253 & 0.9392\\ \cline{2-6}
+ & Second order & 0.9704 & \textbf{0.9713} & 0.9699  & \textbf{0.9713}\\ \hline
+ 
+  \end{tabular}
 \end{table}
 
 Two markov models are used to obtain top five most likely successful and unsuccessful motivational interviews that describing provider strategies and patient responses. Table~\ref{table:topsec} shows the top five successful and unsuccessful PPC code sequences.
 
-\begin{table}[htb!]
-\caption{\textbf{Top 5 most likely successful and unsuccessful interview sessions}}    
-\label{table:topsec}
-\centering
-\begin{tabular}{lll}
-\hline
-\hline
-No. & Successful Sequences &  Unsuccessful Sequences\\
-\hline
-1 & 311\rightarrow112\rightarrow301\rightarrow500 & 343\rightarrow109\rightarrow312\rightarrow400 \\
-2 & 310\rightarrow112\rightarrow311\rightarrow500 & 311\rightarrow109\rightarrow312\rightarrow400 \\
-3 & 311\rightarrow117\rightarrow309\rightarrow500 & 327\rightarrow120\rightarrow312\rightarrow400 \\
-4 & 312\rightarrow112\rightarrow311\rightarrow500 & 314\rightarrow103\rightarrow314\rightarrow400 \\
-5 & 331\rightarrow112\rightarrow311\rightarrow500 & 344\rightarrow109\rightarrow326\rightarrow400 \\
-\hline
-\hline
-\end{tabular}
-\end{table}
-
 \section*{Discussion}
-From the sequential analysis, we observed that markov model achieved near-human accuracy to categorise the sequence of behavior codes. It was also found that successful interviews are more frequently responded by the adolescent with PPC code 112. However, unsuccessful interviews are responded with the behavior code 109.  
+From the sequential analysis, we observed that markov model achieved near-human accuracy to categorise the sequence of behavior codes. It was also found that successful interviews are more frequently responded by the adolescent with PPC code 112. However, unsuccessful interviews are responded with the behavior code 109.
 
 \section*{Conclusion}
 In this work, we suggest some successful sequences of codes for the practical use by the clinician during the interview session which will translate into positive change talk and commitment language. We also propose novel features and report the results of an extensive experimental evaluation of state-of-the-art supervised machine learning methods for text
