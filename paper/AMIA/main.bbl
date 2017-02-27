@@ -175,6 +175,13 @@ Eickeler S, Kosmala A, Rigoll G.
 \newblock In: Pattern Recognition, 1998. Proceedings. Fourteenth International
   Conference on. vol.~2. IEEE; 1998. p. 1206--1208.
 
+\bibitem{srivastava2007hmm}
+Srivastava PK, Desai DK, Nandi S, Lynn AM.
+\newblock HMM-ModE--Improved classification using profile hidden Markov models
+  by optimising the discrimination threshold and modifying emission
+  probabilities with negative training sequences.
+\newblock BMC bioinformatics. 2007;8(1):104.
+
 \bibitem{won2004training}
 Won KJ, Pr{\"u}gel-Bennett A, Krogh A.
 \newblock Training HMM structure with genetic algorithm for biological sequence
@@ -186,6 +193,12 @@ Chai W, Vercoe B.
 \newblock Folk music classification using hidden Markov models.
 \newblock In: Proceedings of International Conference on Artificial
   Intelligence. vol.~6. sn; 2001. .
+
+\bibitem{yakhnenko2005discriminatively}
+Yakhnenko O, Silvescu A, Honavar V.
+\newblock Discriminatively trained markov model for sequence classification.
+\newblock In: Data Mining, Fifth IEEE International Conference on. IEEE; 2005.
+  p. 8--pp.
 
 \bibitem{altschul1990basic}
 Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ.
