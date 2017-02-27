@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  27 FEB 2017 13:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  27 FEB 2017 14:44
 entering extended mode
 **./main.tex
 (main.tex
@@ -273,65 +273,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 28.
 
-! Undefined control sequence.
-l.32 ...are overweight and 16.9\% are obese \citep
-                                                  {01}. Adolescents who are ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.32 ... stroke, cancer, and osteoarthritis \citep
-                                                  {02}. Therefore, there is ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.32 ... for health-related behavior change \citep
-                                                  {03,04}. The goal of a MI ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.32 ...ntly predict actual behavior change \citep
-                                                  {05} that can be sustained...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.32 ...ong as 34 months after an interview \citep
-                                                  {06}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 37.
 
-! Undefined control sequence.
-l.38 The MYSCOPE \citep
-                       {07} codebook contains a total of 115 different codes...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 52--52
@@ -341,15 +291,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--52
 
 LaTeX Warning: Reference `table:0001' on page 2 undefined on input line 64.
 
-! Undefined control sequence.
-l.69 ... probability theory, a markov model \citep
-                                                  {45} is a stochastic model...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [2]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 72.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
@@ -358,55 +299,63 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
 
-<figures/deltadata.jpg, id=13, 650.43pt x 358.33875pt>
-File: figures/deltadata.jpg Graphic file (type jpg)
+<figures/deltadata.png, id=13, 650.43pt x 358.33875pt>
+File: figures/deltadata.png Graphic file (type png)
 
-<use figures/deltadata.jpg>
-Package pdftex.def Info: figures/deltadata.jpg used on input line 98.
+<use figures/deltadata.png>
+Package pdftex.def Info: figures/deltadata.png used on input line 98.
 (pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
-
-! Undefined control sequence.
-l.104 ...tion of sequence of behavior codes \citep
-                                                  {36} as an experimental de...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[3]
-
-LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 119
-.
-
-
-LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 120
-.
-
-
-LaTeX Warning: Reference `table:conf' on page 4 undefined on input line 120.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 135
+.
 
 
-LaTeX Warning: Reference `table:topsec' on page 4 undefined on input line 154.
+LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 135
+.
 
-[4 <./figures/deltadata.jpg>] (main.bbl [5] [6]) [7] (main.aux)
+
+LaTeX Warning: Reference `table:conf' on page 4 undefined on input line 135.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+[4 <./figures/deltadata.png>]
+
+LaTeX Warning: Reference `table:topsec' on page 5 undefined on input line 137.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+(main.bbl [5]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ [6]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+) [7] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3678 strings out of 493329
- 56835 string characters out of 3136424
- 122437 words of memory out of 3000000
- 7153 multiletter control sequences out of 15000+200000
+ 3683 strings out of 493329
+ 56930 string characters out of 3136424
+ 122457 words of memory out of 3000000
+ 7158 multiletter control sequences out of 15000+200000
  17737 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,1894b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -423,7 +372,7 @@ nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
 8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 210734 bytes).
+Output written on main.pdf (7 pages, 212317 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

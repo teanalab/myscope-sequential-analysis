@@ -119,6 +119,17 @@ Zhang J, Xu C, Jing P, Zhang C, Su Y.
   Classification.
 \newblock IEEE Signal Processing Letters. 2016;23(9):1246--1249.
 
+\bibitem{ogden2012prevalence}
+Ogden CL, Carroll MD, Kit BK, Flegal KM.
+\newblock Prevalence of obesity and trends in body mass index among US children
+  and adolescents, 1999-2010.
+\newblock Jama. 2012;307(5):483--490.
+
+\bibitem{general2010surgeon}
+General US.
+\newblock Surgeon General’s vision for a healthy and fit nation.
+\newblock Washington, DC: HHS. 2010;.
+
 \bibitem{kotov2015interpretable}
 Kotov A, Hasan M, Carcone A, Dong M, Naar-King S, BroganHartlieb K.
 \newblock Interpretable probabilistic latent variable models for automatic
@@ -139,6 +150,12 @@ Carcone AI, Naar-King S, Brogan K, Albrecht T, Barton E, Foster T, et~al.
   black adolescents with obesity.
 \newblock Journal of developmental and behavioral pediatrics: JDBP.
   2013;34(8):599.
+
+\bibitem{eide2004physician}
+Eide H, Quera V, Graugaard P, Finset A.
+\newblock Physician--patient dialogue surrounding patients’ expression of
+  concern: applying sequence analysis to RIAS.
+\newblock Social Science \& Medicine. 2004;59(1):145--155.
 
 \bibitem{jaber2016multi}
 Jaber M, Wood PT, Papapetrou P, Gonz{\'a}lez-Marcos A.
@@ -169,5 +186,17 @@ Chai W, Vercoe B.
 \newblock Folk music classification using hidden Markov models.
 \newblock In: Proceedings of International Conference on Artificial
   Intelligence. vol.~6. sn; 2001. .
+
+\bibitem{altschul1990basic}
+Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ.
+\newblock Basic local alignment search tool.
+\newblock Journal of molecular biology. 1990;215(3):403--410.
+
+\bibitem{drew2014strand}
+Drew J, Hahsler M.
+\newblock Strand: fast sequence comparison using mapreduce and locality
+  sensitive hashing.
+\newblock In: Proceedings of the 5th ACM Conference on Bioinformatics,
+  Computational Biology, and Health Informatics. ACM; 2014. p. 506--513.
 
 \end{thebibliography}
