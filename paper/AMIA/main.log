@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  19 FEB 2017 22:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  26 FEB 2017 19:57
 entering extended mode
 **./main.tex
 (main.tex
@@ -270,16 +270,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 
 ! Undefined control sequence.
-l.28 ...t binary (two-class) classification \citep
-                                                  {40,41} (e.g. classifying ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.30 ...are overweight and 16.9\% are obese \citep
+l.34 ...are overweight and 16.9\% are obese \citep
                                                   {01}. Adolescents who are ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -288,7 +279,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.30 ... stroke, cancer, and osteoarthritis \citep
+l.34 ... stroke, cancer, and osteoarthritis \citep
                                                   {02}. Therefore, there is ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -297,7 +288,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.30 ... for health-related behavior change \citep
+l.34 ... for health-related behavior change \citep
                                                   {03,04}. The goal of a MI ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -306,7 +297,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.30 ...ntly predict actual behavior change \citep
+l.34 ...ntly predict actual behavior change \citep
                                                   {05} that can be sustained...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -315,8 +306,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.30 ...ong as 34 months after an interview \citep
-                                                  {06}. The process of estab...
+l.34 ...ong as 34 months after an interview \citep
+                                                  {06}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -324,8 +315,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.30 .... For example, in a recent MI study \citep
-                                                  {07}, training coders to r...
+l.37 ...language use can be quite different \citep
+                                                  {09}. This problem is exac...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -333,8 +324,37 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.30 ...ed two coding passes and six coders \citep
-                                                  {08}.
+l.40 ...Interaction Analysis System (GMIAS) \citep
+                                                  {10}, which uses a codeboo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.40 ...ucture of Encounters System (CASES) \citep
+                                                  {11} was designed to annot...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.43 information'' \citep
+                         {12}. Other related previous studies focused on
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 48.
+! Undefined control sequence.
+l.49 The MYSCOPE \citep
+                       {07} codebook contains a total of 115 different codes...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -344,188 +364,20 @@ and I'll forget about whatever was undefined.
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-! Undefined control sequence.
-l.33 ...language use can be quite different \citep
-                                                  {09}. This problem is exac...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.36 ...Interaction Analysis System (GMIAS) \citep
-                                                  {10}, which uses a codeboo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.36 ...ucture of Encounters System (CASES) \citep
-                                                  {11} was designed to annot...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.39 information'' \citep
-                         {12}. Other related previous studies focused on cat...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.40 ...ciated with someone else) using SVM \citep
-                                                  {13} and annotating the ut...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.41 classifier \citep
-                      {14}. The present study reports the results of compreh...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.41 ...he-art classifiers (Na\"{i}ve Bayes \citep
-                                                  {15,16,17}, Support Vector...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.42 \citep
-           {18,19}, Conditional Random Fields \citep{21,22}, J48 \citep{23},...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.42 ...p{18,19}, Conditional Random Fields \citep
-                                                  {21,22}, J48 \citep{23}, A...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.42 ...al Random Fields \citep{21,22}, J48 \citep
-                                                  {23}, AdaBoost \citep{24},...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.42 ...ep{21,22}, J48 \citep{23}, AdaBoost \citep
-                                                  {24}, Random Forest \citep...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.42 ... AdaBoost \citep{24}, Random Forest \citep
-                                                  {42}, DiscLDA \citep{25} a...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.42 ..., Random Forest \citep{42}, DiscLDA \citep
-                                                  {25} and Convolutional Neu...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.43 \citep
-           {38}) for the task of annotating clinical interviews with a codeb...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.46 ...hange talk (CT). Two recent studies \citep
-                                                  {46,47} have examined caus...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 49.
-! Undefined control sequence.
-l.55 ...d human coders according to MYSCOPE \citep
-                                                  {07}, a specialized codebo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 58.
+(Font)              <7> on input line 59.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 58.
-! Undefined control sequence.
-l.58 ...itor reliability ($\kappa$ = 0.696) \citep
-                                                  {07}. The MYSCOPE codebook...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(Font)              <5> on input line 59.
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
 []\OT1/ptm/m/n/10 Open-ended ques-tion,
  []
 
 
-LaTeX Warning: Reference `table:01' on page 3 undefined on input line 86.
-
-
-LaTeX Warning: Reference `table:01' on page 3 undefined on input line 86.
+LaTeX Warning: Reference `table:0001' on page 2 undefined on input line 76.
 
 ! Undefined control sequence.
-l.88 ...emmer available as part of the Weka \citep
-                                                  {26} machine learning tool...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[3]
-! Undefined control sequence.
-l.97 ... probability theory, a markov model \citep
+l.81 ... probability theory, a markov model \citep
                                                   {45} is a stochastic model...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -533,23 +385,22 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 100.
-
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 84.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
- [4]
-<figures/deltadata.jpg, id=27, 650.43pt x 358.33875pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
+ [2]
+<figures/deltadata.jpg, id=15, 650.43pt x 358.33875pt>
 File: figures/deltadata.jpg Graphic file (type jpg)
 
 <use figures/deltadata.jpg>
-Package pdftex.def Info: figures/deltadata.jpg used on input line 126.
+Package pdftex.def Info: figures/deltadata.jpg used on input line 110.
 (pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
 
 ! Undefined control sequence.
-l.132 ...tion of sequence of behavior codes \citep
+l.116 ...tion of sequence of behavior codes \citep
                                                   {36} as an experimental de...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -557,46 +408,43 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[3 <./figures/deltadata.jpg>]
 
-LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 147
+LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 131
 .
 
 
-LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 148
+LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 132
 .
 
 
-LaTeX Warning: Reference `table:conf' on page 5 undefined on input line 148.
+LaTeX Warning: Reference `table:conf' on page 4 undefined on input line 132.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
-[5 <./figures/deltadata.jpg>]
 
-LaTeX Warning: Reference `table:topsec' on page 6 undefined on input line 182.
+LaTeX Warning: Reference `table:topsec' on page 4 undefined on input line 166.
 
-[6] (main.bbl
+[4] (main.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [7] (main.aux)
+) [5] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 3654 strings out of 493329
- 56357 string characters out of 3136424
- 123342 words of memory out of 3000000
- 7127 multiletter control sequences out of 15000+200000
- 20907 words of font info for 41 fonts, out of 3000000 for 9000
+ 3646 strings out of 493329
+ 56281 string characters out of 3136424
+ 123334 words of memory out of 3000000
+ 7122 multiletter control sequences out of 15000+200000
+ 16152 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,2323b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,10n,40p,1454b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files 
@@ -610,9 +458,9 @@ nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
 8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 221862 bytes).
+Output written on main.pdf (5 pages, 202347 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
