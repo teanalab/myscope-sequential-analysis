@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  28 FEB 2017 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  28 FEB 2017 18:56
 entering extended mode
 **./main.tex
 (main.tex
@@ -279,75 +279,106 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 36.
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
 []\OT1/ptm/m/n/10 Open-ended ques-tion,
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 62.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+[2]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 74.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
- [2]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+
 <figures/deltadata.png, id=18, 650.43pt x 358.33875pt>
 File: figures/deltadata.png Graphic file (type png)
 
 <use figures/deltadata.png>
-Package pdftex.def Info: figures/deltadata.png used on input line 88.
+Package pdftex.def Info: figures/deltadata.png used on input line 100.
 (pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
  [3] [4 <./figures/deltadata.png>]
 
-LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 134
+LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 142
 .
 
 
-LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 134
+LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 142
 .
 
 
-LaTeX Warning: Reference `table:conf' on page 5 undefined on input line 134.
+LaTeX Warning: Reference `table:conf' on page 5 undefined on input line 142.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+[5]
+
+LaTeX Warning: Reference `table:topsec' on page 6 undefined on input line 163.
+
+
+LaTeX Warning: Reference `table:topsec' on page 6 undefined on input line 163.
+
+
+LaTeX Warning: Reference `table:topsec' on page 6 undefined on input line 163.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 
-LaTeX Warning: Reference `table:topsec' on page 5 undefined on input line 152.
+LaTeX Warning: Reference `table:sequence' on page 6 undefined on input line 184
+.
 
 
-LaTeX Warning: Reference `table:topsec' on page 5 undefined on input line 152.
+LaTeX Warning: Reference `table:sequence' on page 6 undefined on input line 184
+.
 
 
-LaTeX Warning: Reference `table:topsec' on page 5 undefined on input line 152.
+LaTeX Warning: Reference `table:conf' on page 6 undefined on input line 184.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+LaTeX Warning: Reference `table:sequence' on page 6 undefined on input line 186
+.
 
- []
 
-[5] (main.bbl [6]
+LaTeX Warning: Reference `table:sequence' on page 6 undefined on input line 186
+.
+
+
+LaTeX Warning: Reference `table:conf' on page 6 undefined on input line 186.
+
+[6] (main.bbl [7]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [7]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-) [8] (main.aux)
+ [8]) [9] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3684 strings out of 493329
- 56976 string characters out of 3136424
- 125465 words of memory out of 3000000
- 7159 multiletter control sequences out of 15000+200000
+ 3685 strings out of 493329
+ 56989 string characters out of 3136424
+ 126473 words of memory out of 3000000
+ 7160 multiletter control sequences out of 15000+200000
  17737 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,1894b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -364,9 +395,9 @@ nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
 8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 228111 bytes).
+Output written on main.pdf (9 pages, 230807 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
