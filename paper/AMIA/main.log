@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  27 FEB 2017 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  27 FEB 2017 19:41
 entering extended mode
 **./main.tex
 (main.tex
@@ -279,22 +279,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 36.
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 48--48
 []\OT1/ptm/m/n/10 Open-ended ques-tion,
  []
 
-[2]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 66.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+ [2]
+<figures/deltadata.png, id=18, 650.43pt x 358.33875pt>
+File: figures/deltadata.png Graphic file (type png)
+
+<use figures/deltadata.png>
+Package pdftex.def Info: figures/deltadata.png used on input line 92.
+(pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
+ [3]
 Missing character: There is no Î in font ptmr7t!
 Missing character: There is no   in font ptmr7t!
 Missing character: There is no Ï in font ptmr7t!
@@ -302,42 +304,32 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [3]
-<figures/deltadata.png, id=24, 650.43pt x 358.33875pt>
-File: figures/deltadata.png Graphic file (type png)
+ [4 <./figures/deltadata.png>]
 
-<use figures/deltadata.png>
-Package pdftex.def Info: figures/deltadata.png used on input line 110.
-(pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
-
-
-LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 118
+LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 118
 .
 
 
-LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 118
+LaTeX Warning: Reference `table:sequence' on page 5 undefined on input line 118
 .
 
 
-LaTeX Warning: Reference `table:conf' on page 4 undefined on input line 118.
+LaTeX Warning: Reference `table:conf' on page 5 undefined on input line 118.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+LaTeX Warning: Reference `table:topsec' on page 5 undefined on input line 120.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `table:topsec' on page 4 undefined on input line 136.
-
-[4]
 Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-[5 <./figures/deltadata.png>] (main.bbl [6]
+[5] (main.bbl [6]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -352,7 +344,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  3684 strings out of 493329
  56976 string characters out of 3136424
- 122465 words of memory out of 3000000
+ 124465 words of memory out of 3000000
  7159 multiletter control sequences out of 15000+200000
  17737 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -370,7 +362,7 @@ nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
 8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 225905 bytes).
+Output written on main.pdf (8 pages, 226760 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
