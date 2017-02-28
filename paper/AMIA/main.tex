@@ -36,26 +36,22 @@ Our previous studies \cite{kotov2015interpretable, hasan2016study} explored seve
 \subsection*{\textit{Data collection}}
 The experimental datasets for this work were constructed based on the transcripts of 37 motivational interview sessions, which include a total of 11,353 segmented and annotated utterances. A fragment of an adolescent session transcript is presented in Table~\ref{table:anno_examp}. The utterances were annotated based on MYSCOPE codebook \cite{carcone2013provider} with 115 different behavior codes, which are grouped into the youth, caregiver, and counselor code groups. These utterances are then scanned from first to last and divided into successful and unsuccessful sequences when a commitment or change talk is found. A total of 1072 sequences have been observed which further partitioned into two subsets based on the outcome of motivational interviews: one dataset that includes all sequences of positive change talk or commitment language (882 sequences) and the other dataset which includes utterances ended with negative change talk or commitment language (192 sequences). In our experiment, these two subsets are utilized to train Markov chain and HMM.
 
-\begin{table*}[htb]
+\begin{table}[h]
 \caption{Fragment of the annotated transcript of a dialogue between a counselor and an adolescent.}    
 \label{table:anno_examp}
 \centering
-\begin{tabular}{lp{3.6cm}lp{8cm}}
+\begin{tabular}{|l|p{3.6cm}|l|p{8cm}|}
 \hline
-\hline
-Annotation  & Description & Speaker & Text \\
-\hline
-331 &	Open-ended question, elicit change talk positive &	Counselor &	do you feel like making healthier choices for your snacks and your meals is something you would be able to do ? mm-hmm meaning is that food available for you ? \\
-117 &	Low Uptake, positive	& Adolescent &	Yes \\
-301 &	Structure Session	& Counselor &	okay and thats an important thing for us to think about cause i would not want to help you come up with a plan that you would not be able to do without somebody else help so the last part of your plan is how somebody could be supportive to you meaning how they can help you be successful and so we should choose somebody who you feel like is around often enough \\
-112 &	Change Talk positive	& Adolescent &	my um aunt \\
-301 &	Structure Session	& Counselor &	okay so lets stick something my aunt can do \\
-112 &	Change Talk positive &	Adolescent &	she could when i am doing when i am eating something that i should i could not be eating but so i can choose something healthy she could tell me not to eat it \\
-309 &	Affirm, low &	Counselor &	okay that sounds like a really great suggestion \\
-\hline
-\hline
+Annotation  & Description & Speaker & Text \\\hline
+331 &	Open-ended question, elicit change talk positive &	Counselor &	do you feel like making healthier choices for your snacks and your meals is something you would be able to do ? mm-hmm meaning is that food available for you ? \\\hline
+117 &	Low Uptake, positive	& Adolescent &	Yes \\\hline
+301 &	Structure Session	& Counselor &	okay and thats an important thing for us to think about cause i would not want to help you come up with a plan that you would not be able to do without somebody else help so the last part of your plan is how somebody could be supportive to you meaning how they can help you be successful and so we should choose somebody who you feel like is around often enough \\\hline
+112 &	Change Talk positive	& Adolescent &	my um aunt \\\hline
+301 &	Structure Session	& Counselor &	okay so lets stick something my aunt can do \\\hline
+112 &	Change Talk positive &	Adolescent &	she could when i am doing when i am eating something that i should i could not be eating but so i can choose something healthy she could tell me not to eat it \\\hline
+309 &	Affirm, low &	Counselor &	okay that sounds like a really great suggestion \\\hline
 \end{tabular}
-\end{table*}
+\end{table}
 
 \subsection*{\textit{Sequence classification techniques}}
 Generally, a sequence is an ordered list of events. In our study, event is a behavior code represented as a symbolic value such as 117 (low uptake, positive), 331 (open-ended question), etc.  Given a sequence of behavior codes represented as $S_i = \{x_1, x_2,...,x_n\}$ and a set of class labels $L = \{l_1, l_2,...,l_m\}$, the task of sequence classification is to learn a sequence classifier C, which is a function mapping a sequence $S_i$ to a class label $l_i \in L$, written as, $C : S_i \to l_i, l_i \in L$. Here, L is fixed and known in advances. In our experiment, known labels are ``successful'' and ``unsuccessful'' motivational interview. 
