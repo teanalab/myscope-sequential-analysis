@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  27 FEB 2017 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  27 FEB 2017 19:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -269,89 +269,91 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 28.
+(Font)              <7> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 28.
+(Font)              <5> on input line 27.
 
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 36.
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--42
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--52
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
 []\OT1/ptm/m/n/10 Open-ended ques-tion,
  []
 
-
-LaTeX Warning: Reference `table:0001' on page 2 undefined on input line 64.
-
 [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 72.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 66.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
-
-<figures/deltadata.png, id=18, 650.43pt x 358.33875pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
+Missing character: There is no Î in font ptmr7t!
+Missing character: There is no   in font ptmr7t!
+Missing character: There is no Ï in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+ [3]
+<figures/deltadata.png, id=24, 650.43pt x 358.33875pt>
 File: figures/deltadata.png Graphic file (type png)
 
 <use figures/deltadata.png>
-Package pdftex.def Info: figures/deltadata.png used on input line 103.
+Package pdftex.def Info: figures/deltadata.png used on input line 110.
 (pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
-
- []
 
 
-LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 140
+LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 118
 .
 
 
-LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 140
+LaTeX Warning: Reference `table:sequence' on page 4 undefined on input line 118
 .
 
 
-LaTeX Warning: Reference `table:conf' on page 4 undefined on input line 140.
+LaTeX Warning: Reference `table:conf' on page 4 undefined on input line 118.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
-
- []
-
-[4 <./figures/deltadata.png>]
-
-LaTeX Warning: Reference `table:topsec' on page 5 undefined on input line 142.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-[5] (main.bbl [6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `table:topsec' on page 4 undefined on input line 136.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+[5 <./figures/deltadata.png>] (main.bbl [6]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-) [7] (main.aux)
+ [7]) [8] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3685 strings out of 493329
- 56980 string characters out of 3136424
+ 3684 strings out of 493329
+ 56976 string characters out of 3136424
  122465 words of memory out of 3000000
- 7160 multiletter control sequences out of 15000+200000
+ 7159 multiletter control sequences out of 15000+200000
  17737 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,1894b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -368,9 +370,9 @@ nts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
 8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 216462 bytes).
+Output written on main.pdf (8 pages, 225905 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
