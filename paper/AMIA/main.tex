@@ -34,7 +34,7 @@ Our previous studies \cite{kotov2015interpretable, hasan2016study} explored seve
 
 \section*{Methods}
 \subsection*{\textit{Data collection}}
-The experimental datasets for this work were constructed based on the transcripts of 37 motivational interview sessions, which include a total of 11,353 segmented and annotated utterances. A fragment of an adolescent session transcript is presented in Table~\ref{table:anno_examp}. The utterances were annotated based on MYSCOPE codebook \cite{carcone2013provider} with 115 different behavior codes, which are grouped into the youth, caregiver, and counselor code groups. These utterances are then scanned from first to last and divided into successful and unsuccessful sequences when a commitment or change talk is found. A total of 1072 sequences have been observed which further partitioned into two subsets based on the outcome of motivational interviews: one dataset that includes all sequences of positive change talk or commitment language (882 sequences) and the other dataset which includes utterances ended with negative change talk or commitment language (192 sequences). In our experiment, these two subsets are utilized to train two Markov chain or HMM.
+The experimental datasets for this work were constructed based on the transcripts of 37 motivational interview sessions, which include a total of 11,353 segmented and annotated utterances. A fragment of an adolescent session transcript is presented in Table~\ref{table:anno_examp}. The utterances were annotated based on MYSCOPE codebook \cite{carcone2013provider} with 115 different behavior codes, which are grouped into the youth, caregiver, and counselor code groups. These utterances are then scanned from first to last and divided into successful and unsuccessful sequences when a commitment or change talk is found. A total of 1072 sequences have been observed which further partitioned into two subsets based on the outcome of motivational interviews: one dataset that includes all sequences of positive change talk or commitment language (882 sequences) and the other dataset which includes utterances ended with negative change talk or commitment language (192 sequences). In our experiment, these two subsets are utilized to train Markov chain and HMM.
 
 \begin{table*}[htb]
 \caption{Fragment of the annotated transcript of a dialogue between a counselor and an adolescent.}    
@@ -96,8 +96,28 @@ if $p(S\rightarrow CT) > \delta $, where $\delta$ is experimentally defined thre
 
 The Markov Model we have discussed so far is referred to as the first order Markov Model, since we only look one code in the past to compute the transition probability. A generalization of the first order markov model is the $k^{th}$ order markov chain in which the transition probability for a particular symbol $x_i$ is computed by looking at the k preceding symbols. Thus, $k^{th}$ order markov chain will have $N^{k}$ states each associated with a sequence of k symbols. In our experiment, we also used second order markov model. Hence, our model have $N^2$ states with transitional probability matrix of size $N^2 \times N$.  
 
-\textbf {Hidden Markov Model}: Hidden Markov Models are widely used for sequence analysis because of their ability to incorporate dependencies among elements in sequence. HMM (Hidden Markov Model) is a very
-powerful tool to statistically model a process that varies in time. It can be seen as a doubly embedded stochastic process with a process that is not observable (hidden process) and can only be observed through another stochastic process (observable process) that produces the time set of observations. A HMM can be fully specified by (1) N, the number of states in the model; (2) M, the number of distinct observation symbols per state; (3) { } A ij = a , the state transition probability distribution; (4) { ( )} B j = b k , the observation symbol probability distribution; and (5) { } Π = π i , the initial state distribution[10]. The Baum-Welch reestimation method was implemented to train a hidden Markov model for each country using the training set. To identify the country of an unknown melody, the Viterbi algorithm was used to decode the sequence and compute its log probabilities respectively using HMM’s trained for different countries. We then assign the melody to the country with the highest log probability.  
+\textbf {Hidden Markov Model}: Hidden Markov Models are widely used for sequence analysis because of their ability to incorporate dependencies among elements in sequence. Hidden Markov Model (HMM) is a very
+powerful tool to statistically model a process that varies in time. It can be seen as a doubly embedded stochastic process with a process that is not observable (hidden process) and can only be observed through another stochastic process (observable process) that produces the time set of observations. A HMM can be fully specified by the following quintuple:
+
+\begin{center}
+$\lambda = (N, M, A, B, \pi)$
+\end{center}
+
+\begin{itemize}
+\item N is the number of states for the model
+\item M is the number of distinct observations symbols per state, i.e. the discrete alphabet size
+\item A is the $N\times N$ state transition probability distribution given in the form of a matrix $A = \{a_{ij}\}$
+\item B is the $N\times M$ observation symbol probability distribution given in the form of a matrix $B = \{b_j(k)\}$
+\item $\pi$ is the initial state distribution vector $\pi = \{\pi_i\}$
+\end{itemize}
+
+If we opt out the structure parameters M and N we have the more often used compact notation:
+
+\begin{center}
+$\lambda = (A, B, \pi)$
+\end{center} 
+
+This model is also called hidden for a reason. We are not required to tell it what those aforementioned states should be. We just have to tell it how many states we think are needed to model what we want. The model should be able to figure a suitable sequence of states to support our observations. The Baum-Welch algorithm was implemented to train a hidden Markov model for estimating parameters of each models using the training set. To identify the label of an unknown code sequence, the Viterbi algorithm was used to decode the sequence and compute its log probabilities respectively using HMM's trained for different classes. Then, the class with the highest log probability was assigned to the given behavior sequences. Like Markov chain, we also employed second order hidden markov model for classification of utterance sequences.   
 
 \subsection*{\textit{Evaluation methods}}
 To ensure the robustness of performance estimates, we used 10-fold cross validation for the annotation of clinical interview fragments, and 5-fold cross validation for the classification of sequence of behavior codes \cite{} as an experimental design. The performance of different classifiers and feature sets was evaluated in terms of precision, recall, F1 score (F1), kappa measure and accuracy using weighted macro-averaging over folds.
@@ -114,10 +134,8 @@ Since clinical researchers typically annotate caregiver and adolescent sessions 
 
 Depending on the type of the interview transcript and the codebook size, SVM-AF achieves 3\%--9\% higher accuracy and 4\%--10\% higher F1 score than SVM and 4\%--10\% higher accuracy and 4\%--11\% higher F1 score than CRF, which highlights the importance of contextual and semantic features. 
 
-\subsection*{\textit{Performance of Markov model in conjunction with determining PPC code sequences that are most likely translate into CT}}
-Since clinical researchers tried to increase the desire and ability of adolescent to change their current behavior to target behavior, we used sequence of successful and unsuccessful codes only from adolescent session for our sequential analysis. Summary of performance for the classification of sequential data is presented in Table~\ref{table:sequence}. From Table~\ref{table:sequence}, it follows that our designed markov model works very well in terms of precision and achieves precision 0.7574 with F1-measure 0.7092. The strength of the model for the classification of each type of sequences is illustrated by providing the confusion matrix in Table~\ref{table:conf}. It also shows that successful patterns are identified more accurately compare to unsuccessful motivational interview sequences due to the imbalance of data.
-
-Two markov models are used to obtain top five most likely successful and unsuccessful motivational interviews that describing provider strategies and patient responses. Table~\ref{table:topsec} shows the top five successful and unsuccessful PPC code sequences. \\
+\subsection*{\textit{Performance of Markov models for the classification of PPC code sequences}}
+Since clinical researchers tried to increase the desire and ability of adolescent to change their current behavior to target behavior, we used sequence of successful and unsuccessful codes only from adolescent session for our sequential analysis. Summary of performance for the classification of sequential data is presented in Table~\ref{table:sequence}. From Table~\ref{table:sequence}, it follows that our designed markov model works very well in terms of precision and achieves precision 0.7574 with F1-measure 0.7092. The strength of the model for the classification of each type of sequences is illustrated by providing the confusion matrix in Table~\ref{table:conf}. It also shows that successful patterns are identified more accurately compare to unsuccessful motivational interview sequences due to the imbalance of data. \\
 
 \begin{table}[h]
 \centering
@@ -135,7 +153,7 @@ Two markov models are used to obtain top five most likely successful and unsucce
   \end{tabular}
 \end{table}
 
-In general, these higher order models have better classification accuracy as compared to lower order models because they are able to capture longer ordering constraints present in the dataset. However, the number of states in higher order Markov chains grows exponentially with the order of the chain. Consequently, it is harder to accurately estimate all the transition probabilities from the training set. That is, there are many high-order states that are not frequently observed in the training set, leading to inaccurate probability estimates. In principle, this problem can be solved if the size of the training set is increased at the same rate as the state-size of the higher order Markov chain. However, this cannot be easily done for many applications areas. To overcome these problems many variants of the Markov chains have been developed. In the next section we discuss two such variants: the Interpolated Markov Models [SDKW98] and the Selective Markov Models [DK01]. The basic idea of these approaches is to combine portions of different order Markov chains so that to improve the overall classification accuracy.\\
+Two markov models are used to obtain top five most likely successful and unsuccessful motivational interviews that describing provider strategies and patient responses. Table~\ref{table:topsec} shows the top five successful and unsuccessful PPC code sequences. Two markov models are used to obtain top five most likely successful and unsuccessful motivational interviews that describing provider strategies and patient responses. Table~\ref{table:topsec} shows the top five successful and unsuccessful PPC code sequences. Two markov models are used to obtain top five most likely successful and unsuccessful motivational interviews that describing provider strategies and patient responses. Table~\ref{table:topsec} shows the top five successful and unsuccessful PPC code sequences. \\
 
 \begin{table}[h]
 \centering
@@ -152,6 +170,8 @@ In general, these higher order models have better classification accuracy as com
  
   \end{tabular}
 \end{table}
+
+In general, these higher order models have better classification accuracy as compared to lower order models because they are able to capture longer ordering constraints present in the dataset. However, the number of states in higher order Markov chains grows exponentially with the order of the chain. Consequently, it is harder to accurately estimate all the transition probabilities from the training set. That is, there are many high-order states that are not frequently observed in the training set, leading to inaccurate probability estimates. In principle, this problem can be solved if the size of the training set is increased at the same rate as the state-size of the higher order Markov chain. However, this cannot be easily done for many applications areas. To overcome these problems hidden Markov model is used with existing library available in online. The basic idea of these approaches is to combine portions of different order Markov chains so that to improve the overall classification accuracy.
 
 \section*{Discussion}
 From the sequential analysis, we observed that markov model achieved near-human accuracy to categorise the sequence of behavior codes. It was also found that successful interviews are more frequently responded by the adolescent with PPC code 112. However, unsuccessful interviews are responded with the behavior code 109.
