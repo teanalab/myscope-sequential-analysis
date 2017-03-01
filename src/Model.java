@@ -43,6 +43,12 @@ public class Model {
 		Collections.shuffle(data);
 		
 		System.out.println("Total sequences: " + data.size());
+		double seq_len = 0;
+		for(int t=0; t<data.size(); t++){
+			seq_len += data.get(t).getStates().size();
+		}
+		seq_len = seq_len/data.size();
+		System.out.println("Avg. sequence length: " + seq_len);
 		
 		String finalPrint = "";
 		double maxF1Measure = 0, optP = 0, optR = 0, optAcc = 0, optErrRateofFail = 0, optDelta = 0;
