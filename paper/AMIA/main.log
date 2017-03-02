@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  1 MAR 2017 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  1 MAR 2017 21:20
 entering extended mode
 **./main.tex
 (main.tex
@@ -284,7 +284,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 []\OT1/ptm/m/n/10 Open-ended ques-tion,
  []
 
@@ -292,25 +297,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--58
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 74.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 76.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
  [3]
 <figures/deltadata.png, id=22, 650.43pt x 358.33875pt>
 File: figures/deltadata.png Graphic file (type png)
 
 <use figures/deltadata.png>
-Package pdftex.def Info: figures/deltadata.png used on input line 100.
+Package pdftex.def Info: figures/deltadata.png used on input line 102.
 (pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
  [4 <./figures/deltadata.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
@@ -344,7 +349,7 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on main.pdf (9 pages, 230271 bytes).
+Output written on main.pdf (9 pages, 230408 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
