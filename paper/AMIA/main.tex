@@ -155,7 +155,7 @@ Performance summary for the classification of normal sequences is presented in T
 \end{table} 
 
 \subsection*{\textit{Performance of models for the classification of alternate PPC code sequences}}
-Table~\ref{tab:result_alt_seq} shows the classification performance of models applied on alternate sequences. The results demonstrate that second order hidden Markov model performed better than Markov chain in terms of recall and achieved 97.13\% recall. Second order general Markov model shows the highest precision 0.9778 as well as highest F-measure 0.9736. On the other hand, first order hidden Markov model displays lowest performance in all metrics compared to all other models. It was also examined that every models perform better in second order compared to first order. General Markov chain achieves 1\%, 1\% and 1\% improvement for precision, recall and F-measure, respectively, from first order to second order. Similarly, hidden Markov model achieves 1\%, 1\% and 1\% improvement for precision, recall and F-measure, respectively, from first order to second order. Overall, second order Markov model performs better for alternate utterance sequences. \\
+Table~\ref{tab:result_alt_seq} shows the classification performance of models applied on alternate sequences. The results demonstrate that second order hidden Markov model performed better than Markov chain in terms of recall and achieved 97.13\% recall. Second order general Markov model shows the highest precision 0.9778 as well as highest F-measure 0.9736. On the other hand, first order hidden Markov model displays lowest performance in all metrics compared to all other models. It was also examined that every models perform better in second order compared to first order. General Markov chain achieves 0.01\%, 2.72\% and 1.37\% improvement for precision, recall and F-measure, respectively, from first order to second order. Similarly, hidden Markov model achieves 3.32\%, 4.30\% and 4.82\% improvement for precision, recall and F-measure, respectively, from first order to second order. Overall, second order Markov model performs better for alternate utterance sequences. \\
 
 \begin{table}[h]
 \centering
@@ -172,6 +172,31 @@ Table~\ref{tab:result_alt_seq} shows the classification performance of models ap
  
   \end{tabular}
 \end{table}
+
+\subsection*{\textit{Some common patterns}}
+Table~\ref{tab:common_patterns} shows some successful and unsuccessful patterns which appeared more frequently in motivational interview. It can be seen that most successful patterns start with summary of the discussion or open-ended or closed ended question. After that, if adolescent demonstrate positive behavior change, counselor reflect that positive attitude immediately so that adolescent can stick with the decision and show his own desire for positive behavior change. On the other hand, general information of counselor can lead to a negative behavior change of adolescent, while showing positive attitude in the previous step. Because adolescent changes their topic more frequently when general question was asked.   
+
+\begin{table}[h]
+\centering
+\caption{Some common patterns in motivational interview for successful and unsuccessful behavior outcome.}
+\label{tab:common_patterns}
+  \begin{tabular}{|l|l|l|l|l|l|}
+  \hline
+   \textbf{Type} & \textbf{Pattern} \\ \hline      
+successful & 328 SUM-S: Summarize $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $ 313 R-CML+: Reflect, \\ 
+& commitment language positive $\rightarrow $ [positive commitment] \\\hline
+successful & 307 SPT: Support $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $ 313 R-CML+: Reflect, \\
+& commitment language positive $\rightarrow $ [positive commitment] \\\hline
+successful & 306 CQ-EF: Closed question, Elicit Feedback $\rightarrow $ 120 HUP-O: High Uptake, other \\
+& $\rightarrow $ 313 R-CML+: Reflect, commitment language positive $\rightarrow $ [positive commitment] \\\hline
+unsuccessful & 311 R-CT+: Reflect, change talk positive $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $ 302 G-INFO+:  \\
+& General Information, positive $\rightarrow $ [negative commitment] \\\hline
+unsuccessful & 302 G-INFO+: General Information, positive $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $  \\
+& 302 G-INFO+: General Information, positive $\rightarrow $ [negative commitment] \\\hline
+unsuccessful & 305 EA: Emphasize Autonomy $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $ 302 G-INFO+:  \\
+& General Information, positive $\rightarrow $ [negative commitment] \\\hline
+  \end{tabular}
+\end{table} 
 
 \section*{Discussion}
 The purpose of this study was to facilitate the design of motivational interview by examining the performance of sequence classification in the field of health informatics. Studying the results across the different classification schemes we can make some key observations. 
