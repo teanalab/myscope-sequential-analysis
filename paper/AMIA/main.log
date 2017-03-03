@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  2 MAR 2017 21:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  2 MAR 2017 22:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -304,37 +304,31 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
  [3]
-<figures/deltadata.png, id=22, 650.43pt x 358.33875pt>
-File: figures/deltadata.png Graphic file (type png)
+<figures/delta.png, id=22, 602.25pt x 451.6875pt>
+File: figures/delta.png Graphic file (type png)
+ <use figures/delta.png>
+Package pdftex.def Info: figures/delta.png used on input line 102.
+(pdftex.def)             Requested size: 328.82707pt x 246.63002pt.
 
-<use figures/deltadata.png>
-Package pdftex.def Info: figures/deltadata.png used on input line 102.
-(pdftex.def)             Requested size: 328.82707pt x 181.16467pt.
- [4 <./figures/deltadata.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+[4 <./figures/delta.png>] [5]
 Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-[5]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] (main.bbl [7]
+[6] (main.bbl [7] [8]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [8]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 ) [9] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 3683 strings out of 493329
- 56968 string characters out of 3136424
+ 3682 strings out of 493329
+ 56943 string characters out of 3136424
  127481 words of memory out of 3000000
  7158 multiletter control sequences out of 15000+200000
  17737 words of font info for 37 fonts, out of 3000000 for 9000
@@ -354,9 +348,9 @@ MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on main.pdf (9 pages, 232094 bytes).
+Output written on main.pdf (9 pages, 187740 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

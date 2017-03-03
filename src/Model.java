@@ -15,7 +15,7 @@ public class Model {
 	public static ArrayList<CodeSequence> testData = new ArrayList<>();
 	public static ArrayList<CodeSequence> data = new ArrayList<>();
 	public static HashMap<String,String> codemap = new HashMap<>();
-	public static double delta = -1, sumRatio400 = 0, sumRatio500=0;
+	public static double delta = 0.9, sumRatio400 = 0, sumRatio500=0;
 	public static double fpRate = 0;
 	public static int tp=0, fp=0, tn=0, fn=0;
 	
@@ -88,7 +88,7 @@ public class Model {
 				optDelta = delta;
 			}
 	
-			System.out.println("Average false positive for failure: " + new DecimalFormat("#.####").format(sumRatio500/(folds)) + " for delta: " + delta);
+			System.out.println("Average false positive for failure: " + new DecimalFormat("#.####").format(sumRatio500/(folds)) + " for delta: " + delta + ", F1-score: " + (f1m/folds));
 			//System.out.println("Confushion Matrix: " + " tp=" + tp + " fp=" + fp + " tn=" + tn + " fn=" + fn +  " for delta: " + delta);
 			sumRatio500 = 0;
 			

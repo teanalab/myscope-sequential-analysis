@@ -95,11 +95,11 @@ Success of a given motivational interview, given a sequence of MI behavior codes
 p(S\rightarrow CT) = \log\left(\frac{P_M(S)}{P_{\overline M}(S)}\right)= \sum_{i=2}^N p_M(c_i|c_{i-1})-\sum_{i=2}^N p_{\overline M}(c_i|c_{i-1})
 \end{equation}
 
-if $p(S\rightarrow CT) > \delta $, where $\delta$ is experimentally defined threshold, the interview transcript (or a portion of it) is predicted to result in CT. To fit the model, we experimentally determined the value of $\delta$ where model provides highest F-measure with lower bias. Figure\ref{fig:delta} [this is a temporary figure, I will change it later] illustrates an example of the characteristics of Markov model by varying the value of $\delta$. 
+if $p(S\rightarrow CT) > \delta $, where $\delta$ is experimentally defined threshold, the interview transcript (or a portion of it) is predicted to result in CT. To fit the model, we experimentally determined the value of $\delta$ where model provides highest F-measure with lower bias. Figure~\ref{fig:delta} illustrates an example of the characteristics of Markov model by varying the value of $\delta$. From the figure, it was observed that F-score value is not changing significantly with respect to $\delta $ from -5 to -1. This is because a bias is involved. However, F-score sharply decreased after $\delta = -0.9$. Thus, -0.9 will the optimal value of $\delta $, where F-measure is highest with lower bias. 
 
 \begin{figure}[htb!]
     \centering
-    \includegraphics[width=0.70\textwidth]{figures/deltadata.png}
+    \includegraphics[width=0.70\textwidth]{figures/delta.png}
     \caption{\textbf{Characteristics of proposed Markov model by varying the value of $\delta$}}
     \label{fig:delta}
 \end{figure}
