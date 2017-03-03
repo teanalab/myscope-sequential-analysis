@@ -15,7 +15,7 @@ public class Model {
 	public static ArrayList<CodeSequence> testData = new ArrayList<>();
 	public static ArrayList<CodeSequence> data = new ArrayList<>();
 	public static HashMap<String,String> codemap = new HashMap<>();
-	public static double delta = -4, sumRatio400 = 0, sumRatio500=0;
+	public static double delta = -1, sumRatio400 = 0, sumRatio500=0;
 	public static double fpRate = 0;
 	public static int tp=0, fp=0, tn=0, fn=0;
 	
@@ -53,9 +53,9 @@ public class Model {
 		String finalPrint = "";
 		double maxF1Measure = 0, optP = 0, optR = 0, optAcc = 0, optErrRateofFail = 0, optDelta = 0;
 		
-		for(int j=0; j < 5; j++){
+		for(int j=0; j < 1; j++){
 			System.out.println("\n\nIteration: " + j);
-			delta = delta + 1;
+			delta = delta + 0.1;
 			//delta = 0.2;
 			results = 0;
 			prec = 0;

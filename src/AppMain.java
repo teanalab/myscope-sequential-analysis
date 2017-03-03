@@ -2,7 +2,7 @@ public class AppMain {
 	public static void main(String[] args) throws Exception {
 		Model model = new Model();
 		model.evaluateModelByKFolds(5, false, 0);
-		//model.printTopKSuccessAndFailureSequence(20,false);
+		model.printTopKSuccessAndFailureSequence(20,false);
 		//model.provideFrequencyDistributionOfSequence(false);
 		System.out.println("\nFinished execution.");
 		
