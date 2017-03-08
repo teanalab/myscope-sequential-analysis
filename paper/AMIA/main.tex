@@ -95,7 +95,7 @@ P_M(S) = \prod_{i=2}^N p_M(c_i|c_1,\dots,c_{i-1})=\prod_{i=2}^N p_M(c_i|c_{i-1})
 The likelihood of success of a given motivational interview at a given time point, given a sequence of MI behavior codes observed prior to that point, is estimated based on the following formula:
 
 \begin{equation}
-p(S\rightarrow CML+) = \log\left(\frac{P_M(S)}{P_{\overline M}(S)}\right)= \sum_{i=2}^N p_M(c_i|c_{i-1})-\sum_{i=2}^N p_{\overline M}(c_i|c_{i-1})
+p(S\rightarrow CML+) = \log\left(\frac{P_M(S)}{P_{\overline M}(S)}\right)= \sum_{i=2}^N p_M(c_i|c_{i-1})-\sum_{i=2}^N p_{\overline M}(c_i|c_{i-1})\label{eq:class}
 \end{equation}
 
 if $p(S\rightarrow CML+) > \delta $, where $\delta$ is an empirically determined threshold, the interview is predicted to result in positive change talk or commitment language. Estimating the model on the training data involves experimentally determining the value of $\delta$, resulting in the highest prediction F-measure with lower bias. Figure~\ref{fig:delta} illustrates the accuracy of Markov model-based method by varying the value of $\delta$. As can be seen from Figure~\ref{fig:delta}, F-measure varies insignificantly, when $\delta $ is between -5 to -1, due to possible bias. However, F-score sharply decreases after $\delta = -0.9$. Thus, -0.9 is the optimal value of $\delta $, where F-measure is the highest with lower bias. 
@@ -107,43 +107,42 @@ if $p(S\rightarrow CML+) > \delta $, where $\delta$ is an empirically determined
     \label{fig:delta}
 \end{figure}
 
-The Markov model we have discussed so far is referred to as the first-order MC, since it only considers immediately preceding behavior code to compute the state transition probability matrix. A generalization of the first-order MC is the $k^{th}$ order MC, in which the transition probability to a particular symbol $x_i$ is computed by looking at the k preceding symbols. Thus, $k^{th}$ order Markov chain will have $N^{k}$ states each associated with a sequence of k symbols. In our experiment, we also used second order Markov model. Hence, our model has $N^2$ states with transitional probability matrix of size $N^2 \times N$.  
+The Markov model we have discussed so far is referred to as the first-order MC, since it only considers immediately preceding behavior code to compute the state transition probability matrix. A generalization of the first-order MC is the $k^{th}$ order MC, in which the transition probability to a particular state (symbol) $x_i$ is computed by looking at the k preceding states (symbols). Thus, $k^{th}$ order Markov chain will have $N^{k}$ states each associated with a sequence of k symbols. In our experiment, we also used second order Markov model. Hence, our model has $N^2$ states with transition probability matrix of size $N^2 \times N$.  
 
-\textbf {Hidden Markov Model (HMM)}: HMMs are widely used for sequence analysis because of their ability to incorporate dependencies among elements in sequence. Hidden Markov model is a very
-powerful tool to statistically model a process that varies in time. It can be seen as a doubly embedded stochastic process with a process that is not observable (hidden process) and can only be observed through another stochastic process (observable process) that produces a sequence of observations. An HMM can be fully specified by the following quintuple:
+\textbf {Hidden Markov Model (HMM)} is a powerful tool for statistical modeling of processes varying in time. HMMs are widely used for sequence analysis because of their ability to incorporate dependencies among elements in sequence. HMM can be considered as a doubly embedded stochastic process with a process that is not observable (hidden process) and can only be observed through another stochastic process (observable process) that produces a sequence of observations. An HMM can be fully specified by the following quintuple:
 
 \begin{center}
 $\lambda = (N, M, A, B, \pi)$
 \end{center}
 
 \begin{itemize}
-\item N is the number of hidden states in the model
-\item M is the number of distinct observations symbols per state, i.e. the discrete vocabulary size
-\item A is the $N\times N$ state transition probability distribution given in the form of a matrix $A = \{a_{ij}\}$
-\item B is the $N\times M$ observation symbol probability distribution given in the form of a matrix $B = \{b_j(k)\}$
+\item N is a number of hidden states in the model
+\item M is a number of distinct observations symbols per state, i.e. the discrete vocabulary size
+\item A is an $N\times N$ state transition probability distribution matrix $A = \{a_{ij}\}$
+\item B is an $N\times M$ matrix $B = \{b_j(k)\}$ with observation symbol probability distribution for each state 
 \item $\pi$ is the initial state distribution vector $\pi = \{\pi_i\}$
 \end{itemize}
 
-If we opt out the structure parameters M and N we have the more often used compact notation:
+We exclude the structure parameters M and N to designate HMM using a compact notation:
 
 \begin{center}
 $\lambda = (A, B, \pi)$
 \end{center} 
 
-This model is also called hidden for a reason. We are not required to tell it what those aforementioned states should be. We just have to tell it how many states we think are needed to model what we want. The model should be able to figure a suitable sequence of states to support our observations. The Baum-Welch algorithm was implemented to train a hidden Markov model for estimating parameters of each models using the training set. To identify the label of an unknown code sequence, the Viterbi algorithm was used to decode the sequence and compute its log probabilities respectively using HMM's trained for different classes. Then, the class with the highest log probability was assigned to the given behavior sequences. Like Markov chain, we also employed second order hidden Markov model for classification of utterance sequences.   
+The key difference between HMM and MC is that HMM requires specifying the number of hidden states as a model parameter and then the model figures out a sequence of hidden states that best explains the observations along with state transition probabilities and distributions of observation symbols for each state. The Baum-Welch algorithm was used to estimate the parameters of HMMs for successful and unsuccessful interviews using the corresponding training set, while the Viterbi algorithm was used to determine the most likely sequence of hidden states for a given sequence of observations. After assignment of hidden states, the log-likelihood of successful outcome can be estimated using Eq.~\ref{eq:class}. As in the case of MC, we also experimented with second-order HMM.   
 
 \subsection*{\textit{Evaluation methods}}
 The performance of classifiers is reported on the basis of 5-fold cross-validation by using weighted macro-averaging over folds. Precision, recall, F-measure and accuracy were used to evaluate the performance of classifiers. A true positive (TP) was counted when classifier correctly classified the sequence into actual class; a false positive (FP) was counted when classifier incorrectly classified other classes to the considered class; a false negative (FN) when the considered class incorrectly classified to other classes. The precision of a class was defined as the ratio between the numbers of correctly classified sequences and all sequences identified as that particular class by the classifier. In other words, Precision = TP / (TP + FP). Recall of a class was defined as the ratio between the numbers of correctly classified sequences and all sequences of that particular class in the gold standard (labeled data set). In more specifically, Recall = TP / (TP + FN). Similarly, Accuracy of a class was also defined as the ratio between the numbers of correctly classified sequences and a total number of sequences for that particular class in the gold standard. However, F-measure can be computed as the harmonic mean of precision and recall, or 2 x Precision x Recall / (Precision + Recall).  
 
 \section*{Results}
-Experimental evaluation of the classification of utterance sequences by using probabilistic models is reported with two set of experiments: the first set of experiment was focused on normal sequences, while the second set of experiment was performed on alternate sequences. 
+Experimental evaluation of the classification of utterance sequences by using the proposed probabilistic models is reported with two set of experiments: the first set of experiment was focused on normal sequences, while the second set of experiment was performed on alternate sequences. 
 
-\subsection*{\textit{Performance of models for the classification of normal PPC code sequences}}
-Performance summary for the classification of normal sequences is presented in Table~\ref{tab:result_norm_seq}. It follows that first order hidden Markov model works very well and achieves highest precision 0.7980 with F-measure 0.7989. However, our designed second order Markov model shows the lowest performance in terms of precision and F-measure. It was also noticed that the lowest recall 0.7686 achieved in first order Markov model. On the other hand, second order hidden Markov model achieves the highest recall 0.8449 and accuracy 0.8449. From Table~\ref{tab:result_norm_seq}, we observed that performance degrades from first order to second order. Precision and F-measures drop 6.74\% \& 2.39\% in Markov chain and 7.27\% \& 2.09\% in HMM, respectively, when using second order models. In contrast, recall improves 2.64\%--4.84\% in second order Markov model and HMM. Overall, HMM performed better than general Markov model in normal utterance sequences. \\
+\subsection*{\textit{Predictive performance for normal PPC code sequences.}}
+Performance summary for the classification of normal sequences is presented in Table~\ref{tab:result_norm_seq}. It follows that first-order HMM demonstrates the best performance achieving the highest precision 0.7980 with 0.7989 F-measure. However, second-order Markov Chain demonstrates the lowest performance in terms of precision and F-measure. It can be seen that the lowest recall of 0.7686 is achieved by the first-order MC. On the other hand, second-order HMM achieves the highest recall 0.8449 and accuracy 0.8449. From Table~\ref{tab:result_norm_seq}, it follows that second-order MC and HMM have lower precision and F-measure, but higher recall and accuracy than first-order MC and HMM. Precision and F-measure decrease by 6.74\% and 2.39\%, in case of MC, and by 7.27\% \& 2.09\%, in case of HMM, when going from first- to second-order models. In contrast, recall improves by 3\%--5\%, in case of both MC and HMM, when going from first- to second-order models. Overall, HMM performed better than MC for normal sequences. \\
 
 \begin{table}[h]
 \centering
-\caption{Performance of Markov models for the classification of normal PPC code sequence. Highest performances for each metrics are highlighted in bold faces.}
+\caption{Performance of MC and HMM for predicting success of normal patient-provider communication sequences. The largest value for each performance metric is highlighted in bold.}
 \label{tab:result_norm_seq}
   \begin{tabular}{|l|l|l|l|l|l|}
   \hline
@@ -157,12 +156,12 @@ Performance summary for the classification of normal sequences is presented in T
   \end{tabular}
 \end{table} 
 
-\subsection*{\textit{Performance of models for the classification of alternate PPC code sequences}}
+\subsection*{\textit{Predictive performance for alternate PPC code sequences}}
 Table~\ref{tab:result_alt_seq} shows the classification performance of models applied on alternate sequences. The results demonstrate that second order hidden Markov model performed better than Markov chain in terms of recall and achieved 97.13\% recall. Second order general Markov model shows the highest precision 0.9778 as well as highest F-measure 0.9736. On the other hand, first order hidden Markov model displays the lowest performance in all metrics compared to all other models. It was also examined that every model perform better in second order compared to first order. General Markov chain achieves 0.01\%, 2.72\% and 1.37\% improvement for precision, recall and F-measure, respectively, from first order to second order. Similarly, hidden Markov model achieves 3.32\%, 4.30\% and 4.82\% improvement for precision, recall and F-measure, respectively, from first order to second order. Overall, second order Markov model performs better for alternate utterance sequences. \\
 
 \begin{table}[h]
 \centering
-\caption{Performance of Markov models for the classification of alternate PPC code sequence. Highest performances for each metrics are highlighted in bold faces.}
+\caption{Performance of MC and HMM for predicting success of normal patient-provider communication sequences. The largest value for each performance metric is highlighted in bold.}
 \label{tab:result_alt_seq}
   \begin{tabular}{|l|l|l|l|l|l|}
   \hline
@@ -176,12 +175,12 @@ Table~\ref{tab:result_alt_seq} shows the classification performance of models ap
   \end{tabular}
 \end{table}
 
-\subsection*{\textit{Some common patterns}}
+\subsection*{\textit{Common patterns}}
 Table~\ref{tab:common_patterns} shows some successful and unsuccessful patterns which appeared more frequently in a motivational interview. It can be seen that most successful patterns start with a summary of the discussion or open-ended or closed-ended question. After that, if adolescent demonstrates positive behavior change, counselor reflect that positive attitude immediately so that adolescent can stick with the decision and show his own desire for positive behavior change. On the other hand, general information of counselor can lead to a negative behavior change of adolescent, while showing a positive attitude in the previous step. Because adolescent changes their topic more frequently when general questions were asked.   
 
 \begin{table}[h]
 \centering
-\caption{Some common patterns in motivational interview for successful and unsuccessful behavior outcome.}
+\caption{Common patterns in successful and unsuccessful motivational interviews.}
 \label{tab:common_patterns}
   \begin{tabular}{|l|l|l|l|l|l|}
   \hline
@@ -213,7 +212,7 @@ Third, alternate sequences provide higher performance for all Markov models. Eve
 Finally, it was seen that successful interviews are more frequently responded by the adolescent with positive behavior changes which lead to making a positive commitment for loosing weight. Whereas, unsuccessful interviews are responded with negative behavior changes which lead to a negative commitment or no commitment. 
 
 \section*{Conclusion}
-It has been shown how Markov chain and hidden Markov models could be used to build classifiers for the sequence of behavior codes in motivational interviews. Experimental results show that the behavior codes carry some inherited information to distinguish motivational interviews. This work can facilitate researchers to establish a causal relationship between different communication strategies and desired behavioral outcomes without having to repeatedly wade through pages of interview transcripts. It provides information that can directly inform and increase the efficiency of clinical practice for a successful interview. This work also explains some successful patterns for the practical use by the clinician during the interview session which will translate into positive change talk and commitment language. The direction of future work include the exploration of other methods such as BLAST \cite{altschul1990basic} and Strand \cite{drew2014strand} for the classification of utterance sequences. We also have the plan to use large data set in conjunction with some advanced features for the evaluation of sequence classifiers. 
+In this paper, we proposed Markov chain and hidden Markov models could be used to build classifiers for the sequence of behavior codes in motivational interviews. Experimental results show that the behavior codes carry some inherited information to distinguish motivational interviews. This work can facilitate researchers to establish a causal relationship between different communication strategies and desired behavioral outcomes without having to repeatedly wade through pages of interview transcripts. It provides information that can directly inform and increase the efficiency of clinical practice for a successful interview. This work also explains some successful patterns for the practical use by the clinician during the interview session which will translate into positive change talk and commitment language. The direction of future work include the exploration of other methods such as BLAST \cite{altschul1990basic} and Strand \cite{drew2014strand} for the classification of utterance sequences. We also have the plan to use large data set in conjunction with some advanced features for the evaluation of sequence classifiers. 
 
 
 \section*{Acknowledgments}
