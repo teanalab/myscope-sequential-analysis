@@ -27,6 +27,12 @@ Lesh N, Zaki MJ, Ogihara M.
 \newblock In: Proceedings of the fifth ACM SIGKDD international conference on
   Knowledge discovery and data mining. ACM; 1999. p. 342--346.
 
+\bibitem{nallam2016effective}
+Nallam K, et~al.
+\newblock An Effective Implementation of Hierarchical Approach For Sequence
+  Classification.
+\newblock IJACTA. 2016;3(2):143--146.
+
 \bibitem{keogh2003need}
 Keogh E, Kasetty S.
 \newblock On the need for time series data mining benchmarks: a survey and
@@ -45,11 +51,11 @@ Rabiner LR.
   speech recognition.
 \newblock Proceedings of the IEEE. 1989;77(2):257--286.
 
-\bibitem{nallam2016effective}
-Nallam K, et~al.
-\newblock An Effective Implementation of Hierarchical Approach For Sequence
-  Classification.
-\newblock IJACTA. 2016;3(2):143--146.
+\bibitem{yakhnenko2005discriminatively}
+Yakhnenko O, Silvescu A, Honavar V.
+\newblock Discriminatively trained markov model for sequence classification.
+\newblock In: Data Mining, Fifth IEEE International Conference on. IEEE; 2005.
+  p. 8--pp.
 
 \bibitem{deshpande2002evaluation}
 Deshpande M, Karypis G.
@@ -63,19 +69,6 @@ Wei L, Keogh E.
 \newblock In: Proceedings of the 12th ACM SIGKDD international conference on
   Knowledge discovery and data mining. ACM; 2006. p. 748--753.
 
-\bibitem{lukasik2016hawkes}
-Lukasik M, Srijith P, Vu D, Bontcheva K, Zubiaga A, Cohn T.
-\newblock Hawkes processes for continuous time sequence classification: an
-  application to rumour stance classification in twitter.
-\newblock In: Proceedings of 54th Annual Meeting of the Association for
-  Computational Linguistics. Association for Computational Linguistics; 2016.
-  p. 393--398.
-
-\bibitem{sebastiani2002machine}
-Sebastiani F.
-\newblock Machine learning in automated text categorization.
-\newblock ACM computing surveys (CSUR). 2002;34(1):1--47.
-
 \bibitem{lane1999temporal}
 Lane T, Brodley CE.
 \newblock Temporal sequence learning and data reduction for anomaly detection.
@@ -87,37 +80,6 @@ Drew J, Hahsler M, Moore T.
 \newblock Polymorphic malware detection using sequence classification methods
   and ensembles.
 \newblock EURASIP Journal on Information Security. 2017;2017(1):2.
-
-\bibitem{liu2008sequence}
-Liu X, Zhang P, Zeng D.
-\newblock Sequence matching for suspicious activity detection in anti-money
-  laundering.
-\newblock In: International Conference on Intelligence and Security
-  Informatics. Springer; 2008. p. 50--61.
-
-\bibitem{duskin2009distinguishing}
-Duskin O, Feitelson DG.
-\newblock Distinguishing humans from robots in web search logs: preliminary
-  results using query rates and intervals.
-\newblock In: Proceedings of the 2009 workshop on Web Search Click Data. ACM;
-  2009. p. 15--19.
-
-\bibitem{tan2004discovery}
-Tan PN, Kumar V.
-\newblock Discovery of web robot sessions based on their navigational patterns.
-\newblock In: Intelligent Technologies for Information Analysis. Springer;
-  2004. p. 193--222.
-
-\bibitem{li2000image}
-Li J, Najmi A, Gray RM.
-\newblock Image classification by a two-dimensional hidden Markov model.
-\newblock IEEE transactions on signal processing. 2000;48(2):517--533.
-
-\bibitem{zhang2016tensor}
-Zhang J, Xu C, Jing P, Zhang C, Su Y.
-\newblock A Tensor-Driven Temporal Correlation Model for Video Sequence
-  Classification.
-\newblock IEEE Signal Processing Letters. 2016;23(9):1246--1249.
 
 \bibitem{ogden2012prevalence}
 Ogden CL, Carroll MD, Kit BK, Flegal KM.
@@ -157,13 +119,6 @@ Eide H, Quera V, Graugaard P, Finset A.
   concern: applying sequence analysis to RIAS.
 \newblock Social Science \& Medicine. 2004;59(1):145--155.
 
-\bibitem{jaber2016multi}
-Jaber M, Wood PT, Papapetrou P, Gonz{\'a}lez-Marcos A.
-\newblock A Multi-Granularity Pattern-Based Sequence Classification Framework
-  for Educational Data.
-\newblock In: Data Science and Advanced Analytics (DSAA), 2016 IEEE
-  International Conference on. IEEE; 2016. p. 370--378.
-
 \bibitem{mutsam2016maximum}
 Mutsam N, Pernkopf F.
 \newblock Maximum margin hidden Markov models for sequence classification.
@@ -193,12 +148,6 @@ Chai W, Vercoe B.
 \newblock Folk music classification using hidden Markov models.
 \newblock In: Proceedings of International Conference on Artificial
   Intelligence. vol.~6. sn; 2001. .
-
-\bibitem{yakhnenko2005discriminatively}
-Yakhnenko O, Silvescu A, Honavar V.
-\newblock Discriminatively trained markov model for sequence classification.
-\newblock In: Data Mining, Fifth IEEE International Conference on. IEEE; 2005.
-  p. 8--pp.
 
 \bibitem{altschul1990basic}
 Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ.
