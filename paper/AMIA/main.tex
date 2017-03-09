@@ -157,7 +157,7 @@ Predictive performance summary of the proposed methods on natural sequences is p
 \end{table} 
 
 \subsection*{\textit{Predictive performance for alternating PPC code sequences}}
-Table~\ref{tab:result_alt_seq} summarizes predictive performance of the proposed methods on alternating sequences. These results indicate that second-order HMM had better recall than MC, achieving 97.13\% recall. Similar to the case of natural sequences, first-order MC has the lowest performance compared to all other models across all metrics. Also, as in the case of natural sequences, prediction method based on second-order HMM has the highest recall of 0.9713 and the highest accuracy of 0.9713 among all models. However, different from natural sequences, second-order MC demonstrates the highest precision 0.9778 as well as the highest F-measure of 0.9736. We also observed that second-order MC and HMM outperform first-order MC and HMM. Specifically, moving from first-order to second-order MC improves precision, recall and F-measure of the MI success prediction method by 0.01\%, 2.72\% and 1.37\%, respectively. Moving from first-order to second-order HMM improves precision, recall and F-measure of the MI success prediction method by 3.32\%, 4.30\% and 4.82\%, respectively.
+Table~\ref{tab:result_alt_seq} summarizes predictive performance of the proposed methods on alternating sequences. These results indicate that second-order HMM had better recall than MC, achieving 97.13\% recall. Similar to the case of natural sequences, first-order MC has the lowest performance compared to all other models across all metrics. Also, as in the case of natural sequences, prediction method based on second-order HMM has the highest recall of 0.9713 and the highest accuracy of 0.9713 among all models. However, different from natural sequences, second-order MC demonstrates the highest precision 0.9778 as well as the highest F-measure of 0.9736. We also observed that second-order MC and HMM outperform first-order MC and HMM. Specifically, moving from first-order to second-order MC improves precision, recall and F-measure of the MI success prediction method by 0.01\%, 2.72\% and 1.37\%, respectively. Moving from first-order to second-order HMM improves precision, recall and F-measure of the MI success prediction method by 3.32\%, 4.30\% and 4.82\%, respectively.\\
 
 \begin{table}[h]
 \centering
@@ -171,18 +171,67 @@ Table~\ref{tab:result_alt_seq} summarizes predictive performance of the proposed
  & Second order & \textbf{0.9778} & 0.9694 & \textbf{0.9736} & 0.9694\\ \hline
  \multirow{2}{*}{Hidden Markov Model} & First order & 0.9392 & 0.9313 & 0.9253 & 0.9392\\ \cline{2-6}
  & Second order & 0.9704 & \textbf{0.9713} & 0.9699  & \textbf{0.9713}\\ \hline
- 
   \end{tabular}
 \end{table}
 
+
+\subsection*{\textit{Impact of hidden states}}
+Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews.
+
+\begin{table}[h]
+\centering
+\caption{Emission matrix}
+\label{tab:emission_matrix}
+  \begin{tabular}{|l|l|}
+  \hline
+   \textbf{Hidden} & \textbf{Log probability of each symbol (301, 117, 327, 343, 101, 305, 311, 331, 310, 328, 112,)} \\ 
+   \textbf{states} & \textbf{ 326, 302, 308, 314, 306, 119, 313, 333, 307, 325, 344, 109, 106, 332, 120, 345, 309, 312, 114,} \\
+    & \textbf{ 304, 115, 329, 330, 103, 116, 324, 323, 118, 303, 334)} \\\hline      
+S-1 & -2.896, -4.595, -4.031, -5.584, -11.383, -2.772, -1.532, -2.78, -3.816, -2.745, -8.444, -4.42, -3.485, \\
+& -2.438, -8, -5.577, -10.333, -2.216, -3.462, -3.479, -3.71, -5.615, -20.984, -7.635, -5.7, -5.694, -3.629, \\
+& -3.32, -3.195, -8, -5.007, -8, -4.636, -3.67, -8, -8, -11.027, -10.448, -8, -8, -8 \\\hline
+S-2 & -3.092, -1.344, -4.322, -4.707, -6.065, -2.205, -5.701, -2.064, -5.71, -3.778, -3.121, -6.97, -3.074, \\
+& -3.505, -8, -3.879, -3.229, -5.707, -2.708, -4.729, -5.538, -4.993, -4.116, -3.125, -8, -3.29, -4.439, \\
+& -4.414, -6.341, -8, -8, -8, -5.964, -7.009, -8, -8, -6.067, -6.071, -8, -8, -8 \\\hline
+S-3 & -3.092, -1.344, -4.322, -4.707, -6.065, -2.205, -5.701, -2.064, -5.71, -3.778, -3.121, -6.97, -3.074, \\
+& -3.505, -8, -3.879, -3.229, -5.707, -2.708, -4.729, -5.538, -4.993, -4.116, -3.125, -8, -3.29, -4.439, \\
+& -4.414, -6.341, -8, -8, -8, -5.964, -7.009, -8, -8, -6.067, -6.071, -8, -8, -8 \\\hline
+S-4 & -3.092, -1.344, -4.322, -4.707, -6.065, -2.205, -5.701, -2.064, -5.71, -3.778, -3.121, -6.97, -3.074, \\
+& -3.505, -8, -3.879, -3.229, -5.707, -2.708, -4.729, -5.538, -4.993, -4.116, -3.125, -8, -3.29, -4.439, \\
+& -4.414, -6.341, -8, -8, -8, -5.964, -7.009, -8, -8, -6.067, -6.071, -8, -8, -8 \\\hline
+
+U-1 & -8, -24.368, -8, -2.226, -8, -2.649, -1.458, -4.275, -2.632, -2.409, -54.292, -2.919, -2.867, -3.325, \\
+& -8, -7.464, -31.322, -2.649, -3.022, -4.018, -8, -3.313, -51.78, -50.295, -2.919, -29.011, -8, -6.055, \\
+& -3.341, -8, -8, -8, -24.716, -8, -8, -8, -8, -8, -8, -8, -8  \\\hline
+U-2 & -8, -1.021, -8, -8, -8, -3.067, -6.497, -2.993, -8, -10.079, -3.794, -8, -2.448, -8, -8, \\
+& -2.415, -3.1, -6.451, -5.018, -8, -8, -3.113, -2.407, -3.794, -8, -2.407, -8, -3.933, -7.201, -8, \\
+& -8, -8, -3.794, -8, -8, -8, -8, -8, -8, -8, -8 \\\hline
+U-3 & -8, -1.021, -8, -8, -8, -3.067, -6.497, -2.993, -8, -10.079, -3.794, -8, -2.448, -8, -8, -2.415, \\
+& -3.1, -6.451, -5.018, -8, -8, -3.113, -2.407, -3.794, -8, -2.407, -8, -3.933, -7.201, -8, -8, -8, -3.794, \\
+& -8, -8, -8, -8, -8, -8, -8, -8 \\\hline
+U-4 & -8, -1.021, -8, -8, -8, -3.067, -6.497, -2.993, -8, -10.079, -3.794, -8, -2.448, -8, -8, \\
+& -2.415, -3.1, -6.451, -5.018, -8, -8, -3.113, -2.407, -3.794, -8, -2.407, -8, -3.933, -7.201, -8, \\
+& -8, -8, -3.794, -8, -8, -8, -8, -8, -8, -8, -8 \\\hline
+
+
+  \end{tabular}
+\end{table} 
+
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[width=0.70\textwidth]{figures/hidden-states.png}
+    \caption{\textbf{Impact of hidden states in the performance of HMM}.}
+    \label{fig:hidden-states}
+\end{figure}
+
 \subsection*{\textit{Common patterns}}
-Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. It can be seen that most successful patterns start with a summary of the discussion or open-ended/close-ended question. After that, if adolescents show positive behavior change, the counselor immediately reflects on that positive tendency, to reinforce adolescent's desire to adhere to positive behavior change. On the other hand, general information by the counselor can lead to a negative behavior change in adolescents, even in the cases when adolescents were showing positive tendency in their previous communication. This observation can be explained by adolescents quickly loosing focus when presented with general information.   
+Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. It can be seen that most successful patterns start with a summary of the discussion or open-ended/close-ended question. After that, if adolescents show positive behavior change, the counselor immediately reflects on that positive tendency, to reinforce adolescent's desire to adhere to positive behavior change. On the other hand, general information by the counselor can lead to a negative behavior change in adolescents, even in the cases when adolescents were showing positive tendency in their previous communication. This observation can be explained by adolescents quickly loosing focus when presented with general information. \\
 
 \begin{table}[h]
 \centering
 \caption{Common patterns in successful and unsuccessful motivational interviews.}
 \label{tab:common_patterns}
-  \begin{tabular}{|l|l|l|l|l|l|}
+  \begin{tabular}{|l|l|}
   \hline
    \textbf{Type} & \textbf{Pattern} \\ \hline      
 successful & 328 SUM-S: Summarize $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $ 313 R-CML+: Reflect, \\ 
