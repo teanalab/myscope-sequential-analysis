@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6200) (preloaded format=pdflatex 2016.12.28)  10 MAR 2017 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  10 MAR 2017 12:41
 entering extended mode
 **./main.tex
 (main.tex
@@ -353,21 +353,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./figures/hidden-states.png>] [8] [9] (main.bbl
+[7 <./figures/hidden-states.png>] [8] (main.bbl
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [10]) [11] (main.aux)
+ [9]) [10] (main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
  3694 strings out of 493329
- 57157 string characters out of 3136452
+ 57157 string characters out of 3136424
  125496 words of memory out of 3000000
  7168 multiletter control sequences out of 15000+200000
  20855 words of font info for 42 fonts, out of 3000000 for 9000
@@ -388,9 +388,9 @@ pe1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
 utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (11 pages, 209509 bytes).
+Output written on main.pdf (10 pages, 208836 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
