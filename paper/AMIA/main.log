@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100) (preloaded format=pdflatex 2017.1.18)  9 MAR 2017 14:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6200) (preloaded format=pdflatex 2016.12.28)  10 MAR 2017 10:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -148,19 +148,19 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 9.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -257,81 +257,95 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <12> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 25.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 25.
+(Font)              <6> on input line 20.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 20.
 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 20.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+
+
+LaTeX Font Warning: Font shape `OMS/ptm/bx/n' undefined
+(Font)              using `OMS/ptm/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 20.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 26.
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 36.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 35.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 []\OT1/ptm/m/n/10 Open-ended ques-tion,
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 79.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
- [3]
-<figures/delta.png, id=22, 602.25pt x 451.6875pt>
+[2] [3] <figures/delta.png, id=24, 602.25pt x 451.6875pt>
 File: figures/delta.png Graphic file (type png)
- <use figures/delta.png>
-Package pdftex.def Info: figures/delta.png used on input line 105.
-(pdftex.def)             Requested size: 328.82707pt x 246.63002pt.
 
-[4 <./figures/delta.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+<use figures/delta.png>
+Package pdftex.def Info: figures/delta.png used on input line 104.
+(pdftex.def)             Requested size: 328.82707pt x 246.63002pt.
+ [4 <./figures/delta.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-<figures/hidden-states.png, id=32, 594.72188pt x 431.36156pt>
+<figures/hidden-states.png, id=34, 594.72188pt x 431.36156pt>
 File: figures/hidden-states.png Graphic file (type png)
 
 <use figures/hidden-states.png>
 Package pdftex.def Info: figures/hidden-states.png used on input line 173.
 (pdftex.def)             Requested size: 328.82707pt x 238.50017pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
@@ -339,40 +353,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./figures/hidden-states.png>] [8] (main.bbl
+[7 <./figures/hidden-states.png>] [8] [9] (main.bbl
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [9]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-) [10] (main.aux) ) 
+ [10]) [11] (main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3681 strings out of 493329
- 56972 string characters out of 3136424
- 128473 words of memory out of 3000000
- 7156 multiletter control sequences out of 15000+200000
- 17737 words of font info for 37 fonts, out of 3000000 for 9000
+ 3694 strings out of 493329
+ 57157 string characters out of 3136452
+ 125496 words of memory out of 3000000
+ 7168 multiletter control sequences out of 15000+200000
+ 20855 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,2173b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.e
-nc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on main.pdf (10 pages, 195717 bytes).
+ 43i,10n,40p,2297b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
+utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (11 pages, 209509 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
