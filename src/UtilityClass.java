@@ -3,8 +3,10 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -821,6 +823,49 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 	        br.close();
 	        writer.close();
 	    }
+	}
+	
+	public static void splitSentenceForMSDoc(String inputFolder, String outputFolder) throws IOException {
+	    
+	    File rawDataFolder = new File(inputFolder);
+		File []files = rawDataFolder.listFiles();
+		for (int i = 0; i < files.length; i++) {	
+	    
+			BufferedReader br = new BufferedReader(new FileReader(files[i]));
+		    BufferedWriter bw = new BufferedWriter(new FileWriter(outputFolder + "/" + files[i].getName()));
+		    
+		    try {
+		        br.readLine();
+		        String line = br.readLine().trim();
+		        int lineSize = 115;
+		        
+		        while (line != null) {
+		        	if(line.length() > lineSize){
+		        		while(line.length() > lineSize){
+		        			int spaceIndex = lineSize;
+		        			while(line.charAt(spaceIndex) != ' ')
+		        				spaceIndex--;
+		        			String thisLine = line.substring(0, spaceIndex).trim();
+		        			line = line.substring(spaceIndex).trim();
+		        			bw.write(thisLine + "\n");
+		        		}
+		        		
+		        		if(line.length() > 0)
+		        			bw.write(line + "\n");
+		        	}
+		        	else
+		        		bw.write(line + "\n");
+		            line = br.readLine().trim();	            
+		        }
+		        
+		        br.close();
+		        bw.close();
+		        
+		    } catch(Exception e) {
+		        br.close();
+		        bw.close();
+		    }
+		}
 	}
 }
 
