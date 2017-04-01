@@ -867,6 +867,52 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 		    }
 		}
 	}
+	
+	public static void preprocesseCoachingData(String inputFolder, String outputFolder) throws IOException {
+	    
+	    File rawDataFolder = new File(inputFolder);
+		File []files = rawDataFolder.listFiles();
+		for (int i = 0; i < files.length; i++) {	
+	    
+			if(files[i].getName().contains(".txt")){
+				
+				BufferedReader br = new BufferedReader(new FileReader(files[i]));
+			    BufferedWriter bw = new BufferedWriter(new FileWriter(outputFolder + "/" + files[i].getName()));
+			    
+			    try {
+			        br.readLine();
+			        String line = br.readLine().trim();
+			        int lineSize = 115;
+			        
+			        while (line != null) {
+			        	if(line.length() > lineSize){
+			        		while(line.length() > lineSize){
+			        			int spaceIndex = lineSize;
+			        			while(line.charAt(spaceIndex) != ' ')
+			        				spaceIndex--;
+			        			String thisLine = line.substring(0, spaceIndex).trim();
+			        			line = line.substring(spaceIndex).trim();
+			        			bw.write(thisLine + "\n");
+			        		}
+			        		
+			        		if(line.length() > 0)
+			        			bw.write(line + "\n");
+			        	}
+			        	else
+			        		bw.write(line + "\n");
+			            line = br.readLine().trim();	            
+			        }
+			        
+			        br.close();
+			        bw.close();
+			        
+			    } catch(Exception e) {
+			        br.close();
+			        bw.close();
+			    }
+			}
+		}
+	}
 }
 
 class TimestampAndIndex{
