@@ -8,9 +8,9 @@ public class AppMain {
 		
 		// Preprocess dmc files
 		WordtoText.wordToText("c:/dmc/rawfiles", "c:/dmc/input");
-		UtilityClass.splitSentenceForMSDoc("c:/dmc/input", "c:/dmc/linebreak");
-		//UtilityClass.preprocessMITranscripts("c:/dmc/input", "c:/dmc/output/");
-		UtilityClass.preprocesseCoachingData("c:/dmc/linebreak", "c:/dmc/output/");
+		UtilityClass.preprocessMITranscripts("c:/dmc/input", "c:/dmc/output/");
+		//UtilityClass.splitSentenceForMSDoc("c:/dmc/input", "c:/dmc/linebreak");
+		//UtilityClass.preprocesseCoachingData("c:/dmc/linebreak", "c:/dmc/output/");
 		
 		//CRFClassifier crfModel = new CRFClassifier();
 		//crfModel.evaluateModel(5);

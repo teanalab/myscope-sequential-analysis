@@ -47,6 +47,7 @@ public class XlsxtoCSV {
 	                                		DateFormat formatter = new SimpleDateFormat(NEW_FORMAT);
 	                                		String time = formatter.format(cell.getDateCellValue());
 	                                		line.append(time.toString().substring(11, 21) + ",");
+	                                		//line.append(cell.getNumericCellValue() + ",");
 	                                	 	break;
 	                                case Cell.CELL_TYPE_BLANK:
 	                                	line.append("" + ",");

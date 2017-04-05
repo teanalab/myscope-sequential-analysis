@@ -23,7 +23,9 @@ public class WordtoText {
 		File rawDataFolder = new File(inputFolder);
 		File []sessions = rawDataFolder.listFiles();
 		for (int i = 0; i < sessions.length; ++i) {		
-			File []eachSession = sessions[i].listFiles();			
+			File []eachSession = sessions[i].listFiles();
+			
+			System.out.println("Word to Text: " + sessions[i].getName());
 			
 			for (int j = 0; j < eachSession.length; ++j) {
 				File []sessionPart = eachSession[j].listFiles();								

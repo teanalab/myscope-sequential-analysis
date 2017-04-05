@@ -593,11 +593,18 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 						String timestamp = "";
 						TimestampAndIndex tsAndIdx = new TimestampAndIndex();							
 						getTimestampFromText(line, tsAndIdx);	
+						
+						//System.out.println(line + " : " + tsAndIdx.timestamp);
 												
 						if(tsAndIdx.timestamp == null || tsAndIdx.timestamp.length() < 1)
 							continue;
 						else
 							timestamp = tsAndIdx.timestamp+tsAndIdx.who;
+						
+						if(tsAndIdx.timestamp.length() == 3)
+							timestamp = "00" + timestamp;
+						else if(tsAndIdx.timestamp.length() == 4)
+							timestamp = "0" + timestamp;
 						
 						if(mapTimestamp.containsKey(timestamp.trim().substring(0, timestamp.trim().length()-1)+"PT"))
 							timestamp = timestamp.trim().substring(0, timestamp.trim().length()-1)+"PT";
@@ -605,7 +612,13 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 							timestamp = timestamp.trim().substring(0, timestamp.trim().length()-1)+"Y";
 						else if(mapTimestamp.containsKey(timestamp.trim().substring(0, timestamp.trim().length()-1)+"CG"))
 							timestamp = timestamp.trim().substring(0, timestamp.trim().length()-1)+"CG";
+						else if(mapTimestamp.containsKey(timestamp.trim().substring(0, timestamp.trim().length()-1)+"CHW"))
+							timestamp = timestamp.trim().substring(0, timestamp.trim().length()-1)+"CHW";
 						
+						//System.out.println(timestamp);
+						//System.out.println(mapTimestamp);
+						
+						timestamp  = timestamp.replaceAll(" ", "");
 						if(mapTimestamp.containsKey(timestamp.trim())){
 							String actualTimestamp = "("+timestamp.substring(0, 3)+":"+timestamp.substring(3, 5)+")";
 							String whom = mapTimestamp.get(timestamp).who;
@@ -625,9 +638,8 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 							//System.out.println(line + ": " + rawFiles[i].getName() + "\t" + timestamp);
 							//System.out.println();
 							//if(rawFiles[i].getName().contains("F354"))								
-							//System.out.println(timestamp);
+							//System.out.println("Missing: " + timestamp);
 						}
-						writer.flush();
 					}
 				}				
 				
@@ -636,7 +648,7 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 				
 				//System.out.println(mapTimestamp + "\n\n");
 				br.close();
-				
+				writer.flush();
 				writer.close();
 			}
 		}		
@@ -692,6 +704,9 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 		
 		Pattern regexp8 =  Pattern.compile("([a-zA-Z]+(\\s+)([0-9]+:[0-9]+:[0-9]+))");
 		Matcher matcher8 = regexp8.matcher(lineTimestamp);
+		
+		Pattern regexp9 =  Pattern.compile("(([\\(\\{\\[]([0-9]+:[0-9]+)[\\)\\}\\]])(\\s[0-9a-zA-Z]+)(:)*)");
+		Matcher matcher9 = regexp9.matcher(lineTimestamp);
 		
 		// Check for several patterns
 		String s = "", speaker = "";
@@ -755,6 +770,16 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 			timestamp = matcher7.group(2).substring(0, matcher7.group(2).length()-2).substring(1).replaceAll(":", "").replaceAll(" ", "");
 			speaker = matcher7.group(4);
 			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
+		}
+		else if(matcher9.find()){
+			s = matcher9.group();
+			timestamp = matcher9.group(2).replace("(", "").replace("{", "").replace("[", "").replace(")", "").replace("}", "").replace("]", "").replaceAll(":", "").replaceAll(" ", "");
+			speaker = matcher9.group(4);
+			//System.out.println(lineTimestamp + " : " + s + " part: " + speaker);
+			ts.idx = s.length();
+			ts.who = speaker;
+			ts.timestamp = timestamp;
+			return;
 		}
 		else{
 			//System.out.println(lineTimestamp + " : ");
@@ -837,7 +862,7 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 		    try {
 		        br.readLine();
 		        String line = br.readLine().trim();
-		        int lineSize = 115;
+		        int lineSize = 105;
 		        
 		        while (line != null) {
 		        	if(line.length() > lineSize){
@@ -872,9 +897,11 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 	    
 	    File rawDataFolder = new File(inputFolder);
 		File []files = rawDataFolder.listFiles();
-		for (int i = 0; i < files.length; i++) {	
+		for (int i = 0; i < files.length; i++) {
 	    
-			if(files[i].getName().contains(".txt")){
+			if(files[i].getName().contains(".txt")){				
+				
+				Map<String, String> lineMap = getLineMapping(inputFolder+ "/" + files[i].getName().replace(".txt", ".csv"));
 				
 				BufferedReader br = new BufferedReader(new FileReader(files[i]));
 			    BufferedWriter bw = new BufferedWriter(new FileWriter(outputFolder + "/" + files[i].getName()));
@@ -883,6 +910,7 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 			        br.readLine();
 			        String line = br.readLine().trim();
 			        int lineSize = 115;
+			        int lineCount = 0;
 			        
 			        while (line != null) {
 			        	if(line.length() > lineSize){
@@ -892,18 +920,64 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 			        				spaceIndex--;
 			        			String thisLine = line.substring(0, spaceIndex).trim();
 			        			line = line.substring(spaceIndex).trim();
-			        			bw.write(thisLine + "\n");
+			        			
+			        			lineCount++;
+			        			
+			        			if(lineMap.containsKey(lineCount+".0")){
+			        				bw.write(lineMap.get(lineCount+".0") + "\t" + thisLine + "\n");
+			        				int count = 1;
+			        				while(lineMap.containsKey(lineCount+"."+count)){
+			        					bw.write(lineMap.get(lineCount+"."+count) + "\t" + thisLine + "\n");
+			        					count++;
+			        				}
+			        			}
+			        			else
+			        				bw.write("MISSING CODE\t" + thisLine + "\n");
 			        		}
 			        		
-			        		if(line.length() > 0)
-			        			bw.write(line + "\n");
+			        		if(line.length() > 0){
+			        			lineCount++;
+			        			if(lineMap.containsKey(lineCount+".0")){
+			        				bw.write(lineMap.get(lineCount+".0") + "\t" + line + "\n");
+			        				int count = 1;
+			        				while(lineMap.containsKey(lineCount+"."+count)){
+			        					bw.write(lineMap.get(lineCount+"."+count) + "\t" + line + "\n");
+			        					count++;
+			        				}
+			        			}
+			        			else
+			        				bw.write("MISSING CODE\t" + line + "\n");
+			        		}
 			        	}
-			        	else
-			        		bw.write(line + "\n");
+			        	else{
+			        		lineCount++;
+			        		if(lineMap.containsKey(lineCount+".0")){
+		        				bw.write(lineMap.get(lineCount+".0") + "\t" + line + "\n");
+		        				int count = 1;
+		        				while(lineMap.containsKey(lineCount+"."+count)){
+		        					bw.write(lineMap.get(lineCount+"."+count) + "\t" + line + "\n");
+		        					count++;
+		        				}
+		        			}
+		        			else
+		        				bw.write("MISSING CODE\t" + line + "\n");
+			        	}
 			            line = br.readLine().trim();	            
 			        }
 			        
+			        lineCount++;
+			        while(lineMap.containsKey(lineCount+".0")){	
+        				bw.write(lineMap.get(lineCount+".0") + "\t" + line + "\n");
+        				int count = 1;
+        				while(lineMap.containsKey(lineCount+"."+count)){
+        					bw.write(lineMap.get(lineCount+"."+count) + "\t" + line + "\n");
+        					count++;
+        				}
+        				lineCount++;
+			        }
+			        
 			        br.close();
+			        bw.flush();
 			        bw.close();
 			        
 			    } catch(Exception e) {
@@ -912,6 +986,39 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 			    }
 			}
 		}
+	}
+	
+	public static Map<String, String> getLineMapping(String fileName){
+		Map<String, String> lineMap = new HashMap<>();		
+		BufferedReader br = null;
+		 
+	    try {
+	    	br  = new BufferedReader(new FileReader(fileName));	
+	        String[] oneLine;
+	        String line = br.readLine();
+
+	        while (line != null) {
+	        	oneLine = line.split(",");
+	        	if(oneLine.length > 5)
+	        		lineMap.put(oneLine[3].trim(), (oneLine[5]+"").trim());
+	        	else if(oneLine.length > 3)
+	        		lineMap.put(oneLine[3].trim(), "MISSING CODE");
+	            
+	            line = br.readLine();	            
+	        }
+	        
+	        br.close();
+	        
+	    } catch(Exception e) {
+	    	if(br != null)
+				try {
+					br.close();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+	    }
+	    
+		return lineMap;
 	}
 }
 
