@@ -30,7 +30,7 @@ for i in range(num_inputs):
     sequence_in = alphabet[start:end + 1]
     sequence_out = numpy.random.randint(2)
 
-    if i % 2 == 0:
+    if i % 2 == 0 or i % 5 == 0:
         if sequence_in[-1] >= 'M':
             sequence_out = 1
 
@@ -113,7 +113,7 @@ for i in range(num_inputs):
     sequence_in = alphabet[start:end + 1]
     sequence_out = numpy.random.randint(2)
 
-    if i % 2 == 0:
+    if i % 2 == 0 or i % 5 == 0:
         if sequence_in[-1] >= 'M':
             sequence_out = 1
 
