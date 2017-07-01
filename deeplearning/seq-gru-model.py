@@ -57,7 +57,7 @@ model.add(GRU(32, input_shape=(X.shape[1], 1)))
 model.add(Dense(y.shape[1], activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 print("\nModel fitting...")
-model.fit(X, y, epochs=500, batch_size=batch_size, verbose=0)
+model.fit(X, y, epochs=500, batch_size=batch_size, verbose=0, shuffle=False)
 
 # summarize performance of the model
 scores = model.evaluate(X, y, verbose=0)
