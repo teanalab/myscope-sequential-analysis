@@ -1,53 +1,37 @@
 # LSTM with Variable Length Input Sequences to One Character Output
-import numpy
+import utility
+import argparse
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import LSTM
-from keras.utils import np_utils
-from keras.preprocessing.sequence import pad_sequences
 
-# fix random seed for reproducibility
-numpy.random.seed(7)
+##############################
+# Parse command line arguments
 
-# define the raw dataset
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+parser = argparse.ArgumentParser(description='Train LSTM Sequential Model.')
 
-# create mapping of characters to integers (0-25) and the reverse
-char_to_int = dict((c, i) for i, c in enumerate(alphabet))
-int_to_char = dict((i, c) for i, c in enumerate(alphabet))
+parser.add_argument('-training_data', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/cml/train.txt'
+                    , help='File location containing training sequence.')
+parser.add_argument('-testing_data', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/cml/test.txt',
+                    help='File location containing testing sequence.')
+parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook.txt',
+                    help='File location containing codebook.')
+parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/',
+                    help='Directory to save results.')
 
-# prepare the dataset of input to output pairs encoded as integers
-num_inputs = 1000
-max_len = 5
-dataX = []
-dataY = []
-for i in range(num_inputs):
-    start = numpy.random.randint(len(alphabet) - 2)
-    end = numpy.random.randint(start, min(start + max_len, len(alphabet) - 1))
-    sequence_in = alphabet[start:end + 1]
-    sequence_out = numpy.random.randint(2)
+args = parser.parse_args()
 
-    if i % 2 == 0 or i % 5 == 0:
-        if sequence_in[-1] >= 'M':
-            sequence_out = 1
+##############################
+# Load up training data
 
-        if sequence_in[-1] < 'M':
-            sequence_out = 0
+training_filename = args.training_data
+testing_filename = args.testing_data
+codebook_filename = args.codebook
+output_directory = args.output_directory
 
-    dataX.append([char_to_int[char] for char in sequence_in])
-    dataY.append(sequence_out)
-
-# convert list of lists to array and pad sequences if needed
-X = pad_sequences(dataX, maxlen=max_len, dtype='float32')
-
-# reshape X to be [samples, time steps, features]
-X = numpy.reshape(X, (X.shape[0], max_len, 1))
-
-# normalize
-X = X / float(len(alphabet))
-
-# one hot encode the output variable
-y = np_utils.to_categorical(dataY)
+codebook = utility.loadCodeBook(codebook_filename)
+X, y, seq_len = utility.readSequenceFromFile(training_filename, codebook)
+test_X, test_y, seq_len = utility.readSequenceFromFile(testing_filename, codebook, seq_len, False)
 
 # create and fit the model
 batch_size = 64
@@ -59,18 +43,6 @@ print("\nModel fitting...")
 model.fit(X, y, epochs=500, batch_size=batch_size, verbose=0, shuffle=False)
 
 # summarize performance of the model
-scores = model.evaluate(X, y, verbose=0)
+print("\nEvaluating model...")
+scores = model.evaluate(test_X, test_y, verbose=0)
 print("\nModel Accuracy: %.2f%%" % (scores[1] * 100))
-
-# demonstrate some model predictions
-for i in range(50):
-    pattern_index = numpy.random.randint(len(dataX))
-    pattern = dataX[pattern_index]
-    x = pad_sequences([pattern], maxlen=max_len, dtype='float32')
-    x = numpy.reshape(x, (1, max_len, 1))
-    x = x / float(len(alphabet))
-    prediction = model.predict(x, verbose=0)
-    index = numpy.argmax(prediction)
-    result = index
-    seq_in = [int_to_char[value] for value in pattern]
-    print seq_in, "->", result
