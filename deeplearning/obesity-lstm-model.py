@@ -48,4 +48,4 @@ scores = model.evaluate(test_X, test_y, verbose=2)
 print("\nModel Accuracy: %.2f%%" % (scores[1] * 100))
 
 # display test results one by one
-showResultsForTestData(codebook, training_filename, seq_len)
+utility.showResultsForTestData(codebook, training_filename, seq_len)
