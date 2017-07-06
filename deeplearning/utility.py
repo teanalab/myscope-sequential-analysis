@@ -62,7 +62,7 @@ def readSequenceFromFile(sequence_file, codebook, seq_len = 5, is_train = True):
 
 ###################################################################
 # display test results one by one
-def showResultsForTestData(codebook, training_filename, seq_len):
+def showResultsForTestData(model, codebook, training_filename, seq_len):
     int_to_code = dict((i, c) for i, c in enumerate(codebook))
     code_to_int = dict((c, i) for i, c in enumerate(codebook))
     miss_classify_400 = 0
@@ -94,6 +94,7 @@ def showResultsForTestData(codebook, training_filename, seq_len):
             if (actual == result) and (actual == '400'):
                 correct_classify_400 += 1
 
-    print "correct500: ", correct_classify_500, " incorrect500: ", miss_classify_500, "correct400"
+    print "correct500: ", correct_classify_500, " incorrect500: ", miss_classify_500, "correct400", \
+        correct_classify_400, " incorrect400: ", miss_classify_400
 
 
