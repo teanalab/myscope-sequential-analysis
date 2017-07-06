@@ -60,4 +60,40 @@ def readSequenceFromFile(sequence_file, codebook, seq_len = 5, is_train = True):
 ###################################################################
 # cross validation results in terms of F1, Precision and Recall
 
+###################################################################
+# display test results one by one
+def showResultsForTestData(codebook, training_filename, seq_len):
+    int_to_code = dict((i, c) for i, c in enumerate(codebook))
+    code_to_int = dict((c, i) for i, c in enumerate(codebook))
+    miss_classify_400 = 0
+    correct_classify_400 = 0
+    miss_classify_500 = 0
+    correct_classify_500 = 0
+    with open(training_filename, "r") as filestream:
+        for line in filestream:
+            currentline = line.split(",")
+            dataX = [code_to_int[item] for item in currentline[0:-1]]
+            actual = str(currentline[-1].strip())
+            x = pad_sequences([dataX], maxlen=seq_len, dtype='float32')
+            x = numpy.reshape(x, (1, seq_len, 1))
+            x = x / float(len(codebook))
+            prediction = model.predict(x, verbose=0)
+            index = int(numpy.argmax(prediction))
+            result = int_to_code[index]
+            seq_in = [int_to_code[value] for value in dataX]
+
+            if (actual != result) and (actual == '500'):
+                miss_classify_500 += 1
+                print seq_in, "->", result, " : ", actual
+            if (actual == result) and (actual == '500'):
+                correct_classify_500 += 1
+
+            if (actual != result) and (actual == '400'):
+                miss_classify_400 += 1
+                print seq_in, "->", result, " : ", actual
+            if (actual == result) and (actual == '400'):
+                correct_classify_400 += 1
+
+    print "correct500: ", correct_classify_500, " incorrect500: ", miss_classify_500, "correct400"
+
 
