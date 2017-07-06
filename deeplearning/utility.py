@@ -1,5 +1,7 @@
 # Various function as helper
 import numpy
+import os
+import re
 from keras.utils import np_utils
 from keras.preprocessing.sequence import pad_sequences
 
@@ -98,3 +100,48 @@ def showResultsForTestData(model, codebook, training_filename, seq_len):
         correct_classify_400, " incorrect400: ", miss_classify_400
 
 
+######################################################################
+# pre-process data from given text files
+def createSequence(rawFileLocation, codeMappingFile):
+    count_pos = 0
+    count_neg = 0
+    #codebook_dict = getDictionaryForCodeBook(codeMappingFile)
+
+    codebook_dict = {}
+    for filename in os.listdir(rawFileLocation):
+        with open(rawFileLocation+filename, "r") as filestream:
+            seq = []
+            for line in filestream:
+                currentline = re.sub(r"\s+", "", line).split(",")
+                if len(currentline) > 1:
+                    code = currentline[1]
+                    if (code[1:-1] == 'CHT+') or (code[1:-1] == 'CML+') or (code[1:-2] == 'CHT+') or (code[1:-2] == 'CML+'):
+                        seq.append('500')
+                        if len(seq) > 2:
+                            count_pos += 1
+                        seq = []
+                    elif (code[1:-1] == 'CHT-') or (code[1:-1] == 'CML-') or (code[1:-2] == 'CHT+') or (code[1:-2] == 'CML+'):
+                        seq.append('400')
+                        if len(seq) > 2:
+                            count_neg += 1
+                        seq = []
+                    else:
+                        #seq.append(codebook_dict[code[1:-1]])
+                        seq.append(code[1:-1])
+                        codebook_dict[code[1:-1]] = 1
+    print "total positive sequences: ", count_pos, "total negative sequences: ", count_neg
+    # f = open("/home/mehedi/teana/data-source/seq-analysis/codemap.txt", "w")
+    # #write all unique code to file
+    # for key in codebook_dict.keys():
+    #     f.write(key + "," + " \n")
+    # f.close()
+
+#######################################################################
+# create dictionary from file
+def getDictionaryForCodeBook(codeMappingFile):
+    codebook_dict = {}
+    with open(codeMappingFile, "r") as filestream:
+        for line in filestream:
+            l = re.sub(r"\s+", "", line).split(",")
+            codebook_dict[l[0]] = l[1]
+    return codebook_dict

@@ -7,9 +7,7 @@ from keras.layers import LSTM
 
 ##############################
 # Parse command line arguments
-
 parser = argparse.ArgumentParser(description='Train LSTM Sequential Model.')
-
 parser.add_argument('-training_data', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/train.txt'
                     , help='File location containing training sequence.')
 parser.add_argument('-testing_data', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/test.txt',
