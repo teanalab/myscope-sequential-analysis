@@ -25,11 +25,11 @@ model.transmat_=transition_probability
 model.emissionprob_=emission_probability
 
 # predict a sequence of hidden states based on visible states
-bob_says = np.array([[0, 2, 1, 1, 2, 0]]).T
-
-print bob_says
-
+bob_says = np.array([[0, 2, 1, 1, 2, 0], [0, 2, 1, 1, 2, 0]])
 model = model.fit(bob_says)
-logprob, alice_hears = model.decode(bob_says, algorithm="viterbi")
-print("Bob says:", ", ".join(map(lambda x: observations[int(x)], bob_says)))
+
+original = np.array([bob_says[0, :]]).T
+
+logprob, alice_hears = model.decode(original, algorithm="viterbi")
+print("Bob says:", ", ".join(map(lambda x: observations[int(x)], original)))
 print("Alice hears:", ", ".join(map(lambda x: states[int(x)], alice_hears)))
