@@ -2,7 +2,7 @@
 import utility
 import argparse
 from keras.models import Sequential
-from keras.layers import LSTM, GRU, Dense, Dropout
+from keras.layers import LSTM, Dense, Dropout
 from keras.layers.convolutional import Conv1D
 from keras.layers.convolutional import MaxPooling1D
 from keras.regularizers import l1_l2
@@ -12,7 +12,7 @@ from keras.models import load_model
 ##############################
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Train LSTM Sequential Model.')
-parser.add_argument('-training_data', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/train.txt'
+parser.add_argument('-training_data', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/train_shuffled.txt'
                     , help='File location containing training sequence.')
 parser.add_argument('-testing_data', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/test.txt',
                     help='File location containing testing sequence.')
@@ -42,14 +42,13 @@ batch_size = 1
 model = Sequential()
 model.add(Conv1D(filters=32, kernel_size=3, padding='same', activation='relu', input_shape=(X.shape[1], 1)))
 model.add(MaxPooling1D(pool_size=2))
-#model.add(LSTM(32, recurrent_regularizer=l1_l2(l1=0.0, l2=0.015)))
-model.add(GRU(32, recurrent_regularizer=l1_l2(l1=0.0, l2=0.015)))
+model.add(LSTM(32, recurrent_regularizer=l1_l2(l1=0.0, l2=0.015)))
 model.add(Dropout(0.25))
 model.add(Dense(y.shape[1], activation='softmax'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # save best model into file
-n_epoch = 60
+n_epoch = 30
 print("\nModel fitting...")
 callbacks = [
     EarlyStopping(monitor='val_acc', min_delta=0.01, verbose=1, patience=n_epoch),

@@ -2,6 +2,7 @@
 import numpy
 import os
 import re
+import random
 from keras.utils import np_utils
 from keras.preprocessing.sequence import pad_sequences
 
@@ -145,3 +146,17 @@ def getDictionaryForCodeBook(codeMappingFile):
             l = re.sub(r"\s+", "", line).split(",")
             codebook_dict[l[0]] = l[1]
     return codebook_dict
+
+#######################################################################
+# shuffle data and rewrite to file
+def writeShuffledData(inputFile, outputFile):
+    data = []
+    f = open(outputFile, "w")
+    with open(inputFile, "r") as filestream:
+        for line in filestream:
+            data.append(line)
+
+    random.shuffle(data)
+    for line in data:
+        f.write(line)
+    f.close()
