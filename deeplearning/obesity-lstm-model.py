@@ -2,8 +2,12 @@
 import utility
 import argparse
 from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import LSTM
+from keras.layers import LSTM, GRU, Dense, Dropout
+from keras.layers.convolutional import Conv1D
+from keras.layers.convolutional import MaxPooling1D
+from keras.regularizers import l1_l2
+from keras.callbacks import EarlyStopping, ModelCheckpoint
+from keras.models import load_model
 
 ##############################
 # Parse command line arguments
@@ -14,6 +18,8 @@ parser.add_argument('-testing_data', default='/home/mehedi/teana/data-source/seq
                     help='File location containing testing sequence.')
 parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook.txt',
                     help='File location containing codebook.')
+parser.add_argument('-model_path', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/model.h5',
+                    help='Directory to save model.')
 parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/',
                     help='Directory to save results.')
 
@@ -21,10 +27,10 @@ args = parser.parse_args()
 
 ##############################
 # Load up training data
-
 training_filename = args.training_data
 testing_filename = args.testing_data
 codebook_filename = args.codebook
+model_path = args.model_path
 output_directory = args.output_directory
 
 codebook = utility.loadCodeBook(codebook_filename)
@@ -34,16 +40,29 @@ test_X, test_y, max_len = utility.readSequenceFromFile(testing_filename, codeboo
 # create and fit the model
 batch_size = 1
 model = Sequential()
-model.add(LSTM(32, input_shape=(X.shape[1], 1)))
+model.add(Conv1D(filters=32, kernel_size=3, padding='same', activation='relu', input_shape=(X.shape[1], 1)))
+model.add(MaxPooling1D(pool_size=2))
+#model.add(LSTM(32, recurrent_regularizer=l1_l2(l1=0.0, l2=0.015)))
+model.add(GRU(32, recurrent_regularizer=l1_l2(l1=0.0, l2=0.015)))
+model.add(Dropout(0.25))
 model.add(Dense(y.shape[1], activation='softmax'))
-model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+# save best model into file
+n_epoch = 60
 print("\nModel fitting...")
-model.fit(X, y, epochs=50, batch_size=batch_size, verbose=2, shuffle=True, validation_split=0.1)
+callbacks = [
+    EarlyStopping(monitor='val_acc', min_delta=0.01, verbose=1, patience=n_epoch),
+    ModelCheckpoint(model_path, monitor='val_acc', save_best_only=True, verbose=0),
+]
+model.fit(X, y, epochs=n_epoch, batch_size=batch_size, verbose=2, shuffle=True,
+          validation_split=0.1, callbacks=callbacks)
 
 # summarize performance of the model
 print("\nEvaluating model...")
-scores = model.evaluate(test_X, test_y, verbose=2)
-print("\nModel Accuracy: %.2f%%" % (scores[1] * 100))
+trained_model = load_model(model_path)
+scores = trained_model.evaluate(test_X, test_y, verbose=0)
+print("\nModel Accuracy: %.2f%%\n" % (scores[1] * 100))
 
 # display test results one by one
-utility.showResultsForTestData(model, codebook, testing_filename, seq_len)
+utility.showResultsForTestData(trained_model, codebook, testing_filename, seq_len)
