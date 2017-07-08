@@ -1,45 +1,39 @@
 import numpy as np
-from hmmlearn import hmm
+import utility
+import argparse
 
-states = ["Rainy", "Sunny"]
-n_states = len(states)
+#############################################################################################
+# Parse command line arguments
+parser = argparse.ArgumentParser(description='Train HMM Model.')
+parser.add_argument('-training_data', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/unbalanced/cht-cml/train_shuffled.txt'
+                    , help='File location containing training sequence.')
+parser.add_argument('-testing_data', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/unbalanced/cht-cml/test.txt',
+                    help='File location containing testing sequence.')
+parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook.txt',
+                    help='File location containing codebook.')
+parser.add_argument('-model_path', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/model.h5',
+                    help='Directory to save model.')
+parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/',
+                    help='Directory to save results.')
 
-observations = ["walk", "shop", "clean"]
-n_observations = len(observations)
+args = parser.parse_args()
 
-start_probability = np.ones(n_states)
-start_probability = start_probability/n_states
-
-#transition_probability = np.np.zeros(n_states*n_states).reshape(n_states, n_states)
-#transition_probability = np.identity(n_states)
-transition_probability = np.ones(n_states*n_states).reshape(n_states, n_states)
-transition_probability = transition_probability/n_states
-
-#emission_probability = np.zeros(n_states*n_observations).reshape(n_states, n_observations)
-emission_probability = np.ones(n_states*n_observations).reshape(n_states, n_observations)
-emission_probability = emission_probability/n_observations
-
-print "\nBefore model fitting..."
-print start_probability
-print transition_probability
-print emission_probability
-
-# create model and set initial values
-model = hmm.MultinomialHMM(n_components=n_states)
-model.startprob_=start_probability
-model.transmat_=transition_probability
-model.emissionprob_=emission_probability
+##############################
+# Load up training data
+training_filename = args.training_data
+testing_filename = args.testing_data
+codebook_filename = args.codebook
+model_path = args.model_path
+output_directory = args.output_directory
 
 # prepare data
-sequences = np.array([[[0], [2], [1], [1], [2], [0]], [[0], [1], [1], [0], [2]], [[2], [1], [1]], [[1], [1], [1], [0]]])
-seq_lengths = np.array([6, 5, 3, 4])
-data = sequences[0]
-for i in range(1, len(sequences)):
-  data = np.concatenate([data, sequences[i]])
-sequences = data
+codebook = utility.loadCodeBook(codebook_filename)
+sequences, seq_lengths = utility.loadData(training_filename, codebook)
 
 # fit model
-model = model.fit(sequences, seq_lengths)
+n_states = 5
+n_observations = len(codebook)
+model = utility.getHMMModel(n_states, n_observations, sequences, seq_lengths)
 
 print "\nAfter model fitting..."
 print model.startprob_
@@ -50,9 +44,3 @@ print model.emissionprob_
 test_seq = np.array([[0], [2], [1], [1], [2], [0]])
 logL = model.score(test_seq)
 print "\nLog likelihood of the sequence: ", logL, "\n"
-
-# decode sequences
-logprob, state_sequences = model.decode(test_seq, algorithm="viterbi")
-print "\nLog probability of the produced state sequence: ", logprob, "\n"
-print("Observed sequences:", ", ".join(map(lambda x: observations[int(x)], test_seq)))
-print("State sequences:", ", ".join(map(lambda x: states[int(x)], state_sequences)))
