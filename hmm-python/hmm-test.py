@@ -56,3 +56,4 @@ logprob, state_sequences = model.decode(test_seq, algorithm="viterbi")
 print "\nLog probability of the produced state sequence: ", logprob, "\n"
 print("Observed sequences:", ", ".join(map(lambda x: observations[int(x)], test_seq)))
 print("State sequences:", ", ".join(map(lambda x: states[int(x)], state_sequences)))
+
