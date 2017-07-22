@@ -40,6 +40,11 @@ def readSequenceFromFile(sequence_file, codebook, seq_len = 5, is_train = True):
             if len(currentline) > max_len and is_train:
                 max_len = len(currentline)
 
+    return dataX, dataY, max_len
+
+###################################################################
+# normalize and hot encode
+def normalizeData(dataX, dataY, codebook, max_len):
     # convert list of lists to array and pad sequences if needed
     X = pad_sequences(dataX, maxlen=max_len, dtype='float32')
 

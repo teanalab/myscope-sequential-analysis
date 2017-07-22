@@ -588,7 +588,7 @@ public static void calculateDistributionOfPairSequence(String dest) throws Excep
 						
 						if(!line.contains(":"))
 							continue;
-						line = line.replace("’", "'").replace("—", "-").replace("‘", "'").replace("…", "�").replace("PPT:", "PT:");
+						line = line.replace("’", "'").replace("—", "-").replace("‘", "'").replace("…", "�").replace("PPT:", "PT:");
 						
 						String timestamp = "";
 						TimestampAndIndex tsAndIdx = new TimestampAndIndex();							
