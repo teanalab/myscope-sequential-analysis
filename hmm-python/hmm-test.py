@@ -38,6 +38,9 @@ for i in range(1, len(sequences)):
   data = np.concatenate([data, sequences[i]])
 sequences = data
 
+print sequences
+print seq_lengths
+
 # fit model
 model = model.fit(sequences, seq_lengths)
 
