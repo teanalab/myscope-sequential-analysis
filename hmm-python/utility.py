@@ -1,5 +1,6 @@
 import numpy as np
 import re
+import operator
 from hmmlearn import hmm
 
 
@@ -12,9 +13,34 @@ def loadCodeBook(codebook_filename):
             codebook.append(line[:3])
     return codebook
 
+###########################################################################################
+def loadCodeBookFromTrainingFile(fileLocation):
+    success_code_map = {}
+    unsuccess_code_map = {}
+    with open(fileLocation, "r") as filestream:
+        for line in filestream:
+            l = re.sub(r"\s+", "", line).split(",")
+            if l[len(l) - 1] == "500":
+                for i in range(0, len(l) - 1):
+                    success_code_map[l[i]] = l[i]
+            elif l[len(l) - 1] == "400":
+                for i in range(0, len(l) - 1):
+                    unsuccess_code_map[l[i]] = l[i]
+
+    success_sorted_map = sorted(success_code_map.items(), key=operator.itemgetter(0))
+    unsuccess_sorted_map = sorted(unsuccess_code_map.items(), key=operator.itemgetter(0))
+
+    success_map = []
+    unsuccess_map = []
+    for key, value in success_sorted_map:
+        success_map.append(key)
+    for key, value in unsuccess_sorted_map:
+        unsuccess_map.append(key)
+
+    return success_map, unsuccess_map
 
 ###########################################################################################
-def loadData(fileLocation, codebook):
+def loadData(fileLocation, codebook, flag):
     code_to_int = dict((c, i) for i, c in enumerate(codebook))
     seq = []
     seq_label = []
@@ -23,11 +49,22 @@ def loadData(fileLocation, codebook):
     with open(fileLocation, "r") as filestream:
         for line in filestream:
             l = re.sub(r"\s+", "", line).split(",")
-            for i in range(0, len(l) - 1):
-                seq.append([code_to_int[l[i]]])
-                map[l[i]] = l[i]
-            lengths.append(len(l) - 1)
-            seq_label.append(l[len(l) - 1])
+            if (flag == 1 and l[len(l) - 1] == "500") or (flag == 0 and l[len(l) - 1] == "400"):
+                for i in range(0, len(l) - 1):
+                    seq.append([code_to_int[l[i]]])
+                    map[l[i]] = l[i]
+                lengths.append(len(l) - 1)
+                seq_label.append(l[len(l) - 1])
+            elif flag == 2:
+                var_len = 0
+                for i in range(0, len(l) - 1):
+                    if l[i] in code_to_int.keys():
+                        seq.append([code_to_int[l[i]]])
+                        map[l[i]] = l[i]
+                        var_len += 1
+                lengths.append(var_len)
+                seq_label.append(l[len(l) - 1])
+
     # sorted_map = sorted(map.items(), key=operator.itemgetter(0))
     # for key, value in sorted_map:
     #    print key
@@ -73,6 +110,7 @@ def getPerformance(actual, predicted):
         elif actual[i] != predicted[i] and actual[i] == "400":
             fp += 1
 
+    #print tp, fp, tn, fn
     precision = float(tp) / (tp + fp)
     recall = float(tp) / (tp + fn)
     f_measure = float(2 * precision * recall) / (precision + recall)

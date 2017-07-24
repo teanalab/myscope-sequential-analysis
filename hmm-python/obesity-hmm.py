@@ -25,11 +25,14 @@ output_directory = args.output_directory
 
 # determine codebook size and number of hidden states
 n_states = 5
-codebook = utility.loadCodeBook(codebook_filename)
-n_observations = len(codebook)
+success_codebook, unsuccess_codebook = utility.loadCodeBookFromTrainingFile(training_filename)
+
+print "\n Success: ", success_codebook,
+print "\n Unsuccess: ", unsuccess_codebook
 
 # fit successful model
-sequences, seq_labels, seq_lengths = utility.loadData(training_filename, codebook)
+n_observations = len(success_codebook)
+sequences, seq_labels, seq_lengths = utility.loadData(training_filename, success_codebook, 1)
 success_model = utility.getHMMModel(n_states, n_observations, sequences, seq_lengths)
 
 print "\nAfter model fitting..."
@@ -38,7 +41,8 @@ print success_model.transmat_
 print success_model.emissionprob_
 
 # fit unsuccessful model
-sequences, seq_labels, seq_lengths = utility.loadData(training_filename, codebook)
+n_observations = len(unsuccess_codebook)
+sequences, seq_labels, seq_lengths = utility.loadData(training_filename, unsuccess_codebook, 0)
 unsuccess_model = utility.getHMMModel(n_states, n_observations, sequences, seq_lengths)
 
 print "\nAfter model fitting..."
@@ -47,16 +51,20 @@ print unsuccess_model.transmat_
 print unsuccess_model.emissionprob_
 
 # get log likelihood for the given test sequence(s)
-seq_start_index = 0
-lbl_index = 0
-sequences, seq_labels, seq_lengths = utility.loadData(testing_filename, codebook)
+sequences_for_success_model, seq_labels, success_seq_lengths = utility.loadData(testing_filename, success_codebook, 2)
+sequences_for_unsuccess_model, seq_labels, unsuccess_seq_lengths = utility.loadData(testing_filename, unsuccess_codebook, 2)
+
+success_seq_start_index = 0
+unsuccess_seq_start_index = 0
 pred_labels = []
-for seq_len in seq_lengths:
-    seq = sequences[seq_start_index:(seq_start_index+seq_len)]
-    seq_start_index += seq_len
-    lbl_index += 1
-    success_logL = success_model.score(seq)
-    unsuccess_logL = unsuccess_model.score(seq)
+
+for i in range(0, len(success_seq_lengths)):
+    success_seq = sequences_for_success_model[success_seq_start_index:(success_seq_start_index+success_seq_lengths[i])]
+    unsuccess_seq = sequences_for_unsuccess_model[unsuccess_seq_start_index:(unsuccess_seq_start_index + unsuccess_seq_lengths[i])]
+    success_seq_start_index += success_seq_lengths[i]
+    unsuccess_seq_start_index += unsuccess_seq_lengths[i]
+    success_logL = success_model.score(success_seq)
+    unsuccess_logL = unsuccess_model.score(unsuccess_seq)
     if success_logL > unsuccess_logL:
         pred_labels.append("500")
     else:
