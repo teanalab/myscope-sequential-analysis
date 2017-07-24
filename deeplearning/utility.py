@@ -54,6 +54,9 @@ def normalizeData(dataX, dataY, codebook, max_len):
     # normalize
     X = X / float(len(codebook))
 
+    # get label as 0 and 1
+    dataY[:] = [x - 41 for x in dataY]
+
     # one hot encode the output variable
     y = np_utils.to_categorical(dataY)
 
@@ -61,6 +64,35 @@ def normalizeData(dataX, dataY, codebook, max_len):
 
 ###################################################################
 # evaluate model with F1, Precision and Recall
+def getPerformance(actual, predicted):
+    tp = 0
+    fp = 0
+    tn = 0
+    fn = 0
+
+    for i in range(0, len(actual)):
+        if actual[i] == predicted[i] and actual[i] == 1:
+            tp += 1
+        elif actual[i] != predicted[i] and actual[i] == 1:
+            fn += 1
+        elif actual[i] == predicted[i] and actual[i] == 0:
+            tn += 1
+        elif actual[i] != predicted[i] and actual[i] == 0:
+            fp += 1
+
+    #print tp, fp, tn, fn
+    precision = 0.0
+    recall = 0.0
+    f_measure = 0.0
+    if (tp + fp) > 0:
+        precision = float(tp) / (tp + fp)
+    if (tp + fn) > 0:
+        recall = float(tp) / (tp + fn)
+    if (precision + recall) > 0:
+        f_measure = float(2 * precision * recall) / (precision + recall)
+    accuracy = float(tp + tn) / (tp + fp + tn + fn)
+
+    return accuracy, precision, recall, f_measure
 
 ###################################################################
 # split data set by using stratified method
