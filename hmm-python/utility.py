@@ -1,4 +1,5 @@
 import numpy as np
+import random
 import re
 import operator
 from hmmlearn import hmm
@@ -12,6 +13,7 @@ def loadCodeBook(codebook_filename):
         for line in filestream:
             codebook.append(line[:3])
     return codebook
+
 
 ###########################################################################################
 def loadCodeBookFromTrainingFile(fileLocation):
@@ -38,6 +40,7 @@ def loadCodeBookFromTrainingFile(fileLocation):
         unsuccess_map.append(key)
 
     return success_map, unsuccess_map
+
 
 ###########################################################################################
 def loadData(fileLocation, codebook, flag):
@@ -95,25 +98,66 @@ def getHMMModel(n_states, n_observations, sequences, seq_lengths):
 
 #############################################################################################
 def getPerformance(actual, predicted):
-    tp = 0
-    fp = 0
-    tn = 0
-    fn = 0
+    precision = 0.0
+    recall = 0.0
+    f_measure = 0.0
+    accuracy = 0.0
 
-    for i in range(0, len(actual)):
-        if actual[i] == predicted[i] and actual[i] == "500":
-            tp += 1
-        elif actual[i] != predicted[i] and actual[i] == "500":
-            fn += 1
-        elif actual[i] == predicted[i] and actual[i] == "400":
-            tn += 1
-        elif actual[i] != predicted[i] and actual[i] == "400":
-            fp += 1
+    labels = ["500", "400", "400", "500"]
 
-    #print tp, fp, tn, fn
-    precision = float(tp) / (tp + fp)
-    recall = float(tp) / (tp + fn)
-    f_measure = float(2 * precision * recall) / (precision + recall)
-    accuracy = float(tp + tn) / (tp + fp + tn + fn)
+    for k in [0, 2]:
 
-    return accuracy, precision, recall, f_measure
+        tp = 0
+        fp = 0
+        tn = 0
+        fn = 0
+
+        for i in range(0, len(actual)):
+            if actual[i] == predicted[i] and actual[i] == labels[k]:
+                tp += 1
+            elif actual[i] != predicted[i] and actual[i] == labels[k]:
+                fn += 1
+            elif actual[i] == predicted[i] and actual[i] == labels[k + 1]:
+                tn += 1
+            elif actual[i] != predicted[i] and actual[i] == labels[k + 1]:
+                fp += 1
+
+        local_precision = (float(tp) / (tp + fp))
+        local_recall = (float(tp) / (tp + fn))
+        local_f_measure = (float(2 * local_precision * local_recall) / (local_precision + local_recall))
+        local_accuracy = (float(tp + tn) / (tp + fp + tn + fn))
+
+        # for checking calculation
+        # print tp, fp, tn, fn
+        # print local_accuracy, local_precision, local_recall, local_f_measure
+
+        precision += local_precision
+        recall += local_recall
+        f_measure += local_f_measure
+        accuracy += local_accuracy
+
+    return accuracy / 2, precision / 2, recall / 2, f_measure / 2
+
+
+#############################################################################################
+def createTrainAndTestFile(data, kFolds, training_filename, testing_filename):
+    foldSize = len(data) / kFolds
+    random.shuffle(data)
+
+    test = data[:foldSize]
+    train = data[foldSize:]
+    with open(training_filename, "w") as output:
+        for x in train:
+            output.write(x)
+    with open(testing_filename, "w") as output:
+        for x in test:
+            output.write(x)
+
+
+#############################################################################################
+def readAllData(data_filename):
+    data = []
+    with open(data_filename, "r") as filestream:
+        for line in filestream:
+            data.append(line)
+    return data
