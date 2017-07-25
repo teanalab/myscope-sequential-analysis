@@ -125,7 +125,7 @@ def getPerformance(actual, predicted):
         local_precision = (float(tp) / (tp + fp))
         local_recall = (float(tp) / (tp + fn))
         local_f_measure = (float(2 * local_precision * local_recall) / (local_precision + local_recall))
-        local_accuracy = (float(tp + tn) / (tp + fp + tn + fn))
+        local_accuracy = (float(tp) / (tp + fn))
 
         # for checking calculation
         # print tp, fp, tn, fn

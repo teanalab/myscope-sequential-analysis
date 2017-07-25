@@ -65,34 +65,53 @@ def normalizeData(dataX, dataY, codebook, max_len):
 ###################################################################
 # evaluate model with F1, Precision and Recall
 def getPerformance(actual, predicted):
-    tp = 0
-    fp = 0
-    tn = 0
-    fn = 0
-
-    for i in range(0, len(actual)):
-        if actual[i] == predicted[i] and actual[i] == 1:
-            tp += 1
-        elif actual[i] != predicted[i] and actual[i] == 1:
-            fn += 1
-        elif actual[i] == predicted[i] and actual[i] == 0:
-            tn += 1
-        elif actual[i] != predicted[i] and actual[i] == 0:
-            fp += 1
-
-    #print tp, fp, tn, fn
     precision = 0.0
     recall = 0.0
     f_measure = 0.0
-    if (tp + fp) > 0:
-        precision = float(tp) / (tp + fp)
-    if (tp + fn) > 0:
-        recall = float(tp) / (tp + fn)
-    if (precision + recall) > 0:
-        f_measure = float(2 * precision * recall) / (precision + recall)
-    accuracy = float(tp + tn) / (tp + fp + tn + fn)
+    accuracy = 0.0
 
-    return accuracy, precision, recall, f_measure
+    labels = [1, 0, 0, 1]
+
+    for k in [0, 2]:
+
+        tp = 0
+        fp = 0
+        tn = 0
+        fn = 0
+
+        for i in range(0, len(actual)):
+            if actual[i] == predicted[i] and actual[i] == labels[k]:
+                tp += 1
+            elif actual[i] != predicted[i] and actual[i] == labels[k]:
+                fn += 1
+            elif actual[i] == predicted[i] and actual[i] == labels[k + 1]:
+                tn += 1
+            elif actual[i] != predicted[i] and actual[i] == labels[k + 1]:
+                fp += 1
+
+        local_precision = 0.0
+        local_recall = 0.0
+        local_f_measure =  0.0
+        local_accuracy =  0.0
+
+        if (tp + fp) > 0:
+            local_precision = (float(tp) / (tp + fp))
+        if (tp + fn) > 0:
+            local_recall = (float(tp) / (tp + fn))
+        if (local_precision + local_recall) > 0:
+            local_f_measure = (float(2 * local_precision * local_recall) / (local_precision + local_recall))
+        local_accuracy = (float(tp) / (tp + fn))
+
+        # for checking calculation
+        # print tp, fp, tn, fn
+        # print local_accuracy, local_precision, local_recall, local_f_measure
+
+        precision += local_precision
+        recall += local_recall
+        f_measure += local_f_measure
+        accuracy += local_accuracy
+
+    return accuracy / 2, precision / 2, recall / 2, f_measure / 2
 
 ###################################################################
 # split data set by using stratified method

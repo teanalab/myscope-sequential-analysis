@@ -65,7 +65,7 @@ def getKFoldsResults(kFolds=10):
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
         # save best model into file
-        n_epoch = 20
+        n_epoch = 3
         print "\nModel fitting...for fold ", i
         callbacks = [
             EarlyStopping(monitor='val_acc', min_delta=0.01, verbose=1, patience=n_epoch),
