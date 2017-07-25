@@ -59,7 +59,7 @@ def getKFoldsResults(kFolds=10):
         model.add(
             Conv1D(filters=32, kernel_size=3, padding='same', activation='relu', input_shape=(X_train.shape[1], 1)))
         model.add(MaxPooling1D(pool_size=2))
-        model.add(LSTM(16, recurrent_regularizer=l1_l2(l1=0.0, l2=0.015)))
+        model.add(LSTM(64, recurrent_regularizer=l1_l2(l1=0.0, l2=0.015)))
         model.add(Dropout(0.25))
         model.add(Dense(2, activation='softmax'))
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
