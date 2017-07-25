@@ -3,6 +3,7 @@ import numpy
 import os
 import re
 import random
+import operator
 from keras.utils import np_utils
 from keras.preprocessing.sequence import pad_sequences
 
@@ -18,7 +19,7 @@ def loadCodeBook(codebook_filename):
     codebook = []
     with open(codebook_filename, "r") as filestream:
         for line in filestream:
-            codebook.append(line[:3])
+            codebook.append(line.replace("\n", ""))
     return codebook
 
 ###################################################################
@@ -54,8 +55,11 @@ def normalizeData(dataX, dataY, codebook, max_len):
     # normalize
     X = X / float(len(codebook))
 
+    # get codebook size
+    codebookSize = len(codebook)
+
     # get label as 0 and 1
-    dataY[:] = [x - 41 for x in dataY]
+    dataY[:] = [x - codebookSize + 2 for x in dataY]
 
     # one hot encode the output variable
     y = np_utils.to_categorical(dataY)
@@ -162,9 +166,10 @@ def showResultsForTestData(model, codebook, training_filename, seq_len):
 def createSequence(rawFileLocation, codeMappingFile):
     count_pos = 0
     count_neg = 0
-    #codebook_dict = getDictionaryForCodeBook(codeMappingFile)
+    codebook_dict = getDictionaryForCodeBook(codeMappingFile)
 
-    codebook_dict = {}
+    f = open("/home/mehedi/teana/data-source/seq-analysis/hmm/obesity-newfile/allsequence.txt", "w")
+    #codebook_dict = {}
     for filename in os.listdir(rawFileLocation):
         with open(rawFileLocation+filename, "r") as filestream:
             seq = []
@@ -176,21 +181,32 @@ def createSequence(rawFileLocation, codeMappingFile):
                         seq.append('500')
                         if len(seq) > 2:
                             count_pos += 1
+                            print seq
+                            f.write(",".join(seq) + "\n")
                         seq = []
                     elif (code[1:-1] == 'CHT-') or (code[1:-1] == 'CML-') or (code[1:-2] == 'CHT+') or (code[1:-2] == 'CML+'):
                         seq.append('400')
                         if len(seq) > 2:
                             count_neg += 1
+                            print seq
+                            f.write(",".join(seq) + "\n")
                         seq = []
                     else:
                         #seq.append(codebook_dict[code[1:-1]])
-                        seq.append(code[1:-1])
-                        codebook_dict[code[1:-1]] = 1
+                        if codebook_dict[code[1:-1]] == "PASS":
+                            #print filename, currentline
+                            a = 0
+                        else:
+                            #seq.append(code[1:-1])
+                            seq.append(codebook_dict[code[1:-1]])
+                            #codebook_dict[code[1:-1]] = 1
     print "total positive sequences: ", count_pos, "total negative sequences: ", count_neg
+    print len(codebook_dict.keys())
+    # sorted_map = sorted(codebook_dict.items(), key=operator.itemgetter(0))
     # f = open("/home/mehedi/teana/data-source/seq-analysis/codemap.txt", "w")
-    # #write all unique code to file
-    # for key in codebook_dict.keys():
-    #     f.write(key + "," + " \n")
+    #write all unique code to file
+    # for key, val in sorted_map:
+    #     f.write(key + "," + key + "\n")
     # f.close()
 
 #######################################################################
@@ -215,4 +231,22 @@ def writeShuffledData(inputFile, outputFile):
     random.shuffle(data)
     for line in data:
         f.write(line)
+    f.close()
+
+#######################################################################
+# shuffle data and rewrite to file for making balanced
+def writeBalancedData(inputFile, outputFile, sampleSize):
+    data = []
+    f = open(outputFile, "w")
+    with open(inputFile, "r") as filestream:
+        for line in filestream:
+            data.append(line)
+
+    random.shuffle(data)
+    count = 0
+    for line in data:
+        f.write(line)
+        count += 1
+        if count >= sampleSize:
+            break
     f.close()

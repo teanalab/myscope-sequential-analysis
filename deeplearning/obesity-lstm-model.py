@@ -14,31 +14,31 @@ from keras.models import load_model
 #############################################################################################
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Train LSTM Sequential Model.')
-parser.add_argument('-training_data',
-                    default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/train_shuffled.txt'
+parser.add_argument('-data',
+                    default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/obesity-newfile/balanced/cht-cml/allsequence.txt'
                     , help='File location containing training sequence.')
-parser.add_argument('-testing_data',
-                    default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/test.txt',
-                    help='File location containing testing sequence.')
-parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook.txt',
+parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/obesity-newfile/codebook-newfile.txt',
                     help='File location containing codebook.')
-parser.add_argument('-model_path', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/model.h5',
+
+# parser.add_argument('-data',
+#                     default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/train_shuffled.txt'
+#                     , help='File location containing training sequence.')
+# parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook.txt',
+#                    help='File location containing codebook.')
+parser.add_argument('-model_path', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/obesity-newfile/model.h5',
                     help='Directory to save model.')
-parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/',
-                    help='Directory to save results.')
 
 args = parser.parse_args()
 
-##############################
+#############################################################################################
 # Load up training data
-training_filename = args.training_data
-testing_filename = args.testing_data
+data_filename = args.data
 codebook_filename = args.codebook
 model_path = args.model_path
-output_directory = args.output_directory
 
 codebook = utility.loadCodeBook(codebook_filename)
-X, y, seq_len = utility.readSequenceFromFile(training_filename, codebook)
+print codebook
+X, y, seq_len = utility.readSequenceFromFile(data_filename, codebook)
 
 # test_X, test_y, max_len = utility.readSequenceFromFile(testing_filename, codebook, seq_len, False)
 # display test results one by one
@@ -65,7 +65,7 @@ def getKFoldsResults(kFolds=10):
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
         # save best model into file
-        n_epoch = 3
+        n_epoch = 50
         print "\nModel fitting...for fold ", i
         callbacks = [
             EarlyStopping(monitor='val_acc', min_delta=0.01, verbose=1, patience=n_epoch),
