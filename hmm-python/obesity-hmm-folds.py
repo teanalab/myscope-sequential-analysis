@@ -5,10 +5,16 @@ import argparse
 #############################################################################################
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Train HMM Model.')
+# parser.add_argument('-data',
+#                     default='/home/mehedi/teana/data-source/seq-analysis/hmm/unbalanced/cht-cml/allsequence.txt',
+#                     help='File location containing training sequence.')
+# parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/hmm/',
+#                     help='Directory to save results.')
+
 parser.add_argument('-data',
-                    default='/home/mehedi/teana/data-source/seq-analysis/hmm/unbalanced/cht-cml/allsequence.txt',
+                    default='/home/mehedi/teana/data-source/seq-analysis/hmm/obesity-newfile/unbalanced/cht-cml/allsequence.txt',
                     help='File location containing training sequence.')
-parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/hmm/',
+parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/hmm/obesity-newfile/',
                     help='Directory to save results.')
 
 args = parser.parse_args()

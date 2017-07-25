@@ -11,7 +11,7 @@ def loadCodeBook(codebook_filename):
     codebook = []
     with open(codebook_filename, "r") as filestream:
         for line in filestream:
-            codebook.append(line[:3])
+            codebook.append(line.replace("\n", ""))
     return codebook
 
 
