@@ -202,6 +202,7 @@ def createSequence(rawFileLocation, codeMappingFile):
                             #codebook_dict[code[1:-1]] = 1
     print "total positive sequences: ", count_pos, "total negative sequences: ", count_neg
     print len(codebook_dict.keys())
+    f.close()
     # sorted_map = sorted(codebook_dict.items(), key=operator.itemgetter(0))
     # f = open("/home/mehedi/teana/data-source/seq-analysis/codemap.txt", "w")
     #write all unique code to file
