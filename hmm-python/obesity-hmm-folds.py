@@ -31,7 +31,8 @@ data = utility.readAllData(data_filename)
 
 # get results fro k folds
 kFolds = 10
-results = []
+macro_results = []
+micro_results = []
 for k in np.arange(0, kFolds):
     # create training and testing file
     utility.createTrainAndTestFile(data, kFolds, training_filename, testing_filename)
@@ -74,14 +75,21 @@ for k in np.arange(0, kFolds):
         else:
             pred_labels.append("400")
 
-    # print results
+    # store results in macro average
     pred_labels = np.array(pred_labels)
-    accuracy, precision, recall, f_measure = utility.getPerformance(seq_labels, pred_labels)
-
-    print "\nResults for fold", (k+1), ": Accuracy:", accuracy, "Precision:", precision, "Recall:", recall, "F1:", f_measure
-
+    accuracy, precision, recall, f_measure = utility.getMacroAveragePerformance(seq_labels, pred_labels)
+    print "\nResults for fold", (
+        k + 1), ": Accuracy:", accuracy, "Precision:", precision, "Recall:", recall, "F1:", f_measure
     fold_result = [k, accuracy, precision, recall, f_measure]
-    results.append(fold_result)
+    macro_results.append(fold_result)
+
+    # store results in micro average
+    accuracy, precision, recall, f_measure = utility.getMicroAveragePerformance(seq_labels, pred_labels)
+    print "\nResults for fold", (
+        k + 1), ": Accuracy:", accuracy, "Precision:", precision, "Recall:", recall, "F1:", f_measure
+    fold_result = [k, accuracy, precision, recall, f_measure]
+    micro_results.append(fold_result)
 
 ############################################################################################
-print "\nAverage results: ", (np.mean(results, axis=0))
+print "\nMacro average results: ", (np.mean(macro_results, axis=0))
+print "\nMicro average results: ", (np.mean(micro_results, axis=0))

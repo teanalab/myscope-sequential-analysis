@@ -7,13 +7,6 @@ import operator
 from keras.utils import np_utils
 from keras.preprocessing.sequence import pad_sequences
 
-
-###################################################################
-# split sequences based on commitment language
-
-###################################################################
-# call smote to balance sample
-
 ###################################################################
 # read codebook from file
 def loadCodeBook(codebook_filename):
@@ -72,7 +65,7 @@ def normalizeData(dataX, dataY, codebook, max_len):
 
 ###################################################################
 # evaluate model with F1, Precision and Recall
-def getPerformance(actual, predicted):
+def getMacroAveragePerformance(actual, predicted):
     precision = 0.0
     recall = 0.0
     f_measure = 0.0
@@ -100,7 +93,6 @@ def getPerformance(actual, predicted):
         local_precision = 0.0
         local_recall = 0.0
         local_f_measure = 0.0
-        local_accuracy = 0.0
 
         if (tp + fp) > 0:
             local_precision = (float(tp) / (tp + fp))
@@ -108,7 +100,7 @@ def getPerformance(actual, predicted):
             local_recall = (float(tp) / (tp + fn))
         if (local_precision + local_recall) > 0:
             local_f_measure = (float(2 * local_precision * local_recall) / (local_precision + local_recall))
-        local_accuracy = (float(tp) / (tp + fn))
+        local_accuracy = (float(tp + tn) / (tp + fp + tn + fn))
 
         # for checking calculation
         # print tp, fp, tn, fn
@@ -121,6 +113,57 @@ def getPerformance(actual, predicted):
 
     return accuracy / 2, precision / 2, recall / 2, f_measure / 2
 
+###################################################################
+# evaluate model with F1, Precision and Recall
+def getMicroAveragePerformance(actual, predicted):
+    precision = 0.0
+    recall = 0.0
+    f_measure = 0.0
+    accuracy = 0.0
+
+    total_sample = len(actual)
+
+    labels = [1, 0, 0, 1]
+
+    for k in [0, 2]:
+
+        tp = 0
+        fp = 0
+        tn = 0
+        fn = 0
+
+        for i in range(0, len(actual)):
+            if actual[i] == predicted[i] and actual[i] == labels[k]:
+                tp += 1
+            elif actual[i] != predicted[i] and actual[i] == labels[k]:
+                fn += 1
+            elif actual[i] == predicted[i] and actual[i] == labels[k + 1]:
+                tn += 1
+            elif actual[i] != predicted[i] and actual[i] == labels[k + 1]:
+                fp += 1
+
+        # for checking calculation
+        # print tp, fp, tn, fn
+        # print local_accuracy, local_precision, local_recall, local_f_measure
+
+        local_precision = 0.0
+        local_recall = 0.0
+        local_f_measure = 0.0
+
+        if (tp + fp) > 0:
+            local_precision = (float(tp) / (tp + fp))
+        if (tp + fn) > 0:
+            local_recall = (float(tp) / (tp + fn))
+        if (local_precision + local_recall) > 0:
+            local_f_measure = (float(2 * local_precision * local_recall) / (local_precision + local_recall))
+
+        precision += (local_precision*(float(tp + fn)/total_sample))
+        recall += (local_recall*(float(tp + fn)/total_sample))
+        f_measure += (local_f_measure*(float(tp + fn)/total_sample))
+
+        accuracy = (float(tp + tn) / (tp + fp + tn + fn))
+
+    return accuracy, precision, recall, f_measure
 
 ###################################################################
 def denormalizeData(X, codebook):

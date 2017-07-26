@@ -47,7 +47,8 @@ X, y, seq_len = utility.readSequenceFromFile(data_filename, codebook)
 ##############################################################################################
 # get results for K folds
 def getKFoldsResults(kFolds=10):
-    results = []
+    macro_results = []
+    micro_results = []
     for i in range(0, kFolds):
         X_tr, X_ts, y_tr, y_ts = train_test_split(X, y, test_size=1.0 / kFolds)
         X_train, y_train, maxlen = utility.normalizeData(X_tr, y_tr, codebook, seq_len)
@@ -65,7 +66,7 @@ def getKFoldsResults(kFolds=10):
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
         # save best model into file
-        n_epoch = 50
+        n_epoch = 20
         print "\nModel fitting...for fold ", i
         callbacks = [
             EarlyStopping(monitor='val_acc', min_delta=0.01, verbose=1, patience=n_epoch),
@@ -74,15 +75,22 @@ def getKFoldsResults(kFolds=10):
         model.fit(X_train, y_train, epochs=n_epoch, batch_size=batch_size, verbose=2, shuffle=True,
                   validation_split=0.1, callbacks=callbacks)
 
-        # summarize performance of the model
+        # summarize performance of the model with macro results
         print "\nEvaluating model for fold ", i
         trained_model = load_model(model_path)
         pred_labels = trained_model.predict(X_test)
-        accuracy, precision, recall, f_measure = utility.getPerformance(numpy.argmax(y_test, axis=1),
-                                                                        numpy.argmax(pred_labels, axis=1))
+        accuracy, precision, recall, f_measure = utility.getMacroAveragePerformance(numpy.argmax(y_test, axis=1),
+                                                                                    numpy.argmax(pred_labels, axis=1))
         fold_result = [i, accuracy, precision, recall, f_measure]
-        results.append(fold_result)
-        print results
+        macro_results.append(fold_result)
+        print macro_results
+
+        # summarize performance of the model with micro results
+        accuracy, precision, recall, f_measure = utility.getMicroAveragePerformance(numpy.argmax(y_test, axis=1),
+                                                                                    numpy.argmax(pred_labels, axis=1))
+        fold_result = [i, accuracy, precision, recall, f_measure]
+        micro_results.append(fold_result)
+        print micro_results
 
         # scores = trained_model.evaluate(X_test, y_test, verbose=0)
         # print "Actual:  ", numpy.argmax(y_test, axis=1)
@@ -90,9 +98,10 @@ def getKFoldsResults(kFolds=10):
         # print("\nModel Accuracy: %.2f%%\n" % (scores[1] * 100))
         # fold_result = [i, (scores[1] * 100)]
 
-    return results
+    return macro_results, micro_results
 
 ###########################################################################################
 # print kFolds result
-results = getKFoldsResults(kFolds=10)
-print "Average accuracy: ", (numpy.mean(results, axis=0))
+macro_results, micro_results = getKFoldsResults(kFolds=10)
+print "Macro results: ", (numpy.mean(macro_results, axis=0))
+print "Micro results: ", (numpy.mean(micro_results, axis=0))
