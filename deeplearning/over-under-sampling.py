@@ -21,7 +21,6 @@ args = parser.parse_args()
 data_filename = args.data
 codebook_filename = args.codebook
 
-
 #############################################################################################
 # normalize data
 def normalizeData(dataX, dataY, codebook, max_len):
@@ -43,7 +42,7 @@ def normalizeData(dataX, dataY, codebook, max_len):
     return X, y, max_len
 
 
-###################################################################
+#############################################################################################
 codebook = utility.loadCodeBook(codebook_filename)
 X, y, seq_len = utility.readSequenceFromFile(data_filename, codebook)
 X_norm, y_norm, max_len = normalizeData(X, y, codebook, seq_len)
@@ -67,3 +66,4 @@ out.close()
 # display new sample size
 print Counter(y_res)
 
+#############################################################################################

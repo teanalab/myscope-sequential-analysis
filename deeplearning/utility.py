@@ -7,6 +7,7 @@ import operator
 from keras.utils import np_utils
 from keras.preprocessing.sequence import pad_sequences
 
+
 ###################################################################
 # split sequences based on commitment language
 
@@ -22,9 +23,10 @@ def loadCodeBook(codebook_filename):
             codebook.append(line.replace("\n", ""))
     return codebook
 
+
 ###################################################################
 # read all sequences and return X, y
-def readSequenceFromFile(sequence_file, codebook, seq_len = 5, is_train = True):
+def readSequenceFromFile(sequence_file, codebook, seq_len=5, is_train=True):
     max_len = seq_len
     dataX = []
     dataY = []
@@ -42,6 +44,7 @@ def readSequenceFromFile(sequence_file, codebook, seq_len = 5, is_train = True):
                 max_len = len(currentline)
 
     return dataX, dataY, max_len
+
 
 ###################################################################
 # normalize and hot encode
@@ -65,6 +68,7 @@ def normalizeData(dataX, dataY, codebook, max_len):
     y = np_utils.to_categorical(dataY)
 
     return X, y, max_len
+
 
 ###################################################################
 # evaluate model with F1, Precision and Recall
@@ -95,8 +99,8 @@ def getPerformance(actual, predicted):
 
         local_precision = 0.0
         local_recall = 0.0
-        local_f_measure =  0.0
-        local_accuracy =  0.0
+        local_f_measure = 0.0
+        local_accuracy = 0.0
 
         if (tp + fp) > 0:
             local_precision = (float(tp) / (tp + fp))
@@ -117,11 +121,30 @@ def getPerformance(actual, predicted):
 
     return accuracy / 2, precision / 2, recall / 2, f_measure / 2
 
-###################################################################
-# split data set by using stratified method
 
 ###################################################################
-# cross validation results in terms of F1, Precision and Recall
+def denormalizeData(X, codebook):
+    X_d = X * (float(len(codebook)) - 2)
+    y = X_d[:, -1]
+    y[y > 0] = len(codebook) - 1
+    y[y == 0] = len(codebook) - 2
+    X_d[:, -1] = y
+    return X_d
+
+
+###################################################################
+def writeSequenceFromPaddedSequence(X, codebook, outputdata_filename):
+    int_to_code = dict((i, c) for i, c in enumerate(codebook))
+    f = open(outputdata_filename, "w")
+    for x in X:
+        seq = []
+        for s in x:
+            val = int(round(s))
+            if val > 0:
+                seq.append(str(int_to_code[val]))
+        f.write(",".join(seq) + "\n")
+    f.close()
+
 
 ###################################################################
 # display test results one by one
@@ -169,22 +192,24 @@ def createSequence(rawFileLocation, codeMappingFile):
     codebook_dict = getDictionaryForCodeBook(codeMappingFile)
 
     f = open("/home/mehedi/teana/data-source/seq-analysis/hmm/obesity-newfile/allsequence.txt", "w")
-    #codebook_dict = {}
+    # codebook_dict = {}
     for filename in os.listdir(rawFileLocation):
-        with open(rawFileLocation+filename, "r") as filestream:
+        with open(rawFileLocation + filename, "r") as filestream:
             seq = []
             for line in filestream:
                 currentline = re.sub(r"\s+", "", line).split(",")
                 if len(currentline) > 1:
                     code = currentline[1]
-                    if (code[1:-1] == 'CHT+') or (code[1:-1] == 'CML+') or (code[1:-2] == 'CHT+') or (code[1:-2] == 'CML+'):
+                    if (code[1:-1] == 'CHT+') or (code[1:-1] == 'CML+') or (code[1:-2] == 'CHT+') or (
+                        code[1:-2] == 'CML+'):
                         seq.append('500')
                         if len(seq) > 2:
                             count_pos += 1
                             print seq
                             f.write(",".join(seq) + "\n")
                         seq = []
-                    elif (code[1:-1] == 'CHT-') or (code[1:-1] == 'CML-') or (code[1:-2] == 'CHT+') or (code[1:-2] == 'CML+'):
+                    elif (code[1:-1] == 'CHT-') or (code[1:-1] == 'CML-') or (code[1:-2] == 'CHT+') or (
+                        code[1:-2] == 'CML+'):
                         seq.append('400')
                         if len(seq) > 2:
                             count_neg += 1
@@ -192,23 +217,24 @@ def createSequence(rawFileLocation, codeMappingFile):
                             f.write(",".join(seq) + "\n")
                         seq = []
                     else:
-                        #seq.append(codebook_dict[code[1:-1]])
+                        # seq.append(codebook_dict[code[1:-1]])
                         if codebook_dict[code[1:-1]] == "PASS":
-                            #print filename, currentline
+                            # print filename, currentline
                             a = 0
                         else:
-                            #seq.append(code[1:-1])
+                            # seq.append(code[1:-1])
                             seq.append(codebook_dict[code[1:-1]])
-                            #codebook_dict[code[1:-1]] = 1
+                            # codebook_dict[code[1:-1]] = 1
     print "total positive sequences: ", count_pos, "total negative sequences: ", count_neg
     print len(codebook_dict.keys())
     f.close()
     # sorted_map = sorted(codebook_dict.items(), key=operator.itemgetter(0))
     # f = open("/home/mehedi/teana/data-source/seq-analysis/codemap.txt", "w")
-    #write all unique code to file
+    # write all unique code to file
     # for key, val in sorted_map:
     #     f.write(key + "," + key + "\n")
     # f.close()
+
 
 #######################################################################
 # create dictionary from file
@@ -219,6 +245,7 @@ def getDictionaryForCodeBook(codeMappingFile):
             l = re.sub(r"\s+", "", line).split(",")
             codebook_dict[l[0]] = l[1]
     return codebook_dict
+
 
 #######################################################################
 # shuffle data and rewrite to file
@@ -233,6 +260,7 @@ def writeShuffledData(inputFile, outputFile):
     for line in data:
         f.write(line)
     f.close()
+
 
 #######################################################################
 # shuffle data and rewrite to file for making balanced
