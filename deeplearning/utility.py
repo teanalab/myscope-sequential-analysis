@@ -184,7 +184,11 @@ def writeSequenceFromPaddedSequence(X, codebook, outputdata_filename):
         for s in x:
             val = int(round(s))
             if val > 0:
-                seq.append(str(int_to_code[val]))
+                if val in int_to_code.keys():
+                    seq.append(str(int_to_code[val]))
+                else:
+                    print "Error code: ", val
+
         f.write(",".join(seq) + "\n")
     f.close()
 

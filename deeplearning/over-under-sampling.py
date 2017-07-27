@@ -10,9 +10,9 @@ from collections import Counter
 # parse command line arguments
 parser = argparse.ArgumentParser(description='Train LSTM Sequential Model.')
 parser.add_argument('-data',
-                    default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/obesity-newfile/unbalanced/cht-cml/allsequence.txt'
+                    default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/allsequence.txt'
                     , help='File location containing training sequence.')
-parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/obesity-newfile/codebook-newfile.txt',
+parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook.txt',
                     help='File location containing codebook.')
 
 args = parser.parse_args()
@@ -48,12 +48,12 @@ X, y, seq_len = utility.readSequenceFromFile(data_filename, codebook)
 X_norm, y_norm, max_len = normalizeData(X, y, codebook, seq_len)
 
 # perform over or under sampling
-sm = SMOTE(random_state=42, kind='borderline2')
+sm = SMOTE(random_state=72, kind='regular')
 #sm = ClusterCentroids(random_state=42)
 X_res, y_res = sm.fit_sample(X_norm, y_norm)
 
 # save data to a csv file
-out = open('/home/mehedi/teana/data-source/seq-analysis/over-sampling-bdl2.csv', 'w')
+out = open('/home/mehedi/teana/data-source/seq-analysis/over-sampling-reg-old-test.csv', 'w')
 idx = 0
 for row in X_res:
     for column in row:

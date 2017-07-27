@@ -12,9 +12,9 @@ parser = argparse.ArgumentParser(description='Train HMM Model.')
 #                     help='Directory to save results.')
 
 parser.add_argument('-data',
-                    default='/home/mehedi/teana/data-source/seq-analysis/hmm/obesity-newfile/unbalanced/cht-cml/allsequence.txt',
+                    default='/home/mehedi/teana/data-source/seq-analysis/hmm/balanced/cht-cml/over-sampling-reg-old.txt',
                     help='File location containing training sequence.')
-parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/hmm/obesity-newfile/',
+parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/hmm/',
                     help='Directory to save results.')
 
 args = parser.parse_args()

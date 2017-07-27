@@ -15,13 +15,13 @@ from keras.models import load_model
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Train LSTM Sequential Model.')
 parser.add_argument('-data',
-                    default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/obesity-newfile/balanced/cht-cml/allsequence.txt'
+                    default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/obesity-newfile/balanced/cht-cml/over-sampling-reg-new.txt'
                     , help='File location containing training sequence.')
 parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/obesity-newfile/codebook-newfile.txt',
                     help='File location containing codebook.')
 
 # parser.add_argument('-data',
-#                     default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/balanced/cht-cml/train_shuffled.txt'
+#                     default='/home/mehedi/teana/data-source/seq-analysis/over-sampling-reg-old-test-post.txt'
 #                     , help='File location containing training sequence.')
 # parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook.txt',
 #                    help='File location containing codebook.')
@@ -60,13 +60,13 @@ def getKFoldsResults(kFolds=10):
         model.add(
             Conv1D(filters=32, kernel_size=3, padding='same', activation='relu', input_shape=(X_train.shape[1], 1)))
         model.add(MaxPooling1D(pool_size=2))
-        model.add(LSTM(64, recurrent_regularizer=l1_l2(l1=0.0, l2=0.015)))
+        model.add(LSTM(32, recurrent_regularizer=l1_l2(l1=0.0, l2=0.015)))
         model.add(Dropout(0.25))
         model.add(Dense(2, activation='softmax'))
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
         # save best model into file
-        n_epoch = 20
+        n_epoch = 10
         print "\nModel fitting...for fold ", i
         callbacks = [
             EarlyStopping(monitor='val_acc', min_delta=0.01, verbose=1, patience=n_epoch),

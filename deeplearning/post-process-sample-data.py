@@ -6,12 +6,12 @@ import argparse
 # parse command line arguments
 parser = argparse.ArgumentParser(description='Train LSTM Sequential Model.')
 parser.add_argument('-inputdata',
-                    default='/home/mehedi/Desktop/Link to teana/data-source/seq-analysis/under-over-sampling/over-sampling/over-sampling-reg.csv'
+                    default='/home/mehedi/Desktop/Link to teana/data-source/seq-analysis/over-sampling-reg-old-test.csv'
                     , help='File location containing input data sequence.')
 parser.add_argument('-outputdata',
-                    default='/home/mehedi/Desktop/Link to teana/data-source/seq-analysis/under-over-sampling/over-sampling/over-sampling-reg-post.txt'
+                    default='/home/mehedi/Desktop/Link to teana/data-source/seq-analysis/over-sampling-reg-old-test-post.txt'
                     , help='File location containing out data sequence.')
-parser.add_argument('-codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook.txt',
+parser.add_argument('-codebook', default='/home/mehedi/Desktop/Link to teana/data-source/seq-analysis/deepLearn/codebook.txt',
                     help='File location containing codebook.')
 
 args = parser.parse_args()
