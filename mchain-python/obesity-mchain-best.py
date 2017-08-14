@@ -5,32 +5,17 @@ import random
 
 #############################################################################################
 # Parse command line arguments
-parser = argparse.ArgumentParser(description='Train HMM Model.')
-# parser.add_argument('-data',
-#                     default='/home/mehedi/teana/data-source/seq-analysis/hmm/unbalanced/cht-cml/allsequence.txt',
-#                     help='File location containing training sequence.')
-# parser.add_argument('-output_directory', default='/home/mehedi/teana/data-source/seq-analysis/hmm/',
-#                     help='Directory to save results.')
-
-parser.add_argument('--data',
-                    default='/home/mehedi/teana/data-source/seq-analysis/hmm/balanced/cht-cml/under-sampling-new.txt',
-                    help='File location containing training sequence.')
-parser.add_argument('--output_directory', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/parameter-tuning/results/best hmm cv borderline2/',
-                    help='Directory to save results.')
-parser.add_argument('--hidden_states', default=5, type=int, help='number of hidden states')
+parser = argparse.ArgumentParser(description='Train Markov Model.')
 parser.add_argument('--codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook_improve_new.txt',
                     help='File location containing codebook.')
-parser.add_argument('--sampling', default='oversampling',  type=str, help='dropout rate parameter.')
+parser.add_argument('--sampling', default='oversampling', type=str, help='dropout rate parameter.')
 
 args = parser.parse_args()
 
 ############################################################################################
 # Load up training data
-data_filename = args.data
 codebook_filename = args.codebook
-output_directory = args.output_directory
 sampling = args.sampling
-hidden_states = args.hidden_states
 training_filename = "train.txt"
 testing_filename = "test.txt"
 
@@ -40,70 +25,82 @@ macro_results = []
 micro_results = []
 codebook = utility.loadCodeBook(codebook_filename)
 foldData, max_len = utility.createStartifiedFolds(codebook, kFolds)
+n_order = 1
 
 for k in np.arange(0, kFolds):
     # get train and test data
     utility.createUnderOrOverSample(sampling, foldData[k][0], testing_filename, max_len, codebook)
     utility.createUnderOrOverSample(sampling, foldData[k][1], training_filename, max_len, codebook)
 
-    # determine codebook size and number of hidden states
-    all_codebook, success_codebook, unsuccess_codebook = utility.loadCodeBookFromTrainingFile(training_filename)
+    # set dictionary for successful sequences
+    successful_dict = utility.loadTransitionDictionary(training_filename, n_order, "500")
 
-    # fit successful model
-    n_states = 5
-    n_observations = len(success_codebook)
-    sequences, seq_labels, seq_lengths = utility.loadData(training_filename, success_codebook, 1)
-    success_model = utility.getHMMModel(n_states, n_observations, sequences, seq_lengths)
+    # set dictionary for unsuccessful sequences
+    unsuccessful_dict = utility.loadTransitionDictionary(training_filename, n_order, "400")
 
-    # fit unsuccessful model
-    n_states = 22
-    n_observations = len(unsuccess_codebook)
-    sequences, seq_labels, seq_lengths = utility.loadData(training_filename, unsuccess_codebook, 0)
-    unsuccess_model = utility.getHMMModel(n_states, n_observations, sequences, seq_lengths)
+    # set likelihood of the given test sequence(s) and then classify
+    prediction_labels = []
+    seq_labels = []
 
-    # get log likelihood for the given test sequence(s)
-    sequences_for_success_model, seq_labels, success_seq_lengths = utility.loadData(testing_filename, success_codebook,
-                                                                                    2)
-    sequences_for_unsuccess_model, seq_labels, unsuccess_seq_lengths = utility.loadData(testing_filename,
-                                                                                        unsuccess_codebook, 2)
+    with open(testing_filename, "r") as file_stream:
+        for line in file_stream:
+            words = line.replace("\n", "").split(",")
+            actual_label = words[len(words)-1]
+            seq_labels.append(actual_label)
+            if len(words) <= n_order:
+                print "Short sequence: use random guess"
+                guess = random.randint(0, 1)
+                if guess > 0:
+                    prediction_labels.append("500")
+                else:
+                    prediction_labels.append("400")
+                continue
 
-    success_seq_start_index = 0
-    unsuccess_seq_start_index = 0
-    pred_labels = []
+            successful_prob = 0.5
+            unsuccessful_prob = 0.5
 
-    for i in range(0, len(success_seq_lengths)):
-        if success_seq_lengths[i] == 0 or unsuccess_seq_lengths[i] == 0:
-           # use random guess
-           guess = random.randint(0, 1)
-	   if guess > 0:
-               pred_labels.append("500")
-           else:
-               pred_labels.append("400")
-           continue
+            # get probability of generating sequence from successful transcript
+            words[len(words)-1] = "500"
+            for i in xrange(0, len(words) - n_order - 1):
+                current_tuple = tuple([words[j] for j in xrange(i, i + n_order + 1)])
+                if current_tuple in successful_dict.keys():
+                    transition_prob = 1.0
+                    if current_tuple in unsuccessful_dict.keys():
+                        transition_prob = float(successful_dict[current_tuple]) / (successful_dict[current_tuple] +
+                                                                                   unsuccessful_dict[current_tuple])
+                    successful_prob *= transition_prob
+                else:
+                    successful_prob *= 0.00001
 
-        success_seq = sequences_for_success_model[
-                      success_seq_start_index:(success_seq_start_index + success_seq_lengths[i])]
-        unsuccess_seq = sequences_for_unsuccess_model[
-                        unsuccess_seq_start_index:(unsuccess_seq_start_index + unsuccess_seq_lengths[i])]
-        success_seq_start_index += success_seq_lengths[i]
-        unsuccess_seq_start_index += unsuccess_seq_lengths[i]
-        success_logL = success_model.score(success_seq)
-        unsuccess_logL = unsuccess_model.score(unsuccess_seq)
-        if (success_logL - unsuccess_logL) > 0.0:
-            pred_labels.append("500")
-        else:
-            pred_labels.append("400")
+            # get probability of generating sequence from unsuccessful transcript
+            words[len(words) - 1] = "400"
+            for i in xrange(0, len(words) - n_order - 1):
+                current_tuple = tuple([words[j] for j in xrange(i, i + n_order + 1)])
+                if current_tuple in unsuccessful_dict.keys():
+                    transition_prob = 1.0
+                    if current_tuple in successful_dict.keys():
+                        transition_prob = float(unsuccessful_dict[current_tuple])/(successful_dict[current_tuple] +
+                                                                                   unsuccessful_dict[current_tuple])
+                    unsuccessful_prob *= transition_prob
+                else:
+                    unsuccessful_prob *= 0.00001
+
+            # classify sequence
+            if (successful_prob - unsuccessful_prob) > 0.0:
+                prediction_labels.append("500")
+            else:
+                prediction_labels.append("400")
 
     # store results in macro average
-    pred_labels = np.array(pred_labels)
-    accuracy, precision, recall, f_measure = utility.getMacroAveragePerformance(seq_labels, pred_labels)
+        prediction_labels = np.array(prediction_labels)
+    accuracy, precision, recall, f_measure = utility.getMacroAveragePerformance(seq_labels, prediction_labels)
     print "\nResults for fold", (
         k + 1), ": Accuracy:", accuracy, "Precision:", precision, "Recall:", recall, "F1:", f_measure
     fold_result = [k, accuracy, precision, recall, f_measure]
     macro_results.append(fold_result)
 
     # store results in micro average
-    accuracy, precision, recall, f_measure = utility.getMicroAveragePerformance(seq_labels, pred_labels)
+    accuracy, precision, recall, f_measure = utility.getMicroAveragePerformance(seq_labels, prediction_labels)
     print "\nResults for fold", (
         k + 1), ": Accuracy:", accuracy, "Precision:", precision, "Recall:", recall, "F1:", f_measure
     fold_result = [k, accuracy, precision, recall, f_measure]
@@ -114,7 +111,7 @@ print "\nMacro average results: ", (np.mean(macro_results, axis=0))
 print "\nMicro average results: ", (np.mean(micro_results, axis=0))
 
 f = open("best.txt", "a")
-f.write(str(n_states) + ",")
+f.write(str(n_order) + ",")
 for x in np.mean(macro_results, axis=0):
     f.write(str(x) + ",")
 for x in np.mean(micro_results, axis=0):

@@ -8,6 +8,7 @@ from imblearn.over_sampling import SMOTE
 from collections import Counter
 from imblearn.under_sampling import ClusterCentroids
 
+
 ###################################################################
 # read codebook from file
 def loadCodeBook(codebook_filename):
@@ -29,7 +30,7 @@ def loadCodeBookFromTrainingFile(fileLocation):
             if l[len(l) - 1] == "500":
                 for i in range(0, len(l) - 1):
                     success_code_map[l[i]] = l[i]
-		    all_code_map[l[i]] = l[i]
+                    all_code_map[l[i]] = l[i]
             elif l[len(l) - 1] == "400":
                 for i in range(0, len(l) - 1):
                     unsuccess_code_map[l[i]] = l[i]
@@ -42,7 +43,7 @@ def loadCodeBookFromTrainingFile(fileLocation):
     success_map = []
     unsuccess_map = []
     all_map = []
-    
+
     for key, value in all_sorted_map:
         all_map.append(key)
     for key, value in success_sorted_map:
@@ -64,14 +65,14 @@ def loadData(fileLocation, codebook, flag):
         for line in filestream:
             l = re.sub(r"\s+", "", line).split(",")
             if (flag == 1 and l[len(l) - 1] == "500") or (flag == 0 and l[len(l) - 1] == "400"):
-                for i in range(0, len(l)-1):
+                for i in range(0, len(l) - 1):
                     seq.append([code_to_int[l[i]]])
                     map[l[i]] = l[i]
                 lengths.append(len(l) - 1)
                 seq_label.append(l[len(l) - 1])
             elif flag == 2:
                 var_len = 0
-                for i in range(0, len(l)-1):
+                for i in range(0, len(l) - 1):
                     if l[i] in code_to_int.keys():
                         seq.append([code_to_int[l[i]]])
                         map[l[i]] = l[i]
@@ -230,6 +231,7 @@ def AUC(y_true, y_pred):
     FPR = np.float(FP) / (FP + TN)
     return ((1 + TPR - FPR) / 2)
 
+
 #######################################################################
 # create startified folds for cross validation
 def createStartifiedFolds(codebook, kFolds=10):
@@ -285,9 +287,10 @@ def createStartifiedFolds(codebook, kFolds=10):
         folds.append([test, train])
     return folds, max_len
 
+
 ###################################################################
 def writeSampledSequences(X, y, codebook, outputdata_filename):
-    int_to_code = dict((i+1, c) for i, c in enumerate(codebook))
+    int_to_code = dict((i + 1, c) for i, c in enumerate(codebook))
     f = open(outputdata_filename, "w")
     for i in range(0, len(X)):
         seq = []
@@ -301,6 +304,7 @@ def writeSampledSequences(X, y, codebook, outputdata_filename):
         seq.append(str(y[i]))
         f.write(",".join(seq) + "\n")
     f.close()
+
 
 #######################################################################
 # create startified folds for cross validation
@@ -328,3 +332,23 @@ def createUnderOrOverSample(method, given_data, outputdata_filename, max_len, co
     X_d = X_res * (float(len(codebook)))
     writeSampledSequences(X_d, y_res, codebook, outputdata_filename)
 
+
+#######################################################################
+# load transition dictionary
+def loadTransitionDictionary(training_filename, n_order, label):
+    transition_dict = {}
+    with open(training_filename, "r") as file_stream:
+        for line in file_stream:
+            words = line.replace("\n", "").split(",")
+            actual_label = words[len(words) - 1]
+            if len(words) <= n_order:
+                continue
+
+            if label == actual_label:
+                for i in xrange(0, len(words) - n_order - 1):
+                    current_tuple = tuple([words[j] for j in xrange(i, i + n_order + 1)])
+                    if current_tuple in transition_dict.keys():
+                        transition_dict[current_tuple] += 1
+                    else:
+                        transition_dict[current_tuple] = 1
+    return transition_dict
