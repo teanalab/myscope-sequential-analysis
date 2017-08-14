@@ -2,6 +2,8 @@ import numpy as np
 import utility
 import argparse
 import random
+import math
+from collections import Counter
 
 #############################################################################################
 # Parse command line arguments
@@ -25,7 +27,7 @@ macro_results = []
 micro_results = []
 codebook = utility.loadCodeBook(codebook_filename)
 foldData, max_len = utility.createStartifiedFolds(codebook, kFolds)
-n_order = 1
+n_order = 2
 
 for k in np.arange(0, kFolds):
     # get train and test data
@@ -33,10 +35,10 @@ for k in np.arange(0, kFolds):
     utility.createUnderOrOverSample(sampling, foldData[k][1], training_filename, max_len, codebook)
 
     # set dictionary for successful sequences
-    successful_dict = utility.loadDictionary(training_filename, n_order, "500")
+    successful_dict = utility.loadTransitionDictionary(training_filename, n_order, "500")
 
     # set dictionary for unsuccessful sequences
-    unsuccessful_dict = utility.loadDictionary(training_filename, n_order, "400")
+    unsuccessful_dict = utility.loadTransitionDictionary(training_filename, n_order, "400")
 
     # set likelihood of the given test sequence(s) and then classify
     prediction_labels = []
@@ -56,34 +58,36 @@ for k in np.arange(0, kFolds):
                     prediction_labels.append("400")
                 continue
 
-            successful_prob = 0.5
-            unsuccessful_prob = 0.5
+            successful_prob = math.log(0.5)
+            unsuccessful_prob = math.log(0.5)
 
             # get probability of generating sequence from successful transcript
             words[len(words)-1] = "500"
             for i in xrange(0, len(words) - n_order - 1):
-                current_tuple = tuple([words[j] for j in xrange(i, i + n_order + 1)])
+                current_tuple = tuple([words[j] for j in xrange(i, i + n_order)])
                 if current_tuple in successful_dict.keys():
-                    transition_prob = 1.0
-                    if current_tuple in unsuccessful_dict.keys():
-                        transition_prob = float(successful_dict[current_tuple]) / (successful_dict[current_tuple] +
-                                                                                   unsuccessful_dict[current_tuple])
-                    successful_prob *= transition_prob
+                    next_states = successful_dict[current_tuple]
+                    next_states_counter = Counter(next_states)
+                    transition_prob = -5.0
+                    if words[i + n_order] in next_states_counter:
+                        transition_prob = math.log(float(next_states_counter[words[i + n_order]]) / len(next_states))
+                    successful_prob += transition_prob
                 else:
-                    successful_prob *= 0.00001
+                    successful_prob -= 5.0
 
             # get probability of generating sequence from unsuccessful transcript
             words[len(words) - 1] = "400"
             for i in xrange(0, len(words) - n_order - 1):
-                current_tuple = tuple([words[j] for j in xrange(i, i + n_order + 1)])
+                current_tuple = tuple([words[j] for j in xrange(i, i + n_order)])
                 if current_tuple in unsuccessful_dict.keys():
-                    transition_prob = 1.0
-                    if current_tuple in successful_dict.keys():
-                        transition_prob = float(unsuccessful_dict[current_tuple])/(successful_dict[current_tuple] +
-                                                                                   unsuccessful_dict[current_tuple])
-                    unsuccessful_prob *= transition_prob
+                    next_states = unsuccessful_dict[current_tuple]
+                    next_states_counter = Counter(next_states)
+                    transition_prob = -5.0
+                    if words[i + n_order] in next_states_counter:
+                        transition_prob = math.log(float(next_states_counter[words[i + n_order]]) / len(next_states))
+                    unsuccessful_prob += transition_prob
                 else:
-                    unsuccessful_prob *= 0.00001
+                    unsuccessful_prob -= 5.0
 
             # classify sequence
             if (successful_prob - unsuccessful_prob) > 0.0:

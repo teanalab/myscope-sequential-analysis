@@ -299,8 +299,6 @@ def writeSampledSequences(X, y, codebook, outputdata_filename):
             if val > 0:
                 if val in int_to_code.keys():
                     seq.append(str(int_to_code[val]))
-                else:
-                    print "Error code: ", val
         seq.append(str(y[i]))
         f.write(",".join(seq) + "\n")
     f.close()
@@ -335,7 +333,7 @@ def createUnderOrOverSample(method, given_data, outputdata_filename, max_len, co
 
 #######################################################################
 # load transition dictionary
-def loadTransitionDictionary(training_filename, n_order, label):
+def loadDictionary(training_filename, n_order, label):
     transition_dict = {}
     with open(training_filename, "r") as file_stream:
         for line in file_stream:
@@ -351,4 +349,25 @@ def loadTransitionDictionary(training_filename, n_order, label):
                         transition_dict[current_tuple] += 1
                     else:
                         transition_dict[current_tuple] = 1
+    return transition_dict
+
+
+#######################################################################
+# load transition dictionary
+def loadTransitionDictionary(training_filename, n_order, label):
+    transition_dict = {}
+    with open(training_filename, "r") as file_stream:
+        for line in file_stream:
+            words = line.replace("\n", "").split(",")
+            actual_label = words[len(words) - 1]
+            if len(words) <= n_order:
+                continue
+
+            if label == actual_label:
+                for i in xrange(0, len(words) - n_order - 1):
+                    current_tuple = tuple([words[j] for j in xrange(i, i + n_order)])
+                    if current_tuple in transition_dict.keys():
+                        transition_dict[current_tuple].append(words[i + n_order])
+                    else:
+                        transition_dict[current_tuple] = [words[i + n_order]]
     return transition_dict
