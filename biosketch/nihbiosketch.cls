@@ -69,13 +69,12 @@
 
 \newcommand{\pgline}{\noindent\makebox[\linewidth]{\rule{\textwidth}{0.5pt}}\newline}
 
+\newcommand{\exline}{\noindent\makebox[\linewidth]{\rule{\textwidth}{0.5pt}}}
+
 \newcommand{\piinfo}
 {\pgline
 {\centering
-\textbf{BIOGRAPHICAL SKETCH}\\
-{\footnotesize
-Provide the following information for the Senior/key personnel and other significant contributors.\\
-Follow this format for each person.  \textbf{DO NOT EXCEED FIVE PAGES}.\\}}
+\textbf{BIOGRAPHICAL SKETCH}\\}
 \pgline
 NAME: \@name\\
 \pgline
@@ -83,7 +82,7 @@ eRA COMMONS USER NAME (credential, e.g., agency login): \@eracommons\\
 \pgline
 POSITION TITLE: \@position\\
 \pgline
-EDUCATION/TRAINING (\textit{Begin with baccalaureate or other initial professional education, such as nursing, include postdoctoral training and residency training if applicable. Add/delete rows as necessary.})\\}
+EDUCATION/TRAINING (\textit{Begin with baccalaureate or other initial professional education.})\\}
 
 \newcommand{\grantinfo}[6]
 {\begin{tabular}{@{}lll@{}}
@@ -100,10 +99,10 @@ EDUCATION/TRAINING (\textit{Begin with baccalaureate or other initial profession
 \rowfont[c]{}               % for the header only we want all the text centered
 INSTITUTION AND LOCATION & 
 DEGREE \newline (\textit{if applicable}) & 
-Completion Date MM/YYYY & 
+Completion Date \newline (\textit{or expected}) MM/YYYY & 
 FIELD OF STUDY\\
 \hline}
-{\end{tabu}\egroup}
+{\end{tabu}\egroup \newline \exline}
 
 \newenvironment{datetbl}
 {\tabulinesep=0mm
