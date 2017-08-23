@@ -86,7 +86,7 @@ def getHMMModel(n_states, n_observations, sequences, seq_lengths):
     emission_probability = emission_probability / n_observations
 
     # create model and set initial values
-    model = hmm.MultinomialHMM(n_components=n_states)
+    model = hmm.MultinomialHMM(n_components=n_states, random_state=42)
     model.startprob_ = start_probability
     model.transmat_ = transition_probability
     model.emissionprob_ = emission_probability
@@ -137,6 +137,7 @@ def getMacroAveragePerformance(actual, predicted):
 
     return accuracy, precision / 2, recall / 2, f_measure / 2
 
+
 #############################################################################################
 def getMicroAveragePerformance(actual, predicted):
     precision = 0.0
@@ -180,6 +181,7 @@ def getMicroAveragePerformance(actual, predicted):
 
     return accuracy, precision, recall, f_measure
 
+
 #############################################################################################
 def createTrainAndTestFile(data, kFolds, training_filename, testing_filename):
     foldSize = len(data) / kFolds
@@ -202,3 +204,17 @@ def readAllData(data_filename):
         for line in filestream:
             data.append(line)
     return data
+
+
+#############################################################################################
+def AUC(y_true, y_pred):
+    not_y_pred = np.logical_not(y_pred)
+    y_int1 = y_true * y_pred
+    y_int0 = np.logical_not(y_true) * not_y_pred
+    TP = np.sum(y_pred * y_int1)
+    FP = np.sum(y_pred) - TP
+    TN = np.sum(not_y_pred * y_int0)
+    FN = np.sum(not_y_pred) - TN
+    TPR = np.float(TP) / (TP + FN)
+    FPR = np.float(FP) / (FP + TN)
+    return ((1 + TPR - FPR) / 2)

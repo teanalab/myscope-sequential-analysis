@@ -4,7 +4,7 @@ import numpy
 import argparse
 from sklearn.model_selection import train_test_split
 from keras.models import Sequential
-from keras.layers import LSTM, Dense, Dropout
+from keras.layers import LSTM, Dense, Embedding, Dropout
 from keras.layers.convolutional import Conv1D
 from keras.layers.convolutional import MaxPooling1D
 from keras.regularizers import l1_l2
@@ -37,7 +37,6 @@ codebook_filename = args.codebook
 model_path = args.model_path
 
 codebook = utility.loadCodeBook(codebook_filename)
-print codebook
 X, y, seq_len = utility.readSequenceFromFile(data_filename, codebook)
 
 # test_X, test_y, max_len = utility.readSequenceFromFile(testing_filename, codebook, seq_len, False)
@@ -56,6 +55,7 @@ def getKFoldsResults(kFolds=10):
 
         # create and fit the model
         batch_size = 1
+
         model = Sequential()
         model.add(
             Conv1D(filters=32, kernel_size=3, padding='same', activation='relu', input_shape=(X_train.shape[1], 1)))

@@ -28,6 +28,7 @@ micro_results = []
 codebook = utility.loadCodeBook(codebook_filename)
 foldData, max_len = utility.createStartifiedFolds(codebook, kFolds)
 n_order = 2
+sampling = "under"
 
 for k in np.arange(0, kFolds):
     # get train and test data
