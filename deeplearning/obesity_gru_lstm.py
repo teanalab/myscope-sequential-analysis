@@ -30,7 +30,7 @@ parser.add_argument('--n_epoch', default=100, type=int, help='no. of epoch param
 parser.add_argument('--min_change', default=0.0015, type=float, help='minimum change parameter.')
 args = parser.parse_args()
 
-# Load up training data
+# Set arguments value
 codebook_filename = args.codebook
 hidden_units = args.hidden_units
 batch_size = args.batch_size
