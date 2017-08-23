@@ -26,6 +26,7 @@ mchain-python/data/
 mchain-python/test.txt
 mchain-python/train.txt
 hmm-python/data/
+split-data/data/
 hmm-python/test.txt
 hmm-python/train.txt
 deeplearning/under/
