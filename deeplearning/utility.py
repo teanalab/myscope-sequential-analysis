@@ -6,6 +6,11 @@ import random
 import operator
 from keras.utils import np_utils
 from keras.preprocessing.sequence import pad_sequences
+from imblearn.over_sampling import SMOTE
+from collections import Counter
+from imblearn.under_sampling import ClusterCentroids
+
+random.seed(42)
 
 ###################################################################
 # read codebook from file
@@ -113,6 +118,7 @@ def getMacroAveragePerformance(actual, predicted):
 
     return accuracy / 2, precision / 2, recall / 2, f_measure / 2
 
+
 ###################################################################
 # evaluate model with F1, Precision and Recall
 def getMicroAveragePerformance(actual, predicted):
@@ -157,13 +163,14 @@ def getMicroAveragePerformance(actual, predicted):
         if (local_precision + local_recall) > 0:
             local_f_measure = (float(2 * local_precision * local_recall) / (local_precision + local_recall))
 
-        precision += (local_precision*(float(tp + fn)/total_sample))
-        recall += (local_recall*(float(tp + fn)/total_sample))
-        f_measure += (local_f_measure*(float(tp + fn)/total_sample))
+        precision += (local_precision * (float(tp + fn) / total_sample))
+        recall += (local_recall * (float(tp + fn) / total_sample))
+        f_measure += (local_f_measure * (float(tp + fn) / total_sample))
 
         accuracy = (float(tp + tn) / (tp + fp + tn + fn))
 
     return accuracy, precision, recall, f_measure
+
 
 ###################################################################
 def denormalizeData(X, codebook):
@@ -232,50 +239,20 @@ def showResultsForTestData(model, codebook, training_filename, seq_len):
 
 
 ######################################################################
-# pre-process data from given text files
-def createSequence(rawFileLocation, codeMappingFile):
-    count_pos = 0
-    count_neg = 0
-    codebook_dict = getDictionaryForCodeBook(codeMappingFile)
+def getCodeMapping(dataFileLocation):
+    codebook_dict = {}
+    with open(dataFileLocation, "r") as filestream:
+        for line in filestream:
+            line = line.replace("\n", "").strip()
+            currentline = line.split(",")
+            for x in currentline:
+                if x in codebook_dict.keys():
+                    codebook_dict[x] += 1
+                else:
+                    codebook_dict[x] = 1
 
-    f = open("/home/mehedi/teana/data-source/seq-analysis/hmm/obesity-newfile/allsequence.txt", "w")
-    # codebook_dict = {}
-    for filename in os.listdir(rawFileLocation):
-        with open(rawFileLocation + filename, "r") as filestream:
-            seq = []
-            for line in filestream:
-                currentline = re.sub(r"\s+", "", line).split(",")
-                if len(currentline) > 1:
-                    code = currentline[1]
-                    if (code[1:-1] == 'CHT+') or (code[1:-1] == 'CML+') or (code[1:-2] == 'CHT+') or (
-                        code[1:-2] == 'CML+'):
-                        seq.append('500')
-                        if len(seq) > 2:
-                            count_pos += 1
-                            print seq
-                            f.write(",".join(seq) + "\n")
-                        seq = []
-                    elif (code[1:-1] == 'CHT-') or (code[1:-1] == 'CML-') or (code[1:-2] == 'CHT+') or (
-                        code[1:-2] == 'CML+'):
-                        seq.append('400')
-                        if len(seq) > 2:
-                            count_neg += 1
-                            print seq
-                            f.write(",".join(seq) + "\n")
-                        seq = []
-                    else:
-                        # seq.append(codebook_dict[code[1:-1]])
-                        if codebook_dict[code[1:-1]] == "PASS":
-                            # print filename, currentline
-                            a = 0
-                        else:
-                            # seq.append(code[1:-1])
-                            seq.append(codebook_dict[code[1:-1]])
-                            # codebook_dict[code[1:-1]] = 1
-    print "total positive sequences: ", count_pos, "total negative sequences: ", count_neg
-    print len(codebook_dict.keys())
-    f.close()
-    # sorted_map = sorted(codebook_dict.items(), key=operator.itemgetter(0))
+    sorted_map = sorted(codebook_dict.items(), key=operator.itemgetter(1))
+    print len(sorted_map)
     # f = open("/home/mehedi/teana/data-source/seq-analysis/codemap.txt", "w")
     # write all unique code to file
     # for key, val in sorted_map:
@@ -326,3 +303,113 @@ def writeBalancedData(inputFile, outputFile, sampleSize):
         if count >= sampleSize:
             break
     f.close()
+
+
+#######################################################################
+# create startified folds for cross validation
+def createStartifiedFolds(codebook, kFolds=10):
+    folds = []
+    success = []
+    unsuccess = []
+    max_len = 0
+    len_tmp = 0
+    code_to_int = dict((c, i) for i, c in enumerate(codebook))
+
+    with open("data/successful.txt", "r") as filestream:
+        for line in filestream:
+            len_tmp = len(line.split(","))
+            if len_tmp > max_len:
+                max_len = len_tmp
+            currentline = line.replace("\n", "").split(",")
+            seq = []
+            for s in currentline:
+                if s in code_to_int.keys():
+                    seq.append(int(code_to_int[s]))
+                else:
+                    seq.append(500)
+            success.append(seq)
+
+    random.shuffle(success)
+    with open("data/unsuccessful.txt", "r") as fstream:
+        for line in fstream:
+            len_tmp = len(line.split(","))
+            if len_tmp > max_len:
+                max_len = len_tmp
+            currentline = line.replace("\n", "").split(",")
+            seq = []
+            for s in currentline:
+                if s in code_to_int.keys():
+                    seq.append(int(code_to_int[s]))
+                else:
+                    seq.append(400)
+            unsuccess.append(seq)
+
+    random.shuffle(unsuccess)
+    for i in range(0, kFolds):
+        foldSize_succ = int(float(len(success)) / kFolds)
+        foldSize_unsucc = int(float(len(unsuccess)) / kFolds)
+        idx_succ = range(i * foldSize_succ, i * foldSize_succ + foldSize_succ)
+        random.shuffle(idx_succ)
+        idx_unsucc = range(i * foldSize_unsucc, i * foldSize_unsucc + foldSize_unsucc)
+        random.shuffle(idx_unsucc)
+        test = [unsuccess[index] for index in idx_unsucc] + [success[index] for index in idx_succ]
+        train = [unsuccess[index] for index in range(0, len(unsuccess)) if index not in idx_unsucc] + \
+                [success[index] for index in range(0, len(success)) if index not in idx_succ]
+        random.shuffle(test)
+        random.shuffle(train)
+        random.shuffle(test)
+        random.shuffle(train)
+        random.shuffle(test)
+        random.shuffle(train)
+        folds.append([test, train])
+    return folds, max_len
+
+
+###################################################################
+def writeSampledSequences(X, y, codebook, outputdata_filename):
+    data_sequence = []
+    int_to_code = dict((i, c) for i, c in enumerate(codebook))
+    for i in range(0, len(X)):
+        seq = []
+        for s in X[i]:
+            val = int(round(s))
+            if val > 0:
+                if val in int_to_code.keys():
+                    seq.append(str(int_to_code[val]))
+                else:
+                    print "Error code: ", val
+        seq.append(str(y[i]))
+        data_sequence.append(",".join(seq))
+
+    random.shuffle(data_sequence)
+    f = open(outputdata_filename, "w")
+    for sample in data_sequence:
+        f.write(sample + "\n")
+    f.close()
+
+
+#######################################################################
+# create startified folds for cross validation
+def createUnderOrOverSample(method, given_data, outputdata_filename, max_len, codebook):
+    dataX = []
+    dataY = []
+    for xx in given_data:
+        dataX.append(xx[0:-1])
+        dataY.append(xx[-1])
+
+    X = pad_sequences(dataX, maxlen=max_len, dtype='float32')
+    X_norm = X / (float(len(codebook)))
+    y_norm = numpy.array(dataY)
+
+    # perform over or under sampling
+    X_d = []
+    y_res = []
+    if method == "oversampling":
+        sm = SMOTE(kind='borderline2')
+        X_res, y_res = sm.fit_sample(X_norm, y_norm)
+    else:
+        sm = ClusterCentroids()
+        X_res, y_res = sm.fit_sample(X_norm, y_norm)
+
+    X_d = X_res * (float(len(codebook)))
+    writeSampledSequences(X_d, y_res, codebook, outputdata_filename)

@@ -28,3 +28,5 @@ mchain-python/train.txt
 hmm-python/data/
 hmm-python/test.txt
 hmm-python/train.txt
+deeplearning/under/
+deeplearning/over/
