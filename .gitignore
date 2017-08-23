@@ -15,6 +15,7 @@ out/
 hs_err_pid*
 .idea/
 mchain-python/data/
+hmm-python/data/
 *.h5
 
 *.aux

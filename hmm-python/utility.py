@@ -3,7 +3,10 @@ import random
 import re
 import operator
 from hmmlearn import hmm
-
+from keras.preprocessing.sequence import pad_sequences
+from imblearn.over_sampling import SMOTE
+from collections import Counter
+from imblearn.under_sampling import ClusterCentroids
 
 ###################################################################
 # read codebook from file
@@ -17,6 +20,7 @@ def loadCodeBook(codebook_filename):
 
 ###########################################################################################
 def loadCodeBookFromTrainingFile(fileLocation):
+    all_code_map = {}
     success_code_map = {}
     unsuccess_code_map = {}
     with open(fileLocation, "r") as filestream:
@@ -25,21 +29,28 @@ def loadCodeBookFromTrainingFile(fileLocation):
             if l[len(l) - 1] == "500":
                 for i in range(0, len(l) - 1):
                     success_code_map[l[i]] = l[i]
+		    all_code_map[l[i]] = l[i]
             elif l[len(l) - 1] == "400":
                 for i in range(0, len(l) - 1):
                     unsuccess_code_map[l[i]] = l[i]
+                    all_code_map[l[i]] = l[i]
 
     success_sorted_map = sorted(success_code_map.items(), key=operator.itemgetter(0))
     unsuccess_sorted_map = sorted(unsuccess_code_map.items(), key=operator.itemgetter(0))
+    all_sorted_map = sorted(all_code_map.items(), key=operator.itemgetter(0))
 
     success_map = []
     unsuccess_map = []
+    all_map = []
+    
+    for key, value in all_sorted_map:
+        all_map.append(key)
     for key, value in success_sorted_map:
         success_map.append(key)
     for key, value in unsuccess_sorted_map:
         unsuccess_map.append(key)
 
-    return success_map, unsuccess_map
+    return all_map, success_map, unsuccess_map
 
 
 ###########################################################################################
@@ -53,14 +64,14 @@ def loadData(fileLocation, codebook, flag):
         for line in filestream:
             l = re.sub(r"\s+", "", line).split(",")
             if (flag == 1 and l[len(l) - 1] == "500") or (flag == 0 and l[len(l) - 1] == "400"):
-                for i in range(0, len(l) - 1):
+                for i in range(0, len(l)-1):
                     seq.append([code_to_int[l[i]]])
                     map[l[i]] = l[i]
                 lengths.append(len(l) - 1)
                 seq_label.append(l[len(l) - 1])
             elif flag == 2:
                 var_len = 0
-                for i in range(0, len(l) - 1):
+                for i in range(0, len(l)-1):
                     if l[i] in code_to_int.keys():
                         seq.append([code_to_int[l[i]]])
                         map[l[i]] = l[i]
@@ -218,3 +229,102 @@ def AUC(y_true, y_pred):
     TPR = np.float(TP) / (TP + FN)
     FPR = np.float(FP) / (FP + TN)
     return ((1 + TPR - FPR) / 2)
+
+#######################################################################
+# create startified folds for cross validation
+def createStartifiedFolds(codebook, kFolds=10):
+    folds = []
+    success = []
+    unsuccess = []
+    max_len = 0
+    len_tmp = 0
+    code_to_int = dict((c, i + 1) for i, c in enumerate(codebook))
+
+    with open("data/successful.txt", "r") as filestream:
+        for line in filestream:
+            len_tmp = len(line.split(","))
+            if len_tmp > max_len:
+                max_len = len_tmp
+            currentline = line.replace("\n", "").split(",")
+            seq = []
+            for s in currentline:
+                if s in code_to_int.keys():
+                    seq.append(int(code_to_int[s]))
+                else:
+                    seq.append(500)
+            success.append(seq)
+
+    random.shuffle(success)
+    with open("data/unsuccessful.txt", "r") as fstream:
+        for line in fstream:
+            len_tmp = len(line.split(","))
+            if len_tmp > max_len:
+                max_len = len_tmp
+            currentline = line.replace("\n", "").split(",")
+            seq = []
+            for s in currentline:
+                if s in code_to_int.keys():
+                    seq.append(int(code_to_int[s]))
+                else:
+                    seq.append(400)
+            unsuccess.append(seq)
+
+    random.shuffle(unsuccess)
+    for i in range(0, kFolds):
+        foldSize_succ = int(float(len(success)) / kFolds)
+        foldSize_unsucc = int(float(len(unsuccess)) / kFolds)
+        idx_succ = range(i * foldSize_succ, i * foldSize_succ + foldSize_succ)
+        random.shuffle(idx_succ)
+        idx_unsucc = range(i * foldSize_unsucc, i * foldSize_unsucc + foldSize_unsucc)
+        random.shuffle(idx_unsucc)
+        test = [success[index] for index in idx_succ] + [unsuccess[index] for index in idx_unsucc]
+        train = [success[index] for index in range(0, len(success)) if index not in idx_succ] + \
+                [unsuccess[index] for index in range(0, len(unsuccess)) if index not in idx_unsucc]
+        random.shuffle(test)
+        random.shuffle(train)
+        folds.append([test, train])
+    return folds, max_len
+
+###################################################################
+def writeSampledSequences(X, y, codebook, outputdata_filename):
+    int_to_code = dict((i+1, c) for i, c in enumerate(codebook))
+    f = open(outputdata_filename, "w")
+    for i in range(0, len(X)):
+        seq = []
+        for s in X[i]:
+            val = int(round(s))
+            if val > 0:
+                if val in int_to_code.keys():
+                    seq.append(str(int_to_code[val]))
+                else:
+                    print "Error code: ", val
+        seq.append(str(y[i]))
+        f.write(",".join(seq) + "\n")
+    f.close()
+
+#######################################################################
+# create startified folds for cross validation
+def createUnderOrOverSample(method, given_data, outputdata_filename, max_len, codebook):
+    dataX = []
+    dataY = []
+    for xx in given_data:
+        dataX.append(xx[0:-1])
+        dataY.append(xx[-1])
+
+    X = pad_sequences(dataX, maxlen=max_len, dtype='float32')
+    X_norm = X / (float(len(codebook)))
+    y_norm = np.array(dataY)
+
+    # perform over or under sampling
+    X_d = []
+    y_res = []
+    if method == "oversampling":
+        sm = SMOTE(kind='borderline2')
+        X_res, y_res = sm.fit_sample(X_norm, y_norm)
+    else:
+        sm = ClusterCentroids()
+        X_res, y_res = sm.fit_sample(X_norm, y_norm)
+
+    X_d = X_res * (float(len(codebook)))
+    writeSampledSequences(X_d, y_res, codebook, outputdata_filename)
+
