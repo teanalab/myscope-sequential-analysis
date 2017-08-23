@@ -14,8 +14,6 @@ out/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 .idea/
-mchain-python/data/
-hmm-python/data/
 *.h5
 
 *.aux
@@ -23,3 +21,10 @@ hmm-python/data/
 *.out
 *.gz
 *.pyc
+
+mchain-python/data/
+mchain-python/test.txt
+mchain-python/train.txt
+hmm-python/data/
+hmm-python/test.txt
+hmm-python/train.txt
