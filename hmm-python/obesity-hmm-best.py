@@ -7,23 +7,20 @@ import random
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Train HMM Model.')
 parser.add_argument('--hidden_states', default=5, type=int, help='number of hidden states')
-parser.add_argument('--codebook',
-                    default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook_improve_new.txt',
-                    help='File location containing codebook.')
+parser.add_argument('--codebook', default='codebook.txt', help='File location containing codebook.')
 parser.add_argument('--sampling', default='over', type=str, help='dropout rate parameter.')
 
-args = parser.parse_args()
-
 ############################################################################################
-# Load up training data
+# Read parameters
+args = parser.parse_args()
 codebook_filename = args.codebook
 sampling = args.sampling
 hidden_states = args.hidden_states
+
+# initialize some variables
+kFolds = 10
 training_filename = "train.txt"
 testing_filename = "test.txt"
-
-# get results fro k folds
-kFolds = 10
 macro_results = []
 micro_results = []
 codebook = utility.loadCodeBook(codebook_filename)
