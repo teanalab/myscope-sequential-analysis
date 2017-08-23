@@ -318,7 +318,7 @@ def createUnderOrOverSample(method, given_data, outputdata_filename, max_len, co
     # perform over or under sampling
     X_d = []
     y_res = []
-    if method == "oversampling":
+    if method == "over":
         sm = SMOTE(kind='borderline2')
         X_res, y_res = sm.fit_sample(X_norm, y_norm)
     else:
