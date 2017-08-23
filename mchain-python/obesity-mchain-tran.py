@@ -10,7 +10,8 @@ from collections import Counter
 parser = argparse.ArgumentParser(description='Train Markov Model.')
 parser.add_argument('--codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook_improve_new.txt',
                     help='File location containing codebook.')
-parser.add_argument('--sampling', default='oversampling', type=str, help='dropout rate parameter.')
+parser.add_argument('--sampling', default='under', type=str, help='sampling parameter.')
+parser.add_argument('--order', default=1, type=int, help='order of the markov model.')
 
 args = parser.parse_args()
 
@@ -18,6 +19,7 @@ args = parser.parse_args()
 # Load up training data
 codebook_filename = args.codebook
 sampling = args.sampling
+n_order = args.order
 training_filename = "train.txt"
 testing_filename = "test.txt"
 
@@ -27,8 +29,7 @@ macro_results = []
 micro_results = []
 codebook = utility.loadCodeBook(codebook_filename)
 foldData, max_len = utility.createStartifiedFolds(codebook, kFolds)
-n_order = 2
-sampling = "under"
+
 
 for k in np.arange(0, kFolds):
     # get train and test data
@@ -115,7 +116,7 @@ for k in np.arange(0, kFolds):
 print "\nMacro average results: ", (np.mean(macro_results, axis=0))
 print "\nMicro average results: ", (np.mean(micro_results, axis=0))
 
-f = open("best.txt", "a")
+f = open("results.txt", "a")
 f.write(str(n_order) + ",")
 for x in np.mean(macro_results, axis=0):
     f.write(str(x) + ",")
