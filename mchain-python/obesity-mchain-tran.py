@@ -8,9 +8,8 @@ from collections import Counter
 #############################################################################################
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Train Markov Model.')
-parser.add_argument('--codebook', default='/home/mehedi/teana/data-source/seq-analysis/deepLearn/codebook_improve_new.txt',
-                    help='File location containing codebook.')
-parser.add_argument('--sampling', default='under', type=str, help='sampling parameter.')
+parser.add_argument('--codebook', default='codebook.txt', help='File location containing codebook.')
+parser.add_argument('--sampling', default='over', type=str, help='sampling parameter.')
 parser.add_argument('--order', default=1, type=int, help='order of the markov model.')
 
 args = parser.parse_args()
