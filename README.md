@@ -46,16 +46,19 @@ These instructions will get you a copy of the project up and running on your loc
 The following python packages are required to run our program:
 * [keras](https://keras.io/) - The Python Deep Learning library
 * [TensorFlow](https://maven.apache.org/) - Used TensorFlow in backend:
-* [hmmlearn](https://hmmlearn.readthedocs.io/en/latest/) - Simple algorithms and models to learn HMMs (Hidden Markov Models) in Python,
+* [hmmlearn](https://hmmlearn.readthedocs.io/en/latest/) - Simple algorithms and models to learn HMMs (Hidden Markov Models) in Python.
 * [imblearn](http://contrib.scikit-learn.org/imbalanced-learn/stable/api.html#module-imblearn.over_sampling) - API for over and under sampling.
-* [scikit-learn](https://pypi.python.org/pypi/scikit-learn) - A set of python modules for machine learning and data mining
+* [scikit-learn](https://pypi.python.org/pypi/scikit-learn) - A set of python modules for machine learning and data mining.
 
 
 ### Running the tests
 
-Explain how to run the automated tests for this system
+For running the test program, we need to run one python file containing _obesity_ as prefix. You will find that python file in each folder of the corresponding subproject directory. There are several command line parameters are required to execute the program. However, I set the default value for each of the parameters. 
 
+```
+For example, to run HMM with oversampling and 10 folds cross-validation, you have to go to the hmm-python directory and then run the following command: _(python obesity-hmm-best.py --sampling 'over' --folds 10)_   
 
+```
 
 ## Authors
 
