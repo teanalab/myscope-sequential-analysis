@@ -1,17 +1,31 @@
 # Sequence Classification of MYSCOPE code
 
-One Paragraph of project description goes here
+Predicting Success of Clinical Interviews via Deep Learning and Probabilistic Modeling of Patient-Provider Communication Sequences
 
 ## Methods
 
 * Markov Chain
 * Hidden Markov Model
 * Recurrent Neural Network (RNN)
-    * LSTM
-    * GRU
+    * Long Short Term Memory (LSTM)
+    * Gated Recurrent Unit (GRU)
 
 ## Results
 
+### When Undersampling is used for data balancing
+
+Method | Accuracy | Precision | Recall | F1-Score
+------------------ | ------------- | ------------ | ------------- | ------------
+Markov Chain 1st Order | 0.7013 | 0.7037 | 0.7013 | 0.7003
+Markov Chain 2nd Order | 0.5905 | 0.5917 | 0.5905 | 0.5890
+HMM | 0.5439 | 0.5778 | 0.5439 | 0.4865
+LSTM | 0.8770 | 0.8812 | 0.8770 | 0.8766
+LSTM-TR | 0.8824 | 0.8890 | 0.8824 | 0.8817
+GRU | 0.8844 | 0.8897 | 0.8844 | 0.8840
+GRU-TR | **0.8858** | **0.8917** | **0.8858** | **0.8853**
+
+
+### When Oversampling is used for data balancing
 
 ## Getting Started
 
