@@ -37,6 +37,5 @@ hmm-python/train.txt
 deeplearning/under/
 deeplearning/over/
 
-split-data/data/
 split-data/under/
 split-data/over/

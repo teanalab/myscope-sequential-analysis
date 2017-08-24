@@ -67,6 +67,8 @@ Similarly, for deep learning method
 python obesity_gru_lstm.py --sampling 'over' --folds 10 --min_change 0.0015
 ```
 
+**N.B:** data folder is only given in data-splitter folder. You need to create your own data sets (over and under sampling) for the execution of each subproject.  
+
 ## Authors
 
 * **[Mehedi Hasan](https://www.researchgate.net/profile/Mehedi_Hasan33)** - *Department of Computer Science at Wayne State University*
