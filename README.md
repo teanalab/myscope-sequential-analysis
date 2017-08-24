@@ -12,7 +12,7 @@ Predicting Success of Clinical Interviews via Deep Learning and Probabilistic Mo
 
 ## Results
 
-### When Undersampling is used for data balancing
+* When Undersampling is used for data balancing
 
 Method | Accuracy | Precision | Recall | F1-Score
 ------------------ | ------------- | ------------ | ------------- | ------------
@@ -25,7 +25,17 @@ GRU | 0.8844 | 0.8897 | 0.8844 | 0.8840
 GRU-TR | **0.8858** | **0.8917** | **0.8858** | **0.8853**
 
 
-### When Oversampling is used for data balancing
+* When Oversampling is used for data balancing
+
+Method | Accuracy | Precision | Recall | F1-Score
+------------------ | ------------- | ------------ | ------------- | ------------
+Markov Chain 1st Order | 0.7930 | 0.8127 | 0.7930 | 0.7896
+Markov Chain 2nd Order | 0.7325 | 0.7461 | 0.7325 | 0.7288
+HMM | 0.7763 | 0.8062 | 0.7763 | 0.7706
+LSTM | 0.8703 | 0.8782 | 0.8703 | 0.8696
+LSTM-TR | 0.8713 | 0.8789 | 0.8713 | 0.8706
+GRU | 0.8711 | 0.8785 | 0.8711 | 0.8705
+GRU-TR | **0.8722** | **0.8790** | **0.8722** | **0.8716**
 
 ## Getting Started
 
