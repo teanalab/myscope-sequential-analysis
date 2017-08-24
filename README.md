@@ -55,9 +55,9 @@ The following python packages are required to run our program:
 
 For running the test program, we need to run one python file containing _obesity_ as prefix. You will find that python file in each folder of the corresponding subproject directory. There are several command line parameters are required to execute the program. However, I set the default value for each of the parameters. 
 
+For example, to run HMM with oversampling and 10 folds cross-validation, you have to go to the hmm-python directory and then run the following command: 
 ```
-For example, to run HMM with oversampling and 10 folds cross-validation, you have to go to the hmm-python directory and then run the following command: _(python obesity-hmm-best.py --sampling 'over' --folds 10)_   
-
+python obesity-hmm-best.py --sampling 'over' --folds 10   
 ```
 
 ## Authors
