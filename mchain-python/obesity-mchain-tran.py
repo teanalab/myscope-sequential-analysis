@@ -1,3 +1,9 @@
+#**************************
+# Author: Md Mehedi Hsan  *
+# Wayne State University  *
+# email: mehedi@wayne.edu *
+#**************************
+
 import numpy as np
 import utility
 import argparse
@@ -5,23 +11,23 @@ import random
 import math
 from collections import Counter
 
-#############################################################################################
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Train Markov Model.')
+parser.add_argument('--folds', default=10, type=int, help='k-folds parameter.')
+parser.add_argument('--order', default=1, type=int, help='order of the markov model.')
 parser.add_argument('--codebook', default='codebook.txt', help='File location containing codebook.')
 parser.add_argument('--sampling', default='over', type=str, help='sampling parameter.')
-parser.add_argument('--order', default=1, type=int, help='order of the markov model.')
 
-############################################################################################
+
 # Read parameters
 args = parser.parse_args()
 codebook_filename = args.codebook
+kFolds = args.folds
 sampling = args.sampling
 n_order = args.order
 
 
 # get results fro k folds
-kFolds = 10
 macro_results = []
 micro_results = []
 codebook = utility.loadCodeBook(codebook_filename)
@@ -94,7 +100,7 @@ for k in np.arange(0, kFolds):
                 prediction_labels.append("400")
 
     # store results in macro average
-        prediction_labels = np.array(prediction_labels)
+    prediction_labels = np.array(prediction_labels)
     accuracy, precision, recall, f_measure = utility.getMacroAveragePerformance(seq_labels, prediction_labels)
     print "\nResults for fold", (
         k + 1), ": Accuracy:", accuracy, "Precision:", precision, "Recall:", recall, "F1:", f_measure
@@ -108,10 +114,11 @@ for k in np.arange(0, kFolds):
     fold_result = [k, accuracy, precision, recall, f_measure]
     micro_results.append(fold_result)
 
-############################################################################################
+# Print micro and macro averaged results
 print "\nMacro average results: ", (np.mean(macro_results, axis=0))
 print "\nMicro average results: ", (np.mean(micro_results, axis=0))
 
+# Write results into file
 f = open("results.txt", "a")
 f.write(str(n_order) + ",")
 for x in np.mean(macro_results, axis=0):
