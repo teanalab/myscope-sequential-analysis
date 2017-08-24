@@ -39,12 +39,17 @@ GRU-TR | **0.8722** | **0.8790** | **0.8722** | **0.8716**
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for testing purposes. See 'Running the tests' notes on how to run the project on your local system.
+Download or clone the project from our Github repository. To run our models, several python packages are required. See the _prerequisites_ section for details. See _Running the tests_ notes on how to run the project on your local system.
 
 ### Prerequisites
 
 The following python packages are required to run our program:
 * [keras](https://keras.io/) - The Python Deep Learning library
+    * Keras uses the following dependencies:
+        * numpy, scipy
+        * yaml
+        * HDF5 and h5py (optional, required if you use model saving/loading functions)
+        * Optional but recommended if you use CNNs: cuDNN.
 * [TensorFlow](https://maven.apache.org/) - Used TensorFlow in backend:
 * [hmmlearn](https://hmmlearn.readthedocs.io/en/latest/) - Simple algorithms and models to learn HMMs (Hidden Markov Models) in Python.
 * [imblearn](http://contrib.scikit-learn.org/imbalanced-learn/stable/api.html#module-imblearn.over_sampling) - API for over and under sampling.
