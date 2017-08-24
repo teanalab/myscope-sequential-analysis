@@ -1,4 +1,4 @@
-# Sequence Classification of MYSCOPE code
+# Sequence Classification of Motivation Interviews
 
 Predicting Success of Clinical Interviews via Deep Learning and Probabilistic Modeling of Patient-Provider Communication Sequences
 
