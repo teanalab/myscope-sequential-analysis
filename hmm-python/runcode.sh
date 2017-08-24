@@ -1,5 +1,5 @@
 
 for (( i=1; i <= 60; ++i ))
 do
-    python obesity-hmm-best.py
+    python obesity-hmm.py
 done
