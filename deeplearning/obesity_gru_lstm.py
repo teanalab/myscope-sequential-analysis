@@ -19,6 +19,7 @@ from sklearn.metrics import accuracy_score
 parser = argparse.ArgumentParser(description='Train RNN Model.')
 parser.add_argument('--codebook', default='codebook.txt',
                     help='File location containing codebook or vocabulary.')
+parser.add_argument('--folds', default=10, type=int, help='k-folds parameter.')
 parser.add_argument('--hidden_units', default=20, type=int, help='no. of hidden units in hidden layer.')
 parser.add_argument('--batch_size', default=4, type=int, help='batch size of the training data.')
 parser.add_argument('--embed_dimension', default=45, type=int, help='embedding dimension parameter.')
@@ -32,6 +33,7 @@ args = parser.parse_args()
 
 # Set arguments value
 codebook_filename = args.codebook
+kFolds = args.folds
 hidden_units = args.hidden_units
 batch_size = args.batch_size
 embed_dimension = args.embed_dimension
@@ -234,6 +236,6 @@ def getKFoldsResults(kFolds=10):
 
 
 # Run the model and print kFolds result
-macro_results, micro_results = getKFoldsResults(kFolds=10)
+macro_results, micro_results = getKFoldsResults(kFolds)
 print "Macro results: ", (np.mean(macro_results, axis=0))
 print "Micro results: ", (np.mean(micro_results, axis=0))
