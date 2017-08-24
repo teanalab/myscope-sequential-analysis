@@ -4,11 +4,11 @@ One Paragraph of project description goes here
 
 ## Methods
 
-* **Markov Chain**
-* **Hidden Markov Model**
-* **Recurrent Neural Network (RNN)**
-* LSTM
-* GRU
+* Markov Chain
+* Hidden Markov Model
+* Recurrent Neural Network (RNN)
+    * LSTM
+    * GRU
 
 ## Results
 
