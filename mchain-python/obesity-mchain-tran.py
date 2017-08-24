@@ -12,28 +12,25 @@ parser.add_argument('--codebook', default='codebook.txt', help='File location co
 parser.add_argument('--sampling', default='over', type=str, help='sampling parameter.')
 parser.add_argument('--order', default=1, type=int, help='order of the markov model.')
 
-args = parser.parse_args()
-
 ############################################################################################
-# Load up training data
+# Read parameters
+args = parser.parse_args()
 codebook_filename = args.codebook
 sampling = args.sampling
 n_order = args.order
-training_filename = "train.txt"
-testing_filename = "test.txt"
+
 
 # get results fro k folds
 kFolds = 10
 macro_results = []
 micro_results = []
 codebook = utility.loadCodeBook(codebook_filename)
-foldData, max_len = utility.createStartifiedFolds(codebook, kFolds)
 
 
 for k in np.arange(0, kFolds):
     # get train and test data
-    utility.createUnderOrOverSample(sampling, foldData[k][0], testing_filename, max_len, codebook)
-    utility.createUnderOrOverSample(sampling, foldData[k][1], training_filename, max_len, codebook)
+    training_filename = sampling + "/folds/fold" + str(k + 1) + "/train.txt"
+    testing_filename = sampling + "/folds/fold" + str(k + 1) + "/test.txt"
 
     # set dictionary for successful sequences
     successful_dict = utility.loadTransitionDictionary(training_filename, n_order, "500")

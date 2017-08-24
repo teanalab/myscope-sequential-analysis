@@ -24,12 +24,11 @@ testing_filename = "test.txt"
 macro_results = []
 micro_results = []
 codebook = utility.loadCodeBook(codebook_filename)
-foldData, max_len = utility.createStartifiedFolds(codebook, kFolds)
 
 for k in np.arange(0, kFolds):
     # get train and test data
-    utility.createUnderOrOverSample(sampling, foldData[k][0], testing_filename, max_len, codebook)
-    utility.createUnderOrOverSample(sampling, foldData[k][1], training_filename, max_len, codebook)
+    training_filename = sampling + "/folds/fold" + str(k + 1) + "/train.txt"
+    testing_filename = sampling + "/folds/fold" + str(k + 1) + "/test.txt"
 
     # determine codebook size and number of hidden states
     all_codebook, success_codebook, unsuccess_codebook = utility.loadCodeBookFromTrainingFile(training_filename)

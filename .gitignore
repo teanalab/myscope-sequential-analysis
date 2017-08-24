@@ -23,10 +23,14 @@ hs_err_pid*
 *.pyc
 
 mchain-python/data/
+mchain-python/under/
+mchain-python/over/
 mchain-python/test.txt
 mchain-python/train.txt
 
 hmm-python/data/
+hmm-python/under/
+hmm-python/over/
 hmm-python/test.txt
 hmm-python/train.txt
 
@@ -34,5 +38,5 @@ deeplearning/under/
 deeplearning/over/
 
 split-data/data/
-split-data/under
-split-data/over
+split-data/under/
+split-data/over/
