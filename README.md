@@ -1,4 +1,4 @@
-# Sequence Classification of Motivation Interviews
+# Sequence Classification of Motivational Interviews
 
 Predicting Success of Clinical Interviews via Deep Learning and Probabilistic Modeling of Patient-Provider Communication Sequences
 
