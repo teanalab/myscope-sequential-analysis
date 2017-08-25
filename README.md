@@ -5,10 +5,16 @@ Predicting Success of Clinical Interviews via Deep Learning and Probabilistic Mo
 ## Methods
 
 * Markov Chain
+    * 1st order
+    * 2nd order
 * Hidden Markov Model
 * Recurrent Neural Network (RNN)
     * Long Short Term Memory (LSTM)
+       * Vanilla LSTM
+       * LSTM with minimized loss at each step
     * Gated Recurrent Unit (GRU)
+       * Vanilla GRU
+       * GRU with minimized loss at each step
 
 ## Results
 
