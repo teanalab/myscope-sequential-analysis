@@ -64,7 +64,7 @@ python obesity-hmm.py --sampling 'over' --folds 10
 ```
 Similarly, for deep learning method
 ```
-python obesity_gru_lstm.py --sampling 'over' --folds 10 --min_change 0.0015
+python obesity-gru-lstm.py --sampling 'over' --folds 10 --min_change 0.0015
 ```
 
 **N.B:** data folder is only given in split-data folder. You need to create your own data sets (over and under sampling) for the execution of each subproject.  
