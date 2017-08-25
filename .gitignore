@@ -18,8 +18,9 @@ hs_err_pid*
 
 *.aux
 *.log
-*.out
+*.blg
 *.gz
+*.out
 *.pyc
 
 mchain-python/data/
