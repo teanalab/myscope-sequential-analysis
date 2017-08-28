@@ -119,6 +119,17 @@ Eide H, Quera V, Graugaard P, Finset A.
   concern: applying sequence analysis to RIAS.
 \newblock Social Science \& Medicine. 2004;59(1):145--155.
 
+\bibitem{chawla2002smote}
+Chawla NV, Bowyer KW, Hall LO, Kegelmeyer WP.
+\newblock SMOTE: synthetic minority over-sampling technique.
+\newblock Journal of artificial intelligence research. 2002;16:321--357.
+
+\bibitem{nguyen2011borderline}
+Nguyen HM, Cooper EW, Kamei K.
+\newblock Borderline over-sampling for imbalanced data classification.
+\newblock International Journal of Knowledge Engineering and Soft Data
+  Paradigms. 2011;3(1):4--21.
+
 \bibitem{mutsam2016maximum}
 Mutsam N, Pernkopf F.
 \newblock Maximum margin hidden Markov models for sequence classification.
