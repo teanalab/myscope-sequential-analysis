@@ -70,7 +70,7 @@ Annotation  & Description & Speaker & Text \\\hline
 
 Generally, a sequence is a temporally ordered set of events. In this study, an event is a behavior code that also has a symbolic representation, such as 117 $LUP+$ (low uptake, positive), 331 $OQ-ECT+$ (open-ended question, elicit change talk positive), etc.  Given a sequence of behavior codes $S_i = \{c_1, c_2,...,c_n\}$ representing patient-provider communication exchanges during some part of a motivational interview, the task of predicting interview success can be viewed as sequence classification. Given a set of class labels $L = \{l_1, l_2,...,l_m\}$ (in our case, the labels are ``successful'' and ``unsuccessful'' motivational interview), a sequence classifier $C$ learns a function $S_i \to l_i, l_i \in L$ that maps a sequence $S_i$ into a class label $l_i \in L$.
 
-Our proposed prediction method consists of two steps. In the first step, we model successful and unsuccessful patient-provider interactions using first- and second-order Markov Chain (MC) and Hidden Markov Model (HMM), which are popular probabilistic models for discrete observation sequences with finite vocabulary. Although HMM was originally developed for speech recognition \cite{rabiner1989tutorial}, it is one of the most widely used methods for sequence modeling \cite{mutsam2016maximum, eickeler1998hidden, srivastava2007hmm, won2004training, chai2001folk}.
+Our proposed baseline prediction method consists of two steps. In the first step, we model successful and unsuccessful patient-provider interactions using first- and second-order Markov Chain (MC) and Hidden Markov Model (HMM), which are popular probabilistic models for discrete observation sequences with finite vocabulary. In the second step, we classified each test sequence based on the maximum likelihood of generating that sequence from each model. Although HMM was originally developed for speech recognition \cite{rabiner1989tutorial}, it is one of the most widely used methods for sequence modeling \cite{mutsam2016maximum, eickeler1998hidden, srivastava2007hmm, won2004training, chai2001folk}. The latest advances in deep learning technologis shows that deep learning, in particular RNNs, provide better results than conventional machine learning methods for the task of sequence classification. In our experiment, we also employed two especial variant of RNN models: long short-term memory (LSTM) and gated recurrent unit (GRU).
 
 \textbf {Markov Chain (MC)} is a stochastic model for randomly changing systems, which assumes that the next state of a system only depends on its current state and not on its past states (Markov property). Generally, this assumption enables reasoning and computation with the models that would otherwise be intractable. For the sequential analysis, we built two Markov models $M$ and $\overline{M}$ summarizing provider strategies and patient responses in case of successful ($M$) and unsuccessful ($\overline{M}$) motivational interviews. A Markov model $M$ can be represented as a weighted directed graph $G = (V, E, p)$, in which:
 
@@ -97,8 +97,7 @@ In the second step, we quantify the likelihood of success of a given motivationa
 p(S\rightarrow CML+) = \log\left(\frac{P_M(S)}{P_{\overline M}(S)}\right)= \sum_{i=2}^N \log p_M(c_i|c_{i-1})-\sum_{i=2}^N \log p_{\overline M}(c_i|c_{i-1})\label{eq:class}
 \end{equation}
 
-If $p(S\rightarrow CML+) > \delta $, where $\delta$ is an empirically determined threshold, the interview is predicted to result in positive change talk or commitment language. Tuning the proposed method on the training data involves experimentally determining the value of $\delta$, which results in the highest prediction F-measure with lower bias. Figure~\ref{fig:delta} illustrates the performance of Markov Chain-based prediction method by varying the value of $\delta$. As can be seen from Figure~\ref{fig:delta}, F-measure varies insignificantly, when $\delta $ is between -5 to -1, due to possible bias. However, F-score sharply decreases after $\delta = -0.9$. Thus, -0.9 is the optimal value of $\delta $, where F-measure is the highest with lower bias. 
-
+If $p(S\rightarrow CML+) > 0 $, the interview is predicted to result in positive change talk or commitment language. 
 
 The Markov model we have discussed so far is referred to as the first-order MC, since it only considers immediately preceding behavior code when computing the state transition probabilities. A generalization of the first-order MC is the $k^{th}$ order MC, in which the transition probability to a particular state (symbol) $x_i$ is computed by looking at the k preceding states (symbols). Thus, $k^{th}$ order Markov chain will have $N^{k}$ states each associated with a sequence of k symbols. In our experiment, we also used second order Markov model. Hence, our model has $N^2$ states with transition probability matrix of size $N^2 \times N$.  
 
@@ -112,7 +111,7 @@ The Markov model we have discussed so far is referred to as the first-order MC, 
 \item $\pi$ is the initial state distribution vector $\pi = \{\pi_i\}$
 \end{itemize}
 
-We exclude the structure parameters M and N to designate HMM using a compact notation: $\lambda = (A, B, \pi)$. The key difference between HMM and MC is that HMM requires specifying the number of hidden states as a model parameter and then the model deduces a sequence of hidden states that best explains the observations along with state transition probabilities and distributions of observation symbols for each state. The Baum-Welch algorithm was used to estimate the parameters of HMMs for successful and unsuccessful interviews using the corresponding training set, while the Viterbi algorithm was used to determine the most likely sequence of hidden states for a given sequence of observations. After assignment of hidden states, the log-likelihood of successful outcome can be estimated using Eq.~\ref{eq:class}. As in the case of MC, we also experimented with second-order HMM.
+We exclude the structure parameters M and N to designate HMM using a compact notation: $\lambda = (A, B, \pi)$. The key difference between HMM and MC is that HMM requires specifying the number of hidden states as a model parameter and then the model deduces a sequence of hidden states that best explains the observations along with state transition probabilities and distributions of observation symbols for each state. The Baum-Welch algorithm was used to estimate the parameters of HMMs for successful and unsuccessful interviews using the corresponding training set, while the Viterbi algorithm was used to determine the most likely sequence of hidden states for a given sequence of observations. After assignment of hidden states, the log-likelihood of successful outcome can be estimated using Eq.~\ref{eq:class}.
 
 \textbf {Recurrent Neural Networks (RNNs)} are a type of Neural Network where the hidden state of one time step is computed by combining the current input with the hidden state of the previous time step....   
 
@@ -164,41 +163,41 @@ Table~\ref{tab:result_over_sampled} summarizes predictive performance of the pro
   \end{tabular}
 \end{table}
 
-\subsection*{\textit{Impact of hidden states}}
-While MC is a non-parametric method, HMM has an important parameter, the number of hidden states. A natural question is how does this parameter affect the performance of HMM-based prediction  method. Figure~\ref{fig:hidden-states} provides an answer to this question by illustrating the performance of the proposed method using HMMs of different order in terms of F-measure on different types of sequences. As follows from this Figure, in general, the number of states does not significantly impact the classification performance. All four models show their best performance when the number of states is between 4 and 8. 
-
-Tables~\ref{tab:emission_matrix_s} and \ref{tab:emission_matrix_u} show patient-provider communication (PPC) codes with the highest probability in emission probability distributions associated with different states of HMMs trained on successful and unsuccessful interviews.\\
-
-\begin{figure}[!htb]
-    \centering
-    \includegraphics[width=0.70\textwidth]{figures/hidden-states.png}
-    \caption{\textbf{Performance of the proposed method using HMMs of different order by varying the number of hidden states}.}
-    \label{fig:hidden-states}
-\end{figure}
-
-\begin{table}[!htb]
-\centering
-\caption{PPC codes with the highest probability associated with different states of an HMM trained on successful interviews.}
-\label{tab:emission_matrix_s}
-  \begin{tabular}{|l|l|}
-  \hline
-   \textbf{State} & \textbf{Most likely PPC codes} \\\hline 
-1 & SS, EA, R-CT+, OQ-ECT+, SUM-S, AF, R-CML+ \\\hline           
-2 & LUP+, EA, OQ-ECT+, OQ-ECML+  \\\hline    
-  \end{tabular}
-\end{table} 
-
-\begin{table}[!htb]
-\centering
-\caption{PPC codes with the highest probability associated with different states of an HMM trained on unsuccessful interviews.}
-\label{tab:emission_matrix_u}
-  \begin{tabular}{|l|l|}
-  \hline
-   \textbf{State} & \textbf{Most likely PPC codes} \\\hline     
-1 & OQ-TBN, EA, R-CT+, AR, SUM-S, RBA-S, G-INFO+, R-CML+, OQ-ECT- \\\hline
-2 & LUP+, OQ-ECT+, G-INFO+, CQ-EF, CHT-, HUP-O \\\hline
-  \end{tabular}
-\end{table} 
+%\subsection*{\textit{Impact of hidden states}}
+%While MC is a non-parametric method, HMM has an important parameter, the number of hidden states. A natural question is how does this parameter affect the performance of HMM-based prediction  method. Figure~\ref{fig:hidden-states} provides an answer to this question by illustrating the performance of the proposed method using HMMs of different order in terms of F-measure on different types of sequences. As follows from this Figure, in general, the number of states does not significantly impact the classification performance. All four models show their best performance when the number of states is between 4 and 8. 
+%
+%Tables~\ref{tab:emission_matrix_s} and \ref{tab:emission_matrix_u} show patient-provider communication (PPC) codes with the highest probability in emission probability distributions associated with different states of HMMs trained on successful and unsuccessful interviews.\\
+%
+%\begin{figure}[!htb]
+%    \centering
+%    \includegraphics[width=0.70\textwidth]{figures/hidden-states.png}
+%    \caption{\textbf{Performance of the proposed method using HMMs of different order by varying the number of hidden states}.}
+%    \label{fig:hidden-states}
+%\end{figure}
+%
+%\begin{table}[!htb]
+%\centering
+%\caption{PPC codes with the highest probability associated with different states of an HMM trained on successful interviews.}
+%\label{tab:emission_matrix_s}
+%  \begin{tabular}{|l|l|}
+%  \hline
+%   \textbf{State} & \textbf{Most likely PPC codes} \\\hline 
+%1 & SS, EA, R-CT+, OQ-ECT+, SUM-S, AF, R-CML+ \\\hline           
+%2 & LUP+, EA, OQ-ECT+, OQ-ECML+  \\\hline    
+%  \end{tabular}
+%\end{table} 
+%
+%\begin{table}[!htb]
+%\centering
+%\caption{PPC codes with the highest probability associated with different states of an HMM trained on unsuccessful interviews.}
+%\label{tab:emission_matrix_u}
+%  \begin{tabular}{|l|l|}
+%  \hline
+%   \textbf{State} & \textbf{Most likely PPC codes} \\\hline     
+%1 & OQ-TBN, EA, R-CT+, AR, SUM-S, RBA-S, G-INFO+, R-CML+, OQ-ECT- \\\hline
+%2 & LUP+, OQ-ECT+, G-INFO+, CQ-EF, CHT-, HUP-O \\\hline
+%  \end{tabular}
+%\end{table} 
 
 \subsection*{\textit{Common patterns}}
 Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. It can be seen that most successful patterns start with a summary of the discussion or open-ended/close-ended question. After that, if adolescents express positive change talk, the counselor immediately reflects on that to reinforce adolescent's intrinsic motivation about behavior change. On the other hand, providing information can lead to negative change talk, even in the cases when adolescents were showing positive tendency in their previous communication. This observation can be explained by adolescents quickly loosing focus when provided with general information that undermines their motivation. Analyzing such cases will allow the counselors to determine the general information that can be provided during the interviews. \\
