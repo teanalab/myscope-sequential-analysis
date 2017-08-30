@@ -67,42 +67,32 @@ Annotation  & Description & Speaker & Text \\\hline
 \end{table}  
 
 \subsection*{\textit{Prediction method}}
-
 Generally, a sequence is a temporally ordered set of events. In this study, an event is a behavior code that also has a symbolic representation, such as 117 $LUP+$ (low uptake, positive), 331 $OQ-ECT+$ (open-ended question, elicit change talk positive), etc.  Given a sequence of behavior codes $S_i = \{c_1, c_2,...,c_n\}$ representing patient-provider communication exchanges during some part of a motivational interview, the task of predicting interview success can be viewed as sequence classification. Given a set of class labels $L = \{l_1, l_2,...,l_m\}$ (in our case, the labels are ``successful'' and ``unsuccessful'' motivational interview), a sequence classifier $C$ learns a function $S_i \to l_i, l_i \in L$ that maps a sequence $S_i$ into a class label $l_i \in L$.
 
 Our proposed baseline prediction method consists of two steps. In the first step, we model successful and unsuccessful patient-provider interactions using first- and second-order Markov Chain (MC) and Hidden Markov Model (HMM), which are popular probabilistic models for discrete observation sequences with finite vocabulary. In the second step, we classified each test sequence based on the maximum likelihood of generating that sequence from each model. Although HMM was originally developed for speech recognition \cite{rabiner1989tutorial}, it is one of the most widely used methods for sequence modeling \cite{mutsam2016maximum, eickeler1998hidden, srivastava2007hmm, won2004training, chai2001folk}. The latest advances in deep learning technologis shows that deep learning, in particular RNNs, provide better results than conventional machine learning methods for the task of sequence classification. In our experiment, we also employed two especial variant of RNN models: long short-term memory (LSTM) and gated recurrent unit (GRU).
 
 \textbf {Markov Chain (MC)} is a stochastic model for randomly changing systems, which assumes that the next state of a system only depends on its current state and not on its past states (Markov property). Generally, this assumption enables reasoning and computation with the models that would otherwise be intractable. For the sequential analysis, we built two Markov models $M$ and $\overline{M}$ summarizing provider strategies and patient responses in case of successful ($M$) and unsuccessful ($\overline{M}$) motivational interviews. A Markov model $M$ can be represented as a weighted directed graph $G = (V, E, p)$, in which:
-
 \begin{itemize}
 \item $V = \{CML+, CHT+, CHT-, AMB-, BLT, LUP+, LUP-, HUP-W, ...\}$ is a set of vertices, consisting of adolescent and counselor MI behavior codes;
 \item $E \subseteq V \times V$ is a set of edges corresponding to posssible transitions from one MI behavior code to the other in a sequence;
 \item $p_M:E\rightarrow[0...1]$ is a function that assigns probability $p(c_i|c_j)$ to an edge between the MI behavior codes $c_i$ and $c_j$ based on maximum likelihood estimator:
-
 \begin{equation}
 P_M(c_j|c_i) = \frac{n_{c_i,c_j}}{n_{c_i}}
 \end{equation}
-
 \end{itemize}
-
 where $n_{c_i,c_j}$ and $n_{c_i}$ are the number of times a transition between the MI behavior codes $c_i$ and $c_j$ and the code $c_i$ has been observed in the training data. Given a Markov model $M$ (such that $S\subseteq V$), the probability that a sequence of MI behavior codes $S = \{C_1,...,C_N\}$ has been generated from a Markov model $M$ is:
-
 \begin{equation}
 P_M(S) = \prod_{i=2}^N p_M(c_i|c_1,\dots,c_{i-1})=\prod_{i=2}^N p_M(c_i|c_{i-1})
 \end{equation}
-
 In the second step, we quantify the likelihood of success of a given motivational interview at a certain time point given a sequence of MI behavior codes $S$ observed prior to that point using the following formula:
-
 \begin{equation}
 p(S\rightarrow CML+) = \log\left(\frac{P_M(S)}{P_{\overline M}(S)}\right)= \sum_{i=2}^N \log p_M(c_i|c_{i-1})-\sum_{i=2}^N \log p_{\overline M}(c_i|c_{i-1})\label{eq:class}
 \end{equation}
-
 If $p(S\rightarrow CML+) > 0 $, the interview is predicted to result in positive change talk or commitment language. 
 
 The Markov model we have discussed so far is referred to as the first-order MC, since it only considers immediately preceding behavior code when computing the state transition probabilities. A generalization of the first-order MC is the $k^{th}$ order MC, in which the transition probability to a particular state (symbol) $x_i$ is computed by looking at the k preceding states (symbols). Thus, $k^{th}$ order Markov chain will have $N^{k}$ states each associated with a sequence of k symbols. In our experiment, we also used second order Markov model. Hence, our model has $N^2$ states with transition probability matrix of size $N^2 \times N$.  
 
 \textbf {Hidden Markov Model (HMM)} is a powerful tool for statistical modeling of processes varying in time. HMMs are widely used for sequence analysis because of their ability to incorporate dependencies among elements in sequence. HMM can be considered as a doubly embedded stochastic process with a process that is not observable (hidden process) and can only be observed through another stochastic process (observable process) that produces a sequence of observations. An HMM can be fully specified by the following quintuple: $\lambda = (N, M, A, B, \pi)$
-
 \begin{itemize}
 \item N is a number of hidden states in the model
 \item M is a number of distinct observations symbols per state, i.e. the discrete vocabulary size
@@ -110,13 +100,31 @@ The Markov model we have discussed so far is referred to as the first-order MC, 
 \item B is an $N\times M$ matrix $B = \{b_j(k)\}$ with observation symbol probability distribution for each state 
 \item $\pi$ is the initial state distribution vector $\pi = \{\pi_i\}$
 \end{itemize}
-
 We exclude the structure parameters M and N to designate HMM using a compact notation: $\lambda = (A, B, \pi)$. The key difference between HMM and MC is that HMM requires specifying the number of hidden states as a model parameter and then the model deduces a sequence of hidden states that best explains the observations along with state transition probabilities and distributions of observation symbols for each state. The Baum-Welch algorithm was used to estimate the parameters of HMMs for successful and unsuccessful interviews using the corresponding training set, while the Viterbi algorithm was used to determine the most likely sequence of hidden states for a given sequence of observations. After assignment of hidden states, the log-likelihood of successful outcome can be estimated using Eq.~\ref{eq:class}.
 
-\textbf {Recurrent Neural Networks (RNNs)} are a type of Neural Network where the hidden state of one time step is computed by combining the current input with the hidden state of the previous time step....   
-
+\textbf {Recurrent Neural Networks (RNN)} is a type of Neural Network, which can send feedback from the current hidden state to the hidden state of the next time step. In this way, RNN can capture long-term dependencies for predicting the future events, which is the main advantage of RNN over feedforward Neural Network, MC, and HMM. The capability of remembering past event is very useful in motivational interviews where a behavior observed at some points in the interview is very informative for the future behaviors that will be observed. However, it was observed that RNN fails to capture long-term dependencies due to vanishing gradient problem \cite{bengio1993problem}. In order to mitigate this problem, Hochreiter et al.\cite{hochreiter1997long} proposed a special kind of RNN called Long Short Term Memory networks or simply LSTM. Later, the model was enhanced by including forget gates and the tanh activation function \cite{graves2013speech}. There are several variants of LSTM model, where a dramatic variation on the LSTM is the Gated Recurrent Unit or simply GRU \cite{cho2014properties}. GRUs are simpler than LSTM units and experimentally outperform than other models in many cases. We reiterate the mathematical formulation of GRU defined by Chung et al.\cite{chung2014empirical} as follows (equation~\ref{eq:firstgru}~to~\ref{eq:lastgru}):
+\begin{equation}
+z_t = \sigma(W_zx_t + U_zh_{t-1} + b_z)
+\label{eq:firstgru}
+\end{equation}
+\begin{equation}
+r_t = \sigma(W_rx_t + U_rh_{t-1} + b_r)
+\end{equation}
+\begin{equation}
+\tilde h_t = tanh(W_hx_t + r_t \odot U_hh_{t-1} + b_h) 
+\end{equation}
+\begin{equation}
+h_t = z_t \odot h_{t-1} + (1-z_t) \odot \tilde h_t
+\label{eq:lastgru}
+\end{equation}  
+\begin{equation}
+total\ loss = \alpha \cdot \frac{1}{T}\sum_{t=1}^T loss(\bar y^{(t)},y^{(t)}) + (1 - \alpha) \cdot loss(\bar y^{(T)},y^{(T)})
+\label{eq:loss}
+\end{equation}  
+The architecture of proposed Recurrent Neural Network is shown in Figure~\ref{fig:rnn-model}. We used one hidden LSTM or GRU layer of 20 nodes after embedding the given myscope codes from input sequence. Then, we applied a softmax layer at each time step for predicting the target. This target replication strategy was used in several studies \cite{lipton2015learning,choi2016doctor} after introduced by Lee et al.\cite{lee2015deeply} in 2015 for convolutional neural networks. As it can be seen from equation~(\ref{eq:loss}), our loss is the combination of final loss and the mean of the losses over all sequence steps, where T is the total number of sequence step, $\bar y$ is the output at step t, and $\alpha\ \epsilon\ [0, 1]$ is a hyperparameter that determine the relative importance of intermediate outputs. LSTM and GRU are trained on 70\% of the data and validated on 20\%. The remaining 10\% of the data is used as a test set for reporting the performance of the model. Our models contain several hyperparameters such as embedding dimension, number of hidden units, learning rate, batch size, etc., which were determined by the validation set. We implemented our models in Tensorflow with adam optimizer and early stopping based on the validation loss. 
+  
 \subsection*{\textit{Evaluation metrics}}
-Performance of the proposed method was evaluated in terms of precision, recall, and F-measure using 10 folda cross-validation and weighted macro-averaging of these metrics over the folds. A true positive (TP) was counted when the method correctly classified a sequence into its actual class; a false positive (FP) was counted for a class when the method incorrectly classified a sequence into that class; a false negative (FN) for an actual class of sequence was counted when the method incorrectly classified the sequence into other class. Precision of a class was defined as the ratio of the numbers of correctly classified sequences and all sequences identified as belonging to that particular class by the classifier (i.e Precision = TP / (TP + FP)). Recall of a class was defined as the ratio between the numbers of correctly classified sequences and all sequences of that particular class in the gold standard (i.e. Recall = TP / (TP + FN)). F-measure is computed as the harmonic mean of precision and recall (i.e. 2 x Precision x Recall / (Precision + Recall)). However, Accuracy is simply computed as the ratio of correctly classified sequences and total number of sequences.   
+Performance of the proposed method was evaluated in terms of precision, recall, and F-measure using 10 folds cross-validation and weighted macro-averaging of these metrics over the folds. A true positive (TP) was counted when the method correctly classified a sequence into its actual class; a false positive (FP) was counted for a class when the method incorrectly classified a sequence into that class; a false negative (FN) for an actual class of sequence was counted when the method incorrectly classified the sequence into other class. Precision of a class was defined as the ratio of the numbers of correctly classified sequences and all sequences identified as belonging to that particular class by the classifier (i.e Precision = TP / (TP + FP)). Recall of a class was defined as the ratio between the numbers of correctly classified sequences and all sequences of that particular class in the gold standard (i.e. Recall = TP / (TP + FN)). F-measure is computed as the harmonic mean of precision and recall (i.e. 2 x Precision x Recall / (Precision + Recall)). However, Accuracy is simply computed as the ratio of correctly classified sequences and total number of sequences.   
 
 \section*{Results}
 Experimental evaluation of the proposed method is conducted on both under- and over-sampled sequences. 
