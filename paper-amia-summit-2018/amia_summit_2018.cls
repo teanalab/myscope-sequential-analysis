@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{amia}[2011/02/21 v1.00 AMIA article class]
+\ProvidesClass{amia_summit_2018}[2011/02/21 v1.00 AMIA article class]
 \LoadClassWithOptions{article}[10pt]
 
 % Times new roman

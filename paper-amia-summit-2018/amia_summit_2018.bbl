@@ -51,6 +51,34 @@ Rabiner LR.
   speech recognition.
 \newblock Proceedings of the IEEE. 1989;77(2):257--286.
 
+\bibitem{graves2013speech}
+Graves A, Mohamed Ar, Hinton G.
+\newblock Speech recognition with deep recurrent neural networks.
+\newblock In: Acoustics, speech and signal processing (icassp), 2013 ieee
+  international conference on. IEEE; 2013. p. 6645--6649.
+
+\bibitem{chung2014empirical}
+Chung J, Gulcehre C, Cho K, Bengio Y.
+\newblock Empirical evaluation of gated recurrent neural networks on sequence
+  modeling.
+\newblock arXiv preprint arXiv:14123555. 2014;.
+
+\bibitem{nion2013handwritten}
+Nion T, Menasri F, Louradour J, Sibade C, Retornaz T, M{\'e}taireau PY, et~al.
+\newblock Handwritten information extraction from historical census documents.
+\newblock In: Document Analysis and Recognition (ICDAR), 2013 12th
+  International Conference on. IEEE; 2013. p. 822--826.
+
+\bibitem{lipton2015learning}
+Lipton ZC, Kale DC, Elkan C, Wetzell R.
+\newblock Learning to diagnose with LSTM recurrent neural networks.
+\newblock arXiv preprint arXiv:151103677. 2015;.
+
+\bibitem{choi2016doctor}
+Choi E, Bahadori MT, Schuetz A, Stewart WF, Sun J.
+\newblock Doctor ai: Predicting clinical events via recurrent neural networks.
+\newblock In: Machine Learning for Healthcare Conference; 2016. p. 301--318.
+
 \bibitem{yakhnenko2005discriminatively}
 Yakhnenko O, Silvescu A, Honavar V.
 \newblock Discriminatively trained markov model for sequence classification.
@@ -171,33 +199,11 @@ Hochreiter S, Schmidhuber J.
 \newblock Long short-term memory.
 \newblock Neural computation. 1997;9(8):1735--1780.
 
-\bibitem{graves2013speech}
-Graves A, Mohamed Ar, Hinton G.
-\newblock Speech recognition with deep recurrent neural networks.
-\newblock In: Acoustics, speech and signal processing (icassp), 2013 ieee
-  international conference on. IEEE; 2013. p. 6645--6649.
-
 \bibitem{cho2014properties}
 Cho K, Van~Merri{\"e}nboer B, Bahdanau D, Bengio Y.
 \newblock On the properties of neural machine translation: Encoder-decoder
   approaches.
 \newblock arXiv preprint arXiv:14091259. 2014;.
-
-\bibitem{chung2014empirical}
-Chung J, Gulcehre C, Cho K, Bengio Y.
-\newblock Empirical evaluation of gated recurrent neural networks on sequence
-  modeling.
-\newblock arXiv preprint arXiv:14123555. 2014;.
-
-\bibitem{lipton2015learning}
-Lipton ZC, Kale DC, Elkan C, Wetzell R.
-\newblock Learning to diagnose with LSTM recurrent neural networks.
-\newblock arXiv preprint arXiv:151103677. 2015;.
-
-\bibitem{choi2016doctor}
-Choi E, Bahadori MT, Schuetz A, Stewart WF, Sun J.
-\newblock Doctor ai: Predicting clinical events via recurrent neural networks.
-\newblock In: Machine Learning for Healthcare Conference; 2016. p. 301--318.
 
 \bibitem{lee2015deeply}
 Lee CY, Xie S, Gallagher P, Zhang Z, Tu Z.
