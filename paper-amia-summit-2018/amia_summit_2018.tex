@@ -178,42 +178,6 @@ Predictive performance summary of the proposed methods on natural sequences is p
 \subsection*{\textit{Predictive performance for over-sampled PPC code sequences}}
 Table~\ref{tab:result_over_sampled} summarizes predictive performance of the proposed methods on alternating sequences. These results indicate that second-order HMM had better recall than MC, achieving 97.13\% recall. Similar to the case of natural sequences, prediction method based on second-order HMM has the highest recall of 0.9713 among all models. However, different from natural sequences, second-order MC has the highest precision (0.9778) as well as the highest F-measure (0.9736). We also observed that second-order MC and HMM outperform first-order MC and HMM. Specifically, moving from first-order to second-order MC improves precision, recall and F-measure of the MI success prediction method by 0.01\%, 2.72\% and 1.37\%, respectively. Moving from first-order to second-order HMM improves precision, recall and F-measure of the MI success prediction method by 3.32\%, 4.30\% and 3.70\%, respectively.
 
-%\subsection*{\textit{Impact of hidden states}}
-%While MC is a non-parametric method, HMM has an important parameter, the number of hidden states. A natural question is how does this parameter affect the performance of HMM-based prediction  method. Figure~\ref{fig:hidden-states} provides an answer to this question by illustrating the performance of the proposed method using HMMs of different order in terms of F-measure on different types of sequences. As follows from this Figure, in general, the number of states does not significantly impact the classification performance. All four models show their best performance when the number of states is between 4 and 8. 
-%
-%Tables~\ref{tab:emission_matrix_s} and \ref{tab:emission_matrix_u} show patient-provider communication (PPC) codes with the highest probability in emission probability distributions associated with different states of HMMs trained on successful and unsuccessful interviews.\\
-%
-%\begin{figure}[!htb]
-%    \centering
-%    \includegraphics[width=0.70\textwidth]{figures/hidden-states.png}
-%    \caption{\textbf{Performance of the proposed method using HMMs of different order by varying the number of hidden states}.}
-%    \label{fig:hidden-states}
-%\end{figure}
-%
-%\begin{table}[!htb]
-%\centering
-%\caption{PPC codes with the highest probability associated with different states of an HMM trained on successful interviews.}
-%\label{tab:emission_matrix_s}
-%  \begin{tabular}{|l|l|}
-%  \hline
-%   \textbf{State} & \textbf{Most likely PPC codes} \\\hline 
-%1 & SS, EA, R-CT+, OQ-ECT+, SUM-S, AF, R-CML+ \\\hline           
-%2 & LUP+, EA, OQ-ECT+, OQ-ECML+  \\\hline    
-%  \end{tabular}
-%\end{table} 
-%
-%\begin{table}[!htb]
-%\centering
-%\caption{PPC codes with the highest probability associated with different states of an HMM trained on unsuccessful interviews.}
-%\label{tab:emission_matrix_u}
-%  \begin{tabular}{|l|l|}
-%  \hline
-%   \textbf{State} & \textbf{Most likely PPC codes} \\\hline     
-%1 & OQ-TBN, EA, R-CT+, AR, SUM-S, RBA-S, G-INFO+, R-CML+, OQ-ECT- \\\hline
-%2 & LUP+, OQ-ECT+, G-INFO+, CQ-EF, CHT-, HUP-O \\\hline
-%  \end{tabular}
-%\end{table} 
-
 \subsection*{\textit{Common patterns}}
 Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. It can be seen that most successful patterns start with a summary of the discussion or open-ended/close-ended question. After that, if adolescents express positive change talk, the counselor immediately reflects on that to reinforce adolescent's intrinsic motivation about behavior change. On the other hand, providing information can lead to negative change talk, even in the cases when adolescents were showing positive tendency in their previous communication. This observation can be explained by adolescents quickly loosing focus when provided with general information that undermines their motivation. Analyzing such cases will allow the counselors to determine the general information that can be provided during the interviews. \\
 
