@@ -134,10 +134,7 @@ The architecture of proposed Recurrent Neural Network is shown in Figure~\ref{fi
 Performance of the proposed method was evaluated in terms of precision, recall, and F-measure using 10 folds cross-validation and weighted macro-averaging of these metrics over the folds. A true positive (TP) was counted when the method correctly classified a sequence into its actual class; a false positive (FP) was counted for a class when the method incorrectly classified a sequence into that class; a false negative (FN) for an actual class of sequence was counted when the method incorrectly classified the sequence into other class. Precision of a class was defined as the ratio of the numbers of correctly classified sequences and all sequences identified as belonging to that particular class by the classifier (i.e Precision = TP / (TP + FP)). Recall of a class was defined as the ratio between the numbers of correctly classified sequences and all sequences of that particular class in the gold standard (i.e. Recall = TP / (TP + FN)). F-measure is computed as the harmonic mean of precision and recall (i.e. 2 x Precision x Recall / (Precision + Recall)). However, Accuracy is simply computed as the ratio of correctly classified sequences and total number of sequences.   
 
 \section*{Results}
-Experimental evaluation of the proposed method is conducted on both under- and over-sampled sequences. 
-
-\subsection*{\textit{Predictive performance for under-sampled PPC code sequences}}
-Predictive performance summary of the proposed methods on natural sequences is presented in Table~\ref{tab:result_under_sampled}. Three major conclusions can be drawn from the results in Table~\ref{tab:result_under_sampled}. First, HMM-based method generally outperforms MC-based one across all metrics for natural sequences. Second, first-order HMM has the best performance in terms of precision (0.7980) and F-measure (0.7989), while second-order HMM achieves the highest recall (0.8449). Third,  it follows that second-order MC and HMM have lower precision and F-measure, but higher recall than first-order MC and HMM. In particular, precision and F-measure decrease by 6.74\% and 2.39\%, in case of MC, and by 7.27\% \& 2.09\%, in case of HMM, when going from first- to second-order models. In contrast, recall improves by 3\%--5\%, in case of both MC and HMM, when going from first- to second-order models. \\
+Experimental evaluation of the proposed method is conducted on both under- and over-sampled sequences. \\
 
 \begin{table}[h]
 \centering
@@ -155,10 +152,10 @@ Predictive performance summary of the proposed methods on natural sequences is p
  GRU RNN & 0.8844 & 0.8897 & 0.8844 & 0.8840\\ \hline
  GRU RNN - TR & \textbf{0.8858} & \textbf{0.8917} & \textbf{0.8858} & \textbf{0.8853}\\ \hline 
   \end{tabular}
-\end{table} 
+\end{table}  
 
-\subsection*{\textit{Predictive performance for over-sampled PPC code sequences}}
-Table~\ref{tab:result_over_sampled} summarizes predictive performance of the proposed methods on alternating sequences. These results indicate that second-order HMM had better recall than MC, achieving 97.13\% recall. Similar to the case of natural sequences, prediction method based on second-order HMM has the highest recall of 0.9713 among all models. However, different from natural sequences, second-order MC has the highest precision (0.9778) as well as the highest F-measure (0.9736). We also observed that second-order MC and HMM outperform first-order MC and HMM. Specifically, moving from first-order to second-order MC improves precision, recall and F-measure of the MI success prediction method by 0.01\%, 2.72\% and 1.37\%, respectively. Moving from first-order to second-order HMM improves precision, recall and F-measure of the MI success prediction method by 3.32\%, 4.30\% and 3.70\%, respectively.\\
+\subsection*{\textit{Predictive performance for under-sampled PPC code sequences}}
+Predictive performance summary of the proposed methods on natural sequences is presented in Table~\ref{tab:result_under_sampled}. Three major conclusions can be drawn from the results in Table~\ref{tab:result_under_sampled}. First, HMM-based method generally outperforms MC-based one across all metrics for natural sequences. Second, first-order HMM has the best performance in terms of precision (0.7980) and F-measure (0.7989), while second-order HMM achieves the highest recall (0.8449). Third,  it follows that second-order MC and HMM have lower precision and F-measure, but higher recall than first-order MC and HMM. In particular, precision and F-measure decrease by 6.74\% and 2.39\%, in case of MC, and by 7.27\% \& 2.09\%, in case of HMM, when going from first- to second-order models. In contrast, recall improves by 3\%--5\%, in case of both MC and HMM, when going from first- to second-order models. \\
 
 \begin{table}[h]
 \centering
@@ -177,6 +174,9 @@ Table~\ref{tab:result_over_sampled} summarizes predictive performance of the pro
  GRU RNN - TR & \textbf{0.8722} & \textbf{0.8790} & \textbf{0.8722} & \textbf{0.8716}\\ \hline
   \end{tabular}
 \end{table}
+
+\subsection*{\textit{Predictive performance for over-sampled PPC code sequences}}
+Table~\ref{tab:result_over_sampled} summarizes predictive performance of the proposed methods on alternating sequences. These results indicate that second-order HMM had better recall than MC, achieving 97.13\% recall. Similar to the case of natural sequences, prediction method based on second-order HMM has the highest recall of 0.9713 among all models. However, different from natural sequences, second-order MC has the highest precision (0.9778) as well as the highest F-measure (0.9736). We also observed that second-order MC and HMM outperform first-order MC and HMM. Specifically, moving from first-order to second-order MC improves precision, recall and F-measure of the MI success prediction method by 0.01\%, 2.72\% and 1.37\%, respectively. Moving from first-order to second-order HMM improves precision, recall and F-measure of the MI success prediction method by 3.32\%, 4.30\% and 3.70\%, respectively.
 
 %\subsection*{\textit{Impact of hidden states}}
 %While MC is a non-parametric method, HMM has an important parameter, the number of hidden states. A natural question is how does this parameter affect the performance of HMM-based prediction  method. Figure~\ref{fig:hidden-states} provides an answer to this question by illustrating the performance of the proposed method using HMMs of different order in terms of F-measure on different types of sequences. As follows from this Figure, in general, the number of states does not significantly impact the classification performance. All four models show their best performance when the number of states is between 4 and 8. 
