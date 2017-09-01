@@ -1,6 +1,10 @@
 # Sequence Classification of Motivational Interviews
 
-Predicting Success of Clinical Interviews via Deep Learning and Probabilistic Modeling of Patient-Provider Communication Sequences
+Main objective of this project is the classification of Patient-Provider Communication Sequences via Deep Learning and Probabilistic Models. There are three main subprojects under the main repository:
+
+* deeplearning
+* hmm-python
+* mchain-python
 
 ## Methods
 
