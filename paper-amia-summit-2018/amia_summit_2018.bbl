@@ -163,19 +163,6 @@ Mutsam N, Pernkopf F.
 \newblock Maximum margin hidden Markov models for sequence classification.
 \newblock Pattern Recognition Letters. 2016;77:14--20.
 
-\bibitem{eickeler1998hidden}
-Eickeler S, Kosmala A, Rigoll G.
-\newblock Hidden markov model based continuous online gesture recognition.
-\newblock In: Pattern Recognition, 1998. Proceedings. Fourteenth International
-  Conference on. vol.~2. IEEE; 1998. p. 1206--1208.
-
-\bibitem{srivastava2007hmm}
-Srivastava PK, Desai DK, Nandi S, Lynn AM.
-\newblock HMM-ModE--Improved classification using profile hidden Markov models
-  by optimising the discrimination threshold and modifying emission
-  probabilities with negative training sequences.
-\newblock BMC bioinformatics. 2007;8(1):104.
-
 \bibitem{won2004training}
 Won KJ, Pr{\"u}gel-Bennett A, Krogh A.
 \newblock Training HMM structure with genetic algorithm for biological sequence
