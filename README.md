@@ -26,9 +26,9 @@ Main objective of this project is the classification of Patient-Provider Communi
 
 Method | Accuracy | Precision | Recall | F1-Score
 ------------------ | ------------- | ------------ | ------------- | ------------
-Markov Chain 1st Order | 0.7013 | 0.7037 | 0.7013 | 0.7003
-Markov Chain 2nd Order | 0.5905 | 0.5917 | 0.5905 | 0.5890
-HMM | 0.5439 | 0.5778 | 0.5439 | 0.4865
+Markov Chain 1st Order | 0.7044 | 0.7060 | 0.7044 | 0.7038
+Markov Chain 2nd Order | 0.6385 | 0.6395 | 0.6385 | 0.6379
+HMM | 0.6143 | 0.6244 | 0.6143 | 0.6067
 LSTM | 0.8637 | 0.8679 | 0.8637 | 0.8633
 LSTM-TR | 0.8681 | 0.8731 | 0.8681 | 0.8676
 GRU | 0.8642 | 0.8669 | 0.8642 | 0.8640
@@ -39,9 +39,9 @@ GRU-TR | **0.8681** | **0.8712** | **0.8681** | **0.8678**
 
 Method | Accuracy | Precision | Recall | F1-Score
 ------------------ | ------------- | ------------ | ------------- | ------------
-Markov Chain 1st Order | 0.7930 | 0.8127 | 0.7930 | 0.7896
-Markov Chain 2nd Order | 0.7325 | 0.7461 | 0.7325 | 0.7288
-HMM | 0.7763 | 0.8062 | 0.7763 | 0.7706
+Markov Chain 1st Order | 0.7799 | 0.7932 | 0.7799 | 0.7775
+Markov Chain 2nd Order | 0.7029 | 0.7111 | 0.7029 | 0.7000
+HMM | 0.7567 | 0.7775 | 0.7567 | 0.7520
 LSTM | 0.8370 | 0.8414 | 0.8369 | 0.8364
 LSTM-TR | 0.8384 | 0.8419 | 0.8384 | 0.8380
 GRU | 0.8339 | 0.8377 | 0.8339 | 0.8334
