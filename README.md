@@ -22,7 +22,7 @@ Main objective of this project is the classification of Patient-Provider Communi
 
 ## Results
 
-* When Undersampling is used for data balancing
+* When Undersampling is used for data balancing (hidden states = 15, batch size = 8, embedding dimension = 44, learning rate = 0.00005, minimum change = 0.0010)
 
 Method | Accuracy | Precision | Recall | F1-Score
 ------------------ | ------------- | ------------ | ------------- | ------------
@@ -35,7 +35,7 @@ GRU | 0.8648 | 0.8674 | 0.8648 | 0.8646
 GRU-TR | 0.8676 | 0.8705 | 0.8676 | 0.8673
 
 
-* When Oversampling is used for data balancing
+* When Oversampling is used for data balancing (hidden states = 15, batch size = 25, embedding dimension = 44, learning rate = 0.00008, minimum change = 0.0005)
 
 Method | Accuracy | Precision | Recall | F1-Score
 ------------------ | ------------- | ------------ | ------------- | ------------
