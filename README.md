@@ -35,7 +35,7 @@ GRU | 0.8648 | 0.8674 | 0.8648 | 0.8646
 GRU-TR | 0.8676 | 0.8705 | 0.8676 | 0.8673
 
 
-* When Oversampling is used for data balancing (\# of hidden units = 15, batch size = 55, embedding dimension = 44, learning rate = 0.00008, minimum change = 0.0005)
+* When Oversampling is used for data balancing (\# of hidden units = 15, batch size = 55, embedding dimension = 44, learning rate = 0.00010, minimum change = 0.0005)
 
 Method | Accuracy | Precision | Recall | F1-Score
 ------------------ | ------------- | ------------ | ------------- | ------------
@@ -45,7 +45,7 @@ HMM | 0.7567 | 0.7775 | 0.7567 | 0.7520
 LSTM | 0.8370 | 0.8414 | 0.8369 | 0.8364
 LSTM-TR | 0.8384 | 0.8419 | 0.8384 | 0.8380
 GRU | 0.8351 | 0.8387 | 0.8351 | 0.8347
-GRU-TR | **0.8370** | **0.8407** | **0.8370** | **0.8366**
+GRU-TR | 0.8370 | 0.8407 | 0.8370 | 0.8366
 
 ## Getting Started
 
