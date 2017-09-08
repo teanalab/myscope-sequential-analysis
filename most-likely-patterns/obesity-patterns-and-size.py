@@ -28,14 +28,20 @@ with open(successful_filename, "r") as file_stream:
         total_utterances += len(codes)
         successful_patterns += 1
 
+avg_length_successful = float(total_utterances)/successful_patterns
+
+unsuccessful_seq_length = 0
 with open(unsuccessful_filename, "r") as file_stream:
     for line in file_stream:
         codes = line.replace("\n", "").strip().split(",")
-        total_utterances += len(codes)
+        unsuccessful_seq_length += len(codes)
         unsuccessful_patterns += 1
 
-print("Successful patterns: " + str(successful_patterns))
-print("Unsuccessful patterns: " + str(unsuccessful_patterns))
+avg_length_unsuccessful = float(unsuccessful_seq_length)/unsuccessful_patterns
+total_utterances += unsuccessful_seq_length
+
+print("Successful patterns: " + str(successful_patterns), ("Avg. Length: " + str(avg_length_successful)))
+print("Unsuccessful patterns: " + str(unsuccessful_patterns), ("Avg. Length: " + str(avg_length_unsuccessful)))
 print("Total utterances: " + str(total_utterances))
 
 # set dictionary for successful sequences

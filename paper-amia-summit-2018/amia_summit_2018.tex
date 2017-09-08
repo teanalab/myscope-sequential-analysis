@@ -44,8 +44,8 @@ The experimental dataset for this work was constructed from the transcripts of 1
   \begin{tabular}{|l|l|l|l|l|}
   \hline
    \textbf{Sequence Type} & \textbf{\# of sequences}  & \textbf{Ratio} & \textbf{Average length} \\ \hline      
-Successful sequences & 4225 & 82.20\% & 10.05 \\\hline
-Unsuccessful sequences & 918 & 17.80\% & 9.89 \\\hline
+Successful sequences & 4225 & 82.15\% & 9.79 \\\hline
+Unsuccessful sequences & 918 & 17.85\% & 9.65 \\\hline
   \end{tabular}
 \end{table} 
 
@@ -106,6 +106,14 @@ The Markov model we have discussed so far is referred to as the first-order MC, 
 \end{itemize}
 We exclude the structure parameters M and N to designate HMM using a compact notation: $\lambda = (A, B, \pi)$. The key difference between HMM and MC is that HMM requires specifying the number of hidden states as a model parameter and then the model deduces a sequence of hidden states that best explains the observations along with state transition probabilities and distributions of observation symbols for each state. The Baum-Welch algorithm was used to estimate the parameters of HMMs for successful and unsuccessful interviews using the corresponding training set, while the Viterbi algorithm was used to determine the most likely sequence of hidden states for a given sequence of observations. After assignment of hidden states, the log-likelihood of successful outcome can be estimated using Eq.~\ref{eq:class}.
 
+\textbf {MYSCOPE Code Embedding}: is a type of Neural Network, which can send feedback from the current hidden state to the hidden state of the next time step. In this way, RNN can capture long-term dependencies for predicting the future events, which is the main advantage of RNN over feedforward Neural Network, MC, and HMM. RNN can capture long-term dependencies for predicting the future events, which is the main advantage of RNN over feedforward Neural Network, MC, and HMM. Stochastic Neighbor Embedding for MYSCOPE code is shown in Figure~\ref{fig:code_embedding}.
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/code_embed.eps}
+    \caption{\textbf{T-SNE diagram of behavior code drawn after 4000 steps with perplexity 30}.}
+    \label{fig:code_embedding}
+\end{figure}
+
 \textbf {Recurrent Neural Network (RNN)} is a type of Neural Network, which can send feedback from the current hidden state to the hidden state of the next time step. In this way, RNN can capture long-term dependencies for predicting the future events, which is the main advantage of RNN over feedforward Neural Network, MC, and HMM. The capability of remembering past event is very useful in motivational interviews where a behavior observed at some points in the interview is very informative for the future behaviors that will be observed. However, it was observed that RNN fails to capture long-term dependencies due to vanishing gradient problem \cite{bengio1993problem}. In order to mitigate this problem, Hochreiter et al.\cite{hochreiter1997long} proposed a special kind of RNN called Long Short Term Memory networks or simply LSTM. Later, the model was enhanced by including forget gates and the tanh activation function \cite{graves2013speech}. There are several variants of LSTM model, where a dramatic variation on the LSTM is the Gated Recurrent Unit\cite{cho2014properties} or simply GRU. GRUs are simpler than LSTM units and experimentally outperform than other models in many cases. We reiterate the mathematical formulation of GRU defined by Chung et al.\cite{chung2014empirical} as follows (Eq.~\ref{eq:firstgru}~to~\ref{eq:lastgru}):
 \begin{equation}
 z_t = \sigma(W_zx_t + U_zh_{t-1} + b_z)
@@ -134,71 +142,56 @@ total\ loss = \alpha \cdot \frac{1}{T}\sum_{t=1}^T loss(\bar y^{(t)},y^{(t)}) + 
 The architecture of the proposed Recurrent Neural Network is shown in Figure~\ref{fig:rnn-model}. We used one hidden layer of 20 LSTM or GRU nodes after embedding the given myscope codes from the input sequence. Then, we applied a softmax layer at each time step for predicting the target. This target replication (TR) strategy was used in several studies \cite{lipton2015learning, choi2016doctor} after introduced by Lee et al.\cite{lee2015deeply} in 2015 for convolutional neural networks. As it can be seen from equation~(\ref{eq:loss}), our loss is the combination of final loss and the mean of the losses over all sequence steps, where T is the total number of sequence step, $\bar y$ is the output at step t, and $\alpha\ \epsilon\ [0, 1]$ is a hyperparameter that determines the relative importance of intermediate outputs. Our model contains several hyperparameters such as embedding dimension, number of hidden units, learning rate, batch size, etc., which were determined by the validation set. We implemented our models in Tensorflow with adam optimizer and early stopping based on the validation loss. Experimentally, we observed that our model converges to optimal after 100 epoch and have no effect of dropout and regularization. The code for all models is publicly available at https://github.com/teanalab/myscope-sequential-analysis.   
   
 \subsection*{\textit{Evaluation metrics}}
-Performance of the proposed method was evaluated in terms of precision, recall, and F-measure using 10 folds cross-validation and weighted macro-averaging of these metrics over the folds. However, LSTM and GRU are trained on 70\% of the data and validated on 20\%. The remaining 10\% of the data is used as a test set for reporting the performance of the model. A true positive (TP) was counted when the method correctly classified a sequence into its actual class; a false positive (FP) was counted for a class when the method incorrectly classified a sequence into that class; a false negative (FN) for an actual class of sequence was counted when the method incorrectly classified the sequence into other class. The Precision of a class was defined as the ratio of the numbers of correctly classified sequences and all sequences identified as belonging to that particular class by the classifier (i.e Precision = TP / (TP + FP)). Recall of a class was defined as the ratio between the numbers of correctly classified sequences and all sequences of that particular class in the gold standard (i.e. Recall = TP / (TP + FN)). F-measure is computed as the harmonic mean of precision and recall (i.e. 2 x Precision x Recall / (Precision + Recall)). However, Accuracy is simply computed as the ratio of correctly classified sequences and a total number of sequences.   
+Performance of the proposed method was evaluated in terms of precision, recall, and F-measure using 10 folds cross-validation and weighted macro-averaging of these metrics over the folds. However, LSTM and GRU are trained on 70\% of the data and validated on 20\%. The remaining 10\% of the data is used as a test set for reporting the performance of the model. A true positive (TP) was counted when the method correctly classified a sequence into its actual class; a false positive (FP) was counted for a class when the method incorrectly classified a sequence into that class; a false negative (FN) for an actual class of sequence was counted when the method incorrectly classified the sequence into other class. The Precision of a class was defined as the ratio of the numbers of correctly classified sequences and all sequences identified as belonging to that particular class by the classifier (i.e Precision = TP / (TP + FP)). Recall of a class was defined as the ratio between the numbers of correctly classified sequences and all sequences of that particular class in the gold standard (i.e. Recall = TP / (TP + FN)). F-measure is computed as the harmonic mean of precision and recall (i.e. 2 x Precision x Recall / (Precision + Recall)). 
 
 \section*{Results}
-Experimental evaluation of the proposed method is conducted on both under- and over-sampled sequences. \\
-
+Experimental evaluation of the proposed method is conducted on both under- and over-sampled sequences.
 \begin{table}[h]
 \centering
-\caption{Performance of MC, HMM, and RNN for predicting the success of under-sampled patient-provider communication sequences. The highest value for each performance metric is highlighted in bold.}
-\label{tab:result_under_sampled}
-  \begin{tabular}{|l|l|l|l|l|l|}
+\caption{Performance of MC, HMM, and RNN for predicting the success of under- and over-sampled patient-provider communication sequences. The highest value for each performance metric is highlighted in bold.}
+\label{tab:result_under_over_sampled}
+  \begin{tabular}{|l|l|l|l|l|l|l|}
   \hline
-   \textbf{Method} & \textbf{Accuracy}  & \textbf{Precision}  & \textbf{Recall} & \textbf{F1-Score}\\ \hline    
+   \multirow{2}{*}{\textbf{Method}} & \multicolumn{3}{|c|}{\textbf{Under Sampling}} & \multicolumn{3}{|c|}{\textbf{Over Sampling}} \\\cline{2-7}
+   & \textbf{Precision}  & \textbf{Recall} & \textbf{F1-Score} & \textbf{Precision}  & \textbf{Recall} & \textbf{F1-Score}\\ \hline    
     
- Markov Chain $1^{st}$ Order & 0.7013 & 0.7037 & 0.7013 & 0.7003\\ \hline
- Markov Chain $2^{nd}$ Order & 0.5905 & 0.5917 & 0.5905 & 0.5890\\ \hline
- Hidden Markov Model & 0.5439 & 0.5778 & 0.5439 & 0.4865\\ \hline
- LSTM RNN & 0.8770 & 0.8812 & 0.8770 & 0.8766\\ \hline
- LSTM RNN - TR & 0.8824 & 0.8890 & 0.8824 & 0.8817\\ \hline
- GRU RNN & 0.8844 & 0.8897 & 0.8844 & 0.8840\\ \hline
- GRU RNN - TR & \textbf{0.8858} & \textbf{0.8917} & \textbf{0.8858} & \textbf{0.8853}\\ \hline 
+ Markov Chain $1^{st}$ Order & 0.7060 & 0.7044 & 0.7038 & 0.7932 & 0.7799 & 0.7775 \\ \hline
+ Markov Chain $2^{nd}$ Order & 0.6395 & 0.6385 & 0.6379 & 0.7111 & 0.7029 & 0.7000\\ \hline
+ Hidden Markov Model & 0.6244 & 0.6143 & 0.6067 & 0.7775 & 0.7567 & 0.7520\\ \hline
+ LSTM RNN & 0.8672 & 0.8626 & 0.8622 & 0.8411 & 0.8372 & 0.8368\\ \hline
+ LSTM RNN - TR & \textbf{0.8733} & \textbf{0.8681} & \textbf{0.8677} & \textbf{0.8424} & \textbf{0.8385} & \textbf{0.8381}\\ \hline
+ GRU RNN & 0.8674 & 0.8648 & 0.8646 & 0.8379 & 0.8342 & 0.8337\\ \hline
+ GRU RNN - TR & 0.8705 & 0.8676 & 0.8673 & 0.8412 & 0.8377 & 0.8373\\ \hline 
   \end{tabular}
 \end{table}  
 
 \subsection*{\textit{Predictive performance for under-sampled PPC code sequences}}
-We applied small learning rate 0.00005 and early stopping strategy with 150 epoch for training deep learning models when under-sampled data is used. Predictive performance summary of the proposed methods on under-sampled sequences is presented in Table~\ref{tab:result_under_sampled}. Five major conclusions can be drawn from the results in Table~\ref{tab:result_under_sampled}. First, recurrent neural networks outperform over probabilistic models and achieved 18.50\%-39.88\% higher F1-score. Second, GRU with target replication has the best performance over all other RNN methods, and achieved accuracy 0.8858, F1-score 0.8853 with precision 0.8917 and recall 0.8858. Third, target replication strategy improves the performance of GRU and LSTM, while conventional GRU shows better performance than LSTM with target replication. Fourth, among probabilistic models, the MC-based method generally outperforms HMM across all metrics for under-sampled sequences. Fifth, it follows that second-order MC have lower accuracy, precision, recall, and F-measure than first-order MC. In particular, accuracy, precision, recall and F-measure decrease by 15.80\%, 15.92\%, 15.80\% and 15.89\%, when going from first- to second-order models. At last, accuracy and recall illustrate exactly the same values for all models. \\
-
-\begin{table}[h]
-\centering
-\caption{Performance of MC, HMM, and RNN for predicting the success of over-sampled patient-provider communication sequences. The highest value for each performance metric is highlighted in bold.}
-\label{tab:result_over_sampled}
-  \begin{tabular}{|l|l|l|l|l|l|}
-  \hline
-   \textbf{Method} & \textbf{Accuracy}  & \textbf{Precision}  & \textbf{Recall} & \textbf{F1-Score}\\ \hline    
-    
- Markov Chain $1^{st}$ Order & 0.7930 & 0.8127 & 0.7930 & 0.7896\\ \hline
- Markov Chain $2^{nd}$ Order & 0.7325 & 0.7461 & 0.7325 & 0.7288\\ \hline
- Hidden Markov Model & 0.7763 & 0.8062 & 0.7763 & 0.7706\\ \hline
- LSTM RNN & 0.8703 & 0.8782 & 0.8703 & 0.8696\\ \hline
- LSTM RNN - TR & 0.8713 & 0.8789 & 0.8713 & 0.8706\\ \hline
- GRU RNN & 0.8711 & 0.8785 & 0.8711 & 0.8705\\ \hline
- GRU RNN - TR & \textbf{0.8722} & \textbf{0.8790} & \textbf{0.8722} & \textbf{0.8716}\\ \hline
-  \end{tabular}
-\end{table}
+We applied small learning rate 0.00005 and early stopping strategy with 150 epoch for training deep learning models when under-sampled data is used. Predictive performance summary of the proposed methods on under-sampled sequences is presented in Table~\ref{tab:result_under_over_sampled}. Five major conclusions can be drawn from the results in Table~\ref{tab:result_under_over_sampled}. First, recurrent neural networks outperform over probabilistic models and achieved 18.50\%-39.88\% higher F1-score. Second, GRU with target replication has the best performance over all other RNN methods, and achieved accuracy 0.8858, F1-score 0.8853 with precision 0.8917 and recall 0.8858. Third, target replication strategy improves the performance of GRU and LSTM, while conventional GRU shows better performance than LSTM with target replication. Fourth, among probabilistic models, the MC-based method generally outperforms HMM across all metrics for under-sampled sequences. Fifth, it follows that second-order MC have lower accuracy, precision, recall, and F-measure than first-order MC. In particular, accuracy, precision, recall and F-measure decrease by 15.80\%, 15.92\%, 15.80\% and 15.89\%, when going from first- to second-order models. At last, accuracy and recall illustrate exactly the same values for all models.
 
 \subsection*{\textit{Predictive performance for over-sampled PPC code sequences}}
-For over-sampled data, RNN models are trained for 100 epoch with early stopping strategy. Table~\ref{tab:result_over_sampled} summarizes predictive performance of the proposed methods on over-sampled sequences. These results indicate that HMM had better performance than second-order MC, achieving 5.74\% higher F1-score, while HMM still has 2.41\% lower F1-score than first-order Markov chain. Similar to the case of under-sampled sequences, target replication improves the performance of RNN models, and GRU with target replication has the highest F1-score of 0.8716 among all models. However, the predictive performance of recurrent neural networks decreases in over-sampled sequences whereas the performance of probabilistic models decreases. We also observed that all models have the largest value in precision compared to other performance metrics.
+For over-sampled data, RNN models are trained for 100 epoch with early stopping strategy. Table~\ref{tab:result_under_over_sampled} summarizes predictive performance of the proposed methods on over-sampled sequences. These results indicate that HMM had better performance than second-order MC, achieving 5.74\% higher F1-score, while HMM still has 2.41\% lower F1-score than first-order Markov chain. Similar to the case of under-sampled sequences, target replication improves the performance of RNN models, and GRU with target replication has the highest F1-score of 0.8716 among all models. However, the predictive performance of recurrent neural networks decreases in over-sampled sequences whereas the performance of probabilistic models decreases. We also observed that all models have the largest value in precision compared to other performance metrics.
 
-\subsection*{\textit{Common patterns}}
-Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. It can be seen that most successful patterns start with a summary of the discussion or open-ended/close-ended question. After that, if adolescents express positive change talk, the counselor immediately reflects on that to reinforce adolescent's intrinsic motivation about behavior change. On the other hand, providing information can lead to negative change talk, even in the cases when adolescents were showing a positive tendency in their previous communication. This observation can be explained by adolescents quickly loosing focus when provided with general information that undermines their motivation. Analyzing such cases will allow the counselors to determine the general information that can be provided during the interviews. \\
-
+\subsection*{\textit{Most likely communication sequences}}
+Table~\ref{tab:common_patterns} provides examples of typical PPC sequences that frequently appear in successful and unsuccessful motivational interviews. It can be seen that most successful sequence start with a summary of the discussion or structured statement. After that, if adolescents express positive change talk, the counselor immediately reflects on that to reinforce adolescent's intrinsic motivation about behavior change. On the other hand, providing additional information can lead to negative change talk, even in the cases when adolescents were showing a positive tendency in their previous communication. This observation can be explained by adolescents quickly loosing focus when provided with general information that undermines their motivation. Analyzing such cases will allow the counselors to determine the general information that can be provided during the interviews.
 \begin{table}[h]
 \centering
-\caption{Common patterns in successful and unsuccessful motivational interviews.}
+\caption{Most likely communication sequences in successful and unsuccessful motivational interviews.}
 \label{tab:common_patterns}
   \begin{tabular}{|l|l|}
   \hline
-   \textbf{Type} & \textbf{Pattern} \\ \hline      
-successful & 328 SUM-S: Summarize $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $ 313 R-CML+: Reflect, \\ 
-& commitment language positive $\rightarrow $ [positive commitment] \\\hline
-successful & 307 SPT: Support $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $ 313 R-CML+: Reflect, \\
-& commitment language positive $\rightarrow $ [positive commitment] \\\hline
-unsuccessful & 311 R-CT+: Reflect, change talk positive $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $ 302 G-INFO+:  \\
-& General Information, positive $\rightarrow $ [negative commitment] \\\hline
-unsuccessful & 302 G-INFO+: General Information, positive $\rightarrow $ 117 LUP+: Low Uptake, positive $\rightarrow $  \\
-& 302 G-INFO+: General Information, positive $\rightarrow $ [negative commitment] \\\hline
+   \textbf{Type} & \textbf{Most likely communication sequences} \\ \hline      
+successful & GINFO+: General information, positive $\rightarrow $ LUP+: Low uptake, positive $\rightarrow $ OQTBN: \\ 
+& Open-ended question, target behavior neutral \\\hline
+successful & SS: Structure session $\rightarrow $ GINFO+: General information, positive $\rightarrow $ CQECHT+: Closed-ended \\
+& question, elicit change talk positive\\\hline
+successful & SO: Statement, other $\rightarrow $ LUP+: Low uptake, positive $\rightarrow $ AF: Affirm $\rightarrow $ HUPW: High uptake, \\
+& weight $\rightarrow $ OQECML+: Open-ended question, elicit commitment language positive. \\\hline
+unsuccessful & ADV+: Advise, positive $\rightarrow $ AMB-: Ambivalence negative $\rightarrow $ OQECHT-: Open-ended \\
+& question, elicit change talk negative\\\hline
+unsuccessful & CQECHT+: Open-ended question, elicit change talk positive $\rightarrow $ RCHT-S: Reflect, change talk \\
+& negative $\rightarrow $ OQECHT-: Open-ended question, elicit change talk negative \\\hline
+unsuccessful & SUP: Support $\rightarrow $ AF: Affirm $\rightarrow $ CQTBN: Closed-ended question, target behavior neutral \\
+& $\rightarrow $ OQECHT-: Open-ended question, elicit change talk negative $\rightarrow $ AMB-: Ambivalence negative\\\hline
   \end{tabular}
 \end{table} 
 
@@ -216,7 +209,7 @@ In this paper, we proposed Recurrent Neural Networks with two baseline methods M
 
 \section*{Acknowledgments}
 This study was supported by an R21 grant DK108071 from the NIH. We would like to thank the student assistants in the Department of Family Medicine and Public Health Sciences at Wayne State University School of Medicine for their help with transcribing the recordings of motivational interviews. 
-\pagebreak
+%\pagebreak
 
 \bibliographystyle{vancouver}
 \bibliography{references}
