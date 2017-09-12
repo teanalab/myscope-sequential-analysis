@@ -175,6 +175,11 @@ Chai W, Vercoe B.
 \newblock In: Proceedings of International Conference on Artificial
   Intelligence. vol.~6. sn; 2001. .
 
+\bibitem{bengio2003neural}
+Bengio Y, Ducharme R, Vincent P, Jauvin C.
+\newblock A neural probabilistic language model.
+\newblock Journal of machine learning research. 2003;3(Feb):1137--1155.
+
 \bibitem{bengio1993problem}
 Bengio Y, Frasconi P, Simard P.
 \newblock The problem of learning long-term dependencies in recurrent networks.
