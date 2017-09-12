@@ -61,6 +61,7 @@ codebook = utility.loadCodeBook(codebook_filename)
 
 
 def RNN(x, weights, biases, step_size):
+    # layer to take the codes and convert them into vectors (embeddings)
     embed_x = tf.contrib.layers.embed_sequence(x, vocab_size=len(codebook), embed_dim=embed_dimension)
     cell = tf.contrib.rnn.LSTMCell(hidden_units)
     # cell = tf.contrib.rnn.GRUCell(hidden_units)
