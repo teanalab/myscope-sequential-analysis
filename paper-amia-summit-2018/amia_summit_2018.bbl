@@ -81,6 +81,13 @@ Rabiner LR.
   speech recognition.
 \newblock Proceedings of the IEEE. 1989;77(2):257--286.
 
+\bibitem{kundu1988recognition}
+Kundu A, He Y, Bahl P.
+\newblock Recognition of handwritten word: first and second order hidden Markov
+  model based approach.
+\newblock In: Computer Vision and Pattern Recognition, 1988. Proceedings
+  CVPR'88., Computer Society Conference on. IEEE; 1988. p. 457--462.
+
 \bibitem{nion2013handwritten}
 Nion T, Menasri F, Louradour J, Sibade C, Retornaz T, M{\'e}taireau PY, et~al.
 \newblock Handwritten information extraction from historical census documents.
