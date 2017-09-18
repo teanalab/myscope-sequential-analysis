@@ -6,12 +6,6 @@ Yakhnenko O, Silvescu A, Honavar V.
 \newblock In: Data Mining, Fifth IEEE International Conference on. IEEE; 2005.
   p. 8--pp.
 
-\bibitem{deshpande2002evaluation}
-Deshpande M, Karypis G.
-\newblock Evaluation of techniques for classifying biological sequences.
-\newblock In: Pacific-Asia Conference on Knowledge Discovery and Data Mining.
-  Springer; 2002. p. 417--431.
-
 \bibitem{wei2006semi}
 Wei L, Keogh E.
 \newblock Semi-supervised time series classification.
@@ -24,12 +18,6 @@ Lane T, Brodley CE.
 \newblock ACM Transactions on Information and System Security (TISSEC).
   1999;2(3):295--331.
 
-\bibitem{drew2017polymorphic}
-Drew J, Hahsler M, Moore T.
-\newblock Polymorphic malware detection using sequence classification methods
-  and ensembles.
-\newblock EURASIP Journal on Information Security. 2017;2017(1):2.
-
 \bibitem{leslie2004fast}
 Leslie C, Kuang R.
 \newblock Fast string kernels using inexact matching for protein sequences.
@@ -39,35 +27,6 @@ Leslie C, Kuang R.
 Chuzhanova NA, Jones AJ, Margetts S.
 \newblock Feature selection for genetic sequence classification.
 \newblock Bioinformatics. 1998;14(2):139--143.
-
-\bibitem{ye2009time}
-Ye L, Keogh E.
-\newblock Time series shapelets: a new primitive for data mining.
-\newblock In: Proceedings of the 15th ACM SIGKDD international conference on
-  Knowledge discovery and data mining. ACM; 2009. p. 947--956.
-
-\bibitem{kudenko1998feature}
-Kudenko D, Hirsh H.
-\newblock Feature generation for sequence categorization.
-\newblock In: AAAI/IAAI; 1998. p. 733--738.
-
-\bibitem{lesh1999mining}
-Lesh N, Zaki MJ, Ogihara M.
-\newblock Mining features for sequence classification.
-\newblock In: Proceedings of the fifth ACM SIGKDD international conference on
-  Knowledge discovery and data mining. ACM; 1999. p. 342--346.
-
-\bibitem{nallam2016effective}
-Nallam K, et~al.
-\newblock An Effective Implementation of Hierarchical Approach For Sequence
-  Classification.
-\newblock IJACTA. 2016;3(2):143--146.
-
-\bibitem{keogh2003need}
-Keogh E, Kasetty S.
-\newblock On the need for time series data mining benchmarks: a survey and
-  empirical demonstration.
-\newblock Data Mining and knowledge discovery. 2003;7(4):349--371.
 
 \bibitem{keogh2000scaling}
 Keogh EJ, Pazzani MJ.
