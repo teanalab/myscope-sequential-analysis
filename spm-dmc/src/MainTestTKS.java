@@ -14,16 +14,16 @@ public class MainTestTKS {
 	public static void main(String [] arg) throws IOException{ 
 
 		// Load a sequence database
-		String input = "input/contextPrefixSpan.txt";
+		String input = "input/formatted_sequence/successful.txt";
 		String output = "output/output_tks.txt";
 		
-		int k=5;
+		int k = 1000;
 		
 		// Create an instance of the algorithm 
 		AlgoTKS algo = new AlgoTKS(); 
 		
 		// This optional parameter allows to specify the minimum pattern length:
-//		algo.setMinimumPatternLength(0);  // optional
+		algo.setMinimumPatternLength(3);  // optional
 
 		// This optional parameter allows to specify the maximum pattern length:
 //		algo.setMaximumPatternLength(4);  // optional
@@ -36,7 +36,7 @@ public class MainTestTKS {
 		// This optional parameter allows to specify the max gap between two
 		// itemsets in a pattern. If set to 1, only patterns of contiguous itemsets
 		// will be found (no gap).
-		//algo.setMaxGap(1);
+//		algo.setMaxGap(1);
 		
 	    // if you set the following parameter to true, the sequence ids of the sequences where
         // each pattern appears will be shown in the result

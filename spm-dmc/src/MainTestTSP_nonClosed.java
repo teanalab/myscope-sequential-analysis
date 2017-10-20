@@ -14,9 +14,10 @@ public class MainTestTSP_nonClosed {
 
 	public static void main(String [] arg) throws IOException{    
 		// Load a sequence database
+		String input = "input/formatted_sequence/successful.txt";
 		long startTime = System.currentTimeMillis();
 		SequenceDatabase sequenceDatabase = new SequenceDatabase(); 
-		sequenceDatabase.loadFile("input/contextPrefixSpan.txt");
+		sequenceDatabase.loadFile(input);
 		System.out.println(System.currentTimeMillis() - startTime + " ms (database load time)");
 		// print the database to console
 //		sequenceDatabase.print();

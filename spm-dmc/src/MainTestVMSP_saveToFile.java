@@ -13,7 +13,7 @@ public class MainTestVMSP_saveToFile {
 
 	public static void main(String [] arg) throws IOException{    
 		// Load a sequence database
-		String input = "input/contextPrefixSpan.txt";
+		String input = "input/formatted_sequence/successful.txt";
 		String output = "output/output_vmsp.txt";
 		
 		// Create an instance of the algorithm 
@@ -32,7 +32,9 @@ public class MainTestVMSP_saveToFile {
 //		algo.showSequenceIdentifiersInOutput(true);
 		
 		// execute the algorithm with minsup = 2 sequences  (50 %)
-		algo.runAlgorithm(input, output, 0.5);    
+		algo.runAlgorithm(input, output, 0.02);    
 		algo.printStatistics();
+		
+		System.out.println("Executed successfully");
 	}
 }
