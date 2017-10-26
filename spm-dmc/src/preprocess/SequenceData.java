@@ -6,10 +6,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Map;
 
 public class SequenceData {
 	
-	private HashMap<String, Integer> dict = new HashMap<>();
+	public Map<String, Integer> dict = new HashMap<>();
+	public Map<Integer, String> intToCodeMap = new HashMap<>();
 	
 	public SequenceData() {}
 	
@@ -27,9 +29,11 @@ public class SequenceData {
 				for (String code : codes) {
 					if (code.equalsIgnoreCase("400") || code.equalsIgnoreCase("500")) {
 						dict.put(code, -2);
+						intToCodeMap.put(-2, code);
 					}
 					else {
 						if (!dict.containsKey(code)) {
+							intToCodeMap.put(x, code);
 							dict.put(code, x++);
 						}
 					}

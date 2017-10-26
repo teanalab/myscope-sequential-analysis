@@ -3,6 +3,8 @@ import java.util.PriorityQueue;
 
 import ca.pfv.spmf.algorithms.sequentialpatterns.spam.AlgoTKS;
 import ca.pfv.spmf.algorithms.sequentialpatterns.spam.PatternTKS;
+import postprocess.MyScopeCodeSequence;
+import preprocess.SequenceData;
 
 
 /**
@@ -12,10 +14,17 @@ import ca.pfv.spmf.algorithms.sequentialpatterns.spam.PatternTKS;
 public class MainTestTKS {
 
 	public static void main(String [] arg) throws IOException{ 
+		
+		// preprocess data
+		String codeFile = "input/code_sequence/unsuccessful.txt";
+		String formatted_input = "input/formatted_sequence/unsuccessful.txt";
+		
+		SequenceData seqData = new SequenceData(codeFile);
+		seqData.transformToExpectedFormat(codeFile, formatted_input);
 
 		// Load a sequence database
-		String input = "input/formatted_sequence/successful.txt";
-		String output = "output/output_tks.txt";
+		String formattedoutput = "output/formatted_patterns/output_tks.txt";
+		String codeoutput = "output/code_patterns/output_tks.txt";
 		
 		int k = 1000;
 		
@@ -43,10 +52,13 @@ public class MainTestTKS {
 //		algo.showSequenceIdentifiersInOutput(true);
 		
 		// execute the algorithm, which returns some patterns
-		PriorityQueue<PatternTKS> patterns = algo.runAlgorithm(input, output, k);  
+		PriorityQueue<PatternTKS> patterns = algo.runAlgorithm(formatted_input, formattedoutput, k);  
 		// save results to file
-		algo.writeResultTofile(output);   
+		algo.writeResultTofile(formattedoutput);   
 		algo.printStatistics();
+		
+		MyScopeCodeSequence mcs = new MyScopeCodeSequence(formattedoutput, seqData.intToCodeMap);
+		mcs.printToFile(codeoutput);
 
 	}
 }
