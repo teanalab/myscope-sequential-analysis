@@ -58,7 +58,7 @@ public class SmallerCodebook {
 		}
 	}
 	
-	public void transform(String fromFilePath, String toFilePath) {
+	public void transform(String fromFilePath, String toFilePath, boolean withSpeaker) {
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(fromFilePath));			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(toFilePath));			
@@ -68,8 +68,21 @@ public class SmallerCodebook {
 				String[] codes = line.split(",");
 				StringBuilder sb = new StringBuilder();
 				for (int i = 0; i < codes.length; i++) {
-					if(!smallCodebookMap.get(codes[i].trim()).equalsIgnoreCase("OMIT")) {
-						sb.append(smallCodebookMap.get(codes[i].trim()));
+					String actualCode = codes[i].trim();
+					String speaker = "";
+					if (withSpeaker && !(actualCode.equalsIgnoreCase("400") || actualCode.equalsIgnoreCase("500"))) {
+						actualCode = codes[i].split(":")[1].trim();
+						speaker = codes[i].split(":")[0].trim();
+					}
+					
+					//System.out.println(actualCode);
+					
+					if(!smallCodebookMap.get(actualCode).equalsIgnoreCase("OMIT")) {
+						if (withSpeaker)
+							sb.append(speaker + ":" + smallCodebookMap.get(actualCode));
+						else
+							sb.append(smallCodebookMap.get(actualCode));
+						
 						if(i < codes.length-1) {
 							sb.append(",");
 						}

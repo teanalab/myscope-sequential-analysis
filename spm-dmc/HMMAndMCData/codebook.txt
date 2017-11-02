@@ -33,4 +33,3 @@ SS
 ST
 SUM
 SUP
-WE
