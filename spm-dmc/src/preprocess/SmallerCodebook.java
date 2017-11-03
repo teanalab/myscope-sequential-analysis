@@ -72,14 +72,14 @@ public class SmallerCodebook {
 					String speaker = "";
 					if (withSpeaker && !(actualCode.equalsIgnoreCase("400") || actualCode.equalsIgnoreCase("500"))) {
 						actualCode = codes[i].split(":")[1].trim();
-						speaker = codes[i].split(":")[0].trim();
+						speaker = codes[i].split(":")[0].trim() + ":";
 					}
 					
 					//System.out.println(actualCode);
 					
 					if(!smallCodebookMap.get(actualCode).equalsIgnoreCase("OMIT")) {
 						if (withSpeaker)
-							sb.append(speaker + ":" + smallCodebookMap.get(actualCode));
+							sb.append(speaker + smallCodebookMap.get(actualCode));
 						else
 							sb.append(smallCodebookMap.get(actualCode));
 						

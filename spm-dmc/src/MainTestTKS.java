@@ -16,15 +16,16 @@ public class MainTestTKS {
 	public static void main(String [] arg) throws IOException{ 
 		
 		// preprocess data
-		String codeFile = "input/code_sequence/unsuccessful.txt";
-		String formatted_input = "input/formatted_sequence/unsuccessful.txt";
+		String dataType = "unsuccessful";
+		String codeFile = "input/code_sequence/" + dataType + ".txt";
+		String formatted_input = "input/formatted_sequence/" + dataType + ".txt";
 		
 		SequenceData seqData = new SequenceData(codeFile);
 		seqData.transformToExpectedFormat(codeFile, formatted_input);
 
 		// Load a sequence database
-		String formattedoutput = "output/formatted_patterns/output_tks.txt";
-		String codeoutput = "output/code_patterns/output_tks.txt";
+		String formattedoutput = "output/formatted_patterns/" + dataType + "_tks.txt";
+		String codeoutput = "output/code_patterns/" + dataType + "_tks.txt";
 		
 		int k = 1000;
 		

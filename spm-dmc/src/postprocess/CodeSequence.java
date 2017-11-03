@@ -1,9 +1,15 @@
 package postprocess;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class CodeSequence {
 	public List<String> code;
@@ -76,5 +82,37 @@ public class CodeSequence {
 		sb.append(supCount);
 		
 		return sb.toString().trim();
+	}
+	
+	public void getUniqueCodeSequenceAndWriteToFile(String inputFile, String outputFile) {
+		
+		Map<String, String> speakerCodeMap = new TreeMap<>();
+		
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(inputFile));			
+			String line = null;
+			
+			while((line = br.readLine()) != null) {				
+				String[] codes = line.split(",");
+				for (String s : codes) {
+					speakerCodeMap.put(s.trim(), s.trim());
+				}
+			}
+			br.close();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));
+			for (String c : speakerCodeMap.keySet()) {
+				writer.write(c);
+				writer.newLine();
+			}
+			writer.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
