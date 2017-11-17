@@ -36,7 +36,7 @@ public class MyScopeCodeSequence {
 	}
 	
 	public void printToFile(String toFilePath) {
-		Collections.sort(sequences, new SortBySupCountUniqueCode());
+		Collections.sort(sequences, new SortBySequenceLength());
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(toFilePath));
 			for (int i = 0; i < sequences.size(); i++) {

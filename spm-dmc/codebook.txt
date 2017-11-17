@@ -1,0 +1,116 @@
+111	CHT+1	Change Talk +1
+112	CHT+2 	Change Talk +2
+113	CHT+3	Change Talk +3
+116	AMB+	Ambivalence +
+105	CML+1	Commit Language +1
+106	CML+2	Commit Language +2
+107	CML+3	Commit Language +3
+102	CML-3	Commit Language -3
+103	CML-2 	Commit Language -2
+104	CML-1	Commit Language -1
+108	CHT-3	Change Talk -3
+109	CHT-2	Change Talk -2
+110	CHT-1	Change Talk -1
+114	AMB-	Ambivalence -
+115	AMB0	Ambivalence 0
+101	BLT	Blunting
+117	LUP+	Low Uptake, positive
+118	LUP-	Low Uptake, negative
+119	HUP-W	High Uptake, weight
+120	HUP-O	High Uptake, other
+211	CG-CHT+1	Caregiver Change Talk +1
+212	CG-CHT+2	Caregiver Change Talk +2
+213	CG-CHT+3	Caregiver Change Talk +3
+216	CG-AMB+	Caregiver Ambivalence +
+226	T-CHT+1	About teen, Change Talk +1
+227	T-CHT+2	About teen, Change Talk +2
+228	T-CHT+3	About teen, Change Talk +3
+231	T-AMB+	About teen, Ambivalence +
+205	CG-CML+1	Caregiver Commit Language +1
+206	CG-CML+2	Caregiver Commit Language +2
+207	CG-CML+3	Caregiver Commit Language +3
+220	T-CML+1 	About teen, Commit Language +1
+221	T-CML+2	About teen, Commit Language +2
+222	T-CML+3	About teen, Commit Language +3
+202	CG-CML-3	Caregiver Commit Language -3
+203	CG-CML-2	Caregiver Commit Language -2
+204	CG-CML-1	Caregiver Commit Language -1
+208	CG-CHT-3	Caregiver Change Talk -3
+209	CG-CHT-2	Caregiver Change Talk -2
+210	CG-CHT-1	Caregiver Change Talk -1
+214	CG-AMB-	Caregiver Ambivalence -
+215	CG-AMB0	Caregiver Ambivalence 0
+217	T-CML-3	About teen, Commit Language -3
+218	T-CML-2	About teen, Commit Language -2
+219	T-CML-1	About teen, Commit Language -1
+223	T-CHT-3	About teen, Change Talk -3
+224	T-CHT-2	About teen, Change Talk -2
+225	T-CHT-1	About teen, Change Talk -1
+229	T-AMB-	About teen, Ambivalence -
+230	T-AMB0	About teen, Ambivalence 0
+201	BLT	Blunting
+232	LUP+	Low Uptake, positive
+233	LUP-	Low Uptake, negative
+234	HUP-W	High uptake, weight or target behaviors
+235	HUP-T	High uptake
+236	HUP-O	High uptake, other
+305	EA	Emphasize Autonomy
+304	RD	Reflect Discrepancy
+310	AR	Action reflection
+311	R-CT+	Reflect, change talk positive
+313	R-CML+	Reflect, commitment language positive
+315	R-CT_CG+	Reflect, change talk positive, about caregiver
+317	R-CT_T+	Reflect, change talk positive, about teen
+319	R-CML_CG+	Reflect, commitment language positive, about caregiver
+321	R-CML_T+	Reflect, commitment language positive, about teen
+323	R-NVBE+	Reflect, nonverbal behavior positive
+325	RA-S	Reflect ambivalence
+326	RBA-S	Reflect barriers
+327	RO-S	Reflect other
+328	SUM-S	Summarize
+303	G-INFO-	General Information, negative
+312	R-CT-S	Reflect, change talk negative
+314	R-CML-S	Reflect, commitment language negative
+316	R-CT_CG-S	Reflect, change talk negative, about caregiver
+318	R-CT_T-S	Reflect, change talk negative, about teen
+320	R-CML_CG-S	Reflect, commitment language negative, about caregiver
+322	R-CML_T-S	Reflect, commitment language negative, about teen
+324	R-NVBE-	Reflect, nonverbal behavior negative
+301	SS	Structure Session
+302	G-INFO+	General Information, positive
+307	SPT	Support
+308	AF	Affirm
+309	AF-L	Affirm, low
+329	SD	Self-disclose
+330	S-O	Statement, Other
+306	OQ-EF	Open Question, Elicit Feedback
+331	OQ-ECT+	Open-ended question, elicit change talk positive
+332	OQ-ECT-	Open-ended question, elicit change talk negative
+333	OQ-ECML+	Open-ended question, elicit commitment language positive
+334	OQ-ECML-	Open-ended question, elicit commitment language negative
+335	OQ-ECT_CG+	Open question, elicit change talk positive, about caregiver
+336	OQ-ECT_CG-	Open question, elicit change talk negative, about caregiver
+337	OQ-ECT_T +	Open question, elicit change talk positive, about teen
+338	OQ-ECT_T-	Open question, elicit change talk negative, about teen
+339	OQ-ECML_CG+	Open question, elicit commitment language positive, about caregiver
+340	OQ-ECML_CG-	Open question, elicit commitment language negative, about caregiver
+341	OQ-ECML_T+	Open question, elicit commitment language positive, about teen
+342	OQ-ECML_T-	Open question, elicit commitment language negative, about teen
+343	OQ-TBN	Open-ended question, target behavior neutral
+344	OQ-EB	Open-ended question, elicit barriers
+345	OQ-O	Other
+306	CQ-EF	Closed question, Elicit Feedback
+346	CQ-ECT+	closed-ended question, elicit change talk positive
+347	CQ-ECT-	closed-ended question, elicit change talk negative
+348	CQ-ECML+	closed-ended question, elicit commitment language positive
+349	CQ-ECML-	closed-ended question, elicit commitment language negative
+350	CQ-ECT_CG+	Closed question, elicit change talk positive, about caregiver
+351	CQ-ECT_CG-	Closed question, elicit change talk negative, about caregiver
+352	CQ-ECT_T+	Closed question, elicit change talk positive, about teen
+353	CQ-ECT_T-	Closed question, elicit change talk negative, about teen
+354	CQ-ECML_CG+	Closed question, elicit commitment language positive, about caregiver
+355	CQ-ECML_CG-	Closed question, elicit commitment language negative, about caregiver
+356	CQ-ECML_T+	Closed question, elicit commitment language positive, about teen
+357	CQ-ECML_T-	Closed question, elicit commitment language negative, about teen
+359	CQ-EB	closed-ended question, elicit barriers
+360	CQ-O	Other

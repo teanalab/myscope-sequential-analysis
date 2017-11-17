@@ -3,7 +3,10 @@ package preprocess;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class TextData {
 	
@@ -72,5 +75,83 @@ public class TextData {
 		}
 		successWriter.close();
 		unsuccessWriter.close();
+	}
+	
+	public static void createSequencesFrom37MITranscripts(String inputFolder, String successFile, 
+			String unsuccessFile, boolean withSpeaker) throws Exception {
+		
+		Map<String, String> speakerCodeMap = getMaping("codebook.txt", "\\s+");
+		Map<String, String> smallerCodeMap = getMaping("codebook for mapping.txt", ",");
+		
+		PrintWriter successWriter = new PrintWriter(successFile);
+		PrintWriter unsuccessWriter = new PrintWriter(unsuccessFile);
+		File rawDataFolder = new File(inputFolder);
+		File []rawFiles = rawDataFolder.listFiles();
+		 
+		for (int i = 0; i < rawFiles.length; ++i) {
+			BufferedReader br = new BufferedReader(new FileReader(rawFiles[i]));			
+			String line = "";
+			int count = 0;
+			
+			StringBuilder sb = new StringBuilder();
+			while ((line = br.readLine()) != null) {
+				String[] arr = line.split("\\s+");
+				String code = speakerCodeMap.get(arr[0].trim());
+				
+				//System.out.println(rawFiles[i].getName() + " : " + arr[0].trim());
+			
+				
+				String short_code = smallerCodeMap.get(speakerCodeMap.get(arr[0].trim())).trim();
+				if (withSpeaker) {
+					code = arr[1].trim().toUpperCase() + short_code;
+				}
+				
+				if (short_code.equalsIgnoreCase("CHTP") || short_code.equalsIgnoreCase("CMLP")) {
+					sb.append("500");
+					if (count > 1 && !sb.toString().contains("OMIT")){
+						successWriter.println(sb.toString());
+					}
+					sb.setLength(0);
+					count = 0;
+				}
+				else if (short_code.equalsIgnoreCase("ST")) {
+					sb.append("400");
+					if (count > 1 && !sb.toString().contains("OMIT")){
+						unsuccessWriter.println(sb.toString());
+					}
+					sb.setLength(0);
+					count = 0;
+				}
+				else {
+					count++;
+					sb.append(code);
+					sb.append(",");
+				}				
+			}
+			
+			br.close();	
+		}
+		successWriter.close();
+		unsuccessWriter.close();
+	}
+	
+	public static Map<String, String> getMaping(String inputFile, String regex) {
+		Map<String, String> speakerCodeMap = new TreeMap<>();
+		
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(inputFile));			
+			String line = null;
+			
+			while((line = br.readLine()) != null) {				
+				String[] codes = line.split(regex);
+				speakerCodeMap.put(codes[0].trim(), codes[1].trim());
+			}
+			br.close();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return speakerCodeMap;
 	}
 }

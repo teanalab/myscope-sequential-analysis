@@ -21,13 +21,13 @@ public class MainTestTKS {
 		String formatted_input = "input/formatted_sequence/" + dataType + ".txt";
 		
 		SequenceData seqData = new SequenceData(codeFile);
-		seqData.transformToExpectedFormat(codeFile, formatted_input);
+		seqData.transformToSequentialPatternsFormat(codeFile, formatted_input);
 
 		// Load a sequence database
 		String formattedoutput = "output/formatted_patterns/" + dataType + "_tks.txt";
 		String codeoutput = "output/code_patterns/" + dataType + "_tks.txt";
 		
-		int k = 1000;
+		int k = 500;
 		
 		// Create an instance of the algorithm 
 		AlgoTKS algo = new AlgoTKS(); 
