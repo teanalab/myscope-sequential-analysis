@@ -233,7 +233,7 @@ Eq.~\ref{eq:loss}, the total loss of our prediction models is the combination of
 $\bar y^{(t)}$ is the output at step $t$, and $\alpha\ \epsilon\ [0, 1]$ is a hyperparameter that determines the relative importance of intermediate outputs. Experimentally, it was determined that
 best performance achieved when we use $\alpha=0.5$. Our model also contains several other hyperparameters such as embedding dimension, number of hidden units, learning rate, batch size, etc., which
 were determined on the validation set. We implemented our models in Tensorflow with Adam optimizer and early stopping based on the validation loss. Experimentally, we observed that our model converges
-to optimal after 100 epochs and have no effect of dropout and regularization. The code for all models is publicly available at https://github.com/teanalab/myscope-sequential-analysis.   
+to optimal after 100 epoch and have no effect of dropout and regularization. The code for all models is publicly available at https://github.com/teanalab/myscope-sequential-analysis.   
   
 \subsection*{\textit{Evaluation metrics}}
 Performance of the proposed method was evaluated in terms of precision, recall, and F-measure using 10 folds cross-validation and weighted macro-averaging of these metrics over the folds. However, LSTM and GRU are trained on 80\% of the data and validated on 10\%. The remaining 10\% of the data is used as a test set for reporting the performance of the model. 
@@ -260,7 +260,7 @@ Experimental evaluation of the proposed method is conducted on both under and ov
  GRU RNN - TR & 0.8705 & 0.8676 & 0.8673 & 0.8412 & 0.8377 & 0.8373\\ \hline 
   \end{tabular}
 \end{table}  
-\subsection*{\textit{Predictive performance for under-sampled Patient-Provider Communication code sequences}}
+\subsection*{\textit{Predictive performance for under-sampled PPC code sequences}}
 We applied small learning rate (0.00005) and batch size (8) with early stopping strategy for training deep learning models when the under-sampled dataset is used. Five major conclusions can be drawn
 from the results in Table~\ref{tab:result_under_over_sampled}. First, recurrent neural networks outperform probabilistic models and achieve 16.39\%-26.1\% higher F1-score. Second, LSTM with
 target replication has the best performance over all other RNN methods, and achieved F1-score 0.8677 with precision 0.8733 and recall 0.8681. Third, target replication strategy improves the
@@ -268,7 +268,7 @@ performance of GRU and LSTM, while conventional GRU shows better performance tha
 for under-sampled sequences. Fifth, second-order MC has lower precision, recall, and F-measure than first-order MC. In particular, precision, recall and F-measure decrease by 9.42\%, 9.36\% and 
 9.36\%, when going from first to second-order MC model.
 
-\subsection*{\textit{Predictive performance for over-sampled Patient-Provider Communication code sequences}}
+\subsection*{\textit{Predictive performance for over-sampled PPC code sequences}}
 Similar to the under-sampled dataset, early stopping strategy was also employed for the over-sampled dataset. For over-sampled data, RNN models were trained with learning rate 0.00010 and batch size
 55. Experimental results indicate that HMM had better performance than second-order MC, achieving 9.34\%, 7.65\%, and 7.43\% higher precision, recall, and F-measure, while HMM still has 1.98\%,
 2.97\%, and 3.28\% lower precision, recall, and F-measure than first-order Markov chain. Similar to under-sampled sequences, target replication improves the performance of RNN models, and LSTM with
