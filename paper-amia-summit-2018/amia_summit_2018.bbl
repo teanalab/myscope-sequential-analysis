@@ -6,17 +6,17 @@ Yakhnenko O, Silvescu A, Honavar V.
 \newblock In: Data Mining, Fifth IEEE International Conference on. IEEE; 2005.
   p. 8--pp.
 
+\bibitem{deshpande2002evaluation}
+Deshpande M, Karypis G.
+\newblock Evaluation of techniques for classifying biological sequences.
+\newblock In: Pacific-Asia Conference on Knowledge Discovery and Data Mining.
+  Springer; 2002. p. 417--431.
+
 \bibitem{wei2006semi}
 Wei L, Keogh E.
 \newblock Semi-supervised time series classification.
 \newblock In: Proceedings of the 12th ACM SIGKDD international conference on
   Knowledge discovery and data mining. ACM; 2006. p. 748--753.
-
-\bibitem{lane1999temporal}
-Lane T, Brodley CE.
-\newblock Temporal sequence learning and data reduction for anomaly detection.
-\newblock ACM Transactions on Information and System Security (TISSEC).
-  1999;2(3):295--331.
 
 \bibitem{leslie2004fast}
 Leslie C, Kuang R.
@@ -47,6 +47,23 @@ Kundu A, He Y, Bahl P.
 \newblock In: Computer Vision and Pattern Recognition, 1988. Proceedings
   CVPR'88., Computer Society Conference on. IEEE; 1988. p. 457--462.
 
+\bibitem{hochreiter1997long}
+Hochreiter S, Schmidhuber J.
+\newblock Long short-term memory.
+\newblock Neural computation. 1997;9(8):1735--1780.
+
+\bibitem{bengio1993problem}
+Bengio Y, Frasconi P, Simard P.
+\newblock The problem of learning long-term dependencies in recurrent networks.
+\newblock In: Neural Networks, 1993., IEEE International Conference on. IEEE;
+  1993. p. 1183--1188.
+
+\bibitem{graves2013speech}
+Graves A, Mohamed Ar, Hinton G.
+\newblock Speech recognition with deep recurrent neural networks.
+\newblock In: Acoustics, speech and signal processing (icassp), 2013 ieee
+  international conference on. IEEE; 2013. p. 6645--6649.
+
 \bibitem{nion2013handwritten}
 Nion T, Menasri F, Louradour J, Sibade C, Retornaz T, M{\'e}taireau PY, et~al.
 \newblock Handwritten information extraction from historical census documents.
@@ -62,18 +79,6 @@ Lipton ZC, Kale DC, Elkan C, Wetzell R.
 Choi E, Bahadori MT, Schuetz A, Stewart WF, Sun J.
 \newblock Doctor ai: Predicting clinical events via recurrent neural networks.
 \newblock In: Machine Learning for Healthcare Conference; 2016. p. 301--318.
-
-\bibitem{graves2013speech}
-Graves A, Mohamed Ar, Hinton G.
-\newblock Speech recognition with deep recurrent neural networks.
-\newblock In: Acoustics, speech and signal processing (icassp), 2013 ieee
-  international conference on. IEEE; 2013. p. 6645--6649.
-
-\bibitem{bengio1993problem}
-Bengio Y, Frasconi P, Simard P.
-\newblock The problem of learning long-term dependencies in recurrent networks.
-\newblock In: Neural Networks, 1993., IEEE International Conference on. IEEE;
-  1993. p. 1183--1188.
 
 \bibitem{chung2014empirical}
 Chung J, Gulcehre C, Cho K, Bengio Y.
@@ -158,20 +163,15 @@ Bengio Y, Ducharme R, Vincent P, Jauvin C.
 \newblock A neural probabilistic language model.
 \newblock Journal of machine learning research. 2003;3(Feb):1137--1155.
 
-\bibitem{hochreiter1997long}
-Hochreiter S, Schmidhuber J.
-\newblock Long short-term memory.
-\newblock Neural computation. 1997;9(8):1735--1780.
+\bibitem{maaten2008visualizing}
+Maaten Lvd, Hinton G.
+\newblock Visualizing data using t-SNE.
+\newblock Journal of Machine Learning Research. 2008;9(Nov):2579--2605.
 
 \bibitem{cho2014properties}
 Cho K, Van~Merri{\"e}nboer B, Bahdanau D, Bengio Y.
 \newblock On the properties of neural machine translation: Encoder-decoder
   approaches.
 \newblock arXiv preprint arXiv:14091259. 2014;.
-
-\bibitem{lee2015deeply}
-Lee CY, Xie S, Gallagher P, Zhang Z, Tu Z.
-\newblock Deeply-supervised nets.
-\newblock In: Artificial Intelligence and Statistics; 2015. p. 562--570.
 
 \end{thebibliography}

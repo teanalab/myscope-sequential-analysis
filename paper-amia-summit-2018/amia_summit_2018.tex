@@ -41,7 +41,7 @@ more challenging task than traditional classification. Predicting the outcome of
 
 In general, sequence classification methods fall into one of the three major categories: feature-based, distance-based and model-based. Feature-based methods transform a sequence into a feature
 vector and apply a standard supervised learning methods, such as Support Vector Machine \cite{leslie2004fast} or Decision Tree \cite{chuzhanova1998feature} to arrive at a classification decision.
-Feature-based methods for sequence classification have had limited success, since traditional bag-of-words feature representation methods cannot easily account for the order of observations in a
+Feature-based methods for sequence classification have had limited success since traditional bag-of-words feature representation methods cannot easily account for the order of observations in a
 sequence.
 %Shapelet \cite{ye2009time} and pattern based techniques \cite{kudenko1998feature, lesh1999mining} as well as hierarchical approaches \cite{nallam2016effective} have been proposed instead of
 %standard classifiers as well.
@@ -82,7 +82,7 @@ interviews, in particular.
 The experimental dataset for this work was constructed from the transcripts of 129 motivational interviews, which include a total of 50,239 segmented and annotated utterances. Each transcript consists
 of an MI interview session involving counselor, adolescent, and caregiver. The utterances were annotated based on MYSCOPE codebook \cite{carcone2013provider}, in which the codes are grouped into
 patient (adolescent and caregiver) codes and counselor codes. Utterances were divided into successful and unsuccessful communication sequences. Successful communication sequences result in
-positive change talk and commitment language statements by an adolescent or caregiver, while unsuccessful sequences are the ones that result in negative change talk or commitment language and the
+positive change talk (CHT+) and commitment language (CML+) statements by an adolescent or caregiver, while unsuccessful sequences are the ones that result in negative change talk (CHT-) or commitment language (CML-) and the
 sequences, in which no change talk or commitment language statements occur. Out of 5143 observed sequences, 4225 were positive and 918 were negative. Successful sequences had an average length of
 9.79 utterances, while unsuccessful sequences had on average 9.65 utterances. For each of the probabilistic models (MC and HMM), two models were trained, one model was trained using successful
 sequences and another one was trained using unsuccessful sequences. 
@@ -228,11 +228,11 @@ total\ loss = \alpha \cdot \frac{1}{T}\sum_{t=1}^T loss(\bar y^{(t)},y^{(t)}) + 
     \label{fig:rnn-model}
 \end{figure}
 The architecture of the proposed Recurrent Neural Network is shown in Figure~\ref{fig:rnn-model}. We used one hidden layer of 15 LSTM or GRU nodes and embedding of MYSCOPE codes in an observed
-sequence of communication behaviors as input. Then, we applied a softmax layer at each time-step for predicting the target which is the predicted label of the sequence. As can be seen from
+sequence of communication behaviors as input. Then, we applied a softmax layer at each time-step for predicting the label of the sequence. Since the sequence label was predicted at each time step, the proposed model is also known as Recurrent Neural Network with Target Replication (RNN-TR). As can be seen from
 Eq.~\ref{eq:loss}, the total loss of our prediction models is the combination of final loss and the mean of the losses over all sequence steps, where $T$ is the total number of elements in a sequence,
 $\bar y^{(t)}$ is the output at step $t$, and $\alpha\ \epsilon\ [0, 1]$ is a hyperparameter that determines the relative importance of intermediate outputs. Experimentally, it was determined that
 best performance achieved when we use $\alpha=0.5$. Our model also contains several other hyperparameters such as embedding dimension, number of hidden units, learning rate, batch size, etc., which
-were determined on the validation set. We implemented our models in Tensorflow with Adam optimizer and early stopping based on the validation loss. Experimentally, we observed that our model converges
+were determined by the validation set. We implemented our models in Tensorflow with Adam optimizer and early stopping based on the validation loss. Experimentally, we observed that our model converges
 to optimal after 100 epochs and have no effect of dropout and regularization. The code for all models is publicly available at https://github.com/teanalab/myscope-sequential-analysis.   
   
 \subsection*{\textit{Evaluation metrics}}
@@ -327,7 +327,7 @@ reasonable trade-off between efficiency and accuracy.
 Fourth, similar to traditional Markov model, HMM achieves a dramatic improvement in the prediction accuracy when larger training set is used. This indicates that sufficient training data is required
 to estimate optimal hyperparameters such as a number of hidden states, initial state distribution, transition probabilities, and emission probabilities.   
  
-Fifth, the proposed method can be used to identify the most effective communication strategies at eliciting a particular type of behavioral response. Awareness of these strategies by researchers can significantly decrease the time and effort required to develop effective interventions to address many public health conditions, such as childhood obesity, and tailor these interventions to particular patient cohorts. Awareness of these strategies by the counselors can lead to a greater success rate of motivational interviews.     
+Fifth, the proposed method can be used to identify the most effective communication strategies for eliciting a particular type of behavioral response. Awareness of these strategies by researchers can significantly decrease the time and effort required to develop effective interventions to address many public health conditions, such as childhood obesity, and tailor these interventions to particular patient cohorts. Awareness of these strategies by the counselors can lead to a greater success rate of motivational interviews.     
  
 \section*{Conclusion}
 In this paper, we compared the accuracy of Recurrent Neural Networks with Markov Chain and Hidden Markov Model for the task of predicting the success of motivational interviews. We found out
