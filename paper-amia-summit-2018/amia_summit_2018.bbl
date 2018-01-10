@@ -3,20 +3,20 @@
 \bibitem{yakhnenko2005discriminatively}
 Yakhnenko O, Silvescu A, Honavar V.
 \newblock Discriminatively trained markov model for sequence classification.
-\newblock In: Data Mining, Fifth IEEE International Conference on. IEEE; 2005.
-  p. 8--pp.
+\newblock In: Proceedings of the 5th IEEE International Conference on Data
+  Mining. IEEE; 2005. .
 
 \bibitem{deshpande2002evaluation}
 Deshpande M, Karypis G.
 \newblock Evaluation of techniques for classifying biological sequences.
-\newblock In: Pacific-Asia Conference on Knowledge Discovery and Data Mining.
-  Springer; 2002. p. 417--431.
+\newblock In: Proceedings of the Pacific-Asia Conference on Knowledge Discovery
+  and Data Mining. Springer; 2002. p. 417--431.
 
 \bibitem{wei2006semi}
 Wei L, Keogh E.
 \newblock Semi-supervised time series classification.
-\newblock In: Proceedings of the 12th ACM SIGKDD international conference on
-  Knowledge discovery and data mining. ACM; 2006. p. 748--753.
+\newblock In: Proceedings of the 12th ACM SIGKDD International Conference on
+  Knowledge Discovery and Data Mining. ACM; 2006. p. 748--753.
 
 \bibitem{leslie2004fast}
 Leslie C, Kuang R.
@@ -31,8 +31,8 @@ Chuzhanova NA, Jones AJ, Margetts S.
 \bibitem{keogh2000scaling}
 Keogh EJ, Pazzani MJ.
 \newblock Scaling up dynamic time warping for datamining applications.
-\newblock In: Proceedings of the sixth ACM SIGKDD international conference on
-  Knowledge discovery and data mining. ACM; 2000. p. 285--289.
+\newblock In: Proceedings of the 6th ACM SIGKDD International Conference on
+  Knowledge Discovery and Data Mining. ACM; 2000. p. 285--289.
 
 \bibitem{rabiner1989tutorial}
 Rabiner LR.
@@ -48,25 +48,25 @@ Lipton ZC, Berkowitz J, Elkan C.
 \bibitem{hochreiter1997long}
 Hochreiter S, Schmidhuber J.
 \newblock Long short-term memory.
-\newblock Neural computation. 1997;9(8):1735--1780.
+\newblock Neural Computation. 1997;9(8):1735--1780.
 
 \bibitem{bengio1993problem}
 Bengio Y, Frasconi P, Simard P.
 \newblock The problem of learning long-term dependencies in recurrent networks.
-\newblock In: Neural Networks, 1993., IEEE International Conference on. IEEE;
-  1993. p. 1183--1188.
+\newblock In: Proceedings of the 1993 IEEE International Conference on Neural
+  Networks. IEEE; 1993. p. 1183--1188.
 
 \bibitem{graves2013speech}
-Graves A, Mohamed Ar, Hinton G.
+Graves A, Mohamed AR, Hinton G.
 \newblock Speech recognition with deep recurrent neural networks.
-\newblock In: Acoustics, speech and signal processing (icassp), 2013 ieee
-  international conference on. IEEE; 2013. p. 6645--6649.
+\newblock In: Proceedings of the 2013 IEEE International Conference on
+  Acoustics, Speech and Signal Processing. IEEE; 2013. p. 6645--6649.
 
 \bibitem{nion2013handwritten}
 Nion T, Menasri F, Louradour J, Sibade C, Retornaz T, M{\'e}taireau PY, et~al.
 \newblock Handwritten information extraction from historical census documents.
-\newblock In: Document Analysis and Recognition (ICDAR), 2013 12th
-  International Conference on. IEEE; 2013. p. 822--826.
+\newblock In: Proceedings of the 12th International Conference on Document
+  Analysis and Recognition; 2013. p. 822--826.
 
 \bibitem{lipton2015learning}
 Lipton ZC, Kale DC, Elkan C, Wetzell R.
@@ -76,7 +76,8 @@ Lipton ZC, Kale DC, Elkan C, Wetzell R.
 \bibitem{choi2016doctor}
 Choi E, Bahadori MT, Schuetz A, Stewart WF, Sun J.
 \newblock Doctor ai: Predicting clinical events via recurrent neural networks.
-\newblock In: Machine Learning for Healthcare Conference; 2016. p. 301--318.
+\newblock In: Proceedings of Machine Learning for Healthcare Conference; 2016.
+  p. 301--318.
 
 \bibitem{chung2014empirical}
 Chung J, Gulcehre C, Cho K, Bengio Y.
@@ -88,7 +89,7 @@ Chung J, Gulcehre C, Cho K, Bengio Y.
 Ogden CL, Carroll MD, Kit BK, Flegal KM.
 \newblock Prevalence of obesity and trends in body mass index among US children
   and adolescents, 1999-2010.
-\newblock Jama. 2012;307(5):483--490.
+\newblock Journal of American Medical Association. 2012;307(5):483--490.
 
 \bibitem{general2010surgeon}
 General US.
@@ -111,22 +112,21 @@ Walker D, Stephens R, Rowland J, Roffman R.
 Kotov A, Hasan M, Carcone A, Dong M, Naar-King S, BroganHartlieb K.
 \newblock Interpretable probabilistic latent variable models for automatic
   annotation of clinical text.
-\newblock In: AMIA Annual Symposium Proceedings. vol. 2015. American Medical
-  Informatics Association; 2015. p. 785.
+\newblock In: Proceedings of the 2015 Annual Symposium of the American Medical
+  Informatics Association; 2015. p. 785--794.
 
 \bibitem{hasan2016study}
 Hasan M, Kotov A, Carcone AI, Dong M, Naar S, Hartlieb KB.
 \newblock A study of the effectiveness of machine learning methods for
   classification of clinical interview fragments into a large number of
   categories.
-\newblock Journal of biomedical informatics. 2016;62:21--31.
+\newblock Journal of Biomedical Informatics. 2016;62:21--31.
 
 \bibitem{carcone2013provider}
 Carcone AI, Naar-King S, Brogan K, Albrecht T, Barton E, Foster T, et~al.
 \newblock Provider communication behaviors that predict motivation to change in
   black adolescents with obesity.
-\newblock Journal of developmental and behavioral pediatrics: JDBP.
-  2013;34(8):599.
+\newblock Journal of Developmental and Behavioral Pediatrics. 2013;34(8):599.
 
 \bibitem{eide2004physician}
 Eide H, Quera V, Graugaard P, Finset A.
@@ -137,7 +137,7 @@ Eide H, Quera V, Graugaard P, Finset A.
 \bibitem{chawla2002smote}
 Chawla NV, Bowyer KW, Hall LO, Kegelmeyer WP.
 \newblock SMOTE: synthetic minority over-sampling technique.
-\newblock Journal of artificial intelligence research. 2002;16:321--357.
+\newblock Journal of Artificial Intelligence Research. 2002;16:321--357.
 
 \bibitem{nguyen2011borderline}
 Nguyen HM, Cooper EW, Kamei K.
@@ -160,6 +160,19 @@ Won KJ, Pr{\"u}gel-Bennett A, Krogh A.
 Bengio Y, Ducharme R, Vincent P, Jauvin C.
 \newblock A neural probabilistic language model.
 \newblock Journal of machine learning research. 2003;3(Feb):1137--1155.
+
+\bibitem{mikolov2013distributed}
+Mikolov T, Sutskever I, Chen K, Corrado GS, Dean J.
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock In: Advances in Neural Information Processing Systems; 2013. p.
+  3111--3119.
+
+\bibitem{pennington2014glove}
+Pennington J, Socher R, Manning C.
+\newblock Glove: Global vectors for word representation.
+\newblock In: Proceedings of the 2014 Conference on Empirical Methods in
+  Natural Language Processing; 2014. p. 1532--1543.
 
 \bibitem{maaten2008visualizing}
 Maaten Lvd, Hinton G.
