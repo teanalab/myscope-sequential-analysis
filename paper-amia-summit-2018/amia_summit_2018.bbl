@@ -40,12 +40,10 @@ Rabiner LR.
   speech recognition.
 \newblock Proceedings of the IEEE. 1989;77(2):257--286.
 
-\bibitem{kundu1988recognition}
-Kundu A, He Y, Bahl P.
-\newblock Recognition of handwritten word: first and second order hidden Markov
-  model based approach.
-\newblock In: Computer Vision and Pattern Recognition, 1988. Proceedings
-  CVPR'88., Computer Society Conference on. IEEE; 1988. p. 457--462.
+\bibitem{lipton2015critical}
+Lipton ZC, Berkowitz J, Elkan C.
+\newblock A critical review of recurrent neural networks for sequence learning.
+\newblock arXiv preprint arXiv:150600019. 2015;.
 
 \bibitem{hochreiter1997long}
 Hochreiter S, Schmidhuber J.
