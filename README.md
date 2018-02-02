@@ -84,10 +84,13 @@ python obesity-gru-lstm.py --sampling 'over' --folds 10 --min_change 0.0015
 * **[Mehedi Hasan](https://www.researchgate.net/profile/Mehedi_Hasan33)** - *Department of Computer Science at Wayne State University*
 * **[Alexander Kotov](http://www.cs.wayne.edu/kotov/)** - *Department of Computer Science at Wayne State University*
 
+## Citation
+
+Please cite the following paper if you use our code or ideas in your work:
+
+Mehedi Hasan, Alexander Kotov, April Idalski Carcone, Ming Dong, Sylvie Naar, "Predicting the Outcome of Patient-Provider Communication Sequences using Recurrent Neural Networks and Probabilistic Models", In Proceedings of the 2018 Informatics Summit of the American Medical Informatics Association (AMIA Summit 2018).
 
 ## Acknowledgments
 
 * We would like to thank the student assistants in the department of Family Medicine and Public Health Sciences at Wayne State University School of Medicine for their help with transcribing the recordings of motivational interviews.
-
-
 
