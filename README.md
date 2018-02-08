@@ -81,7 +81,7 @@ python obesity-gru-lstm.py --sampling 'over' --folds 10 --min_change 0.0015
 
 ## Authors
 
-* **[Mehedi Hasan](https://www.researchgate.net/profile/Mehedi_Hasan33)** - *Department of Computer Science at Wayne State University*
+* **[Mehedi Hasan](http://www.cs.wayne.edu/mehedi/)** - *Department of Computer Science at Wayne State University*
 * **[Alexander Kotov](http://www.cs.wayne.edu/kotov/)** - *Department of Computer Science at Wayne State University*
 
 ## Citation
