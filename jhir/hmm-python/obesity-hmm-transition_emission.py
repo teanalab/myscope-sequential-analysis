@@ -10,8 +10,8 @@ import argparse
 
 # Parse command line arguments
 parser = argparse.ArgumentParser(description='Train HMM Model.')
-parser.add_argument('--succ_hidden_states', default=17, type=int, help='number of hidden states for successful sequences')
-parser.add_argument('--unsucc_hidden_states', default=11, type=int, help='number of hidden states for unsuccessful sequences')
+parser.add_argument('--succ_hidden_states', default=5, type=int, help='number of hidden states for successful sequences')
+parser.add_argument('--unsucc_hidden_states', default=2, type=int, help='number of hidden states for unsuccessful sequences')
 parser.add_argument('--codebook', default='codebook.txt', help='File location containing codebook.')
 
 # Read parameters
