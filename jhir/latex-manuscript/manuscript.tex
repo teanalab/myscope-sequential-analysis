@@ -47,8 +47,10 @@ grestore
 %
 \usepackage{graphicx}
 \usepackage[numbers]{natbib}
+\usepackage{geometry}
+\usepackage{pdflscape}
 %
-% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+\usepackage{mathptmx}      % use Times fonts if available on your TeX system
 %
 % insert here the call for the packages your document requires
 %\usepackage{latexsym}
@@ -62,48 +64,70 @@ grestore
 %
 \begin{document}
 
-\title{Insert your title here%\thanks{Grants or other notes
-%about the article that should go on the front page should be
-%placed here. General acknowledgments should be placed at the end of the article.}
+\title{Identifying Effective Motivational Interviewing Sequences Using Automated Pattern Analysis
+\thanks{This study was supported by a grant from the National Institutes of Health, NIDDK R21DK108071, Carcone and Kotov, MPIs.}
 }
-\subtitle{Do you have a subtitle?\\ If so, write it here}
+%\subtitle{Do you have a subtitle?\\ If so, write it here}
 
 %\titlerunning{Short form of title}        % if too long for running head
 
-\author{Mehedi Hasan         \and
-       Alexander Kotov %etc.
+\author{Mehedi Hasan, PhDc$^1$\and 
+April Idalski Carcone, PhD$^2$\and 
+Sylvie Naar, PhD$^3$\and 
+Susan Eggly, PhD$^4$\and  
+Gwen L. Alexander, PhD$^5$\and 
+Kathryn E Brogan Hartlieb, PhD$^6$\and 
+Alexander Kotov, PhD$^1$
 }
 
 %\authorrunning{Short form of author list} % if too long for running head
 
-\institute{F. Author \at
-              first address \\
-              Tel.: +123-45-678910\\
-              Fax: +123-45-678910\\
-              \email{fauthor@example.com}           %  \\
-%             \emph{Present address:} of F. Author  %  if needed
+\institute{Alexander Kotov (corresponding author) \at
+              5057 Woodward Suite 14001.6 \\
+              Detroit, MI 48202\\
+              Tel.: +1(313) 577-9307\\
+              \email{kotov@wayne.edu} 
            \and
-           S. Author \at
-              second address
+           $^1$Department of Computer Science, College of Engineering, Wayne State University, Detroit, MI 48202\\
+$^2$Division of Behavioral Health Sciences, Department of Family Medicine and Public Health Sciences, Wayne State University School of Medicine, Detroit, MI 48202\\
+$^3$Director, Center for Translational Behavioral Research, Department of Behavioral Sciences and Social Medicine, Florida State University, FL 32306\\  
+$^4$Department of Oncology, Wayne State University/Karmanos Cancer Institute, Detroit, MI 48201\\
+$^5$Department of Public Health Sciences, Henry Ford Health System, Detroit, MI 48202\\
+$^6$Department of Humanities, Health and Society, Wertheim College of Medicine, Florida International University, Miami, FL 33199    
 }
 
-\date{Received: date / Accepted: date}
+\date{Received: 12/03/2018 Revised: 04/15/2018 Accepted: }
 % The correct dates will be entered by the editor
 
 
 \maketitle
 
 \begin{abstract}
-Insert your abstract here. Include keywords, PACS and mathematical
-subject classification numbers as needed.
-\keywords{First keyword \and Second keyword \and More}
-% \PACS{PACS code1 \and PACS code2 \and more}
+Motivational Interviewing (MI) is a communication technique to increase intrinsic motivation for behavior change. Although there is a strong empirical evidence linking “MI-consistent” counselor behaviors and patient statements of intrinsic motivation (i.e., “change talk”) for behavior change, the specific patterns of patient- counselor communication that are effective for eliciting patient change talk are a subject of ongoing research in behavioral sciences. A significant barrier to this research is the time and resource-intensive cognitive tasks, such as manual coding and sequential analysis of coded motivational interview transcripts, that are an integral part of the qualitative analysis of patient-counselor communication. Data mining and machine learning techniques have the potential to significantly reduce this barrier by partially automating these cognitive tasks. In this paper, we evaluate the empirical effectiveness of the Hidden Markov Model, a probabilistic generative model for sequence data, and closed frequent pattern mining to inform MI practice. We conducted experiments with 1,360 communication sequences from 37 transcribed audio recordings of weight loss counseling sessions with African-American adolescents with obesity and their caregivers. Transcripts had previously been annotated with patient-counselor behavior codes using a specialized codebook. Empirical results indicate that Hidden Markov Model and closed frequent pattern mining techniques can identify meaningful and interpretable counselor communication strategies to guide clinical practice.
+\keywords{sequential analysis \and hidden markov model \and closed frequent pattern mining \and motivational interviewing \and weight loss \and adolescents}
+%\PACS{PACS code1 \and PACS code2 \and more}
 % \subclass{MSC code1 \and MSC code2 \and more}
 \end{abstract}
 
 \section{Introduction}
 \label{intro}
-Your text comes here. Separate text sections with
+Motivational Interviewing (MI) is an evidence-based strategy for communicating with patients about behavior change [129]. The theory underlying MI’s clinical efficacy posits that behavior change is triggered by fostering an atmosphere of change which is accomplished through the exercise of relational and technical skills. [2]CITE] The relational hypothesis suggests that counselors’ use accurate empathy, positive regard, and congruence create the “spirit of MI”, an optimal therapeutic state to explore behavior change. MI’s technical hypothesis [3]cite] states counselors’ use of communication techniques consistent with the MI framework (MICO; e.g., open-ended questions, reflections, advise with permission, affirmations, emphasize control, reframe, and support) will lead to patient “change talk”. Cto increase intrinsic motivation (engaging in an activity for reasons of satisfaction rather than external consequences) atients“change talk”, that is, is the  statements patients make during clinical encounters that express their internal desire, ability, reasons, need for, and/or commitment to behavior change. Change talk expressed during treatment sessions consistently predicts behavior change [440] with results persisting as long as 34 months post-intervention [541]. MI-inconsistent communication behaviors (MIIN; e.g., advising without permission, warning about behavioral consequences, and confronting) will lead to arguments against behavioral change and/or to maintain the status quo (referred to as counter change talk or sustain talk). Multiple studies have linked high rates of MICO to the expression of change talk and MIIN to sustain talk. [3] These studies have relied on session-level behavior counts and correlational analyses, which ignore the temporal sequencing of patient-counselor communication, thereby limiting researchers’ ability to test MI’s technical hypothesis. 
+
+[6][3]Sequential analysis is an analytic approach to examine the temporal sequencing of behavioral events. [7,8].ADD] In a study of adults seeking or mandated to treatment for alcohol abuse, Moyers and Martin [9]ADD] found change talk was significantly more likely after MICO and sustain talk more likely after MIIN. In a follow up study with the same population, [10]ADD] change talk was more likely after two MICO behaviors, counselor questions about the positive and negative aspects of drinking and reflections of change talk, but these behaviors also led to sustain talk. MIIN was unrelated to sustain talk but decreased the likelihood of change talk. Among young adults in brief motivational interviewing for hazardous alcohol consumption, Gaume and colleagues [11]ADD] also found a MICO-change talk and MICO-sustain talk sequential pattern; a MIIN-sustain talk pattern was not observed. A second study with the same population confirmed MICO led to significantly more change talk and sustain talk [12]ADD]. In this sample, MIIN led to greater sustain talk, but was unrelated to change talk. Further analyses revealed that reflections were the only MICO behavior that led to increased change talk; reflections and other MICO behaviors but not questions were related to increased sustain talk. Glynn and colleagues [13]ADD] found reflections of change talk were more likely to elicit change talk among incarcerated adolescents with high rates of alcohol and marijuana use. Similarly, reflections of sustain talk were more likely to elicit more sustain talk. In contrast, Carcone and colleagues [14]ADD] found open-ended questions phrased to elicit change talk, reflections of change talk, and statements emphasizing decision-making autonomy were the only counselor behaviors likely to result in change talk among adolescents engaged in weight loss treatment. In a parallel study of the adolescents’ caregivers, Jacques-Tiura et al. [15]ADD] found the same; questions phrased to elicit change talk, reflections of change talk, and autonomy supportive statements were the counselor behaviors empirically linked to the elicitation of change talk. Across these studies, counselors’ use of reflections was the only MICO behavior consistently linked to change talk suggesting a need for additional research to understand in what contexts the various MICO strategies are effective, i.e., lead to change talk. 
+
+The sequential analysis procedure used in the above MI process studies [16-19] is based on first-order Markov Chain models [9, 10, 12]. Markov Chain is a discrete-time stochastic process with the property that the system state or condition changes over time and only depends upon previous event. Markov chain models have two main drawbacks. The first is their inability to preserve the long-term dependencies between observations in a sequence (they consider each observation to be dependent only on the immediately preceding one). In MI and other behavioral interventions, the antecedents of a given observed behavior could be influenced by any of the preceding behaviors. The second drawback is their inability to consider similarities between behavior codes, although in MI multiple similar behaviors may have the same outcome. Thus, first-order Markov models may be insufficient for understanding the associations among behaviors in patient-counselor communication sequences. Therefore, there is a need for more powerful computational methods, which consider clusters of behavior codes and long-term dependencies among behaviors, to identify such causal relationships. The goal of the current research is to develop a such a method to identify effective patterns of patient-counselor communication.
+
+Several prior works have reported the results of adopting topic models [20-24], classification models [25-28] and neural networks [25, 29, 30] to the tasks of annotating MI transcripts and assessing intervention fidelity. Perez-Rosas et al. [27] developed a system for the evaluation of counselor fidelity to the MI framework by observing counselor language during the motivational interview. This system employed a support vector machine (SVM), which constructs a hyperplane in a high dimensional space to separate data points. In their approach, Perez-Rosas et al. proposed SVM model based on n-gram, syntactic, and semantic features, which achieved near 90\% accuracy for predicting specific MI counselor behaviors, such as reflections. Patient’s engagement, verbal and non-verbal accommodation as well as topics discussed during the MI session, were analyzed to identify linguistic and acoustic features of counselor empathy. These features were then used to build a counselor empathy classifier that achieved an accuracy of up to 80\%. In our own recent work, we evaluated the accuracy of state-of-the-art classification methods and neural networks in conjunction with lexical, contextual, and semantic features for the task of automated annotation of MI transcripts with different numbers of behavior codes (codebooks) [25].  In a follow up study [31], we formulated the problem of predicting the likelihood of eliciting a certain type of behavioral response during motivational interview as a sequence classification problem. Markov chains, HMMs and recurrent neural networks were applied to monitor the progression of motivational interviews and predicting the likelihood of eliciting “change talk”. This paper continues this line of research by examining the efficacy of Hidden Markov Models (HMMs) and Frequent Pattern Mining in identifying the antecedent counselor communication strategies leading to patient change talk. 
+
+HMMs are widely used for analysis of sequence data due of their ability to model dependencies between coherent clusters of discrete observations in a sequence. HMM associates a “hidden” state with each observation in a sequence, where each state corresponds to a different distribution over observations, and model’s sequences of observations as transitions between hidden states and sampling observations from each hidden state. HMMs were originally proposed for speech recognition [3263], in which the states were used to represent all sounds of English. In biomedical informatics, HMMs were employed for diagnosis of diseases and biological sequence modeling [3366, 3467]. For example, in [3366] the Doppler ultrasound was used for feature extraction and then an HMM based classifier was applied to distinguish healthy patients from the patients with a heart disease, while in [3467], HMM was applied to capture important statistical characteristics of protein families. HMM and adjusted regression models were employed in [35] to examine the association of different sequences of “change talk” utterances with drinking outcomes in a brief motivational intervention.  In the case of applying HMM to modeling patient-counselor communication, hidden states correspond to a set of related behavior codes, such as a patient’s underlying emotional state, during a motivational interview. Although MI literature clearly identifies patient change talk and commitment language as antecedents of patient’s behavior change [40], there is less clarity on which counselor communication strategies influence the articulation of change talk. HMM modeling of successful and unsuccessful MI sessions could provide additional evidence to identify counselor communication strategies that contribute to patient change talk.
+
+Frequent Pattern Mining [3668] is a class of data mining methods to identify sets of items (referred to as itemsets) which frequently appear together in a collection of sequences. Frequent Pattern Mining was first introduced by Agrawal and Srikant with the Apriori algorithm [3769], which was designed to identify patterns in customer purchases. Since its introduction, frequent pattern mining has been applied in several other domains including health informatics [3870-4173], medical imaging [39] and chemical and biological analysis [4274-4476], web mining [4577], and outlier analysis [4678]. Abdullah et. al. applied frequent pattern mining on medical billing data to analyze associations between diagnosis and treatments [3870]. In particular, the Apriori algorithm was used to identify most frequent itemsets1 that consist of a minimum of one diagnosis code (DxCode) and one current procedural terminology (CPT) code. Another study [3971] was conducted on medical image data for mining association rules to provide diagnosis support. At first, important features were extracted and then domain knowledge was integrated to generate rules for the interpretation of frequent patterns among important image features, such as object size, noise level, contrast, and texture, etc. However, to the best of our knowledge, nNo publishedrior research has yet examined the utility of frequent pattern mining to study patient-counselor communication. A major challenge in applying frequent pattern mining methods to patient-counselor communication sequences is the large number of resulting patterns, which are difficult to interpret, is a major challenge in applying frequent pattern mining methods to patient- communication sequences. To address this problem, in this study, we utilized the closed frequent itemset mining method [4779], which produces more compact patterns that are easier to interpret. Specifically, we leveraged FPClose [4880], an efficient state-of-the-art closed frequent pattern mining method, to identify the counselor behaviors that most frequently lead to patient change talk. FPClose is the best algorithm in terms of running time and memory consumption proposed to date for mining closed frequent itemset, which works particularly well for sparse data.
+
+This paper is one of the first empirical evaluations of the utility of HMM and closed frequent pattern mining for the study of patient-counselor communication during informing MI practice via automated analysis of patient- communication. Bertholet and colleagues published the only other study using this approach…. The goal of this study is to use HMM and FPM to inform clinical practitioners of the novel type of analytical results that these models can provide to help them better understand the antecedent counselor communication strategies leading to patient change talk during Motivational Interviewing sessions. In particular, tThese two models offerprovide the following advances over the sequential analysis computational methods currently used for MI research:. 
+As opposed to fFirst-order Markov chain models, which identify the influence of counselor statements immediately preceding on patient behavior only in the form of statements using a transition matrix between of individual behavior codes. In contrast, HMMs identifies summarizeidentify transitions between clusters of related behavior codes, allowing theo capture identification to examine which of the antecedent behavior cluster is responsible for the elicitation of change talk and sustain talk in successful and unsuccessful patient-counselor communication.of more abstract patterns in patient-counselor communication;. 
+As opposed to the first-order Markov models and HMMs, fFrequent pattern mining can capture the can identify patterns that involveing long-range dependencies between patient and counselor behaviors. Long-range dependency is important because human behavior is informed by all the antecedent behaviors not just the immediately preceding behavior.
+
+In this paper, we focus on computational methods to facilitate analysis of transcripts to identify patterns of patient-counselor communication, in the form of sequences of behavior codes, in both successful and unsuccessful motivational interviews. Analysis of these patterns provides empirical support for the specific counselor communication strategies that are effective at eliciting patient change talk. This knowledge can inform clinical practice by facilitating the development of more effective and tailored behavioral interventions, including the ones focused on weight loss among minority adolescents.
 \section{Section title}
 \label{sec:1}
 Text with citations \citep{wei2006semi} and \citep{keogh2000scaling}.
@@ -136,6 +160,9 @@ a^2+b^2=c^2
 \label{fig:2}       % Give a unique label
 \end{figure*}
 %
+%\newgeometry{margin=2cm} % modify this if you need even more space
+\begin{landscape}
+
 % For tables use
 \begin{table}
 % table caption is above the table
@@ -152,6 +179,24 @@ number & number & number \\
 \end{tabular}
 \end{table}
 
+% For tables use
+\begin{table}
+% table caption is above the table
+\caption{Please write your table caption here}
+\label{tab:2}       % Give a unique label
+% For LaTeX tables use
+\begin{tabular}{lll}
+\hline\noalign{\smallskip}
+first & second & third  \\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+number & number & number \\
+number & number & number \\
+\noalign{\smallskip}\hline
+\end{tabular}
+\end{table}
+
+\end{landscape}
+\restoregeometry
 
 \begin{acknowledgements}
 If you'd like to thank anyone, place your comments here and remove the percent signs.

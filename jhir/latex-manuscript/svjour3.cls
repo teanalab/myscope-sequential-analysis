@@ -533,8 +533,8 @@ later}
 \def\makeheadbox{{%
 \hbox to0pt{\vbox{\baselineskip=10dd\hrule\hbox
 to\hsize{\vrule\kern3pt\vbox{\kern3pt
-\hbox{\bfseries\@journalname\ manuscript No.}
-\hbox{(will be inserted by the editor)}
+\hbox{\bfseries\@journalname\ manuscript No.: JHIR-D-17-00114}
+%\hbox{(will be inserted by the editor)}
 \kern3pt}\hfil\kern3pt\vrule}\hrule}%
 \hss}}}
 %
