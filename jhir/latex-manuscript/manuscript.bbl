@@ -1,15 +1,13 @@
 \begin{thebibliography}{}
 
-\bibitem[Keogh and Pazzani(2000)Keogh and Pazzani]{keogh2000scaling}
-Keogh, E.~J. and Pazzani, M.~J. (2000).
-\newblock Scaling up dynamic time warping for datamining applications.
-\newblock In {\em Proceedings of the sixth ACM SIGKDD international conference
-  on Knowledge discovery and data mining\/}, pages 285--289. ACM.
+\bibitem[Miller and Rollnick(2013)Miller and Rollnick]{miller2013motivational}
+Miller, W.~R. and Rollnick, S. (2013).
+\newblock Motivational interviewing: Helping people change. 3.
+\newblock {\em New York: Guilford publications\/}.
 
-\bibitem[Wei and Keogh(2006)Wei and Keogh]{wei2006semi}
-Wei, L. and Keogh, E. (2006).
-\newblock Semi-supervised time series classification.
-\newblock In {\em Proceedings of the 12th ACM SIGKDD international conference
-  on Knowledge discovery and data mining\/}, pages 748--753. ACM.
+\bibitem[Miller and Rose(2009)Miller and Rose]{miller2009toward}
+Miller, W.~R. and Rose, G.~S. (2009).
+\newblock Toward a theory of motivational interviewing.
+\newblock {\em American psychologist\/}, {\bf 64}(6), 527.
 
 \end{thebibliography}
