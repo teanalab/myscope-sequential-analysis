@@ -51,15 +51,11 @@ grestore
 \usepackage{pdflscape}
 %
 \usepackage{mathptmx}      % use Times fonts if available on your TeX system
-%
-% insert here the call for the packages your document requires
-%\usepackage{latexsym}
-% etc.
-%
-% please place your own definitions here and don't use \def but
-% \newcommand{}{}
-%
+
 \usepackage{rotating}
+\usepackage{tabularx}
+\usepackage[flushleft]{threeparttable}
+
 % Insert the name of "your journal" with
 \journalname{J Healthc Inform Res}
 %
@@ -67,25 +63,36 @@ grestore
 
 \title{Identifying Effective Motivational Interviewing Sequences Using Automated Pattern Analysis
 }
-%\subtitle{Do you have a subtitle?\\ If so, write it here}
 
-%\titlerunning{Short form of title}        % if too long for running head
-
-\author{Mehedi Hasan, BS$^1$\and 
-April Idalski Carcone, PhD$^2$\and 
-Sylvie Naar, PhD$^3$\and 
-Susan Eggly, PhD$^4$\and  
-Gwen L. Alexander, PhD$^5$\and 
-Kathryn E Brogan Hartlieb, PhD$^6$\and 
-Alexander Kotov, PhD$^1$
+\author{Mehedi Hasan$^1$\and 
+April Idalski Carcone$^2$\and 
+Sylvie Naar$^3$\and 
+Susan Eggly$^4$\and  
+Gwen L. Alexander$^5$\and 
+Kathryn E Brogan Hartlieb$^6$\and 
+Alexander Kotov$^1$
 }
 
-%\authorrunning{Short form of author list} % if too long for running head
-
-\institute{Alexander Kotov (corresponding author) \at
-              5057 Woodward Suite 14001.6 \\
-              Detroit, MI 48202\\
-              Tel.: +1(313) 577-9307\\
+\institute{Mehedi Hasan \at
+              \email{mehedi@wayne.edu} 
+           \and
+           April Idalski Carcone \at
+              \email{acarcone@med.wayne.edu} 
+           \and
+           Sylvie Naar \at
+              \email{sylvie.naar@med.fsu.edu}
+           \and
+           Susan Eggly \at
+              \email{egglys@karmanos.org} 
+           \and
+           Gwen L. Alexander \at
+              \email{GALEXAN2@hfhs.org}
+           \and
+           Kathryn E Brogan Hartlieb \at
+              \email{hartlieb@fiu.edu} 
+           \and
+           Alexander Kotov (corresponding author) \at
+              Tel.: +1(313) 577-9307 \\
               \email{kotov@wayne.edu} 
            \and
            $^1$Department of Computer Science, College of Engineering, Wayne State University, Detroit, MI 48202\\
@@ -106,13 +113,11 @@ $^6$Department of Humanities, Health and Society, Wertheim College of Medicine, 
 Motivational Interviewing (MI) is an evidence-based strategy for communicating with patients about behavior change. Although there is strong empirical evidence linking “MI-consistent” counselor behaviors and patient motivational statements (i.e., “change talk”), the specific counselor communication behaviors effective for eliciting patient change talk are a subject of ongoing research. A significant barrier to this research is the time and resource-intensive cognitive tasks, including the manual coding and sequential analysis of coded transcripts, that are an integral part of the qualitative analysis of patient-counselor communication. Data mining and machine learning techniques have the potential to significantly reduce this barrier by partially automating these cognitive tasks. In this paper, we evaluate the empirical effectiveness of the Hidden Markov Model, a probabilistic generative model for sequence data, and closed frequent pattern mining, an algorithm used to mine the closed frequent patterns in MI communication sequences to inform MI practice. We conducted experiments with 1,360 communication sequences from 37 transcribed audio recordings of weight loss counseling sessions with African-American adolescents with obesity and their caregivers. Transcripts had previously been annotated with patient-counselor behavior codes using a specialized codebook. Empirical results indicate that Hidden Markov Model and closed frequent pattern mining techniques can identify meaningful and interpretable counselor communication strategies to guide clinical practice.
 
 \keywords{sequential analysis \and hidden markov model \and closed frequent pattern mining \and motivational interviewing \and weight loss \and adolescents}
-%\PACS{PACS code1 \and PACS code2 \and more}
-% \subclass{MSC code1 \and MSC code2 \and more}
 \end{abstract}
 
 \section{Introduction}
 \label{sec:intro}
-Motivational Interviewing (MI) is an evidence-based strategy for communicating with patients about behavior change \citep{miller2013motivational}. The theory underlying MI’s clinical efficacy posits that behavior change is triggered by fostering an atmosphere of change, which is accomplished through the exercise of relational and technical skills \citep{miller2013motivational}. The relational hypothesis suggests that counselors’ use of accurate empathy, positive regard, and congruence create the “spirit of MI”, an optimal therapeutic state to explore behavior change. MI’s technical hypothesis \citep{miller2009toward} states that counselors’ use of communication techniques consistent with the MI framework (MICO; e.g., open-ended questions, reflections, advise with permission, affirmations, emphasize control, reframe, and support) will lead to patient “change talk”. Change talk are patient statements during clinical encounters that express their internal desire, ability, reasons, need for, and/or commitment to behavior change. Previous studies [3] have shown that change talk expressed during treatment sessions consistently predicts behavior change with results persisting as long as 34 months post-intervention [4]. In contrast, MI-inconsistent communication behaviors (MIIN; e.g., advising without permission, warning about behavioral consequences, and confronting) are hypothesized to lead to arguments against behavioral change and/or to maintain the status quo (referred to as counter change talk or sustain talk). Multiple studies have linked high rates of MICO to the expression of change talk and MIIN to sustain talk [5]. These studies have relied on session-level behavior counts and correlational analyses, which ignore the temporal order of utterances in patient-counselor communication, thereby limiting researchers’ ability to test MI’s technical hypothesis. 
+Motivational Interviewing (MI) is an evidence-based strategy for communicating with patients about behavior change \cite{miller2013motivational}. The theory underlying MI’s clinical efficacy posits that behavior change is triggered by fostering an atmosphere of change, which is accomplished through the exercise of relational and technical skills \cite{miller2013motivational}. The relational hypothesis suggests that counselors’ use of accurate empathy, positive regard, and congruence create the “spirit of MI”, an optimal therapeutic state to explore behavior change. MI’s technical hypothesis \cite{miller2009toward} states that counselors’ use of communication techniques consistent with the MI framework (MICO; e.g., open-ended questions, reflections, advise with permission, affirmations, emphasize control, reframe, and support) will lead to patient “change talk”. Change talk are patient statements during clinical encounters that express their internal desire, ability, reasons, need for, and/or commitment to behavior change. Previous studies \cite{apodaca2009mechanisms} have shown that change talk expressed during treatment sessions consistently predicts behavior change with results persisting as long as 34 months post-intervention \cite{walker2011influence}. In contrast, MI-inconsistent communication behaviors (MIIN; e.g., advising without permission, warning about behavioral consequences, and confronting) are hypothesized to lead to arguments against behavioral change and/or to maintain the status quo (referred to as counter change talk or sustain talk). Multiple studies have linked high rates of MICO to the expression of change talk and MIIN to sustain talk \cite{magill2014technical}. These studies have relied on session-level behavior counts and correlational analyses, which ignore the temporal order of utterances in patient-counselor communication, thereby limiting researchers’ ability to test MI’s technical hypothesis. 
 
 Sequential analysis is an analytic approach to examine temporally ordered sequences of events or observations [6, 7]. Moyers and Martin [8] applied sequential analysis in a study of adults in treatment for alcohol abuse and found change talk was significantly more likely after MICO and sustain talk more likely after MIIN. A follow up study with the same population found change talk was more likely after two MICO behaviors, counselor questions about the positive and negative aspects of drinking and reflections of change talk, but these behaviors also led to sustain talk [9]. Surprisingly, MIIN was unrelated to sustain talk, but decreased the likelihood of change talk. Gaume et al. [10] used sequential analysis to study communication patterns during brief motivational interviewing for hazardous alcohol consumption with young adults conscripted into military service. They found MICO led to both change talk and sustain talk but the MIIN-to-sustain talk pattern was not observed. A second study with the same population confirmed that MICO leads to significantly more change talk and sustain talk [11]. In this sample, MIIN led to greater sustain talk, but was unrelated to change talk. Further analyses revealed that reflections were the only MICO behavior linked to increased change talk; reflections and other MICO behaviors, excluding questions, were related to increased sustain talk. Glynn and colleagues [12] linked reflections of change talk to the elicitation change talk and reflections of sustain talk to the elicitation of sustain talk among incarcerated adolescents with high rates of alcohol and marijuana use. In a study of adolescents engaged in weight loss treatment, Carcone et al. [13] used sequential analysis to identify three counselor behaviors likely to result in change talk: open-ended questions phrased to elicit change talk, reflections of change talk, and statements emphasizing decision-making autonomy. A parallel study of the adolescents’ caregivers [14] drew a similar conclusion, asking questions phrased to elicit change talk, reflections of change talk, and autonomy supportive statements were the counselor behaviors empirically linked to the elicitation of change talk. Across these studies, counselors’ use of reflections was consistently linked to change talk; other MICO behaviors led to change talk in some contexts but not others suggesting a need for additional research to understand the contexts in which the various MICO strategies are effective. 
 
@@ -132,20 +137,17 @@ In this paper, we focus on computational methods to facilitate the sequential an
 \label{subsec:dataset}
 The data set for this study consists of 37 transcripts from Motivational Interviewing (MI) sessions conducted with African American adolescents seeking weight loss treatment. Each transcript represented a one-on-one interaction between the adolescent patient and the MI counselor followed by a one-on-one interaction between the caregiver and the MI counselor. These encounters had previously been annotated using the Minority Youth Sequential Code for Observing Process Exchanges (MYSCOPE) [13]. The MYSCOPE is an adaptation of the original MI-SCOPE [48], a qualitative code scheme to characterize patient-counselor communication during MI treatment sessions. The MYSCOPE was informed by MI fidelity code schemes including the MI Treatment Integrity Scale (MITI) [49], the MI Skill Code (MISC) [50], and Amrhein’s conceptualization of change talk and commitment [51]. A primary coder used the MYSCOPE to annotate transcripts of all 37 sessions; a secondary coder coded 20\% (n = 7) of the sessions for inter-rater reliability which was good (k = .696). The experimental dataset consists of 7,192 patient, caregiver, and counselor utterances segmented and annotated with the MYSCOPE behavior codes, illustrated in Table~\ref{tab:codebook}.
 
-% For tables use
 \begin{table}
-% table caption is above the table
 \caption{MYSCOPE codebook.}
-\label{tab:codebook}       % Give a unique label
-% For LaTeX tables use
-\begin{tabular}{lll}
+\label{tab:codebook}   
+\begin{tabularx}{\textwidth}{lll}
 \hline\noalign{\smallskip}
 first & second & third  \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
 number & number & number \\
 number & number & number \\
 \noalign{\smallskip}\hline
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{Data preprocessing}
@@ -164,26 +166,18 @@ p is the initial state distribution vector where .
 
 In this study, two HMM models were trained, one using successful sequences and the other using unsuccessful sequences, with the objective of maximizing log-likelihood on the observed sequence. The optimal number of hidden states was determined by estimating the Bayesian information criterion (BIC) of HMM models with a different number of hidden states and selecting the model with the smallest BIC value, which indicates an optimal fit of HMM model. BIC minimizes negative log-likelihood but penalizes complexity (i.e. \# of hidden states), which is important for avoiding overfitting problem. HMM analyses suggested 5 hidden states was optimal for successful sequences and 2 hidden states were optimal for unsuccessful sequences (Figure~\ref{fig:bic}). 
 
-% For two-column wide figures use
 \begin{figure*}
-% Use the relevant command to insert your figure file.
-% For example, with the graphicx package use
-  \includegraphics[width=1.0\textwidth]{figures/bic-vs-hidden-states.eps}
-% figure caption is below the figure
+\includegraphics[width=1.0\textwidth]{figures/bic-vs-hidden-states.eps}
 \caption{Bayesian information criterion (BIC) of HMM models of successful (left) and unsuccessful (right) interviews by varying the number of hidden states.}
-\label{fig:bic}       % Give a unique label
+\label{fig:bic}
 \end{figure*}
 
 A second experiment was conducted with Frequent Pattern Mining. Orange3 and arules are two available pattern mining libraries implemented in python and r-programming, which support only a few pattern mining algorithms including frequent itemsets and association rules mining. However, we conducted our experiment using SPMF [52, 53], which offered more than 150 data mining algorithms. Moreover, SPMF is an open-source, fast and lightweight, a most popular and widely used Java-based data mining library. A frequent itemset is determined by surpassing a user-specified threshold called minimum support count\footnote{Support count: \# of times an itemset appears in the database}. For example, \{A\}, \{C\}, {D}, and {C, D} are frequent itemset in the database illustrated in Figure~\ref{fig:fpm}, because these itemsets appear at least 2 times which was the minimum support count identified in the example database. We reported closed frequent itemsets among all sequences of behavior codes in successful and unsuccessful sequences. A frequent itemset is closed if none of its supersets have the same support count [45], where a set X is a superset of another set Y if X contains all elements of the set Y. For example, the itemsets {A}, {C}, {D}, and {C, D} are not closed frequent itemsets because their supersets \{A, B\}, {B, C}, {B, D}, and {B, C, D} have the same number of support. Therefore, {B}, {A, B}, {A, D}, {B, C}, {B, D}, and {B, C, D} are closed frequent itemsets because none of their supersets have same the number of support count. On the other hand, {A, C}, {A, B, C}, {A, B, D}, {A, C, D} and {A, B, C, D} have support count 1, 0, 1, 0, and 1, respectively, which are less than minimum support count and identified as non-frequent itemsets. This study applied FPClose [46], an efficient close frequent pattern mining algorithm in SPMF, to identify frequent patient-counselor behaviors in MI communication sequences. To improve the model’s ability to identify frequent patient behaviors, FPClose [46], a FP-tree based algorithm [54, 55] was used. FPClose identifies closed frequent itemsets by utilizing an FP-tree data structure in combination with the FP-array technique to avoid the frequent traversal of FP-trees. Before applying the FPClose method, the dataset was transformed into the expected format used by the algorithm in the SPMF library. Minimum support threshold is a certain proportion having a meaningful representation of patterns determined by the domain expert. Since there is no standard for the selection of minimum support threshold, by following the studies [56-57], the minimum support count considered was 10\% of the total number of sequences which is 110 for successful and 25 for unsuccessful sequences. In our study, support counts representing ≥10\% of the patterns was the threshold for the result interpretation. 
 
-% For two-column wide figures use
 \begin{figure*}
-% Use the relevant command to insert your figure file.
-% For example, with the graphicx package use
-  \includegraphics[width=0.95\textwidth]{figures/fpm.eps}
-% figure caption is below the figure
+\includegraphics[width=0.95\textwidth]{figures/fpm.eps}
 \caption{Different type of itemsets is illustrated with a frequent pattern mining method applied on transaction database by considering minimum support count 2, where TID represents the transaction ID of the corresponding items.}
-\label{fig:fpm}       % Give a unique label
+\label{fig:fpm}
 \end{figure*}
 
 
@@ -193,54 +187,53 @@ The transition and emission probability matrices of HMM model, are reported in T
 
 In contrast, the majority of unsuccessful sequences (98\%) began in a state of “ambivalence” as indicated by the greater proportion of counselor reflections of both change talk (20\%) and sustain talk (12\%) as well as affirmations (13\%). About 2\% of the time unsuccessful sequences started in a state of “avoidance”. Higher rates of patient low uptake (29\%) and other-related high uptake (11\%) statements, and counselor patient-centered information (18\%) distinguished “avoidant” sequences. Both “ambivalent” (84\%) and “avoidant” (61\%) states most frequently transitioned to the “avoidant” state.
 
-%\newgeometry{margin=2cm} % modify this if you need even more space
-%\newgeometry{left=4cm}
 \begin{sidewaystable}
+\vspace{15\baselineskip}
+
 \caption{Hidden Markov Model Emission Matrices}
-\label{tab:emission}       % Give a unique label
-% For LaTeX tables use
-\begin{tabular}{lll}
+\label{tab:emission}
+\begin{tabularx}{\textwidth}{lllllllll}
 \hline\noalign{\smallskip}
-first & second & third  \\
+first & second & third & first & second & third & first & second & third  \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-number & number & number \\
-number & number & number \\
+number & number & number & number & number & number & number & number & number\\
+number & number & number & number & number & number & number & number & number\\
 \noalign{\smallskip}\hline
-\end{tabular}
+\end{tabularx}
 
 \vspace{2\baselineskip}
 
 \caption{Hidden Markov Model Transition Matrices}
-\label{tab:transition}       % Give a unique label
-% For LaTeX tables use
-\begin{tabular}{lll}
+\label{tab:transition}  
+\begin{tabularx}{\textwidth}{lll}
 \hline\noalign{\smallskip}
 first & second & third  \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
 number & number & number \\
 number & number & number \\
 \noalign{\smallskip}\hline
-\end{tabular}
+\end{tabularx}
 \end{sidewaystable}
-
-%\restoregeometry
 
 Frequent communication patterns in successful and unsuccessful patient-counselor communication sequences are shown in Table~\ref{tab:patterns}. Results from frequent pattern mining analysis indicate that reflections of change talk were the most frequent counselor communication behavior in both successful (36.1\%) and unsuccessful sequences (33.7\%). For each pattern, the significance of difference between successful and unsuccessful communications was reported by computing p-value using Pearson chi-square test. Successful sequences were distinguished from unsuccessful sequences by a higher frequency of counselor questions phrased to elicit change talk (30.8\% versus 17.4\%, p<0.0001), statements emphasizing the patient’s decision-making autonomy (28.5\% versus 18.6\%, p=0.0012), questions phrased to elicit commitment language (18.1\% versus 11.6\%, p=0.0118), and reflections of commitment language (20.7\% versus 15.1\%, p= 0.0423). In contrast, unsuccessful sequences were characterized by greater frequency of questions to elicit perceived barriers (14.7\% versus 0\%, p= <0.0001), reflections of sustain talk (27.1\% versus 15.8\%, p=<0.0001), providing information (28.7\% versus 22.1\%, p= 0.0254) and other reflections (11.6\% versus 0\%, p=<0.0001). In 14.0\% of the successful sequences, reflections of change talk were paired with a question phrased to elicit change talk; this pattern did not appear in unsuccessful sequences. In contrast, in 10.5\% of the unsuccessful sequences, reflections of change talk were paired with information; this pattern did not appear in successful sequences.
 
-% For tables use
 \begin{table}
-% table caption is above the table
+\begin{threeparttable}
 \caption{Frequent communication patterns in successful and unsuccessful patient-counselor communication sequences.}
-\label{tab:patterns}       % Give a unique label
-% For LaTeX tables use
-\begin{tabular}{lll}
+\label{tab:patterns}   
+\begin{tabularx}{\textwidth}{lll}
 \hline\noalign{\smallskip}
 first & second & third  \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-number & number & number \\
-number & number & number \\
+number & number & number number number number number number \\
+number number number number & number number number & number number  number \\
 \noalign{\smallskip}\hline
-\end{tabular}
+\end{tabularx}
+\begin{tablenotes}
+      \small
+      \item This is where authors provide additional information about the data, including whatever notes are needed.
+\end{tablenotes}
+\end{threeparttable}
 \end{table}
 
 \section{Discussion}
@@ -265,24 +258,11 @@ These results add to the growing evidence base examining the mechanisms of effec
 \label{sec:conflictofInterest}
 On behalf of all authors, the corresponding author states that there is no conflict of interest.
 
-%Text with citations \citep{wei2006semi} and \citep{keogh2000scaling}.
-
-%\paragraph{Paragraph headings} Use paragraph headings as needed.
-%\begin{equation}
-%a^2+b^2=c^2
-%\end{equation}
-
 \begin{acknowledgements}
 This study was supported by a grant from the National Institutes of Health, NIDDK R21DK108071, Carcone and Kotov, MPIs. We would like to thank the student assistants in the Department of Family Medicine and Public Health Sciences at Wayne State University School of Medicine for their help in developing the training dataset. The authors would like to thank Lisa Todd, JD, MA for her thoughtful feedback and clinical expertise in the interpretation of these data.
 \end{acknowledgements}
 
-% BibTeX users please use one of
-%\bibliographystyle{spbasic}      % basic style, author-year citations
-%\bibliographystyle{spmpsci}      % mathematics and physical sciences
 \bibliographystyle{natbib}       % JHIR format
-%\bibliographystyle{spphys}       % APS-like style for physics
 \bibliography{references}   % name your BibTeX data base
 
 \end{document}
-% end of file template.tex
-
