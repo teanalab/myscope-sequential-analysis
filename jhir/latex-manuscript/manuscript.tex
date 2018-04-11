@@ -59,13 +59,13 @@ grestore
 % please place your own definitions here and don't use \def but
 % \newcommand{}{}
 %
+\usepackage{rotating}
 % Insert the name of "your journal" with
 \journalname{J Healthc Inform Res}
 %
 \begin{document}
 
 \title{Identifying Effective Motivational Interviewing Sequences Using Automated Pattern Analysis
-\thanks{This study was supported by a grant from the National Institutes of Health, NIDDK R21DK108071, Carcone and Kotov, MPIs.}
 }
 %\subtitle{Do you have a subtitle?\\ If so, write it here}
 
@@ -193,12 +193,9 @@ The transition and emission probability matrices of HMM model, are reported in T
 
 In contrast, the majority of unsuccessful sequences (98\%) began in a state of “ambivalence” as indicated by the greater proportion of counselor reflections of both change talk (20\%) and sustain talk (12\%) as well as affirmations (13\%). About 2\% of the time unsuccessful sequences started in a state of “avoidance”. Higher rates of patient low uptake (29\%) and other-related high uptake (11\%) statements, and counselor patient-centered information (18\%) distinguished “avoidant” sequences. Both “ambivalent” (84\%) and “avoidant” (61\%) states most frequently transitioned to the “avoidant” state.
 
-
 %\newgeometry{margin=2cm} % modify this if you need even more space
-\begin{landscape}
-% For tables use
-\begin{table}
-% table caption is above the table
+%\newgeometry{left=4cm}
+\begin{sidewaystable}
 \caption{Hidden Markov Model Emission Matrices}
 \label{tab:emission}       % Give a unique label
 % For LaTeX tables use
@@ -210,11 +207,9 @@ number & number & number \\
 number & number & number \\
 \noalign{\smallskip}\hline
 \end{tabular}
-\end{table}
 
-% For tables use
-\begin{table}
-% table caption is above the table
+\vspace{2\baselineskip}
+
 \caption{Hidden Markov Model Transition Matrices}
 \label{tab:transition}       % Give a unique label
 % For LaTeX tables use
@@ -226,11 +221,9 @@ number & number & number \\
 number & number & number \\
 \noalign{\smallskip}\hline
 \end{tabular}
-\end{table}
+\end{sidewaystable}
 
-\end{landscape}
-\restoregeometry
-
+%\restoregeometry
 
 Frequent communication patterns in successful and unsuccessful patient-counselor communication sequences are shown in Table~\ref{tab:patterns}. Results from frequent pattern mining analysis indicate that reflections of change talk were the most frequent counselor communication behavior in both successful (36.1\%) and unsuccessful sequences (33.7\%). For each pattern, the significance of difference between successful and unsuccessful communications was reported by computing p-value using Pearson chi-square test. Successful sequences were distinguished from unsuccessful sequences by a higher frequency of counselor questions phrased to elicit change talk (30.8\% versus 17.4\%, p<0.0001), statements emphasizing the patient’s decision-making autonomy (28.5\% versus 18.6\%, p=0.0012), questions phrased to elicit commitment language (18.1\% versus 11.6\%, p=0.0118), and reflections of commitment language (20.7\% versus 15.1\%, p= 0.0423). In contrast, unsuccessful sequences were characterized by greater frequency of questions to elicit perceived barriers (14.7\% versus 0\%, p= <0.0001), reflections of sustain talk (27.1\% versus 15.8\%, p=<0.0001), providing information (28.7\% versus 22.1\%, p= 0.0254) and other reflections (11.6\% versus 0\%, p=<0.0001). In 14.0\% of the successful sequences, reflections of change talk were paired with a question phrased to elicit change talk; this pattern did not appear in unsuccessful sequences. In contrast, in 10.5\% of the unsuccessful sequences, reflections of change talk were paired with information; this pattern did not appear in successful sequences.
 
@@ -280,7 +273,7 @@ On behalf of all authors, the corresponding author states that there is no confl
 %\end{equation}
 
 \begin{acknowledgements}
-We would like to thank the student assistants in the Department of Family Medicine and Public Health Sciences at Wayne State University School of Medicine for their help in developing the training dataset. The authors would like to thank Lisa Todd, JD, MA for her thoughtful feedback and clinical expertise in the interpretation of these data.
+This study was supported by a grant from the National Institutes of Health, NIDDK R21DK108071, Carcone and Kotov, MPIs. We would like to thank the student assistants in the Department of Family Medicine and Public Health Sciences at Wayne State University School of Medicine for their help in developing the training dataset. The authors would like to thank Lisa Todd, JD, MA for her thoughtful feedback and clinical expertise in the interpretation of these data.
 \end{acknowledgements}
 
 % BibTeX users please use one of
