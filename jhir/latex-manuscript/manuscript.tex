@@ -54,7 +54,12 @@ grestore
 
 \usepackage{rotating}
 \usepackage{tabularx}
+\usepackage{longtable,tabu}
 \usepackage[flushleft]{threeparttable}
+\usepackage{caption}
+\captionsetup{justification=raggedright,singlelinecheck=off,labelfont=bf}
+\usepackage{color, colortbl}
+\definecolor{lightgraycol}{gray}{0.95}
 
 % Insert the name of "your journal" with
 \journalname{J Healthc Inform Res}
@@ -135,20 +140,56 @@ In this paper, we focus on computational methods to facilitate the sequential an
 \label{sec:materialsAndMethods}
 \subsection{Dataset}
 \label{subsec:dataset}
-The data set for this study consists of 37 audio recorded transcripts from Motivational Interviewing (MI) sessions conducted with African American adolescents seeking weight loss. Each transcript represented a one-on-one interaction between the adolescent and the MI counselor followed by a one-on-one interaction between the caregiver and the MI counselor. These encounters had previously been annotated using the Minority Youth Sequential Code for Observing Process Exchanges (MYSCOPE)~\cite{carcone2013provider}. The MYSCOPE is an adaptation of the original MI-SCOPE~\cite{martin2005motivational}, a qualitative code scheme to characterize patient-counselor communication during MI treatment sessions. The MYSCOPE was informed by MI fidelity code schemes including the MI Treatment Integrity Scale (MITI)~\cite{moyers2005assessing}, the MI Skill Code (MISC)~\cite{apodaca2007motivational}, and Amrhein’s conceptualization of change talk and commitment~\cite{amrhein2004does}. A primary coder used the MYSCOPE to annotate transcripts of all 37 sessions; a secondary coder coded 20\% ($n = 7$) of the sessions for inter-rater reliability which was good ($k = .696$). The experimental dataset consists of 7,192 patient, caregiver, and counselor utterances segmented and annotated with the MYSCOPE behavior codes, illustrated in Table~\ref{tab:codebook}.
 
-\begin{table}
-\caption{MYSCOPE codebook.}
-\label{tab:codebook}   
-\begin{tabularx}{\textwidth}{lll}
+\begin{small}
+\begin{longtable}{p{1.3cm}p{2cm}p{5cm}p{4.8cm}}
+\caption{MYSCOPE codebook.} 
+\label{tab:codebook} \\
 \hline\noalign{\smallskip}
-first & second & third  \\
+Annotation & Behavior & Description & Example \\ 
 \noalign{\smallskip}\hline\noalign{\smallskip}
-number & number & number \\
-number & number & number \\
-\noalign{\smallskip}\hline
-\end{tabularx}
-\end{table}
+\endfirsthead
+\multicolumn{4}{@{}l}{\textbf{Table\ref{tab:codebook}} (continued)} \\ 
+\noalign{\smallskip}\hline\noalign{\smallskip}
+Annotation & Behavior & Description & Example \\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+\endhead
+
+\rowcolor{lightgraycol}
+\multicolumn{4}{l}{Counselor} \\
+AF & Affirmation & Positive or complimentary statements that express appreciation, confidence, or reinforce the patient’s strengths or efforts. & ``You guys, as a family, are already doing a lot of really positive things.'' \\
+AR & Action reflection & Statements that reflect back the patient’s statement(s) while at the same time embedding a solution to a barrier or an action plan. & ``If you decide to follow a meal plan, it has to include occasional dessert.'' \\
+EA & Emphasize autonomy & Statements that directly acknowledge, honor, or emphasize the patient’s freedom of choice, autonomy, personal responsibility, and so forth. & ``Okay. Well, it’s your plan, so whatever works best for you. If you feel like you want one that’s written down that you can refer back to, then let’s write it and if not then that’s fine.''\\
+GINFON & General information negative & The counselor gives advice, makes a suggestion, offers a solution/possible action, gives feedback, or offers educational information in a non-patient-centered manner. & ``Healthy weight loss is about one to two pounds a week and once we get you set up and actually into the program you can look for that to happen for about one to two pounds a week to get you on that goal.''\\
+GINFOP & General information positive & The counselor gives advice, makes a suggestion, offers a solution/possible action, gives feedback, expresses a concern, or offers educational information in a patient-centered manner (i.e., asking permission, using the third person, giving the opportunity to reject the information, and offering a menu of options). & ``Okay.  Alright so I just wanted to tell you that I will be asking you a lot of questions.  It may get redundant.  So, if at any point in time you need a break or I’m asking too much go ahead and let me know.''\\
+QEB & Question to elicit barriers & Questions designed to initiate a discussion of barriers to change. & ``Alright.  So, are these ideas you feel you can put in place for this week?''\\
+QECHTP & Question to elicit change talk positive & Questions that ask about the patient’s desire, ability, reasons, or need for change or that reference past action toward behavior change or barriers to change. & ``Okay.  And tell me a little bit more about that.  Like what do you foresee your goal in this program?  Like what do you want to happen out of this program?''\\
+QECMLP & Question to elicit commitment language positive & Questions that ask about current or future action toward behavior change or reference barriers to change. & ``Okay.  Is there something else that you could do eat maybe instead of a Pop-Tart that’s a little bit healthier?''\\
+QEF & Question to elicit feedback & Statements that solicit the patient’s thoughts, ideas, or feelings about a specific recommendation or piece of information. & ``So, do you have any questions about that?''\\
+QEST & Question to elicit sustain talk & Questions designed to elicit negative change talk or negative commitment language. & ``And about how many hours would you say you watched TV for today?  Or played video games or YouTube?''\\
+QO & Question other & Open- or close-ended questions unrelated to the target behavior. & ``Yup. What do you think might get in your way of being able to provide that kind of support for [your daughter]?''\\
+RCHTP & Reflect change talk positive & A reflective listening statement that captures and returns a patient’s statement or behavior from the current or a previous session that describes the patient’s desire, ability, reasons, or need for change or past action or barriers to change. & ``So, it sounds like you just want to be healthy and you want to be stylish. You want to fit into some different types of clothes.''\\
+RCMLP & Reflect commitment language positive & A reflective listening statement that captures and returns a patient’s statement or behavior from the current or a previous session that describes current or future action or references barriers to changing with the goal of problem-solving. & ``You are ready to start this plan today.''\\
+RO & Reflect other & A reflective listening statement that captures and returns a patient’s utterance or behavior from the current or previous session that is unrelated to the target behavior. & ``You are having a hard time at work.''\\
+RST & Reflect sustain talk & These statements reflect negative change talk or negative commitment language made by the patient. & ``Oh okay.  So, money influences your environment.''\\
+SO & Statement other & An utterance eliciting feedback, offering support, self-disclosure, or of some other form besides a strategy or reflection & ``You’re being pulled in a million directions''\\
+SPT & Support & These are generally supportive, understanding comments. They have the quality of commenting on a situation, or of agreeing or siding with the patient in a genuine way. & ``I'm concerned about you, given all these difficulties you've been having.''\\
+SS & Structure session & A communication strategy that suggests an attempt to describe what will happen in the session or to refocus a meandering conversation back to the target behaviors & ``Maybe when the three of us come together in a few minutes, that’s something that we could just clarify with her, like is that really what she wants.''\\
+SUM & Summary & A reflective listening statement that captures and returns at least 2 different ideas from a patient’s utterance or behavior from the current session & ``You have thought a lot about this.  Sometimes it feels like losing weight is just too hard.  Yet you have lots of reasons to lose weight.  If you could find a program you could stick to, a program that would not have too many changes at once, you would consider it.''\\
+
+\rowcolor{lightgraycol}
+\multicolumn{4}{l}{Patient} \\
+CT & Change Talk & Statements that express the patient’s desire, ability, reasons, need for, or commitment to (intentions, plans, and action steps) changing their behavior & ``I will try to buy less junk food.''\\
+ST & Sustain Talk & Statements that express the patient’s desire, ability, reasons, need for, or commitment to (intentions, plans, and action steps) to maintain the status quo or not change their behavior  & ``I didn’t get to the gym this week.''\\
+HUPO	 & High uptake other & An utterance that develops the topic of the conversation but is about non-target behaviors or interruptions & ``Yeah because the mentor comes and they take off and they go someplace for a little while.''\\
+HUPW & High uptake weight & A turn that does develop the topic of the conversation. High Uptake statements include: weight related statements about actions of commitment, change talk, and ambivalence that occurred in the past, patient questions to the counselor, and session interruptions by persons who are not an active part of the treatment session. & ``Support is always good.  You know that’s a key factor.  Mm-hmm.''\\
+LUP & Low uptake  & an utterance that does not develop the topic of conversation but still allows it to continue & ``Mm-hmm.  Right.''\\
+\hline
+\end{longtable}
+\end{small}
+
+
+The data set for this study consists of 37 audio recorded transcripts from Motivational Interviewing (MI) sessions conducted with African American adolescents seeking weight loss. Each transcript represented a one-on-one interaction between the adolescent and the MI counselor followed by a one-on-one interaction between the caregiver and the MI counselor. These encounters had previously been annotated using the Minority Youth Sequential Code for Observing Process Exchanges (MYSCOPE)~\cite{carcone2013provider}. The MYSCOPE is an adaptation of the original MI-SCOPE~\cite{martin2005motivational}, a qualitative code scheme to characterize patient-counselor communication during MI treatment sessions. The MYSCOPE was informed by MI fidelity code schemes including the MI Treatment Integrity Scale (MITI)~\cite{moyers2005assessing}, the MI Skill Code (MISC)~\cite{apodaca2007motivational}, and Amrhein’s conceptualization of change talk and commitment~\cite{amrhein2004does}. A primary coder used the MYSCOPE to annotate transcripts of all 37 sessions; a secondary coder coded 20\% ($n = 7$) of the sessions for inter-rater reliability which was good ($k = .696$). The experimental dataset consists of 7,192 patient, caregiver, and counselor utterances segmented and annotated with the MYSCOPE behavior codes, illustrated in Table~\ref{tab:codebook}.
 
 \subsection{Data preprocessing}
 \label{subsec:datapreprocessing}
