@@ -156,7 +156,9 @@ Annotation & Behavior & Description & Example \\
 \endhead
 
 \rowcolor{lightgraycol}
-\multicolumn{4}{l}{Counselor} \\
+\noalign{\smallskip}
+\multicolumn{4}{l}{\textbf{Counselor}} \\
+\noalign{\smallskip}
 AF & Affirmation & Positive or complimentary statements that express appreciation, confidence, or reinforce the patient’s strengths or efforts. & ``You guys, as a family, are already doing a lot of really positive things.'' \\
 AR & Action reflection & Statements that reflect back the patient’s statement(s) while at the same time embedding a solution to a barrier or an action plan. & ``If you decide to follow a meal plan, it has to include occasional dessert.'' \\
 EA & Emphasize autonomy & Statements that directly acknowledge, honor, or emphasize the patient’s freedom of choice, autonomy, personal responsibility, and so forth. & ``Okay. Well, it’s your plan, so whatever works best for you. If you feel like you want one that’s written down that you can refer back to, then let’s write it and if not then that’s fine.''\\
@@ -178,7 +180,9 @@ SS & Structure session & A communication strategy that suggests an attempt to de
 SUM & Summary & A reflective listening statement that captures and returns at least 2 different ideas from a patient’s utterance or behavior from the current session & ``You have thought a lot about this.  Sometimes it feels like losing weight is just too hard.  Yet you have lots of reasons to lose weight.  If you could find a program you could stick to, a program that would not have too many changes at once, you would consider it.''\\
 
 \rowcolor{lightgraycol}
-\multicolumn{4}{l}{Patient} \\
+\noalign{\smallskip}
+\multicolumn{4}{l}{\textbf{Patient}} \\
+\noalign{\smallskip}
 CT & Change Talk & Statements that express the patient’s desire, ability, reasons, need for, or commitment to (intentions, plans, and action steps) changing their behavior & ``I will try to buy less junk food.''\\
 ST & Sustain Talk & Statements that express the patient’s desire, ability, reasons, need for, or commitment to (intentions, plans, and action steps) to maintain the status quo or not change their behavior  & ``I didn’t get to the gym this week.''\\
 HUPO	 & High uptake other & An utterance that develops the topic of the conversation but is about non-target behaviors or interruptions & ``Yeah because the mentor comes and they take off and they go someplace for a little while.''\\
@@ -231,16 +235,34 @@ We applied Frequent Pattern Mining to identify frequently occurring patterns of 
 \end{figure*}
 
 \begin{sidewaystable}
-\vspace{15\baselineskip}
+\vspace{32\baselineskip}
 
 \caption{Hidden Markov Model Emission Matrices}
 \label{tab:emission}
-\begin{tabularx}{\textwidth}{lllllllll}
+\begin{tabularx}{\textwidth}{lXXXp{0.4cm}XXXXXXXXXXXXXXXXXXX}
 \hline\noalign{\smallskip}
-first & second & third & first & second & third & first & second & third  \\
+State & AF & AR & EA & GIN- FON & GIN- FOP & QEB & QEC- HTP & QEC- MLP & QEF & QE- ST & QO & RC- HTP & RC- MLP & RO & RST & SO & SPT & SS & SUM & HU- PO & HU- PW & LUP \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-number & number & number & number & number & number & number & number & number\\
-number & number & number & number & number & number & number & number & number\\
+\rowcolor{lightgraycol}
+\multicolumn{23}{l}{\textbf{Successful  Sequences}} \\
+
+High Motivation & 12\% & 5\% & 4\% & 0\% & 3\% & 0\% & 0\% & 1\% & 0\% & 0\% & 1\% & 29\% & 17\% & 1\% & 7\% & 2\% & 5\% & 6\% & 6\% & 0\% & 0\% & 0\% \\
+
+High Receptivity & 15\% & 2\% & 5\% & 0\% & 18\% & 1\% & 16\% & 5\% & 3\% & 1\% & 0\% & 1\% & 0\% & 6\% & 5\% & 3\% & 3\% & 7\% & 4\% & 4\% & 1\% & 1\% \\
+
+Moderate Receptivity & 2\% & 1\% & 14\% & 0\% & 8\% & 1\% & 20\% & 9\% & 5\% & 1\% & 2\% & 2\% & 0\% & 1\% & 0\% & 1\% & 0\% & 5\% & 4\% & 5\% & 2\% & 16\% \\
+
+Low Receptivity & 4\% & 1\% & 17\% & 0\% & 3\% & 1\% & 11\% & 0\% & 2\% & 0\% & 0\% & 5\% & 3\% & 3\% & 3\% & 0\% & 1\% & 7\% & 1\% & 6\% & 0\% & 28\% \\
+
+Active Feedback & 1\% & 1\% & 3\% & 0\% & 7\% & 1\% & 0\% & 9\% & 3\% & 0\% & 1\% & 0\% & 0\% & 0\% & 3\% & 1\% & 0\% & 1\% & 1\% & 10\% & 12\% & 47\% \\
+
+\rowcolor{lightgraycol}
+\multicolumn{23}{l}{\textbf{Unsuccessful  Sequences}} \\
+
+Ambivalent & 13\% & 5\% & 4\% & 1\% & 6\% & 0\% & 1\% & 5\% & 0\% & 2\% & 2\% & 20\% & 7\% & 2\% & 12\% & 3\% & 4\% & 5\% & 6\% & 0\% & 2\% & 0\% \\
+
+Avoidant  & 3\% & 1\% & 6\% & 0\% & 11\% & 7\% & 8\% & 1\% & 3\% & 2\% & 2\% & 1\% & 1\% & 5\% & 4\% & 0\% & 1\% & 2\% & 0\% & 11\% & 4\% & 29\% \\
+
 \noalign{\smallskip}\hline
 \end{tabularx}
 
@@ -248,12 +270,22 @@ number & number & number & number & number & number & number & number & number\\
 
 \caption{Hidden Markov Model Transition Matrices}
 \label{tab:transition}  
-\begin{tabularx}{\textwidth}{lll}
+\begin{tabularx}{\textwidth}{XXXXXX}
 \hline\noalign{\smallskip}
-first & second & third  \\
+State & High Motivation & High Receptivity & Moderate Receptivity & Low Receptivity & Active Feedback \\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-number & number & number \\
-number & number & number \\
+\rowcolor{lightgraycol}
+\multicolumn{6}{l}{\textbf{Successful  Sequences}} \\
+High Motivation & 2\% & 9\% & 24\% & 24\% & 41\% \\
+High Receptivity & 7\% & 9\% & 20\% & 25\% & 39\% \\
+Moderate Receptivity  & 8\% & 19\% & 24\% & 23\% & 27\% \\
+Low Receptivity  & 11\% & 26\% & 28\% & 18\% & 17\% \\
+Active Feedback  & 25\% & 34\% & 20\% & 15\% & 6\% \\
+\rowcolor{lightgraycol}
+\multicolumn{6}{l}{\textbf{Unsuccessful  Sequences}} \\
+& Ambivalent & Avoidant & & & \\
+Ambivalent & 16\% & 84\% & & & \\
+Avoidant & 39\% & 61\% & & & \\
 \noalign{\smallskip}\hline
 \end{tabularx}
 \end{sidewaystable}
@@ -271,17 +303,35 @@ Frequent communication patterns in successful and unsuccessful patient-counselor
 \begin{threeparttable}
 \caption{Frequent communication patterns in successful and unsuccessful patient-counselor communication sequences.}
 \label{tab:patterns}   
-\begin{tabularx}{\textwidth}{lll}
+\begin{tabularx}{\textwidth}{p{3cm}XX@{\extracolsep{4pt}}p{3cm}XX}
 \hline\noalign{\smallskip}
-first & second & third  \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-number & number & number number number number number number \\
-number number number number & number number number & number number  number \\
+\multicolumn{3}{c}{Successful} & \multicolumn{3}{c}{Unsuccessful} \\
+\noalign{\smallskip}\cline{1-3} \cline{4-6}\noalign{\smallskip}
+LUP & 573 & 52.0\% & LUP & 118 & 45.7\%  \\
+RCHTP & 398 & 36.1\% & RCHTP & 87 & 33.7\% \\ 
+\multicolumn{1}{r}{LUP, RCHTP} & 224 & 20.3\% & \multicolumn{1}{r}{LUP, RCHTP} & 45 & 17.4\% \\
+QECHTP & 339 & 30.8\% & GINFOP & 74 & 28.7\% \\
+\multicolumn{1}{r}{LUP, QECHTP} & 184 & 16.7\% & \multicolumn{1}{r}{LUP, GINFOP} & 44 & 17.1\% \\
+AF & 314 & 28.5\% & RST & 70 & 27.1\% \\
+\multicolumn{1}{r}{LUP, AF} & 166 & 15.1\% & \multicolumn{1}{r}{LUP, RST} & 30 & 11.6\% \\
+EA & 314 & 28.5\% & AF & 68 & 26.4\% \\
+\multicolumn{1}{r}{LUP, EA} & 188 & 17.1\% & EA & 48 & 18.6\% \\
+GINFOP & 244 & 22.1\% & \multicolumn{1}{r}{LUP, EA} & 28 & 10.9\% \\
+\multicolumn{1}{r}{LUP, GINFOP} & 143 & 13.0\% & QECHTP & 45 & 17.4\% \\
+RCMLP & 228 & 20.7\% & RCMLP & 39 & 15.1\% \\
+\multicolumn{1}{r}{LUP, RCMLP} & 121 & 11.0\% & QEB & 38 & 14.7\% \\
+QECMLP & 200 & 18.1\% & RO & 30 & 11.6\% \\
+RST & 174 & 15.8\% & QECMLP & 30 & 11.6\% \\
+\multicolumn{1}{r}{LUP, RST} & 114 & 10.3\% & SUM & 29 & 11.2\% \\
+RCHTP, QECHTP & 154 & 14.0\% & SS & 28 & 10.9\% \\
+SUM & 138 & 12.5\% & RCHTP, GINFOP & 27 & 10.5\% \\
+LUP, SS & 112 & 10.2\% & HUPO & 47 & 18.2\% \\
+HUPO & 173 & 15.7\% &  &  &  \\ 
 \noalign{\smallskip}\hline
 \end{tabularx}
 \begin{tablenotes}
       \small
-      \item This is where authors provide additional information about the data, including whatever notes are needed.
+      \item \textit{Note:} Patterns that are aligned to the right are included in the immediately preceding pattern count. In these patterns, a counselor behavior was paired with a patient low uptake/facilitative comment, which is a marker of patient attention to the conversation and feedback suggesting the line of discussion may continue.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
