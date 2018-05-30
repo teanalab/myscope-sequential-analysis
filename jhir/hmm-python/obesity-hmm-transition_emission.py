@@ -43,6 +43,19 @@ all_codebook, success_codebook, unsuccess_codebook = utility.loadCodeBookFromTra
 n_observations = len(success_codebook)
 sequences, seq_labels, seq_lengths = utility.loadData(training_filename, success_codebook, 1)
 success_model = utility.getHMMModel(succ_hidden_states, n_observations, sequences, seq_lengths)
+succ_logproba, succ_state_seq = success_model.decode(sequences, seq_lengths)
+
+# compute state transitions
+state_dict = {}
+for i in range(len(succ_state_seq)-1):
+    state_from_to = str(succ_state_seq[i]) + "-" + str(succ_state_seq[i+1])
+    if state_from_to in state_dict:
+	    state_dict[state_from_to] = state_dict[state_from_to] + 1
+    else:
+	    state_dict[state_from_to] = 1
+
+print("Total # of transaction in successfull: ", str(len(succ_state_seq)-1))
+print(state_dict)
 
 for i in np.arange(0, len(success_model.startprob_)):
     success_start_fp.write("state" + str(i + 1) + ",")
@@ -78,6 +91,19 @@ for line_emission_prob in success_model.emissionprob_:
 n_observations = len(unsuccess_codebook)
 sequences, seq_labels, seq_lengths = utility.loadData(training_filename, unsuccess_codebook, 0)
 unsuccess_model = utility.getHMMModel(unsucc_hidden_states, n_observations, sequences, seq_lengths)
+unsucc_logproba, unsucc_state_seq = unsuccess_model.decode(sequences, seq_lengths)
+
+# compute state transitions
+state_dict = {}
+for i in range(len(unsucc_state_seq)-1):
+    state_from_to = str(unsucc_state_seq[i]) + "-" + str(unsucc_state_seq[i+1])
+    if state_from_to in state_dict:
+	    state_dict[state_from_to] = state_dict[state_from_to] + 1
+    else:
+	    state_dict[state_from_to] = 1
+
+print("Total # of transaction in unsuccessfull: ", str(len(unsucc_state_seq)-1))
+print(state_dict)
 
 for i in np.arange(0, len(unsuccess_model.startprob_)):
     unsuccess_start_fp.write("state" + str(i + 1) + ",")
