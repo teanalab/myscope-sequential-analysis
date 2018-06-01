@@ -1,0 +1,23 @@
+('Total # of transaction in successfull: ', '4724')
+{'0-4': 59, '2-4': 30, '2-2': 11, '2-3': 211, '2-0': 340, '2-1': 32, '0-0': 104, '0-1': 176, '0-2': 244, '0-3': 808, '1-1': 9, '1-0': 156, '1-3': 23, '1-2': 76, '1-4': 88, '4-0': 326, '4-1': 106, '4-2': 68, '4-3': 395, '4-4': 25, '3-4': 718, '3-2': 226, '3-1': 29, '3-0': 464}
+('Total # of transaction in unsuccessfull: ', '1106')
+{'1-1': 295, '1-0': 348, '0-0': 114, '0-1': 349}
+
+
+=====================================================
+
+Successful: 
+
+total: 4724
+same state transitions: 45
+excluding same state transitions: 4679
+unique transitions: 24
+missing transition: from state 3 to state 3
+
+Unsuccessful: 
+
+total: 1106
+same state transitions: 409
+excluding same state transitions: 697
+unique transitions: 4
+
