@@ -222,8 +222,8 @@ Tanana, M., Hallgren, K.~A., Imel, Z.~E., Atkins, D.~C., and Srikumar, V.
 Hasan, M., Kotov, A., Carcone, A.~I., Dong, M., and Naar, S. (2018).
 \newblock Predicting the outcome of patient-provider communication sequences
   using recurrent neural networks and probabilistic models.
-\newblock In {\em AMIA Summit on Clinical Research Informatics Proceedings\/},
-  pages 64--73. American Medical Informatics Association.
+\newblock {\em AMIA Summits on Translational Science Proceedings\/}, {\bf
+  2017}, 64--73.
 
 \bibitem[Rabiner(1989)Rabiner]{rabiner1989tutorial}
 Rabiner, L.~R. (1989).
@@ -413,10 +413,11 @@ Douaihy, A., Kelly, T.~M., and Gold, M.~A. (2015).
 
 \bibitem[Carcone {\em et~al.}(2018)Carcone, Kotov, Hasan, Dong, Eggly,
   Hartlieb, Alexander, Lu, and Naar]{carcone2018using}
-Carcone, A.~I., Kotov, A., Hasan, M., Dong, M., Eggly, S., Hartlieb, K.,
+Carcone, A., Kotov, A., Hasan, M., Dong, M., Eggly, S., Hartlieb, K.,
   Alexander, G., Lu, M., and Naar, S. (2018).
 \newblock Using natural language processing to understand the antecedents of
   behavior change.
-\newblock {\em Annals Of Behavioral Medicine\/}, {\bf 52}.
+\newblock In {\em Annals Of Behavioral Medicine\/}, volume~52, pages
+  S422--S422.
 
 \end{thebibliography}
